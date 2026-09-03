@@ -6,7 +6,7 @@ argument-hint: [prodotto/servizio] [target] [canale]
 
 # Nuova campagna
 
-Orchestra i quattro agenti di `hadrianus-content-engine` in sequenza per produrre una campagna completa, pronta alla consegna, salvata in `campagne/<nome-campagna>/`.
+Orchestra gli agenti di `hadrianus-content-engine` in sequenza per produrre una campagna completa, pronta alla consegna, salvata in `campagne/<nome-campagna>/`: ricerca di mercato → copy → direzione artistica e grafiche editabili → compliance → revisione esperta marketing/design.
 
 ## Input
 
@@ -26,14 +26,16 @@ Se manca qualcosa di essenziale (prodotto/offerta, target, canale) **usa `AskUse
 
 3. **Copywriting** — invoca l'agente `copywriter` (`subagent_type: copywriter`), indicando il percorso del brief appena prodotto. Attendi `campagne/<nome-campagna>/copy.md`.
 
-4. **Direzione artistica** — invoca l'agente `art-director` (`subagent_type: art-director`), indicando copy e brief. Attendi `campagne/<nome-campagna>/direzione-artistica.md`.
+4. **Direzione artistica + grafiche editabili** — invoca l'agente `art-director` (`subagent_type: art-director`), indicando copy e brief. Produce `campagne/<nome-campagna>/direzione-artistica.md` e, quando possibile, le **grafiche editabili** (canvas Claude Design con la skill `design`, o Canva se collegato) — una artboard per ogni contenuto richiesto, nei formati corretti. I sorgenti/link vanno in `campagne/<nome-campagna>/grafiche/` o riferiti nella direzione artistica.
 
 5. **Controllo compliance** — invoca l'agente `compliance-checker` (`subagent_type: compliance-checker`) sull'intera campagna (brief + copy + direzione artistica). Attendi `campagne/<nome-campagna>/checklist-compliance.md`.
 
-6. **Riporta all'utente**, in breve:
-   - l'esito della checklist (APPROVATO / DA CORREGGERE)
-   - se "DA CORREGGERE", l'elenco dei punti bloccanti in linguaggio semplice
-   - dove si trovano tutti i file prodotti
+6. **Revisione esperta marketing/design** — invoca l'agente `revisore-marketing-design` (`subagent_type: revisore-marketing-design`) sull'intera campagna già passata da compliance. Valuta impaginazione, contenuti, grafiche/foto, testi ed efficacia commerciale. Attendi `campagne/<nome-campagna>/revisione-marketing-design.md`.
+
+7. **Riporta all'utente**, in breve:
+   - l'esito della checklist compliance (APPROVATO / DA CORREGGERE)
+   - il giudizio della revisione esperta (PRONTA / PRONTA CON RITOCCHI / DA RILAVORARE) e gli interventi prioritari
+   - dove si trovano tutti i file e le grafiche prodotte
 
 ## Regole
 

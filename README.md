@@ -26,8 +26,9 @@ Sistema di generazione contenuti di vendita per Hadrianus, basato su Claude Code
 |---|---|---|
 | `ricercatore-mercato` | Sempre per primo | Brief: target, dolori/desideri, concorrenza, angolo di vendita consigliato |
 | `copywriter` | Dopo il brief | Bozze di testo (ads, email, landing, script) secondo il metodo Hadrianus |
-| `art-director` | Dopo che il copy è stabile | Direzione visiva (mood, palette, formati) + bozze Canva se collegato |
-| `compliance-checker` | Sempre per ultimo | Verifica claim, tono, refusi; approva o segnala cosa correggere prima della consegna |
+| `art-director` | Dopo che il copy è stabile | Direzione visiva (mood, palette, formati) + grafiche editabili (Claude Design / Canva) |
+| `compliance-checker` | Dopo le grafiche | Verifica claim, tono, refusi; approva o segnala cosa correggere |
+| `revisore-marketing-design` | Sempre per ultimo | Revisione esperta: layout, contenuti, grafiche/foto, testi, efficacia commerciale |
 
 Puoi anche richiamare un singolo agente fuori dal flusso completo, ad esempio:
 
@@ -46,8 +47,8 @@ Usa l'agente compliance-checker su questo testo: [...]
 CLAUDE.md                      contesto letto a ogni avvio
 README.md                      questo file
 riferimenti/                   contenuti reali di esempio, per calibrare il tono
-campagne/                      output delle campagne generate (creata al primo uso)
-.claude/agents/                i 4 agenti specializzati
+campagne/                      output delle campagne generate (una cartella per campagna)
+.claude/agents/                i 5 agenti specializzati
 .claude/skills/                framework-vendita e nuova-campagna
 ```
 

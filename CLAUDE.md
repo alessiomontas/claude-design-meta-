@@ -14,11 +14,13 @@ Non si scrive mai copy "a braccio": prima si studia il mercato, poi si scrive se
 CLAUDE.md                      → questo file, contesto globale
 README.md                      → istruzioni rapide d'uso
 riferimenti/                   → contenuti reali di esempio (il "tono di voce" da imitare)
+campagne/                      → output tracciabile delle campagne (una cartella per campagna)
 .claude/agents/
 ├── ricercatore-mercato.md     → studia target/angolo prima di scrivere
 ├── copywriter.md              → scrive i testi seguendo il metodo
-├── art-director.md            → direzione grafica (+ Canva, se collegato)
-└── compliance-checker.md      → controllo finale prima della consegna
+├── art-director.md            → direzione grafica + grafiche editabili (Claude Design / Canva)
+├── compliance-checker.md      → controllo claim, tono, refusi prima della consegna
+└── revisore-marketing-design.md → revisione esperta finale (layout, grafiche, efficacia commerciale)
 .claude/skills/
 ├── framework-vendita/         → il metodo di vendita, richiamato da ogni agente
 └── nuova-campagna/            → comando che orchestra gli agenti in sequenza
@@ -30,16 +32,18 @@ Per ogni nuova campagna, l'ordine è sempre lo stesso e va rispettato:
 
 1. **`ricercatore-mercato`** — analizza prodotto, target, concorrenza e angolo di vendita. Produce un brief scritto.
 2. **`copywriter`** — scrive i testi partendo dal brief, seguendo la skill `framework-vendita` e lo stile di `riferimenti/`.
-3. **`art-director`** — definisce la direzione visiva coerente col copy (e genera bozze su Canva, se il connettore è attivo).
-4. **`compliance-checker`** — ultimo controllo prima della consegna: claim verificabili, tono coerente, refusi, formattazione.
+3. **`art-director`** — definisce la direzione visiva coerente col copy e produce le **grafiche editabili** (canvas Claude Design, o bozze Canva se il connettore è attivo).
+4. **`compliance-checker`** — controllo claim verificabili, tono coerente, refusi, formattazione.
+5. **`revisore-marketing-design`** — revisione esperta finale: impaginazione, contenuti, grafiche e foto, testi ed efficacia commerciale, prima della consegna al cliente.
 
-Il comando `/nuova-campagna` esegue questi quattro passaggi in sequenza. Non saltare mai un passaggio, anche per contenuti "veloci": è il motivo per cui questo sistema esiste.
+Il comando `/nuova-campagna` esegue questi passaggi in sequenza. Non saltare mai un passaggio, anche per contenuti "veloci": è il motivo per cui questo sistema esiste.
 
 ## Regole non negoziabili
 
 - **Mai inventare claim, numeri, risultati o testimonianze.** Se un dato non è verificato, va segnalato come tale (es. "[DATO DA VERIFICARE]"), mai scritto come fatto.
 - **Il tono di voce si calibra sempre su `riferimenti/`**, non su preferenze generiche di stile. Se `riferimenti/` è vuoto o incompleto, chiedilo esplicitamente all'utente prima di scrivere copy definitivo.
-- **Niente contenuto esce senza passare da `compliance-checker`.** Anche una singola email o un singolo post.
+- **Niente contenuto esce senza passare da `compliance-checker`.** Anche una singola email o un singolo post. Per una campagna completa serve poi la `revisore-marketing-design` prima della consegna al cliente.
+- **Le grafiche si consegnano sempre in formato modificabile** (canvas Claude Design o Canva), mai come immagini piatte non editabili.
 - **Ogni campagna produce output tracciabile**: salvare brief, copy, direzione artistica e checklist di compliance in `campagne/<nome-campagna>/` (la cartella viene creata al bisogno).
 - Se mancano informazioni essenziali (chi è il target, qual è l'offerta, quali claim sono verificati) **fermarsi e chiederle**, non presumerle.
 

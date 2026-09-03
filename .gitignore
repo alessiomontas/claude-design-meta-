@@ -1,0 +1,4 @@
+# File "seed" generati dalla skill design (canvas Claude Design): grandi (~2MB) e
+# rigenerabili dai sorgenti .dc.html + canvas.json. Non vanno versionati; la versione
+# pubblicata vive come artefatto Claude. Vedi campagne/**/grafiche/README.md.
+campagne/**/grafiche/social-kit-*.html
