@@ -9,7 +9,8 @@
     { "file": "Carosello4.dc.html", "title": "Carosello 4/5 — Prova", "x": 3480, "y": 2140, "w": 1080, "h": 1350 },
     { "file": "Carosello5.dc.html", "title": "Carosello 5/5 — Offerta+CTA", "x": 4640, "y": 2140, "w": 1080, "h": 1350 },
     { "file": "PostProva.dc.html", "title": "Post — Prova sociale", "x": 0, "y": 3710, "w": 1080, "h": 1350 },
-    { "file": "ReelCover.dc.html", "title": "Reel — Copertina", "x": 1160, "y": 3710, "w": 1080, "h": 1920 }
+    { "file": "ReelCover.dc.html", "title": "Reel — Copertina", "x": 1160, "y": 3710, "w": 1080, "h": 1920 },
+    { "file": "PostFacebook.dc.html", "title": "Post FB — Gruppi locali", "x": 2320, "y": 3710, "w": 1080, "h": 1350 }
   ],
   "annotations": [
     { "id": "kit-note", "x": 0, "y": -150, "w": 1300, "text": "Kit social Hadrianus (palette grigio fumè).\nRiga 1: 3 STORIE autoconclusive (ognuna problema+soluzione+CTA).\nRiga 2: CAROSELLO feed (5 slide). Riga 3: post prova + copertina reel.\nTutto editabile: puoi spostare, ridimensionare, cambiare font, aggiungere immagini." }

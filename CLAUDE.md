@@ -48,6 +48,10 @@ Queste tre regole sono decise dall'utente e vanno rispettate in ogni contenuto, 
 
 3. **Le storie sono autoconclusive, mai a carosello.** Ogni storia, da sola, dà **problema E soluzione**: testo concentrato in poche frasi impattanti + una risoluzione efficace che mette in evidenza i punti di forza Hadrianus e la CTA. Non spezzare una storia in una sequenza/carosello di più storie. (Il formato carosello resta valido solo per i POST del feed, non per le storie.)
 
+4. **Genera SEMPRE anche la grafica, di default.** Ogni volta che produci un contenuto (post, storia, reel, campagna, annuncio…), oltre al testo generi anche la/le **grafiche editabili** abbinate, senza che l'utente debba chiederlo. È il comportamento standard, non un'aggiunta opzionale. Le grafiche seguono tutte le regole sopra (editabili come Canva, palette fumè, ecc.).
+
+5. **Varia il design tra un contenuto/campagna e l'altro.** Mantieni sempre l'identità di brand (palette fumè + oro, tipografia Archivo/Manrope, tono), ma **cambia layout e composizione** a ogni nuovo comando/campagna, così le grafiche non sembrano tutte uguali: varia gerarchia, disposizione dei blocchi, uso di card/bande/griglie, punti focali. Stessa identità, esecuzione sempre fresca.
+
 ## Regole non negoziabili
 
 - **Mai inventare claim, numeri, risultati o testimonianze.** Se un dato non è verificato, va segnalato come tale (es. "[DATO DA VERIFICARE]"), mai scritto come fatto.

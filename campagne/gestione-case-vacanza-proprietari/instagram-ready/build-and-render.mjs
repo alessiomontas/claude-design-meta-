@@ -23,6 +23,7 @@ const manifest = [
   ['Carosello5.dc.html', 'carosello-5', 1080, 1350],
   ['PostProva.dc.html', 'post-prova', 1080, 1350],
   ['ReelCover.dc.html', 'reel-cover', 1080, 1920],
+  ['PostFacebook.dc.html', 'post-facebook', 1080, 1350],
 ];
 
 // Deriva un HTML standalone (renderizzabile) da un .dc.html editabile
