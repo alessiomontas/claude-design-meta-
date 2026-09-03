@@ -1,5 +1,7 @@
 # Copy — Gestione case vacanza / Acquisizione proprietari
 
+> ⚠️ **Bozza iniziale (superata).** Questa è la prima versione (5 storie, con case study Rome Smart Sea e "hotel-style"). Il kit LIVE aggiornato usa: 3 storie autoconclusive, prova basata su **dati di mercato** (niente singole strutture), lessico **"standard alberghiero"** e **"guadagniamo solo se guadagni tu"**. Per pubblicare, usa **`instagram-ready/PIANO-PUBBLICAZIONE.md`** e **`post-facebook-gruppi-locali.md`**. Conservata solo come storico.
+
 ## Canale
 Instagram / Meta — 5 storie (1080x1920), 2 post feed (1080x1080), 1 reel (video verticale 1080x1920 + cover).
 
@@ -36,7 +38,7 @@ La differenza non è la casa. È come viene gestita.
 Noi lo gestiamo come un hotel. Tu incassi come un proprietario.
 
 **Sotto:**
-Pricing dinamico · Check-in smart H24 · Ospiti gestiti · Pulizie hotel-style
+Pricing dinamico · Check-in smart H24 · Ospiti gestiti · Pulizie alberghiere
 
 **Elemento:** icone dei 4 servizi.
 
@@ -81,7 +83,7 @@ Tu no.
 **Caption:**
 Gestire un affitto breve non dovrebbe essere un secondo lavoro a tempo pieno. Chiamate notturne, burocrazia, check-in da incastrare, pulizie da coordinare.
 
-Con Hadrianus Multiservice trasformiamo il tuo immobile a Roma o Ostia in una vera rendita passiva. Ci occupiamo di tutto: dal pricing dinamico al check-in smart H24, fino alle pulizie hotel-style.
+Con Hadrianus Multiservice trasformiamo il tuo immobile a Roma o Ostia in una vera rendita passiva. Ci occupiamo di tutto: dal pricing dinamico al check-in smart H24, fino alle pulizie alberghiere.
 
 La nostra filosofia è semplice: **guadagniamo solo se guadagni tu**. Commissione del 15% sul fatturato generato. È il 15% che paghi, per il 100% di stress che non paghi più.
 
@@ -138,7 +140,7 @@ Il tuo immobile può rendere come un hotel.
 | 6 (20-25s) | CTA a tutto schermo | "Scrivi CALCOLO in DM" | Simulazione gratuita sul tuo immobile. |
 
 **Caption reel:**
-Il tuo immobile a Roma o Ostia può rendere come una struttura ricettiva — senza che diventi il tuo secondo lavoro. Metodo hotel-style, numeri reali, commissione 15%: guadagniamo solo se guadagni tu.
+Il tuo immobile a Roma o Ostia può rendere come una struttura ricettiva — senza che diventi il tuo secondo lavoro. Gestione in standard alberghiero, commissione 15%: guadagniamo solo se guadagni tu.
 Scrivi **CALCOLO** in DM per la tua simulazione gratuita.
 #affittibrevi #casavacanza #roma #ostia #renditapassiva #propertymanagement
 

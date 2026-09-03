@@ -6,11 +6,12 @@ Palette: **grigio fumè caldo** (niente blu navy). Tutto editabile come su Canva
 
 ## Contenuto
 - `Main.dc.html` → Storia A (rendita / anti-stress) — autoconclusiva
-- `StoriaB.dc.html` → Storia B (prova sociale Rome Smart Sea) — autoconclusiva
+- `StoriaB.dc.html` → Storia B (rischio affitto tradizionale → terza strada) — autoconclusiva
 - `StoriaC.dc.html` → Storia C (15% / fiducia) — autoconclusiva
 - `Carosello1.dc.html` … `Carosello5.dc.html` → carosello feed (5 slide)
-- `PostProva.dc.html` → post feed "prova sociale"
+- `PostProva.dc.html` → post feed "affitto tradizionale vs casa vacanza" (confronto)
 - `ReelCover.dc.html` → copertina reel
+- `FbPost1.dc.html` (verticale) · `FbPost2.dc.html` · `FbPost3.dc.html` (quadrate) → post Facebook a 3 immagini
 - `canvas.json` → layout della canvas
 
 ## Artefatto pubblicato (modificabile)

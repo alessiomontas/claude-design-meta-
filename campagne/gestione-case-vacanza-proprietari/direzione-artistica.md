@@ -1,7 +1,7 @@
 # Direzione artistica — Gestione case vacanza / Acquisizione proprietari
 
 ## Mood
-**Elegante, rassicurante, "hotel-style".** Deve trasmettere lo stesso standard alberghiero che il copy promette: pulito, curato, premium ma accessibile — non "agenzia immobiliare aggressiva", non "cartello vendesi". Tono visivo mediterraneo/costiero (Roma, Ostia, mare) che parla di lifestyle e di rendita serena. Coerente con l'idea "il tuo immobile lavora, tu no": immagini che respirano, non affollate.
+**Elegante, rassicurante, standard alberghiero.** Deve trasmettere lo stesso livello che il copy promette: pulito, curato, premium ma accessibile — non "agenzia immobiliare aggressiva", non "cartello vendesi". Tono visivo mediterraneo/costiero (Roma, Ostia, mare) che parla di lifestyle e di rendita serena. Coerente con l'idea "il tuo immobile lavora, tu no": immagini che respirano, non affollate.
 
 ## Palette
 Palette premium calda basata su un **grigio fumè** (niente blu navy — regola fissa). Il fumè è una miscela di nero, marrone e giallo: caldo, non freddo. Coerente su tutti i formati:
@@ -36,14 +36,14 @@ Una sola CTA visibile per contenuto. Logo sempre presente ma mai protagonista.
 ## Elementi chiave per pezzo
 - **Storie 1-2:** fondo navy, testo bianco/oro, atmosfera "problema" → contrasto forte, poco affollamento.
 - **Storia 3:** 4 icone servizi (pricing, check-in H24, ospiti, pulizie) in verde-acqua/oro su navy.
-- **Storia 4 & Post 2:** box numeri Rome Smart Sea in oro su fondo chiaro/foto → è la prova, deve brillare.
+- **Storia B & Post confronto:** la prova è basata su dati di mercato/differenziatori (nessuna morosità, standard alberghiero, 15%), non su singole strutture.
 - **Storia 5 & Reel finale:** CTA "CALCOLO in DM" in oro, massima visibilità.
 - **Post 1:** foto immobile curato + overlay "Il tuo immobile lavora. Tu no." in bianco su gradiente scuro.
 
 ## Foto
-- Preferire **foto reali** delle strutture Hadrianus (Rome Smart Sea e simili): interni curati, luce naturale, taglio editoriale — coerenti con il "servizio fotografico editoriale" citato nel copy.
+- Preferire **foto reali** di immobili in gestione: interni curati, luce naturale, taglio editoriale. Non citare il nome di singole strutture come prova (regola di brand).
 - Dove non disponibili, usare placeholder chiaramente segnati e sostituirli prima della pubblicazione: **non spacciare stock generico per struttura Hadrianus**.
-- Evitare: foto sgranate, grandangoli distorti, interni disordinati — contraddirebbero la promessa "hotel-style".
+- Evitare: foto sgranate, grandangoli distorti, interni disordinati — contraddirebbero la promessa di standard alberghiero.
 
 ## Da evitare
 - Troppo testo per schermo (soprattutto nelle storie): una idea per schermata.
