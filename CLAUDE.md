@@ -60,6 +60,15 @@ Queste tre regole sono decise dall'utente e vanno rispettate in ogni contenuto, 
 - **Vietata la parola "hotel-style"/"hotel style"**: poco professionale. Usa **"standard alberghiero"** (o "metodo alberghiero", "livello alberghiero").
 - **Niente esempi su singole strutture** (es. "Rome Smart Sea") nei contenuti che devono acquisire clienti: non è un dato che porta clienti. La prova si costruisce su serietà, processo, standard alberghiero e allineamento di interessi (15%), non su un singolo case study.
 
+## Asset di brand reali (memoria — valgono SEMPRE)
+
+L'utente ha fornito immagini reali del brand da usare nelle grafiche generate (post, storie, reel), non solo come riferimento visivo ma come asset da inserire davvero nei contenuti:
+
+1. **Logo** — busto di Adriano (marmo o bronzo) davanti a un tempio classico, con la scritta "HADRIANUS" incisa alla base. Fornito in più angolazioni/varianti (marmo profilo, marmo frontale, bronzo con dettagli oro). Vanno salvate anche **varianti senza sfondo** (trasparenti) di ogni angolazione, su richiesta esplicita dell'utente.
+2. **Foto — tramonto sul Litorale romano** (mare, sole basso, cielo arancione): da usare come sfondo fotografico reale per contenuti ambientati "Roma · Ostia", al posto dei gradient tipografici usati finora dove ha senso.
+
+Gli asset vivono in `brand-assets/` (vedi `brand-assets/README.md` per l'elenco file attesi e lo stato). Una volta presenti i file reali, l'`art-director` deve preferirli agli elementi puramente tipografici quando pertinente, mantenendo comunque tutte le altre regole fisse (editabilità, palette fumè, variazione del layout tra campagne).
+
 ## Regole non negoziabili
 
 - **Mai inventare claim, numeri, risultati o testimonianze.** Se un dato non è verificato, va segnalato come tale (es. "[DATO DA VERIFICARE]"), mai scritto come fatto.
