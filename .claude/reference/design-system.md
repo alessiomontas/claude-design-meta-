@@ -105,3 +105,25 @@ Quando parti da una nuova campagna, scegli deliberatamente un pattern NON in que
 ## Asset fotografici reali disponibili
 
 Vedi `brand-assets/README.md` per l'inventario completo (logo in 4 varianti, tramonto Litorale, foto immobile). Preferirli agli elementi puramente tipografici quando pertinenti — restano valide editabilità e palette.
+
+## I 3 strumenti grafici — chi fa cosa
+
+Ogni strumento ha una mansione precisa. Non si sovrappongono: si passano il lavoro in sequenza quando serve.
+
+| Strumento | Mansione | Quando |
+|---|---|---|
+| **Claude Design** (canvas `.dc.html`) | Motore di **default** per ogni artboard testo+layout: storie, post, caroselli, cover reel, post Facebook. Costruisce la grafica finita con palette fumè, tipografia Archivo/Manrope, componenti di questo file. | Sempre, per qualunque grafica social da zero. Non richiede connessione, è sempre disponibile — resta il motore principale anche quando Adobe è collegato, per non duplicare la pipeline esistente (artboard → `canvas.json` → export Playwright). |
+| **Canva** | Editing manuale/collaborativo del workspace dell'utente, quando vuole rifinire o lavorare direttamente lì. | Solo su richiesta esplicita dell'utente, come alternativa a Claude Design. |
+| **Adobe for creativity** | **Post-produzione delle foto/video reali** prima che entrino negli artboard — non genera artboard testo+layout da zero (eviterebbe di duplicare Claude Design con un secondo motore parallelo). | Vedi elenco compiti sotto. |
+
+### Compiti reali assegnati ad Adobe for creativity
+
+- **Ritocco foto reali** (`brand-assets/immobili/`, `brand-assets/ambientazione/`) prima di inserirle in un artboard: correzione tono/esposizione (`image_apply_adjustments`, `image_apply_auto_tone`), raddrizzamento (`image_auto_straighten`).
+- **Crop sul formato esatto del canale** con rilevamento soggetto, usando i rapporti di questa tabella (es. `"9:16"` per una storia, `"1:1"` per Facebook 2ª/3ª immagine): `image_crop_and_resize`. Per un crop più preciso e verificato visivamente: `image_crop_to_bounds`.
+- **Estensione del canvas** quando una foto reale non copre il formato verticale richiesto (es. il tramonto del Litorale in un formato 9:16 più alto dell'originale): `image_generative_expand`.
+- **Varianti trasparenti del logo** (richieste dall'utente, finora bloccate per mancanza di strumento): `image_remove_background` su ciascuna delle 4 angolazioni in `brand-assets/logo/`. Ora producibile — vedi `brand-assets/README.md`.
+- **Video per i Reel**: `video_resize` per il formato corretto, `video_create_quick_cut` per montaggi rapidi da più clip, `media_enhance_speech` per pulire l'audio del parlato.
+
+### Flusso combinato (i 3 insieme, quando serve)
+
+Adobe prepara/pulisce la foto o il video reale (ritocco, crop, sfondo rimosso) → Claude Design la inserisce nell'artboard finale con testo, CTA e palette → se l'utente vuole rifinire a mano il risultato, Canva come ultimo passaggio opzionale. Non tutti i passaggi servono sempre: per una grafica solo testuale, Claude Design da solo basta.

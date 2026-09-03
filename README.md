@@ -62,9 +62,14 @@ _handover/                     snapshot per un revisore esterno (stato, decision
 
 `CLAUDE.md` contiene solo ciò che deve essere sempre in memoria (regole fisse, lessico core, flusso). Il contesto più esteso — identità di brand dettagliata, palette esatta con snippet di codice, glossario con esempi — vive in `.claude/reference/` e viene letto solo quando serve, dagli agenti che ne hanno bisogno in quel passaggio. Se una nuova regola deve valere *sempre e comunque*, va in `CLAUDE.md`; se è un dettaglio che serve solo in certi passaggi, va in `.claude/reference/`.
 
-## Collegamento Canva (opzionale)
+## Strumenti grafici collegabili (Canva e Adobe for creativity, opzionali)
 
-Lo strumento di default per le grafiche editabili è il **canvas Claude Design** (sempre disponibile, nessuna connessione richiesta). Se colleghi anche il connettore Canva a Claude Code, l'agente `art-director` può generare le bozze direttamente nel tuo workspace Canva in alternativa, se lo richiedi esplicitamente. Le grafiche editabili non sono mai opzionali: si producono comunque, con uno strumento o con l'altro.
+Lo strumento di default per le grafiche editabili è il **canvas Claude Design** (sempre disponibile, nessuna connessione richiesta) — costruisce ogni artboard testo+layout. Due connettori opzionali affiancano compiti specifici, dettagliati in `.claude/reference/design-system.md` §"I 3 strumenti grafici":
+
+- **Canva** — se collegato, l'`art-director` può generare le bozze direttamente nel tuo workspace Canva in alternativa, se lo richiedi esplicitamente.
+- **Adobe for creativity** — se collegato, gestisce la post-produzione delle foto/video reali in `brand-assets/` (ritocco, crop sul formato esatto, rimozione sfondo per i loghi trasparenti, montaggio video per i Reel) prima che entrino negli artboard Claude Design.
+
+Le grafiche editabili non sono mai opzionali: si producono comunque, con Claude Design come base, gli altri due strumenti solo dove aggiungono valore reale.
 
 ## Manutenzione del sistema
 

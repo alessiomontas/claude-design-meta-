@@ -24,9 +24,7 @@ brand-assets/
 
 ✅ **File reali presenti e organizzati** (9 file, spostati da `.claude/` e dalla root dove erano stati caricati, e rinominati con nomi descrittivi).
 
-⚠️ **Varianti "senza sfondo" del logo non ancora disponibili.** L'utente ha chiesto esplicitamente di salvare anche varianti trasparenti (PNG con alpha channel) di ogni angolazione del logo. Le 4 immagini in `logo/` hanno tutte uno sfondo pieno (parete grigia o marmo scuro): **non ho uno strumento di rimozione sfondo / editing immagini in questo ambiente**, quindi non posso generarle io stesso. Per averle serve una di queste strade:
-- l'utente le crea con uno strumento esterno (Remove.bg, Photoshop, ecc.) e le carica qui in `logo/trasparenti/`;
-- oppure si chiede esplicitamente di provare a generarle con uno strumento di immagini se/quando disponibile in questo ambiente.
+✅ **Varianti "senza sfondo" del logo ora producibili.** Da quando il connettore **Adobe for creativity** è collegato, `image_remove_background` può generare la versione trasparente (PNG con alpha channel) di ciascuna delle 4 angolazioni in `logo/`. Non ancora generate di default — vanno prodotte su richiesta esplicita dell'utente (per non consumare chiamate/tempo senza bisogno) e salvate in `logo/trasparenti/`. Vedi `.claude/reference/design-system.md` §"I 3 strumenti grafici" per il ruolo assegnato ad Adobe.
 
 ## ⚠️ Nota compliance — `smart-tv-streaming-mockup.jpg`
 
