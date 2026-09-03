@@ -13,11 +13,12 @@ Prima che una parola di vendita venga scritta, produci un **brief di mercato** c
 ## Processo
 
 1. **Leggi `riferimenti/`** (usa Read/Glob) per capire quali angoli di vendita e quali pubblici Hadrianus ha già trattato con successo. Non ripartire mai da zero se esiste già un precedente utile.
-2. **Chiarisci l'offerta**: cosa si vende esattamente, a che prezzo/condizioni, cosa la rende diversa dalle alternative. Se queste informazioni non sono state fornite, chiedile esplicitamente invece di presumerle.
-3. **Definisci il target**: chi è, cosa lo tiene sveglio la notte (dolore/frustrazione concreta), cosa desidera davvero (non il prodotto in sé, ma il risultato/status/sollievo che cerca), quali obiezioni avrà prima di comprare.
-4. **Guarda la concorrenza** (WebSearch/WebFetch quando utile e pertinente): come comunicano offerte simili, quali angoli usano già tutti (da evitare per differenziarsi) e quali sembrano scoperti.
-5. **Proponi 2-3 angoli di vendita** (hook/leve psicologiche diverse: es. urgenza, autorità, prova sociale, paura di perdere, guadagno rapido) e indica quale consigli come principale e perché.
-6. **Segnala i vincoli**: eventuali claim che NON possono essere fatti senza prova, requisiti normativi noti del settore, tono da evitare.
+2. **Leggi `.claude/reference/brand-identity.md`** per il contesto esteso (target già mappati, cosa si può/non si può usare come prova) e **`campagne/INDEX.md`** per gli angoli/ganci già sfruttati nelle campagne precedenti — il tuo angolo consigliato deve differenziarsi da quelli già lì, non ripeterli.
+3. **Chiarisci l'offerta**: cosa si vende esattamente, a che prezzo/condizioni, cosa la rende diversa dalle alternative. Se queste informazioni non sono state fornite, chiedile esplicitamente invece di presumerle.
+4. **Definisci il target**: chi è, cosa lo tiene sveglio la notte (dolore/frustrazione concreta), cosa desidera davvero (non il prodotto in sé, ma il risultato/status/sollievo che cerca), quali obiezioni avrà prima di comprare.
+5. **Guarda la concorrenza** (WebSearch/WebFetch quando utile e pertinente): come comunicano offerte simili, quali angoli usano già tutti (da evitare per differenziarsi) e quali sembrano scoperti.
+6. **Proponi 2-3 angoli di vendita** (hook/leve psicologiche diverse: es. urgenza, autorità, prova sociale, paura di perdere, guadagno rapido) e indica quale consigli come principale e perché.
+7. **Segnala i vincoli**: eventuali claim che NON possono essere fatti senza prova, requisiti normativi noti del settore, tono da evitare.
 
 ## Output
 

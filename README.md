@@ -18,7 +18,7 @@ Sistema di generazione contenuti di vendita per Hadrianus, basato su Claude Code
    /nuova-campagna Consulenza fiscale per PMI, target: piccoli imprenditori, canale: email
    ```
 
-4. Il risultato viene salvato in `campagne/<nome-campagna>/`: brief di mercato, copy, direzione artistica e checklist di compliance.
+4. Il risultato viene salvato in `campagne/<nome-campagna>/`: brief di mercato, copy, direzione artistica, grafiche editabili e checklist di compliance. La campagna viene aggiunta a `campagne/INDEX.md`.
 
 ## Cosa fa ogni agente
 
@@ -39,25 +39,37 @@ Usa l'agente compliance-checker su questo testo: [...]
 ## Le due skill
 
 - **`framework-vendita`** — il metodo di scrittura persuasiva usato da tutti gli agenti che producono o valutano testo. È il "manuale interno": aggiornalo man mano che capisci cosa funziona davvero per Hadrianus.
-- **`nuova-campagna`** — il comando che orchestra i quattro agenti in sequenza per produrre una campagna completa.
+- **`nuova-campagna`** — il comando che orchestra i cinque agenti in sequenza per produrre una campagna completa.
 
 ## Struttura cartelle
 
 ```
-CLAUDE.md                      contesto letto a ogni avvio
+CLAUDE.md                      nucleo sempre caricato: identità minima, flusso, regole fisse, lessico
 README.md                      questo file
 riferimenti/                   contenuti reali di esempio, per calibrare il tono
-campagne/                      output delle campagne generate (una cartella per campagna)
+brand-assets/                  logo, foto ambientazione, foto immobili reali (asset veri, non placeholder)
+campagne/
+├── INDEX.md                   indice campagne: angoli/ganci già usati, da controllare prima di una nuova
+└── <nome-campagna>/           output di ogni campagna generata
+_handover/                     snapshot per un revisore esterno (stato, decisioni, regole, inventario, aperti)
 .claude/agents/                i 5 agenti specializzati
 .claude/skills/                framework-vendita e nuova-campagna
+.claude/reference/             approfondimenti on-demand (NON caricati a ogni avvio):
+├── brand-identity.md              chi è Hadrianus, target/pain-point, cosa si può usare come prova
+├── design-system.md               palette hex, tipografia, formati, componenti .dc.html riutilizzabili
+└── lessico-brand.md               glossario esteso corretto/vietato, con esempi
 ```
+
+`CLAUDE.md` contiene solo ciò che deve essere sempre in memoria (regole fisse, lessico core, flusso). Il contesto più esteso — identità di brand dettagliata, palette esatta con snippet di codice, glossario con esempi — vive in `.claude/reference/` e viene letto solo quando serve, dagli agenti che ne hanno bisogno in quel passaggio. Se una nuova regola deve valere *sempre e comunque*, va in `CLAUDE.md`; se è un dettaglio che serve solo in certi passaggi, va in `.claude/reference/`.
 
 ## Collegamento Canva (opzionale)
 
-Se colleghi il connettore Canva a Claude Code, l'agente `art-director` può generare bozze visive direttamente nel tuo workspace Canva. Senza Canva collegato, produce comunque un brief visivo testuale completo (mood board descrittiva, palette, formati per canale) che puoi passare a un grafico o usare tu stesso in Canva.
+Lo strumento di default per le grafiche editabili è il **canvas Claude Design** (sempre disponibile, nessuna connessione richiesta). Se colleghi anche il connettore Canva a Claude Code, l'agente `art-director` può generare le bozze direttamente nel tuo workspace Canva in alternativa, se lo richiedi esplicitamente. Le grafiche editabili non sono mai opzionali: si producono comunque, con uno strumento o con l'altro.
 
 ## Manutenzione del sistema
 
 - Aggiungi nuovi `riferimenti/` ogni volta che un contenuto performa particolarmente bene: è il segnale più forte per affinare il metodo.
 - Se noti che il copy prodotto si allontana dal tono Hadrianus, il problema quasi sempre è in `riferimenti/` (pochi esempi, o non rappresentativi) più che negli agenti stessi.
-- Le regole "dure" (mai inventare claim, sempre passare da compliance) sono in `CLAUDE.md` e valgono per tutti gli agenti: non vanno duplicate né contraddette nei singoli file agente/skill.
+- Ogni volta che correggi un termine o una formula (es. "si dice così, non cosà"), aggiungila alla tabella in `.claude/reference/lessico-brand.md` — non lasciarla solo detta a voce, altrimenti si riperde e va ricorretta di nuovo.
+- Dopo ogni campagna, verifica che `campagne/INDEX.md` sia aggiornato con l'angolo usato: è quello che permette di non ripetere lo stesso gancio due volte.
+- Le regole "dure" (mai inventare claim, sempre passare da compliance) sono in `CLAUDE.md` e valgono per tutti gli agenti: non vanno duplicate né contraddette nei singoli file agente/skill/reference.

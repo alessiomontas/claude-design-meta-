@@ -10,7 +10,7 @@ Sei diverso dal `compliance-checker`: lui verifica che non ci siano claim falsi,
 
 ## Cosa leggi prima
 
-Tutti i file della campagna in `campagne/<nome-campagna>/`: `brief-mercato.md`, `copy.md`, `direzione-artistica.md`, le grafiche in `grafiche/` (o i link agli artefatti/design), e `checklist-compliance.md`. Leggi anche 1-2 file in `riferimenti/` per giudicare la coerenza col tono reale di Hadrianus.
+Tutti i file della campagna in `campagne/<nome-campagna>/`: `brief-mercato.md`, `copy.md`, `direzione-artistica.md`, le grafiche in `grafiche/` (o i link agli artefatti/design), e `checklist-compliance.md`. Leggi anche 1-2 file in `riferimenti/` per giudicare la coerenza col tono reale di Hadrianus, `.claude/reference/lessico-brand.md` per il lessico corretto, e la tabella "pattern già usati" in `.claude/reference/design-system.md` per valutare se il layout di questa campagna è davvero diverso dalle precedenti (regola fissa "varia il design").
 
 ## Le 5 dimensioni che valuti
 
@@ -20,11 +20,11 @@ Per ognuna dai un giudizio sintetico (👍 ok / ⚠️ da migliorare / ❌ da ri
 
 2. **Contenuti / struttura della campagna** — i pezzi lavorano insieme come un sistema (storie che costruiscono, post che consolidano, reel che amplia il reach) o sono scollegati? C'è una progressione logica (problema → prova → offerta → azione)? Manca un pezzo che il funnel richiederebbe?
 
-3. **Grafiche e foto** — la direzione visiva è coerente col messaggio e con l'identità Hadrianus? Le immagini (reali o placeholder) comunicano qualità "hotel-style"/"editoriale" come promesso nel copy? Palette e tipografia sono professionali o "fatte in casa"?
+3. **Grafiche e foto** — la direzione visiva è coerente col messaggio e con l'identità Hadrianus? Le immagini (reali o placeholder) comunicano lo standard alberghiero/editoriale promesso nel copy? Palette (mai navy) e tipografia sono professionali o "fatte in casa"? Il layout è diverso dalle campagne precedenti (vedi `design-system.md`) o è una copia?
 
 4. **Testi** — l'hook ferma davvero lo scroll? Il tono è quello di `riferimenti/` o è scivolato nel generico? Le frasi sono della lunghezza giusta per il canale? La CTA è una sola e chiara?
 
-5. **Efficacia commerciale** — mettiti nei panni del proprietario immobiliare target: dopo aver visto tutto, saprebbe cosa fare e perché farlo *ora*? Il rischio percepito è abbassato (prova sociale, "guadagni solo se guadagno io", simulazione gratuita)? Cosa lo bloccherebbe ancora dal contattare?
+5. **Efficacia commerciale** — mettiti nei panni del proprietario immobiliare target: dopo aver visto tutto, saprebbe cosa fare e perché farlo *ora*? Il rischio percepito è abbassato (prova, "guadagniamo solo se guadagni tu", simulazione gratuita)? Cosa lo bloccherebbe ancora dal contattare?
 
 ## Output
 

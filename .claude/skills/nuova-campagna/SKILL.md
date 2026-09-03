@@ -20,7 +20,7 @@ Se manca qualcosa di essenziale (prodotto/offerta, target, canale) **usa `AskUse
 
 ## Passaggi (da eseguire in ordine, senza saltarne nessuno)
 
-1. **Determina il nome campagna**: uno slug breve derivato da prodotto+target (es. `consulenza-fiscale-pmi-email`). Crea `campagne/<nome-campagna>/` se non esiste.
+1. **Determina il nome campagna**: uno slug breve derivato da prodotto+target (es. `consulenza-fiscale-pmi-email`). Crea `campagne/<nome-campagna>/` se non esiste. Controlla `campagne/INDEX.md` per gli angoli/ganci già usati, così il `ricercatore-mercato` non ne ripropone uno identico.
 
 2. **Ricerca di mercato** — invoca l'agente `ricercatore-mercato` (tramite lo strumento Agent, `subagent_type: ricercatore-mercato`) passando prodotto/servizio, target e canale raccolti. Attendi il brief in `campagne/<nome-campagna>/brief-mercato.md` prima di proseguire.
 
@@ -32,7 +32,9 @@ Se manca qualcosa di essenziale (prodotto/offerta, target, canale) **usa `AskUse
 
 6. **Revisione esperta marketing/design** — invoca l'agente `revisore-marketing-design` (`subagent_type: revisore-marketing-design`) sull'intera campagna già passata da compliance. Valuta impaginazione, contenuti, grafiche/foto, testi ed efficacia commerciale. Attendi `campagne/<nome-campagna>/revisione-marketing-design.md`.
 
-7. **Riporta all'utente**, in breve:
+7. **Aggiorna `campagne/INDEX.md`** con la nuova riga (angolo, target/leva, formati, stato).
+
+8. **Riporta all'utente**, in breve:
    - l'esito della checklist compliance (APPROVATO / DA CORREGGERE)
    - il giudizio della revisione esperta (PRONTA / PRONTA CON RITOCCHI / DA RILAVORARE) e gli interventi prioritari
    - dove si trovano tutti i file e le grafiche prodotte
