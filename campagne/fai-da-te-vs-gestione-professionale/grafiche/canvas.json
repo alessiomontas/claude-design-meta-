@@ -1,0 +1,13 @@
+{
+  "artboards": [
+    { "file": "Main.dc.html", "x": 0, "y": 0, "w": 1080, "h": 1920, "title": "Storia 1 · Il tempo che non ti paga nessuno" },
+    { "file": "Storia2.dc.html", "x": 1160, "y": 0, "w": 1080, "h": 1920, "title": "Storia 2 · Il margine che non vedi" },
+    { "file": "Storia3.dc.html", "x": 2320, "y": 0, "w": 1080, "h": 1920, "title": "Storia 3 · Hai già imparato" },
+    { "file": "Slide1.dc.html", "x": 0, "y": 2060, "w": 1080, "h": 1350, "title": "Carosello 1/5 · Hook" },
+    { "file": "Slide2.dc.html", "x": 1160, "y": 2060, "w": 1080, "h": 1350, "title": "Carosello 2/5 · Problema" },
+    { "file": "Slide3.dc.html", "x": 2320, "y": 2060, "w": 1080, "h": 1350, "title": "Carosello 3/5 · Agitazione" },
+    { "file": "Slide4.dc.html", "x": 3480, "y": 2060, "w": 1080, "h": 1350, "title": "Carosello 4/5 · Soluzione" },
+    { "file": "Slide5.dc.html", "x": 4640, "y": 2060, "w": 1080, "h": 1350, "title": "Carosello 5/5 · Offerta e CTA" }
+  ],
+  "launch": { "view": "canvas" }
+}
