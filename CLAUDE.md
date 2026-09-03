@@ -52,6 +52,14 @@ Queste tre regole sono decise dall'utente e vanno rispettate in ogni contenuto, 
 
 5. **Varia il design tra un contenuto/campagna e l'altro.** Mantieni sempre l'identità di brand (palette fumè + oro, tipografia Archivo/Manrope, tono), ma **cambia layout e composizione** a ogni nuovo comando/campagna, così le grafiche non sembrano tutte uguali: varia gerarchia, disposizione dei blocchi, uso di card/bande/griglie, punti focali. Stessa identità, esecuzione sempre fresca.
 
+6. **Post Facebook — formato fisso (SOLO Facebook).** Un post Facebook si compone sempre di **3 immagini da mostrare tutte e tre**: la 1ª **verticale 1080×1350** (porta il gancio e il problema), la 2ª e la 3ª **quadrate 1080×1080** (soluzione e offerta/CTA). Vale solo per i post Facebook; gli altri canali mantengono i loro formati.
+
+## Lessico di brand (regole fisse di copy — valgono SEMPRE)
+
+- **Formula corretta:** si scrive sempre **"guadagniamo solo se guadagni tu"**. Mai "guadagni solo se guadagni tu" (errato).
+- **Vietata la parola "hotel-style"/"hotel style"**: poco professionale. Usa **"standard alberghiero"** (o "metodo alberghiero", "livello alberghiero").
+- **Niente esempi su singole strutture** (es. "Rome Smart Sea") nei contenuti che devono acquisire clienti: non è un dato che porta clienti. La prova si costruisce su serietà, processo, standard alberghiero e allineamento di interessi (15%), non su un singolo case study.
+
 ## Regole non negoziabili
 
 - **Mai inventare claim, numeri, risultati o testimonianze.** Se un dato non è verificato, va segnalato come tale (es. "[DATO DA VERIFICARE]"), mai scritto come fatto.

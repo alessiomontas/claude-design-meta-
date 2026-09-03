@@ -1,70 +1,60 @@
 # Post Facebook — Gruppi locali (acquisizione proprietari)
 
-Obiettivo: acquisire nuovi clienti (proprietari di immobili) da gruppi Facebook locali molto frequentati, trasmettere affidabilità e innescare passaparola.
-Struttura di ogni variante: Gancio (hook) → Fiducia (trust) → CTA primaria → Micro-viralità (tag).
-Tono: annuncio di valore per la community, non "spam aziendale". Paragrafi brevi, emoji strategiche.
+Obiettivo: acquisire proprietari da gruppi Facebook locali, trasmettere affidabilità, innescare passaparola.
+Target: chi tiene la casa **sfitta**, chi la affitta **a lungo termine** (con timore morosità), chi gestisce **da solo** l'affitto breve senza risultati. Vedi `ricerca-pain-points-proprietari.md`.
 
-Claim verificati usati (da `riferimenti/`): commissione 15% "guadagniamo solo se guadagni tu"; caso Rome Smart Sea a Ostia (ADR ~183€, 5.0, Superhost); metodo hotel-style; zone Roma/Ostia. Nessun rendimento garantito promesso. Il case study è presentato come struttura specifica.
+**Formato immagini (regola fissa FB): 3 immagini** — 1ª verticale 1080×1350 (gancio+problema), 2ª e 3ª quadrate 1080×1080 (soluzione, offerta+CTA). Da pubblicare tutte e tre.
 
-Placeholder da compilare prima di pubblicare: `[Nome Città/Quartiere]`, eventuale `[link simulazione]`.
+**Correzioni di brand applicate:** "guadagniamo solo se guadagni tu"; "standard alberghiero" (mai "hotel-style"); nessun riferimento a singole strutture (niente Rome Smart Sea).
 
----
-
-## VARIANTE 1 — Gancio sul PROBLEMA
-
-⚠️ Hai una casa a **[Nome Città/Quartiere]** che sta lì ferma… o che affitti col terrore di chiamate a ogni ora, pulizie e ospiti da gestire?
-
-Diciamocelo: gestire un affitto breve da soli è diventato un secondo lavoro. E spesso rende pure meno di quanto potrebbe.
-
-Noi di **Hadrianus** ce ne occupiamo al posto tuo, con metodo alberghiero: pricing dinamico, check-in H24, ospiti seguiti e pulizie hotel-style. 🏨
-
-La cosa che ci rende diversi? **Guadagniamo solo se guadagni tu.** La nostra commissione è il 15% sul fatturato. Nient'altro, nessun costo nascosto. 🤝
-
-E siamo di zona: una delle nostre strutture a Ostia (Rome Smart Sea) ha valutazione media **5.0 ⭐** e badge **Superhost**. Ci mettiamo la faccia.
-
-👉 Vuoi sapere quanto potrebbe rendere davvero il tuo immobile? Scrivici in privato o commenta **"INFO"**: ti prepariamo una simulazione gratuita e senza impegno.
-
-🔖 Conosci qualcuno che ha una seconda casa ferma o che sta impazzendo a gestirla? **Taggalo qui sotto** — probabilmente ti ringrazierà. 🙌
+Placeholder: `[Nome Città/Quartiere]`.
 
 ---
 
-## VARIANTE 2 — Gancio sull'OFFERTA / OPPORTUNITÀ
+## Concept delle 3 immagini (narrazione)
+1. **Immagine 1 (verticale) — Gancio + problema:** "E se l'inquilino non paga… e non se ne va?" / la casa sfitta che costa. Ferma lo scroll.
+2. **Immagine 2 (quadrata) — Soluzione:** trasformala in rendita da casa vacanza, gestione completa in standard alberghiero, nessun inquilino fisso né morosità.
+3. **Immagine 3 (quadrata) — Offerta + CTA:** guadagniamo solo se guadagni tu (15%), pensiamo a tutto noi → "Scrivi INFO".
 
-💰 E se il tuo immobile a **[Nome Città/Quartiere]** iniziasse a rendere come una piccola struttura ricettiva… senza che tu muova un dito?
-
-Non è un sogno: è quello che facciamo ogni giorno qui in zona. 👇
-
-Con **Hadrianus** affidi la tua casa e pensiamo a tutto noi: tariffe ottimizzate, check-in H24, ospiti e pulizie in stile hotel. Tu ricevi la tua rendita, punto. 🏨
-
-E c'è una garanzia che cambia tutto: **la nostra commissione è il 15% sul fatturato — e la paghi solo se incassi.** Se non guadagni tu, non guadagniamo noi. 🤝
-
-Numeri veri? Una nostra struttura a Ostia (Rome Smart Sea) viaggia su una tariffa media di circa **183€ a notte**, con **5.0 ⭐** e badge **Superhost**. (Risultato di una struttura specifica, non una promessa uguale per tutti — ma il metodo è quello.)
-
-👉 Curioso di scoprire il potenziale del TUO immobile? Commenta **"INFO"** o scrivici in privato: **simulazione gratuita**, ti diciamo numeri alla mano cosa aspettarti. 📩
-
-🔖 Hai un amico o un vicino con una casa sfitta a **[Nome Città/Quartiere]**? **Taggalo** — è un'occasione che merita di conoscere. 🙌
+I PNG sono in `instagram-ready/out/` (`fb-1.png`, `fb-2.png`, `fb-3.png`); versione editabile nel canvas.
 
 ---
 
-## VARIANTE 3 — Gancio EMOTIVO
+## CAPTION PRINCIPALE (da abbinare alle 3 immagini)
 
-🏡 Quella seconda casa — al mare, o quella di famiglia — non dovrebbe essere un pensiero in più.
+🔑 Hai una casa a **[Nome Città/Quartiere]** che tieni sfitta… o che affitti col timore che l'inquilino non paghi?
 
-Eppure per tanti a **[Nome Città/Quartiere]** è proprio così: tenerla sfitta è uno spreco, affittarla da soli è uno stress continuo. 😮‍💨
+È il dubbio di tanti proprietari: una casa vuota è un costo, ma affittarla a lungo termine fa paura — morosità, danni, mesi per rientrare in possesso. 😮‍💨
 
-Noi di **Hadrianus** siamo nati per toglierti quel peso. Gestiamo la tua casa come un hotel e te la restituiamo trasformata in una rendita serena — mentre tu ti godi il tuo tempo. ✨
+C'è una terza strada: trasformarla in una **rendita da casa vacanza**, gestita da noi.
 
-Puoi fidarti perché non ci nascondiamo: siamo di zona, gestiamo strutture reali (a Ostia una nostra casa è **Superhost**, valutazione **5.0 ⭐**) e lavoriamo con una regola semplice — **guadagniamo solo se guadagni tu, con il 15% sul fatturato.** 🤝
+Ci occupiamo di tutto in **standard alberghiero**: prezzi ottimizzati, check-in H24, ospiti e pulizie. Nessun inquilino fisso, nessuna morosità — la tua casa rende e resta tua. 🏠
 
-👉 Se hai una casa che merita di più, scrivici in privato o commenta **"INFO"**: partiamo da una **simulazione gratuita**, senza impegno e senza pressioni.
+E soprattutto: **guadagniamo solo se guadagni tu.** La nostra commissione è il 15% sul fatturato. Se non incassi tu, non incassiamo noi. 🤝
 
-🔖 Conosci una persona che ha una casa ferma e non sa che farne? **Taggala nei commenti**: a volte basta un consiglio giusto al momento giusto. 💛
+👉 Vuoi sapere quanto potrebbe rendere il tuo immobile? Scrivici in privato o commenta **"INFO"**: simulazione gratuita, senza impegno.
+
+🔖 Conosci qualcuno con una casa sfitta o che ha paura ad affittare? **Taggalo qui sotto** — potresti fargli un favore. 🙌
+
+---
+
+## VARIANTI DI GANCIO (per A/B test — prima riga del post e/o Immagine 1)
+
+**A · Paura morosità (problema)**
+"E se l'inquilino non paga… e non se ne va? 😰 C'è un modo per far rendere la tua casa a [Nome Città/Quartiere] senza questo incubo."
+
+**B · Casa sfitta / opportunità (offerta)**
+"La tua casa a [Nome Città/Quartiere] è sfitta? 🔑 Ogni mese vuoto è denaro che non torna. Trasformiamola in una rendita."
+
+**C · Fai-da-te / emotivo**
+"Gestisci da solo l'affitto breve ma il calendario resta mezzo vuoto e lo stress pieno? 😮‍💨 Lascia fare a chi lo fa di mestiere."
+
+Tutte proseguono con lo stesso corpo (soluzione → guadagniamo solo se guadagni tu 15% → CTA "INFO" → tag).
 
 ---
 
 ## Note operative
 - Personalizza `[Nome Città/Quartiere]` per ogni gruppo: più è locale, più converte.
-- Rispetta le regole del gruppo (molti vietano la promozione diretta): se serve, chiedi prima l'ok all'admin o pubblica come "esperienza/servizio di zona".
-- Rispondi RAPIDO a chi commenta "INFO"/scrive in DM: la simulazione gratuita promessa va evasa in giornata.
-- Non pubblicare lo stesso identico testo in troppi gruppi contemporaneamente (rischio spam-flag di Facebook): varia hook e zona.
-- A/B test: parti pubblicando le 3 varianti in gruppi diversi e tieni quella con più commenti "INFO"/tag.
+- Rispetta le regole del gruppo (molti vietano promozione diretta): se serve, chiedi l'ok all'admin o presentati come servizio di zona.
+- Rispondi in giornata a chi commenta "INFO"/scrive in DM con la simulazione gratuita promessa.
+- Dati di mercato (morosità, case sfitte): usarli come contesto di settore, mai come risultati Hadrianus.
