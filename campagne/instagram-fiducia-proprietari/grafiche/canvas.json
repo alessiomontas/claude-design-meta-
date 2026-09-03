@@ -1,0 +1,21 @@
+{
+  "artboards": [
+    { "file": "Main.dc.html", "title": "Storia 1 — Fiducia/chiavi", "x": 0, "y": 0, "w": 1080, "h": 1920 },
+    { "file": "Storia2.dc.html", "title": "Storia 2 — Trasparenza", "x": 1160, "y": 0, "w": 1080, "h": 1920 },
+    { "file": "Storia3.dc.html", "title": "Storia 3 — La casa resta tua", "x": 2320, "y": 0, "w": 1080, "h": 1920 },
+    { "file": "CarA1.dc.html", "title": "Carosello A 1/5 — Intro", "x": 0, "y": 2140, "w": 1080, "h": 1350 },
+    { "file": "CarA2.dc.html", "title": "Carosello A 2/5 — Passo 01", "x": 1160, "y": 2140, "w": 1080, "h": 1350 },
+    { "file": "CarA3.dc.html", "title": "Carosello A 3/5 — Passo 02", "x": 2320, "y": 2140, "w": 1080, "h": 1350 },
+    { "file": "CarA4.dc.html", "title": "Carosello A 4/5 — Passo 03", "x": 3480, "y": 2140, "w": 1080, "h": 1350 },
+    { "file": "CarA5.dc.html", "title": "Carosello A 5/5 — CTA", "x": 4640, "y": 2140, "w": 1080, "h": 1350 },
+    { "file": "CarB1.dc.html", "title": "Carosello B 1/5 — Intro", "x": 0, "y": 3710, "w": 1080, "h": 1350 },
+    { "file": "CarB2.dc.html", "title": "Carosello B 2/5 — Quanto costa", "x": 1160, "y": 3710, "w": 1080, "h": 1350 },
+    { "file": "CarB3.dc.html", "title": "Carosello B 3/5 — Chi entra", "x": 2320, "y": 3710, "w": 1080, "h": 1350 },
+    { "file": "CarB4.dc.html", "title": "Carosello B 4/5 — Riprendere casa", "x": 3480, "y": 3710, "w": 1080, "h": 1350 },
+    { "file": "CarB5.dc.html", "title": "Carosello B 5/5 — Problemi + CTA", "x": 4640, "y": 3710, "w": 1080, "h": 1350 }
+  ],
+  "annotations": [
+    { "id": "note", "x": 0, "y": -150, "w": 1300, "text": "Campagna FIDUCIA (palette fumè).\nRiga 1: 3 STORIE autoconclusive (domanda → risposta).\nRiga 2: CAROSELLO A 'Come funziona' (step numerati).\nRiga 3: CAROSELLO B 'Le domande dei proprietari' (Q&A).\nTutto editabile: sposta, ridimensiona, cambia font, aggiungi immagini." }
+  ],
+  "launch": { "view": "canvas" }
+}
