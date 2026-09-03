@@ -1,16 +1,18 @@
 {
   "artboards": [
-    { "file": "Main.dc.html", "title": "Storia 1 — Hook", "x": 0, "y": 0, "w": 1080, "h": 1920 },
-    { "file": "Storia2.dc.html", "title": "Storia 2 — Agitazione", "x": 1160, "y": 0, "w": 1080, "h": 1920 },
-    { "file": "Storia3.dc.html", "title": "Storia 3 — Soluzione", "x": 2320, "y": 0, "w": 1080, "h": 1920 },
-    { "file": "Storia4.dc.html", "title": "Storia 4 — Prova (Rome Smart Sea)", "x": 3480, "y": 0, "w": 1080, "h": 1920 },
-    { "file": "Storia5.dc.html", "title": "Storia 5 — Offerta + CTA", "x": 4640, "y": 0, "w": 1080, "h": 1920 },
-    { "file": "Post1.dc.html", "title": "Post 1 — Rendita passiva", "x": 0, "y": 2140, "w": 1080, "h": 1080 },
-    { "file": "Post2.dc.html", "title": "Post 2 — Prova sociale", "x": 1160, "y": 2140, "w": 1080, "h": 1080 },
-    { "file": "ReelCover.dc.html", "title": "Reel — Copertina", "x": 2320, "y": 2140, "w": 1080, "h": 1920 }
+    { "file": "Main.dc.html", "title": "Storia A — Rendita/anti-stress", "x": 0, "y": 0, "w": 1080, "h": 1920 },
+    { "file": "StoriaB.dc.html", "title": "Storia B — Prova (Rome Smart Sea)", "x": 1160, "y": 0, "w": 1080, "h": 1920 },
+    { "file": "StoriaC.dc.html", "title": "Storia C — 15% / fiducia", "x": 2320, "y": 0, "w": 1080, "h": 1920 },
+    { "file": "Carosello1.dc.html", "title": "Carosello 1/5 — Hook", "x": 0, "y": 2140, "w": 1080, "h": 1350 },
+    { "file": "Carosello2.dc.html", "title": "Carosello 2/5 — Problema", "x": 1160, "y": 2140, "w": 1080, "h": 1350 },
+    { "file": "Carosello3.dc.html", "title": "Carosello 3/5 — Servizi", "x": 2320, "y": 2140, "w": 1080, "h": 1350 },
+    { "file": "Carosello4.dc.html", "title": "Carosello 4/5 — Prova", "x": 3480, "y": 2140, "w": 1080, "h": 1350 },
+    { "file": "Carosello5.dc.html", "title": "Carosello 5/5 — Offerta+CTA", "x": 4640, "y": 2140, "w": 1080, "h": 1350 },
+    { "file": "PostProva.dc.html", "title": "Post — Prova sociale", "x": 0, "y": 3710, "w": 1080, "h": 1350 },
+    { "file": "ReelCover.dc.html", "title": "Reel — Copertina", "x": 1160, "y": 3710, "w": 1080, "h": 1920 }
   ],
   "annotations": [
-    { "id": "flow-note", "x": 0, "y": -140, "w": 1200, "text": "Campagna acquisizione proprietari — case vacanza Roma/Ostia.\nRiga 1: le 5 storie (in sequenza). Riga 2: i 2 post feed + copertina reel.\nSostituire i placeholder [FOTO] con foto reali delle strutture prima della pubblicazione." }
+    { "id": "kit-note", "x": 0, "y": -150, "w": 1300, "text": "Kit social Hadrianus (palette grigio fumè).\nRiga 1: 3 STORIE autoconclusive (ognuna problema+soluzione+CTA).\nRiga 2: CAROSELLO feed (5 slide). Riga 3: post prova + copertina reel.\nTutto editabile: puoi spostare, ridimensionare, cambiare font, aggiungere immagini." }
   ],
   "launch": { "view": "canvas" }
 }

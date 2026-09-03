@@ -4,17 +4,18 @@
 **Elegante, rassicurante, "hotel-style".** Deve trasmettere lo stesso standard alberghiero che il copy promette: pulito, curato, premium ma accessibile — non "agenzia immobiliare aggressiva", non "cartello vendesi". Tono visivo mediterraneo/costiero (Roma, Ostia, mare) che parla di lifestyle e di rendita serena. Coerente con l'idea "il tuo immobile lavora, tu no": immagini che respirano, non affollate.
 
 ## Palette
-Palette costiera-premium, professionale e coerente su tutti i formati:
+Palette premium calda basata su un **grigio fumè** (niente blu navy — regola fissa). Il fumè è una miscela di nero, marrone e giallo: caldo, non freddo. Coerente su tutti i formati:
 
 | Ruolo | Colore | HEX | Uso |
 |---|---|---|---|
-| Base scuro | Blu notte / navy | `#0E2A47` | Sfondi storie problema/agitazione, testi forti |
+| Base scuro | Grigio fumè caldo | `#3F3A33` | Sfondi storie problema/soluzione, testi forti |
+| Base scuro (profondo) | Fumè profondo | `#2E2A25` | Fondo dei gradienti, contrasto |
 | Accento caldo | Oro sabbia | `#C8A24B` | Numeri chiave, CTA, dettagli premium |
-| Chiaro | Bianco caldo / sabbia | `#F5F0E6` | Sfondi post prova sociale, testo su scuro |
-| Secondario | Verde-acqua tenue | `#5B8C8A` | Icone servizi, dettagli |
-| Testo neutro | Grigio antracite | `#22262B` | Corpo su fondo chiaro |
+| Chiaro | Bianco caldo / sabbia | `#F5F0E6` | Sfondi prova sociale, testo su scuro |
+| Secondario | Pietra / oliva calda | `#9A8A63` | Etichette, icone, dettagli |
+| Testo neutro | Bruno scuro | `#26241F` | Corpo su fondo chiaro |
 
-L'oro sabbia è il colore dell'azione: appare solo su numeri-prova (183€, 5.0, 15%) e CTA, così l'occhio va sempre lì.
+L'oro sabbia è il colore dell'azione: appare solo su numeri-prova (183€, 5.0, 15%) e CTA, così l'occhio va sempre lì. Il fumè caldo sostituisce ovunque il vecchio navy.
 
 ## Tipografia
 - **Titoli/hook:** un sans-serif geometrico e deciso (peso bold/extrabold), maiuscolo o alto contrasto, per fermare lo scroll.

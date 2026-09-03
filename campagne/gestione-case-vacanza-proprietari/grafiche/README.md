@@ -2,11 +2,14 @@
 
 Grafiche editabili della campagna (canvas Claude Design). Ogni file `.dc.html` è un'artboard; `canvas.json` le dispone sulla canvas.
 
+Palette: **grigio fumè caldo** (niente blu navy). Tutto editabile come su Canva (sposta, ridimensiona, cambia font, aggiungi immagini).
+
 ## Contenuto
-- `Main.dc.html` → Storia 1 (hook)
-- `Storia2.dc.html` … `Storia5.dc.html` → storie 2-5
-- `Post1.dc.html` → post feed "rendita passiva"
-- `Post2.dc.html` → post feed "prova sociale / case study"
+- `Main.dc.html` → Storia A (rendita / anti-stress) — autoconclusiva
+- `StoriaB.dc.html` → Storia B (prova sociale Rome Smart Sea) — autoconclusiva
+- `StoriaC.dc.html` → Storia C (15% / fiducia) — autoconclusiva
+- `Carosello1.dc.html` … `Carosello5.dc.html` → carosello feed (5 slide)
+- `PostProva.dc.html` → post feed "prova sociale"
 - `ReelCover.dc.html` → copertina reel
 - `canvas.json` → layout della canvas
 
@@ -25,8 +28,9 @@ node "<base-dir-skill-design>/seed-canvas.mjs" \
   --template "<base-dir-skill-design>/payload.template.html" \
   --out social-kit-proprietari.html \
   --title "Kit Social Proprietari — Case Vacanza" \
-  --artboard Main.dc.html --artboard Storia2.dc.html --artboard Storia3.dc.html \
-  --artboard Storia4.dc.html --artboard Storia5.dc.html \
-  --artboard Post1.dc.html --artboard Post2.dc.html --artboard ReelCover.dc.html \
+  --artboard Main.dc.html --artboard StoriaB.dc.html --artboard StoriaC.dc.html \
+  --artboard Carosello1.dc.html --artboard Carosello2.dc.html --artboard Carosello3.dc.html \
+  --artboard Carosello4.dc.html --artboard Carosello5.dc.html \
+  --artboard PostProva.dc.html --artboard ReelCover.dc.html \
   --canvas canvas.json
 ```

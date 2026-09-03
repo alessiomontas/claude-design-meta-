@@ -2,7 +2,9 @@
 
 Tutte le immagini in `out/` sono **pronte da caricare** (formato e dimensioni corretti). Di seguito cosa pubblicare, in che ordine, con quale didascalia.
 
-Le immagini sono **grafiche autonome** (senza foto): funzionano così come sono. Se in futuro hai foto reali delle strutture, possiamo sostituire gli sfondi per aumentare ulteriormente la resa.
+**Palette:** grigio fumè caldo (niente blu navy). **Formato editabile:** ogni grafica è modificabile come su Canva nel canvas Claude Design → https://claude.ai/code/artifact/4cbc01e6-0fdf-40dc-8fc9-3d87f3295e75 (sposta/ridimensiona elementi, cambia font, aggiungi un'immagine sotto le scritte, poi esporta PNG). I PNG in `out/` sono l'export pronto all'upload.
+
+Le immagini sono **grafiche autonome** (senza foto): funzionano così come sono. Se in futuro hai foto reali delle strutture, possiamo aggiungerle direttamente nel canvas editabile.
 
 ---
 
@@ -45,15 +47,14 @@ File: `out/post-prova.png`
 
 ---
 
-## 3) STORIE — sequenza da 5, 1080×1920
-Pubblicare **in ordine, di fila, lo stesso giorno** (idealmente in evidenza in un Highlight "Gestione immobili"):
-1. `out/storia-1.png` — hook
-2. `out/storia-2.png` — agitazione
-3. `out/storia-3.png` — soluzione (i 4 servizi)
-4. `out/storia-4.png` — prova (Rome Smart Sea)
-5. `out/storia-5.png` — offerta 15% + CTA
+## 3) STORIE — 3 storie AUTOCONCLUSIVE, 1080×1920
+Ogni storia dà da sola problema + soluzione + CTA (non è un carosello). Puoi pubblicarle nello stesso giorno o distribuirle in giorni diversi: **funzionano anche singolarmente**.
 
-**Sticker suggeriti (aggiungibili in app):** sull'ultima storia, sticker "link" o "DM" con testo *CALCOLO*; sulle intermedie, sticker freccia/“continua”.
+- `out/storia-a.png` — **Rendita / anti-stress**: "Il tuo affitto breve è un secondo lavoro" → "Noi lo gestiamo come un hotel. Tu incassi e basta." → CTA CALCOLO.
+- `out/storia-b.png` — **Prova sociale**: "Una gestione qualunque nasconde quanto rende davvero" → numeri Rome Smart Sea → CTA RENDITA.
+- `out/storia-c.png` — **Fiducia / 15%**: "E se non rende? Mi fido a dare le chiavi?" → "Guadagniamo solo se guadagni tu: 15%" → CTA CALCOLO.
+
+**Sticker suggeriti (aggiungibili in app):** su ogni storia, sticker "link" o "DM" con la parola chiave della CTA (CALCOLO / RENDITA).
 
 ---
 
@@ -70,11 +71,11 @@ Lo **script/storyboard del video** è in `../copy.md` (sezione REEL): 6 scene, 2
 ---
 
 ## Ordine consigliato nel tempo
-1. **Giorno 1:** Reel (massimo reach) + le 5 Storie.
-2. **Giorno 2-3:** Carosello nel feed.
-3. **Giorno 5-6:** Post singolo prova sociale.
+1. **Giorno 1:** Reel (massimo reach) + Storia A (anti-stress).
+2. **Giorno 2-3:** Carosello nel feed + Storia B (prova).
+3. **Giorno 5-6:** Post singolo prova sociale + Storia C (15%/fiducia).
 Così chi arriva dal reel trova subito nel feed la prova (carosello + post) che abbatte la diffidenza.
 
 ## Note operative
 - Chi gestisce DM e commenti deve essere pronto a rispondere con la **simulazione gratuita** promessa (CALCOLO / RENDITA).
-- Le immagini sono rigenerabili: sorgenti in `src/`, script `render.mjs`.
+- Le immagini sono **editabili** nel canvas Claude Design (link in alto) e **rigenerabili**: sorgenti derivate in `src/`, artboard editabili in `../grafiche/*.dc.html`, script `build-and-render.mjs`.

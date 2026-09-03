@@ -38,6 +38,16 @@ Per ogni nuova campagna, l'ordine è sempre lo stesso e va rispettato:
 
 Il comando `/nuova-campagna` esegue questi passaggi in sequenza. Non saltare mai un passaggio, anche per contenuti "veloci": è il motivo per cui questo sistema esiste.
 
+## Preferenze fisse di output (memoria — valgono SEMPRE)
+
+Queste tre regole sono decise dall'utente e vanno rispettate in ogni contenuto, senza bisogno che le ripeta:
+
+1. **Ogni grafica deve essere EDITABILE come su Canva.** Non si consegnano mai solo immagini piatte come unica opzione. L'utente deve poter, sul risultato: aggiungere elementi (es. inserire un'immagine sotto le scritte), spostarli, ingrandirli/rimpicciolirli, cambiare font, modificare il testo inline. Strumento di default: **canvas Claude Design** (skill `design`) oppure **Canva** se collegato. I PNG pronti all'upload si possono fornire in aggiunta (export), mai al posto della versione editabile.
+
+2. **Vietato il blu navy.** La base scura del brand è un **grigio fumè caldo** — una miscela di nero, marrone e giallo (grigio-fumo, non freddo). Palette operativa definita in `campagne/<nome>/direzione-artistica.md`; il navy non va più usato in nessun contenuto.
+
+3. **Le storie sono autoconclusive, mai a carosello.** Ogni storia, da sola, dà **problema E soluzione**: testo concentrato in poche frasi impattanti + una risoluzione efficace che mette in evidenza i punti di forza Hadrianus e la CTA. Non spezzare una storia in una sequenza/carosello di più storie. (Il formato carosello resta valido solo per i POST del feed, non per le storie.)
+
 ## Regole non negoziabili
 
 - **Mai inventare claim, numeri, risultati o testimonianze.** Se un dato non è verificato, va segnalato come tale (es. "[DATO DA VERIFICARE]"), mai scritto come fatto.
