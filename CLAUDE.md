@@ -52,7 +52,7 @@ Queste tre regole sono decise dall'utente e vanno rispettate in ogni contenuto, 
 
 5. **Varia il design tra un contenuto/campagna e l'altro.** Mantieni sempre l'identità di brand (palette fumè + oro, tipografia Archivo/Manrope, tono), ma **cambia layout e composizione** a ogni nuovo comando/campagna, così le grafiche non sembrano tutte uguali: varia gerarchia, disposizione dei blocchi, uso di card/bande/griglie, punti focali. Stessa identità, esecuzione sempre fresca.
 
-6. **Post Facebook — formato fisso (SOLO Facebook).** Un post Facebook si compone sempre di **3 immagini da mostrare tutte e tre**: la 1ª **verticale 1080×1350** (porta il gancio e il problema), la 2ª e la 3ª **quadrate 1080×1080** (soluzione e offerta/CTA). Vale solo per i post Facebook; gli altri canali mantengono i loro formati.
+6. **Post Facebook — formato fisso (SOLO Facebook).** Un post Facebook si compone sempre di **3 immagini da mostrare tutte e tre**: la 1ª **verticale allungata 1080×1920 (9:16)** (porta il gancio e il problema), la 2ª e la 3ª **quadrate 1080×1080** (soluzione e offerta/CTA). La 1ª deve essere allungata 9:16 perché nel collage di Facebook (1 grande a sinistra + 2 quadrate a destra) la cella sinistra è stretta e alta: un 4:5 verrebbe tagliato ai lati. Vale solo per i post Facebook; gli altri canali mantengono i loro formati.
 
 ## Lessico di brand (regole fisse di copy — valgono SEMPRE)
 

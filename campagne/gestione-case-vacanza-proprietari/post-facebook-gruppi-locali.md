@@ -3,7 +3,7 @@
 Obiettivo: acquisire proprietari da gruppi Facebook locali, trasmettere affidabilità, innescare passaparola.
 Target: chi tiene la casa **sfitta**, chi la affitta **a lungo termine** (con timore morosità), chi gestisce **da solo** l'affitto breve senza risultati. Vedi `ricerca-pain-points-proprietari.md`.
 
-**Formato immagini (regola fissa FB): 3 immagini** — 1ª verticale 1080×1350 (gancio+problema), 2ª e 3ª quadrate 1080×1080 (soluzione, offerta+CTA). Da pubblicare tutte e tre.
+**Formato immagini (regola fissa FB): 3 immagini** — 1ª verticale allungata 1080×1920 (9:16) (gancio+problema), 2ª e 3ª quadrate 1080×1080 (soluzione, offerta+CTA). Da pubblicare tutte e tre.
 
 **Correzioni di brand applicate:** "guadagniamo solo se guadagni tu"; "standard alberghiero" (mai "hotel-style"); nessun riferimento a singole strutture (niente Rome Smart Sea).
 

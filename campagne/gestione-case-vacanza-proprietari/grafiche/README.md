@@ -11,7 +11,7 @@ Palette: **grigio fumè caldo** (niente blu navy). Tutto editabile come su Canva
 - `Carosello1.dc.html` … `Carosello5.dc.html` → carosello feed (5 slide)
 - `PostProva.dc.html` → post feed "affitto tradizionale vs casa vacanza" (confronto)
 - `ReelCover.dc.html` → copertina reel
-- `FbPost1.dc.html` (verticale) · `FbPost2.dc.html` · `FbPost3.dc.html` (quadrate) → post Facebook a 3 immagini
+- `FbPost1.dc.html` (verticale allungata 9:16, 1080×1920) · `FbPost2.dc.html` · `FbPost3.dc.html` (quadrate 1080×1080) → post Facebook a 3 immagini
 - `canvas.json` → layout della canvas
 
 ## Artefatto pubblicato (modificabile)
