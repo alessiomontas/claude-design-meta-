@@ -99,6 +99,7 @@ Confronto a due colonne (scuro "cosa evitare" / chiaro "cosa abbiamo"):
 |---|---|---|
 | `gestione-case-vacanza-proprietari` | box citazione+risposta, box checklist scuro | carosello 5 slide standard (intro→problema X-list→servizi grid 2×2→differenza check-list→CTA), confronto 2 colonne |
 | `instagram-fiducia-proprietari` | "virgolette" grandi + risposta in card, icona lucchetto | step numerati giganti (Carosello A), card domanda/risposta (Carosello B) |
+| `fai-da-te-vs-gestione-professionale` | devices per storia (notifica ospite mockup, calendario 7 giorni con giorno "fermo", sigillo circolare con foto reale busto Adriano ruotato), niente box con bordo sinistro | griglia "scontrino/ledger": header logo+"Voce 0X/05" + riga tratteggiata (perforazione) in cima e in fondo a ogni slide, spina verticale oro a sinistra del testo, leader tratteggiati orizzontali sulle voci, slide soluzione a sfondo chiaro (sabbia) come "sollievo" tra due slide scure, slide finale come "totale" con doppia riga e "15%" gigante |
 
 Quando parti da una nuova campagna, scegli deliberatamente un pattern NON in questa tabella (o una combinazione nuova) prima di scrivere il primo `.dc.html`.
 
