@@ -22,11 +22,13 @@ Hadrianus non si nomina nella prima riga.
 
 ### 1. Gancio A — la promessa sui 5 anni (consigliato)
 
-> Se tra cinque anni vorrai riprenderti il tuo immobile, te lo restituiamo in condizioni migliori di come ce lo hai consegnato.
+> Se tra cinque anni — o anche prima — vorrai riprenderti il tuo immobile, te lo restituiamo in condizioni migliori di come ce lo hai consegnato.
 >
 > Non è una speranza. È l'impegno che ci prendiamo noi.
 >
 > Oppure trova una gestione più efficiente della nostra. Valuta tu.
+>
+> 15% solo sulle prenotazioni generate · nessun costo fisso · pagamento il 10 di ogni mese
 
 ### 2. Gancio B — la domanda sulla tranquillità
 
@@ -38,7 +40,7 @@ Hadrianus non si nomina nella prima riga.
 
 ### 3. Gancio C — il contrasto secco (per i gruppi più freddi)
 
-> Affitto lungo: dopo cinque anni riprendi la casa e te la ritrovi da rifare.
+> Affitto lungo: dopo anni allo stesso inquilino riprendi la casa e te la ritrovi da rifare.
 >
 > Con noi: dopo cinque anni te la restituiamo in condizioni migliori di come ce l'hai consegnata. È l'impegno che ci prendiamo.
 >
@@ -66,7 +68,7 @@ Con noi: casa sempre in ordine, controllata a ogni check-out, secondo lo standar
 
 Affitto lungo: l'inquilino ti paga 800-900 € al mese. Tolte tasse e spese — condominio, TARI, manutenzione — il netto che ti resta è molto più basso.
 
-Con noi: 1.000-1.100 € di media al mese, al netto delle procedure di gestione — commissione, pulizie, biancheria, consumabili. Le utenze restano tue.
+Con noi: 1.000-1.100 € di media al mese su base annua, inverno compreso, al netto delle procedure di gestione — commissione, pulizie, biancheria, consumabili. Le utenze restano tue.
 
 È una media, non una promessa: ogni casa fa storia a sé.
 
