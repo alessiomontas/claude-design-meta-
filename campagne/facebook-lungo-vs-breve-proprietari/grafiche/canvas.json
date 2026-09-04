@@ -1,0 +1,12 @@
+{
+  "artboards": [
+    { "file": "Main.dc.html", "x": 0, "y": 0, "w": 1080, "h": 1920, "title": "1 · Verticale 9:16 — gancio + problema", "print": "fixed" },
+    { "file": "Numeri.dc.html", "x": 1240, "y": 0, "w": 1080, "h": 1080, "title": "2 · Quadrata 1:1 — i numeri", "print": "fixed" },
+    { "file": "Offerta.dc.html", "x": 1240, "y": 1240, "w": 1080, "h": 1080, "title": "3 · Quadrata 1:1 — offerta e CTA", "print": "fixed" }
+  ],
+  "annotations": [
+    { "id": "nota-formato", "x": 0, "y": -260, "w": 1080, "text": "Post Facebook — formato obbligato: 3 immagini.\n1ª verticale 1080×1920 (9:16), 2ª e 3ª quadrate 1080×1080.\nLa 1ª deve restare 9:16: nel collage Facebook un 4:5 viene tagliato ai lati." },
+    { "id": "nota-numeri", "x": 2400, "y": 0, "w": 460, "text": "Numeri bloccati dal copy: 800-900 € lordi, ~1.000 € netti in media sull'anno, 15%, bonifico il 10, cauzione max 3 mensilità (≈ 2.550 € su un bilocale da 850 €).\n\nNon aggiungere cifre: l'up-sell centro Roma / metro resta qualitativo.\n\nLa riga UTENZE ESCLUSE non va rimpicciolita né spostata: davanti a questo pubblico è credibilità." }
+  ],
+  "launch": { "view": "canvas" }
+}

@@ -5,3 +5,4 @@
 # grafiche/ tranne i sorgenti .dc.html delle singole artboard.
 campagne/**/grafiche/*.html
 !campagne/**/grafiche/*.dc.html
+campagne/facebook-lungo-vs-breve-proprietari/grafiche/post-facebook-lungo-vs-breve.html
