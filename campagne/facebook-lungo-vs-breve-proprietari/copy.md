@@ -54,7 +54,7 @@ Hadrianus non si nomina nella prima riga.
 
 **[GANCIO A / B / C]**
 
-Bilocale a Ostia. Stesso immobile, due strade.
+Stesso tipo di immobile, due strade.
 
 **LO STATO DELL'IMMOBILE**
 
@@ -66,7 +66,7 @@ Con noi: casa sempre in ordine, controllata a ogni check-out, secondo lo standar
 
 Affitto lungo: l'inquilino ti paga 800-900 € al mese. Tolte tasse e spese — condominio, TARI, manutenzione — il netto che ti resta è molto più basso.
 
-Con noi: 1.000-1.100 € netti di media al mese, con le procedure di gestione già pagate. Le utenze restano tue.
+Con noi: 1.000-1.100 € di media al mese, al netto delle procedure di gestione — commissione, pulizie, biancheria, consumabili. Le utenze restano tue.
 
 È una media, non una promessa: ogni casa fa storia a sé.
 
@@ -76,9 +76,11 @@ Affitto lungo: morosità, insoluti, danni. Il problema resta tuo.
 
 Con noi: un'assicurazione copre gli eventuali danni causati dagli ospiti. E il tuo pagamento arriva il 10 di ogni mese. Rigoroso.
 
+*(Assicurazione: prima di pubblicare, avere pronta per i commenti la risposta su chi la emette e cosa copre.)*
+
 ---
 
-E per partire non ti chiediamo un euro.
+E per partire non ti chiediamo nessun deposito.
 
 Nessun deposito cauzionale. Nessun anticipo, nessuna quota d'ingresso, nessun canone fisso.
 
@@ -88,7 +90,7 @@ Noi prendiamo solo il 15% sulle prenotazioni che generiamo davvero. Guadagniamo 
 
 ---
 
-La soluzione migliore per il tuo immobile è affidarlo a noi.
+Per il tuo immobile la nostra proposta è una sola: affidalo a noi e non pensarci più.
 
 Commenta qui sotto o scrivici in privato: ti prepariamo una **simulazione gratuita** sul tuo immobile.
 
