@@ -1,184 +1,171 @@
 # Copy — Facebook: affitto lungo vs gestione totale in affitto breve
 
+> **Versione 2 — riscrittura totale del 4 settembre 2026 su direttive del titolare.**
+> La versione 1 (post lungo, gancio "Dopo quattro anni ti riconsegnano le chiavi", corpo in 4 punti argomentati) è stata **bocciata dal titolare** e non va più usata, in nessun gruppo.
+> Nuovo mandato: **corto, marketing, contrasto negativo/positivo fortissimo**, leggibile in pochi secondi da mobile.
+
 ## Canale
 
-Post Facebook lungo, per **gruppi di categoria** (proprietari immobiliari, locatori, "affitti", "case Roma/Ostia").
-Formato mobile: paragrafi brevi, righe bianche, nessuna emoji.
-Angolo principale: **"La casa che ti restituiscono"** (angolo n. 2 del brief), con il conto economico come corpo e l'allineamento 15% come chiusura.
+Post Facebook **breve**, per gruppi di categoria (proprietari immobiliari, locatori, "affitti", "case Roma/Ostia").
+Formato mobile: paragrafi di 1-2 righe, molto respiro, nessuna emoji, nessun blocco argomentativo lungo.
+Angolo: **la sfida diretta** — la nostra gestione restituisce l'immobile meglio di come l'hai dato, e ti sfidiamo a trovarne una più efficiente.
 
-**Nota di canale:** mai lo stesso testo identico in più gruppi lo stesso giorno. Ruotare il gancio (A/C) tra un gruppo e l'altro. Dove il regolamento vieta la promozione, chiedere prima l'ok all'admin e usare la variante CTA "solo commenti" indicata in fondo.
+**Nota di canale:** mai lo stesso testo identico in più gruppi lo stesso giorno. Ruotare il gancio (A / B / C) tra un gruppo e l'altro. Dove il regolamento del gruppo vieta la promozione, chiedere prima l'ok all'admin.
 
 ---
 
 ## Varianti hook/apertura
 
-Le due aperture sono intercambiabili: il corpo del post resta identico. Nessuna nomina Hadrianus nella prima riga.
-Il gancio B (fiscale) è stato **ritirato dal consegnabile** per decisione del cliente: si trova in fondo al file, sezione "Archivio — non pubblicabile".
+Tre aperture intercambiabili. Il corpo del post resta identico.
+Tutte e tre chiudono con la **sfida diretta** voluta dal titolare: è l'elemento che dà sicurezza al post, non va ammorbidito né tolto.
+Hadrianus non si nomina nella prima riga.
 
-### 1. Gancio A — "La cauzione non basta" (usura — consigliato)
+### 1. Gancio A — la promessa sui 5 anni (consigliato)
 
-> Dopo quattro anni ti riconsegnano le chiavi.
+> Se tra cinque anni vorrai riprenderti il tuo immobile, te lo restituiamo in condizioni migliori di come ce lo hai consegnato.
 >
-> In mano hai una cauzione che per legge non può superare tre mensilità. E la normale usura, sempre per legge, la paghi tu.
+> Non è una speranza. È l'impegno che ci prendiamo noi.
 >
-> C'è un altro modo di far rendere la stessa casa. Senza cederla per quattro anni.
+> Oppure trova una gestione più efficiente della nostra. Valuta tu.
 
-### 2. Gancio C — "Il confronto che non hai mai fatto" (numeri)
+### 2. Gancio B — la domanda sulla tranquillità
 
-> Bilocale a Ostia, affitto lungo: 800-900 € lordi al mese. Lordi, le tasse le togli ancora tu.
+> Vuoi davvero stare tranquillo e non pensare più a nulla con il tuo immobile?
 >
-> Lo stesso tipo di immobile, in gestione completa: in media intorno ai 1.000 € netti al mese sull'intero anno.
+> Noi lo gestiamo per te. E se tra cinque anni vorrai riprendertelo, te lo restituiamo in condizioni migliori di come ce lo hai consegnato: è l'impegno che ci prendiamo.
 >
-> Il confronto non è tra due canoni. È tra quello che ti promettono e quello che ti resta.
+> Oppure trovane una più efficiente. Valuta tu.
 
-*Il più esposto ai commenti "questo è spam". Da usare nei gruppi orientati all'investimento immobiliare.*
+### 3. Gancio C — il contrasto secco (per i gruppi più freddi)
+
+> Affitto lungo: dopo cinque anni riprendi la casa e te la ritrovi da rifare.
+>
+> Con noi: dopo cinque anni te la restituiamo in condizioni migliori di come ce l'hai consegnata. È l'impegno che ci prendiamo.
+>
+> Oppure trova chi lo fa meglio di noi. Valuta tu.
 
 ---
 
 ## Testo completo
 
-*(inserire in apertura il gancio scelto, poi il corpo qui sotto)*
+*(in apertura il gancio scelto, poi il corpo qui sotto — invariato)*
 
 ---
 
-**[GANCIO A / C]**
+**[GANCIO A / B / C]**
 
-Premessa onesta, così nessuno perde tempo: noi gestiamo case a Roma e a Ostia, quindi siamo parte in causa. Ma i conti qui sotto li può rifare chiunque, e le norme che cito sono pubbliche.
+Bilocale a Ostia. Stesso immobile, due strade.
 
-E no, non sto dicendo che l'affitto breve convenga sempre. Su certi immobili il canone fisso resta la scelta giusta. Su un bilocale tra periferia e litorale, però, i conti spesso cambiano. Ecco i quattro punti dove cambiano.
+**LO STATO DELL'IMMOBILE**
 
-**1. Il canone certo che certo non è.**
+Affitto lungo: 3-4 anni alla stessa persona. Quando lo riprendi, te lo ritrovi da rifare.
 
-Con un 4+4 sai quanto prendi. Non sai se lo prendi.
+Con noi: casa sempre in ordine, controllata a ogni check-out, secondo lo standard alberghiero.
 
-E se smettono di pagare, il problema diventa tuo e basta: la casa è occupata, per rientrare in possesso passi da un tribunale, e intanto le spese continuano a correre. Non è colpa dell'inquilino, è come è costruito il contratto: tu ci hai messo la casa, il rischio è tutto da una parte sola.
+**I GUADAGNI REALI**
 
-Noi lavoriamo al contrario. Non c'è un inquilino, c'è un'attività: più la casa produce, più guadagniamo tutti. Tratteniamo il 15% sul fatturato generato, senza costi fissi. Guadagniamo solo se guadagni tu.
+Affitto lungo: l'inquilino ti paga 800-900 € al mese. Tolte tasse e spese — condominio, TARI, manutenzione — il netto che ti resta è molto più basso.
 
-Ogni mese vedi il report di quello che ha incassato la casa. Il bonifico arriva il 10.
+Con noi: 1.000-1.100 € netti di media al mese, con le procedure di gestione già pagate. Le utenze restano tue.
 
-**2. La gestione quotidiana, i guasti, le lamentele.**
+È una media, non una promessa: ogni casa fa storia a sé.
 
-Il rubinetto che perde a Ferragosto. Il vicino che scrive. Il check-in alle undici di sera, gli ospiti da seguire, le pulizie da incastrare, le comunicazioni con le piattaforme.
+**RISCHI E PAGAMENTI**
 
-Questa parte smette di arrivarti. Ti arriva un bonifico.
+Affitto lungo: morosità, insoluti, danni. Il problema resta tuo.
 
-Sugli obblighi non ti raccontiamo favole: quelli che la legge intesta al proprietario — il CIN e gli adempimenti connessi — restano in capo alla struttura. Ti affianchiamo, ma non ti diciamo che spariscono.
-
-Il bonifico ti arriva già netto della ritenuta, perché agiamo da sostituto d'imposta: sugli affitti brevi la tratteniamo e la versiamo noi. Ma la ritenuta non chiude automaticamente ogni obbligo dichiarativo: la tua posizione complessiva si chiude in dichiarazione con il commercialista, e se hai più immobili l'aliquota può non essere la stessa. Quello che smette di essere un tuo problema è la gestione, non la tua dichiarazione.
-
-**3. I numeri, senza trucchi.**
-
-Un bilocale a Ostia in affitto lungo oggi sta intorno agli 800-900 € lordi al mese, e i portali immobiliari confermano l'ordine di grandezza. Lordi: le tasse le togli ancora tu.
-
-Sui nostri immobili, un bilocale tra periferia e litorale genera in media intorno ai 1.000 € netti al mese, calcolati sull'intero anno. Inverno compreso, perché sappiamo già qual è la prima obiezione di chi legge da Ostia.
-
-E "netti" qui vuol dire netti davvero: al netto della nostra commissione, al netto di pulizie, biancheria e consumabili, al netto della ritenuta fiscale che versiamo noi. La dichiarazione poi la chiudi comunque con il tuo commercialista.
-
-Le utenze restano tue. Te lo diciamo adesso, così non lo scopri dopo: in un affitto lungo le paga l'inquilino, in gestione no.
-
-Ed è una media reale sugli immobili che gestiamo, non una simulazione e non una promessa. Ogni casa fa storia a sé. Nessuno che sia serio ti garantisce un rendimento prima di aver visto l'immobile.
-
-Un'ultima cosa, che secondo noi vale più di tutto il resto: quei numeri sono di periferia e litorale, dove la stagione pesa. Un immobile in centro a Roma, o a due passi da una metro, sente molto meno la stagione. Lì il confronto con il canone fisso cambia ancora.
-
-**4. La casa che ti restituiscono.**
-
-Questo è il punto che quasi nessuno mette nel conto.
-
-Dopo anni di locazione, la normale usura è a carico tuo. Pareti ingiallite, segni dei mobili, deperimento d'uso: per legge non te li risarcisce nessuno. L'inquilino risponde solo dei danni da uso scorretto.
-
-E la cauzione, per legge, non può superare tre mensilità (art. 11 L. 392/1978). Su un bilocale da 850 € parliamo di circa 2.550 €. Dopo quattro anni. O dopo otto. O dopo dodici. Fai tu il conto di cosa ci ripristini.
-
-Nell'affitto breve gestito il ripristino non arriva alla fine: è dentro il processo. A ogni check-out la casa viene pulita, controllata e rimessa in ordine secondo lo standard alberghiero. Non una volta l'anno, non a fine contratto. A ogni singolo ospite.
-
-Tradotto: la manutenzione della casa non è un conto che ti arriva tra quattro anni. È un lavoro che si fa dopo ogni soggiorno.
+Con noi: un'assicurazione copre gli eventuali danni causati dagli ospiti. E il tuo pagamento arriva il 10 di ogni mese. Rigoroso.
 
 ---
 
-Se vuoi vedere il conto sul tuo immobile, e non su un esempio, scrivi qui nei commenti (bastano zona e metratura) oppure mandaci un messaggio in privato.
+E per partire non ti chiediamo un euro.
 
-Ti prepariamo una simulazione gratuita sul tuo immobile: quanto potrebbe rendere, senza impegno.
+Nessun deposito cauzionale. Nessun anticipo, nessuna quota d'ingresso, nessun canone fisso.
 
-E se i numeri dicono che ti conviene restare sul canone fisso, te lo diciamo noi.
+Firmiamo il contratto. Prepariamo la documentazione. Pubblichiamo l'annuncio. Inizi a guadagnare.
+
+Noi prendiamo solo il 15% sulle prenotazioni che generiamo davvero. Guadagniamo solo se guadagni tu.
 
 ---
 
-### Variante CTA per gruppi che vietano la promozione
+La soluzione migliore per il tuo immobile è affidarlo a noi.
 
-> Se ti è utile, nei commenti rispondo volentieri a chi vuole ragionare sui numeri della propria casa: bastano zona e metratura. Chi vuole il conto scritto me lo chiede in privato, non lo pubblico qui per non fare promozione nel gruppo.
+Commenta qui sotto o scrivici in privato: ti prepariamo una **simulazione gratuita** sul tuo immobile.
+
+---
+
+## Claim da verificare
+
+Stato al 4 settembre 2026. Le direttive del titolare hanno introdotto **tre informazioni nuove** (nessun deposito cauzionale, assicurazione danni ospiti, 1.000-1.100 €) e **reintrodotto un claim precedentemente rimosso**. Sono i punti che il `compliance-checker` deve trattare per primi.
+
+### Punti che il compliance-checker deve leggere prima di tutto
+
+| # | Claim | Nota |
+|---|---|---|
+| 1 | **"te lo restituiamo in condizioni migliori di come ce lo hai consegnato"** (nei tre ganci) | **REINSERITO SU DECISIONE ESPLICITA DEL TITOLARE — non è una svista.** Era stato rimosso in compliance come garanzia di risultato futuro sullo stato dell'immobile. Il titolare lo rivuole: è una promessa che l'azienda sceglie di fare sul proprio servizio. Mitigazione già applicata in copy: è formulato come **impegno dell'azienda** ("è l'impegno che ci prendiamo noi"), mai come previsione impersonale o come dato. **Se la compliance ritiene comunque necessario ammorbidirlo, la decisione torna al titolare: non va riscritto in redazione.** [DATO DA VERIFICARE: esiste una formulazione contrattuale di questo impegno da cui allineare il wording?] |
+| 2 | **"un'assicurazione copre gli eventuali danni causati dagli ospiti"** | **CLAIM NUOVO E FORTE, fornito dal titolare.** In un gruppo di proprietari qualcuno lo chiederà nei commenti entro poche ore. **[DATO DA VERIFICARE: cosa copre esattamente (danni all'immobile, furti, danni a terzi), massimali, franchigie ed esclusioni; e soprattutto CHI la emette — polizza propria di Hadrianus o copertura della piattaforma di prenotazione.]** Prima della pubblicazione serve una risposta pronta per i commenti. Se la copertura è quella della piattaforma, il copy va corretto ("la copertura della piattaforma", non "un'assicurazione" generica): la differenza è sostanziale e questo pubblico la conosce. |
+| 3 | **"1.000-1.100 € netti di media al mese, con le procedure di gestione già pagate"** | **DATO AGGIORNATO DAL TITOLARE**, sostituisce il precedente "~1.000 €". Scritto come **media**, con caveat esplicito in copy ("È una media, non una promessa: ogni casa fa storia a sé"): non va tolto, è quello che rende il claim difendibile. **[DATO DA VERIFICARE: su quanti immobili e su quale arco temporale è calcolata la media, e cosa comprende esattamente il "netto".]** Perimetro dichiarato finora: netto di commissione 15%, pulizie, biancheria, consumabili e ritenuta versata da Hadrianus. |
+| 4 | **"Nessun deposito cauzionale. Nessun anticipo, nessuna quota d'ingresso, nessun canone fisso"** + processo (contratto → documentazione → annuncio → guadagni) + **15% solo sulle prenotazioni generate** | **INFORMAZIONE NUOVA, CONFERMATA DAL TITOLARE.** Coerente con il 15% senza costi fissi già consolidato nel brand. **[DATO DA VERIFICARE: non esistono davvero costi una tantum a carico del proprietario in fase di avvio — es. servizio fotografico, set biancheria iniziale, piccole sistemazioni pre-pubblicazione?]** Se ne esiste anche uno solo, la frase "non ti chiediamo un euro" va corretta prima di pubblicare: è il tipo di affermazione assoluta che, smentita in un commento, costa più di quanto renda. |
+
+### Regola vincolante che resta in vigore (dal round precedente)
+
+Oltre alle utenze, restano a carico del proprietario anche **TARI e oneri condominiali**. Il titolare ha deciso di non elencarli nel post.
+**Vincolo:** si possono omettere, **non si può affermare il contrario**. Vietata ogni formula assoluta del tipo "l'unica voce che resta tua", "tutto il resto è incluso", "nessun altro costo".
+Per questo il copy scrive **"con le procedure di gestione già pagate"** (perimetro chiuso: la gestione) e non "tutto già pagato", e mantiene la riga **"Le utenze restano tue."** — quattro parole che tengono in piedi l'onestà del confronto davanti a un pubblico competente. **Non tagliarla per guadagnare respiro.**
+
+### Confermati dal cliente, già scrivibili
+
+| # | Claim | Stato |
+|---|---|---|
+| 5 | "800-900 € al mese" per un bilocale a Ostia in affitto lungo | **CONFERMATO DAL CLIENTE**, coerente con l'ancoraggio dei portali immobiliari (~831 €/mese) |
+| 6 | "il tuo pagamento arriva il 10 di ogni mese" | **CONFERMATO DAL CLIENTE** come prassi effettiva. Non presentato come esclusiva (almeno un competitor romano dichiara lo stesso) |
+| 7 | Casa in ordine e controllata **a ogni check-out** secondo lo standard alberghiero | **CONFERMATO DAL CLIENTE** come standard operativo effettivo |
+| 8 | 15% sul fatturato generato, senza costi fissi — "Guadagniamo solo se guadagni tu" | **CONFERMATO DAL CLIENTE.** Formula esatta obbligatoria |
+
+### Verifiche di conformità rispettate nel testo (da non rompere in revisione)
+
+- Nessuna **percentuale di morosità** (le fonti oscillano tra 12% e 62% misurando cose diverse).
+- Nessun **tempo medio di sfratto**: non esiste una statistica ufficiale. Il post non cita durate.
+- Nessuna cifra né affermazione di performance sull'**up-sell centro Roma / vicinanza metro**.
+- Nessuna **struttura in gestione nominata** come prova.
+- Nessun **consiglio fiscale né confronto di aliquote**: "tasse e spese" descrive il carico del proprietario in affitto lungo, non spiega il fisco.
+- Correzione voluta rispetto alla dettatura del titolare: dove aveva scritto *"tasse e utenze"*, il copy scrive **"tasse e spese" (condominio, TARI, manutenzione)**. In un affitto lungo **le utenze le paga l'inquilino**: lasciare "utenze" avrebbe reso il confronto falso e smontabile al primo commento.
+- Nessuna colpevolizzazione degli inquilini: il contrasto è sulla **struttura del contratto**, non sulle persone.
+- "Guadagniamo solo se guadagni tu" (formula esatta) e "standard alberghiero" (mai "hotel-style").
 
 ---
 
 ## Nota per `art-director`
 
-Formato Facebook obbligato (3 immagini):
-- **img 1 — 1080×1920 (9:16):** gancio scelto + il conto della cauzione (max 3 mensilità, usura a carico tuo).
-- **img 2 — 1080×1080:** la comparazione dei numeri (800-900 lordi vs ~1.000 netti in media, con la riga "utenze escluse" ben visibile: la trasparenza è il gancio).
-- **img 3 — 1080×1080:** come funziona con noi — 15%, "guadagniamo solo se guadagni tu", pagamento il 10, standard alberghiero a ogni check-out + CTA.
+Formato Facebook obbligato (3 immagini). **Design nuovo rispetto alla v1**: qui il registro è marketing secco e contrasto, non documentale.
 
-### Correzioni obbligatorie in grafica (dai bloccanti compliance)
+- **img 1 — 1080×1920 (9:16) — IL GANCIO.**
+  Il gancio scelto (A / B / C), nient'altro. Massimo tre blocchi di testo, gerarchia forte sulla prima riga.
+  La **sfida finale** — *"Oppure trovane una più efficiente. Valuta tu."* — va trattata come firma visiva: staccata, più piccola, ma leggibilissima. È il tono voluto dal titolare, non va annegata.
 
-La grafica circola da sola: queste formule vanno messe **alla lettera**, non parafrasate.
+- **img 2 — 1080×1080 — LA TABELLA DI PARAGONE.**
+  Due colonne, contrasto negativo a sinistra / positivo a destra, **3 righe**. Il contrasto cromatico deve leggersi in mezzo secondo, anche in anteprima piccola.
 
-- `Numeri.dc.html` — riga "netti": sostituire *"Netti della nostra commissione, di pulizie, biancheria, consumabili e tasse"* con:
-  > **Netti della nostra commissione, di pulizie, biancheria e consumabili, e della ritenuta fiscale che versiamo noi.**
-- `Numeri.dc.html` — riga di caveat fiscale (nuova, obbligatoria, leggibile senza zoom sotto la riga precedente):
-  > **La ritenuta non chiude ogni obbligo: la dichiarazione la chiudi con il tuo commercialista.**
-- `Numeri.dc.html` — banda utenze: eliminare *"È l'unico pezzo di conto che devi aggiungere da solo"*. Sostituire con:
-  > **Le utenze restano tue. In un affitto lungo le paga l'inquilino, in gestione no.**
-  Nessuna formula assoluta ("solo", "unica", "l'unico"): il perimetro dei costi a carico del proprietario non è esaustivo.
-- `Numeri.dc.html` — titolo: *"Stesso tipo di immobile, due modi di farlo rendere."* (le due barre non descrivono lo stesso immobile: allineare il titolo ai dati).
-- `Offerta.dc.html` — togliere *"rimessa a nuovo"*:
-  > **Pulita e controllata a ogni check-out, secondo lo standard alberghiero.**
-- Invariato: nessuna cifra sul centro Roma/metro, nessuna percentuale di morosità, nessun tempo di sfratto, nessuna struttura nominata.
+  | | Affitto lungo | Con Hadrianus |
+  |---|---|---|
+  | **Stato dell'immobile** | 3-4 anni alla stessa persona: quando lo riprendi, te lo ritrovi da rifare | Casa sempre in ordine, controllata a ogni check-out, standard alberghiero |
+  | **Guadagni reali** | 800-900 € al mese, ma tolte tasse e spese il netto reale è molto più basso | **1.000-1.100 € netti di media al mese**, procedure di gestione già pagate |
+  | **Rischi e pagamenti** | Morosità, insoluti, danni | Assicurazione sui danni causati dagli ospiti + pagamento il 10 di ogni mese |
 
----
+  **Obbligatorio in questa immagine** (la grafica circola da sola, quindi le formule vanno messe alla lettera):
+  - sotto la riga dei guadagni: **"Media, non una promessa: ogni casa fa storia a sé."**
+  - e **"Le utenze restano tue."** — leggibile senza zoom.
+  - Nessuna formula assoluta sui costi ("tutto incluso", "l'unica spesa"): vietata dalla regola vincolante sopra.
+  - Nella colonna sinistra scrivere **"tasse e spese"**, mai "tasse e utenze".
 
-## Claim da verificare prima della pubblicazione
+- **img 3 — 1080×1080 — COME SI PARTE + CTA.**
+  Il processo in 4 passi, uno per riga: **firma del contratto → documentazione → pubblicazione dell'annuncio → inizi a guadagnare.**
+  Poi, in evidenza: **"Nessun deposito cauzionale. Nessun anticipo, nessuna quota d'ingresso, nessun canone fisso."**
+  Poi: **"Solo il 15% sulle prenotazioni generate. Guadagniamo solo se guadagni tu."**
+  Chiusura: **"Simulazione gratuita sul tuo immobile — commenta o scrivici in privato."**
 
-Stato al 4 settembre 2026, dopo le decisioni del titolare. I claim operativi del post sono **confermati dal cliente**; restano aperti solo i due punti qui sotto marcati come tali.
-
-### Confermati dal cliente (forniti direttamente dal titolare)
-
-| # | Claim nel testo | Stato |
-|---|---|---|
-| 1 | "in media intorno ai 1.000 € netti al mese sull'intero anno", presentato come **media reale sugli immobili in gestione** | **CONFERMATO DAL CLIENTE.** Media reale su immobili effettivamente in gestione, non una simulazione. Aperto solo il dettaglio di numerosità del campione e periodo (vedi sotto) |
-| 2 | "800-900 € lordi al mese" per un bilocale a Ostia | **CONFERMATO DAL CLIENTE.** Coerente con l'ancoraggio di portale (~831 €/mese), già attribuito nel testo ("i portali immobiliari confermano l'ordine di grandezza") |
-| 3 | "Il bonifico arriva il 10" | **CONFERMATO DAL CLIENTE** come prassi effettiva. Non presentato come esclusiva |
-| 4 | "agiamo da sostituto d'imposta… il bonifico ti arriva già netto della ritenuta" | **CONFERMATO DAL CLIENTE** nel perimetro della ritenuta sugli affitti brevi. Il testo ora dice esplicitamente che la ritenuta **non chiude ogni obbligo dichiarativo** (conguaglio in dichiarazione, aliquota diversa dal secondo immobile) e rimanda al commercialista: mantenere questo caveat sia nel copy sia in grafica |
-| 5 | "Tratteniamo il 15% sul fatturato generato, **senza costi fissi**" | **CONFERMATO DAL CLIENTE.** Nessuna quota d'ingresso, nessun canone mensile: Hadrianus incassa solo il 15% sul fatturato. Formula scrivibile |
-| 6 | Utenze a carico del proprietario; pulizie, biancheria, consumabili e gestione dentro il 15% | **CONFERMATO DAL CLIENTE.** Vedi sotto la regola sui costi non elencati |
-| 7 | "Ogni mese vedi il report di quello che ha incassato la casa" | **CONFERMATO DAL CLIENTE**: report mensile accessibile |
-| 8 | Pulizia, controllo e ripristino della casa **a ogni check-out** secondo lo standard alberghiero | **CONFERMATO DAL CLIENTE** come standard operativo effettivo. Nel copy il beneficio è ora descritto come processo ricorrente, non come garanzia sullo stato futuro dell'immobile |
-| 9 | Cauzione max 3 mensilità (art. 11 L. 392/1978) e normale usura a carico del locatore | Norma pubblica, verificata. Controllare solo la corretta citazione dell'articolo in grafica |
-
-### Regola vincolante sui costi a carico del proprietario
-
-Oltre alle utenze, restano a carico del proprietario anche **TARI e oneri condominiali**. Il cliente ha deciso di **non elencarli nel post** (il post mostra i benefici).
-**Vincolo da rispettare in ogni revisione, copy e grafica:** si possono omettere, **non si può affermare il contrario**. Vietata qualsiasi formula assoluta del tipo "resta a carico tuo una voce sola", "l'unico pezzo di conto", "tutto il resto è incluso". La formula ammessa è non esaustiva: *"Le utenze restano tue."*
-Il perimetro dei ~1.000 € netti (netti di commissione, pulizie, biancheria, consumabili e ritenuta) resta scrivibile: è l'elenco di **cosa è compreso**, non una dichiarazione che non esista altro.
-
-### Ancora aperti
-
-| # | Punto | Cosa manca |
-|---|---|---|
-| A | Numerosità del campione e periodo su cui è calcolata la media dei ~1.000 € | **[DATO DA VERIFICARE: su quanti immobili e su quale arco temporale].** Il copy non dichiara un campione, quindi il claim resta difendibile; se però gli immobili sono pochi o il periodo è una sola stagione, ammorbidire in *"sugli immobili che gestiamo abbiamo visto in media…"* |
-| B | Up-sell centro Roma / vicinanza metro | **[DATO DA VERIFICARE: nessuna cifra disponibile per il centro di Roma].** Volutamente qualitativo, allineato alla grafica. **Non aggiungere numeri né affermazioni di occupazione** in revisione o in grafica |
-
-Il gancio B (fiscale, canoni non percepiti) è stato **ritirato dal consegnabile** e archiviato in fondo a questo file: richiede validazione di un commercialista e non è pubblicabile.
-
-**Verifiche di conformità già rispettate nel testo (da non rompere in revisione):**
-- Nessun rendimento garantito, in nessuna forma.
-- Nessuna percentuale di morosità.
-- Nessun tempo medio di sfratto (il testo dice solo "passi da un tribunale", senza durate).
-- Nessun confronto di aliquote né consiglio fiscale.
-- Nessun costo di ripristino inventato: l'unico numero è il tetto di legge della cauzione.
-- Nessuna struttura in gestione nominata.
-- "Guadagniamo solo se guadagni tu" (formula esatta) e "standard alberghiero" (mai "hotel-style").
-- Utenze dichiarate esplicitamente, non nascoste — e senza formule assolute sul resto dei costi.
-- Nessuna garanzia sullo stato futuro dell'immobile: solo il processo ripetuto a ogni check-out.
-- Nessuna assunzione di obblighi che la legge intesta al proprietario (CIN e adempimenti connessi restano in capo alla struttura, ed è scritto nel post).
-- Nessuna affermazione di occupazione o performance sul centro di Roma.
+**Vincoli invariati:** niente blu navy (base grigio fumè caldo), grafiche editabili (mai immagini piatte), nessuna cifra sul centro Roma/metro, nessuna percentuale di morosità, nessun tempo di sfratto, nessuna struttura nominata, mai "hotel-style".
+**Blocco in grafica:** i claim 1, 2 e 4 della tabella "Claim da verificare" **non vanno impaginati come definitivi** finché il compliance-checker non li ha chiusi con il titolare — in particolare l'assicurazione, che in grafica diventa ancora più assertiva che nel testo.
 
 ---
 
@@ -198,4 +185,4 @@ Materiale **ritirato dal consegnabile per decisione del cliente**. Non usare, no
 **[DATO DA VERIFICARE: validazione scritta di un commercialista sulle due condizioni citate — contratti stipulati dal 1° gennaio 2020; detassazione solo dall'intimazione di sfratto o dall'ingiunzione di pagamento.]** Base normativa indicata dalla ricerca: art. 26 TUIR come modificato dall'art. 3-quinquies D.L. 34/2019.
 **Condizione per un eventuale riutilizzo futuro:** validazione del commercialista + rimando esplicito nell'apertura ("verifica la tua posizione con il tuo commercialista"). Senza entrambe, resta non pubblicabile.
 
-**Conseguenza operativa:** la rotazione tra gruppi resta su due aperture (A e C). Se serve una terza variante per non ripetere lo stesso testo, il candidato naturale è la riga d'apertura del punto 1 del corpo — *"Con un 4+4 sai quanto prendi. Non sai se lo prendi."* — che regge da sola come gancio e non introduce claim nuovi.
+**Conseguenza operativa:** la rotazione tra gruppi si regge sui tre ganci della versione 2 (A, B, C), tutti costruiti sulle direttive del titolare e senza claim fiscali.
