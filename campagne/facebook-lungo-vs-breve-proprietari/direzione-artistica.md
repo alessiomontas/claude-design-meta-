@@ -46,17 +46,21 @@ Chiusura in basso a sinistra, che apre alla seconda immagine: "C'è un altro mod
 
 > Nota di precisione normativa: l'articolo è citato **solo** accanto al deposito cauzionale, che è ciò che l'art. 11 L. 392/1978 disciplina. La normale usura è una scheda separata, senza riferimento di legge — errore facile e verificabile in dieci secondi da chiunque in quei gruppi.
 
-**Immagine 2 — cosa si nota per primo:** le due barre. Sono in **scala proporzionale onesta** (74% e 87% della larghezza utile, cioè ~850 contro ~1.000), non ridisegnate per esagerare il divario. Ogni barra porta due etichette non ambigue: `LORDI` sulla prima (fumè scuro), `NETTI` sulla seconda (oro). Sotto ciascuna, in corpo piccolo, cosa significa davvero — "le tasse le togli ancora tu" / "netti della nostra commissione, di pulizie, biancheria, consumabili e tasse".
+**Immagine 2 — cosa si nota per primo:** il titolo *"Stesso tipo di immobile, due modi di farlo rendere."* (allineato ai dati: la prima barra è un bilocale a Ostia, la seconda un paniere periferia e litorale — il titolo non può dire "lo stesso bilocale"), poi subito le due barre. Sono in **scala proporzionale onesta** (74% e 87% della larghezza utile, cioè ~850 contro ~1.000), non ridisegnate per esagerare il divario. Ogni barra porta due etichette non ambigue: `LORDI` sulla prima (fumè scuro), `NETTI` sulla seconda (oro). Sotto ciascuna, in corpo piccolo, cosa significa davvero — *"Lordi: le tasse le togli ancora tu"* / *"Netti della nostra commissione, di pulizie, biancheria e consumabili, e della ritenuta fiscale che versiamo noi."*
 
-**La riga "utenze escluse" è trattata come un elemento di pari rango, non come una postilla:** banda piena `#2E2A25` a tutta larghezza, "UTENZE / ESCLUSE" in Archivo 900 oro, separatore verticale, e la spiegazione per esteso. Davanti a questo pubblico è il pezzo che compra credibilità: chi legge sta già cercando la fregatura, e la trova dichiarata da noi prima che la trovi lui. **Non va rimpicciolita, spostata in fondo, né resa una nota in grigio.**
+Sotto la riga "netti", con una barretta oro a sinistra e allo stesso corpo delle altre didascalie (24px, leggibile senza zoom), il **caveat fiscale obbligatorio**: *"La ritenuta non chiude ogni obbligo: la dichiarazione la chiudi con il tuo commercialista."* La grafica circola da sola, quindi il caveat che nel copy sta al punto 2 deve stare anche qui.
+
+**La riga "utenze escluse" è trattata come un elemento di pari rango, non come una postilla:** banda piena `#2E2A25` a tutta larghezza, "UTENZE / ESCLUSE" in Archivo 900 oro, separatore verticale, e la formula ammessa dal compliance: *"Le utenze restano tue. In un affitto lungo le paga l'inquilino, in gestione no."* Nessuna formula assoluta ("una voce sola", "l'unico pezzo di conto"): TARI e oneri condominiali non sono elencati per scelta del cliente, ma la grafica non può affermare che non esistano. Davanti a questo pubblico è il pezzo che compra credibilità: chi legge sta già cercando la fregatura, e la trova dichiarata da noi prima che la trovi lui. **Non va rimpicciolita, spostata in fondo, né resa una nota in grigio.**
 
 Chiusura: la riga di cautela ("media reale, non una simulazione e non una promessa: ogni casa fa storia a sé") e l'up-sell centro Roma/metro, **volutamente senza alcuna cifra**.
 
-**Immagine 3 — cosa si nota per primo:** la foto reale. Banda fotografica 1080×392 in alto (`brand-assets/immobili/cucina-soggiorno-open-space.png`, ritagliata 2.57:1 e ricompressa), con gradiente fumè sopra e sotto per far reggere il testo. In basso sulla foto: "La casa che ti restituiamo" in oro e "Pulita, controllata e rimessa a nuovo a ogni check-out". La foto è la prova visiva dello standard alberghiero — la promessa del punto 4 del copy diventa qualcosa che si vede.
+**Immagine 3 — cosa si nota per primo:** la foto reale. Banda fotografica 1080×392 in alto (`brand-assets/immobili/cucina-soggiorno-open-space.png`, ritagliata 2.57:1 e ricompressa), con gradiente fumè sopra e sotto per far reggere il testo. In basso sulla foto: "La casa che ti restituiamo" in oro, il titolo *"Pulita e controllata a ogni check-out, secondo lo standard alberghiero."* e, sotto, la riga di processo *"La manutenzione non è un conto che ti arriva tra quattro anni: è un lavoro che si fa dopo ogni soggiorno."* La foto è la prova visiva dello standard alberghiero — il punto 4 del copy diventa qualcosa che si vede. Il gradiente sulla foto è stato reso più profondo nella metà bassa (0.12 al 26%, 0.58 al 52%, 0.94 al 100%) perché la riga di processo resti leggibile.
+
+> Nessuna promessa sullo stato futuro dell'immobile: la grafica descrive **un processo che si ripete a ogni check-out**, mai un risultato garantito. Vietato "rimessa a nuovo", "come nuova", "meglio di come l'hai lasciata".
 
 Sotto, il quadro delle condizioni in tre righe numerate `01/02/03` separate da hairline: 15% sul fatturato senza costi fissi, bonifico il 10, report mensile. Poi la formula esatta di brand in oro, corpo 42: **"Guadagniamo solo se guadagni tu."**
 
-CTA: banda piena oro ad angoli vivi (non una pill — coerente col linguaggio documentale), "Scrivi zona e metratura nei commenti o in privato", con sotto la proiezione gratuita e la promessa di onestà ("se ti conviene restare sul canone fisso, te lo diciamo noi").
+CTA: banda piena oro ad angoli vivi (non una pill — coerente col linguaggio documentale), "Scrivi zona e metratura nei commenti o in privato", con sotto la **simulazione gratuita** ("quanto potrebbe rendere, senza impegno" — formula del lessico di brand, non "proiezione dei guadagni") e la promessa di onestà ("se ti conviene restare sul canone fisso, te lo diciamo noi").
 
 **Scelta della foto:** usata `cucina-soggiorno-open-space.png`. Scartata `smart-tv-streaming-mockup.jpg` per il problema dei marchi di terzi (Netflix/Prime/Disney+ — vedi `brand-assets/README.md`). La foto è illustrativa dello standard, non prova sociale di una struttura nominata.
 
@@ -66,6 +70,9 @@ CTA: banda piena oro ad angoli vivi (non una pill — coerente col linguaggio do
 - **Toni da inserzione**: cifre giganti isolate su fondo pieno, frecce che urlano, badge "OFFERTA", countdown, emoji. In un gruppo di categoria è il segnale che fa scattare il commento "questa è pubblicità, l'admin dovrebbe cancellarla".
 - **Barre non proporzionali** o assi tagliati per gonfiare il divario 850 → 1.000. Questo pubblico rifà i conti e smonta il grafico nei commenti.
 - **Nascondere o attenuare le utenze.** Il valore dell'immagine 2 sta esattamente lì.
+- **Formule assolute sui costi a carico del proprietario** ("una voce sola", "l'unico pezzo di conto", "tutto il resto è incluso"): TARI e oneri condominiali non sono elencati per scelta del cliente, quindi si possono omettere ma mai smentire.
+- **Promesse sullo stato futuro dell'immobile** ("rimessa a nuovo", "come nuova", "meglio di come l'hai consegnata"): in grafica passa solo il processo che si ripete a ogni check-out.
+- **"Netti delle tasse"** o qualunque formulazione che faccia credere che la ritenuta chiuda la posizione fiscale del proprietario: la ritenuta è ciò che versiamo noi, la dichiarazione la chiude il suo commercialista — e il caveat va scritto nell'immagine, non solo nel post.
 - **Aggiungere cifre non presenti nel copy**, in particolare qualunque numero sul rendimento in centro Roma o vicino alla metro: il claim resta qualitativo per scelta (claim #9 del copy, `[DATO DA VERIFICARE]`).
 - **Attribuire l'art. 11 L. 392/1978 alla normale usura**: disciplina il deposito cauzionale.
 - **Rendimenti garantiti, percentuali di morosità, tempi medi di sfratto, confronti di aliquote**: nessuno di questi entra in grafica, come già nel copy.
@@ -89,4 +96,20 @@ Sorgenti in `campagne/facebook-lungo-vs-breve-proprietari/grafiche/`:
 
 Sul canvas si modificano testo, colori, dimensioni e posizioni di ogni elemento, e si esportano le tre immagini in PNG dalla toolbar (Export). Per rigenerare il canvas dopo una modifica ai sorgenti, si ri-assembla dai `.dc.html` e si ripubblica sullo stesso link.
 
-**Gancio da inserire nella 1ª immagine:** il testo attuale corrisponde al **gancio A** ("La cauzione non basta"), quello consigliato dal copy. Se si ruota su gancio B o C per un altro gruppo, va cambiata la headline dell'artboard `Main` di conseguenza — il resto del trittico regge invariato.
+**Gancio da inserire nella 1ª immagine:** il testo attuale corrisponde al **gancio A** ("La cauzione non basta"), quello consigliato dal copy — verificato dopo le correzioni compliance. Se si ruota sul **gancio C** (il confronto dei numeri) per un altro gruppo, va cambiata la headline dell'artboard `Main` di conseguenza; il resto del trittico regge invariato. Il **gancio B** (tasse sui canoni non incassati) è ritirato dal consegnabile: non deve comparire in nessun artboard.
+
+## Correzioni compliance applicate (4 settembre 2026)
+
+Correzioni di testo, non un redesign: palette fumè, formati (1080×1920 + 2 × 1080×1080) e layout "scheda tecnica/perizia" invariati; nessuna cifra nuova e nessun numero sull'up-sell centro Roma/metro.
+
+| Artboard | Prima | Dopo |
+|---|---|---|
+| `Numeri.dc.html` | "Lo stesso bilocale, due modi di farlo rendere." | "Stesso tipo di immobile, due modi di farlo rendere." |
+| `Numeri.dc.html` | "…di pulizie, biancheria, consumabili e tasse." | "…di pulizie, biancheria e consumabili, e della ritenuta fiscale che versiamo noi." |
+| `Numeri.dc.html` | (assente) | Nuova riga di caveat fiscale con barretta oro: "La ritenuta non chiude ogni obbligo: la dichiarazione la chiudi con il tuo commercialista." |
+| `Numeri.dc.html` | "Restano a carico tuo… È l'unico pezzo di conto che devi aggiungere da solo." | "Le utenze restano tue. In un affitto lungo le paga l'inquilino, in gestione no." (banda invariata per dimensione e posizione) |
+| `Offerta.dc.html` | "Pulita, controllata e rimessa a nuovo a ogni check-out." | "Pulita e controllata a ogni check-out, secondo lo standard alberghiero." + riga di processo sulla manutenzione |
+| `Offerta.dc.html` | "una proiezione dei guadagni sulla tua casa" | "una simulazione gratuita sul tuo immobile: quanto potrebbe rendere, senza impegno" |
+| `Main.dc.html` | — | Verificato: headline sul **gancio A** (cauzione max 3 mensilità + normale usura). Nessuna traccia del gancio B in nessun artboard. |
+
+Micro-aggiustamenti tipografici solo per far entrare la riga di caveat senza toccare la banda utenze: titolo 58 → 54px, didascalie 25 → 24px, interlinea 1.32 → 1.28, padding del frame 52/48 → 48/44, gap tra le barre 30 → 26px. Le barre proporzionali (74% e 87%) e la banda "UTENZE ESCLUSE" restano identiche.

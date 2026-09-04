@@ -1,12 +1,50 @@
 {
   "artboards": [
-    { "file": "Main.dc.html", "x": 0, "y": 0, "w": 1080, "h": 1920, "title": "1 · Verticale 9:16 — gancio + problema", "print": "fixed" },
-    { "file": "Numeri.dc.html", "x": 1240, "y": 0, "w": 1080, "h": 1080, "title": "2 · Quadrata 1:1 — i numeri", "print": "fixed" },
-    { "file": "Offerta.dc.html", "x": 1240, "y": 1240, "w": 1080, "h": 1080, "title": "3 · Quadrata 1:1 — offerta e CTA", "print": "fixed" }
+    {
+      "file": "Main.dc.html",
+      "x": 0,
+      "y": 0,
+      "w": 1080,
+      "h": 1920,
+      "title": "1 · Verticale 9:16 — gancio + problema",
+      "print": "fixed"
+    },
+    {
+      "file": "Numeri.dc.html",
+      "x": 1240,
+      "y": 0,
+      "w": 1080,
+      "h": 1080,
+      "title": "2 · Quadrata 1:1 — i numeri",
+      "print": "fixed"
+    },
+    {
+      "file": "Offerta.dc.html",
+      "x": 1240,
+      "y": 1240,
+      "w": 1080,
+      "h": 1080,
+      "title": "3 · Quadrata 1:1 — offerta e CTA",
+      "print": "fixed"
+    }
   ],
   "annotations": [
-    { "id": "nota-formato", "x": 0, "y": -260, "w": 1080, "text": "Post Facebook — formato obbligato: 3 immagini.\n1ª verticale 1080×1920 (9:16), 2ª e 3ª quadrate 1080×1080.\nLa 1ª deve restare 9:16: nel collage Facebook un 4:5 viene tagliato ai lati." },
-    { "id": "nota-numeri", "x": 2400, "y": 0, "w": 460, "text": "Numeri bloccati dal copy: 800-900 € lordi, ~1.000 € netti in media sull'anno, 15%, bonifico il 10, cauzione max 3 mensilità (≈ 2.550 € su un bilocale da 850 €).\n\nNon aggiungere cifre: l'up-sell centro Roma / metro resta qualitativo.\n\nLa riga UTENZE ESCLUSE non va rimpicciolita né spostata: davanti a questo pubblico è credibilità." }
+    {
+      "id": "nota-formato",
+      "x": 0,
+      "y": -260,
+      "w": 1080,
+      "text": "Post Facebook — formato obbligato: 3 immagini.\n1ª verticale 1080×1920 (9:16), 2ª e 3ª quadrate 1080×1080.\nLa 1ª deve restare 9:16: nel collage Facebook un 4:5 viene tagliato ai lati."
+    },
+    {
+      "id": "nota-numeri",
+      "x": 2400,
+      "y": 0,
+      "w": 460,
+      "text": "Numeri bloccati dal copy: 800-900 € lordi, ~1.000 € netti in media sull'anno, 15%, bonifico il 10, cauzione max 3 mensilità (≈ 2.550 € su un bilocale da 850 €).\n\nNon aggiungere cifre: l'up-sell centro Roma / metro resta qualitativo.\n\nLa riga UTENZE ESCLUSE non va rimpicciolita né spostata: davanti a questo pubblico è credibilità.\n\nFORMULE OBBLIGATE DA COMPLIANCE (non parafrasare):\n· \"Netti della nostra commissione, di pulizie, biancheria e consumabili, e della ritenuta fiscale che versiamo noi.\"\n· \"La ritenuta non chiude ogni obbligo: la dichiarazione la chiudi con il tuo commercialista.\"\n· \"Le utenze restano tue. In un affitto lungo le paga l'inquilino, in gestione no.\" — mai formule assolute (\"solo\", \"l'unico\").\n· Scheda 03: \"Pulita e controllata a ogni check-out, secondo lo standard alberghiero.\" — mai \"rimessa a nuovo\" né promesse sullo stato futuro dell'immobile."
+    }
   ],
-  "launch": { "view": "canvas" }
+  "launch": {
+    "view": "canvas"
+  }
 }
