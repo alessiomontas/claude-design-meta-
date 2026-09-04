@@ -6,7 +6,7 @@
       "y": 0,
       "w": 1080,
       "h": 1920,
-      "title": "1 · Verticale 9:16 — gancio + problema",
+      "title": "1 · Verticale 9:16 — il gancio (promessa 5 anni + sfida)",
       "print": "fixed"
     },
     {
@@ -15,7 +15,7 @@
       "y": 0,
       "w": 1080,
       "h": 1080,
-      "title": "2 · Quadrata 1:1 — i numeri",
+      "title": "2 · Quadrata 1:1 — tabella di paragone",
       "print": "fixed"
     },
     {
@@ -24,7 +24,7 @@
       "y": 1240,
       "w": 1080,
       "h": 1080,
-      "title": "3 · Quadrata 1:1 — offerta e CTA",
+      "title": "3 · Quadrata 1:1 — come si parte + CTA",
       "print": "fixed"
     }
   ],
@@ -32,16 +32,16 @@
     {
       "id": "nota-formato",
       "x": 0,
-      "y": -260,
+      "y": -300,
       "w": 1080,
-      "text": "Post Facebook — formato obbligato: 3 immagini.\n1ª verticale 1080×1920 (9:16), 2ª e 3ª quadrate 1080×1080.\nLa 1ª deve restare 9:16: nel collage Facebook un 4:5 viene tagliato ai lati."
+      "text": "Post Facebook — formato obbligato: 3 immagini.\n1ª verticale 1080×1920 (9:16), 2ª e 3ª quadrate 1080×1080.\nLa 1ª deve restare 9:16: nel collage Facebook un 4:5 viene tagliato ai lati.\n\nVERSIONE 2 (copy riscritto il 4 settembre 2026 su direttive del titolare). La v1 — gancio usura/cauzione, impianto \"scheda tecnica/perizia\" — è bocciata e non va ripresa."
     },
     {
-      "id": "nota-numeri",
+      "id": "nota-copy-v2",
       "x": 2400,
       "y": 0,
-      "w": 460,
-      "text": "Numeri bloccati dal copy: 800-900 € lordi, ~1.000 € netti in media sull'anno, 15%, bonifico il 10, cauzione max 3 mensilità (≈ 2.550 € su un bilocale da 850 €).\n\nNon aggiungere cifre: l'up-sell centro Roma / metro resta qualitativo.\n\nLa riga UTENZE ESCLUSE non va rimpicciolita né spostata: davanti a questo pubblico è credibilità.\n\nFORMULE OBBLIGATE DA COMPLIANCE (non parafrasare):\n· \"Netti della nostra commissione, di pulizie, biancheria e consumabili, e della ritenuta fiscale che versiamo noi.\"\n· \"La ritenuta non chiude ogni obbligo: la dichiarazione la chiudi con il tuo commercialista.\"\n· \"Le utenze restano tue. In un affitto lungo le paga l'inquilino, in gestione no.\" — mai formule assolute (\"solo\", \"l'unico\").\n· Scheda 03: \"Pulita e controllata a ogni check-out, secondo lo standard alberghiero.\" — mai \"rimessa a nuovo\" né promesse sullo stato futuro dell'immobile."
+      "w": 470,
+      "text": "NUMERI BLOCCATI DAL COPY v2 — non aggiungerne altri:\n· 800-900 € al mese (affitto lungo, lordi)\n· 1.000-1.100 € netti di media al mese\n· 15% sulle prenotazioni generate\n· pagamento il 10 di ogni mese\n· cinque anni (orizzonte della promessa)\n\nFORMULE OBBLIGATE, NON PARAFRASARE:\n· \"Media, non una promessa: ogni casa fa storia a sé.\" (scheda 02, sotto la riga guadagni)\n· \"Le utenze restano tue.\" (scheda 02, banda in fondo — non rimpicciolire, non spostare)\n· \"tasse e spese\" nella colonna sinistra, MAI \"tasse e utenze\"\n· \"Guadagniamo solo se guadagni tu.\" (formula esatta)\n· \"standard alberghiero\", mai \"hotel-style\"\n\nVIETATO: formule assolute sui costi (\"tutto incluso\", \"l'unica spesa\", \"nessun altro costo\") — TARI e oneri condominiali restano al proprietario e si possono omettere, non negare. Nessuna % di morosità, nessun tempo di sfratto, nessuna cifra su centro Roma/metro, nessuna struttura nominata.\n\nDA CHIUDERE CON IL TITOLARE PRIMA DI PUBBLICARE (claim 1, 2 e 4 del copy): la promessa sulle condizioni a 5 anni, l'assicurazione danni ospiti (chi la emette, cosa copre) e l'assenza di costi una tantum in avvio. In grafica sono più assertivi che nel testo."
     }
   ],
   "launch": {
