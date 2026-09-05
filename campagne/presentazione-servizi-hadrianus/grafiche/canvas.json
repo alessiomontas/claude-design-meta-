@@ -1,0 +1,11 @@
+{
+  "artboards": [
+    { "file": "Main.dc.html", "x": 0, "y": 0, "w": 1080, "h": 1920, "title": "Cover Reel" },
+    { "file": "Slide1.dc.html", "x": 1160, "y": 0, "w": 1080, "h": 1350, "title": "Carosello 1 — Trasparenza" },
+    { "file": "Slide2.dc.html", "x": 2320, "y": 0, "w": 1080, "h": 1350, "title": "Carosello 2 — Fisco & Regolamenti" },
+    { "file": "Slide3.dc.html", "x": 3480, "y": 0, "w": 1080, "h": 1350, "title": "Carosello 3 — Cura Totale" },
+    { "file": "Slide4.dc.html", "x": 4640, "y": 0, "w": 1080, "h": 1350, "title": "Carosello 4 — Rendita Ottimizzata" },
+    { "file": "Slide5.dc.html", "x": 5800, "y": 0, "w": 1080, "h": 1350, "title": "Carosello 5 — CTA finale" }
+  ],
+  "launch": { "view": "canvas" }
+}

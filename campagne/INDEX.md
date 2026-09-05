@@ -8,6 +8,7 @@ Consultalo **prima di iniziare una nuova campagna**, per scegliere un angolo e u
 | [`instagram-fiducia-proprietari/`](instagram-fiducia-proprietari/) | Acquisizione proprietari — case vacanza Roma/Ostia | Fiducia/trasparenza: "a chi do le chiavi", "come funziona", Q&A | Proprietari indecisi/diffidenti verso l'affidare la gestione | 3 storie IG autoconclusive, 2 caroselli da 5 slide ("Come funziona" e "Domande") | 🟢 Live |
 | [`fai-da-te-vs-gestione-professionale/`](fai-da-te-vs-gestione-professionale/) | Acquisizione proprietari — case vacanza Roma/Ostia | Costo-opportunità del tempo: il fai-da-te "gratis" costa in ore/margine invisibile | Proprietari che gestiscono già da soli l'affitto breve, stanchi/senza risultati | 3 storie IG autoconclusive, 1 carosello 5 slide ("Il conto che non hai mai fatto") | 🟢 Live — pronta con ritocchi già applicati |
 | [`facebook-lungo-vs-breve-proprietari/`](facebook-lungo-vs-breve-proprietari/) | Acquisizione proprietari — gruppi Facebook di categoria | Promessa sui 5 anni + sfida diretta ("oppure trovane una più efficiente, valuta tu"), confronto secco affitto lungo vs gestione breve | Proprietari e locatori dentro gruppi Facebook: pubblico competente e diffidente | Post Facebook breve con 3 ganci ruotabili + 3 immagini (1080×1920 + 2× 1080×1080) | 🟡 Pronta salvo dettagli assicurazione da avere per i commenti |
+| [`presentazione-servizi-hadrianus/`](presentazione-servizi-hadrianus/) | Presentazione servizi/fiducia — proprietari già interessati | I 4 pilastri del servizio (Trasparenza, Fisco & Regolamenti, Cura Totale, Rendita Ottimizzata) come reel autoconclusivo | Proprietari che valutano a chi affidare la gestione, non ancora nella fase "rischio affitto" | Revisione di un reel esistente (script corretto) + cover reel 1080×1920 + carosello feed 5 slide | 🟡 Copy e grafiche pronte — reel video da rimontare in CapCut con lo script corretto, non ancora ripubblicato |
 
 ## Note
 
@@ -22,6 +23,8 @@ Consultalo **prima di iniziare una nuova campagna**, per scegliere un angolo e u
 - Promessa sullo stato dell'immobile a 5 anni + sfida diretta al confronto ("valuta tu") — Facebook
 - Confronto diretto affitto lungo vs gestione breve con numeri (800-900 € lordi vs 1.000-1.100 € netti di media) — Facebook
 - 15% commissione / "guadagniamo solo se guadagni tu" (leva ricorrente, sempre valida come chiusura, non come apertura)
+
+- Presentazione dei 4 pilastri del servizio (Trasparenza, Fisco & Regolamenti, Cura Totale, Rendita Ottimizzata) come reel/carosello di overview — diverso da "come funziona"/Q&A perché organizzato per aree di servizio, non per processo o domande
 
 Angoli non ancora esplorati, potenziali per una prossima campagna: prova sociale su recensioni reali (senza nominare la struttura), stagionalità/calendario eventi Roma-Ostia, retention/referral per proprietari già clienti.
 
