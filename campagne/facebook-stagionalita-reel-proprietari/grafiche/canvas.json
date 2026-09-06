@@ -1,0 +1,176 @@
+{
+  "artboards": [
+    {
+      "file": "FbGancio.dc.html",
+      "x": 0,
+      "y": 0,
+      "w": 1080,
+      "h": 1920,
+      "title": "FB 1 · Verticale 9:16 — il gancio",
+      "print": "fixed"
+    },
+    {
+      "file": "FbOspiti.dc.html",
+      "x": 1240,
+      "y": 0,
+      "w": 1080,
+      "h": 1080,
+      "title": "FB 2 · Quadrata — chi ci dorme da ottobre a marzo",
+      "print": "fixed"
+    },
+    {
+      "file": "FbMeccanismo.dc.html",
+      "x": 2480,
+      "y": 0,
+      "w": 1080,
+      "h": 1080,
+      "title": "FB 3 · Quadrata — meccanismo, numeri e CTA",
+      "print": "fixed"
+    },
+    {
+      "file": "Reel01.dc.html",
+      "x": 0,
+      "y": 2200,
+      "w": 1080,
+      "h": 1920,
+      "title": "Reel 01 · Hook A",
+      "print": "fixed"
+    },
+    {
+      "file": "Reel01b.dc.html",
+      "x": 1240,
+      "y": 2200,
+      "w": 1080,
+      "h": 1920,
+      "title": "Reel 01b · Hook B (A/B test)",
+      "print": "fixed"
+    },
+    {
+      "file": "Reel02.dc.html",
+      "x": 2480,
+      "y": 2200,
+      "w": 1080,
+      "h": 1920,
+      "title": "Reel 02 · Falso. Cambia solo l'ospite",
+      "print": "fixed"
+    },
+    {
+      "file": "Reel03.dc.html",
+      "x": 3720,
+      "y": 2200,
+      "w": 1080,
+      "h": 1920,
+      "title": "Reel 03 · 01 Trasferte",
+      "print": "fixed"
+    },
+    {
+      "file": "Reel04.dc.html",
+      "x": 4960,
+      "y": 2200,
+      "w": 1080,
+      "h": 1920,
+      "title": "Reel 04 · 02 Imprese e cantieri",
+      "print": "fixed"
+    },
+    {
+      "file": "Reel05.dc.html",
+      "x": 0,
+      "y": 4300,
+      "w": 1080,
+      "h": 1920,
+      "title": "Reel 05 · 03 Casa per qualche mese",
+      "print": "fixed"
+    },
+    {
+      "file": "Reel06.dc.html",
+      "x": 1240,
+      "y": 4300,
+      "w": 1080,
+      "h": 1920,
+      "title": "Reel 06 · 04 Roma fuori stagione",
+      "print": "fixed"
+    },
+    {
+      "file": "Reel07_1.dc.html",
+      "x": 2480,
+      "y": 4300,
+      "w": 1080,
+      "h": 1920,
+      "title": "Reel 07 · calendario, stato 1/6",
+      "print": "fixed"
+    },
+    {
+      "file": "Reel07_2.dc.html",
+      "x": 3720,
+      "y": 4300,
+      "w": 1080,
+      "h": 1920,
+      "title": "Reel 07 · calendario, stato 2/6",
+      "print": "fixed"
+    },
+    {
+      "file": "Reel07_3.dc.html",
+      "x": 4960,
+      "y": 4300,
+      "w": 1080,
+      "h": 1920,
+      "title": "Reel 07 · calendario, stato 3/6",
+      "print": "fixed"
+    },
+    {
+      "file": "Reel07_4.dc.html",
+      "x": 0,
+      "y": 6400,
+      "w": 1080,
+      "h": 1920,
+      "title": "Reel 07 · calendario, stato 4/6",
+      "print": "fixed"
+    },
+    {
+      "file": "Reel07_5.dc.html",
+      "x": 1240,
+      "y": 6400,
+      "w": 1080,
+      "h": 1920,
+      "title": "Reel 07 · calendario, stato 5/6",
+      "print": "fixed"
+    },
+    {
+      "file": "Reel07_6.dc.html",
+      "x": 2480,
+      "y": 6400,
+      "w": 1080,
+      "h": 1920,
+      "title": "Reel 07 · calendario, stato 6/6",
+      "print": "fixed"
+    },
+    {
+      "file": "Reel08.dc.html",
+      "x": 3720,
+      "y": 6400,
+      "w": 1080,
+      "h": 1920,
+      "title": "Reel 08 · numeri + CTA",
+      "print": "fixed"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "nota-formato",
+      "x": 0,
+      "y": -420,
+      "w": 1400,
+      "text": "CAMPAGNA STAGIONALITÀ — due contenuti, stesso angolo.\n\nPOST FACEBOOK: 3 immagini obbligate — 1ª verticale 1080×1920 (9:16), 2ª e 3ª quadrate 1080×1080. La 1ª deve restare 9:16: nel collage Facebook un 4:5 viene tagliato ai lati.\n\nREEL 9:16: 8 scene da 1080×1920 (Reel01 → Reel08), più Reel01b come hook alternativo per l'A/B test e i 6 stati di Reel07 per l'accensione del calendario (0,6 s l'uno).\n\nFirma grafica della campagna: la griglia calendario a 12 caselle con i sei mesi bassi accesi in oro."
+    },
+    {
+      "id": "nota-vincoli",
+      "x": 1500,
+      "y": -420,
+      "w": 520,
+      "text": "FORMULE OBBLIGATE, NON PARAFRASARE:\n· \"su base annua, inverno compreso\" (mai tagliarlo: è l'argomento, non un dettaglio)\n· \"Media, non una promessa: ogni casa fa storia a sé.\"\n· \"Le utenze restano tue.\"\n· \"Guadagniamo solo se guadagni tu.\"\n· \"standard alberghiero\", mai \"hotel-style\"\n\nVIETATO IN GRAFICA: percentuali di occupazione, tassi di riempimento, grafici stagionali, formule assolute sui costi (\"tutto incluso\", \"l'unica spesa\"), blu navy, strutture nominate.\n\nBLOCCATI FINCHÉ IL TITOLARE NON CONFERMA: assicurazione danni ospiti e assenza di costi una tantum — per questo su FbMeccanismo e Reel08 c'è solo il 15% + \"Guadagniamo solo se guadagni tu\".\n\nSe il titolare corregge le cinque tipologie di ospite, vanno rifatti FbOspiti e Reel03-06."
+    }
+  ],
+  "launch": {
+    "view": "canvas"
+  }
+}
