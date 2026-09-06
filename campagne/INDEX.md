@@ -8,6 +8,7 @@ Consultalo **prima di iniziare una nuova campagna**, per scegliere un angolo e u
 | [`instagram-fiducia-proprietari/`](instagram-fiducia-proprietari/) | Acquisizione proprietari — case vacanza Roma/Ostia | Fiducia/trasparenza: "a chi do le chiavi", "come funziona", Q&A | Proprietari indecisi/diffidenti verso l'affidare la gestione | 3 storie IG autoconclusive, 2 caroselli da 5 slide ("Come funziona" e "Domande") | 🟢 Live |
 | [`fai-da-te-vs-gestione-professionale/`](fai-da-te-vs-gestione-professionale/) | Acquisizione proprietari — case vacanza Roma/Ostia | Costo-opportunità del tempo: il fai-da-te "gratis" costa in ore/margine invisibile | Proprietari che gestiscono già da soli l'affitto breve, stanchi/senza risultati | 3 storie IG autoconclusive, 1 carosello 5 slide ("Il conto che non hai mai fatto") | 🟢 Live — pronta con ritocchi già applicati |
 | [`facebook-lungo-vs-breve-proprietari/`](facebook-lungo-vs-breve-proprietari/) | Acquisizione proprietari — gruppi Facebook di categoria | Promessa sui 5 anni + sfida diretta ("oppure trovane una più efficiente, valuta tu"), confronto secco affitto lungo vs gestione breve | Proprietari e locatori dentro gruppi Facebook: pubblico competente e diffidente | Post Facebook breve con 3 ganci ruotabili + 3 immagini (1080×1920 + 2× 1080×1080) | 🟡 Pronta salvo dettagli assicurazione da avere per i commenti |
+| [`facebook-stagionalita-reel-proprietari/`](facebook-stagionalita-reel-proprietari/) | Acquisizione proprietari — Facebook + reel Instagram | Stagionalità del litorale: "d'inverno non viene nessuno" ribaltato mostrando chi soggiorna nei mesi bassi e il meccanismo prezzi/calendario | Proprietari fermi sull'obiezione invernale (Ostia e litorale) | Post Facebook (2 ganci) + 3 immagini; reel 9:16 da 21 s: 8 schermate, video montato e pagina animata | 🟡 Pronta salvo conferma delle cinque tipologie di ospite |
 
 ## Note
 
@@ -23,7 +24,9 @@ Consultalo **prima di iniziare una nuova campagna**, per scegliere un angolo e u
 - Confronto diretto affitto lungo vs gestione breve con numeri (800-900 € lordi vs 1.000-1.100 € netti di media) — Facebook
 - 15% commissione / "guadagniamo solo se guadagni tu" (leva ricorrente, sempre valida come chiusura, non come apertura)
 
-Angoli non ancora esplorati, potenziali per una prossima campagna: prova sociale su recensioni reali (senza nominare la struttura), stagionalità/calendario eventi Roma-Ostia, retention/referral per proprietari già clienti.
+- Stagionalità del litorale / chi soggiorna nei mesi bassi / calendario aperto dodici mesi — Facebook + reel
+
+Angoli non ancora esplorati, potenziali per una prossima campagna: prova sociale su recensioni reali (senza nominare la struttura), calendario eventi di Roma come leva di prenotazione, retention/referral per proprietari già clienti, il primo mese di gestione raccontato passo per passo.
 
 ## Come aggiungere una nuova campagna
 
