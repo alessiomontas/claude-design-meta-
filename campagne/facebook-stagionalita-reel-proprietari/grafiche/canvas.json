@@ -10,8 +10,17 @@
       "print": "fixed"
     },
     {
-      "file": "FbOspiti.dc.html",
+      "file": "FbGancioB.dc.html",
       "x": 1240,
+      "y": 0,
+      "w": 1080,
+      "h": 1920,
+      "title": "FB 1b · Verticale 9:16 — gancio B (rotazione tra gruppi)",
+      "print": "fixed"
+    },
+    {
+      "file": "FbOspiti.dc.html",
+      "x": 2480,
       "y": 0,
       "w": 1080,
       "h": 1080,
@@ -20,7 +29,7 @@
     },
     {
       "file": "FbMeccanismo.dc.html",
-      "x": 2480,
+      "x": 3720,
       "y": 0,
       "w": 1080,
       "h": 1080,
