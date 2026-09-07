@@ -6,7 +6,7 @@
       "y": 0,
       "w": 1080,
       "h": 1920,
-      "title": "FB 1 · Verticale 9:16 — il gancio",
+      "title": "FB 1 · Verticale 9:16 — il gancio (corona + cinque stelle)",
       "print": "fixed"
     },
     {
@@ -15,7 +15,7 @@
       "y": 0,
       "w": 1080,
       "h": 1080,
-      "title": "FB 2 · Quadrata — le recensioni",
+      "title": "FB 2 · Quadrata chiara — le recensioni",
       "print": "fixed"
     },
     {
@@ -24,7 +24,7 @@
       "y": 1240,
       "w": 1080,
       "h": 1080,
-      "title": "FB 3 · Quadrata — la catena + CTA",
+      "title": "FB 3 · Quadrata — come far rendere l'immobile + CTA",
       "print": "fixed"
     }
   ],
@@ -32,9 +32,9 @@
     {
       "id": "nota",
       "x": 0,
-      "y": -360,
+      "y": -380,
       "w": 1080,
-      "text": "POST FACEBOOK — 3 immagini obbligate: 1ª verticale 1080×1920 (9:16), 2ª e 3ª quadrate 1080×1080.\n\nFirma grafica: la card-recensione (riquadro sabbia su fumè, cinque stelle in oro).\n\nDA NON ROMPERE:\n· \"Sulle ultime nove recensioni\" — mai \"tutte\", mai \"9 su 9\", mai \"media 5.0\"\n· il minuscolo di Stefania è verbatim, non un refuso\n· citazioni senza dettagli geografici (spiaggia, treno, negozi): identificherebbero la struttura\n· nessun badge Superhost riprodotto, nessuno screenshot dell'interfaccia, nessun logo di terzi\n· nella catena: nessuna percentuale, nessun grafico, nessuna freccia di crescita\n\nBLOCCATO finché il titolare non conferma: la riga \"In due mesi, riconoscimento Superhost\" NON è impaginata. Si aggiunge in img 3, sopra la banda oro, solo a conferma avvenuta."
+      "text": "POST FACEBOOK — 3 immagini obbligate: 1ª verticale 1080×1920 (9:16), 2ª e 3ª quadrate 1080×1080.\n\nRITMO CROMATICO: scura (gancio) → chiara (le recensioni) → scura (il meccanismo + CTA). La seconda è volutamente su fondo chiaro: è l'immagine che deve farsi leggere.\n\nDA NON ROMPERE:\n· \"Sulle ultime nove recensioni\" — mai \"tutte\", mai \"9 su 9\", mai \"media 5.0\"\n· il minuscolo di Stefania è verbatim, non un refuso\n· citazioni senza dettagli geografici (spiaggia, treno, negozi): identificherebbero la struttura\n· la corona con le cinque stelle è un elemento grafico Hadrianus: NON è il badge della piattaforma, che non va mai riprodotto, così come nessuno screenshot dell'interfaccia\n· nella catena: nessuna percentuale, nessun grafico, nessuna freccia di crescita\n\nBLOCCATO finché il titolare non conferma: la riga \"In due mesi, riconoscimento Superhost\" non è impaginata."
     }
   ],
   "launch": {
