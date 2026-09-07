@@ -95,7 +95,7 @@ che immobile è (bilocale, trilocale, quanti posti letto)
 
 se è già arredato
 
-Ti rispondiamo con una forchetta di quanto potrebbe rendere in affitto breve gestito, mesi bassi compresi.
+Ti rispondiamo con una forchetta di quanto potrebbe rendere in affitto breve gestito, mesi bassi compresi. Se i riferimenti che ci dai non bastano per una forchetta seria, te lo diciamo invece di inventarla.
 
 Gratis, sotto il tuo commento, in pubblico. Non ti chiediamo il numero di telefono per darti un numero.
 
@@ -121,14 +121,14 @@ Per il resto il nostro modello è corto: 15% solo sulle prenotazioni che generia
 
 Guadagniamo solo se guadagni tu.
 
-Scrivi zona e tipo di immobile qui sotto. Le stime le facciamo a mano, una per una: rispondiamo a tutti, in ordine di arrivo.
+Scrivi zona e tipo di immobile qui sotto. Le stime le facciamo a mano, una per una: rispondiamo in ordine di arrivo.
 
 ---
 
 ## CTA
 
 **Una sola, in commento pubblico:**
-> Scrivi zona e tipo di immobile qui sotto. Rispondiamo a tutti, in ordine di arrivo.
+> Scrivi zona e tipo di immobile qui sotto. Rispondiamo in ordine di arrivo.
 
 Nessuna CTA alternativa nel testo. Il privato si apre **dopo**, dentro il thread, e solo su richiesta di chi commenta (vedi "Come farlo girare").
 
@@ -431,13 +431,12 @@ Vuol dire che se manca qualcosa, o si è rotto qualcosa, lo sappiamo lo stesso g
 
 Non a fine stagione. Non a settembre, quando ci torni tu.
 
-*[RIGA DA CONFERMARE PRIMA DI PUBBLICARE — vedi Claim 9]* Un'assicurazione copre gli eventuali danni causati dagli ospiti.
 
 ---
 
 E poi c'è la cosa che quasi nessuno mette sul piatto.
 
-In affitto lungo dentro casa tua c'è una persona sola, per anni. E quella casa la vedi quasi mai.
+In affitto lungo dentro casa tua c'è una persona sola, per anni. E quella casa non la vedi quasi mai.
 
 Con noi ci passano più persone, ma dopo ognuna di loro qualcuno apre la porta e guarda.
 
@@ -454,14 +453,14 @@ Per il resto: 15% solo sulle prenotazioni che generiamo, nessun costo fisso, nes
 
 Guadagniamo solo se guadagni tu. Anche sulla cura della casa: se la trattiamo male, i primi a rimetterci siamo noi.
 
-Se hai una domanda su questo, anche la più scomoda, scrivila qui sotto. Rispondiamo a tutte, in pubblico.
+Se hai una domanda su questo, anche la più scomoda, scrivila qui sotto. Rispondiamo in pubblico, in ordine di arrivo.
 
 ---
 
 ## CTA
 
 **Una sola, in commento pubblico:**
-> Se hai una domanda su questo, anche la più scomoda, scrivila qui sotto. Rispondiamo a tutte, in pubblico.
+> Se hai una domanda su questo, anche la più scomoda, scrivila qui sotto. Rispondiamo in pubblico, in ordine di arrivo.
 
 **Differenza dal post 1:** il post 1 chiede **dati** (zona, tipo, posti letto), il post 4 chiede **dubbi**. Sono due meccaniche di commento diverse e non si annullano a vicenda, anche se i due post finiscono nello stesso gruppo a tre settimane di distanza.
 
@@ -703,7 +702,7 @@ Post 1 → `LA STIMA` · Post 2 → `GLI ERRORI` · Post 3 → `I PRIMI 30 GIORN
 **img 2 — 1080×1080 — FASI 1-3**
 - Spina dorsale in oro sul bordo sinistro, tre nodi pieni. Ogni fase: **etichetta giorno** (Archivo 800 uppercase, oro, piccola) + **titolo** + **una riga di descrizione**.
   **GIORNO 0** — *Il sopralluogo* — "Guardiamo cosa c'è, cosa manca. Se non conviene, te lo diciamo lì."
-  **GIORNI 1-3** — *Contratto e documenti* — "Nessun deposito cauzionale, nessun costo fisso. La documentazione la seguiamo noi."
+  **GIORNI 1-3** — *Contratto e documenti* — "Nessun deposito cauzionale. La documentazione la seguiamo noi."
   **GIORNI 3-7** — *La casa si prepara* — "Pulizia iniziale a fondo in standard alberghiero, biancheria, consumabili, dotazione."
 - **Vietato:** numeri di step giganti stile 01/02/03 (firma di `instagram-fiducia-proprietari`).
 
@@ -738,7 +737,7 @@ Post 1 → `LA STIMA` · Post 2 → `GLI ERRORI` · Post 3 → `I PRIMI 30 GIORN
 **img 3 — 1080×1080 — DOPO CHE È USCITO + CTA**
 - Titolo: **"Dopo che è uscito"**.
   - **A ogni check-out la casa è controllata stanza per stanza e ripristinata secondo lo standard alberghiero.**
-  - **Se manca o si rompe qualcosa, lo sappiamo subito.** *(scrivere "lo stesso giorno" solo se il claim 12 viene confermato)*
+  - **Se manca o si rompe qualcosa, lo vediamo al controllo, non mesi dopo.** *(scrivere "lo stesso giorno" solo se il claim 12 viene confermato)*
   - **Riga assicurazione: da impaginare SOLO se il claim 9 è stato chiuso.** Se resta aperto, la riga **non entra in grafica** e l'immagine regge sul controllo a ogni check-out.
 - **Frase-perno**, la più grande dell'immagine dopo il titolo: **"Il rischio non è chi entra. È quanto tempo passa prima che qualcuno se ne accorga."**
 - Chiusura: **"15% solo sulle prenotazioni generate · nessun costo fisso · pagamento il 10 di ogni mese"** + **"Guadagniamo solo se guadagni tu"** + **"Hai una domanda scomoda? Scrivila in commento."**
