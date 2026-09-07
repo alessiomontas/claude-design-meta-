@@ -1,0 +1,124 @@
+{
+  "artboards": [
+    {
+      "file": "P1a.dc.html",
+      "x": 0,
+      "y": 0,
+      "w": 1080,
+      "h": 1920,
+      "title": "Post 1 · img 1 — il gancio (9:16)",
+      "print": "fixed"
+    },
+    {
+      "file": "P1b.dc.html",
+      "x": 1240,
+      "y": 0,
+      "w": 1080,
+      "h": 1080,
+      "title": "Post 1 · img 2 — cosa scrivere in commento",
+      "print": "fixed"
+    },
+    {
+      "file": "P1c.dc.html",
+      "x": 2480,
+      "y": 0,
+      "w": 1080,
+      "h": 1080,
+      "title": "Post 1 · img 3 — i due riferimenti + CTA",
+      "print": "fixed"
+    },
+    {
+      "file": "P2a.dc.html",
+      "x": 0,
+      "y": 2200,
+      "w": 1080,
+      "h": 1920,
+      "title": "Post 2 · img 1 — il 6 (9:16)",
+      "print": "fixed"
+    },
+    {
+      "file": "P2b.dc.html",
+      "x": 1240,
+      "y": 2200,
+      "w": 1080,
+      "h": 1080,
+      "title": "Post 2 · img 2 — errori 1-3",
+      "print": "fixed"
+    },
+    {
+      "file": "P2c.dc.html",
+      "x": 2480,
+      "y": 2200,
+      "w": 1080,
+      "h": 1080,
+      "title": "Post 2 · img 3 — errori 4-6 + condivisione",
+      "print": "fixed"
+    },
+    {
+      "file": "P3a.dc.html",
+      "x": 0,
+      "y": 4400,
+      "w": 1080,
+      "h": 1920,
+      "title": "Post 3 · img 1 — \"Firmo. E poi?\" (9:16)",
+      "print": "fixed"
+    },
+    {
+      "file": "P3b.dc.html",
+      "x": 1240,
+      "y": 4400,
+      "w": 1080,
+      "h": 1080,
+      "title": "Post 3 · img 2 — fasi 1-3",
+      "print": "fixed"
+    },
+    {
+      "file": "P3c.dc.html",
+      "x": 2480,
+      "y": 4400,
+      "w": 1080,
+      "h": 1080,
+      "title": "Post 3 · img 3 — fasi 4-6 + primo pagamento",
+      "print": "fixed"
+    },
+    {
+      "file": "P4a.dc.html",
+      "x": 0,
+      "y": 6600,
+      "w": 1080,
+      "h": 1920,
+      "title": "Post 4 · img 1 — \"E se me la rovinano?\" (9:16)",
+      "print": "fixed"
+    },
+    {
+      "file": "P4b.dc.html",
+      "x": 1240,
+      "y": 6600,
+      "w": 1080,
+      "h": 1080,
+      "title": "Post 4 · img 2 — prima che arrivi",
+      "print": "fixed"
+    },
+    {
+      "file": "P4c.dc.html",
+      "x": 2480,
+      "y": 6600,
+      "w": 1080,
+      "h": 1080,
+      "title": "Post 4 · img 3 — dopo che è uscito + CTA",
+      "print": "fixed"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "nota",
+      "x": 3800,
+      "y": 0,
+      "w": 560,
+      "text": "CAMPAGNA A 4 POST — una riga per post, tre immagini ciascuno.\nFormato Facebook obbligato: 1ª verticale 1080×1920 (9:16), 2ª e 3ª quadrate 1080×1080.\n\nFIRMA DI CAMPAGNA: il filo della planimetria — pianta generica (mai quella reale di un immobile in gestione), tenue dietro il testo nelle verticali, a piena opacità lungo il bordo sinistro nelle quadrate, con un solo punto d'oro sul locale pertinente: soggiorno (la stima), bagno (gli errori), ingresso (la paura).\n\nFORMULE OBBLIGATE, NON PARAFRASARE:\n· \"Media, non una promessa: ogni casa fa storia a sé.\"\n· \"Le utenze restano tue.\"\n· \"Guadagniamo solo se guadagni tu.\"\n· \"standard alberghiero\", mai \"hotel-style\"\n· \"È una simulazione, non una promessa.\" (post 1)\n· \"I tempi sono indicativi.\" (post 3)\n\nVIETATO: percentuali di occupazione o di crescita, grafici, frecce, formule assolute sui costi (\"tutto incluso\", \"l'unica spesa\"), urgenza inventata, badge di piattaforme, screenshot, blu navy, strutture nominate.\n\nGERARCHIA DA NON INVERTIRE (post 2, img 3): la richiesta di condivisione è grande, l'offerta è piccola. Se si inverte, il post smette di essere condivisibile.\n\nNON IMPAGINATA finché il titolare non conferma: la riga sull'assicurazione danni ospiti (post 4, img 3). Senza di lei l'immagine regge sul controllo a ogni check-out."
+    }
+  ],
+  "launch": {
+    "view": "canvas"
+  }
+}

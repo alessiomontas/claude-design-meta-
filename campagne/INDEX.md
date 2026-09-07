@@ -9,6 +9,8 @@ Consultalo **prima di iniziare una nuova campagna**, per scegliere un angolo e u
 | [`fai-da-te-vs-gestione-professionale/`](fai-da-te-vs-gestione-professionale/) | Acquisizione proprietari — case vacanza Roma/Ostia | Costo-opportunità del tempo: il fai-da-te "gratis" costa in ore/margine invisibile | Proprietari che gestiscono già da soli l'affitto breve, stanchi/senza risultati | 3 storie IG autoconclusive, 1 carosello 5 slide ("Il conto che non hai mai fatto") | 🟢 Live — pronta con ritocchi già applicati |
 | [`facebook-lungo-vs-breve-proprietari/`](facebook-lungo-vs-breve-proprietari/) | Acquisizione proprietari — gruppi Facebook di categoria | Promessa sui 5 anni + sfida diretta ("oppure trovane una più efficiente, valuta tu"), confronto secco affitto lungo vs gestione breve | Proprietari e locatori dentro gruppi Facebook: pubblico competente e diffidente | Post Facebook breve con 3 ganci ruotabili + 3 immagini (1080×1920 + 2× 1080×1080) | 🟡 Pronta salvo dettagli assicurazione da avere per i commenti |
 | [`facebook-stagionalita-reel-proprietari/`](facebook-stagionalita-reel-proprietari/) | Acquisizione proprietari — Facebook + reel Instagram | Stagionalità del litorale: "d'inverno non viene nessuno" ribaltato mostrando chi soggiorna nei mesi bassi e il meccanismo prezzi/calendario | Proprietari fermi sull'obiezione invernale (Ostia e litorale) | Post Facebook (2 ganci) + 3 immagini; reel 9:16 da 21 s: 8 schermate, video montato e pagina animata | 🟡 Pronta salvo conferma delle cinque tipologie di ospite |
+| [`facebook-recensioni-superhost/`](facebook-recensioni-superhost/) | Acquisizione proprietari — gruppi Facebook di categoria | Prova sociale su recensioni reali: "di cosa parlano davvero" le recensioni (pulizia, risposte, casa pronta) — mai l'immobile | Proprietari con annuncio già attivo, sensibili al confronto sull'esecuzione | Post Facebook (3 ganci) + 3 immagini; `recensioni-reali.md` con le 9 recensioni verbatim | 🟡 Pronta salvo verifica Superhost tuttora attivo e totale recensioni |
+| [`facebook-campagna-virale/`](facebook-campagna-virale/) | Acquisizione proprietari — campagna Facebook a 4 post (condivisioni, commenti, contatti) | Quattro angoli in sequenza: stima in commento · sei errori che fanno perdere prenotazioni · i primi 30 giorni di gestione · "e se me la rovinano?" | Proprietari nei gruppi Facebook, dal freddo (post 1) a chi è fermo per paura (post 4) | 4 post Facebook (2 ganci ciascuno) + 12 immagini (4× 1080×1920 + 8× 1080×1080), meccaniche di condivisione, piano di pubblicazione a 6 settimane | 🔴 Copy pronto — mancano `compliance-checker` e grafiche |
 
 ## Note
 
@@ -25,8 +27,13 @@ Consultalo **prima di iniziare una nuova campagna**, per scegliere un angolo e u
 - 15% commissione / "guadagniamo solo se guadagni tu" (leva ricorrente, sempre valida come chiusura, non come apertura)
 
 - Stagionalità del litorale / chi soggiorna nei mesi bassi / calendario aperto dodici mesi — Facebook + reel
+- Prova sociale su recensioni reali / "di cosa parlano davvero le recensioni" (mai l'immobile) — Facebook
+- Stima di rendimento chiesta e data in commento pubblico ("il valore lo sai, il rendimento non te lo dice nessuno") — Facebook
+- Sei errori che fanno perdere prenotazioni (contenuto di puro valore d'uso, pensato per essere salvato/condiviso) — Facebook
+- I primi 30 giorni di gestione raccontati per fasi, con i limiti dichiarati — Facebook
+- La paura dei danni: "e se me la rovinano?" / chi entra in casa mia, risolta sulla frequenza del controllo — Facebook
 
-Angoli non ancora esplorati, potenziali per una prossima campagna: prova sociale su recensioni reali (senza nominare la struttura), calendario eventi di Roma come leva di prenotazione, retention/referral per proprietari già clienti, il primo mese di gestione raccontato passo per passo.
+Angoli non ancora esplorati, potenziali per una prossima campagna: calendario eventi di Roma come leva di prenotazione, retention/referral per proprietari già clienti, la divisione pulizie B2B (Templum Purum) verso hotel e B&B.
 
 ## Come aggiungere una nuova campagna
 
