@@ -31,8 +31,11 @@ In più, un solo elemento nuovo:
 | Riempimento barra | `#C8A24B`, stessa geometria, larghezza proporzionale al tempo trascorso |
 | Sottotitolo di scena 8 | Manrope 600, 40 px, `rgba(255,255,255,0.92)`, 30 px sotto il titolo |
 
-Nel video la barra è disegnata da ffmpeg con `drawbox` e larghezza `322*min((t+offset)/15,1)`, così avanza in
-modo continuo dentro ogni scena e non "scatta" agli stacchi.
+Nel video la barra avanza **a nove scatti**, uno per scena, e ogni scatto cade sullo stacco: il valore di ogni
+scena è quello del suo secondo finale (2,6 → 4,0 → 5,4 … → 15,0 s), identico a quello degli artboard. La prima
+versione la disegnava con `drawbox` e una larghezza dipendente dal tempo, ma **ffmpeg valuta quell'espressione una
+volta sola**: la barra usciva piena dal primo fotogramma. Ora il riempimento è dentro i nove PNG del velo, e non
+può più sbagliarsi.
 
 ## Le fonti visive, scena per scena
 
@@ -58,6 +61,13 @@ acquisizione clienti è un rischio che non vale la pena correre: chi risponde po
 Il primo montaggio della scena 8 usava un ritaglio dell'open space in cui comparivano un tostapane e una
 macchina a capsule sul piano. Ritaglio cambiato. `smart-tv-streaming-mockup.jpg` resta **inutilizzabile** in
 qualsiasi ritaglio: i loghi delle piattaforme sullo schermo sono leggibili anche di taglio.
+
+**Verifica fatta sul video esportato, non solo sugli artboard** (9 settembre 2026): i due apparecchi restano
+nella foto sorgente della scena 4 e nel video della scena 5, che riprendono lo stesso interno. Guardati i
+fotogrammi a 5,6 · 6,4 · 7,0 · 7,6 · 8,0 s: **nessuno dei due entra nell'inquadratura**, e non compaiono altri
+marchi leggibili — il forno a microonde e lo split del condizionatore sono senza logo visibile. La scena 4
+inquadra tavolo, tenda e divano; la scena 5 tavolo, microonde e ingresso. Questo controllo va rifatto ogni volta
+che si cambia un ritaglio su quelle due sorgenti.
 
 ## Pattern grafico
 

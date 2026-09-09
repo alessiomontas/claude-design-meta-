@@ -32,10 +32,10 @@ posseduto contro il lavoro che manca** — e nessuna campagna Hadrianus l'aveva 
 | 1 | 0,0 → 2,6 | *Per guadagnare di più* / **non ti serve un'altra casa.** | tramonto sul litorale romano |
 | 2 | 2,6 → 4,0 | (resta il gancio) + **Ti manca il resto.** | stessa scena, continua |
 | 3 | 4,0 → 5,4 | **L'annuncio che ti fa trovare.** | balcone reale con poltrona sospesa |
-| 4 | 5,4 → 6,8 | **Il prezzo giusto, ogni giorno.** | open space reale, zona pranzo |
-| 5 | 6,8 → 8,2 | **Le risposte, a qualsiasi ora.** | interno reale, cucina e tavolo |
+| 4 | 5,4 → 6,8 | **Il prezzo che segue la domanda.** | open space reale, zona pranzo |
+| 5 | 6,8 → 8,2 | **Il check-in, a qualsiasi ora.** | interno reale, cucina e tavolo |
 | 6 | 8,2 → 9,6 | **Le pulizie e la biancheria.** | salotto reale, divano |
-| 7 | 9,6 → 11,0 | **Le recensioni che reggono tutto.** | balcone reale |
+| 7 | 9,6 → 11,0 | **Il controllo, a ogni check-out.** | balcone reale |
 | 8 | 11,0 → 13,0 | **Il resto lo facciamo noi.** + *15% solo sulle prenotazioni che generiamo.* | salotto reale, tenda e poltrona |
 | 9 | 13,0 → 15,0 | **Nessun costo fisso.** + *Guadagniamo solo se guadagni tu.* (oro) + SCRIVICI IN PRIVATO | busto di Adriano di profilo |
 
@@ -50,10 +50,10 @@ Tono piano, senza enfasi. Il reel funziona anche muto.
 1. *(0,0)* Per guadagnare di più non ti serve un'altra casa.
 2. *(2,6)* Ti manca il resto.
 3. *(4,0)* L'annuncio che ti fa trovare.
-4. *(5,4)* Il prezzo giusto, ogni giorno.
-5. *(6,8)* Le risposte, a qualsiasi ora.
+4. *(5,4)* Il prezzo che segue la domanda.
+5. *(6,8)* Il check-in, a qualsiasi ora.
 6. *(8,2)* Le pulizie e la biancheria.
-7. *(9,6)* Le recensioni che reggono tutto.
+7. *(9,6)* Il controllo, a ogni check-out.
 8. *(11,0)* Il resto lo facciamo noi: quindici per cento solo sulle prenotazioni che generiamo.
 9. *(13,0)* Nessun costo fisso. Guadagniamo solo se guadagni tu.
 
@@ -65,9 +65,9 @@ Tono piano, senza enfasi. Il reel funziona anche muto.
 > Ti serve il resto.
 >
 > Il capitale ce l'hai già: sono i muri che hai comprato anni fa. Quello che manca non si compra, si fa — e si fa
-> tutti i giorni. L'annuncio che ti fa trovare. Il prezzo che cambia con la domanda invece di restare fermo. Le
-> risposte agli ospiti a qualsiasi ora. Le pulizie e la biancheria fra un soggiorno e l'altro. E le recensioni,
-> che reggono tutto il resto.
+> tutti i giorni. L'annuncio che ti fa trovare. Il prezzo che cambia con la domanda invece di restare fermo. Il
+> check-in degli ospiti a qualsiasi ora. Le pulizie e la biancheria fra un soggiorno e l'altro. E il controllo
+> della casa a ogni check-out — che è poi quello che le recensioni misurano.
 >
 > È esattamente il lavoro che facciamo su case vacanza a Roma e sul litorale.
 >
@@ -84,10 +84,10 @@ Tono piano, senza enfasi. Il reel funziona anche muto.
 |---|---|---|
 | 1 | "Per guadagnare di più non ti serve un'altra casa" | **Non è un claim di risultato**: è un'affermazione di posizionamento sul capitale già posseduto. Nessun numero, nessuna promessa di rendimento. |
 | 2 | "L'annuncio che ti fa trovare" | **Servizio dichiarato**: ottimizzazione annuncio, in `.claude/reference/brand-identity.md`. Dice che l'annuncio viene curato, non che porterà X prenotazioni. |
-| 3 | "Il prezzo giusto, ogni giorno" | **Servizio dichiarato**: pricing dinamico. "Giusto" = adeguato alla domanda, non "il più alto". |
-| 4 | "Le risposte, a qualsiasi ora" | **Servizio dichiarato**: gestione ospiti e check-in smart H24. |
+| 3 | "Il prezzo che segue la domanda" | **Riscritta dopo il compliance check.** "Il prezzo giusto, ogni giorno" conteneva due claim non confermati: "giusto" è un giudizio di esito e "ogni giorno" una frequenza operativa che nessuno ha dichiarato. La formula attuale descrive il servizio confermato — **pricing dinamico** — e coincide con quella già usata in caption. |
+| 4 | "Il check-in, a qualsiasi ora" | **Riscritta dopo il compliance check.** Quello che il titolare dichiara con parole sue è **check-in smart H24**; "le risposte a qualsiasi ora" estendeva l'H24 dal check-in alla messaggistica, cosa non scritta da nessuna parte. [DA VERIFICARE con il titolare: se conferma che si risponde ai messaggi degli ospiti a qualsiasi ora, la battuta può tornare a "Le risposte, a qualsiasi ora"] |
 | 5 | "Le pulizie e la biancheria" | **Servizio dichiarato**: pulizie e biancheria fra i soggiorni. |
-| 6 | "Le recensioni che reggono tutto" | Descrive **il peso delle recensioni nel meccanismo**, non un risultato ottenuto. Nessuna recensione citata, nessun punteggio, nessun Superhost: quelle prove stanno negli altri contenuti. |
+| 6 | "Il controllo, a ogni check-out" | **Riscritta dopo il compliance check.** "Le recensioni che reggono tutto" era l'unica voce della lista che non è un lavoro ma un risultato — e le recensioni le scrivono gli ospiti: un secondo e mezzo dopo, "Il resto lo facciamo noi" se le prendeva in carico. La formula attuale è confermata alla lettera dal titolare ("casa in ordine e controllata a ogni check-out secondo lo standard alberghiero") ed è il lavoro che le recensioni misurano. |
 | 7 | "15% solo sulle prenotazioni che generiamo" · "Nessun costo fisso" | **CONFERMATI**, già usati in tutte le campagne precedenti. |
 | 8 | "Guadagniamo solo se guadagni tu" | **Lessico di brand, alla lettera.** |
 
