@@ -37,6 +37,14 @@ righe. Il video finisce di colpo: in loop riparte pulito.
 - Marchio fisso in alto per tutta la durata (nome + filo + sottotitolo), come nel modello.
 - Italiano. Una parola inglese si usa solo se è **quella che il reel nega**.
 
+## La versione lunga (15 secondi)
+
+Lo stesso telaio regge un formato lungo cambiando solo la parte centrale: il gancio resta 2,6 s, la svolta 1,4 s,
+poi **cinque battute uguali da 1,4 s** invece di tre, e due scene finali da 2 s (prima la presa in carico, poi il
+prezzo). Applicato in `campagne/reel-ti-manca-il-resto/`. Su un formato lungo aggiungi una **barra di
+avanzamento** oro sotto il marchio: sopra i 10 secondi la gente se ne va a metà, e sapere quanto manca la
+trattiene. Sotto i 10 secondi non serve e toglie carattere al formato breve.
+
 ## Cosa cambiare a ogni nuovo reel
 
 La negazione e i tre desideri. Il telaio, i tempi e la tipografia restano: sono ciò che rende riconoscibile
