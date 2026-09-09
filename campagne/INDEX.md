@@ -12,6 +12,7 @@ Consultalo **prima di iniziare una nuova campagna**, per scegliere un angolo e u
 | [`facebook-recensioni-superhost/`](facebook-recensioni-superhost/) | Acquisizione proprietari — gruppi Facebook di categoria | Prova sociale su recensioni reali: "di cosa parlano davvero" le recensioni (pulizia, risposte, casa pronta) — mai l'immobile | Proprietari con annuncio già attivo, sensibili al confronto sull'esecuzione | Post Facebook (3 ganci) + 3 immagini; `recensioni-reali.md` con le 9 recensioni verbatim | 🟡 Pronta salvo verifica Superhost tuttora attivo e totale recensioni |
 | [`facebook-campagna-virale/`](facebook-campagna-virale/) | Acquisizione proprietari — campagna Facebook a 4 post (condivisioni, commenti, contatti) | Quattro angoli in sequenza: stima in commento · sei errori che fanno perdere prenotazioni · i primi 30 giorni di gestione · "e se me la rovinano?" | Proprietari nei gruppi Facebook, dal freddo (post 1) a chi è fermo per paura (post 4) | 4 post Facebook (2 ganci ciascuno) + 12 immagini (4× 1080×1920 + 8× 1080×1080), meccaniche di condivisione, piano di pubblicazione a 6 settimane | 🔴 Copy pronto — mancano `compliance-checker` e grafiche |
 | [`reel-superhost-acquisizione/`](reel-superhost-acquisizione/) | Acquisizione proprietari — reel Instagram/Facebook | Prova prima del prezzo: Superhost in due mesi su una casa non nostra, recensioni reali, poi l'offerta | Proprietari freddi che non ci conoscono: il reel deve dimostrare, non promettere | Reel 9:16 da 23 s (video montato + pagina animata), script, caption, guida di montaggio | 🟡 Pronto salvo export MP4 con musica |
+| [`reel-cosa-cerca-un-proprietario/`](reel-cosa-cerca-un-proprietario/) | Acquisizione proprietari — reel Instagram/Facebook/TikTok | La negazione: "i proprietari non cercano «un property manager»" → i tre desideri concreti → la firma commerciale | Proprietari freddi che scorrono il feed: 8 secondi per spostare il discorso dalla percentuale al lavoro | Reel 9:16 da 8,0 s in **MP4 pronto**, copertina, 6 scene editabili, caption e voce fuori campo | 🟢 Pronto — si carica così com'è |
 
 ## Note
 
@@ -34,6 +35,7 @@ Consultalo **prima di iniziare una nuova campagna**, per scegliere un angolo e u
 - Sei errori che fanno perdere prenotazioni (contenuto di puro valore d'uso, pensato per essere salvato/condiviso) — Facebook
 - I primi 30 giorni di gestione raccontati per fasi, con i limiti dichiarati — Facebook
 - La paura dei danni: "e se me la rovinano?" / chi entra in casa mia, risolta sulla frequenza del controllo — Facebook
+- La negazione del servizio stesso: "non cercano un property manager, cercano che la casa non li chiami mai" — reel 8 s
 
 Angoli non ancora esplorati, potenziali per una prossima campagna: calendario eventi di Roma come leva di prenotazione, retention/referral per proprietari già clienti, la divisione pulizie B2B (Templum Purum) verso hotel e B&B.
 

@@ -20,7 +20,8 @@ _handover/                      → snapshot per revisore esterno (stato, decisi
 .claude/reference/              → approfondimenti on-demand, NON precaricati:
 ├── brand-identity.md           →   chi è Hadrianus, target/pain-point, cosa si può usare come prova
 ├── design-system.md            →   palette hex, tipografia, formati canale, componenti .dc.html riutilizzabili
-└── lessico-brand.md            →   glossario esteso corretto/vietato, con esempi
+├── lessico-brand.md            →   glossario esteso corretto/vietato, con esempi
+└── modello-reel-8-secondi.md   →   telaio dei reel brevi (negazione + desideri), tempi e tipografia
 ```
 
 ## Flusso di lavoro standard

@@ -1,0 +1,58 @@
+{
+  "artboards": [
+    {
+      "file": "Main.dc.html",
+      "x": 0,
+      "y": 0,
+      "w": 1080,
+      "h": 1920,
+      "title": "Scena 1 · 0,0-2,0 s — il gancio",
+      "print": "fixed"
+    },
+    {
+      "file": "S2.dc.html",
+      "x": 1240,
+      "y": 0,
+      "w": 1080,
+      "h": 1920,
+      "title": "Scena 2 · 2,0-3,0 s — la svolta",
+      "print": "fixed"
+    },
+    {
+      "file": "S3.dc.html",
+      "x": 2480,
+      "y": 0,
+      "w": 1080,
+      "h": 1920,
+      "title": "Scena 3 · 3,0-4,0 s — libert&agrave;",
+      "print": "fixed"
+    },
+    {
+      "file": "S4.dc.html",
+      "x": 3720,
+      "y": 0,
+      "w": 1080,
+      "h": 1920,
+      "title": "Scena 4 · 4,0-5,0 s — controllo",
+      "print": "fixed"
+    },
+    {
+      "file": "S5.dc.html",
+      "x": 4960,
+      "y": 0,
+      "w": 1080,
+      "h": 1920,
+      "title": "Scena 5 · 5,0-6,0 s — certezza",
+      "print": "fixed"
+    },
+    {
+      "file": "S6.dc.html",
+      "x": 6200,
+      "y": 0,
+      "w": 1080,
+      "h": 1920,
+      "title": "Scena 6 · 6,0-8,0 s — chiusura",
+      "print": "fixed"
+    }
+  ]
+}
