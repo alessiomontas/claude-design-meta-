@@ -15,6 +15,7 @@ campagne/
 ├── INDEX.md                    → indice campagne: angoli/ganci già usati, da consultare prima di una nuova
 └── <nome-campagna>/            → output tracciabile di ogni campagna
 analisi-sito/                   → analisi del sito hadrianusmultiservice.it (architettura, copy, claim, design, interventi)
+analisi-mercato/                → analisi di mercato e budget dei canali a pagamento (Google Ads)
 _handover/                      → snapshot per revisore esterno (stato, decisioni, regole, inventario, aperti)
 .claude/agents/                 → i 5 agenti (ricercatore-mercato, copywriter, art-director, compliance-checker, revisore-marketing-design)
 .claude/skills/                 → framework-vendita (metodo), nuova-campagna (orchestrazione)
