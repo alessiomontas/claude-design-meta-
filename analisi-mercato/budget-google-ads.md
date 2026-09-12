@@ -7,14 +7,25 @@
 
 ## Risposta in tre righe
 
-| Condizione | Budget per **2 clienti** | Budget per **3 clienti** |
+| Condizione | Spesa **totale** per **2 clienti** | Spesa **totale** per **3 clienti** |
 |---|---|---|
 | **Con il sito così com'è oggi** | **1.000 – 2.300 €** | **1.500 – 3.500 €** |
 | **Con una landing dedicata ai proprietari** | **370 – 860 €** | **550 – 1.300 €** |
 
+> ⚠️ **Sono spese complessive dell'intera operazione, non mensili.** Derivano dal numero di click da comprare, che si accumulano su 3-4 mesi (vedi §9: il vincolo è il volume di ricerca, non il portafoglio).
+
 La forbice non dipende da Google: dipende da **dove mandi il traffico**. La stessa identica campagna costa da due a tre volte tanto se atterra sul sito attuale invece che su una pagina costruita per convertire. Il risparmio più grande disponibile non è nella gestione della campagna, è in una pagina che oggi non esiste.
 
-**Budget operativo consigliato: 900-1.200 € al mese per 3 mesi** (vedi §9 per il perché non ha senso spendere meno).
+**Tetto mensile da impostare in Google Ads: 900-1.200 €** (vedi §9 per il perché non ha senso metterne meno). Attenzione: **il tetto non è la spesa.** Google preleva fino a quel limite solo se le ricerche esistono, e nei primi mesi il volume non basta a saturarlo.
+
+**Cifra da mettere a bilancio: ~3.000 € complessivi su 3-4 mesi**, per 2-4 clienti attesi.
+
+| | Tetto impostato | Spesa reale attesa |
+|---|---|---|
+| Mese 1 | 1.000 € | 400 – 800 € |
+| Mese 2 | 1.000 € | 700 – 1.000 € |
+| Mese 3 | 1.200 € | 900 – 1.200 € |
+| **Totale** | | **2.000 – 3.000 €** |
 
 ---
 
@@ -211,7 +222,7 @@ Le tabelle dicono che con ~250-670 click prendi 2-3 clienti. Ma **quei click dev
 
 ## 10. Il piano a tre mesi
 
-**Investimento totale: 2.700 – 3.600 € in media pubblicitaria** (esclusa l'eventuale gestione esterna).
+**Tetti mensili: 900 € / 1.000-1.200 € / 1.000-1.200 €. Spesa reale attesa: 2.000 – 3.000 € complessivi** (esclusa l'eventuale gestione esterna). Il tetto è un limite, non un impegno di spesa.
 
 ### Prima di spendere il primo euro — costo zero, 2-3 giorni
 
