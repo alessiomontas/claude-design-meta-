@@ -279,6 +279,73 @@ La combinazione che funziona: **Google Ads per intercettare chi ha già deciso d
 
 ---
 
+## 14. Variante: partire solo da Ostia (budget minimo)
+
+Restringere il primo test a Ostia e al Litorale è la scelta giusta, e per quattro ragioni concrete: i grandi operatori (iFlat, Propert, VD Property Manager) comprano "Roma" e lasciano scoperto il litorale, quindi **il CPC scende**; la tua conoscenza della zona è reale e si sente nel testo dell'annuncio; il rischio economico del test crolla; e hai già contenuti pensati per quel pubblico in `campagne/facebook-stagionalita-reel-proprietari/`.
+
+⚠️ *Ipotesi di lavoro per Ostia: CPC 1,40 € invece di 2,20 € — meno concorrenza sulle stesse intenzioni di ricerca. Da confermare con Keyword Planner.*
+
+### Le tre soglie
+
+| Soglia | Importo | Cosa succede |
+|---|---|---|
+| **Pavimento tecnico** | **126 €/mese** (4,20 €/giorno) | Sotto ~3 volte il CPC al giorno Google non serve l'annuncio con continuità: sparisci per metà giornata. |
+| **Minimo per imparare** | **250-300 €/mese** | Sotto questa soglia i contatti sono così pochi che nessun tasso è leggibile: rischi di spegnere ciò che funziona. |
+| **Consigliato** | **300-400 €/mese × 3 mesi** | **900-1.200 € totali.** |
+
+### Cosa produce, in tre mesi
+
+| Budget totale | Click | Contatti | Clienti attesi | Costo per cliente |
+|---|---|---|---|---|
+| **900 €** (300 €/m) — sito attuale | 643 | 12,9 | **~2** | 431 € |
+| **900 €** (300 €/m) — con landing | 643 | 32,1 | **~5** | **172 €** |
+| 1.200 € (400 €/m) — sito attuale | 857 | 17,1 | ~2,8 | 431 € |
+| 1.200 € (400 €/m) — con landing | 857 | 42,9 | ~7 | 172 € |
+
+**A Ostia il costo per cliente scende a 172-431 €**, contro un valore del cliente di ~7.200 €. È il rapporto migliore di tutta l'analisi.
+
+### Il vincolo che decide tutto: a Ostia il limite non sono i soldi, è il volume
+
+300 €/mese equivalgono a **214 click al mese**. Le ricerche che contengono la parola "Ostia" non sono 214 al mese — sono verosimilmente poche decine. ⚠️ *Da misurare con Keyword Planner.*
+
+**Conseguenza operativa, ed è la parte che fa la differenza fra una campagna che gira e una che resta ferma:**
+
+> Non costruire la campagna sulle **parole chiave** con "ostia" dentro. Costruiscila sul **targeting geografico**.
+
+Due modi diversi di "fare solo Ostia":
+
+| Approccio | Come funziona | Volume |
+|---|---|---|
+| ❌ **Parole chiave con "ostia"** (`gestione affitti brevi ostia`) | Intercetti solo chi scrive proprio quella parola | Pochissimo: il budget resta inutilizzato |
+| ✅ **Targeting geografico** — raggio 8-10 km su Lido di Ostia, parole chiave generiche (`gestione affitti brevi`, `property manager casa vacanza`, `quanto rende casa vacanza`) | L'annuncio esce a chi cerca il servizio **e si trova o è interessato a quell'area** | Sufficiente a spendere il budget |
+
+Il raggio di 8-10 km copre Ostia, Casal Palocco, Acilia, Infernetto, Axa e l'Isola Sacra: esattamente il bacino di proprietari che ti interessa. Tieni comunque **le parole chiave con "ostia" in un gruppo a parte**: sono poche ma sono le più qualificate e le più economiche, e vanno presidiate.
+
+### Regola di decisione dopo il Keyword Planner
+
+| Volume mensile del grappolo Ostia | Cosa fare |
+|---|---|
+| **> 150 ricerche/mese** | 400 €/mese, campagna a parole chiave, tutto normale. |
+| **50-150** | 300 €/mese, targeting geografico + parole chiave generiche. |
+| **< 50** | Il canale a pagamento da solo non basta per Ostia. Restano validi 250-300 €/mese come presidio, ma **il motore principale diventano Google Business Profile e i gruppi Facebook locali** — che costano zero e su cui hai già nove campagne pronte. |
+
+### Impostazioni obbligate con un budget piccolo
+
+Con 300 €/mese gli errori di configurazione costano in proporzione molto di più.
+
+1. **Una sola campagna, uno o due gruppi di annunci.** Frammentare distribuisce il budget su troppi fronti e nessuno raccoglie dati sufficienti.
+2. **Corrispondenza a frase ed esatta soltanto.** Mai corrispondenza generica: con budget piccolo brucia tutto in ricerche laterali.
+3. **Offerta manuale o "Massimizza clic" con limite di CPC.** ⚠️ **Mai Smart Bidding o CPA target:** hanno bisogno di circa 30 conversioni al mese per calibrarsi, e tu ne farai 4-10. Con pochi dati l'automazione peggiora i risultati invece di migliorarli.
+4. **Liste di esclusione dal primo giorno** (§10): `lavoro`, `corso`, `cerco casa`, `affitto`, `in affitto`, `vendita`, `normativa`, `cedolare`, `cin`, `software`, `gestionale`.
+5. **Estensioni attive:** chiamata (con il numero), posizione (aggancia il Google Business Profile), sitelink verso la landing e le recensioni.
+6. **Programmazione oraria:** solo nelle fasce in cui rispondi entro un'ora. Con 4-10 contatti in tutto, perderne uno per una risposta tardiva pesa il 10-25% del risultato.
+
+### In sintesi
+
+> **900 € totali su 3 mesi (300 €/mese), solo Ostia, con targeting geografico.** Aspettativa: ~2 clienti col sito attuale, ~5 con una landing dedicata. È il test a rischio più basso e a miglior rapporto di tutta l'analisi.
+
+---
+
 ## 13. Fonti
 
 Benchmark di settore consultati per questa analisi:
