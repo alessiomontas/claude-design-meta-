@@ -346,6 +346,42 @@ Con 300 €/mese gli errori di configurazione costano in proporzione molto di pi
 
 ---
 
+## 15. Contatti attesi al mese con 400 €, per raggio di targeting
+
+### Attenzione al raggio: 50 km da Ostia non è "locale"
+
+Lido di Ostia dista **25-30 km dal centro di Roma**. Un raggio di **50 km** copre quindi tutta Roma, Fiumicino, Pomezia, Ardea, Anzio, Nettuno, Ladispoli, Cerveteri e i Castelli. **Non è una campagna su Ostia: è una campagna sull'intera area metropolitana romana**, con due conseguenze — il CPC risale ai livelli di Roma perché torni a competere con iFlat e Propert, e il pubblico si diluisce.
+
+### Contatti al mese con 400 €/mese
+
+⚠️ *Stime modellate, non garanzie. Ipotesi: qualificati 65%, chiusura 25%. "Contatti" = form compilati + chiamate dall'annuncio.*
+
+**Con il sito attuale (conversione 2%)**
+
+| Raggio | CPC | Click/mese | **Contatti/mese** | Qualificati/mese | Clienti in 3 mesi |
+|---|---|---|---|---|---|
+| 10-15 km — Ostia e Litorale | 1,40 € | 286 | **5,7** | 3,7 | 2,8 |
+| **25 km — Ostia + Roma sud/EUR** | 1,80 € | 222 | **4,4** | 2,9 | 2,2 |
+| 50 km — tutta Roma metro | 2,20 € | 182 | **3,6** | 2,4 | 1,8 |
+
+**Con una landing dedicata (conversione 5%)**
+
+| Raggio | CPC | Click/mese | **Contatti/mese** | Qualificati/mese | Clienti in 3 mesi |
+|---|---|---|---|---|---|
+| 10-15 km — Ostia e Litorale | 1,40 € | 286 | **14,3** | 9,3 | 7,0 |
+| **25 km — Ostia + Roma sud/EUR** | 1,80 € | 222 | **11,1** | 7,2 | 5,4 |
+| 50 km — tutta Roma metro | 2,20 € | 182 | **9,1** | 5,9 | 4,4 |
+
+### Il paradosso del raggio stretto
+
+Il raggio stretto ha il CPC più basso e quindi produce **più** contatti sulla carta — ma è anche quello dove **il volume di ricerca rischia di non bastare a spendere i 400 €** (§14). Il raggio largo spende sicuramente il budget, ma ogni contatto costa di più.
+
+**Raccomandazione: 25 km.** Copre Ostia, Acilia, Casal Palocco, Infernetto, Axa, Fiumicino, EUR, Portuense e la fascia sud-ovest di Roma — abbastanza volume per spendere il budget, abbastanza vicino da restare il "gestore del litorale" invece di un concorrente qualunque dentro Roma.
+
+**Risposta sintetica:** con 400 €/mese, **4-6 contatti al mese col sito attuale, 11-14 con una landing dedicata**. Di questi, circa due terzi sono proprietari realmente qualificati.
+
+---
+
 ## 13. Fonti
 
 Benchmark di settore consultati per questa analisi:
