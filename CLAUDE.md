@@ -13,10 +13,13 @@ riferimenti/                    → contenuti reali del cliente (tono di voce da
 brand-assets/                   → logo, foto ambientazione, foto immobili reali (vedi brand-assets/README.md)
 campagne/
 ├── INDEX.md                    → indice campagne: angoli/ganci già usati, da consultare prima di una nuova
-└── <nome-campagna>/            → output tracciabile di ogni campagna
+├── giornaliero/                → produzione quotidiana
+│   ├── PIANO.md                →   pilastri per giorno della settimana + registro di ciò che è già uscito
+│   └── <AAAA-MM-GG>/           →   pacchetto del giorno (reel, carosello, post FB, 2 storie) + PUBBLICAZIONE.md
+└── <nome-campagna>/            → output tracciabile di ogni campagna monotematica
 _handover/                      → snapshot per revisore esterno (stato, decisioni, regole, inventario, aperti)
 .claude/agents/                 → i 5 agenti (ricercatore-mercato, copywriter, art-director, compliance-checker, revisore-marketing-design)
-.claude/skills/                 → framework-vendita (metodo), nuova-campagna (orchestrazione)
+.claude/skills/                 → framework-vendita (metodo), nuova-campagna (campagna), giornata (produzione quotidiana)
 .claude/reference/              → approfondimenti on-demand, NON precaricati:
 ├── brand-identity.md           →   chi è Hadrianus, target/pain-point, cosa si può usare come prova
 ├── design-system.md            →   palette hex, tipografia, formati canale, componenti .dc.html riutilizzabili
@@ -35,6 +38,12 @@ _handover/                      → snapshot per revisore esterno (stato, decisi
 5. **`revisore-marketing-design`** — revisione esperta finale prima della consegna.
 
 Il comando `/nuova-campagna` orchestra questi passaggi. Non saltarne mai uno, anche per contenuti "veloci".
+
+## Produzione quotidiana
+
+Oltre alle campagne monotematiche, il brand produce **ogni giorno** un pacchetto fisso: 1 reel, 1 carosello (5 slide), 1 post Facebook (3 immagini), 2 storie autoconclusive. Lo orchestra il comando **`/giornata`**, che usa lo stesso flusso a 5 agenti e salva in `campagne/giornaliero/<AAAA-MM-GG>/`.
+
+Il pilastro del giorno e il registro di ciò che è già uscito stanno in **`campagne/giornaliero/PIANO.md`** — va letto prima di scegliere l'angolo e aggiornato dopo, sempre. La pubblicazione resta manuale (nessuno strumento qui pubblica su Instagram/Facebook): ogni giorno esce un `PUBBLICAZIONE.md` con orari, file e caption pronte.
 
 ## Preferenze fisse di output (SEMPRE — decise dall'utente)
 

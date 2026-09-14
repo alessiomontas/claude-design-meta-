@@ -2,6 +2,8 @@
 
 Consultalo **prima di iniziare una nuova campagna**, per scegliere un angolo e un layout diversi da quelli già usati (regola fissa "varia il design" in `CLAUDE.md`). Ogni riga rimanda alla cartella completa; per il dettaglio di ogni campagna vedi il suo `README`/piano di pubblicazione.
 
+> **Produzione quotidiana**: oltre alle campagne qui elencate, il comando `/giornata` produce ogni giorno un pacchetto fisso (reel + carosello + post Facebook + 2 storie) in [`giornaliero/`](giornaliero/PIANO.md). La sezione "Angoli/ganci già usati" più sotto vale per **entrambi** i flussi: un gancio uscito in una giornata non si ripete in campagna, e viceversa.
+
 | Campagna | Obiettivo | Angolo/gancio | Target/leva | Formati prodotti | Stato |
 |---|---|---|---|---|---|
 | [`gestione-case-vacanza-proprietari/`](gestione-case-vacanza-proprietari/) | Acquisizione proprietari — case vacanza Roma/Ostia | Rischio dell'affitto tradizionale (morosità, casa sfitta) → property management come "terza strada" | Proprietari con casa sfitta o affitto lungo termine col timore morosità | 3 storie IG, carosello 5 slide, post confronto, cover reel, post Facebook 3 immagini | 🟢 Live — vedi nota sotto su documenti storici |
