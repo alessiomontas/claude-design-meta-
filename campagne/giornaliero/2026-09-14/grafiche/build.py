@@ -402,20 +402,20 @@ def build_facebook():
 
     # ---------------- F2 · 1080x1080 · la catena in 3 momenti ----------
     c = frame(1080, 1080, SABBIA)
-    c += marchio(72, 130, colore=T_SCURO, ombra=False)
-    c += blocco(['Cosa parte a ogni prenotazione'], 230, 50, 800, T_SCURO, allinea='left')
-    c += filo(285, TRACCIA_CHIARA)
+    c += marchio(60, 118, colore=T_SCURO, ombra=False)
+    c += blocco(['Cosa parte a ogni prenotazione'], 200, 50, 800, T_SCURO, allinea='left')
+    c += filo(250, TRACCIA_CHIARA)
 
-    c += marca('PRIMA', 330, colore=ORO_SCURO)
-    c += blocco(["il CIN nell'annuncio,", 'e deve corrispondere.'], 400, 40, 500, T_SCURO_2,
+    c += marca('PRIMA', 300, colore=ORO_SCURO)
+    c += blocco(["il CIN nell'annuncio,", 'e deve corrispondere.'], 375, 40, 500, T_SCURO_2,
                 font=MA, allinea='left', lh=1.3, tracking=0)
 
-    c += marca("ALL'ARRIVO · +24:00", 500, colore=ORO_SCURO)
+    c += marca("ALL'ARRIVO · +24:00", 480, colore=ORO_SCURO)
     c += blocco(["prima identifichi l'ospite,", 'poi gli dai l’accesso. Da lì: 24 ore',
-                 'per comunicare le generalità.'], 585, 40, 500, T_SCURO_2,
+                 'per comunicare le generalità.'], 565, 40, 500, T_SCURO_2,
                 font=MA, allinea='left', lh=1.3, tracking=0)
 
-    c += marca('DURANTE E DOPO', 680, colore=ORO_SCURO)
+    c += marca('DURANTE E DOPO', 700, colore=ORO_SCURO)
     c += blocco(['imposta di soggiorno da incassare e versare,',
                  'dotazioni di sicurezza al loro posto,',
                  'casa in standard alberghiero.'], 785, 40, 500, T_SCURO_2,
