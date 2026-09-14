@@ -137,3 +137,45 @@ Due modi leciti di usarle:
 
 Quando esiste una foto reale pertinente in `brand-assets/immobili/`, **la foto reale vince sempre** sulla
 generata. Le generate servono dove il reale non c'è.
+
+---
+
+## Dialetto per generatore — il prompt va tradotto, non copiato
+
+I cinque blocchi restano identici. Cambia **la sintassi**, e sbagliarla è il modo più rapido di ottenere
+un'immagine mediocre: un `--no` incollato dentro Gemini diventa testo che il modello prova a interpretare.
+
+| | Midjourney / Leonardo | **Gemini (scelto dal titolare)** |
+|---|---|---|
+| Formato | `--ar 9:16` | a parole: *"Generate a vertical 9:16 image"*, come **prima riga** |
+| Negative | `--no x, y, z` | a parole: *"Avoid completely: x, y, z"*, come **ultimo paragrafo** |
+| Stile | `--style raw --s 150` | *"photographic, not illustrative; no stylisation"* |
+| Seed | `--seed 774120` | non esiste: si ripetono i blocchi 3 e 4 **alla lettera** in ogni prompt della serie |
+| Lunghezza | compatta | Gemini regge prompt lunghi e strutturati: **scrivi tutto per esteso, in frasi complete** |
+
+**Struttura del prompt per Gemini** — cinque paragrafi, in quest'ordine:
+
+1. `Generate a vertical 9:16 photograph.` + soggetto e contesto
+2. Composizione, con la **zona vuota dichiarata** ("the central horizontal band of the frame must stay empty…")
+3. Luce e colore, con il lock di brand
+4. Dati tecnici (macchina, focale, diaframma)
+5. `Avoid completely:` + tutte le voci del negative standard
+
+Vincolo che vale su Gemini più che altrove: **mai chiedere testo dentro l'immagine.** Gemini *sa* scrivere, e
+quindi ci prova — producendo italiano sbagliato dentro una grafica commerciale. Il testo si sovrappone dopo,
+nell'artboard.
+
+## Il giro di lavoro con Gemini + Google Drive
+
+Gemini non è collegabile come connettore (verificato nel registro: non esiste). Google Drive sì, ed è già
+collegato. Quindi:
+
+1. Claude scrive il prompt nel dialetto Gemini, dentro il Master Template
+2. Il titolare lo incolla su **gemini.google.com**, genera, sceglie
+3. Salva l'immagine in una cartella Drive dedicata — **`Hadrianus/generate/`**
+4. Dice a Claude il nome del file
+5. Claude la scarica da Drive, la monta nell'artboard o nella scena del reel, renderizza il PNG e fa i sei
+   controlli di qualità prima di mostrarla
+
+Regola già in vigore: **Claude apre Google Drive solo quando gli viene detto esplicitamente.** Il passaggio 4
+non è una formalità, è quello che autorizza la lettura.
