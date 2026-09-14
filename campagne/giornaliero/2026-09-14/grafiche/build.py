@@ -59,8 +59,11 @@ def frame(w, h, bg):
 
 
 def foto(src):
+    # Lock di brand: le foto vanno portate sul fumè caldo prima del velo, altrimenti
+    # i verdi e i bianchi freddi dominano e la grafica legge "smunta".
     return ('  <img src="%s" alt="" style="position: absolute; inset: 0; width: 100%%; '
-            'height: 100%%; object-fit: cover;">\n' % src)
+            'height: 100%%; object-fit: cover; '
+            'filter: saturate(0.72) sepia(0.14) brightness(0.90) contrast(1.06);">\n' % src)
 
 
 def velo(*strati):
@@ -180,9 +183,9 @@ def scrivi(nome, corpo):
 #  R1 · REEL · 1080x1920 · 9 battute
 # =====================================================================
 VELO_REEL = [
-    'radial-gradient(ellipse 92% 30% at 50% 48%, rgba(26,23,19,0.62) 0%, rgba(26,23,19,0.30) 44%, rgba(26,23,19,0) 64%)',
-    'linear-gradient(180deg, rgba(46,42,37,0.86) 0%, rgba(46,42,37,0.20) 34%, rgba(46,42,37,0.30) 62%, rgba(46,42,37,0.88) 100%)',
-    'linear-gradient(0deg, rgba(63,58,51,0.28), rgba(63,58,51,0.28))',
+    'radial-gradient(ellipse 96% 34% at 50% 50%, rgba(26,23,19,0.76) 0%, rgba(26,23,19,0.48) 46%, rgba(26,23,19,0) 68%)',
+    'linear-gradient(180deg, rgba(46,42,37,0.90) 0%, rgba(46,42,37,0.44) 34%, rgba(46,42,37,0.52) 62%, rgba(46,42,37,0.92) 100%)',
+    'linear-gradient(0deg, rgba(63,58,51,0.34), rgba(63,58,51,0.34))',
 ]
 
 def binario(t):
@@ -252,9 +255,9 @@ def build_reel():
 #  C1-C5 · CAROSELLO · 1080x1350
 # =====================================================================
 VELO_C1 = [
-    'radial-gradient(ellipse 90% 34% at 50% 52%, rgba(26,23,19,0.60) 0%, rgba(26,23,19,0.30) 46%, rgba(26,23,19,0) 64%)',
-    'linear-gradient(180deg, rgba(46,42,37,0.88) 0%, rgba(46,42,37,0.22) 36%, rgba(46,42,37,0.34) 64%, rgba(46,42,37,0.90) 100%)',
-    'linear-gradient(0deg, rgba(63,58,51,0.24), rgba(63,58,51,0.24))',
+    'radial-gradient(ellipse 96% 38% at 50% 52%, rgba(26,23,19,0.74) 0%, rgba(26,23,19,0.46) 48%, rgba(26,23,19,0) 68%)',
+    'linear-gradient(180deg, rgba(46,42,37,0.90) 0%, rgba(46,42,37,0.46) 36%, rgba(46,42,37,0.54) 64%, rgba(46,42,37,0.92) 100%)',
+    'linear-gradient(0deg, rgba(63,58,51,0.32), rgba(63,58,51,0.32))',
 ]
 
 ANELLI = [
@@ -372,9 +375,9 @@ def build_carosello():
 #  F1-F3 · FACEBOOK
 # =====================================================================
 VELO_F1 = [
-    'radial-gradient(ellipse 92% 32% at 50% 54%, rgba(26,23,19,0.62) 0%, rgba(26,23,19,0.30) 44%, rgba(26,23,19,0) 64%)',
-    'linear-gradient(180deg, rgba(46,42,37,0.86) 0%, rgba(46,42,37,0.20) 32%, rgba(46,42,37,0.34) 60%, rgba(46,42,37,0.90) 100%)',
-    'linear-gradient(0deg, rgba(63,58,51,0.26), rgba(63,58,51,0.26))',
+    'radial-gradient(ellipse 96% 36% at 50% 54%, rgba(26,23,19,0.76) 0%, rgba(26,23,19,0.48) 46%, rgba(26,23,19,0) 68%)',
+    'linear-gradient(180deg, rgba(46,42,37,0.90) 0%, rgba(46,42,37,0.46) 32%, rgba(46,42,37,0.56) 60%, rgba(46,42,37,0.92) 100%)',
+    'linear-gradient(0deg, rgba(63,58,51,0.34), rgba(63,58,51,0.34))',
 ]
 
 TRACCIA_CHIARA = 'rgba(38,36,31,0.14)'
@@ -412,16 +415,16 @@ def build_facebook():
 
     c += marca("ALL'ARRIVO · +24:00", 480, colore=ORO_SCURO)
     c += blocco(["prima identifichi l'ospite,", 'poi gli dai l’accesso. Da lì: 24 ore',
-                 'per comunicare le generalità.'], 565, 40, 500, T_SCURO_2,
+                 'per comunicare le generalità.'], 581, 40, 500, T_SCURO_2,
                 font=MA, allinea='left', lh=1.3, tracking=0)
 
-    c += marca('DURANTE E DOPO', 700, colore=ORO_SCURO)
+    c += marca('DURANTE E DOPO', 715, colore=ORO_SCURO)
     c += blocco(['imposta di soggiorno da incassare e versare,',
                  'dotazioni di sicurezza al loro posto,',
-                 'casa in standard alberghiero.'], 785, 40, 500, T_SCURO_2,
+                 'casa in standard alberghiero.'], 816, 40, 500, T_SCURO_2,
                 font=MA, allinea='left', lh=1.3, tracking=0)
 
-    c += arco(2, 3, 885, 890, d=110, sw=6, colore=ORO_SCURO, traccia=TRACCIA_CHIARA)
+    c += arco(2, 3, 895, 915, d=100, sw=6, colore=ORO_SCURO, traccia=TRACCIA_CHIARA)
     nomi.append(scrivi('F2.dc.html', c))
 
     # ---------------- F3 · 1080x1080 · offerta / CTA -------------------
@@ -447,13 +450,13 @@ def build_facebook():
 #  S1-S2 · STORIE · 1080x1920 · autoconclusive
 # =====================================================================
 VELO_S1 = [
-    'radial-gradient(ellipse 90% 30% at 50% 56%, rgba(26,23,19,0.60) 0%, rgba(26,23,19,0.28) 44%, rgba(26,23,19,0) 64%)',
-    'linear-gradient(180deg, rgba(46,42,37,0.84) 0%, rgba(46,42,37,0.18) 34%, rgba(46,42,37,0.36) 62%, rgba(46,42,37,0.90) 100%)',
-    'linear-gradient(0deg, rgba(63,58,51,0.26), rgba(63,58,51,0.26))',
+    'radial-gradient(ellipse 96% 36% at 50% 56%, rgba(26,23,19,0.74) 0%, rgba(26,23,19,0.46) 46%, rgba(26,23,19,0) 68%)',
+    'linear-gradient(180deg, rgba(46,42,37,0.90) 0%, rgba(46,42,37,0.44) 34%, rgba(46,42,37,0.56) 62%, rgba(46,42,37,0.92) 100%)',
+    'linear-gradient(0deg, rgba(63,58,51,0.34), rgba(63,58,51,0.34))',
 ]
 VELO_S2 = [
     'radial-gradient(ellipse 90% 30% at 50% 50%, rgba(26,23,19,0.64) 0%, rgba(26,23,19,0.32) 42%, rgba(26,23,19,0) 62%)',
-    'linear-gradient(180deg, rgba(46,42,37,0.88) 0%, rgba(46,42,37,0.24) 36%, rgba(46,42,37,0.40) 64%, rgba(46,42,37,0.92) 100%)',
+    'linear-gradient(180deg, rgba(46,42,37,0.90) 0%, rgba(46,42,37,0.46) 36%, rgba(46,42,37,0.58) 64%, rgba(46,42,37,0.93) 100%)',
     'linear-gradient(0deg, rgba(63,58,51,0.30), rgba(63,58,51,0.30))',
 ]
 
