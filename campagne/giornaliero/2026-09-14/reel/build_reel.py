@@ -6,7 +6,7 @@
 # Le percentuali dei keyframe si calcolano da secondi/D — mai a mano.
 import os
 
-D = 15.6                                   # durata del reel
+D = 14.8                                   # durata del reel
 HERE = os.path.dirname(os.path.abspath(__file__))
 G = '../grafiche/'                         # le foto stanno accanto alle artboard
 
@@ -42,16 +42,16 @@ def anim(*nomi):
 SCENE = [
     ('s1',  0.0,  1.6, ['Foto col telefono.']),
     ('s2',  1.6,  3.2, ['È la prima cosa', 'che vede chi cerca.']),
-    ('s3',  3.2,  4.8, ['E decide lì.']),
-    ('s4',  4.8,  7.0, ['Guarda.']),
-    ('s5',  7.0,  8.6, ['Stessa stanza.', 'Altro annuncio.']),
-    ('s6',  8.6, 10.2, ['Cambia solo', 'chi tiene la macchina.']),
-    ('s7', 10.2, 12.0, ['Ti garantiamo', 'il servizio fotografico.']),
-    ('s8', 12.0, 13.6, ['Dentro la gestione.', 'Non lo paghi a parte.']),
-    ('s9', 13.6, 15.6, ['Gestione completa.', '15% sul fatturato.']),
+    ('s3',  3.2,  4.0, ['E decide lì.']),
+    ('s4',  4.0,  6.2, ['Guarda.']),
+    ('s5',  6.2,  7.8, ['Stessa stanza.', 'Altro annuncio.']),
+    ('s6',  7.8,  9.4, ['Cambia solo', 'chi tiene la macchina.']),
+    ('s7',  9.4, 11.2, ['Ti garantiamo', 'il servizio fotografico.']),
+    ('s8', 11.2, 12.8, ['Dentro la gestione.', 'Non lo paghi a parte.']),
+    ('s9', 12.8, 14.8, ['Gestione completa.', '15% sul fatturato.']),
 ]
-FINE_GUARDA = 5.4          # "Guarda." esce quando parte la tendina
-TENDINA_IN, TENDINA_OUT = 5.4, 6.6
+FINE_GUARDA = 4.6          # "Guarda." esce quando parte la tendina
+TENDINA_IN, TENDINA_OUT = 4.6, 5.8
 
 
 def testo_keyframes():
@@ -127,6 +127,9 @@ body{width:1080px;height:1920px;overflow:hidden;background:%(fume_deep)s}
 .banda{position:absolute;left:0;top:0;width:1080px;height:1920px;overflow:hidden}
 .banda img{position:absolute;inset:0;width:100%%;height:100%%;object-fit:cover}
 .pro-wrap{position:absolute;inset:0;overflow:hidden}
+.scrim{position:absolute;inset:0;pointer-events:none;background:
+  radial-gradient(ellipse 96%% 34%% at 50%% 44%%, rgba(26,23,19,.46) 0%%, rgba(26,23,19,.22) 48%%, rgba(26,23,19,0) 72%%),
+  linear-gradient(180deg, rgba(38,34,29,.86) 0%%, rgba(38,34,29,.24) 26%%, rgba(38,34,29,.30) 56%%, rgba(38,34,29,.93) 100%%);}
 .marchio{position:absolute;left:0;right:0;text-align:center;color:#fff;
   text-shadow:0 3px 10px rgba(0,0,0,.68),0 12px 44px rgba(0,0,0,.55)}
 .h{top:112px;font-family:%(ar)s;font-weight:800;font-size:33px;letter-spacing:10px}
@@ -155,24 +158,24 @@ body{width:1080px;height:1920px;overflow:hidden;background:%(fume_deep)s}
   font-family:%(ar)s;font-weight:800;font-size:40px;color:%(fume_deep)s}
 .filo{position:absolute;left:64px;top:1500px;height:3px;background:%(oro)s;width:952px;transform-origin:left center}
 """ % dict(fume_deep=FUME_DEEP, fume=FUME, oro=ORO, ar=AR, ma=MA,
-           band_y=BAND_Y, band_h=BAND_H, chip_y=1500,
+           band_y=BAND_Y, band_h=BAND_H, chip_y=260,
            handle_y=938)
 
 
 def build():
     k = ''
     # --- fondi sfocati: telefono (0-7), pro (7-10,2), caldo (10,2-13,6)
-    k += visibilita('f_tel', 0.0, 7.0)
-    k += visibilita('f_pro', 6.6, 10.2)
-    k += visibilita('f_cal', 10.2, 13.6)
+    k += visibilita('f_tel', 0.0, 6.2)
+    k += visibilita('f_pro', 5.8, 9.4)
+    k += visibilita('f_cal', 9.4, 12.8)
     # --- banda e livelli
-    k += visibilita('b_banda', 0.0, 13.6)
-    k += visibilita('b_tel', 0.0, 7.0, 0.05)
-    k += visibilita('b_cal', 10.2, 13.6)
+    k += visibilita('b_banda', 0.0, 12.8)
+    k += visibilita('b_tel', 0.0, 6.2, 0.05)
+    k += visibilita('b_cal', 9.4, 12.8)
     # la foto "pro" non sfuma: viene scoperta dalla tendina
     k += kf('b_pro', [(0, 'opacity:0'), (TENDINA_IN - 0.001, 'opacity:0'),
-                      (TENDINA_IN, 'opacity:1'), (10.2, 'opacity:1'),
-                      (10.24, 'opacity:0'), (D, 'opacity:0')])
+                      (TENDINA_IN, 'opacity:1'), (9.4, 'opacity:1'),
+                      (9.44, 'opacity:0'), (D, 'opacity:0')])
     k += kf('taglio_pro', [
         (0, 'clip-path: inset(0 100% 0 0)'),
         (TENDINA_IN, 'clip-path: inset(0 100% 0 0)'),
@@ -188,29 +191,29 @@ def build():
     k += tremolio()
     # movimenti di camera
     k += kf('push_pro', [(0, 'transform: scale(1.02) translateX(0)'),
-                         (7.0, 'transform: scale(1.02) translateX(0)'),
-                         (8.6, 'transform: scale(1.04) translateX(0)'),
-                         (10.2, 'transform: scale(1.06) translateX(-32px)'),
+                         (6.2, 'transform: scale(1.02) translateX(0)'),
+                         (7.8, 'transform: scale(1.04) translateX(0)'),
+                         (9.4, 'transform: scale(1.06) translateX(-32px)'),
                          (D, 'transform: scale(1.06) translateX(-32px)')])
-    k += kf('sale_cal', [(0, 'transform: translateY(40px)'), (10.2, 'transform: translateY(40px)'),
-                         (10.5, 'transform: translateY(0)'), (D, 'transform: translateY(0)')])
+    k += kf('sale_cal', [(0, 'transform: translateY(40px)'), (9.4, 'transform: translateY(40px)'),
+                         (9.7, 'transform: translateY(0)'), (D, 'transform: translateY(0)')])
     # scatto della scena 3: la colonna di provini si ferma di colpo e rimbalza
     k += kf('scatto', [(0, 'transform: translateY(0)'), (3.2, 'transform: translateY(0)'),
-                       (3.62, 'transform: translateY(-12px)'), (3.74, 'transform: translateY(4px)'),
-                       (3.82, 'transform: translateY(0)'), (D, 'transform: translateY(0)')])
+                       (3.42, 'transform: translateY(-12px)'), (3.54, 'transform: translateY(4px)'),
+                       (3.62, 'transform: translateY(0)'), (D, 'transform: translateY(0)')])
     k += kf('barra', [(0, 'transform: scaleX(0)'), (D, 'transform: scaleX(1)')])
-    k += visibilita('cronaca', 0.0, 13.6)          # marchio + binario spariscono sul finale
+    k += visibilita('cronaca', 0.0, 12.8)          # marchio + binario spariscono sul finale
     k += kf('chip', [(0, 'opacity:1'), (TENDINA_IN, 'opacity:1'),
                      (TENDINA_OUT, 'opacity:0'), (D, 'opacity:0')])
     # finale
-    k += kf('finale', [(0, 'opacity:0'), (13.59, 'opacity:0'), (13.6, 'opacity:1'), (D, 'opacity:1')])
+    k += kf('finale', [(0, 'opacity:0'), (12.79, 'opacity:0'), (12.8, 'opacity:1'), (D, 'opacity:1')])
     k += kf('sale_cta', [(0, 'opacity:0; transform: translateY(70px)'),
-                         (13.6, 'opacity:0; transform: translateY(70px)'),
-                         (13.95, 'opacity:1; transform: translateY(0)'),
+                         (12.8, 'opacity:0; transform: translateY(70px)'),
+                         (13.15, 'opacity:1; transform: translateY(0)'),
                          (D, 'opacity:1; transform: translateY(0)')])
-    k += kf('filo', [(0, 'transform: scaleX(0)'), (12.0, 'transform: scaleX(0)'),
-                     (12.5, 'transform: scaleX(1)'), (D, 'transform: scaleX(1)')])
-    k += visibilita('filo_v', 12.0, 13.6)
+    k += kf('filo', [(0, 'transform: scaleX(0)'), (11.2, 'transform: scaleX(0)'),
+                     (11.7, 'transform: scaleX(1)'), (D, 'transform: scaleX(1)')])
+    k += visibilita('filo_v', 11.2, 12.8)
     k += testo_keyframes()
 
     testi = ''
@@ -228,7 +231,7 @@ def build():
 
   <img class="fondo" src="%(g)ssalone-telefono.jpg" style="%(f_tel)s">
   <img class="fondo" src="%(g)ssalone-pro.jpg" style="%(f_pro)s">
-  <img class="fondo" src="%(g)ssalotto-caldo-banda.jpg" style="%(f_cal)s">
+  <img class="fondo" src="%(g)sopenspace-banda.jpg" style="%(f_cal)s">
   <div class="velo"></div>
 
   <div class="banda" style="%(b_banda)s">
@@ -238,8 +241,9 @@ def build():
     <div class="pro-wrap" style="%(taglio)s">
       <img src="%(g)ssalone-pro.jpg" style="%(b_pro)s">
     </div>
-    <img src="%(g)ssalotto-caldo-banda.jpg" style="%(b_cal)s">
+    <img src="%(g)sopenspace-banda.jpg" style="%(b_cal)s">
   </div>
+  <div class="scrim"></div>
   <div class="tendina" style="%(tendina)s"><div class="maniglia"></div></div>
   <div class="chip" style="%(chip)s">SIMULAZIONE</div>
 

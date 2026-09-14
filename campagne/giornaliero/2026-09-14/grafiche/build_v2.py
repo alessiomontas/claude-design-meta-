@@ -178,10 +178,14 @@ def carosello():
     # ---- K1 · il confronto: la tendina a 216, a sinistra il "dopo" ----
     c = frame(1080, 1350, FUME_DEEP)
     c += foto('k-tel-45.jpg')
+    c += ('  <div style="position: absolute; left: 540px; top: 0; width: 540px; height: 1350px; '
+          'overflow: hidden;"><img src="k-pro-45.jpg" alt="" style="position: absolute; right: 0; '
+          'top: 0; width: 1080px; height: 1350px; object-fit: cover;"></div>\n')
     c += velo(*VELO_SCURO)
     c += marchio(80, 138)
-    c += chip('SIMULAZIONE', 200)
-    c += tendina(216, 1350, 675)
+    c += chip('SIMULAZIONE', 200, x=64, w=316)
+    c += chip('FATTA BENE', 200, x=700, w=316)
+    c += tendina(540, 1350, 330)
     c += blocco(['Ti hanno scattato', 'le foto', 'col telefono.'], 770, 70, 900, BIANCO, ombra=True)
     c += blocco(['Quattro cose rendono una foto', 'capace di vendere la casa.'], 980, 40, 500,
                 T_CHIARO, font=MA, lh=1.3, tracking=0, ombra=True)
@@ -194,7 +198,7 @@ def carosello():
     # ---- K2 · la luce ----
     c = frame(1080, 1350, FUME_DEEP)
     c += velo(GRAD)
-    c += tendina(432, 1350, 675)
+    c += tendina(648, 1350, 675)
     c += marchio(80, 138, colore=SABBIA, ombra=False)
     c += kicker('01 · LA LUCE', 220)
     c += blocco(['Una sola luce', 'alla volta.'], 470, 62, 800, SABBIA)
@@ -207,7 +211,7 @@ def carosello():
 
     # ---- K3 · l'ordine (unica slide chiara) ----
     c = frame(1080, 1350, SABBIA)
-    c += tendina(648, 1350, 675, colore='rgba(179,137,47,0.35)')
+    c += tendina(756, 1350, 675, colore='rgba(179,137,47,0.35)')
     c += marchio(80, 138, colore=T_SCURO, ombra=False)
     c += kicker("02 · L'ORDINE", 220, colore=ORO_SCURO)
     c += blocco(['Fotografi la casa finita,', 'non la casa in pausa.'], 470, 62, 800, T_SCURO)
@@ -215,13 +219,13 @@ def carosello():
                  'Letto teso, cuscini battuti,', 'lavabo libero, tende tirate uguali.'],
                 710, 40, 500, T_SCURO_2, font=MA, lh=1.32, tracking=0)
     c += blocco(['Chi guarda vede una casa pronta.'], 890, 40, 700, ORO_SCURO)
-    c += inserto('k-banda-caldo.jpg')
+    c += inserto('k-banda-openspace.jpg')
     nomi.append(scrivi('K3.dc.html', c))
 
     # ---- K4 · l'inquadratura ----
     c = frame(1080, 1350, FUME_DEEP)
     c += velo(GRAD)
-    c += tendina(864, 1350, 675)
+    c += tendina(918, 1350, 675)
     c += marchio(80, 138, colore=SABBIA, ombra=False)
     c += kicker("03 · L'INQUADRATURA", 220)
     c += blocco(['Le verticali devono', 'restare verticali.'], 470, 62, 800, SABBIA)
@@ -306,8 +310,8 @@ def facebook():
     # ---- FB3 · 1080×1080 · offerta ----
     c = frame(1080, 1080, FUME_DEEP)
     c += foto('salone-pro.jpg')
-    c += velo('radial-gradient(ellipse 96% 40% at 50% 50%, rgba(26,23,19,0.82) 0%, rgba(26,23,19,0.62) 52%, rgba(26,23,19,0.42) 76%)',
-              'linear-gradient(180deg, rgba(46,42,37,0.92) 0%, rgba(46,42,37,0.70) 40%, rgba(46,42,37,0.94) 100%)')
+    c += velo('radial-gradient(ellipse 98% 44% at 50% 46%, rgba(26,23,19,0.58) 0%, rgba(26,23,19,0.34) 56%, rgba(26,23,19,0.14) 80%)',
+              'linear-gradient(180deg, rgba(46,42,37,0.78) 0%, rgba(46,42,37,0.30) 34%, rgba(46,42,37,0.44) 64%, rgba(46,42,37,0.90) 100%)')
     c += marchio(72, 130, colore=SABBIA, ombra=True)
     c += kicker('GESTIONE COMPLETA', 215, ombra=True)
     c += blocco(['Il servizio fotografico', 'è incluso.'], 340, 62, 900, ORO, ombra=True)
@@ -328,7 +332,7 @@ def facebook():
 def storie():
     nomi = []
     dati = [
-        ('S3', 'salotto-caldo-9x16.jpg', 'ERRORE · MINIMO NOTTI',
+        ('S3', 'openspace-9x16.jpg', 'ERRORE · MINIMO NOTTI',
          ['Hai messo', 'minimo 3 notti.'],
          ['Roma si visita in due giorni.', 'Con il minimo a tre notti,', 'chi ne cerca due non ti trova.'],
          ['Tieni il minimo alto solo in alta', 'stagione. Nei periodi bassi e in',

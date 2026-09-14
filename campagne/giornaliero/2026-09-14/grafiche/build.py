@@ -489,7 +489,7 @@ def build_storie():
     c += blocco(["L'ospite entra", 'alle %s.' % ora], 780, 70, 900, BIANCO,
                 allinea='left', ombra=True)
     c += blocco(['Lo identifichi. Poi entra.', 'Da lì: 24 ore per la comunicazione.',
-                 "E l'imposta di soggiorno la versi tu,", "anche se l'ospite non la paga."],
+                 "E c'è l'imposta di soggiorno", "da incassare e da versare."],
                 1010, 40, 500, T_CHIARO, font=MA, allinea='left', lh=1.3, tracking=0, ombra=True)
     c += filo(1120, 'rgba(245,240,230,0.20)')
     c += blocco(['Da noi succede mentre dormi.', 'È già dentro la gestione.'], 1220, 50, 800,
