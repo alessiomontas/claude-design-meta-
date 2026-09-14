@@ -4,14 +4,13 @@ Riferimento di approfondimento (non caricato automaticamente): leggilo quando se
 
 ## Chi è Hadrianus
 
-**Hadrianus Multiservice** — property management per case vacanza a **Roma e Ostia/Litorale**. Gestisce affitti brevi per conto di proprietari immobiliari con un metodo in **standard alberghiero**. Ha anche una divisione B2B, **Templum Purum**, per pulizie professionali (hotel, B&B, locali commerciali).
+**Hadrianus Multiservice** — property management per case vacanza a **Roma e Ostia/Litorale**. Gestisce affitti brevi per conto di proprietari immobiliari con un metodo in **standard alberghiero**.
 
 ## Modello economico e offerta
 
 - **Commissione 15% sul fatturato generato.** Nessun costo fisso noto/verificato oltre questo.
 - **Filosofia dichiarata: "guadagniamo solo se guadagni tu"** — allineamento di interessi, è la leva di fiducia principale del brand (vedi `lessico-brand.md` per la formula esatta).
 - **Servizi inclusi nella gestione**: pricing dinamico, check-in smart H24, gestione ospiti, pulizie in standard alberghiero, ottimizzazione annuncio (foto, testo).
-- **Divisione pulizie (Templum Purum)**: sgrosso iniziale (da 250€), mantenimento programmato (50-75€), valutazione post-pulizia 4.9/5 — dati da `riferimenti/riferimento-3.md`.
 
 ## Target dell'acquisizione (chi vogliamo convincere)
 
@@ -48,3 +47,9 @@ Vedi `campagne/INDEX.md` per l'elenco aggiornato delle campagne e dei rispettivi
 ## Tono di voce
 
 Si calibra **sempre** su `riferimenti/` (contenuti reali già scritti da Hadrianus), non su preferenze generiche di "buon copywriting". Regola non negoziabile — vedi `CLAUDE.md`.
+
+## Fuori dal brand
+
+**La divisione pulizie B2B "Templum Purum" non fa più parte del brand** (decisione del titolare, 14 settembre 2026).
+Non va nominata in nessun contenuto, non è un angolo di campagna utilizzabile, e `riferimenti/riferimento-3.md`
+non va più usato per calibrare il tono.

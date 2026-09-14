@@ -1,3 +1,7 @@
+> ⛔ **RITIRATO — 14 settembre 2026.** La divisione Templum Purum non fa più parte del brand Hadrianus.
+> Questo file resta come archivio storico: **non usarlo per calibrare il tono di voce** e non riprendere
+> nessuno dei suoi contenuti nelle campagne.
+
 # Esempio Tono di Voce: B2B e Pulizie Hotel-Style (Templum Purum)
 
 ## Metadati

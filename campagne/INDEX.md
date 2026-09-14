@@ -41,7 +41,9 @@ Consultalo **prima di iniziare una nuova campagna**, per scegliere un angolo e u
 - Il capitale già posseduto contro il lavoro che manca: "non ti serve un'altra casa, ti manca il resto" — reel 15 s
 - Il livello di esecuzione come argomento in sé, con il gancio che ammette che gli interni mostrati non esistono — reel 29 s
 
-Angoli non ancora esplorati, potenziali per una prossima campagna: calendario eventi di Roma come leva di prenotazione, retention/referral per proprietari già clienti, la divisione pulizie B2B (Templum Purum) verso hotel e B&B.
+Angoli non ancora esplorati, potenziali per una prossima campagna: calendario eventi di Roma come leva di prenotazione, retention/referral per proprietari già clienti.
+
+**Fuori perimetro:** la divisione pulizie B2B "Templum Purum" è stata ritirata dal brand il 14 settembre 2026 e non è più un angolo utilizzabile.
 
 ## Come aggiungere una nuova campagna
 
