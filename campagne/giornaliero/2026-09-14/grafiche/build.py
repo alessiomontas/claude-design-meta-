@@ -474,7 +474,7 @@ def build_storie():
     c += blocco(['Se manca, o non corrisponde,', "l'annuncio può non passare la verifica."],
                 1060, 40, 500, T_CHIARO, font=MA, allinea='left', lh=1.3, tracking=0, ombra=True)
     c += filo(1140, 'rgba(245,240,230,0.20)')
-    c += blocco(["L'annuncio lo curiamo noi.", 'Il codice ci sta dentro', 'dal primo giorno.'],
+    c += blocco(["L'annuncio lo curiamo noi.", 'Il codice sarà presente', 'dal primo giorno.'],
                 1250, 50, 800, ORO, allinea='left', ombra=True)
     c += pill_oro(1480, 120, 'Scrivi in DM', size=40)
     nomi.append(scrivi('S1.dc.html', c))
