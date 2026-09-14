@@ -5,170 +5,107 @@
       "x": 0,
       "y": 0,
       "w": 1080,
-      "h": 1920,
-      "title": "Reel 1/9 · 0,0-2,6 s — il gancio",
+      "h": 1350,
+      "title": "Carosello 1/5 · il confronto",
       "print": "fixed"
     },
     {
-      "file": "R1b2.dc.html",
+      "file": "K2.dc.html",
       "x": 1240,
       "y": 0,
       "w": 1080,
-      "h": 1920,
-      "title": "Reel 2/9 · 2,6-4,0 s — la svolta",
+      "h": 1350,
+      "title": "Carosello 2/5 · 01 la luce",
       "print": "fixed"
     },
     {
-      "file": "R1b3.dc.html",
+      "file": "K3.dc.html",
       "x": 2480,
       "y": 0,
       "w": 1080,
-      "h": 1920,
-      "title": "Reel 3/9 · 4,0-5,4 s — arriva una prenotazione",
+      "h": 1350,
+      "title": "Carosello 3/5 · 02 l'ordine",
       "print": "fixed"
     },
     {
-      "file": "R1b4.dc.html",
+      "file": "K4.dc.html",
       "x": 3720,
       "y": 0,
       "w": 1080,
-      "h": 1920,
-      "title": "Reel 4/9 · 5,4-6,8 s — parte un orologio",
+      "h": 1350,
+      "title": "Carosello 4/5 · 03 l'inquadratura",
       "print": "fixed"
     },
     {
-      "file": "R1b5.dc.html",
+      "file": "K5.dc.html",
       "x": 4960,
       "y": 0,
       "w": 1080,
-      "h": 1920,
-      "title": "Reel 5/9 · 6,8-8,2 s — hai un altro lavoro",
+      "h": 1350,
+      "title": "Carosello 5/5 · 04 la sequenza + offerta",
       "print": "fixed"
     },
     {
-      "file": "R1b6.dc.html",
-      "x": 6200,
-      "y": 0,
-      "w": 1080,
-      "h": 1920,
-      "title": "Reel 6/9 · 8,2-9,6 s — va avanti lo stesso",
-      "print": "fixed"
-    },
-    {
-      "file": "R1b7.dc.html",
-      "x": 7440,
-      "y": 0,
-      "w": 1080,
-      "h": 1920,
-      "title": "Reel 7/9 · 9,6-11,0 s — e non suona",
-      "print": "fixed"
-    },
-    {
-      "file": "R1b8.dc.html",
-      "x": 8680,
-      "y": 0,
-      "w": 1080,
-      "h": 1920,
-      "title": "Reel 8/9 · 11,0-13,0 s — la presa in carico",
-      "print": "fixed"
-    },
-    {
-      "file": "R1b9.dc.html",
-      "x": 9920,
-      "y": 0,
-      "w": 1080,
-      "h": 1920,
-      "title": "Reel 9/9 · 13,0-15,4 s — chiusura",
-      "print": "fixed"
-    },
-    {
-      "file": "C1.dc.html",
+      "file": "FB1.dc.html",
       "x": 0,
-      "y": 2200,
-      "w": 1080,
-      "h": 1350,
-      "title": "Carosello 1/5 · T zero — il gancio",
-      "print": "fixed"
-    },
-    {
-      "file": "C2.dc.html",
-      "x": 1240,
-      "y": 2200,
-      "w": 1080,
-      "h": 1350,
-      "title": "Carosello 2/5 · anello 01 — il CIN nell'annuncio",
-      "print": "fixed"
-    },
-    {
-      "file": "C3.dc.html",
-      "x": 2480,
-      "y": 2200,
-      "w": 1080,
-      "h": 1350,
-      "title": "Carosello 3/5 · anello 02 — l'arrivo e le 24 ore",
-      "print": "fixed"
-    },
-    {
-      "file": "C4.dc.html",
-      "x": 3720,
-      "y": 2200,
-      "w": 1080,
-      "h": 1350,
-      "title": "Carosello 4/5 · anello 03 — durante e dopo",
-      "print": "fixed"
-    },
-    {
-      "file": "C5.dc.html",
-      "x": 4960,
-      "y": 2200,
-      "w": 1080,
-      "h": 1350,
-      "title": "Carosello 5/5 · chi esegue la catena",
-      "print": "fixed"
-    },
-    {
-      "file": "F1.dc.html",
-      "x": 0,
-      "y": 3830,
+      "y": 1630,
       "w": 1080,
       "h": 1920,
-      "title": "FB 1 · 9:16 — la data: dal 20 maggio",
+      "title": "FB 1 · 9:16 — il gancio",
       "print": "fixed"
     },
     {
-      "file": "F2.dc.html",
+      "file": "FB2.dc.html",
       "x": 1240,
-      "y": 3830,
+      "y": 1630,
       "w": 1080,
       "h": 1080,
-      "title": "FB 2 · 1:1 — la catena in tre momenti",
+      "title": "FB 2 · 1:1 — le quattro differenze",
       "print": "fixed"
     },
     {
-      "file": "F3.dc.html",
+      "file": "FB3.dc.html",
       "x": 2480,
-      "y": 3830,
+      "y": 1630,
       "w": 1080,
       "h": 1080,
-      "title": "FB 3 · 1:1 — sei anelli, offerta e CTA",
+      "title": "FB 3 · 1:1 — offerta e CTA",
       "print": "fixed"
     },
     {
       "file": "S1.dc.html",
-      "x": 0,
-      "y": 6030,
+      "x": 3720,
+      "y": 1630,
       "w": 1080,
       "h": 1920,
-      "title": "Storia 1 · prima della pubblicazione",
+      "title": "S1.dc.html",
       "print": "fixed"
     },
     {
       "file": "S2.dc.html",
-      "x": 1240,
-      "y": 6030,
+      "x": 4960,
+      "y": 1630,
       "w": 1080,
       "h": 1920,
-      "title": "Storia 2 · le 23:40",
+      "title": "S2.dc.html",
+      "print": "fixed"
+    },
+    {
+      "file": "S3.dc.html",
+      "x": 0,
+      "y": 3830,
+      "w": 1080,
+      "h": 1920,
+      "title": "Storia 3 · minimo notti",
+      "print": "fixed"
+    },
+    {
+      "file": "S4.dc.html",
+      "x": 1240,
+      "y": 3830,
+      "w": 1080,
+      "h": 1920,
+      "title": "Storia 4 · orari di check-in",
       "print": "fixed"
     }
   ]

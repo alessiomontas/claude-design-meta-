@@ -17,7 +17,7 @@ SABBIA    = '#F5F0E6'
 AR = "'Archivo','Helvetica Neue',Arial,sans-serif"
 MA = "'Manrope','Helvetica Neue',Arial,sans-serif"
 
-BAND_Y, BAND_H = 470, 810                  # banda nitida centrata nel 9:16
+BAND_Y, BAND_H = 0, 1920                  # banda nitida centrata nel 9:16
 
 
 def p(t):
@@ -124,8 +124,7 @@ body{width:1080px;height:1920px;overflow:hidden;background:%(fume_deep)s}
 .velo{position:absolute;inset:0;background:
   radial-gradient(ellipse 92%% 30%% at 50%% 48%%, rgba(26,23,19,.50) 0%%, rgba(26,23,19,.26) 46%%, rgba(26,23,19,0) 70%%),
   linear-gradient(180deg, rgba(46,42,37,.90) 0%%, rgba(46,42,37,.34) 30%%, rgba(46,42,37,.40) 64%%, rgba(46,42,37,.94) 100%%);}
-.banda{position:absolute;left:0;top:%(band_y)spx;width:1080px;height:%(band_h)spx;overflow:hidden;
-  box-shadow:0 30px 90px rgba(0,0,0,.55);}
+.banda{position:absolute;left:0;top:0;width:1080px;height:1920px;overflow:hidden}
 .banda img{position:absolute;inset:0;width:100%%;height:100%%;object-fit:cover}
 .pro-wrap{position:absolute;inset:0;overflow:hidden}
 .marchio{position:absolute;left:0;right:0;text-align:center;color:#fff;
@@ -141,7 +140,7 @@ body{width:1080px;height:1920px;overflow:hidden;background:%(fume_deep)s}
   display:flex;align-items:center;justify-content:center;background:rgba(26,23,19,.62);
   border:1px solid rgba(200,162,75,.55);border-radius:999px;
   font-family:%(ma)s;font-weight:600;font-size:17px;letter-spacing:8px;color:%(oro)s}
-.tendina{position:absolute;top:%(band_y)spx;height:%(band_h)spx;width:6px;background:%(oro)s;left:0;
+.tendina{position:absolute;top:0;height:1920px;width:6px;background:%(oro)s;left:0;
   box-shadow:0 0 30px rgba(200,162,75,.75)}
 .maniglia{position:absolute;left:-19px;top:%(handle_y)spx;width:44px;height:44px;border-radius:50%%;
   background:%(oro)s;box-shadow:0 0 26px rgba(200,162,75,.8)}
@@ -156,8 +155,8 @@ body{width:1080px;height:1920px;overflow:hidden;background:%(fume_deep)s}
   font-family:%(ar)s;font-weight:800;font-size:40px;color:%(fume_deep)s}
 .filo{position:absolute;left:64px;top:1500px;height:3px;background:%(oro)s;width:952px;transform-origin:left center}
 """ % dict(fume_deep=FUME_DEEP, fume=FUME, oro=ORO, ar=AR, ma=MA,
-           band_y=BAND_Y, band_h=BAND_H, chip_y=BAND_Y + BAND_H - 84,
-           handle_y=BAND_H // 2 - 22)
+           band_y=BAND_Y, band_h=BAND_H, chip_y=1500,
+           handle_y=938)
 
 
 def build():
