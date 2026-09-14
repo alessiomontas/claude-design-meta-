@@ -23,7 +23,7 @@ I sei errori bruciati — **foto, prezzo fermo, risposte lente, calendario non a
 
 ### Regola di onestà sul "prima" (vincolante, non negoziabile)
 
-Il "prima" **non è la casa di un cliente vero**. È una **versione volutamente degradata di una foto reale** (`brand-assets/immobili/`), degradata da noi in post-produzione e **dichiarata come simulazione dentro il contenuto stesso**, con il chip oro `SIMULAZIONE` sempre visibile sulla metà "prima".
+Il "prima" **non è la casa di un cliente vero**. È una **versione volutamente degradata di una foto di Adobe Stock regolarmente licenziata** (`grafiche/stock-salone.jpg`), degradata da noi in post-produzione e **dichiarata come simulazione dentro il contenuto stesso**, con il chip oro `SIMULAZIONE` sempre visibile sulla metà "prima".
 Precedente già in produzione nel brand: `campagne/reel-standard-alberghiero/` apre con *"Questa casa non esiste. Lo standard, sì."*
 **Prima e dopo sono lo stesso file sorgente**: così la riga "Stessa stanza" è letteralmente vera, non una figura retorica.
 
@@ -227,9 +227,9 @@ Velo: `radial-gradient(ellipse 90% 34% at 50% 58%, rgba(26,23,19,.62), transpare
 ```
 Gancio A    | Una sola luce alla volta.
 Gancio B    | Metà gialla e metà grigia.
-Corpo       | Lampade accese e finestra aperta
+Corpo       | Lampade accese e luce di finestra
             | insieme danno una foto di due colori.
-            | Spegni tutto. Apri tutto.
+            | Spegni le lampade. Scosta le tende.
             | Scatta a metà mattina.
 CTA         | —
 Caption     | —
@@ -321,7 +321,7 @@ Velo: — (artboard pieno chiaro `#F5F0E6` — **unica slide chiara** del carose
 ```
 Gancio A    | Le verticali devono
             | restare verticali.
-Gancio B    | Se la stanza pende, sembra più piccola.
+Gancio B    | Se la stanza pende, sembra deformata.
 Corpo       | Macchina all'altezza del petto e dritta:
             | stipiti e spigoli non devono pendere.
             | Scatta da un angolo, mai dal centro.
@@ -789,9 +789,9 @@ generic stock photo look, 3D render look, videogame lighting
 |---|---|---|---|
 | 1 | **Chi scatta le foto** | `R2` (scena 7), `K5`, `FB2`, `FB3` | **[DATO DA VERIFICARE: il servizio fotografico è affidato a un fotografo professionista esterno o eseguito dal team interno? Con che attrezzatura?]** Finché è aperto, il copy dice **"il servizio fotografico"** e **"la fotografiamo noi"**, mai "un fotografo professionista" e mai "servizio fotografico editoriale". Se il titolare conferma, si può alzare il claim in tutti e quattro i punti. |
 | 2 | **Il minimo notti dentro il pricing dinamico** | `S3` (riga di garanzia) | **[DATO DA VERIFICARE: Hadrianus gestisce anche il minimo di notti, o solo la tariffa?]** Il pricing dinamico è confermato; il minimo notti è una leva dello stesso strumento ma non è stato confermato esplicitamente. **Se non chiuso prima della pubblicazione**, la riga diventa: *"Con noi le tariffe si muovono data per data. Ci pensiamo noi."* |
-| 3 | **Consenso sulla foto reale degradata** | `R2`, `K1`, `FB1` | **[DATO DA VERIFICARE: il proprietario dell'immobile reale in `brand-assets/immobili/` autorizza la pubblicazione di una versione volutamente peggiorata del suo appartamento?]** È il vero rischio di questo pacchetto: la casa è reale e riconoscibile. **Bloccante.** Alternative se il consenso non c'è: (a) degradare una foto di un immobile non più in gestione, (b) usare come sorgente un'immagine generata — in quel caso *entrambe* le versioni vanno dichiarate come non reali. |
+| 3 | **Sorgente del "prima"** | `R2`, `K1`, `FB1` | **CHIUSO il 14/09 — decisione del titolare.** Il "prima" e il "dopo" vengono entrambi da **una sola foto di Adobe Stock regolarmente licenziata** (`grafiche/stock-salone.jpg`, asset 624287619), non da un immobile in gestione: nessun consenso da chiedere, e "stessa stanza" resta letteralmente vero. **Non rigenerare mai il "prima" partendo da `brand-assets/immobili/`**: quelle case sono reali e riconoscibili.
 | 4 | **"Nessun costo fisso"** | **nessun contenuto** | Claim ereditato e ancora aperto da `facebook-stagionalita-reel-proprietari` e da `copy.md`. **Deliberatamente non usato qui.** Si afferma solo che *il servizio fotografico è incluso e non si paga a parte*, che il titolare ha confermato. Non trasformarlo in "nessun costo iniziale" in impaginazione. |
-| 5 | **Peso del turismo di 1-2 notti a Roma** | `S3` (alluso, mai quantificato) | Nessuna fonte in questo pacchetto. **[DATO DA VERIFICARE: quota di soggiorni di 1-2 notti sulle strutture ricettive di Roma]** — serve solo se un giorno si vorrà scrivere un numero. Oggi la storia funziona senza. |
+| 5 | **Peso del turismo di 1-2 notti a Roma** | `S3` (alluso, mai quantificato) | Nessuna fonte in questo pacchetto. **CHIUSO come non necessario**: nessun numero compare nel pacchetto e la storia funziona senza. Il marcatore servirà solo se un giorno si vorrà scrivere una quota, e allora andrà cercata la fonte. |
 | 6 | **Comportamento delle piattaforme sulla prima foto** | `R2`, `FB1` | Nessun dato citato, di proposito: mai "l'algoritmo premia", mai percentuali di clic. Se in revisione qualcuno propone un numero, va rifiutato o marcato. |
 
 ### Regole rispettate nel testo (da non rompere in revisione)

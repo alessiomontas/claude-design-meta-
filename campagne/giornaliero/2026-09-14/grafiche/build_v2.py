@@ -85,10 +85,10 @@ def blocco(righe, y, size, peso, colore, font=AR, allinea='left', lh=1.13,
             % (left, right, y, allinea, fam, peso, size, lh, tracking, colore, sh, corpo))
 
 
-def kicker(testo, y, colore=ORO, ombra=False, allinea='left'):
+def kicker(testo, y, colore=ORO, ombra=False, allinea='left', left=64):
     sh = OMBRA if ombra else ''
-    pos = ('left: 64px; right: 64px; text-align: left;' if allinea == 'left'
-           else 'left: 64px; right: 64px; text-align: right;')
+    pos = ('left: %dpx; right: 64px; text-align: left;' % left if allinea == 'left'
+           else 'left: %dpx; right: 64px; text-align: right;' % left)
     return ('  <div style="position: absolute; %s top: %dpx; transform: translateY(-50%%); '
             'font-family: %s; font-weight: 600; font-size: 17px; letter-spacing: 8px; '
             'text-transform: uppercase; color: %s; %s">'
@@ -185,7 +185,10 @@ def carosello():
     c += blocco(['Ti hanno scattato', 'le foto', 'col telefono.'], 770, 70, 900, BIANCO, ombra=True)
     c += blocco(['Quattro cose rendono una foto', 'capace di vendere la casa.'], 980, 40, 500,
                 T_CHIARO, font=MA, lh=1.3, tracking=0, ombra=True)
-    c += pill_outline(1140, 64, 356, 80, 'Scorri')
+    c += blocco(['La foto qui sopra è una simulazione:',
+                 'una foto rovinata apposta da noi.'], 1130, 31, 500, T_CHIARO_2,
+                font=MA, lh=1.3, tracking=0, ombra=True)
+    c += pill_outline(1245, 64, 356, 80, 'Scorri')
     nomi.append(scrivi('Main.dc.html', c))
 
     # ---- K2 · la luce ----
@@ -196,7 +199,7 @@ def carosello():
     c += kicker('01 · LA LUCE', 220)
     c += blocco(['Una sola luce', 'alla volta.'], 470, 62, 800, SABBIA)
     c += blocco(['Lampade accese e finestra aperta', 'insieme danno una foto di due colori.',
-                 'Spegni tutto. Apri tutto.', 'Scatta a metà mattina.'],
+                 'Spegni le lampade. Scosta le tende.', 'Scatta a metà mattina.'],
                 710, 40, 500, T_CHIARO, font=MA, lh=1.32, tracking=0)
     c += blocco(['La casa torna del colore che ha davvero.'], 890, 40, 700, ORO)
     c += inserto('k-banda-pro.jpg')
@@ -295,23 +298,25 @@ def facebook():
     for k, t, y in voci:
         c += ('  <div style="position: absolute; left: 64px; top: %dpx; width: 3px; height: 74px; '
               'background: %s;"></div>\n' % (y - 37, ORO_SCURO))
-        c += kicker(k, y - 22, colore=ORO_SCURO)
+        c += kicker(k, y - 22, colore=ORO_SCURO, left=86)
         c += blocco([t], y + 18, 40, 500, T_SCURO, font=MA, lh=1.25, tracking=0, left=86)
     c += pill(938, 156, 'Con noi la tua casa la fotografiamo noi.', size=40)
     nomi.append(scrivi('FB2.dc.html', c))
 
     # ---- FB3 · 1080×1080 · offerta ----
     c = frame(1080, 1080, FUME_DEEP)
-    c += velo(GRAD)
-    c += marchio(72, 130, colore=SABBIA, ombra=False)
-    c += kicker('GESTIONE COMPLETA', 215)
-    c += blocco(['Il servizio fotografico', 'è incluso.'], 340, 62, 900, ORO)
+    c += foto('salone-pro.jpg')
+    c += velo('radial-gradient(ellipse 96% 40% at 50% 50%, rgba(26,23,19,0.82) 0%, rgba(26,23,19,0.62) 52%, rgba(26,23,19,0.42) 76%)',
+              'linear-gradient(180deg, rgba(46,42,37,0.92) 0%, rgba(46,42,37,0.70) 40%, rgba(46,42,37,0.94) 100%)')
+    c += marchio(72, 130, colore=SABBIA, ombra=True)
+    c += kicker('GESTIONE COMPLETA', 215, ombra=True)
+    c += blocco(['Il servizio fotografico', 'è incluso.'], 340, 62, 900, ORO, ombra=True)
     c += blocco(['La casa la fotografiamo noi.', "L'annuncio lo scriviamo noi.",
                  'Tu ricevi il bonifico netto a fine mese.'],
-                540, 40, 700, SABBIA, lh=1.32)
+                540, 40, 700, SABBIA, lh=1.32, ombra=True)
     c += filo(640, 'rgba(245,240,230,0.18)')
-    c += blocco(['15% sul fatturato generato.'], 700, 45, 800, SABBIA)
-    c += blocco(['Guadagniamo solo se guadagni tu.'], 785, 33, 800, ORO)
+    c += blocco(['15% sul fatturato generato.'], 700, 45, 800, SABBIA, ombra=True)
+    c += blocco(['Guadagniamo solo se guadagni tu.'], 785, 33, 800, ORO, ombra=True)
     c += pill(958, 116, 'Scrivi CALCOLO in DM', maniglia=True)
     nomi.append(scrivi('FB3.dc.html', c))
     return nomi
@@ -328,7 +333,7 @@ def storie():
          ['Roma si visita in due giorni.', 'Con il minimo a tre notti,', 'chi ne cerca due non ti trova.'],
          ['Tieni il minimo alto solo in alta', 'stagione. Nei periodi bassi e in',
           'settimana scendi a una o due notti.'],
-         ['Prezzo e minimo notti', 'si muovono insieme, data per data.']),
+         ['Con noi le tariffe si muovono', 'data per data. Ci pensiamo noi.']),
         ('S4', 'salone-pro.jpg', 'ERRORE · ORARI DI ARRIVO',
          ['Check-in', 'dalle 15 alle 19.'],
          ['Chi atterra a Fiumicino la sera', 'e chi arriva col treno tardi', 'cerca una casa che lo aspetti.'],

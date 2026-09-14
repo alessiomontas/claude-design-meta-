@@ -40,7 +40,7 @@ Ti garantiamo la gestione completa: foto e annuncio, pricing dinamico, check-in 
 
 15% sul fatturato generato. Guadagniamo solo se guadagni tu.
 
-Scrivi CALCOLO in DM per una simulazione gratuita.
+Scrivi CALCOLO in DM e ti diciamo quanto può rendere la tua casa.
 
 ---
 
@@ -50,11 +50,11 @@ Ti hanno scattato le foto col telefono.
 
 Lo diciamo senza giri di parole, perché è l'errore più diffuso ed è anche il più facile da correggere. La prima foto dell'annuncio è l'unica cosa che vede chi sta scorrendo. Il resto lo legge solo chi si è già fermato.
 
-Nelle immagini qui sopra c'è la stessa stanza, due volte. La prima è una simulazione: abbiamo preso una foto reale e l'abbiamo rovinata apposta — storta, scura, tagliata male, con le lampade accese e la finestra aperta insieme. Non è la casa di nessun cliente, e volevamo dirlo prima che lo chiedesse qualcuno.
+Nelle immagini qui sopra c'è la stessa stanza, due volte: nella prima e nell'ultima. Quella iniziale è una simulazione — abbiamo preso una foto e l'abbiamo rovinata apposta — storta, scura, tagliata male, con le lampade accese e la finestra aperta insieme. Non è la casa di nessun cliente, e volevamo dirlo prima che lo chiedesse qualcuno.
 
 Quattro cose rendono una foto capace di vendere la casa. Valgono anche se fai tutto da solo:
 
-1) LA LUCE. Una sola alla volta. Lampade accese e luce di finestra insieme danno una foto metà gialla e metà grigia. Spegni tutto, apri tutto, scatta a metà mattina.
+1) LA LUCE. Una sola alla volta. Lampade accese e luce di finestra insieme danno una foto metà gialla e metà grigia. Spegni le lampade, scosta le tende, scatta a metà mattina.
 
 2) L'ORDINE. Via telecomandi, cavi, ciabatte, detersivi, scolapiatti. Letto teso, cuscini battuti, lavabo libero, tende tirate uguali su tutte le finestre. Si fotografa la casa finita, non la casa in pausa.
 
@@ -68,7 +68,7 @@ Ti garantiamo la gestione completa: foto e annuncio, pricing dinamico, check-in 
 
 15% sul fatturato generato. Guadagniamo solo se guadagni tu.
 
-Hai una casa a Roma o a Ostia? Scrivi CALCOLO in DM per una simulazione gratuita.
+Hai una casa a Roma o a Ostia? Scrivi CALCOLO in DM e ti diciamo quanto può rendere.
 
 ---
 
@@ -80,7 +80,7 @@ Con noi il servizio fotografico è incluso nella gestione: la casa la fotografia
 
 Gestione completa, 15% sul fatturato generato. Guadagniamo solo se guadagni tu.
 
-Scrivi CALCOLO in DM per una simulazione gratuita.
+Scrivi CALCOLO in DM e ti diciamo quanto può rendere la tua casa.
 
 ---
 
@@ -99,7 +99,7 @@ Scrivi CALCOLO in DM per una simulazione gratuita.
 ## Da confermare
 
 1. **Chi scatta le foto** — fotografo professionista esterno o qualcuno del team? Finché non me lo dici, i contenuti dicono solo "il servizio fotografico", senza specificare. Se hai un fotografo professionista, è un argomento forte che stiamo sprecando.
-2. **Il minimo notti lo gestite voi** dentro il pricing dinamico? La storia `S3` lo dà per fatto ("prezzo e minimo notti si muovono insieme"). Se non è così, la riga va cambiata.
+2. **Il minimo notti lo gestite voi** dentro il pricing dinamico? Per ora la storia `S3` parla solo di tariffe ("le tariffe si muovono data per data"), che è confermato. Se gestite anche il minimo notti, la riga si può rafforzare.
 3. **"Nessun costo fisso"** — resta aperto dal pacchetto precedente e in questo non è usato da nessuna parte. Se mi confermi che non ci sono costi una tantum in avvio (foto, biancheria, sistemazioni), diventa un argomento in più.
 
 Nessuno dei tre blocca la pubblicazione.
