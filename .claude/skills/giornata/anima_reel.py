@@ -57,7 +57,10 @@ def main(pagina, uscita, durata=15.0, fps=30):
                     a.currentTime = t;
                 }
             }""", t)
-            pg.screenshot(path=os.path.join(tmp, 'f%05d.png' % i), animations='disabled')
+            # Niente animations='disabled': quell'opzione porta le animazioni CSS
+            # allo stato FINALE, che e' l'opposto dello scrubbing. Qui sono gia'
+            # in pausa e posizionate a mano.
+            pg.screenshot(path=os.path.join(tmp, 'f%05d.png' % i))
         b.close()
 
     cmd = [imageio_ffmpeg.get_ffmpeg_exe(), '-y', '-loglevel', 'error',
