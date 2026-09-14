@@ -37,7 +37,7 @@ Una riga per giorno prodotto. La aggiunge `/giornata` al passaggio 8.
 | Data | Pilastro | Angolo/gancio | Compliance | Revisione | Cartella |
 |---|---|---|---|---|---|
 | 2026-09-14 (lun) | L'obiezione | ~~La casella dimenticata (esposizione amministrativa)~~ — **bocciato dal titolare**: la burocrazia non è un gancio, e il copy chiudeva sul peso che resta al proprietario. Copy conservato in `copy.md` | ✅ passata | PRONTA CON RITOCCHI | [`2026-09-14/`](2026-09-14/) |
-| 2026-09-14 (lun) | L'obiezione (v2) | **Ti hanno scattato le foto col telefono** — la prima foto decide se cliccano o scorrono; prima/dopo su una stanza, poi la garanzia del servizio fotografico incluso | in corso | in corso | [`2026-09-14/`](2026-09-14/PUBBLICAZIONE.md) |
+| 2026-09-14 (lun) | L'obiezione (v2) | **Ti hanno scattato le foto col telefono** — la prima foto decide se cliccano o scorrono; prima/dopo sulla stessa stanza, poi la garanzia del servizio fotografico incluso | ✅ passata dopo 6 correzioni | ✅ PRONTA CON RITOCCHI, tutti applicati | [`2026-09-14/`](2026-09-14/PUBBLICAZIONE.md) |
 
 ## Pubblicazione
 
