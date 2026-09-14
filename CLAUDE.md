@@ -21,7 +21,9 @@ _handover/                      → snapshot per revisore esterno (stato, decisi
 ├── brand-identity.md           →   chi è Hadrianus, target/pain-point, cosa si può usare come prova
 ├── design-system.md            →   palette hex, tipografia, formati canale, componenti .dc.html riutilizzabili
 ├── lessico-brand.md            →   glossario esteso corretto/vietato, con esempi
-└── modello-reel-8-secondi.md   →   telaio dei reel brevi (negazione + desideri), tempi e tipografia
+├── modello-reel-8-secondi.md   →   telaio dei reel brevi (negazione + desideri), tempi e tipografia
+├── prompt-immagini.md          →   framework prompt Midjourney/DALL·E/Leonardo: 5 blocchi, negative, lock di brand
+└── master-template.md          →   formato fisso di ogni contenuto + griglia + controllo qualità
 ```
 
 ## Flusso di lavoro standard
@@ -42,6 +44,9 @@ Il comando `/nuova-campagna` orchestra questi passaggi. Non saltarne mai uno, an
 4. **Genera SEMPRE anche la grafica, di default.** Ogni contenuto (post, storia, reel, annuncio) ha la sua grafica editabile abbinata, senza che l'utente la chieda.
 5. **Varia il design tra un contenuto/campagna e l'altro.** Stessa identità (fumè + oro, Archivo/Manrope), layout sempre diverso — controlla i pattern già usati in `design-system.md` prima di iniziare.
 6. **Post Facebook — formato fisso (SOLO Facebook).** Sempre 3 immagini: 1ª **verticale 1080×1920 (9:16)** (gancio+problema), 2ª e 3ª **quadrate 1080×1080** (soluzione, offerta/CTA). La 1ª deve essere 9:16 — nel collage Facebook un 4:5 viene tagliato ai lati.
+7. **Ogni contenuto esce nel Master Template.** Copy + layout a tabella + prompt grafico in inglese + negative + parametri + tabella claim. Formato fisso in `.claude/reference/master-template.md`. Niente template, niente consegna.
+8. **Output lean.** In chat: liste e tabelle, zero preamboli, zero spiegazioni di processo. Il ragionamento sta nei documenti di campagna. Una modifica tocca solo l'elemento richiesto, mai l'intera campagna.
+9. **Controllo qualità prima della consegna, non dopo.** I sei controlli di `master-template.md` si fanno sul PNG renderizzato, guardato a dimensione telefono, prima di mostrare qualcosa.
 
 ## Lessico di brand (SEMPRE)
 

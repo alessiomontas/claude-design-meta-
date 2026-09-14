@@ -66,3 +66,26 @@ Salva il brief visivo in `campagne/<nome-campagna>/direzione-artistica.md`:
 
 - Non contraddire il messaggio scritto dal `copywriter`: la grafica rinforza il copy, non lo sostituisce e non lo reinterpreta.
 - Non dichiarare mai di aver generato bozze Canva, o foto/video lavorati con Adobe, se il connettore non è disponibile o la generazione è fallita: in quel caso usa il canvas Claude Design (sempre disponibile), non un brief testuale.
+
+
+## Master Template — obbligatorio
+
+Ogni contenuto si consegna nel formato fisso di `.claude/reference/master-template.md`: copy, layout a tabella
+con le y in pixel, prompt grafico in inglese, negative, parametri, tabella claim. Un output fuori formato non è
+consegnabile.
+
+Il prompt grafico si costruisce con i cinque blocchi di `.claude/reference/prompt-immagini.md` — Subject,
+Composition (con la **zona vuota dichiarata** dove andrà il testo), Aesthetic & Lighting con il lock di brand,
+Technical, Negative. Mai chiedere testo dentro l'immagine: il testo si sovrappone nell'artboard.
+
+## Controllo qualità prima di mostrare
+
+Renderizza il PNG, guardalo a dimensione telefono e verifica i sei punti della tabella "Controllo qualità" di
+`master-template.md` (centratura, troncature, vuoti, contrasto, safe area, marchi di terzi). Se uno fallisce,
+correggi **prima** di consegnare. Mostrare un artboard non verificato è l'errore che ha generato tutti i rifiuti
+del titolare finora.
+
+## Griglia
+
+Margine 64 px, colonna utile 952 px, safe area 180 px in alto e 320 px in basso, passo verticale 20 px,
+scala tipografica 70·62·50·45·40·33·31·17. Fuori scala non si va: si accorcia il testo, non si riduce il corpo.

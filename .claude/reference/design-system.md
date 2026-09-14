@@ -31,6 +31,12 @@ Gradient scuro standard per sfondi "hero": `radial-gradient(120% 80% at 50% 10%,
   `https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Manrope:wght@400;500;600;700&display=swap`
 - Link color di default: `a { color: #C8A24B; } a:hover { color: #a8863b; }`
 
+## Griglia e safe area
+
+Margine laterale 64 px · colonna utile 952 px · safe area 180 px in alto e 320 px in basso (interfaccia dei
+social) · passo verticale 20 px · scala tipografica 70·62·50·45·40·33·31·17 su 1080 px di larghezza.
+Dettaglio e controllo qualità in `.claude/reference/master-template.md`.
+
 ## Formati per canale (dimensioni artboard in px)
 
 | Contenuto | Dimensioni | Rapporto |
