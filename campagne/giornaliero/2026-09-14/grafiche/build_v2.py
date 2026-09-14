@@ -198,7 +198,7 @@ def carosello():
     c += marchio(80, 138, colore=SABBIA, ombra=False)
     c += kicker('01 · LA LUCE', 220)
     c += blocco(['Una sola luce', 'alla volta.'], 470, 62, 800, SABBIA)
-    c += blocco(['Lampade accese e finestra aperta', 'insieme danno una foto di due colori.',
+    c += blocco(['Lampade accese e luce di finestra', 'insieme danno una foto di due colori.',
                  'Spegni le lampade. Scosta le tende.', 'Scatta a metà mattina.'],
                 710, 40, 500, T_CHIARO, font=MA, lh=1.32, tracking=0)
     c += blocco(['La casa torna del colore che ha davvero.'], 890, 40, 700, ORO)
