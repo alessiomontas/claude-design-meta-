@@ -1,0 +1,58 @@
+{
+  "artboards": [
+    {
+      "file": "Main.dc.html",
+      "x": 0,
+      "y": 0,
+      "w": 1080,
+      "h": 1920,
+      "title": "Scena 1 · 0,2-4,4 s — il gancio",
+      "print": "fixed"
+    },
+    {
+      "file": "S2.dc.html",
+      "x": 1240,
+      "y": 0,
+      "w": 1080,
+      "h": 1920,
+      "title": "Scena 2 · 5,2-8,6 s — il riquadro",
+      "print": "fixed"
+    },
+    {
+      "file": "S3.dc.html",
+      "x": 2480,
+      "y": 0,
+      "w": 1080,
+      "h": 1920,
+      "title": "Scena 3 · 10,1-13,6 s — la cucina",
+      "print": "fixed"
+    },
+    {
+      "file": "S4.dc.html",
+      "x": 3720,
+      "y": 0,
+      "w": 1080,
+      "h": 1920,
+      "title": "Scena 4 · 15,2-18,5 s — le lenzuola",
+      "print": "fixed"
+    },
+    {
+      "file": "S5.dc.html",
+      "x": 4960,
+      "y": 0,
+      "w": 1080,
+      "h": 1920,
+      "title": "Scena 5 · 20,2-24,0 s — il bagno",
+      "print": "fixed"
+    },
+    {
+      "file": "S6.dc.html",
+      "x": 6200,
+      "y": 0,
+      "w": 1080,
+      "h": 1920,
+      "title": "Scena 6 · 26,5-29,3 s — la chiusura",
+      "print": "fixed"
+    }
+  ]
+}

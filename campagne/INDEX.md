@@ -14,6 +14,7 @@ Consultalo **prima di iniziare una nuova campagna**, per scegliere un angolo e u
 | [`reel-superhost-acquisizione/`](reel-superhost-acquisizione/) | Acquisizione proprietari — reel Instagram/Facebook | Prova prima del prezzo: Superhost in due mesi su una casa non nostra, recensioni reali, poi l'offerta | Proprietari freddi che non ci conoscono: il reel deve dimostrare, non promettere | Reel 9:16 da 23 s (video montato + pagina animata), script, caption, guida di montaggio | 🟡 Pronto salvo export MP4 con musica |
 | [`reel-cosa-cerca-un-proprietario/`](reel-cosa-cerca-un-proprietario/) | Acquisizione proprietari — reel Instagram/Facebook/TikTok | La negazione: "i proprietari non cercano «un property manager»" → i tre desideri concreti → la firma commerciale | Proprietari freddi che scorrono il feed: 8 secondi per spostare il discorso dalla percentuale al lavoro | Reel 9:16 da 8,0 s in **MP4 pronto**, copertina, 6 scene editabili, caption e voce fuori campo | 🟢 Pronto — compliance passata, con le due riscritture applicate |
 | [`reel-ti-manca-il-resto/`](reel-ti-manca-il-resto/) | Acquisizione proprietari — reel Instagram/Facebook/TikTok | Il capitale ce l'hai già: "per guadagnare di più non ti serve un'altra casa, ti manca il resto" → i cinque pezzi di lavoro che mancano → 15% e nessun costo fisso | Proprietari che pensano di comprare un altro immobile per guadagnare di più, o che hanno una casa che rende meno del possibile | Reel 9:16 da 15,0 s in **MP4 pronto**, copertina, 9 scene editabili, caption e voce fuori campo | 🟢 Pronto — compliance passata, con tre riscritture applicate |
+| [`reel-standard-alberghiero/`](reel-standard-alberghiero/) | Acquisizione proprietari — reel Instagram/Facebook/TikTok | "Questa casa non esiste. Lo standard, sì.": il gancio dichiara che gli interni sono una simulazione, poi tre controlli concreti (cucina, lenzuola, bagno) definiscono il livello di esecuzione | Proprietari che confrontano gestori e non sanno su cosa distinguerli | Reel 9:16 da 29,3 s **con musica**, copertina, 6 scene editabili, caption e voce fuori campo | 🟡 In verifica compliance |
 
 ## Note
 
@@ -38,6 +39,7 @@ Consultalo **prima di iniziare una nuova campagna**, per scegliere un angolo e u
 - La paura dei danni: "e se me la rovinano?" / chi entra in casa mia, risolta sulla frequenza del controllo — Facebook
 - La negazione del servizio stesso: "non cercano un property manager, cercano che la casa non li chiami mai" — reel 8 s
 - Il capitale già posseduto contro il lavoro che manca: "non ti serve un'altra casa, ti manca il resto" — reel 15 s
+- Il livello di esecuzione come argomento in sé, con il gancio che ammette che gli interni mostrati non esistono — reel 29 s
 
 Angoli non ancora esplorati, potenziali per una prossima campagna: calendario eventi di Roma come leva di prenotazione, retention/referral per proprietari già clienti, la divisione pulizie B2B (Templum Purum) verso hotel e B&B.
 
