@@ -36,7 +36,7 @@ Una riga per giorno prodotto. La aggiunge `/giornata` al passaggio 8.
 
 | Data | Pilastro | Angolo/gancio | Compliance | Revisione | Cartella |
 |---|---|---|---|---|---|
-| — | — | _nessuna giornata ancora prodotta_ | — | — | — |
+| 2026-09-14 (lun) | L'obiezione | **La casella dimenticata** — l'esposizione amministrativa: "non ti sanzionano per quanto guadagni, ti sanzionano per una casella dimenticata". Meccanismo: la catena di ogni prenotazione (sei anelli) | ✅ passata dopo 5 correzioni | in corso | [`2026-09-14/`](2026-09-14/PUBBLICAZIONE.md) |
 
 ## Pubblicazione
 

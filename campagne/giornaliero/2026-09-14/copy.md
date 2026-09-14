@@ -518,7 +518,7 @@ Gancio B    | La catena la esegue qualcuno il cui
 Corpo       | Il proprietario riceve solo
             | il bonifico netto a fine mese.
 CTA         | Commenta CATENA o scrivici in privato
-Caption     | Il 20 maggio 2026, quattro mesi fa, è diventato applicabile il
+Caption     | Il 20 maggio 2026 è diventato applicabile il
             | Regolamento UE 2024/1028. Da quella data le piattaforme di
             | prenotazione verificano il numero di registrazione dell'alloggio — in
             | Italia il CIN — e trasmettono ogni mese i dati delle prenotazioni alle
@@ -537,8 +537,8 @@ Caption     | Il 20 maggio 2026, quattro mesi fa, è diventato applicabile il
             | per comunicare le generalità. Sei, se il soggiorno dura meno di un
             | giorno.
             | Durante e dopo: a Roma l'imposta di soggiorno è 6 € a persona a notte
-            | fino a 10 notti, e la versa il gestore anche se l'ospite non paga la
-            | sua quota. Estintore e rilevatori devono essere al loro posto.
+            | fino a 10 notti consecutive, e la versa il gestore anche se l'ospite non
+            | paga la sua quota. Estintore e rilevatori devono essere al loro posto.
             |
             | Nessuno di questi atti è difficile. Il problema è la frequenza e
             | l'orario: scadono a ogni prenotazione, spesso di notte, mentre tu hai
@@ -559,10 +559,8 @@ Caption     | Il 20 maggio 2026, quattro mesi fa, è diventato applicabile il
             | delle dotazioni di sicurezza, incasso dei canoni con la certificazione a
             | fine anno. Il proprietario riceve solo il bonifico netto a fine mese.
             |
-            | Tutto dentro la gestione completa: 15% sul fatturato generato, nessun
-            | costo fisso [DATO DA VERIFICARE: eventuali costi una tantum in avvio —
-            | servizio fotografico, set biancheria iniziale, sistemazioni
-            | pre-pubblicazione]. Guadagniamo solo se guadagni tu.
+            | Tutto dentro la gestione completa: 15% sul fatturato generato.
+            | Guadagniamo solo se guadagni tu.
             |
             | Se hai una casa a Roma o a Ostia e vuoi capire cosa scatta a ogni
             | prenotazione, commenta CATENA o scrivici in privato.
@@ -576,7 +574,7 @@ Caption     | Il 20 maggio 2026, quattro mesi fa, è diventato applicabile il
 | titolo | 250-330 | Sei anelli. Tutti eseguiti. | Archivo 800 | 50 | #F5F0E6 |
 | claim di chiusura | 380-580 | 3 righe | Archivo 900 | 62 | #C8A24B |
 | riga perimetro | 620-700 | La dichiarazione dei redditi resta col tuo commercialista. Noi facciamo gli adempimenti operativi della gestione. | Manrope 500 | 31 | #b7ad9a |
-| riga offerta | 740-820 | 15% sul fatturato. Nessun costo fisso. | Archivo 700 | 40 | #F5F0E6 |
+| riga offerta | 740-820 | 15% sul fatturato. | Archivo 700 | 40 | #F5F0E6 |
 | riga oro | 850-900 | Guadagniamo solo se guadagni tu. | Archivo 800 | 33 | #C8A24B |
 | CTA | 930-1016 | pill oro piena larghezza | Archivo 800 | 33 | #2E2A25 su #C8A24B |
 

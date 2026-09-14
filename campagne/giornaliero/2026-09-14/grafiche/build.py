@@ -414,7 +414,7 @@ def build_facebook():
                 font=MA, allinea='left', lh=1.3, tracking=0)
 
     c += marca("ALL'ARRIVO · +24:00", 480, colore=ORO_SCURO)
-    c += blocco(["prima identifichi l'ospite,", 'poi gli dai l’accesso. Da lì: 24 ore',
+    c += blocco(["prima identifichi l'ospite,", "poi gli dai l'accesso. Da lì: 24 ore",
                  'per comunicare le generalità.'], 581, 40, 500, T_SCURO_2,
                 font=MA, allinea='left', lh=1.3, tracking=0)
 
@@ -424,7 +424,6 @@ def build_facebook():
                  'casa in standard alberghiero.'], 816, 40, 500, T_SCURO_2,
                 font=MA, allinea='left', lh=1.3, tracking=0)
 
-    c += arco(2, 3, 895, 915, d=100, sw=6, colore=ORO_SCURO, traccia=TRACCIA_CHIARA)
     nomi.append(scrivi('F2.dc.html', c))
 
     # ---------------- F3 · 1080x1080 · offerta / CTA -------------------
