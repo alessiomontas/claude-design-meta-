@@ -1,21 +1,28 @@
-# Pubblicazione 14/09/2026 — lunedì, pilastro "l'obiezione"
+# Pubblicazione 14/09/2026 — "Ti hanno scattato le foto col telefono"
 
-**Angolo del giorno:** la casella dimenticata — l'esposizione amministrativa del proprietario.
-**Grafiche modificabili:** https://claude.ai/code/artifact/155e5bee-1c27-499e-b0ee-c7ba5381a5d7
+**Grafiche modificabili:** https://claude.ai/artifact/3e3Y2yU7j4TNRNPFPga2g6
+
+L'angolo: la prima foto dell'annuncio decide se cliccano o scorrono. Si mostra il difetto, e subito dopo cosa garantisce Hadrianus. CTA unica su tutto: **Scrivi CALCOLO in DM**.
 
 ## Cosa pubblicare, e quando
 
 | Ora | Contenuto | File | Dove |
 |---|---|---|---|
 | 09:00 | **Storia 1** — l'annuncio e il CIN | `png/S1.png` | Instagram storie |
-| 12:00 | **Carosello** 5 slide | `png/C1.png` → `png/C5.png` (in ordine) | Instagram feed + Facebook |
-| 15:00 | **Post Facebook** 3 immagini | `png/F1.png`, `png/F2.png`, `png/F3.png` (in quest'ordine) | Facebook: gruppi di proprietari + pagina |
-| 18:00 | **Reel** 15,4 s | `reel/reel.mp4` | Instagram reel + Facebook |
-| 21:00 | **Storia 2** — l'ospite entra alle 23:40 | `png/S2.png` | Instagram storie |
+| 11:00 | **Storia 3** — il minimo di 3 notti | `png/S3.png` | Instagram storie |
+| 12:30 | **Carosello** 5 slide | `png/Main.png`, `K2`, `K3`, `K4`, `K5` (in quest'ordine) | Instagram feed + Facebook |
+| 15:00 | **Post Facebook** 3 immagini | `png/FB1.png`, `FB2.png`, `FB3.png` (in quest'ordine) | Facebook: gruppi proprietari + pagina |
+| 18:00 | **Reel** 15,6 s | `reel/reel-foto-col-telefono.mp4` | Instagram reel + Facebook |
+| 20:00 | **Storia 4** — il check-in dalle 15 alle 19 | `png/S4.png` | Instagram storie |
+| 21:30 | **Storia 2** — l'ospite entra alle 23:40 | `png/S2.png` | Instagram storie |
 
-Gli orari sono un consiglio, non un vincolo. L'unico ordine che conta davvero è **F1 per prima** nel post Facebook: è l'unica verticale, e nel collage le altre due verrebbero tagliate se messe al suo posto.
+⚠️ **`FB1` va per prima** nel post Facebook: è l'unica verticale. Se la metti dopo, nel collage viene tagliata ai lati.
 
-Puoi programmare tutto in **Meta Business Suite** (gratuito): programma sia i post Facebook sia i post e le storie Instagram.
+Il carosello parte da `Main.png`: è la slide 1, si chiama così perché è la prima della sequenza.
+
+Puoi programmare tutto in **Meta Business Suite** (gratuito): post Facebook, post e storie Instagram.
+
+**Sul reel:** è muto. Su Instagram aggiungi un audio dalla libreria interna prima di pubblicare — l'audio conta per la diffusione, e la musica va presa da lì per non avere problemi di diritti.
 
 ---
 
@@ -23,71 +30,76 @@ Puoi programmare tutto in **Meta Business Suite** (gratuito): programma sia i po
 
 ### Carosello (Instagram + Facebook)
 
-Una prenotazione non porta solo un ospite: fa partire una catena di atti, e ognuno ha la sua scadenza. Qui c'è tutta, in ordine, dal momento prima che l'annuncio sia online fino al bonifico di fine mese.
+Ti hanno scattato le foto col telefono. Succede, e si corregge.
 
-Nessuno di questi atti è difficile. Il problema è che scadono a ogni prenotazione, spesso di notte, mentre tu hai un altro lavoro.
+Qui ci sono le quattro cose che rendono una foto capace di vendere la casa: la luce, l'ordine, l'inquadratura, la sequenza. Valgono anche se fai da solo — salvale e usale al prossimo scatto.
 
-La dichiarazione dei redditi resta col tuo commercialista: noi facciamo gli adempimenti operativi legati alla gestione.
+Con noi non le scatti tu: il servizio fotografico è incluso nella gestione, la casa la fotografiamo noi e l'annuncio lo scriviamo noi. Non lo paghi a parte.
 
-La responsabilità resta tua. Il lavoro no.
+Ti garantiamo la gestione completa: foto e annuncio, pricing dinamico, check-in smart H24, gestione ospiti, pulizie in standard alberghiero. Tu ricevi il bonifico netto a fine mese.
 
-Salvalo, ti serve alla prossima prenotazione. Scrivi CATENA in DM.
+15% sul fatturato generato. Guadagniamo solo se guadagni tu.
+
+Scrivi CALCOLO in DM per una simulazione gratuita.
 
 ---
 
 ### Post Facebook (vale per tutte e tre le immagini)
 
-Il 20 maggio 2026 è diventato applicabile il Regolamento UE 2024/1028. Da quella data le piattaforme di prenotazione verificano il numero di registrazione dell'alloggio — in Italia il CIN — e trasmettono ogni mese i dati delle prenotazioni alle autorità nazionali.
+Ti hanno scattato le foto col telefono.
 
-Non è una stretta e non è un allarme. È un cambio di meccanismo: prima un'irregolarità emergeva con un controllo, adesso emerge dai dati.
+Lo diciamo senza giri di parole, perché è l'errore più diffuso ed è anche il più facile da correggere. La prima foto dell'annuncio è l'unica cosa che vede chi sta scorrendo. Il resto lo legge solo chi si è già fermato.
 
-Per chi affitta da solo cambia una cosa sola, ma pesante: ogni prenotazione fa partire una catena di atti, e ognuno ha la sua scadenza.
+Nelle immagini qui sopra c'è la stessa stanza, due volte. La prima è una simulazione: abbiamo preso una foto reale e l'abbiamo rovinata apposta — storta, scura, tagliata male, con le lampade accese e la finestra aperta insieme. Non è la casa di nessun cliente, e volevamo dirlo prima che lo chiedesse qualcuno.
 
-Prima che l'annuncio sia visibile: il CIN dev'esserci e deve corrispondere.
-All'arrivo dell'ospite: prima lo identifichi — di persona o in videochiamata in tempo reale — poi gli dai l'accesso. Da lì hai 24 ore per comunicare le generalità. Sei, se il soggiorno dura meno di un giorno.
-Durante e dopo: a Roma l'imposta di soggiorno è 6 € a persona a notte fino a 10 notti consecutive, e la versa il gestore anche se l'ospite non paga la sua quota. Estintore e rilevatori devono essere al loro posto.
+Quattro cose rendono una foto capace di vendere la casa. Valgono anche se fai tutto da solo:
 
-Nessuno di questi atti è difficile. Il problema è la frequenza e l'orario: scadono a ogni prenotazione, spesso di notte, mentre tu hai un altro lavoro.
+1) LA LUCE. Una sola alla volta. Lampade accese e luce di finestra insieme danno una foto metà gialla e metà grigia. Spegni tutto, apri tutto, scatta a metà mattina.
 
-Il tuo commercialista lavora una volta l'anno. Questi atti scadono a ogni prenotazione: non sono lo stesso lavoro. La tua dichiarazione dei redditi resta col tuo commercialista — noi non la facciamo e non diamo consulenza fiscale. Noi facciamo gli adempimenti operativi legati alla gestione.
+2) L'ORDINE. Via telecomandi, cavi, ciabatte, detersivi, scolapiatti. Letto teso, cuscini battuti, lavabo libero, tende tirate uguali su tutte le finestre. Si fotografa la casa finita, non la casa in pausa.
 
-E diciamo la cosa che nessuno dice: la responsabilità resta tua. Il CIN è il tuo, la casa è la tua. Non smetti di essere il titolare. Smetti di essere l'esecutore.
+3) L'INQUADRATURA. Macchina all'altezza del petto e dritta: stipiti e spigoli non devono pendere. Scatta da un angolo della stanza, mai dal centro. E tieni il telefono in orizzontale.
 
-Noi eseguiamo tutti e sei gli anelli: CIN nell'annuncio, identificazione dell'ospite, comunicazione entro 24 ore, imposta di soggiorno, controllo delle dotazioni di sicurezza, incasso dei canoni con la certificazione a fine anno. Il proprietario riceve solo il bonifico netto a fine mese.
+4) LA SEQUENZA. Copertina con l'ambiente migliore. Poi soggiorno e cucina, poi le camere una per volta, poi bagno, esterno e vista.
 
-Tutto dentro la gestione completa: 15% sul fatturato generato. Guadagniamo solo se guadagni tu.
+Con noi non devi farne nessuna. Il servizio fotografico è incluso nella gestione: la casa la fotografiamo noi, l'annuncio lo scriviamo noi. Non è un extra e non lo paghi a parte.
 
-Se hai una casa a Roma o a Ostia e vuoi capire cosa scatta a ogni prenotazione, commenta CATENA o scrivici in privato.
+Ti garantiamo la gestione completa: foto e annuncio, pricing dinamico, check-in smart H24, gestione ospiti, pulizie in standard alberghiero. Tu ricevi il bonifico netto a fine mese.
+
+15% sul fatturato generato. Guadagniamo solo se guadagni tu.
+
+Hai una casa a Roma o a Ostia? Scrivi CALCOLO in DM per una simulazione gratuita.
 
 ---
 
 ### Reel (Instagram + Facebook)
 
-Non ti sanzionano per quanto guadagni. Ti sanzionano per una casella dimenticata.
+Stessa stanza, due foto. La prima è una simulazione: una foto reale rovinata apposta da noi. Non è la casa di nessun cliente.
 
-Ogni prenotazione fa partire una catena di atti, ognuno con la sua scadenza. Nessuno di quegli atti è difficile: il problema è la frequenza e l'orario.
+Con noi il servizio fotografico è incluso nella gestione: la casa la fotografiamo noi, l'annuncio lo scriviamo noi. Non lo paghi a parte.
 
-Li eseguiamo noi, dentro la gestione completa. La responsabilità resta tua. Il lavoro no.
+Gestione completa, 15% sul fatturato generato. Guadagniamo solo se guadagni tu.
 
-15% sul fatturato. Guadagniamo solo se guadagni tu. Scrivici in DM.
+Scrivi CALCOLO in DM per una simulazione gratuita.
 
 ---
 
 ## Se ti rispondono nei commenti
 
-**"E se la casa non è a Roma città?"** — Il testo dice "a Roma" ed è accurato così. Per gli immobili sul Litorale fuori dal Comune di Roma (per esempio Fiumicino) tariffa e regolamento dell'imposta di soggiorno sono diversi e **non li abbiamo ancora verificati**: rispondi che il valore citato è quello di Roma Capitale e che per il litorale si verifica caso per caso. Non improvvisare una cifra.
+**"Di chi è quella casa brutta?"** — Di nessun cliente. È una foto comprata da Adobe Stock e rovinata apposta da noi per far vedere il difetto. Lo dice anche il post, ma conviene ripeterlo in risposta: è la domanda più probabile.
 
-**"Quindi mi fate anche le tasse?"** — No, ed è importante dirlo: la dichiarazione resta col commercialista del proprietario. Noi facciamo gli adempimenti operativi legati alla gestione. È la risposta che rende credibile tutto il resto.
+**"Le foto me le fate voi o devo pagarle a parte?"** — Incluse nella gestione. Non è un extra.
 
-**"Tanto la responsabilità resta mia, quindi cosa cambia?"** — Cambia l'esecuzione e la scadenza, non l'intestazione. Il CIN resta suo, la casa resta sua. Non smette di essere il titolare, smette di essere l'esecutore.
+**"Quanto costa?"** — 15% sul fatturato generato. Nient'altro da aggiungere: sul resto dei costi iniziali non abbiamo ancora una risposta verificata (vedi sotto).
 
-**"Mi state spaventando per vendere."** — Nessuna cifra di sanzione è stata scritta, nessuna garanzia promessa. Il post riporta una data e un meccanismo, entrambi verificabili.
+**"Ma tanto le foto le so fare anch'io."** — Benissimo, e il carosello serve proprio a quello: i quattro consigli funzionano anche per chi fa da sé. Chi vuole delegarle, le deleghi.
 
 ---
 
 ## Da confermare
 
-1. **"Nessun costo fisso"** — claim ereditato e ancora aperto. Esistono costi una tantum in avvio (servizio fotografico, set biancheria iniziale, sistemazioni pre-pubblicazione)? **Finché non è chiuso, in grafica e in caption resta solo "15% sul fatturato"**, ed è così che è stato pubblicato oggi. Se mi confermi che non c'è nessun costo iniziale, è una riga da aggiungere su una sola immagine.
-2. **Imposta di soggiorno fuori Roma Capitale** — vedi la risposta pronta qui sopra. Serve la verifica per i comuni del litorale dove avete immobili in gestione.
+1. **Chi scatta le foto** — fotografo professionista esterno o qualcuno del team? Finché non me lo dici, i contenuti dicono solo "il servizio fotografico", senza specificare. Se hai un fotografo professionista, è un argomento forte che stiamo sprecando.
+2. **Il minimo notti lo gestite voi** dentro il pricing dinamico? La storia `S3` lo dà per fatto ("prezzo e minimo notti si muovono insieme"). Se non è così, la riga va cambiata.
+3. **"Nessun costo fisso"** — resta aperto dal pacchetto precedente e in questo non è usato da nessuna parte. Se mi confermi che non ci sono costi una tantum in avvio (foto, biancheria, sistemazioni), diventa un argomento in più.
 
-Nessuno dei due blocca la pubblicazione di oggi.
+Nessuno dei tre blocca la pubblicazione.

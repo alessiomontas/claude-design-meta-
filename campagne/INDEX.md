@@ -42,7 +42,9 @@ Consultalo **prima di iniziare una nuova campagna**, per scegliere un angolo e u
 - La negazione del servizio stesso: "non cercano un property manager, cercano che la casa non li chiami mai" — reel 8 s
 - Il capitale già posseduto contro il lavoro che manca: "non ti serve un'altra casa, ti manca il resto" — reel 15 s
 - Il livello di esecuzione come argomento in sé, con il gancio che ammette che gli interni mostrati non esistono — reel 29 s
-- L'esposizione amministrativa del proprietario: "non ti sanzionano per quanto guadagni, ti sanzionano per una casella dimenticata", con la catena dei sei adempimenti di ogni prenotazione e la frase onesta "la responsabilità resta tua, il lavoro no" — giornaliero 14/09 (reel + carosello + Facebook + 2 storie)
+- ~~L'esposizione amministrativa (CIN, adempimenti, sanzioni)~~ — **angolo bocciato dal titolare il 14/09**: la burocrazia allontana invece di attrarre, e il gancio chiudeva sul peso che resta al proprietario. Materiale conservato in `giornaliero/2026-09-14/copy.md`, non ripescare l'angolo
+- La qualità della prima foto dell'annuncio: "ti hanno scattato le foto col telefono", prima/dopo sulla stessa stanza e i quattro criteri (luce, ordine, inquadratura, sequenza), con il servizio fotografico garantito dentro la gestione — giornaliero 14/09 v2 (reel + carosello + Facebook)
+- Il minimo di notti troppo alto, e il check-in a orari rigidi: due errori che costano prenotazioni, dati come consiglio — giornaliero 14/09 v2 (storie S3 e S4)
 
 Angoli non ancora esplorati, potenziali per una prossima campagna: calendario eventi di Roma come leva di prenotazione, retention/referral per proprietari già clienti.
 
