@@ -21,7 +21,7 @@ T_CHIARO_2 = '#b7ad9a'
 T_CHIARO_3 = '#9a8f7c'
 BIANCO     = '#FFFFFF'
 
-GRAD_SCURO = ('radial-gradient(120% 80% at 50% 10%, %s 0%%, %s 55%%, %s 100%%)'
+GRAD_SCURO = ('radial-gradient(120%% 80%% at 50%% 10%%, %s 0%%, %s 55%%, %s 100%%)'
               % (FUME_MID, FUME, FUME_DEEP))
 
 OMBRA = ('text-shadow: 0 3px 10px rgba(0,0,0,0.68), 0 12px 44px rgba(0,0,0,0.55), '
@@ -366,3 +366,187 @@ def build_carosello():
     c += pill_oro(1228, 116, 'Scrivi CATENA in DM', size=40, anello=True)
     nomi.append(scrivi('C5.dc.html', c))
     return nomi
+
+
+# =====================================================================
+#  F1-F3 · FACEBOOK
+# =====================================================================
+VELO_F1 = [
+    'radial-gradient(ellipse 92% 32% at 50% 54%, rgba(26,23,19,0.62) 0%, rgba(26,23,19,0.30) 44%, rgba(26,23,19,0) 64%)',
+    'linear-gradient(180deg, rgba(46,42,37,0.86) 0%, rgba(46,42,37,0.20) 32%, rgba(46,42,37,0.34) 60%, rgba(46,42,37,0.90) 100%)',
+    'linear-gradient(0deg, rgba(63,58,51,0.26), rgba(63,58,51,0.26))',
+]
+
+TRACCIA_CHIARA = 'rgba(38,36,31,0.14)'
+
+
+def build_facebook():
+    nomi = []
+
+    # ---------------- F1 · 1080x1920 · gancio + la data ----------------
+    c = frame(1080, 1920, FUME_DEEP)
+    c += foto('d-ingresso-giorno.jpg')
+    c += velo(*VELO_F1)
+    c += marchio()
+    c += marca('20 MAGGIO 2026', 320, ombra=True)
+    c += blocco(['Dal 20 maggio', 'le piattaforme', 'verificano il codice', 'della tua casa.'],
+                860, 70, 900, BIANCO, allinea='left', ombra=True)
+    c += blocco(['Non ti sanzionano', 'per quanto guadagni.'], 1160, 62, 800, BIANCO,
+                allinea='left', ombra=True)
+    c += filo(1250, 'rgba(245,240,230,0.20)')
+    c += blocco(['Ti sanzionano per', 'una casella dimenticata.'], 1345, 50, 800, ORO,
+                allinea='left', ombra=True)
+    c += blocco(['Non è una stretta. È un cambio di meccanismo.'], 1480, 33, 500, T_CHIARO,
+                font=MA, allinea='left', lh=1.3, tracking=0, ombra=True)
+    nomi.append(scrivi('F1.dc.html', c))
+
+    # ---------------- F2 · 1080x1080 · la catena in 3 momenti ----------
+    c = frame(1080, 1080, SABBIA)
+    c += marchio(72, 130, colore=T_SCURO, ombra=False)
+    c += blocco(['Cosa parte a ogni prenotazione'], 230, 50, 800, T_SCURO, allinea='left')
+    c += filo(285, TRACCIA_CHIARA)
+
+    c += marca('PRIMA', 330, colore=ORO_SCURO)
+    c += blocco(["il CIN nell'annuncio,", 'e deve corrispondere.'], 400, 40, 500, T_SCURO_2,
+                font=MA, allinea='left', lh=1.3, tracking=0)
+
+    c += marca("ALL'ARRIVO · +24:00", 500, colore=ORO_SCURO)
+    c += blocco(["prima identifichi l'ospite,", 'poi gli dai l’accesso. Da lì: 24 ore',
+                 'per comunicare le generalità.'], 585, 40, 500, T_SCURO_2,
+                font=MA, allinea='left', lh=1.3, tracking=0)
+
+    c += marca('DURANTE E DOPO', 680, colore=ORO_SCURO)
+    c += blocco(['imposta di soggiorno da incassare e versare,',
+                 'dotazioni di sicurezza al loro posto,',
+                 'casa in standard alberghiero.'], 785, 40, 500, T_SCURO_2,
+                font=MA, allinea='left', lh=1.3, tracking=0)
+
+    c += arco(2, 3, 885, 890, d=110, sw=6, colore=ORO_SCURO, traccia=TRACCIA_CHIARA)
+    nomi.append(scrivi('F2.dc.html', c))
+
+    # ---------------- F3 · 1080x1080 · offerta / CTA -------------------
+    c = frame(1080, 1080, FUME_DEEP)
+    c += velo(GRAD_SCURO)
+    c += marchio(72, 130, colore=SABBIA, ombra=False)
+    c += marca('FINE MESE', 215)
+    c += blocco(['Sei anelli. Tutti eseguiti.'], 290, 50, 800, SABBIA, allinea='left')
+    c += blocco(['Il proprietario riceve solo', 'il bonifico netto', 'a fine mese.'],
+                480, 62, 900, ORO, allinea='left')
+    c += filo(600)
+    c += blocco(['La dichiarazione dei redditi resta col tuo commercialista.',
+                 'Noi facciamo gli adempimenti operativi della gestione.'],
+                660, 31, 500, T_CHIARO_2, font=MA, allinea='left', lh=1.3, tracking=0)
+    c += blocco(['15% sul fatturato.'], 780, 40, 700, SABBIA, allinea='left')
+    c += blocco(['Guadagniamo solo se guadagni tu.'], 875, 33, 800, ORO, allinea='left')
+    c += pill_oro(973, 86, 'Commenta CATENA o scrivici in privato', size=33)
+    nomi.append(scrivi('F3.dc.html', c))
+    return nomi
+
+
+# =====================================================================
+#  S1-S2 · STORIE · 1080x1920 · autoconclusive
+# =====================================================================
+VELO_S1 = [
+    'radial-gradient(ellipse 90% 30% at 50% 56%, rgba(26,23,19,0.60) 0%, rgba(26,23,19,0.28) 44%, rgba(26,23,19,0) 64%)',
+    'linear-gradient(180deg, rgba(46,42,37,0.84) 0%, rgba(46,42,37,0.18) 34%, rgba(46,42,37,0.36) 62%, rgba(46,42,37,0.90) 100%)',
+    'linear-gradient(0deg, rgba(63,58,51,0.26), rgba(63,58,51,0.26))',
+]
+VELO_S2 = [
+    'radial-gradient(ellipse 90% 30% at 50% 50%, rgba(26,23,19,0.64) 0%, rgba(26,23,19,0.32) 42%, rgba(26,23,19,0) 62%)',
+    'linear-gradient(180deg, rgba(46,42,37,0.88) 0%, rgba(46,42,37,0.24) 36%, rgba(46,42,37,0.40) 64%, rgba(46,42,37,0.92) 100%)',
+    'linear-gradient(0deg, rgba(63,58,51,0.30), rgba(63,58,51,0.30))',
+]
+
+
+def build_storie():
+    nomi = []
+
+    # ---------------- S1 · l'estremo "prima" ---------------------------
+    c = frame(1080, 1920, FUME_DEEP)
+    c += foto('s-balcone.jpg')
+    c += velo(*VELO_S1)
+    c += marchio()
+    c += marca('PRIMA DELLA PUBBLICAZIONE', 280, allinea='right', ombra=True)
+    c += blocco(["Il CIN nell'annuncio", 'è quello giusto?'], 860, 70, 900, BIANCO,
+                allinea='left', ombra=True)
+    c += blocco(['Se manca, o non corrisponde,', "l'annuncio può non passare la verifica."],
+                1060, 40, 500, T_CHIARO, font=MA, allinea='left', lh=1.3, tracking=0, ombra=True)
+    c += filo(1140, 'rgba(245,240,230,0.20)')
+    c += blocco(["L'annuncio lo curiamo noi.", 'Il codice ci sta dentro', 'dal primo giorno.'],
+                1250, 50, 800, ORO, allinea='left', ombra=True)
+    c += pill_oro(1480, 120, 'Scrivi in DM', size=40)
+    nomi.append(scrivi('S1.dc.html', c))
+
+    # ---------------- S2 · l'estremo "dopo" ----------------------------
+    ora = ('<span style="color: %s;">23:40</span>' % ORO)
+    c = frame(1080, 1920, FUME_DEEP)
+    c += foto('n-notte-storia.jpg')
+    c += velo(*VELO_S2)
+    c += marchio()
+    c += chip('+24:00', 280, x=64, w=200, h=66, allinea='right')
+    c += blocco(["L'ospite entra", 'alle %s.' % ora], 780, 70, 900, BIANCO,
+                allinea='left', ombra=True)
+    c += blocco(['Lo identifichi. Poi entra.', 'Da lì: 24 ore per la comunicazione.',
+                 "E l'imposta di soggiorno la versi tu,", "anche se l'ospite non la paga."],
+                1010, 40, 500, T_CHIARO, font=MA, allinea='left', lh=1.3, tracking=0, ombra=True)
+    c += filo(1120, 'rgba(245,240,230,0.20)')
+    c += blocco(['Da noi succede mentre dormi.', 'È già dentro la gestione.'], 1220, 50, 800,
+                ORO, allinea='left', ombra=True)
+    c += pill_oro(1480, 120, 'Scrivi in DM', size=40)
+    nomi.append(scrivi('S2.dc.html', c))
+    return nomi
+
+
+# =====================================================================
+#  CANVAS
+# =====================================================================
+TITOLI = {
+    'Main.dc.html':  'Reel 1/9 · 0,0-2,6 s — il gancio',
+    'R1b2.dc.html':  'Reel 2/9 · 2,6-4,0 s — la svolta',
+    'R1b3.dc.html':  'Reel 3/9 · 4,0-5,4 s — arriva una prenotazione',
+    'R1b4.dc.html':  'Reel 4/9 · 5,4-6,8 s — parte un orologio',
+    'R1b5.dc.html':  'Reel 5/9 · 6,8-8,2 s — hai un altro lavoro',
+    'R1b6.dc.html':  'Reel 6/9 · 8,2-9,6 s — va avanti lo stesso',
+    'R1b7.dc.html':  'Reel 7/9 · 9,6-11,0 s — e non suona',
+    'R1b8.dc.html':  'Reel 8/9 · 11,0-13,0 s — la presa in carico',
+    'R1b9.dc.html':  'Reel 9/9 · 13,0-15,4 s — chiusura',
+    'C1.dc.html':    'Carosello 1/5 · T zero — il gancio',
+    'C2.dc.html':    "Carosello 2/5 · anello 01 — il CIN nell'annuncio",
+    'C3.dc.html':    "Carosello 3/5 · anello 02 — l'arrivo e le 24 ore",
+    'C4.dc.html':    'Carosello 4/5 · anello 03 — durante e dopo',
+    'C5.dc.html':    'Carosello 5/5 · chi esegue la catena',
+    'F1.dc.html':    'FB 1 · 9:16 — la data: dal 20 maggio',
+    'F2.dc.html':    'FB 2 · 1:1 — la catena in tre momenti',
+    'F3.dc.html':    'FB 3 · 1:1 — sei anelli, offerta e CTA',
+    'S1.dc.html':    'Storia 1 · prima della pubblicazione',
+    'S2.dc.html':    'Storia 2 · le 23:40',
+}
+
+FILE_H = {'C1.dc.html': 1350, 'C2.dc.html': 1350, 'C3.dc.html': 1350, 'C4.dc.html': 1350,
+          'C5.dc.html': 1350, 'F2.dc.html': 1080, 'F3.dc.html': 1080}
+
+
+def canvas(righe):
+    """righe: liste di nomi file, una lista per fila della canvas."""
+    ab, y = [], 0
+    for fila in righe:
+        h_max = 0
+        for i, n in enumerate(fila):
+            h = FILE_H.get(n, 1920)
+            h_max = max(h_max, h)
+            ab.append({'file': n, 'x': i * 1240, 'y': y, 'w': 1080, 'h': h,
+                       'title': TITOLI.get(n, n), 'print': 'fixed'})
+        y += h_max + 280
+    with open(os.path.join(HERE, 'canvas.json'), 'w') as f:
+        json.dump({'artboards': ab}, f, indent=2, ensure_ascii=False)
+    return len(ab)
+
+
+if __name__ == '__main__':
+    reel = build_reel()
+    caro = build_carosello()
+    fb   = build_facebook()
+    sto  = build_storie()
+    n = canvas([reel, caro, fb, sto])
+    print('artboard scritte: %d  (reel %d · carosello %d · facebook %d · storie %d)'
+          % (n, len(reel), len(caro), len(fb), len(sto)))
