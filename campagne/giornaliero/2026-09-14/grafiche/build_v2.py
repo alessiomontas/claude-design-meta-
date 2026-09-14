@@ -126,15 +126,17 @@ def pill_outline(y, x, w, h, testo, colore=ORO):
             % (x, y, w, h, colore, AR, colore, testo))
 
 
-def tendina(x, h, y_maniglia, colore=ORO, maniglia=True, spessore=6):
-    """La firma della giornata: linea verticale oro con maniglia circolare."""
+def tendina(x, h, y_maniglia, colore='rgba(200,162,75,0.35)', maniglia=True, spessore=6):
+    """La firma della giornata: linea verticale oro con maniglia circolare.
+    Attenuata di proposito: attraversa i blocchi di testo, e a piena intensita'
+    competerebbe con la lettura invece di firmare la pagina."""
     out = ('  <div style="position: absolute; left: %dpx; top: 0; width: %dpx; height: %dpx; '
-           'background: %s; box-shadow: 0 0 30px rgba(200,162,75,0.55);"></div>\n'
+           'background: %s;"></div>\n'
            % (x, spessore, h, colore))
     if maniglia:
         out += ('  <div style="position: absolute; left: %dpx; top: %dpx; width: 44px; height: 44px; '
-                'border-radius: 50%%; background: %s; box-shadow: 0 0 26px rgba(200,162,75,0.75);"></div>\n'
-                % (x - 19, y_maniglia - 22, colore))
+                'border-radius: 50%%; border: 3px solid %s;"></div>\n'
+                % (x - 19, y_maniglia - 22, ORO))
     return out
 
 
@@ -176,11 +178,6 @@ def carosello():
     # ---- K1 · il confronto: la tendina a 216, a sinistra il "dopo" ----
     c = frame(1080, 1350, FUME_DEEP)
     c += foto('k-tel-45.jpg')
-    c += ('  <div style="position: absolute; left: 0; top: 0; width: 216px; height: 1350px; '
-          'overflow: hidden;"><img src="k-pro-45.jpg" alt="" style="position: absolute; left: 0; '
-          'top: 0; width: 1080px; height: 1350px; object-fit: cover;"></div>\n')
-    c += ('  <div style="position: absolute; left: 216px; top: 0; right: 0; bottom: 0; '
-          'background: rgba(26,23,19,0.26);"></div>\n')
     c += velo(*VELO_SCURO)
     c += marchio(80, 138)
     c += chip('SIMULAZIONE', 200)
@@ -207,7 +204,7 @@ def carosello():
 
     # ---- K3 · l'ordine (unica slide chiara) ----
     c = frame(1080, 1350, SABBIA)
-    c += tendina(648, 1350, 675, colore=ORO_SCURO)
+    c += tendina(648, 1350, 675, colore='rgba(179,137,47,0.35)')
     c += marchio(80, 138, colore=T_SCURO, ombra=False)
     c += kicker("02 · L'ORDINE", 220, colore=ORO_SCURO)
     c += blocco(['Fotografi la casa finita,', 'non la casa in pausa.'], 470, 62, 800, T_SCURO)
@@ -329,15 +326,15 @@ def storie():
         ('S3', 'salotto-caldo-9x16.jpg', 'ERRORE · MINIMO NOTTI',
          ['Hai messo', 'minimo 3 notti.'],
          ['Roma si visita in due giorni.', 'Con il minimo a tre notti,', 'chi ne cerca due non ti trova.'],
-         ['Tieni il minimo alto solo in alta stagione.', 'Nei periodi bassi e in settimana',
-          'scendi a una o due notti.'],
-         ['Con noi prezzo e minimo notti si muovono', 'insieme, data per data.']),
+         ['Tieni il minimo alto solo in alta', 'stagione. Nei periodi bassi e in',
+          'settimana scendi a una o due notti.'],
+         ['Prezzo e minimo notti', 'si muovono insieme, data per data.']),
         ('S4', 'salone-pro.jpg', 'ERRORE · ORARI DI ARRIVO',
          ['Check-in', 'dalle 15 alle 19.'],
          ['Chi atterra a Fiumicino la sera', 'e chi arriva col treno tardi', 'cerca una casa che lo aspetti.'],
          ["Allarga la finestra di arrivo e scrivilo", "nell'annuncio. E a qualunque ora,",
           "l'ospite va identificato prima di entrare."],
-         ['Ti assicuriamo il check-in smart H24:', 'ricevuto a qualsiasi ora, identificato.']),
+         ['Ti assicuriamo il check-in', 'smart H24, a qualsiasi ora.']),
     ]
     for sid, img, etichetta, gancio, problema, consiglio, garanzia in dati:
         c = frame(1080, 1920, FUME_DEEP)
@@ -347,11 +344,11 @@ def storie():
         c += marchio()
         c += chip(etichetta, 260, x=1016 - 420, w=420)
         c += blocco(gancio, 640, 70, 900, BIANCO, ombra=True)
-        c += blocco(problema, 830, 40, 500, T_CHIARO, font=MA, lh=1.32, tracking=0, ombra=True)
-        c += kicker('IL CONSIGLIO', 950, ombra=True)
-        c += blocco(consiglio, 1060, 45, 700, SABBIA, lh=1.28, ombra=True)
-        c += filo(1170, 'rgba(245,240,230,0.22)')
-        c += blocco(garanzia, 1250, 50, 800, ORO, ombra=True)
+        c += blocco(problema, 810, 40, 500, T_CHIARO, font=MA, lh=1.32, tracking=0, ombra=True)
+        c += kicker('IL CONSIGLIO', 955, ombra=True)
+        c += blocco(consiglio, 1080, 45, 700, SABBIA, lh=1.28, ombra=True)
+        c += filo(1190, 'rgba(245,240,230,0.22)')
+        c += blocco(garanzia, 1275, 50, 800, ORO, ombra=True)
         c += pill(1480, 120, 'Scrivi CALCOLO in DM')
         nomi.append(scrivi(sid + '.dc.html', c))
     return nomi
