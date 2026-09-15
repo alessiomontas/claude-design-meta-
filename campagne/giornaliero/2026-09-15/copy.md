@@ -1,13 +1,13 @@
 # Copy — Giornaliero 2026-09-15 (martedì · pilastro IL METODO)
 
 **Angolo**: il prezzo di una notte a Roma lo decide il calendario della città, non un software.
-**Gancio guida**: *Ci sono notti a Roma che valgono il doppio di altre — e noi sappiamo quali.*
+**Gancio guida**: *Ci sono notti a Roma che non valgono come le altre — e noi sappiamo quali.*
 **CTA unica**: Scrivi CALCOLO in DM
 **Seed di campagna**: 260915
 
 > Nota di perimetro: nessuna tariffa, nessuna percentuale di occupazione, nessun incremento di ricavo.
-> "Valgono il doppio" resta figura di linguaggio sulla **domanda della città**; dove poteva leggersi come
-> promessa di ricavo è stato riformulato in "non vale come" / "non sono lo stesso prezzo".
+> Nessuna quantificazione del valore di una notte: si dice solo che alcune notti **non valgono come le altre**.
+> Ogni formula che poteva leggersi come promessa di ricavo (per esempio "il doppio") è stata eliminata.
 > Le date dei concerti a Piazza di Siena segnalate dal brief come da ricontrollare **non sono usate**.
 
 ---
@@ -15,7 +15,7 @@
 ## Varianti hook/apertura (per la revisione)
 
 1. **A — la notte che non vale come l'altra** (usata come principale)
-   `Ci sono notti a Roma che valgono il doppio.`
+   `Ci sono notti a Roma che non valgono come le altre.`
 2. **B — il calendario contro l'istinto**
    `Il prezzo di stanotte lo decide Roma, non tu.`
 3. **C — due date a confronto** (usata nel carosello S1)
@@ -28,7 +28,7 @@
 ### R1 · Instagram Reel · 1080×1920 · 30 fps · gancio freddo → contatto
 
 **COPY**
-Gancio      | Ci sono notti che valgono il doppio.
+Gancio      | Ci sono notti che non valgono come le altre.
 Corpo       | Il calendario di Roma decide
             | il prezzo. Noi lo leggiamo.
 CTA         | Scrivi CALCOLO in DM
@@ -40,7 +40,7 @@ Caption     | Vedi §1.3
 |---|---|---|---|
 | 0,0-0,5 | `Richiesta · 24 ottobre` | Notifica 1 entra dall'alto, **già a metà corsa al frame 0** | `translateY(-40px→0)` + scala 0,94→1, 220 ms, `animation-delay:-0.22s`, `cubic-bezier(.16,1,.3,1)` |
 | 0,5-1,1 | `Richiesta · 3 novembre` | Notifica 2 entra; la 1 scende di 96 px e va a opacità 0,45 | cadenza 600 ms |
-| 1,1-1,6 | `Richiesta · 8 dicembre`<br>+ gancio: `Ci sono notti che valgono il doppio.` | Notifica 3 entra; **sopra tutto atterra il gancio** in maschera dal basso; filo oro 3 px sotto il gancio si disegna | `clip-path: inset(100% 0 0 0)→inset(0)`, 180 ms; `width:0→100%` 220 ms sul filo |
+| 1,1-1,6 | `Richiesta · 8 dicembre`<br>+ gancio: `Ci sono notti che non valgono come le altre.` | Notifica 3 entra; **sopra tutto atterra il gancio** in maschera dal basso; filo oro 3 px sotto il gancio si disegna | `clip-path: inset(100% 0 0 0)→inset(0)`, 180 ms; `width:0→100%` 220 ms sul filo |
 | 1,6-2,1 | `Richiesta · 25 ottobre` | Notifica 4, cadenza 500 ms | |
 | 2,1-2,5 | `Richiesta · 1 novembre` | Notifica 5, cadenza 400 ms | |
 | 2,5-2,8 | `Richiesta · 7 dicembre` | Notifica 6, cadenza 320 ms. La pila è ora di 6 righe sfalsate | il ritmo che accelera è il cuore del blocco |
@@ -103,7 +103,7 @@ shot on Canon EOS R5, 24-70mm at 35mm, f/5.6, ISO 400, architectural photography
 **CLAIM (reel)**
 | # | Affermazione | Stato |
 |---|---|---|
-| 1 | "Ci sono notti che valgono il doppio" | figura di linguaggio sulla **domanda**, non sul ricavo — nessuna cifra a schermo |
+| 1 | "Ci sono notti che non valgono come le altre" | CONFERMATO — nessuna quantificazione, nessuna cifra a schermo |
 | 2 | Date nelle notifiche (24 e 25 ottobre, 1 e 3 novembre, 7 e 8 dicembre) | CONFERMATO (Maker Faire 23-25/10; Roma Jazz 1-24/11; 1/11 domenica; 8/12 martedì) |
 | 3 | Metodo in 4 fasi | CONFERMATO — processo interno, nessun risultato promesso |
 | 4 | Celle di calendario che si riempiono | simbolo di **processo**, non promessa di occupazione — nessuna % affiancata |
@@ -113,7 +113,7 @@ shot on Canon EOS R5, 24-70mm at 35mm, f/5.6, ISO 400, architectural photography
 ### 1.3 Caption del reel
 
 ```
-Ci sono notti a Roma che valgono il doppio di altre.
+Ci sono notti a Roma che non valgono come le altre.
 Non è istinto: è il calendario della città.
 
 Il 23-25 ottobre c'è Maker Faire Rome al Gazometro.
@@ -121,7 +121,7 @@ L'1 novembre cade di domenica, e il weekend si allunga.
 Dall'1 al 24 novembre c'è la 50ª edizione del Roma Jazz Festival.
 L'8 dicembre cade di martedì: ponte pieno con il lunedì 7.
 
-Chi gestisce da solo mette un prezzo e lo lascia lì.
+Chi gestisce da solo non ha il tempo di rivedere il prezzo ogni giorno: serve un calendario aggiornato, non più impegno.
 Noi lo costruiamo in quattro passaggi e lo rivediamo ogni giorno.
 
 Pricing dinamico, check-in smart H24, gestione ospiti, pulizie in standard alberghiero, foto e annuncio: dentro il 15% sul fatturato generato. A fine mese ricevi il bonifico netto.
@@ -303,7 +303,7 @@ shot on Canon EOS R5, 35mm, f/4, ISO 200, editorial travel photography, natural 
 ### 2.6 Caption del carosello
 
 ```
-Ci sono notti a Roma che valgono il doppio di altre. Queste sono quelle dell'autunno.
+Ci sono notti a Roma che non valgono come le altre. Queste sono quelle dell'autunno.
 
 23-25 ottobre — Maker Faire Rome, al Gazometro.
 1-24 novembre — Roma Jazz Festival, 50ª edizione.
@@ -330,7 +330,7 @@ Scrivi CALCOLO in DM per la simulazione gratuita.
 Gancio      | Le notti di Roma
             | non valgono tutte uguale.
 Corpo       | Le date dell'autunno 2026,
-            | in chiaro. Segnatele.
+            | in chiaro. Le teniamo noi.
 CTA         | Salva questo post
 Caption     | vedi §3.4
 
@@ -421,7 +421,7 @@ Il prezzo di una notte non lo decide l'istinto: lo decide il calendario della ci
 📌 1 novembre — cade di domenica: weekend lungo.
 📌 7-8 dicembre — l'8 cade di martedì: ponte pieno.
 
-Segnatele e guardate il vostro calendario con queste date davanti.
+Segnatele pure: noi queste date le abbiamo già sul calendario di ogni casa che gestiamo.
 
 Poi c'è il mestiere: si parte dal calendario della città, si fissa una base e un minimo sotto cui non si scende, si trattano le date calde per quello che sono, e si corregge ogni giorno guardando cosa resta libero in zona. È un lavoro quotidiano, non un file da compilare una volta.
 
@@ -442,17 +442,17 @@ Guadagniamo solo se guadagni tu.
 ### S1 · Instagram Storia · 1080×1920 · "il prezzo che non si muove"
 
 **COPY**
-Gancio      | Da quanto non tocchi
-            | il prezzo della tua casa?
+Gancio      | Il prezzo della tua casa
+            | non deve restare fermo.
 Corpo       | Il consiglio: apri il calendario
             | di Roma prima di quello tuo.
 CTA         | Scrivi CALCOLO in DM
 Caption     | —
 
 **Testo integrale a schermo**
-1. `Da quanto non tocchi il prezzo della tua casa?`
+1. `Il prezzo della tua casa non deve restare fermo.`
 2. `Il criterio è semplice: prima del tuo calendario, apri quello di Roma. Ogni data che porta gente in città è una riga a parte — e non vale come la settimana dopo.`
-3. `Il 1 novembre cade di domenica. Il 7 e l'8 dicembre sono ponte pieno. Due prezzi diversi, non uno.`
+3. `L'1 novembre cade di domenica. Il 7 e l'8 dicembre sono ponte pieno. Due prezzi diversi, non uno.`
 4. `Noi quel calendario lo teniamo aggiornato tutti i giorni e correggiamo il prezzo di conseguenza. È dentro il 15%, insieme a check-in smart H24, ospiti e pulizie in standard alberghiero.`
 5. `Guadagniamo solo se guadagni tu.`
 6. CTA: `Scrivi CALCOLO in DM`
@@ -480,15 +480,15 @@ Velo: `linear-gradient(180deg, rgba(38,34,29,.88) 0%, rgba(38,34,29,.45) 38%, rg
 **COPY**
 Gancio      | 23-25 ottobre:
             | Maker Faire Rome.
-Corpo       | Tre notti che non valgono
+Corpo       | Tre giorni che non valgono
             | come quelle dopo.
 CTA         | Scrivi CALCOLO in DM
 Caption     | —
 
 **Testo integrale a schermo**
 1. `23-25 ottobre: Maker Faire Rome, al Gazometro.`
-2. `Tre notti che non valgono come quelle della settimana dopo.`
-3. `Il consiglio: segna la data adesso, non a ottobre. Chi prenota per un evento cerca con settimane di anticipo — se il prezzo arriva tardi, la ricerca è già passata.`
+2. `Tre giorni che non valgono come quelle della settimana dopo.`
+3. `Il consiglio: segna la data adesso, non a ottobre. Chi prenota per un evento cerca in anticipo: il prezzo va messo prima, non il giorno prima.`
 4. `Noi apriamo il calendario della città a dodici mesi e marchiamo ogni data calda prima che arrivi. Ogni giorno lo rivediamo. È dentro il 15%: pricing dinamico, check-in smart H24, ospiti, pulizie in standard alberghiero, foto e annuncio.`
 5. `Guadagniamo solo se guadagni tu.`
 6. CTA: `Scrivi CALCOLO in DM`
@@ -522,7 +522,7 @@ shot on Canon EOS R5, 24mm, f/4, ISO 400, architectural interior photography, na
 |---|---|---|
 | 1 | Maker Faire Rome 23-25 ottobre 2026, Gazometro | CONFERMATO |
 | 2 | 1 novembre 2026 domenica · 7-8 dicembre ponte (8 martedì) | CONFERMATO |
-| 3 | "chi prenota per un evento cerca con settimane di anticipo" | **[DATO DA VERIFICARE: finestra media di prenotazione (booking window) per soggiorni legati a eventi a Roma — serve fonte o va riformulato in "si cerca in anticipo", senza quantificazione]** |
+| 3 | "chi prenota per un evento cerca in anticipo" | CONFERMATO — nessuna quantificazione |
 | 4 | Calendario aperto a dodici mesi, rivisto ogni giorno | CONFERMATO — processo interno (brief, passaggi 1 e 5) |
 | 5 | 15% e servizi inclusi | CONFERMATO |
 | 6 | Nessuna chiusura sul peso che resta al proprietario | verificato: entrambe le storie chiudono su cosa facciamo noi |
@@ -532,9 +532,11 @@ shot on Canon EOS R5, 24mm, f/4, ISO 400, architectural interior photography, na
 
 ## Claim da verificare — riepilogo
 
-| # | Dove | Cosa serve |
-|---|---|---|
-| 1 | S2, riga 3 | **[DATO DA VERIFICARE: anticipo medio di prenotazione per soggiorni legati a eventi]** — in assenza di fonte, sostituire la riga con `Chi prenota per un evento cerca in anticipo: il prezzo va messo prima, non il giorno prima.` (nessuna quantificazione) |
+Nessun marcatore aperto: il pacchetto esce senza `[DATO DA VERIFICARE]`.
+
+L'unico punto che ne aveva uno — l'anticipo medio di prenotazione per soggiorni legati a eventi (S2, riga 3) —
+è stato chiuso togliendo la quantificazione: la riga dice `Chi prenota per un evento cerca in anticipo:
+il prezzo va messo prima, non il giorno prima.`
 
 Tutto il resto del pacchetto è su date confermate dal brief, su processo interno o su lessico di brand.
 **Escluse volutamente**: date dei concerti a Piazza di Siena (segnalate come da ricontrollare); qualsiasi tariffa, % di occupazione o incremento di ricavo.

@@ -46,7 +46,7 @@ FOOT = "</div>\n</x-dc>\n</body>\n</html>\n"
 DATE = [
     ('23-25 ottobre',  'Maker Faire Rome — Gazometro'),
     ('1-24 novembre',  'Roma Jazz Festival, 50ª edizione'),
-    ('1 novembre',     'Cade di domenica: weekend lungo'),
+    ('1° novembre',    'Cade di domenica: weekend lungo'),
     ('7-8 dicembre',   "L'8 cade di martedì: ponte pieno"),
 ]
 FASI = [
@@ -251,22 +251,27 @@ def carosello():
                 1000, 40, 600, T_CHIARO2, font=MA, lh=1.28, tracking=0)
     c += blocco(['Noi lo guardiamo <span style="color:%s">ogni giorno.</span>' % ORO],
                 1140, 45, 800, BIANCO)
+    c += kicker('→ scorri', 1250)
     nomi.append(scrivi('C4.dc.html', c))
 
     # ---- C5 · offerta + CTA ----
     c = frame(1080, 1350, FUME_DEEP)
-    c += foto('mare-4x5.jpg')
+    c += foto('cucina-4x5.jpg')
     c += velo(*VELO_FOTO)
     c += marchio(100, 158)
-    c += riga_calendario(290, piene=[0, 1, 2, 3, 4, 5, 6], n=7, cella=104, gap=12)
+    c += riga_calendario(270, piene=[0, 1, 2, 3, 4, 5, 6], n=7, cella=104, gap=12)
     c += blocco(['Il calendario di Roma',
                  'lo teniamo <span style="color:%s">noi.</span>' % ORO],
-                600, 62, 900, BIANCO, ombra=True)
-    c += blocco(['Aggiornato tutti i giorni,', 'incluso nella gestione.'], 780, 45, 600,
+                520, 62, 900, BIANCO, ombra=True)
+    c += blocco(['Aggiornato tutti i giorni,', 'incluso nella gestione.'], 680, 45, 600,
                 T_CHIARO, font=MA, lh=1.3, tracking=0, ombra=True)
-    c += filo(880, larghezza=180)
-    c += blocco(['15% sul fatturato generato.'], 950, 40, 800, SABBIA, ombra=True)
-    c += blocco(['Guadagniamo solo se guadagni tu.'], 1020, 31, 600, ORO,
+    c += filo(806, larghezza=180)
+    c += blocco(['Pricing dinamico · Check-in smart H24 · Gestione ospiti',
+                 'Pulizie in standard alberghiero · Foto e annuncio'],
+                858, 29, 600, T_CHIARO, font=MA, lh=1.42, tracking=0, ombra=True)
+    c += blocco(['15% sul fatturato generato.',
+                 'A fine mese ricevi il bonifico netto.'], 980, 36, 800, SABBIA, ombra=True)
+    c += blocco(['Guadagniamo solo se guadagni tu.'], 1098, 30, 600, ORO,
                 font=MA, lh=1.3, tracking=0, ombra=True)
     c += pill(1180, 116, 'Scrivi CALCOLO in DM')
     nomi.append(scrivi('C5.dc.html', c))
@@ -287,7 +292,10 @@ def facebook():
                 500, 70, 900, BIANCO, ombra=True)
     c += filo(612, larghezza=240)
     c += card_date(680, altezza=150, gap=16)
-    c += kicker('Salva questo post', 1420, colore=T_CHIARO, peso=600)
+    c += blocco(['Le date dell\'autunno che portano gente a Roma,',
+                 'in chiaro. Le teniamo noi.'], 1402, 38, 600,
+                T_CHIARO, font=MA, lh=1.32, tracking=0, ombra=True)
+    c += kicker('Salva questo post', 1542, colore=T_CHIARO, peso=600)
     nomi.append(scrivi('F1.dc.html', c))
 
     # ---- F2 · 1:1 · il metodo ----
@@ -336,17 +344,19 @@ def storie():
     c += velo(*VELO_STORIA)
     c += marchio()
     c += kicker('Il criterio', 300, ombra=True)
-    c += blocco(['Da quanto non tocchi', 'il prezzo della tua casa?'], 640, 70, 900,
+    c += blocco(['Il prezzo della tua casa', 'non deve restare fermo.'], 640, 70, 900,
                 BIANCO, ombra=True)
     c += filo(752)
     c += blocco(['Prima del tuo calendario,', 'apri quello di Roma.'], 860, 45, 600,
                 T_CHIARO, font=MA, lh=1.3, tracking=0, ombra=True)
     c += riga_calendario(980, piene=[3, 4], n=7, cella=104, gap=12)
-    c += blocco(['Il 1 novembre cade di domenica.', 'Il 7 e l\'8 dicembre sono ponte pieno.'],
+    c += blocco(['L\'1 novembre cade di domenica.', 'Il 7 e l\'8 dicembre sono ponte pieno.'],
                 1200, 40, 600, T_CHIARO, font=MA, lh=1.32, tracking=0, ombra=True)
     c += blocco(['Due prezzi diversi, <span style="color:%s">non uno.</span>' % ORO],
                 1320, 50, 800, BIANCO, ombra=True)
     c += pill(1480, 120, 'Scrivi CALCOLO in DM')
+    c += blocco(['Guadagniamo solo se guadagni tu.'], 1640, 32, 600, ORO,
+                font=MA, lh=1.3, tracking=0, allinea='center', ombra=True)
     nomi.append(scrivi('S1.dc.html', c))
 
     # ---- S2 · una data in arrivo ----
@@ -355,7 +365,7 @@ def storie():
     c += velo(*VELO_STORIA)
     c += marchio()
     c += kicker('Una data in arrivo', 300, ombra=True)
-    c += blocco(['23-25 ottobre:', 'Maker Faire a Roma.'], 640, 70, 900, BIANCO, ombra=True)
+    c += blocco(['23-25 ottobre:', 'Maker Faire Rome.'], 640, 70, 900, BIANCO, ombra=True)
     c += filo(752)
     c += blocco(['Tre giorni di fiera al Gazometro.', 'La città si riempie,',
                  'e quelle notti non valgono', 'come le altre.'],
@@ -364,6 +374,8 @@ def storie():
     c += blocco(['Il calendario lo teniamo noi,', 'aggiornato tutti i giorni.'],
                 1300, 50, 800, ORO, ombra=True)
     c += pill(1480, 120, 'Scrivi CALCOLO in DM')
+    c += blocco(['Guadagniamo solo se guadagni tu.'], 1640, 32, 600, ORO,
+                font=MA, lh=1.3, tracking=0, allinea='center', ombra=True)
     nomi.append(scrivi('S2.dc.html', c))
     return nomi
 

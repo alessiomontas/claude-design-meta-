@@ -60,7 +60,7 @@ NOTIFICHE = [  # (testo, istante di entrata)
     ('Richiesta · 1 novembre',   2.10),
     ('Richiesta · 7 dicembre',   2.50),
 ]
-GANCIO = ['Ci sono notti', 'che valgono il doppio.']
+GANCIO = ['Ci sono notti', 'che non valgono come le altre.']
 RIBALTA = ['A', 'Roma', 'il', 'prezzo', 'lo', 'decide', 'il', 'calendario.']
 FASI = [
     ('01', 'Il calendario di Roma', 'Fiere, festival, ponti, feste.',            5.0),
