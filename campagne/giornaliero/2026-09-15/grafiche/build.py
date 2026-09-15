@@ -298,8 +298,9 @@ def carosello():
     c += velo(*VELO_FOTO)
     c += marchio(100, 158)
     c += riga_calendario(290, piene=[0, 1, 2, 3, 4, 5, 6], n=7, cella=90, gap=12)
+    # "lo controlliamo": modifica del titolare fatta a mano sul canvas il 15/09.
     c += blocco(['Il calendario di Roma',
-                 'lo teniamo <span style="color:%s">noi.</span>' % ORO],
+                 'lo controlliamo <span style="color:%s">noi.</span>' % ORO],
                 470, 58, 900, BIANCO, ombra=True)
     c += blocco(['Aggiornato tutti i giorni, incluso nella gestione.'], 620, 36, 600,
                 T_CHIARO, font=MA, lh=1.3, tracking=0, ombra=True)
