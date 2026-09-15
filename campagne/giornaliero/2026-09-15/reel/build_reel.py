@@ -55,7 +55,7 @@ def anim(*nomi):
 NOTIFICHE = [  # (testo, istante di entrata)
     ('Richiesta · 24 ottobre',  -0.22),   # negativo: al frame 0 e' gia' a meta' corsa
     ('Richiesta · 3 novembre',   0.50),
-    ('Richiesta · 8 dicembre',   1.10),
+    ('Richiesta · 8 dicembre',   1.00),
     ('Richiesta · 25 ottobre',   1.60),
     ('Richiesta · 1 novembre',   2.10),
     ('Richiesta · 7 dicembre',   2.50),
@@ -64,9 +64,9 @@ GANCIO = ['Ci sono notti', 'che non valgono come le altre.']
 RIBALTA = ['A', 'Roma', 'il', 'prezzo', 'lo', 'decide', 'il', 'calendario.']
 FASI = [
     ('01', 'Il calendario di Roma', 'Fiere, festival, ponti, feste.',            5.0),
-    ('02', 'La base e il minimo',   'Sotto una soglia non si scende.',           6.6),
-    ('03', 'Le date calde',         'Una notte di evento fa storia a sé.',       8.2),
-    ('04', 'Ogni giorno, di nuovo', 'Si guarda la città e si corregge.',         9.8),
+    ('02', 'La base e il minimo',   'Sotto una soglia non si scende.',           6.5),
+    ('03', 'Le date calde',         'Una notte di evento fa storia a sé.',       7.9),
+    ('04', 'Ogni giorno, di nuovo', 'Si guarda la città e si corregge.',         9.2),
 ]
 CHIAVE_PRE = 'Il calendario di Roma '
 CHIAVE_EVID = 'lo teniamo noi.'
@@ -74,7 +74,7 @@ CTA = 'Scrivi CALCOLO in DM'
 FIRMA = 'Guadagniamo solo se guadagni tu.'
 
 CAL_COL, CAL_RIG = 7, 5
-CAL_ONDA_IN, CAL_ONDA_DUR = 12.2, 0.9
+CAL_ONDA_IN, CAL_ONDA_DUR = 11.6, 0.9
 
 
 def costruisci():
@@ -105,16 +105,16 @@ def costruisci():
     # ---- gancio in maschera dal basso + filo oro che si disegna
     k += kf('gancio', [
         (0, 'opacity:0; clip-path: inset(100% 0 0 0)'),
-        (1.099, 'opacity:0; clip-path: inset(100% 0 0 0)', EASE),
-        (1.28, 'opacity:1; clip-path: inset(0 0 0 0)'),
+        (0.549, 'opacity:0; clip-path: inset(100% 0 0 0)', EASE),
+        (0.73, 'opacity:1; clip-path: inset(0 0 0 0)'),
         (3.2, 'opacity:1; clip-path: inset(0 0 0 0)'),
         (3.201, 'opacity:0; clip-path: inset(0 0 0 0)'),
         (D, 'opacity:0; clip-path: inset(0 0 0 0)'),
     ])
     k += kf('filo_gancio', [
         (0, 'transform: scaleX(0)'),
-        (1.28, 'transform: scaleX(0)', EASE),
-        (1.5, 'transform: scaleX(1)'),
+        (0.73, 'transform: scaleX(0)', EASE),
+        (0.95, 'transform: scaleX(1)'),
         (3.2, 'transform: scaleX(1)'),
         (3.201, 'transform: scaleX(0)'),
         (D, 'transform: scaleX(0)'),
@@ -137,8 +137,8 @@ def costruisci():
         (0, 'opacity:0; letter-spacing:.4em'),
         (4.799, 'opacity:0; letter-spacing:.4em', EASE),
         (5.2, 'opacity:1; letter-spacing:.02em'),
-        (11.4, 'opacity:1; letter-spacing:.02em'),
-        (11.401, 'opacity:0; letter-spacing:.02em'),
+        (10.8, 'opacity:1; letter-spacing:.02em'),
+        (10.801, 'opacity:0; letter-spacing:.02em'),
         (D, 'opacity:0; letter-spacing:.02em'),
     ])
 
@@ -152,13 +152,13 @@ def costruisci():
         if i < 3:
             passi.append((FASI[i + 1][3] - 0.001, 'transform: scaleX(%.2f) scaleY(1)'
                           % ((i + 1) / 4.0), EASE))
-    passi += [(11.4, 'transform: scaleX(1) scaleY(1)'),
-              (11.401, 'transform: scaleX(0) scaleY(1)'), (D, 'transform: scaleX(0) scaleY(1)')]
+    passi += [(10.8, 'transform: scaleX(1) scaleY(1)'),
+              (10.801, 'transform: scaleX(0) scaleY(1)'), (D, 'transform: scaleX(0) scaleY(1)')]
     k += kf('barra', passi)
 
     # ---- fasi: il numero scorre in maschera (esce in alto, entra dal basso)
     for i, (_, _, _, t0) in enumerate(FASI):
-        t1 = FASI[i + 1][3] if i < 3 else 11.4
+        t1 = FASI[i + 1][3] if i < 3 else 10.8
         k += kf('num%d' % i, [
             (0, 'opacity:0; transform: translateY(100%)'),
             (max(0, t0 - 0.001), 'opacity:0; transform: translateY(100%)', EASE),
@@ -186,7 +186,7 @@ def costruisci():
     k += kf('compressa', [
         (0, 'opacity:0; transform: scale(1)'),
         (11.399, 'opacity:0; transform: scale(1)', EASE),
-        (11.8, 'opacity:.4; transform: scale(.25)'),
+        (11.2, 'opacity:.4; transform: scale(.25)'),
         (17.2, 'opacity:.4; transform: scale(.25)'),
         (17.6, 'opacity:0; transform: scale(.25)'),
         (D, 'opacity:0; transform: scale(.25)'),

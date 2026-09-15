@@ -50,10 +50,10 @@ DATE = [
     ('7-8 dicembre',   "L'8 cade di martedì: ponte pieno"),
 ]
 FASI = [
-    ('01', 'Il calendario di Roma', 'Fiere, festival, ponti, feste. Prima della casa, si guarda la città.'),
-    ('02', 'La base e il minimo',   'Un prezzo feriale, uno weekend, una soglia sotto cui non si scende.'),
-    ('03', 'Le date calde',         'Una notte di evento fa storia a sé. Non vale come quella dopo.'),
-    ('04', 'Ogni giorno, di nuovo', 'Si guarda cosa resta libero in zona e si corregge.'),
+    ('01', 'Il calendario di Roma', 'Prima della casa, si guarda la città.'),
+    ('02', 'La base e il minimo',   'Un feriale, un weekend, una soglia sotto cui non si scende.'),
+    ('03', 'Le date calde',         'Una notte di evento fa storia a sé.'),
+    ('04', 'Ogni giorno, di nuovo', 'Si guarda cosa resta libero in zona, e si corregge.'),
 ]
 
 
@@ -120,17 +120,32 @@ def pill(y, h, testo, size=45, fondo=ORO, testo_col=FUME_DEEP):
 
 
 # ---- LA FIRMA DELLA GIORNATA -------------------------------------------
-def riga_calendario(y, piene, n=7, cella=120, gap=12, left=64, etichette=None):
+GIORNI = ['L', 'M', 'M', 'G', 'V', 'S', 'D']
+
+
+def riga_calendario(y, piene, n=7, cella=120, gap=12, left=64, etichette=None,
+                    giorni=True, size_et=40):
     """Fila di celle quadrate: `piene` sono gli indici pieni d'oro.
-    E' il motivo grafico ricorrente della giornata."""
-    out = ('  <div style="position: absolute; left: %dpx; top: %dpx; display: flex; gap: %dpx;">'
-           % (left, y, gap))
+    E' il motivo grafico ricorrente della giornata. Le iniziali dei giorni sopra
+    la riga sono quello che la fa leggere come un calendario e non come sette
+    quadrati: senza, il motivo non dice niente."""
+    out = ''
+    if giorni:
+        out += ('  <div style="position: absolute; left: %dpx; top: %dpx; display: flex; gap: %dpx;">'
+                % (left, y - 44, gap))
+        for i in range(n):
+            out += ('<div style="width: %dpx; text-align: center; font-family: %s; '
+                    'font-weight: 700; font-size: 26px; letter-spacing: 0.12em; color: %s;">%s</div>'
+                    % (cella, MA, T_CHIARO2, GIORNI[i % 7]))
+        out += '</div>\n'
+    out += ('  <div style="position: absolute; left: %dpx; top: %dpx; display: flex; gap: %dpx;">'
+            % (left, y, gap))
     for i in range(n):
         piena = i in piene
         et = ''
         if etichette and i < len(etichette) and etichette[i]:
-            et = ('<span style="font-family: %s; font-weight: 700; font-size: 40px; color: %s;">%s</span>'
-                  % (MA, FUME_DEEP if piena else T_CHIARO2, etichette[i]))
+            et = ('<span style="font-family: %s; font-weight: 700; font-size: %dpx; color: %s;">%s</span>'
+                  % (MA, size_et, FUME_DEEP if piena else T_CHIARO2, etichette[i]))
         out += ('<div style="width: %dpx; height: %dpx; border-radius: 16px; background: %s; '
                 'display: flex; align-items: center; justify-content: center;">%s</div>'
                 % (cella, cella, ORO if piena else FUME_CARD, et))
@@ -160,13 +175,32 @@ def blocchi_fasi(y, altezza=160, gap=18, size_t=45, size_d=33, dettagli=True):
         det_html = ('<span style="font-family: %s; font-weight: 600; font-size: %dpx; '
                     'color: %s; line-height: 1.25;">%s</span>' % (MA, size_d, T_CHIARO, det)) if dettagli else ''
         out += ('  <div style="position: absolute; left: 64px; right: 64px; top: %dpx; height: %dpx; '
-                'display: flex; align-items: center; gap: 26px;">'
+                'display: flex; align-items: flex-start; gap: 26px;">'
                 '<span style="font-family: %s; font-weight: 900; font-size: 62px; color: %s; '
+                'line-height: 0.98; '
                 'flex: 0 0 120px;">%s</span>'
                 '<span style="display: flex; flex-direction: column; gap: 6px;">'
                 '<span style="font-family: %s; font-weight: 800; font-size: %dpx; color: %s;">%s</span>'
                 '%s</span></div>\n'
                 % (top, altezza, AR, ORO, num, AR, size_t, BIANCO, tit, det_html))
+    return out
+
+
+def badge(y, testo, left=64, size=34, h=70):
+    return ('  <div style="position: absolute; left: %dpx; top: %dpx; height: %dpx; '
+            'display: inline-flex; align-items: center; padding: 0 30px; border-radius: %dpx; '
+            'border: 2px solid %s; background: rgba(200,162,75,0.14); font-family: %s; '
+            'font-weight: 800; font-size: %dpx; color: %s;">%s</div>\n'
+            % (left, y, h, h // 2, ORO, AR, size, ORO, testo))
+
+
+def elenco_spunte(y, voci, size=34, passo=58, left=64):
+    out = ''
+    for i, t in enumerate(voci):
+        out += ('  <div style="position: absolute; left: %dpx; top: %dpx; display: flex; '
+                'align-items: center; gap: 18px;">%s'
+                '<span style="font-family: %s; font-weight: 600; font-size: %dpx; color: %s;">%s</span>'
+                '</div>\n' % (left, y + i * passo, spunta(), MA, size, BIANCO, t))
     return out
 
 
@@ -183,7 +217,7 @@ def scrivi(nome, corpo):
 
 
 VELO_FOTO = [
-    'linear-gradient(180deg, rgba(38,34,29,0.92) 0%, rgba(38,34,29,0.66) 42%, rgba(38,34,29,0.95) 100%)',
+    'linear-gradient(180deg, rgba(38,34,29,0.92) 0%, rgba(38,34,29,0.66) 42%, rgba(38,34,29,0.97) 100%)',
     'radial-gradient(ellipse 96% 36% at 50% 52%, rgba(26,23,19,0.45) 0%, rgba(26,23,19,0) 72%)',
 ]
 
@@ -205,14 +239,18 @@ def carosello():
     c += foto('camera-4x5.jpg')
     c += velo(*VELO_FOTO)
     c += marchio(100, 158)
-    c += riga_calendario(300, piene=[2, 5], n=7, cella=104, gap=12)
     c += blocco(['Non tutte le notti di Roma',
                  'valgono <span style="color:%s">uguale.</span>' % ORO],
-                610, 70, 900, BIANCO, ombra=True)
-    c += filo(732)
+                520, 70, 900, BIANCO, ombra=True)
+    c += filo(700)
     c += blocco(['23 ottobre e 3 novembre', 'non sono lo stesso prezzo.'],
-                840, 45, 600, T_CHIARO, font=MA, lh=1.3, tracking=0, ombra=True)
-    c += kicker('→ scorri', 1250)
+                770, 45, 600, T_CHIARO, font=MA, lh=1.3, tracking=0, ombra=True)
+    # Le due celle accese sono i due giorni citati nel corpo: il 23 ottobre cade
+    # di venerdi', il 3 novembre di martedi'. Senza questo aggancio la riga era
+    # solo decorazione.
+    c += riga_calendario(985, piene=[1, 4], n=7, cella=104, gap=12,
+                         etichette=['', '3', '', '', '23', '', ''], size_et=36)
+    c += kicker('→ scorri', 1200, colore=SABBIA)
     nomi.append(scrivi('Main.dc.html', c))
 
     # ---- C2 · la slide da screenshottare ----
@@ -259,21 +297,24 @@ def carosello():
     c += foto('cucina-4x5.jpg')
     c += velo(*VELO_FOTO)
     c += marchio(100, 158)
-    c += riga_calendario(270, piene=[0, 1, 2, 3, 4, 5, 6], n=7, cella=104, gap=12)
+    c += riga_calendario(290, piene=[0, 1, 2, 3, 4, 5, 6], n=7, cella=90, gap=12)
     c += blocco(['Il calendario di Roma',
                  'lo teniamo <span style="color:%s">noi.</span>' % ORO],
-                520, 62, 900, BIANCO, ombra=True)
-    c += blocco(['Aggiornato tutti i giorni,', 'incluso nella gestione.'], 680, 45, 600,
+                470, 58, 900, BIANCO, ombra=True)
+    c += blocco(['Aggiornato tutti i giorni, incluso nella gestione.'], 620, 36, 600,
                 T_CHIARO, font=MA, lh=1.3, tracking=0, ombra=True)
-    c += filo(806, larghezza=180)
-    c += blocco(['Pricing dinamico · Check-in smart H24 · Gestione ospiti',
-                 'Pulizie in standard alberghiero · Foto e annuncio'],
-                858, 29, 600, T_CHIARO, font=MA, lh=1.42, tracking=0, ombra=True)
-    c += blocco(['15% sul fatturato generato.',
-                 'A fine mese ricevi il bonifico netto.'], 980, 36, 800, SABBIA, ombra=True)
-    c += blocco(['Guadagniamo solo se guadagni tu.'], 1098, 30, 600, ORO,
+    c += elenco_spunte(700, ['Pricing dinamico, rivisto ogni giorno',
+                             'Check-in smart H24 e gestione ospiti',
+                             'Pulizie in standard alberghiero, foto e annuncio'],
+                       size=33, passo=56)
+    c += badge(898, '15% sul fatturato generato', size=32, h=64)
+    c += blocco(['A fine mese ricevi il bonifico netto.'], 985, 31, 600, SABBIA,
                 font=MA, lh=1.3, tracking=0, ombra=True)
-    c += pill(1180, 116, 'Scrivi CALCOLO in DM')
+    c += blocco(['Guadagniamo solo se guadagni tu.'], 1035, 30, 600, SABBIA,
+                font=MA, lh=1.3, tracking=0, ombra=True)
+    c += pill(1150, 108, 'Scrivi CALCOLO in DM')
+    c += blocco(['Simulazione gratuita del rendimento.'], 1258, 29, 600, T_CHIARO,
+                font=MA, lh=1.3, tracking=0, allinea='center', ombra=True)
     nomi.append(scrivi('C5.dc.html', c))
     return nomi
 
@@ -291,11 +332,12 @@ def facebook():
                  'non valgono tutte <span style="color:%s">uguale.</span>' % ORO],
                 500, 70, 900, BIANCO, ombra=True)
     c += filo(612, larghezza=240)
-    c += card_date(680, altezza=150, gap=16)
+    c += card_date(660, altezza=176, gap=18)
     c += blocco(['Le date dell\'autunno che portano gente a Roma,',
-                 'in chiaro. Le teniamo noi.'], 1402, 38, 600,
+                 'in chiaro. Le teniamo noi.'], 1480, 38, 600,
                 T_CHIARO, font=MA, lh=1.32, tracking=0, ombra=True)
-    c += kicker('Salva questo post', 1542, colore=T_CHIARO, peso=600)
+    c += pill(1600, 110, 'Scrivi CALCOLO in DM')
+    c += kicker('Salva questo post', 1760, colore=T_CHIARO, peso=600)
     nomi.append(scrivi('F1.dc.html', c))
 
     # ---- F2 · 1:1 · il metodo ----
@@ -305,8 +347,8 @@ def facebook():
     c += blocco(['Come si costruisce il prezzo'], 235, 62, 900, BIANCO)
     c += blocco(['Quattro passaggi, in ordine.'], 310, 33, 600, T_CHIARO2,
                 font=MA, lh=1.3, tracking=0)
-    c += blocchi_fasi(390, altezza=110, gap=16, size_t=40, dettagli=False)
-    c += filo(962, larghezza=952)
+    c += blocchi_fasi(370, altezza=138, gap=18, size_t=40, size_d=28)
+    c += filo(990, larghezza=952)
     nomi.append(scrivi('F2.dc.html', c))
 
     # ---- F3 · 1:1 · offerta ----
@@ -315,8 +357,9 @@ def facebook():
     c += marchio(64, 122, colore=SABBIA, ombra=False)
     c += blocco(['Il calendario lo teniamo <span style="color:%s">noi.</span>' % ORO],
                 245, 62, 900, BIANCO)
-    c += blocco(['Aggiornato tutti i giorni,', 'incluso nel 15%.'], 360, 40, 600,
+    c += blocco(['Aggiornato tutti i giorni, incluso nella gestione.'], 340, 36, 600,
                 T_CHIARO, font=MA, lh=1.3, tracking=0)
+    c += badge(400, '15% sul fatturato generato', size=32, h=64)
     righe = ''
     for t in ('Pricing dinamico',
               'Check-in smart H24 e gestione ospiti',
@@ -324,13 +367,15 @@ def facebook():
         righe += ('<div style="display:flex; align-items:center; gap:20px; height:70px;">'
                   '%s<span style="font-family:%s; font-weight:600; font-size:40px; color:%s;">%s</span>'
                   '</div>' % (spunta(), MA, BIANCO, t))
-    c += ('  <div style="position:absolute; left:64px; right:64px; top:460px; '
+    c += ('  <div style="position:absolute; left:64px; right:64px; top:500px; '
           'display:flex; flex-direction:column;">%s</div>\n' % righe)
     c += blocco(['Foto e annuncio inclusi. A fine mese ricevi il bonifico netto.'],
-                760, 33, 600, T_CHIARO2, font=MA, lh=1.3, tracking=0)
-    c += pill(870, 96, 'Scrivi CALCOLO in DM')
-    c += blocco(['Guadagniamo solo se guadagni tu.'], 960, 31, 600, ORO,
+                790, 32, 600, T_CHIARO2, font=MA, lh=1.3, tracking=0)
+    c += blocco(['Guadagniamo solo se guadagni tu.'], 845, 31, 600, SABBIA,
                 font=MA, lh=1.3, tracking=0)
+    c += pill(945, 96, 'Scrivi CALCOLO in DM')
+    c += blocco(['Simulazione gratuita del rendimento.'], 1020, 29, 600, T_CHIARO,
+                font=MA, lh=1.3, tracking=0, allinea='center')
     nomi.append(scrivi('F3.dc.html', c))
     return nomi
 
@@ -349,13 +394,19 @@ def storie():
     c += filo(752)
     c += blocco(['Prima del tuo calendario,', 'apri quello di Roma.'], 860, 45, 600,
                 T_CHIARO, font=MA, lh=1.3, tracking=0, ombra=True)
-    c += riga_calendario(980, piene=[3, 4], n=7, cella=104, gap=12)
+    c += riga_calendario(1015, piene=[0, 1], n=7, cella=104, gap=12,
+                         etichette=['7', '8', '', '', '', '', ''], size_et=36)
     c += blocco(['L\'1 novembre cade di domenica.', 'Il 7 e l\'8 dicembre sono ponte pieno.'],
-                1200, 40, 600, T_CHIARO, font=MA, lh=1.32, tracking=0, ombra=True)
+                1195, 40, 600, T_CHIARO, font=MA, lh=1.32, tracking=0, ombra=True)
     c += blocco(['Due prezzi diversi, <span style="color:%s">non uno.</span>' % ORO],
-                1320, 50, 800, BIANCO, ombra=True)
-    c += pill(1480, 120, 'Scrivi CALCOLO in DM')
-    c += blocco(['Guadagniamo solo se guadagni tu.'], 1640, 32, 600, ORO,
+                1300, 50, 800, BIANCO, ombra=True)
+    c += blocco(['Dentro il 15%, con check-in smart H24',
+                 'e pulizie in standard alberghiero.'], 1380, 33, 600,
+                T_CHIARO, font=MA, lh=1.32, tracking=0, ombra=True)
+    c += blocco(['Guadagniamo solo se guadagni tu.'], 1500, 30, 600, SABBIA,
+                font=MA, lh=1.3, tracking=0, ombra=True)
+    c += pill(1620, 116, 'Scrivi CALCOLO in DM')
+    c += blocco(['Simulazione gratuita del rendimento.'], 1770, 29, 600, T_CHIARO,
                 font=MA, lh=1.3, tracking=0, allinea='center', ombra=True)
     nomi.append(scrivi('S1.dc.html', c))
 
@@ -370,11 +421,17 @@ def storie():
     c += blocco(['Tre giorni di fiera al Gazometro.', 'La città si riempie,',
                  'e quelle notti non valgono', 'come le altre.'],
                 920, 40, 600, T_CHIARO, font=MA, lh=1.32, tracking=0, ombra=True)
-    c += riga_calendario(1090, piene=[2, 3, 4], n=7, cella=104, gap=12)
+    c += riga_calendario(1090, piene=[4, 5, 6], n=7, cella=104, gap=12,
+                         etichette=['', '', '', '', '23', '24', '25'], size_et=34)
     c += blocco(['Il calendario lo teniamo noi,', 'aggiornato tutti i giorni.'],
-                1300, 50, 800, ORO, ombra=True)
-    c += pill(1480, 120, 'Scrivi CALCOLO in DM')
-    c += blocco(['Guadagniamo solo se guadagni tu.'], 1640, 32, 600, ORO,
+                1270, 48, 800, ORO, ombra=True)
+    c += blocco(['Dentro il 15%, con check-in smart H24',
+                 'e pulizie in standard alberghiero.'], 1390, 33, 600,
+                T_CHIARO, font=MA, lh=1.32, tracking=0, ombra=True)
+    c += blocco(['La prima data è fra cinque settimane.'], 1500, 31, 800, SABBIA,
+                font=MA, lh=1.3, tracking=0, ombra=True)
+    c += pill(1620, 116, 'Scrivi CALCOLO in DM')
+    c += blocco(['Simulazione gratuita del rendimento.'], 1770, 29, 600, T_CHIARO,
                 font=MA, lh=1.3, tracking=0, allinea='center', ombra=True)
     nomi.append(scrivi('S2.dc.html', c))
     return nomi

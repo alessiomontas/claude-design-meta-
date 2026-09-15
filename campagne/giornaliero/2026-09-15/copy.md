@@ -40,7 +40,7 @@ Caption     | Vedi §1.3
 |---|---|---|---|
 | 0,0-0,5 | `Richiesta · 24 ottobre` | Notifica 1 entra dall'alto, **già a metà corsa al frame 0** | `translateY(-40px→0)` + scala 0,94→1, 220 ms, `animation-delay:-0.22s`, `cubic-bezier(.16,1,.3,1)` |
 | 0,5-1,1 | `Richiesta · 3 novembre` | Notifica 2 entra; la 1 scende di 96 px e va a opacità 0,45 | cadenza 600 ms |
-| 1,1-1,6 | `Richiesta · 8 dicembre`<br>+ gancio: `Ci sono notti che non valgono come le altre.` | Notifica 3 entra; **sopra tutto atterra il gancio** in maschera dal basso; filo oro 3 px sotto il gancio si disegna | `clip-path: inset(100% 0 0 0)→inset(0)`, 180 ms; `width:0→100%` 220 ms sul filo |
+| 0,55-1,1 | `Richiesta · 8 dicembre`<br>+ gancio: `Ci sono notti che non valgono come le altre.` | Notifica 3 entra; **sopra tutto atterra il gancio** in maschera dal basso; filo oro 3 px sotto il gancio si disegna | `clip-path: inset(100% 0 0 0)→inset(0)`, 180 ms; `width:0→100%` 220 ms sul filo |
 | 1,6-2,1 | `Richiesta · 25 ottobre` | Notifica 4, cadenza 500 ms | |
 | 2,1-2,5 | `Richiesta · 1 novembre` | Notifica 5, cadenza 400 ms | |
 | 2,5-2,8 | `Richiesta · 7 dicembre` | Notifica 6, cadenza 320 ms. La pila è ora di 6 righe sfalsate | il ritmo che accelera è il cuore del blocco |
@@ -124,7 +124,7 @@ L'8 dicembre cade di martedì: ponte pieno con il lunedì 7.
 Chi gestisce da solo non ha il tempo di rivedere il prezzo ogni giorno: serve un calendario aggiornato, non più impegno.
 Noi lo costruiamo in quattro passaggi e lo rivediamo ogni giorno.
 
-Pricing dinamico, check-in smart H24, gestione ospiti, pulizie in standard alberghiero, foto e annuncio: dentro il 15% sul fatturato generato. A fine mese ricevi il bonifico netto.
+Dentro il 15% sul fatturato generato, e a fine mese ricevi il bonifico netto.
 
 Guadagniamo solo se guadagni tu.
 Scrivi CALCOLO in DM: ti facciamo la simulazione gratuita del rendimento.
@@ -444,7 +444,7 @@ Guadagniamo solo se guadagni tu.
 **COPY**
 Gancio      | Il prezzo della tua casa
             | non deve restare fermo.
-Corpo       | Il consiglio: apri il calendario
+Corpo       | Il criterio: apri il calendario
             | di Roma prima di quello tuo.
 CTA         | Scrivi CALCOLO in DM
 Caption     | —
@@ -540,6 +540,23 @@ il prezzo va messo prima, non il giorno prima.`
 
 Tutto il resto del pacchetto è su date confermate dal brief, su processo interno o su lessico di brand.
 **Escluse volutamente**: date dei concerti a Piazza di Siena (segnalate come da ricontrollare); qualsiasi tariffa, % di occupazione o incremento di ricavo.
+
+---
+
+## Ritocchi applicati dopo la revisione (15/09)
+
+| # | Dove | Cosa è cambiato |
+|---|---|---|
+| 1 | S1, S2 | aggiunta la riga d'offerta `Dentro il 15%, con check-in smart H24 e pulizie in standard alberghiero.`: le storie chiedevano un DM senza dire cosa si riceve |
+| 2 | C5, F3, S1, S2 | sotto la CTA `Simulazione gratuita del rendimento.`, e la firma di brand spostata **sopra** la banda oro, in sabbia (in oro su fondo scuro non si leggeva) |
+| 3 | S2 | urgenza fattuale `La prima data è fra cinque settimane.` — è calendario, non un claim |
+| 4 | C1 | tolta la fascia vuota di 330 px: gancio alzato, riga di calendario portata sotto il corpo, `→ scorri` da oro a sabbia (su pavimento chiaro spariva) |
+| 5 | F1 | card più alte e banda oro `Scrivi CALCOLO in DM`: la 9:16 del collage non aveva CTA |
+| 6 | tutte | la riga di calendario ha ora le iniziali dei giorni (L M M G V S D) e i numeri sulle celle accese: senza, erano sette quadrati e non un calendario. **Le celle cadono sul giorno vero**: 23-25 ottobre venerdì-domenica, 7-8 dicembre lunedì-martedì, 3 novembre martedì |
+| 7 | F2 | rimesse le righe di dettaglio sotto i quattro titoli: era un elenco di servizi, contro la trappola del martedì |
+| 8 | C5, F3 | il 15% è un badge, i servizi hanno le spunte oro |
+| 9 | reel | gancio anticipato da 1,10 s a **0,55 s** e fasi che accelerano (5,0 / 6,5 / 7,9 / 9,2 invece di 1,6 s fisse); culmine del calendario anticipato a 11,6 s |
+| 10 | caption reel | tolto l'elenco dei cinque servizi (resta su carosello e Facebook) |
 
 ---
 
