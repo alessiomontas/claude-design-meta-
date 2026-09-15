@@ -9,3 +9,8 @@ campagne/facebook-lungo-vs-breve-proprietari/grafiche/post-facebook-lungo-vs-bre
 campagne/facebook-stagionalita-reel-proprietari/grafiche/kit-stagionalita.html
 campagne/facebook-recensioni-superhost/grafiche/kit-recensioni.html
 campagne/facebook-campagna-virale/grafiche/kit-campagna-virale.html
+
+# Seed del canvas Claude Design della presentazione (2,9 MB, rigenerabile da slide/*.dc.html + canvas.json)
+campagne/presentazione-servizio-completo-proprietari/*.html
+# HTML temporanei del rendering PNG/PDF
+campagne/**/slide/_render/

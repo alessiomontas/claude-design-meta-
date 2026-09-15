@@ -1,0 +1,160 @@
+{
+  "artboards": [
+    {
+      "file": "Main.dc.html",
+      "title": "01 · Copertina",
+      "x": 0,
+      "y": 0,
+      "w": 1280,
+      "h": 720,
+      "print": "fixed"
+    },
+    {
+      "file": "Immobile.dc.html",
+      "title": "02 · L'immobile che abbiamo visto",
+      "x": 1400,
+      "y": 0,
+      "w": 1280,
+      "h": 720,
+      "print": "fixed"
+    },
+    {
+      "file": "Percorso.dc.html",
+      "title": "03 · Da appartamento a struttura",
+      "x": 2800,
+      "y": 0,
+      "w": 1280,
+      "h": 720,
+      "print": "fixed"
+    },
+    {
+      "file": "Calendario.dc.html",
+      "title": "04 · Il calendario (slide-perno)",
+      "x": 4200,
+      "y": 0,
+      "w": 1280,
+      "h": 720,
+      "print": "fixed"
+    },
+    {
+      "file": "Regola.dc.html",
+      "title": "05 · 01 Messa in regola",
+      "x": 0,
+      "y": 920,
+      "w": 1280,
+      "h": 720,
+      "print": "fixed"
+    },
+    {
+      "file": "Responsabilita.dc.html",
+      "title": "06 · Il nome sulle carte",
+      "x": 1400,
+      "y": 920,
+      "w": 1280,
+      "h": 720,
+      "print": "fixed"
+    },
+    {
+      "file": "Casa.dc.html",
+      "title": "07 · 02 La casa pronta",
+      "x": 2800,
+      "y": 920,
+      "w": 1280,
+      "h": 720,
+      "print": "fixed"
+    },
+    {
+      "file": "Accessi.dc.html",
+      "title": "08 · 03 Accessi e check-in",
+      "x": 4200,
+      "y": 920,
+      "w": 1280,
+      "h": 720,
+      "print": "fixed"
+    },
+    {
+      "file": "Identita.dc.html",
+      "title": "09 · 04 Identità dell'immobile",
+      "x": 0,
+      "y": 1840,
+      "w": 1280,
+      "h": 720,
+      "print": "fixed"
+    },
+    {
+      "file": "Canali.dc.html",
+      "title": "10 · 05 Dove si vende",
+      "x": 1400,
+      "y": 1840,
+      "w": 1280,
+      "h": 720,
+      "print": "fixed"
+    },
+    {
+      "file": "Gestione.dc.html",
+      "title": "11 · 06 Gestione quotidiana",
+      "x": 2800,
+      "y": 1840,
+      "w": 1280,
+      "h": 720,
+      "print": "fixed"
+    },
+    {
+      "file": "Strategia.dc.html",
+      "title": "12 · 07 Strategia e revisione",
+      "x": 4200,
+      "y": 1840,
+      "w": 1280,
+      "h": 720,
+      "print": "fixed"
+    },
+    {
+      "file": "Proprieta.dc.html",
+      "title": "13 · Cosa resta alla proprietà",
+      "x": 0,
+      "y": 2760,
+      "w": 1280,
+      "h": 720,
+      "print": "fixed"
+    },
+    {
+      "file": "Condizioni.dc.html",
+      "title": "14 · Il perimetro economico",
+      "x": 1400,
+      "y": 2760,
+      "w": 1280,
+      "h": 720,
+      "print": "fixed"
+    },
+    {
+      "file": "Passo.dc.html",
+      "title": "15 · Il prossimo passo",
+      "x": 2800,
+      "y": 2760,
+      "w": 1280,
+      "h": 720,
+      "print": "fixed"
+    },
+    {
+      "file": "Chiusura.dc.html",
+      "title": "16 · Chiusura",
+      "x": 4200,
+      "y": 2760,
+      "w": 1280,
+      "h": 720,
+      "print": "fixed"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "nota-deck",
+      "x": 0,
+      "y": -220,
+      "w": 1280,
+      "text": "Presentazione commerciale Hadrianus — bilocale, Ostia Lido Centro.\n16 slide 16:9 (1280×720), fondo crema, tre slide fumè come punteggiatura.\nTutto editabile: testo in linea, elementi spostabili, colori e font modificabili.\nExport PDF dalla barra in alto = una pagina per slide, misura PowerPoint 16:9."
+    }
+  ],
+  "launch": {
+    "view": "canvas"
+  }
+}
