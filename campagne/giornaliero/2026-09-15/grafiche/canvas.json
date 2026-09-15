@@ -1,0 +1,94 @@
+{
+  "artboards": [
+    {
+      "file": "Main.dc.html",
+      "x": 0,
+      "y": 0,
+      "w": 1080,
+      "h": 1350,
+      "title": "Carosello 1/5 · il gancio",
+      "print": "fixed"
+    },
+    {
+      "file": "C2.dc.html",
+      "x": 1240,
+      "y": 0,
+      "w": 1080,
+      "h": 1350,
+      "title": "Carosello 2/5 · le date da segnare",
+      "print": "fixed"
+    },
+    {
+      "file": "C3.dc.html",
+      "x": 2480,
+      "y": 0,
+      "w": 1080,
+      "h": 1350,
+      "title": "Carosello 3/5 · il metodo",
+      "print": "fixed"
+    },
+    {
+      "file": "C4.dc.html",
+      "x": 3720,
+      "y": 0,
+      "w": 1080,
+      "h": 1350,
+      "title": "Carosello 4/5 · la notte che resta vuota",
+      "print": "fixed"
+    },
+    {
+      "file": "C5.dc.html",
+      "x": 4960,
+      "y": 0,
+      "w": 1080,
+      "h": 1350,
+      "title": "Carosello 5/5 · offerta e CTA",
+      "print": "fixed"
+    },
+    {
+      "file": "F1.dc.html",
+      "x": 0,
+      "y": 1630,
+      "w": 1080,
+      "h": 1920,
+      "title": "FB 1 · 9:16 — gancio e date",
+      "print": "fixed"
+    },
+    {
+      "file": "F2.dc.html",
+      "x": 1240,
+      "y": 1630,
+      "w": 1080,
+      "h": 1080,
+      "title": "FB 2 · 1:1 — il metodo",
+      "print": "fixed"
+    },
+    {
+      "file": "F3.dc.html",
+      "x": 2480,
+      "y": 1630,
+      "w": 1080,
+      "h": 1080,
+      "title": "FB 3 · 1:1 — offerta e CTA",
+      "print": "fixed"
+    },
+    {
+      "file": "S1.dc.html",
+      "x": 0,
+      "y": 3830,
+      "w": 1080,
+      "h": 1920,
+      "title": "Storia 1 · il criterio",
+      "print": "fixed"
+    },
+    {
+      "file": "S2.dc.html",
+      "x": 1240,
+      "y": 3830,
+      "w": 1080,
+      "h": 1920,
+      "title": "Storia 2 · Maker Faire",
+      "print": "fixed"
+    }
+  ]
+}
