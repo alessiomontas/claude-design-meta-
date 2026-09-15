@@ -12,7 +12,7 @@ const sez = (i) => `Il servizio · ${String(i).padStart(2, '0')} di 07`;
 w('Main', K.coverSlide({
   kickerText: 'Proposta di gestione · Ostia Lido Centro',
   titleHtml: 'Da appartamento<br>a struttura.<br><span style="color: #b3892f;">Il lavoro lo facciamo noi.</span>',
-  subtitle: 'Il suo bilocale in Lido Centro oggi è fermo. Qui c’è il lavoro che serve per farlo esistere per legge, come prodotto e sul mercato.',
+  subtitle: 'Il suo bilocale a Lido Centro oggi è fermo. Qui c’è il lavoro che serve per farlo esistere per legge, come prodotto e sul mercato.',
 }));
 
 // 02 · il punto di partenza ——————————————————————————————————————
@@ -64,7 +64,7 @@ w('Regola', K.sectionSlide({
   promiseText: 'Prima di pubblicare, l’immobile deve esistere per legge. Questa parte la seguiamo noi.',
   items: [
     { head: 'CIN — Codice Nazionale', sub: 'Senza CIN l’immobile non può essere pubblicato su nessun portale.' },
-    { head: 'CIR — Codice Regionale Lazio', sub: 'È il presupposto del CIN: prima la Regione, poi il Ministero.' },
+    { head: 'CIR — Codice Regionale Lazio', sub: 'Il codice che la Regione Lazio assegna alla struttura.' },
     { head: 'Pratica comunale di avvio attività', sub: 'Al SUAR di Roma Capitale, SCIA o CIA secondo la tipologia scelta.' },
     { head: 'Alloggiati Web — Polizia di Stato', sub: 'Apriamo la posizione: ogni ospite va comunicato entro 24 ore.' },
     { head: 'ROSS 1000 — flussi turistici', sub: 'Il canale con cui la Regione registra arrivi e presenze.' },
@@ -107,7 +107,7 @@ w('Accessi', K.sectionSlide({
   items: [
     { head: 'Identificazione dell’ospite con documento valido.' },
     { head: 'Spioncino digitale installato alla porta.' },
-    { head: 'Apertura del portone gestita dal citofono.' },
+    { head: 'Apertura automatica del portone dal citofono.' },
     { head: 'Assistenza agli ospiti, H24, per tutto il soggiorno.' },
   ],
   note: 'Questi strumenti intervengono dopo il riconoscimento, non lo sostituiscono. Il check-in resta presidiato.',
@@ -124,7 +124,7 @@ w('Identita', K.sectionSlide({
     { head: 'Descrizione di ogni ambiente e di ogni servizio.' },
     { head: 'Regole della casa e informazioni pratiche scritte.' },
   ],
-  photo: { src: 'cucina.webp', caption: 'Foto di un immobile in gestione. Stessa luce, stessa preparazione.' },
+  photo: { src: 'cucina.webp', caption: 'Un altro immobile che gestiamo, non il suo. Stessa luce, stessa preparazione.' },
 }));
 
 // 10 · 05 dove si vende ——————————————————————————————————————————
@@ -179,7 +179,7 @@ w('Proprieta', K.sectionSlide({
   items: [
     { head: 'La titolarità della struttura, intestata a lei.' },
     { head: 'La scelta della tipologia con cui si parte.' },
-    { head: 'Soggiorni e incassi, visibili quando li chiede.' },
+    { head: 'La casa resta sua: nessun inquilino fisso.' },
     { head: 'Il pagamento del maturato, il 10 di ogni mese.' },
   ],
   note: 'Non le chiediamo di imparare niente. Le chiediamo solo le decisioni che spettano a lei.',
@@ -197,7 +197,7 @@ w('Condizioni', K.conditionsSlide({
     'Pagamento il 10 di ogni mese.',
     'Sopralluogo già fatto, a costo zero.',
   ],
-  outside: 'Fuori dal 15% restano solo i dispositivi di accesso — spioncino digitale e apertura del portone — fatturati a parte.',
+  outside: 'Fuori dal 15% restano i dispositivi di accesso — spioncino digitale e apertura del portone — fatturati a parte. Gli eventuali costi vivi delle pratiche glieli indichiamo prima di sostenerli.',
   formula: '«Guadagniamo solo se guadagni tu.»',
 }));
 

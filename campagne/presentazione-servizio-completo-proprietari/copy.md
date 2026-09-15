@@ -643,3 +643,24 @@ Altre note: deck 16:9 mai visto prima in questo brand → serve un pattern di la
 1. **Durata del contratto, esclusiva, preavviso di recesso e uso personale dell'immobile.** Il deck oggi non ha nessuna slide che risponda a "e se non funziona resto legata?" — è l'obiezione più probabile in sala e arriverà subito dopo la slide del 15%. Senza i dati non si può scrivere: serve una risposta, o si accetta di rispondere solo a voce.
 2. **Costi vivi delle pratiche (diritti di segreteria, bolli, eventuale tecnico abilitato) e dotazioni di sicurezza (estintore, rilevatori): sono dentro il 15% o a carico della proprietaria?** La riga "fuori dal 15% restano *solo* i dispositivi di accesso" è vera solo se la risposta è "dentro". Se non lo è, quella riga va riscritta prima della riunione.
 3. **Slide "Cosa resta alla proprietà", voce 3 — "Soggiorni e incassi, visibili quando li chiede": esiste?** Un report, un accesso, un riepilogo mensile allegato al pagamento del 10. Se non esiste nulla di formalizzato, la voce va sostituita: è l'unica riga del deck non coperta da un materiale Hadrianus esistente.
+
+---
+
+## Varianti montate nelle artboard (delta rispetto a questo file)
+
+Il testo che fa fede è quello montato in `slide/*.dc.html`. Queste sono le uniche differenze, tutte decise in fase di impaginazione o dopo `compliance-checker`.
+
+| Slide | In `copy.md` | Montato | Perché |
+|---|---|---|---|
+| Tutte le slide di servizio (05, 07-12) | occhiello = nome della sezione | occhiello = `Il servizio · 0X di 07`, titolo = nome della sezione | l'occhiello ripeteva il titolo; così l'occhiello dice a che punto siamo del servizio |
+| 02 | titolo `L'immobile che abbiamo visto`, occhiello assente | occhiello `Il punto di partenza`, titolo `L'immobile che abbiamo visto.` | stessa ragione |
+| 03 | — | promessa aggiunta accanto al titolo: *"Un bilocale che si presta non è ancora una struttura che produce. In mezzo ci sono tre passaggi, e vanno fatti in quest'ordine."* | la slide aveva titolo + tre colonne e nessun testo di raccordo |
+| 05 · voce 2 | `È il presupposto del CIN: prima la Regione, poi il Ministero.` | `Il codice che la Regione Lazio assegna alla struttura.` | era l'unico ordine di operazioni rimasto: si nomina l'adempimento, non la sequenza |
+| 08 · voce 3 | `Apertura del portone gestita dal citofono.` | `Apertura automatica del portone dal citofono.` | ambiguità: sembrava che il portone lo aprisse una persona |
+| 09 · didascalia | `Foto di un immobile in gestione. Stessa luce, stessa preparazione.` | `Un altro immobile che gestiamo, non il suo. Stessa luce, stessa preparazione.` | **rilievo bloccante compliance**: la didascalia deve dire che non è l'immobile della proprietaria |
+| 13 · voce 3 | `Soggiorni e incassi, visibili quando li chiede.` | `La casa resta sua: nessun inquilino fisso.` | **rilievo bloccante compliance**: claim 22 DA VERIFICARE (nessun materiale Hadrianus documenta un report alla proprietà). Da rimettere se il titolare conferma che il riepilogo esiste |
+| 13 | — | promessa aggiunta: *"Affidare la gestione non vuol dire perdere il controllo della casa: le decisioni che contano restano dove devono stare."* | la slide non aveva testo di raccordo |
+| 14 | titolo `Il perimetro economico` | occhiello `Il perimetro economico`, titolo `Un numero solo.` | il titolo di sezione era già nell'occhiello |
+| 14 · fuori dal 15% | `…restano **solo** i dispositivi di accesso…` | `…restano i dispositivi di accesso… Gli eventuali costi vivi delle pratiche glieli indichiamo prima di sostenerli.` | **rilievo bloccante compliance**: "solo" è un'esclusiva economica non verificata finché non è chiaro chi sostiene i costi vivi delle pratiche |
+| 15 | titolo `Il prossimo passo` | occhiello `Come si parte`, titolo `Il prossimo passo.` | stessa ragione |
+| 16 | firma `HADRIANUS · Multiservice · Roma · Ostia` | idem, su foto del tramonto del Litorale | scelta di direzione artistica (nota art director: "chiude sul Litorale") |
