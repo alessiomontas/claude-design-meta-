@@ -1,0 +1,94 @@
+{
+  "artboards": [
+    {
+      "file": "Main.dc.html",
+      "x": 0,
+      "y": 0,
+      "w": 1080,
+      "h": 1350,
+      "title": "Carosello 1/5 · il gancio",
+      "print": "fixed"
+    },
+    {
+      "file": "C2.dc.html",
+      "x": 1240,
+      "y": 0,
+      "w": 1080,
+      "h": 1350,
+      "title": "Carosello 2/5 · il dato ISTAT",
+      "print": "fixed"
+    },
+    {
+      "file": "C3.dc.html",
+      "x": 2480,
+      "y": 0,
+      "w": 1080,
+      "h": 1350,
+      "title": "Carosello 3/5 · il modulo da salvare",
+      "print": "fixed"
+    },
+    {
+      "file": "C4.dc.html",
+      "x": 3720,
+      "y": 0,
+      "w": 1080,
+      "h": 1350,
+      "title": "Carosello 4/5 · il ribaltamento",
+      "print": "fixed"
+    },
+    {
+      "file": "C5.dc.html",
+      "x": 4960,
+      "y": 0,
+      "w": 1080,
+      "h": 1350,
+      "title": "Carosello 5/5 · offerta e CTA",
+      "print": "fixed"
+    },
+    {
+      "file": "F1.dc.html",
+      "x": 0,
+      "y": 1550,
+      "w": 1080,
+      "h": 1920,
+      "title": "Facebook 1/3 · verticale 9:16",
+      "print": "fixed"
+    },
+    {
+      "file": "F2.dc.html",
+      "x": 1240,
+      "y": 1550,
+      "w": 1080,
+      "h": 1080,
+      "title": "Facebook 2/3 · l'elenco",
+      "print": "fixed"
+    },
+    {
+      "file": "F3.dc.html",
+      "x": 2480,
+      "y": 1550,
+      "w": 1080,
+      "h": 1080,
+      "title": "Facebook 3/3 · offerta",
+      "print": "fixed"
+    },
+    {
+      "file": "S1.dc.html",
+      "x": 0,
+      "y": 3670,
+      "w": 1080,
+      "h": 1920,
+      "title": "Storia 1 · la casa dei tuoi",
+      "print": "fixed"
+    },
+    {
+      "file": "S2.dc.html",
+      "x": 1240,
+      "y": 3670,
+      "w": 1080,
+      "h": 1920,
+      "title": "Storia 2 · i mesi vuoti",
+      "print": "fixed"
+    }
+  ]
+}

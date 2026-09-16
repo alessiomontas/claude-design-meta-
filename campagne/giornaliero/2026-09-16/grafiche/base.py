@@ -37,7 +37,8 @@ FOOT = "</body>\n</html>\n"
 
 
 def frame(w, h, bg=FONDO):
-    return ('  <div style="position: relative; width: %dpx; height: %dpx; '
+    # La classe .frame e' quella che render.py aspetta per ritagliare l'artboard.
+    return ('  <div class="frame" style="position: relative; width: %dpx; height: %dpx; '
             'overflow: hidden; background: %s;">\n' % (w, h, bg))
 
 
