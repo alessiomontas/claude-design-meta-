@@ -62,3 +62,38 @@ titolare**, non servono richieste di modifica a voce.
 
 Rispettarli sempre — la tabella completa sta in `.claude/reference/reel-virali.md`.
 Riga di lista 1,2 s · frase di due righe 1,8 s · parola di svolta 1,1 s · CTA 2,0 s.
+
+---
+
+## Canva — cosa passa e cosa no (provato il 16/09/2026)
+
+Il connettore Canva **è collegato** e costruisce davvero: pagine 1080×1920, forme,
+rettangoli con angoli arrotondati, cerchi, testi posizionati al pixel, corpo, peso, colore,
+allineamento, interlinea. Il reel del 16/09 è stato ricostruito lì in otto pagine.
+
+### I tre limiti, verificati sull'elenco completo delle operazioni
+
+| Limite | Conseguenza pratica |
+|---|---|
+| **Nessun comando per il tipo di carattere** | Ogni testo atterra nel font predefinito di Canva. Archivo e Manrope vanno rimessi a mano, testo per testo |
+| **Nessun comando per la spaziatura fra lettere** | Il lockup `H A D R I A N U S` perde la spaziatura larga |
+| **Nessun comando di animazione** | Entrate, uscite e tempi si rifanno tutti a mano dentro Canva |
+
+### Altri inciampi incontrati
+
+- Una pagina **copiata** da un progetto esistente può risultare di tipo `unsupported`:
+  Canva non ne espone gli elementi, quindi non si possono formattare né spostare. Le pagine
+  create con `add_page` sono invece di tipo `fixed` e si gestiscono bene. **Costruire sempre
+  su pagine nuove.**
+- Il ridimensionamento di un documento (`resize-design`) consuma un **uso Pro a consumo**.
+- I link `/watch` e i "link pubblici di visualizzazione" danno accesso in sola lettura:
+  serve il link di **modifica**, e il documento deve stare su un account raggiungibile dal
+  connettore (una cartella di team può non esserlo).
+- Il collegamento può scadere a metà lavoro: le modifiche restano in una transazione aperta
+  e vanno confermate con `finalize: commit`, altrimenti si perdono.
+
+### Regola
+
+Il reel **resta sul banco di montaggio**: lì tipografia e tempi sono già a posto e sono
+esattamente le due cose che a Canva non arrivano. Canva serve quando il titolare vuole
+ritoccare dal telefono o pubblicare da lì.
