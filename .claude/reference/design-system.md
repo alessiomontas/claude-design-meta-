@@ -144,3 +144,39 @@ Ogni strumento ha una mansione precisa. Non si sovrappongono: si passano il lavo
 ### Flusso combinato (i 3 insieme, quando serve)
 
 Adobe prepara/pulisce la foto o il video reale (ritocco, crop, sfondo rimosso) → Claude Design la inserisce nell'artboard finale con testo, CTA e palette → se l'utente vuole rifinire a mano il risultato, Canva come ultimo passaggio opzionale. Non tutti i passaggi servono sempre: per una grafica solo testuale, Claude Design da solo basta.
+
+---
+
+## Variante CHIARA (fondo bianco caldo) — dal 16/09/2026
+
+Stessa identità di marca, fondo ribaltato. Introdotta su richiesta del titolare: *"scale di colori
+con lo sfondo bianco invece che nero, sempre con le stesse palette di colore"*. Non sostituisce la
+base fumè: sono **due registri della stessa palette**, si alternano fra un contenuto e l'altro
+(preferenza fissa 5 — il layout varia sempre).
+
+| Ruolo | Hex | Note |
+|---|---|---|
+| Fondo pagina | `#FAF7F1` | Bianco **caldo**, mai `#FFFFFF`: il bianco puro stacca dal marchio e abbaglia sul telefono |
+| Fondo card / fascia | `#F5F0E6` | Sabbia, per separare blocchi senza disegnare bordi |
+| Inchiostro titoli | `#2E2A25` | Fumè profondo — 13,3:1 sul fondo |
+| Inchiostro corpo | `#3F3A33` | 10,5:1 |
+| Inchiostro secondario | `#5A5349` | 7,1:1 — il minimo per il testo piccolo |
+| **Oro per il TESTO** | `#86692A` | 4,8:1 |
+| Oro pieno (CTA, celle, fili, badge) | `#C8A24B` | Solo come **riempimento**, con sopra testo fumè (5,9:1) |
+
+### La regola che conta
+
+**`#C8A24B` su fondo chiaro dà 2,25:1: non è leggibile come testo.** Sul fumè l'oro è
+perfetto e si usa ovunque; sul chiaro va usato **solo come superficie** (banda CTA, celle piene,
+fili, bordo dei badge). Ogni parola in oro su fondo chiaro usa **`#86692A`**.
+
+Corollario: sul chiaro sparisce il problema del velo. Le foto non stanno più *sotto* il testo ma
+**accanto**, in blocchi pieni o pannelli ritagliati — niente veli, niente ombre sul testo.
+Il `text-shadow` a tre strati della variante fumè qui **non si usa mai**: su fondo chiaro sporca.
+
+### Separazione
+
+Sul fumè le gerarchie si fanno con la luce (velo, ombra, oro acceso). Sul chiaro si fanno con
+**peso, spazio e superficie**: fascia sabbia contro fondo bianco, filo oro da 3 px, Archivo 900
+contro Manrope 500. Niente ombre morbide sotto le card: al massimo `rgba(46,42,37,0.06)` per
+staccare una card dal fondo, mai di più.
