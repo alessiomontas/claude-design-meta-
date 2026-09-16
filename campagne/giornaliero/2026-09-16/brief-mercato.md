@@ -21,9 +21,9 @@ Il numero del giorno non è un rendimento: è il **costo del vuoto**, cioè la s
 ## Offerta (invariata)
 
 Property management case vacanza Roma e Ostia/Litorale — **Hadrianus Multiservice**.
-- **15% sul fatturato generato**, nessun costo fisso noto oltre questo.
+- **15% sul fatturato generato**, nessuna voce oltre questa.
 - Incluso: pricing dinamico, check-in smart H24, gestione ospiti, pulizie in standard alberghiero, ottimizzazione annuncio.
-- **Differenziatore per questo angolo**: i costi fissi della casa esistono comunque; con la gestione, **la casa smette di essere una voce di spesa e diventa la cosa che quella spesa la produce**. E poiché la commissione è una percentuale del fatturato, **Hadrianus non aggiunge un costo fisso a un problema di costi fissi**. È l'unico angolo in cui il 15% è letteralmente la risposta al numero mostrato.
+- **Differenziatore per questo angolo**: i costi fissi della casa esistono comunque; con la gestione, **la casa smette di essere una voce di spesa e diventa la cosa che quella spesa la produce**. E poiché la commissione è una percentuale del fatturato, **Hadrianus non aggiunge una voce che corre anche a casa ferma**. È l'unico angolo in cui il 15% è letteralmente la risposta al numero mostrato.
 
 ## Target
 
@@ -31,7 +31,7 @@ Property management case vacanza Roma e Ostia/Litorale — **Hadrianus Multiserv
 **Secondario — profilo 3: fai-da-te con calendario mezzo vuoto.** Per lui il numero non è la casa chiusa tutto l'anno, ma **i mesi morti fra una prenotazione e l'altra**, che pagano gli stessi bollettini dell'alta stagione.
 
 - **Dolore principale**: non la perdita, ma il fatto che **non l'ha mai sommata**. I costi arrivano separati e in momenti diversi dell'anno (IMU a giugno e a dicembre, TARI a rate, condominio a quote, utenze ogni due mesi): nessuno gli ha mai messo davanti il totale su una riga sola. La perdita è invisibile perché è frazionata.
-- **Desiderio principale**: smettere di sentire quella casa come un peso di cui non si parla in famiglia. Non vuole "diventare un host": vuole che la casa **si mantenga da sola**, senza doverci pensare e senza spendere soldi per farla partire.
+- **Desiderio principale**: smettere di sentire quella casa come un peso di cui non si parla in famiglia. Non vuole "diventare un host": vuole che la casa **si mantenga da sola**, senza doverci pensare e senza doverci pensare.
 - **Obiezioni prevedibili**:
   1. *"Vabbè, ma sono poche centinaia di euro l'anno."* → sono poche centinaia **ogni anno**, e sono un'uscita certa contro un'entrata che oggi è zero. Il punto non è la cifra, è il segno.
   2. *"Se la affitto, i costi aumentano (pulizie, utenze, usura)."* → vero, e va detto: alcuni costi salgono. Ma quelli che salgono **salgono perché c'è qualcuno dentro che paga la notte**; quelli fissi li paghi comunque. La differenza tra costo che corre a vuoto e costo che corre perché sta producendo è tutto l'angolo.
@@ -64,7 +64,7 @@ Tre frasi utilizzabili dal copywriter:
 | 5 | **In Italia 9.581.772 abitazioni non occupate su 35.271.829 = 27,2%** (Censimento permanente 2021); nel 2023 le non occupate restano ~9,5 milioni | ✅ CONFERMATO — fonte primaria ISTAT | [ISTAT — Censimento permanente 2021, caratteristiche delle abitazioni](https://www.istat.it/comunicato-stampa/censimento-permanente-2021-caratteristiche-delle-abitazioni/) · [ISTAT — Abitazioni occupate 2021-2023](https://www.istat.it/comunicato-stampa/abitazioni-occupate/) — 16/09/2026 |
 | 6 | **Lazio: 618.760 abitazioni non occupate; 80,5% di abitazioni occupate → ~19,5% non occupate** (Censimento 2021) | ⚠️ CONFERMATO come ordine di grandezza, **da ricontrollare sulla tavola regionale ISTAT prima di stamparlo**: la cifra arriva da rassegna, non dalla tavola letta direttamente | [ISTAT — Today Abitazioni, 08/2024 (PDF)](https://www.istat.it/wp-content/uploads/2024/08/Today-Abitazioni_01_08-2024.pdf) · [ACER Roma](https://www.acerweb.it/istat-censimento-permanente-2021-caratteristiche-delle-abitazioni/) — 16/09/2026 |
 | 7 | Città metropolitana di Roma: **2.240.719 abitazioni**, il numero più alto d'Italia (6,4% del totale nazionale) | ⚠️ DA RICONTROLLARE sulla fonte ISTAT diretta prima dell'uso in grafica | Stessa fonte del punto 6 — 16/09/2026 |
-| 8 | **Spesa condominiale media annua** per un appartamento a Roma | ⛔ **NESSUNA FONTE AFFIDABILE TROVATA — `[DATO DA VERIFICARE]`.** Non stimare. Va nominata come **voce**, mai come cifra |
+| 8 | **Spesa condominiale media annua** per un appartamento a Roma | ⛔ **NESSUNA FONTE AFFIDABILE TROVATA — `**NESSUNA FONTE AFFIDABILE** — non stimare: la voce si nomina, non si quantifica`.** Non stimare. Va nominata come **voce**, mai come cifra |
 | 9 | **Quota fissa delle utenze a consumo zero** (contatore luce/gas/acqua attivo) | ⛔ **NON QUANTIFICATA.** Dipende da fornitore e contratto: citare come *"la quota fissa del contatore"*, mai con un importo |
 | 10 | **Totale annuo del "costo del vuoto" di una casa tipo a Roma/Ostia** | ⛔ **NON CALCOLABILE senza inventare.** Dipende da rendita catastale, millesimi, fornitore. **Non pubblicare un totale.** Si pubblica l'**elenco delle voci**, e il totale lo fa il lettore |
 | 11 | Qualsiasi tariffa, occupazione, incremento di ricavo o rendimento Hadrianus | ⛔ **VIETATO** (regola di brand e vincolo del pilastro) | — |
@@ -122,7 +122,7 @@ Varianti:
 - ⛔ **Nessun totale del costo del vuoto**: non esiste una fonte per una casa media a Roma. Si pubblicano le **voci**, il totale lo fa il lettore (punto 10 della tabella).
 - ⛔ **Nessuna aliquota IMU** (fonti discordanti, punto 2). L'IMU si nomina come **scadenza** (giugno e dicembre), non come percentuale.
 - ⛔ **Nessuna consulenza fiscale.** Hadrianus non è un commercialista: le voci si elencano come fatti di spesa, non si spiega come si calcolano né come si risparmiano.
-- ✅ **Le cose positive di Hadrianus si dicono come certe**: il calendario tenuto aggiornato, la gestione completa, il 15% senza costi fissi. Nessun "potremmo", nessun "cerchiamo di".
+- ✅ **Le cose positive di Hadrianus si dicono come certe**: il calendario tenuto aggiornato, la gestione completa, il 15% sul fatturato generato. Nessun "potremmo", nessun "cerchiamo di".
 - ⛔ **Zero demerito al proprietario.** Mai "stai buttando via soldi", "è un errore tenerla chiusa", "colpa tua". La casa chiusa si racconta come **una cosa normale, che succede per mancanza di tempo o perché nessuno ha mai fatto quel conto** — mai come negligenza. Formula corretta: *"nessuno te l'ha mai messo su una riga sola"*.
 - ⛔ **Non nominare morosità, sfratti, inquilini, affitto 4+4**: sono territorio di un angolo già bruciato e sposterebbero il discorso.
 - ⛔ **Non parlare di ore o di tempo perso**: è il costo-opportunità già usato in `fai-da-te-vs-gestione-professionale/`.

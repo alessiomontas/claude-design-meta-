@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="it"><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Manrope:wght@400;500;600;700&display=swap">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{width:1080px;height:1920px;overflow:hidden}
+.scena{position:relative;width:1080px;height:1920px;background:#FAF7F1;overflow:hidden}
+.marchio{position:absolute;left:0;right:0;top:112px;text-align:center}
+.marchio b{display:block;font-family:'Archivo', 'Helvetica Neue', Arial, sans-serif;font-weight:800;font-size:33px;letter-spacing:9px;color:#2E2A25}
+.marchio i{display:block;font-family:'Manrope', 'Helvetica Neue', Arial, sans-serif;font-style:normal;font-weight:600;font-size:17px;letter-spacing:7px;color:#5A5349;margin-top:12px}
+.barra_sfondo{position:absolute;left:64px;right:64px;top:250px;height:6px;background:#E7E0D3;border-radius:3px;overflow:hidden}
+.barra{height:100%;background:#C8A24B;transform-origin:left center}
+.fascia_dietro{position:absolute;left:0;right:0;top:790px;height:230px;background:#F5F0E6}
+.gancio{position:absolute;left:64px;right:64px;top:820px;font-family:'Archivo', 'Helvetica Neue', Arial, sans-serif;font-weight:900;font-size:70px;line-height:1.14;letter-spacing:-0.4px;color:#2E2A25}
+.cancella{position:absolute;left:64px;top:900px;height:6px;background:#C8A24B}
+.falso{position:absolute;left:64px;right:64px;top:830px;font-family:'Archivo', 'Helvetica Neue', Arial, sans-serif;font-weight:900;font-size:130px;line-height:1;letter-spacing:-1px;color:#86692A}
+.titolo{position:absolute;left:64px;right:64px;top:360px;display:flex;flex-wrap:wrap;gap:0 18px;font-family:'Archivo', 'Helvetica Neue', Arial, sans-serif;font-weight:900;font-size:62px;line-height:1.16;color:#2E2A25}
+.voce{position:absolute;left:64px;right:64px;height:150px;background:#F5F0E6;border-radius:20px;padding:0 28px;display:flex;align-items:center;gap:24px;transform-origin:left center}
+.vnum{font-family:'Archivo', 'Helvetica Neue', Arial, sans-serif;font-weight:900;font-size:50px;color:#86692A;flex:0 0 90px}
+.vtxt{flex:1;min-width:0}
+.vtit{display:block;font-family:'Archivo', 'Helvetica Neue', Arial, sans-serif;font-weight:800;font-size:50px;color:#2E2A25}
+.vdet{display:block;font-family:'Manrope', 'Helvetica Neue', Arial, sans-serif;font-weight:500;font-size:33px;color:#5A5349;margin-top:6px}
+.vspunta{flex:0 0 56px}
+.riscatto{position:absolute;left:430px;right:64px;top:1180px;font-family:'Archivo', 'Helvetica Neue', Arial, sans-serif;font-weight:800;font-size:58px;line-height:1.18;color:#2E2A25}
+.serranda{position:absolute;left:64px;right:64px;top:420px;height:520px;background:#C9BFA9;border-radius:20px;transform-origin:top center;overflow:hidden;display:flex;flex-direction:column;gap:6px;padding:14px}
+.doga{flex:1;background:#D9CFBC;border-radius:4px;box-shadow:inset 0 -3px 0 rgba(46,42,37,.10)}
+.quadrante{position:absolute;left:430px;top:1010px;width:220px;height:220px;border-radius:50%;border:10px solid #E7E0D3;display:flex;align-items:center;justify-content:center}
+.lancetta{width:8px;height:78px;background:#C8A24B;border-radius:4px;transform-origin:bottom center;position:absolute;top:24px}
+.serr_testo{position:absolute;left:64px;right:64px;top:1290px;font-family:'Archivo', 'Helvetica Neue', Arial, sans-serif;font-weight:900;font-size:66px;line-height:1.16;color:#2E2A25}
+.rib{position:absolute;left:64px;right:64px;font-family:'Archivo', 'Helvetica Neue', Arial, sans-serif;font-weight:900;font-size:62px;line-height:1.18;color:#2E2A25}
+.split{position:absolute;left:64px;right:64px;border-radius:24px;overflow:hidden;display:flex;align-items:center;padding:0 40px;font-family:'Archivo', 'Helvetica Neue', Arial, sans-serif;font-weight:800;font-size:58px}
+.split_su{top:620px;background:#F5F0E6;color:#5A5349}
+.split_giu{top:940px;background:#C8A24B;color:#2E2A25}
+.chiave{position:absolute;left:64px;right:64px;top:1240px;font-family:'Archivo', 'Helvetica Neue', Arial, sans-serif;font-weight:800;font-size:60px;line-height:1.22;color:#2E2A25}
+.evid{background-image:linear-gradient(#C8A24B,#C8A24B);background-repeat:no-repeat;background-position:left center;padding:2px 6px}
+.badge{position:absolute;left:64px;top:1470px;background:#C8A24B;color:#2E2A25;border-radius:999px;padding:16px 40px;font-family:'Archivo', 'Helvetica Neue', Arial, sans-serif;font-weight:900;font-size:56px}
+.firma{position:absolute;left:64px;right:64px;top:1610px;font-family:'Manrope', 'Helvetica Neue', Arial, sans-serif;font-weight:600;font-size:33px;color:#5A5349}
+.cta{position:absolute;left:64px;right:64px;top:1680px;height:120px;background:#C8A24B;border-radius:999px;display:flex;align-items:center;justify-content:center;font-family:'Archivo', 'Helvetica Neue', Arial, sans-serif;font-weight:800;font-size:50px;letter-spacing:.02em;color:#2E2A25}
+@keyframes gancio_in {
+  0.0000% { clip-path: inset(46% 0 0 0) }
+  0.9412% { clip-path: inset(0 0 0 0); animation-timing-function: cubic-bezier(.16,1,.3,1) }
+  5.2941% { clip-path: inset(0 0 0 0) }
+  6.4706% { clip-path: inset(0 0 100% 0) }
+  98.2353% { clip-path: inset(100% 0 0 0); animation-timing-function: cubic-bezier(.16,1,.3,1) }
+  99.4118% { clip-path: inset(46% 0 0 0) }
+  100.0000% { clip-path: inset(46% 0 0 0) }
+}
+@keyframes gancio_su {
+  0.0000% { transform: translateY(0) }
+  5.2941% { transform: translateY(0); animation-timing-function: cubic-bezier(.16,1,.3,1) }
+  6.4706% { transform: translateY(-150px) }
+  98.1765% { transform: translateY(-150px) }
+  98.2353% { transform: translateY(0) }
+  100.0000% { transform: translateY(0) }
+}
+@keyframes gancio_op {
+  0.0000% { opacity:1 }
+  6.4706% { opacity:1 }
+  6.4765% { opacity:0 }
+  98.1765% { opacity:0 }
+  98.2353% { opacity:1 }
+  100.0000% { opacity:1 }
+}
+@keyframes fascia_dietro {
+  0.0000% { transform: translateX(-18px) }
+  1.4118% { transform: translateX(0); animation-timing-function: cubic-bezier(.16,1,.3,1) }
+  100.0000% { transform: translateX(0) }
+}
+@keyframes cancella {
+  0.0000% { width: 0% }
+  2.3529% { width: 0%; animation-timing-function: cubic-bezier(.16,1,.3,1) }
+  3.5294% { width: 100% }
+  6.4706% { width: 100% }
+  6.4765% { width: 0% }
+  100.0000% { width: 0% }
+}
+@keyframes falso {
+  0.0000% { opacity:0; transform: translateY(150px) }
+  5.2882% { opacity:0; transform: translateY(150px); animation-timing-function: cubic-bezier(.16,1,.3,1) }
+  6.4706% { opacity:1; transform: translateY(0) }
+  11.1706% { opacity:1; transform: translateY(0) }
+  11.1765% { opacity:0; transform: translateY(0) }
+  100.0000% { opacity:0; transform: translateY(0) }
+}
+@keyframes par0 {
+  0.0000% { opacity:0; transform: translateY(14px) }
+  11.1706% { opacity:0; transform: translateY(14px); animation-timing-function: cubic-bezier(.16,1,.3,1) }
+  11.9412% { opacity:1; transform: translateY(0) }
+  43.5235% { opacity:1; transform: translateY(0) }
+  43.5294% { opacity:0; transform: translateY(0) }
+  100.0000% { opacity:0; transform: translateY(0) }
+}
+@keyframes par1 {
+  0.0000% { opacity:0; transform: translateY(14px) }
+  11.8176% { opacity:0; transform: translateY(14px); animation-timing-function: cubic-bezier(.16,1,.3,1) }
+  12.5882% { opacity:1; transform: translateY(0) }
+  43.5235% { opacity:1; transform: translateY(0) }
+  43.5294% { opacity:0; transform: translateY(0) }
+  100.0000% { opacity:0; transform: translateY(0) }
+}
+@keyframes par2 {
+  0.0000% { opacity:0; transform: translateY(14px) }
+  12.4647% { opacity:0; transform: translateY(14px); animation-timing-function: cubic-bezier(.16,1,.3,1) }
+  13.2353% { opacity:1; transform: translateY(0) }
+  43.5235% { opacity:1; transform: translateY(0) }
+  43.5294% { opacity:0; transform: translateY(0) }
+  100.0000% { opacity:0; transform: translateY(0) }
+}
+@keyframes par3 {
+  0.0000% { opacity:0; transform: translateY(14px) }
+  13.1118% { opacity:0; transform: translateY(14px); animation-timing-function: cubic-bezier(.16,1,.3,1) }
+  13.8824% { opacity:1; transform: translateY(0) }
+  43.5235% { opacity:1; transform: translateY(0) }
+  43.5294% { opacity:0; transform: translateY(0) }
+  100.0000% { opacity:0; transform: translateY(0) }
+}
+@keyframes par4 {
+  0.0000% { opacity:0; transform: translateY(14px) }
+  13.7588% { opacity:0; transform: translateY(14px); animation-timing-function: cubic-bezier(.16,1,.3,1) }
+  14.5294% { opacity:1; transform: translateY(0) }
+  43.5235% { opacity:1; transform: translateY(0) }
+  43.5294% { opacity:0; transform: translateY(0) }
+  100.0000% { opacity:0; transform: translateY(0) }
+}
+@keyframes par5 {
+  0.0000% { opacity:0; transform: translateY(14px) }
+  14.4059% { opacity:0; transform: translateY(14px); animation-timing-function: cubic-bezier(.16,1,.3,1) }
+  15.1765% { opacity:1; transform: translateY(0) }
+  43.5235% { opacity:1; transform: translateY(0) }
+  43.5294% { opacity:0; transform: translateY(0) }
+  100.0000% { opacity:0; transform: translateY(0) }
+}
+@keyframes par6 {
+  0.0000% { opacity:0; transform: translateY(14px) }
+  15.0529% { opacity:0; transform: translateY(14px); animation-timing-function: cubic-bezier(.16,1,.3,1) }
+  15.8235% { opacity:1; transform: translateY(0) }
+  43.5235% { opacity:1; transform: translateY(0) }
+  43.5294% { opacity:0; transform: translateY(0) }
+  100.0000% { opacity:0; transform: translateY(0) }
+}
+@keyframes par7 {
+  0.0000% { opacity:0; transform: translateY(14px) }
+  15.7000% { opacity:0; transform: translateY(14px); animation-timing-function: cubic-bezier(.16,1,.3,1) }
+  16.4706% { opacity:1; transform: translateY(0) }
+  43.5235% { opacity:1; transform: translateY(0) }
+  43.5294% { opacity:0; transform: translateY(0) }
+  100.0000% { opacity:0; transform: translateY(0) }
+}
+@keyframes barra {
+  0.0000% { transform: scaleX(0) }
+  11.1706% { transform: scaleX(0); animation-timing-function: cubic-bezier(.16,1,.3,1) }
+  16.0000% { transform: scaleX(0.20); animation-timing-function: cubic-bezier(.16,1,.3,1) }
+  22.4706% { transform: scaleX(0.40); animation-timing-function: cubic-bezier(.16,1,.3,1) }
+  28.3529% { transform: scaleX(0.60); animation-timing-function: cubic-bezier(.16,1,.3,1) }
+  33.6471% { transform: scaleX(0.80); animation-timing-function: cubic-bezier(.16,1,.3,1) }
+  38.3529% { transform: scaleX(1.00); animation-timing-function: cubic-bezier(.16,1,.3,1) }
+  43.5235% { transform: scaleX(1) }
+  43.5294% { transform: scaleX(0) }
+  100.0000% { transform: scaleX(0) }
+}
+@keyframes barra_op {
+  0.0000% { opacity:0 }
+  11.1706% { opacity:0 }
+  11.1765% { opacity:1 }
+  43.5235% { opacity:1 }
+  43.5294% { opacity:0 }
+  100.0000% { opacity:0 }
+}
+@keyframes voce0 {
+  0.0000% { opacity:0; transform: translateX(-60px) scale(1) }
+  14.7000% { opacity:0; transform: translateX(-60px) scale(1); animation-timing-function: cubic-bezier(.16,1,.3,1) }
+  15.7647% { opacity:1; transform: translateX(8px) scale(1); animation-timing-function: cubic-bezier(.16,1,.3,1) }
+  16.2353% { opacity:1; transform: translateX(0) scale(1) }
+  21.1765% { opacity:1; transform: translateX(0) scale(1); animation-timing-function: cubic-bezier(.16,1,.3,1) }
+  22.3529% { opacity:.45; transform: translateX(0) scale(.86) }
+  43.5294% { opacity:.45; transform: translateX(0) scale(.86); animation-timing-function: cubic-bezier(.16,1,.3,1) }
+  45.8824% { opacity:.35; transform: translateX(-190px) scale(.55) }
+  50.5824% { opacity:.35; transform: translateX(-190px) scale(.55) }
+  50.5882% { opacity:0; transform: translateX(-190px) scale(.55) }
+  100.0000% { opacity:0; transform: translateX(-190px) scale(.55) }
+}
+@keyframes spunta0 {
+  0.0000% { stroke-dashoffset: 40 }
+  15.7647% { stroke-dashoffset: 40; animation-timing-function: cubic-bezier(.16,1,.3,1) }
+  17.0588% { stroke-dashoffset: 0 }
+  100.0000% { stroke-dashoffset: 0 }
+}
+@keyframes voce1 {
+  0.0000% { opacity:0; transform: translateX(-60px) scale(1) }
+  21.1706% { opacity:0; transform: translateX(-60px) scale(1); animation-timing-function: cubic-bezier(.16,1,.3,1) }
+  22.2353% { opacity:1; transform: translateX(8px) scale(1); animation-timing-function: cubic-bezier(.16,1,.3,1) }
+  22.7059% { opacity:1; transform: translateX(0) scale(1) }
+  27.0588% { opacity:1; transform: translateX(0) scale(1); animation-timing-function: cubic-bezier(.16,1,.3,1) }
+  28.2353% { opacity:.45; transform: translateX(0) scale(.86) }
+  43.5294% { opacity:.45; transform: translateX(0) scale(.86); animation-timing-function: cubic-bezier(.16,1,.3,1) }
+  45.8824% { opacity:.35; transform: translateX(-190px) scale(.55) }
+  50.5824% { opacity:.35; transform: translateX(-190px) scale(.55) }
+  50.5882% { opacity:0; transform: translateX(-190px) scale(.55) }
+  100.0000% { opacity:0; transform: translateX(-190px) scale(.55) }
+}
+@keyframes spunta1 {
+  0.0000% { stroke-dashoffset: 40 }
+  22.2353% { stroke-dashoffset: 40; animation-timing-function: cubic-bezier(.16,1,.3,1) }
+  23.5294% { stroke-dashoffset: 0 }
+  100.0000% { stroke-dashoffset: 0 }
+}
+@keyframes voce2 {
+  0.0000% { opacity:0; transform: translateX(-60px) scale(1) }
+  27.0529% { opacity:0; transform: translateX(-60px) scale(1); animation-timing-function: cubic-bezier(.16,1,.3,1) }
+  28.1176% { opacity:1; transform: translateX(8px) scale(1); animation-timing-function: cubic-bezier(.16,1,.3,1) }
+  28.5882% { opacity:1; transform: translateX(0) scale(1) }
+  32.3529% { opacity:1; transform: translateX(0) scale(1); animation-timing-function: cubic-bezier(.16,1,.3,1) }
+  33.5294% { opacity:.45; transform: translateX(0) scale(.86) }
+  43.5294% { opacity:.45; transform: translateX(0) scale(.86); animation-timing-function: cubic-bezier(.16,1,.3,1) }
+  45.8824% { opacity:.35; transform: translateX(-190px) scale(.55) }
+  50.5824% { opacity:.35; transform: translateX(-190px) scale(.55) }
+  50.5882% { opacity:0; transform: translateX(-190px) scale(.55) }
+  100.0000% { opacity:0; transform: translateX(-190px) scale(.55) }
+}
+@keyframes spunta2 {
+  0.0000% { stroke-dashoffset: 40 }
+  28.1176% { stroke-dashoffset: 40; animation-timing-function: cubic-bezier(.16,1,.3,1) }
+  29.4118% { stroke-dashoffset: 0 }
+  100.0000% { stroke-dashoffset: 0 }
+}
+@keyframes voce3 {
+  0.0000% { opacity:0; transform: translateX(-60px) scale(1) }
+  32.3471% { opacity:0; transform: translateX(-60px) scale(1); animation-timing-function: cubic-bezier(.16,1,.3,1) }
+  33.4118% { opacity:1; transform: translateX(8px) scale(1); animation-timing-function: cubic-bezier(.16,1,.3,1) }
+  33.8824% { opacity:1; transform: translateX(0) scale(1) }
+  37.0588% { opacity:1; transform: translateX(0) scale(1); animation-timing-function: cubic-bezier(.16,1,.3,1) }
+  38.2353% { opacity:.45; transform: translateX(0) scale(.86) }
+  43.5294% { opacity:.45; transform: translateX(0) scale(.86); animation-timing-function: cubic-bezier(.16,1,.3,1) }
+  45.8824% { opacity:.35; transform: translateX(-190px) scale(.55) }
+  50.5824% { opacity:.35; transform: translateX(-190px) scale(.55) }
+  50.5882% { opacity:0; transform: translateX(-190px) scale(.55) }
+  100.0000% { opacity:0; transform: translateX(-190px) scale(.55) }
+}
+@keyframes spunta3 {
+  0.0000% { stroke-dashoffset: 40 }
+  33.4118% { stroke-dashoffset: 40; animation-timing-function: cubic-bezier(.16,1,.3,1) }
+  34.7059% { stroke-dashoffset: 0 }
+  100.0000% { stroke-dashoffset: 0 }
+}
+@keyframes voce4 {
+  0.0000% { opacity:0; transform: translateX(-60px) scale(1) }
+  37.0529% { opacity:0; transform: translateX(-60px) scale(1); animation-timing-function: cubic-bezier(.16,1,.3,1) }
+  38.1176% { opacity:1; transform: translateX(8px) scale(1); animation-timing-function: cubic-bezier(.16,1,.3,1) }
+  38.5882% { opacity:1; transform: translateX(0) scale(1) }
+  43.5294% { opacity:1; transform: translateX(0) scale(1); animation-timing-function: cubic-bezier(.16,1,.3,1) }
+  45.8824% { opacity:.35; transform: translateX(-190px) scale(.55) }
+  50.5824% { opacity:.35; transform: translateX(-190px) scale(.55) }
+  50.5882% { opacity:0; transform: translateX(-190px) scale(.55) }
+  100.0000% { opacity:0; transform: translateX(-190px) scale(.55) }
+}
+@keyframes spunta4 {
+  0.0000% { stroke-dashoffset: 40 }
+  38.1176% { stroke-dashoffset: 40; animation-timing-function: cubic-bezier(.16,1,.3,1) }
+  39.4118% { stroke-dashoffset: 0 }
+  100.0000% { stroke-dashoffset: 0 }
+}
+@keyframes riscatto {
+  0.0000% { opacity:0; clip-path: inset(0 100% 0 0) }
+  45.8765% { opacity:0; clip-path: inset(0 100% 0 0); animation-timing-function: cubic-bezier(.16,1,.3,1) }
+  47.6471% { opacity:1; clip-path: inset(0 0 0 0) }
+  50.5824% { opacity:1; clip-path: inset(0 0 0 0) }
+  50.5882% { opacity:0; clip-path: inset(0 0 0 0) }
+  100.0000% { opacity:0; clip-path: inset(0 0 0 0) }
+}
+@keyframes serranda {
+  0.0000% { opacity:0; transform: scaleY(0) }
+  50.5824% { opacity:0; transform: scaleY(0); animation-timing-function: cubic-bezier(.16,1,.3,1) }
+  53.0588% { opacity:1; transform: scaleY(1) }
+  58.8176% { opacity:1; transform: scaleY(1) }
+  58.8235% { opacity:0; transform: scaleY(1) }
+  100.0000% { opacity:0; transform: scaleY(1) }
+}
+@keyframes quadrante {
+  0.0000% { transform: rotate(0deg) }
+  100.0000% { transform: rotate(900deg) }
+}
+@keyframes quadrante_op {
+  0.0000% { opacity:0 }
+  51.1706% { opacity:0 }
+  52.3529% { opacity:1 }
+  58.8176% { opacity:1 }
+  58.8235% { opacity:0 }
+  100.0000% { opacity:0 }
+}
+@keyframes serr_testo {
+  0.0000% { opacity:0; transform: translateY(16px) }
+  51.4647% { opacity:0; transform: translateY(16px); animation-timing-function: cubic-bezier(.16,1,.3,1) }
+  52.6471% { opacity:1; transform: translateY(0) }
+  58.8176% { opacity:1; transform: translateY(0) }
+  58.8235% { opacity:0; transform: translateY(0) }
+  100.0000% { opacity:0; transform: translateY(0) }
+}
+@keyframes rib1 {
+  0.0000% { opacity:0; transform: translateY(14px) }
+  58.8176% { opacity:0; transform: translateY(14px); animation-timing-function: cubic-bezier(.16,1,.3,1) }
+  60.0000% { opacity:1; transform: translateY(0) }
+  67.0529% { opacity:1; transform: translateY(0) }
+  67.0588% { opacity:0; transform: translateY(0) }
+  100.0000% { opacity:0; transform: translateY(0) }
+}
+@keyframes rib2 {
+  0.0000% { opacity:0; transform: translateY(14px) }
+  60.5824% { opacity:0; transform: translateY(14px); animation-timing-function: cubic-bezier(.16,1,.3,1) }
+  61.7647% { opacity:1; transform: translateY(0) }
+  67.0529% { opacity:1; transform: translateY(0) }
+  67.0588% { opacity:0; transform: translateY(0) }
+  100.0000% { opacity:0; transform: translateY(0) }
+}
+@keyframes split_su {
+  0.0000% { opacity:0; height: 310px }
+  67.0529% { opacity:0; height: 310px; animation-timing-function: cubic-bezier(.16,1,.3,1) }
+  67.6471% { opacity:1; height: 310px; animation-timing-function: cubic-bezier(.16,1,.3,1) }
+  70.5882% { opacity:1; height: 0px }
+  76.4647% { opacity:1; height: 0px }
+  76.4706% { opacity:0; height: 0px }
+  100.0000% { opacity:0; height: 0px }
+}
+@keyframes split_giu {
+  0.0000% { opacity:0; height: 310px }
+  67.0529% { opacity:0; height: 310px; animation-timing-function: cubic-bezier(.16,1,.3,1) }
+  67.6471% { opacity:1; height: 310px; animation-timing-function: cubic-bezier(.16,1,.3,1) }
+  70.5882% { opacity:1; height: 620px }
+  76.4647% { opacity:1; height: 620px }
+  76.4706% { opacity:0; height: 620px }
+  100.0000% { opacity:0; height: 620px }
+}
+@keyframes chiave {
+  0.0000% { opacity:0; clip-path: inset(0 0 100% 0) }
+  76.4647% { opacity:0; clip-path: inset(0 0 100% 0); animation-timing-function: cubic-bezier(.16,1,.3,1) }
+  77.9412% { opacity:1; clip-path: inset(0 0 0 0) }
+  96.4647% { opacity:1; clip-path: inset(0 0 0 0) }
+  96.4706% { opacity:0; clip-path: inset(0 0 0 0) }
+  100.0000% { opacity:0; clip-path: inset(0 0 0 0) }
+}
+@keyframes evidenzia {
+  0.0000% { background-size: 0% 100% }
+  78.8235% { background-size: 0% 100%; animation-timing-function: cubic-bezier(.16,1,.3,1) }
+  80.3529% { background-size: 100% 100% }
+  96.4647% { background-size: 100% 100% }
+  96.4706% { background-size: 0% 100% }
+  100.0000% { background-size: 0% 100% }
+}
+@keyframes badge {
+  0.0000% { opacity:0; transform: scale(1.12) }
+  84.7000% { opacity:0; transform: scale(1.12); animation-timing-function: cubic-bezier(.16,1,.3,1) }
+  85.7647% { opacity:1; transform: scale(1) }
+  96.4647% { opacity:1; transform: scale(1) }
+  96.4706% { opacity:0; transform: scale(1) }
+  100.0000% { opacity:0; transform: scale(1) }
+}
+@keyframes cta {
+  0.0000% { opacity:0; transform: translateY(160px) }
+  89.4059% { opacity:0; transform: translateY(160px); animation-timing-function: cubic-bezier(.16,1,.3,1) }
+  90.9412% { opacity:1; transform: translateY(0) }
+  96.4647% { opacity:1; transform: translateY(0); animation-timing-function: cubic-bezier(.16,1,.3,1) }
+  98.2353% { opacity:1; transform: translateY(160px) }
+  98.2412% { opacity:0; transform: translateY(160px) }
+  100.0000% { opacity:0; transform: translateY(160px) }
+}
+@keyframes firma {
+  0.0000% { opacity:0; transform: translateY(12px) }
+  90.2882% { opacity:0; transform: translateY(12px); animation-timing-function: cubic-bezier(.16,1,.3,1) }
+  91.4706% { opacity:1; transform: translateY(0) }
+  96.7588% { opacity:1; transform: translateY(0) }
+  96.7647% { opacity:0; transform: translateY(0) }
+  100.0000% { opacity:0; transform: translateY(0) }
+}
+
+</style></head><body>
+<div class="scena">
+  <div class="marchio"><b>HADRIANUS</b><i>MULTISERVICE</i></div>
+
+  <div class="fascia_dietro" style="animation: fascia_dietro 17.0s linear both;"></div>
+  <div class="gancio" style="animation: gancio_op 17.0s linear both;"><span style="display:block;animation: gancio_su 17.0s linear both;"><span style="display:block;animation: gancio_in 17.0s linear both;">Una casa vuota non costa niente.</span></span></div>
+  <div class="cancella" style="animation: cancella 17.0s linear both;"></div>
+  <div class="falso" style="animation: falso 17.0s linear both;">Falso.</div>
+
+  <div class="barra_sfondo" style="animation: barra_op 17.0s linear both;"><div class="barra" style="animation: barra 17.0s linear both;"></div></div>
+  <div class="titolo"><span class="par" style="animation: par0 17.0s linear both;">Cinque</span><span class="par" style="animation: par1 17.0s linear both;">voci</span><span class="par" style="animation: par2 17.0s linear both;">che</span><span class="par" style="animation: par3 17.0s linear both;">corrono</span><span style="flex-basis:100%; height:0;"></span><span class="par" style="animation: par5 17.0s linear both;">a</span><span class="par" style="animation: par6 17.0s linear both;">serranda</span><span class="par" style="animation: par7 17.0s linear both;">chiusa</span></div>
+  <div class="voce" style="top: 570px; animation: voce0 17.0s linear both;"><span class="vnum">01</span><span class="vtxt"><span class="vtit">IMU</span><span class="vdet">Acconto 16 giugno, saldo 16 dicembre.</span></span><svg class="vspunta" width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#C8A24B" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" style="animation: spunta0 17.0s linear both;"><path d="M20 6L9 17l-5-5" stroke-dasharray="40"/></svg></div><div class="voce" style="top: 736px; animation: voce1 17.0s linear both;"><span class="vnum">02</span><span class="vtxt"><span class="vtit">Tassa rifiuti</span><span class="vdet">Anche se non risiede nessuno.</span></span><svg class="vspunta" width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#C8A24B" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" style="animation: spunta1 17.0s linear both;"><path d="M20 6L9 17l-5-5" stroke-dasharray="40"/></svg></div><div class="voce" style="top: 902px; animation: voce2 17.0s linear both;"><span class="vnum">03</span><span class="vtxt"><span class="vtit">Quote condominiali ordinarie</span><span class="vdet">Sui millesimi, non sulle presenze.</span></span><svg class="vspunta" width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#C8A24B" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" style="animation: spunta2 17.0s linear both;"><path d="M20 6L9 17l-5-5" stroke-dasharray="40"/></svg></div><div class="voce" style="top: 1068px; animation: voce3 17.0s linear both;"><span class="vnum">04</span><span class="vtxt"><span class="vtit">Assicurazione</span><span class="vdet">Copre l'anno, chiusa o aperta.</span></span><svg class="vspunta" width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#C8A24B" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" style="animation: spunta3 17.0s linear both;"><path d="M20 6L9 17l-5-5" stroke-dasharray="40"/></svg></div><div class="voce" style="top: 1234px; animation: voce4 17.0s linear both;"><span class="vnum">05</span><span class="vtxt"><span class="vtit">Quota fissa dei contatori</span><span class="vdet">C'è anche a consumo zero.</span></span><svg class="vspunta" width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#C8A24B" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" style="animation: spunta4 17.0s linear both;"><path d="M20 6L9 17l-5-5" stroke-dasharray="40"/></svg></div>
+  <div class="riscatto" style="animation: riscatto 17.0s linear both;">Nessuno te l'ha mai messo<br>su una riga sola.</div>
+
+  <div class="serranda" style="animation: serranda 17.0s linear both;"><div class="doga"></div><div class="doga"></div><div class="doga"></div><div class="doga"></div><div class="doga"></div><div class="doga"></div><div class="doga"></div><div class="doga"></div><div class="doga"></div></div>
+  <div class="quadrante" style="animation: quadrante_op 17.0s linear both;"><div class="lancetta" style="animation: quadrante 17.0s linear both;"></div></div>
+  <div class="serr_testo" style="animation: serr_testo 17.0s linear both;">Il contatore gira anche<br>a serranda chiusa.</div>
+
+  <div class="rib" style="top:820px;animation: rib1 17.0s linear both;">Quelle voci non spariscono.</div>
+  <div class="rib" style="top:960px;font-family:'Manrope', 'Helvetica Neue', Arial, sans-serif;font-weight:500;font-size:46px;color:#5A5349;animation: rib2 17.0s linear both;">Cambia da dove escono i soldi.</div>
+
+  <div class="split split_su" style="animation: split_su 17.0s linear both;">Dal tuo stipendio</div>
+  <div class="split split_giu" style="animation: split_giu 17.0s linear both;">Dalla casa</div>
+
+  <div class="chiave" style="animation: chiave 17.0s linear both;">L'unica voce che compare solo<br><span class="evid" style="animation: evidenzia 17.0s linear both;">se la casa ha incassato.</span></div>
+  <div class="badge" style="animation: badge 17.0s linear both;">15%</div>
+
+  <div class="firma" style="animation: firma 17.0s linear both;">Guadagniamo solo se guadagni tu.</div>
+  <div class="cta" style="animation: cta 17.0s linear both;">SCRIVI CALCOLO IN DM</div>
+</div>
+</body></html>

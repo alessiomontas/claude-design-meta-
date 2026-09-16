@@ -11,8 +11,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 
 VOCI = [
     ('01', 'IMU',                    'Acconto 16 giugno, saldo 16 dicembre'),
-    ('02', 'Tassa rifiuti',          'Anche senza nessuno residente'),
-    ('03', 'Quote condominiali',     'Sui millesimi, non sulle presenze'),
+    ('02', 'Tassa rifiuti',          'Anche se non risiede nessuno'),
+    ('03', 'Quote condominiali ordinarie',     'Sui millesimi, non sulle presenze'),
     ('04', 'Assicurazione',          "Copre l'anno, chiusa o aperta"),
     ('05', 'Quota fissa contatori',  "C'e' anche a consumo zero"),
 ]
@@ -60,7 +60,7 @@ def modulo_euro(y, altezza=104, left=64, right=64, size_voce=45, size_det=29,
                 'background: %s; border-radius: 18px; padding: 0 28px; display: flex; '
                 'align-items: center; justify-content: space-between; font-family: %s; '
                 'font-weight: 800; font-size: 44px; letter-spacing: 0.02em; color: %s;">'
-                "<span>TOTALE ALL'ANNO</span>"
+                "<span>TOTALE IN UN ANNO</span>"
                 '<span style="display: flex; align-items: flex-end; gap: 12px; width: 250px;">'
                 '<span style="line-height: 1;">&euro;</span>'
                 '<span style="flex: 1; border-bottom: 3px solid %s; height: 36px;"></span></span>'
@@ -171,7 +171,7 @@ def carosello():
     c += marchio(100)
     c += kicker('Il dato', 270)
     c += blocco(['27,2%'], 330, 180, 900, INK, lh=0.92)
-    c += blocco(['1 casa su 4 in Italia', 'non è occupata.'], 560, 60, 800)
+    c += blocco(['Più di 1 casa su 4', 'in Italia non è occupata.'], 560, 60, 800)
     c += barra_proporzione(740, piene=1, n=4)
     c += blocco(['9.581.772 abitazioni su 35.271.829.'], 840, 38, 500, INK_2,
                 font=MA, lh=1.3, tracking=0)
@@ -218,9 +218,7 @@ def carosello():
                 font=MA, lh=1.34, tracking=0)
     c += blocco(['Guadagniamo solo se guadagni tu.'], 1030, 31, 600, INK_CORPO,
                 font=MA, lh=1.3, tracking=0)
-    c += pill(1120, 110, 'Scrivi CALCOLO in DM')
-    c += blocco(['Simulazione gratuita del rendimento.'], 1255, 28, 500, INK_2,
-                font=MA, lh=1.3, tracking=0, allinea='center')
+    c += pill(1150, 110, 'Scrivi CALCOLO in DM')
     nomi.append(('C5.dc.html', c))
     return nomi
 
@@ -232,9 +230,7 @@ def facebook():
     # ---- F1 · 9:16 — la prima del collage, deve avere la CTA ----
     c  = frame(1080, 1920)
     c += marchio(112)
-    # La banda mostra la stanza intera: il ritaglio 9:16 inquadrava solo
-    # finestra e tenda, e non si capiva di stare guardando una casa.
-    c += foto('pranzo-banda.jpg', 260, 560, x=64, w=952, raggio=24)
+    c += foto('vuota-banda.jpg', 260, 560, x=64, w=952, raggio=24)
     c += pastiglia_dato(740, '27,2%', 'abitazioni non occupate in Italia', left=64, larghezza=600)
     c += blocco(['La tua casa chiusa', 'non costa %s' % oroink('zero euro'), 'al mese.'],
                 940, 62, 900)
@@ -242,8 +238,10 @@ def facebook():
     c += blocco(['Cinque voci corrono uguale,', 'serranda alzata o abbassata.'],
                 1235, 44, 500, INK_2, font=MA, lh=1.32, tracking=0)
     c += fonte(FONTE_ISTAT, 1390)
-    c += pill(1500, 110, 'Scrivi CALCOLO in DM')
-    c += kicker('Salva questo post', 1660)
+    c += blocco(['Guadagniamo solo se guadagni tu.'], 1450, 31, 600, INK_CORPO,
+                font=MA, lh=1.3, tracking=0)
+    c += pill(1530, 110, 'Scrivi CALCOLO in DM')
+    c += kicker('Salva questo post', 1690)
     nomi.append(('F1.dc.html', c))
 
     # ---- F2 · 1:1 — l'elenco ----
@@ -322,9 +320,7 @@ def storie():
                 font=MA, lh=1.32, tracking=0)
     c += blocco(['Guadagniamo solo se guadagni tu.'], 1512, 29, 600, INK_2,
                 font=MA, lh=1.3, tracking=0)
-    c += pill(1620, 108, 'Scrivi CALCOLO in DM')
-    c += blocco(['Simulazione gratuita del rendimento.'], 1765, 28, 500, INK_2,
-                font=MA, lh=1.3, tracking=0, allinea='center')
+    c += pill(1660, 108, 'Scrivi CALCOLO in DM')
     nomi.append(('S2.dc.html', c))
     return nomi
 

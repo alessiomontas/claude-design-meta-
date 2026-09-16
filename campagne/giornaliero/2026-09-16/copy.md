@@ -31,7 +31,7 @@
 | # | Voce, come si scrive a schermo | Riga di dettaglio |
 |---|---|---|
 | 1 | **IMU** | Acconto 16 giugno, saldo 16 dicembre. |
-| 2 | **Tassa rifiuti** | Si paga anche senza nessuno residente. |
+| 2 | **Tassa rifiuti** | Si paga anche se non risiede nessuno. |
 | 3 | **Quote condominiali ordinarie** | Arrivano sui millesimi, non sulle presenze. |
 | 4 | **Assicurazione della casa** | Copre l'anno intero, chiusa o aperta. |
 | 5 | **Quota fissa dei contatori** | C'è anche a consumo zero. |
@@ -64,7 +64,7 @@ Fondo bianco caldo `#FAF7F1` per tutto il reel. Marchio fisso in alto. Nessuna d
 | **1,9** | — | **Stacco netto.** Fondo bianco pulito. Parte la barra oro di avanzamento in alto (0/5) | 0 ms |
 | 1,9-2,5 | `Cinque voci che corrono`<br>`a serranda chiusa` | Titolo in due righe, entra parola per parola in accumulo, 110 ms a parola | RSVP in accumulo |
 | 2,5-3,6 | `01 IMU`<br>`Acconto 16 giugno, saldo 16 dicembre.` | Riga 1 entra da sinistra con overshoot 8 px; la spunta oro si disegna; barra a 1/5 | `stroke-dashoffset` 220 ms |
-| 3,6-4,6 | `02 Tassa rifiuti`<br>`Anche senza nessuno residente.` | Riga 2 entra; **la riga 1 resta a schermo**, scala 0,86 e opacità 0,45. Barra a 2/5 | la lista **si accumula**, non si sostituisce |
+| 3,6-4,6 | `02 Tassa rifiuti`<br>`Anche se non risiede nessuno.` | Riga 2 entra; **la riga 1 resta a schermo**, scala 0,86 e opacità 0,45. Barra a 2/5 | la lista **si accumula**, non si sostituisce |
 | 4,6-5,5 | `03 Quote condominiali`<br>`Sui millesimi, non sulle presenze.` | Idem. Battuta accorciata di 100 ms. Barra a 3/5 | curva di accelerazione |
 | 5,5-6,3 | `04 Assicurazione`<br>`Copre l'anno, chiusa o aperta.` | Idem. Barra a 4/5 | |
 | 6,3-7,0 | `05 Quota fissa dei contatori`<br>`C'è anche a consumo zero.` | Idem. Barra a 5/5 con **scatto di scala 1,08→1** | 180 ms |
@@ -192,8 +192,8 @@ Caption     | vedi §2.6
 ### C2 · Instagram carosello · 1080×1350 · il dato di contesto
 
 **COPY**
-Gancio      | 1 casa su 4 in Italia
-            | non è occupata.
+Gancio      | Più di 1 casa su 4
+            | in Italia non è occupata.
 Corpo       | 9.581.772 abitazioni su 35.271.829.
             | Il 27,2%.
 CTA         | → scorri
@@ -231,7 +231,7 @@ Contenuto della card — **cinque righe con campo vuoto a destra**, più la riga
 | # | Voce | Dettaglio | Campo |
 |---|---|---|---|
 | 01 | IMU | Acconto 16 giugno, saldo 16 dicembre | `€ ______` |
-| 02 | Tassa rifiuti | Anche senza nessuno residente | `€ ______` |
+| 02 | Tassa rifiuti | Anche se non risiede nessuno | `€ ______` |
 | 03 | Quote condominiali ordinarie | Sui millesimi, non sulle presenze | `€ ______` |
 | 04 | Assicurazione | Copre l'anno, chiusa o aperta | `€ ______` |
 | 05 | Quota fissa dei contatori | C'è anche a consumo zero | `€ ______` |
@@ -409,7 +409,7 @@ Corpo       | Il totale fallo tu, coi tuoi bollettini.
 CTA         | —
 Caption     | —
 
-Righe: `01 IMU — acconto 16 giugno, saldo 16 dicembre` · `02 Tassa rifiuti — anche senza nessuno residente` · `03 Quote condominiali — sui millesimi, non sulle presenze` · `04 Assicurazione — copre l'anno intero` · `05 Quota fissa dei contatori — anche a consumo zero`
+Righe: `01 IMU — acconto 16 giugno, saldo 16 dicembre` · `02 Tassa rifiuti — anche se non risiede nessuno` · `03 Quote condominiali — sui millesimi, non sulle presenze` · `04 Assicurazione — copre l'anno intero` · `05 Quota fissa dei contatori — anche a consumo zero`
 Riga di chiusura: `Nessuno te l'ha mai messo su una riga sola.`
 
 **LAYOUT**
@@ -514,7 +514,7 @@ Caption     | —
 
 **Testo integrale a schermo**
 1. `«Tanto chiusa non costa niente.»`
-2. `La casa dei tuoi è ferma da anni. Non è una svista: il conto arriva a pezzi, in mesi diversi. IMU a giugno e a dicembre. Tassa rifiuti anche senza nessuno residente. Quote condominiali sui millesimi. Assicurazione. Quota fissa dei contatori. Nessuno te l'ha mai messo su una riga sola.`
+2. `La casa dei tuoi è ferma da anni. Non è una svista: il conto arriva a pezzi, in mesi diversi. IMU a giugno e a dicembre. Tassa rifiuti anche se non risiede nessuno. Quote condominiali sui millesimi. Assicurazione. Quota fissa dei contatori. Nessuno te l'ha mai messo su una riga sola.`
 3. `Quelle voci non spariscono se la casa lavora. Cambia solo da dove escono i soldi: da quello che la casa ha incassato, non dal tuo stipendio.`
 4. `La casa la mettiamo a reddito noi: pricing dinamico, check-in smart H24, gestione ospiti, pulizie in standard alberghiero, annuncio e foto. Si parte da com'è — il primo passo è una valutazione, non un cantiere. 15% sul fatturato generato.`
 5. `Guadagniamo solo se guadagni tu.`
@@ -549,7 +549,7 @@ Caption     | —
 **Testo integrale a schermo**
 1. `I mesi vuoti pagano le stesse spese dei mesi pieni.`
 2. `Il tuo calendario ha dei buchi. La tassa rifiuti, le quote condominiali, l'assicurazione e la quota fissa dei contatori non li guardano: arrivano uguali a febbraio e ad agosto.`
-3. `Gestire da soli non dà gli strumenti per tenere un calendario aperto tutto l'anno. Non è una questione di impegno: è che quel lavoro è un mestiere a parte.`
+3. `Tenere un calendario aperto tutto l'anno è un mestiere a parte.`
 4. `Il calendario lo teniamo noi, aperto e aggiornato, dentro la gestione completa: check-in smart H24, gestione ospiti, pulizie in standard alberghiero. 15% sul fatturato generato: la nostra è l'unica voce che compare solo se la casa ha incassato.`
 5. `Guadagniamo solo se guadagni tu.`
 6. CTA: `Scrivi CALCOLO in DM`
