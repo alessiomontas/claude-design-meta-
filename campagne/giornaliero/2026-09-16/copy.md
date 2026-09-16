@@ -32,7 +32,7 @@
 |---|---|---|
 | 1 | **IMU** | Acconto 16 giugno, saldo 16 dicembre. |
 | 2 | **Tassa rifiuti** | Si paga anche se non risiede nessuno. |
-| 3 | **Quote condominiali ordinarie** | Arrivano sui millesimi, non sulle presenze. |
+| 3 | **Quote condominiali** | Le ordinarie arrivano sui millesimi, non sulle presenze. |
 | 4 | **Assicurazione della casa** | Copre l'anno intero, chiusa o aperta. |
 | 5 | **Quota fissa dei contatori** | C'è anche a consumo zero. |
 
@@ -232,10 +232,10 @@ Contenuto della card — **cinque righe con campo vuoto a destra**, più la riga
 |---|---|---|---|
 | 01 | IMU | Acconto 16 giugno, saldo 16 dicembre | `€ ______` |
 | 02 | Tassa rifiuti | Anche se non risiede nessuno | `€ ______` |
-| 03 | Quote condominiali ordinarie | Sui millesimi, non sulle presenze | `€ ______` |
+| 03 | Quote condominiali | Ordinarie, sui millesimi | `€ ______` |
 | 04 | Assicurazione | Copre l'anno, chiusa o aperta | `€ ______` |
 | 05 | Quota fissa dei contatori | C'è anche a consumo zero | `€ ______` |
-| — | **TOTALE ALL'ANNO** | — | `€ ______` |
+| — | **TOTALE IN UN ANNO** | — | `€ ______` |
 
 Riga sotto il modulo: `Non ci sono cifre nostre: questo conto è solo tuo.`
 
@@ -250,7 +250,7 @@ Riga sotto il modulo: `Non ci sono cifre nostre: questo conto è solo tuo.`
 | — voce | x 140 | IMU | Archivo 800 | 45 | #2E2A25 |
 | — dettaglio | sotto voce | riga unica | Manrope 500 | 31 | #5A5349 |
 | — campo | destra, larghezza 250 | `€ ______` | Manrope 600 | 40 | #5A5349, filo 2 px #C8A24B sotto |
-| riga totale | 1100-1180 | banda oro piena, `TOTALE ALL'ANNO  € ______` | Archivo 800 maiusc. | 50 | #2E2A25 su #C8A24B |
+| riga totale | 1100-1180 | banda oro piena, `TOTALE IN UN ANNO  € ______` | Archivo 800 maiusc. | 50 | #2E2A25 su #C8A24B |
 | nota | 1200-1240 | Non ci sono cifre nostre: questo conto è solo tuo. | Manrope 500 | 31 | #5A5349 |
 | firma | 1270-1310 | SALVA QUESTA SLIDE | Manrope 600 maiusc. | 31 | #86692A |
 Nessuna foto su questa slide: la leggibilità del modulo viene prima.
@@ -614,6 +614,23 @@ Dove serviva una quantificazione, si è scelta la riformulazione senza numero:
 | Qualsiasi tariffa, occupazione, incremento, rendimento | **Assenti per costruzione** in tutti e cinque i contenuti |
 
 **Unico numero stampato in tutto il pacchetto**: `9.581.772 su 35.271.829 = 27,2%` — ISTAT, Censimento permanente 2021. Compare in C2 (con fonte in slide), in F1 (con fonte in grafica) e nelle caption di carosello e Facebook, **sempre** con la fonte accanto. Nel reel **non compare**: nessuna cifra a schermo, per non dover stampare una fonte in un formato che scorre.
+
+---
+
+## Ritocchi applicati dopo la revisione (16/09)
+
+| # | Dove | Cosa è cambiato |
+|---|---|---|
+| 1 | C3 | **collisione reale**: "Quote condominiali ordinarie" a 45 px andava a capo e spingeva il dettaglio sotto il separatore della riga 04, dove veniva tagliato. Voce accorciata, dettaglio a riga unica, righe più alte |
+| 2 | C3 | la riga "Non ci sono cifre nostre: questo conto è solo tuo." è passata **sopra** la banda del totale, in inchiostro pieno: è quella che impedisce di leggere il modulo come una grafica non finita, e stava sotto in grigio chiaro |
+| 3 | S1, S2 | le bande CTA finivano sotto la UI di Instagram (1808 e 1768 contro una safe area di 1600). Ora chiudono entro |
+| 4 | C1, S1 | le foto contraddicevano il copy: un salotto arredato con fiori sotto "La tua casa chiusa", e un letto da catalogo. Ora tre inquadrature diverse della **stessa casa vuota** |
+| 5 | F1 | due CTA in conflitto a 60 px di distanza: resta solo "Scrivi CALCOLO in DM" |
+| 6 | C5 | badge 15% da contorno a **oro pieno**: beige su beige non si leggeva |
+| 7 | C2 | aggiunto l'indicatore "→ scorri", che C1 e C4 avevano e lui no |
+| 8 | S1 | il modulo compariva identico su C3, F2 e S1. Nella storia diventa un elenco di tre voci senza campo, e libera lo spazio per la CTA |
+| 9 | C5 | aggiunta la riga che dice **cosa succede dopo il DM**: nessun artboard lo diceva |
+| 10 | reel | tre pause ravvicinate fra 7,0 e 9,6 s, proprio dove il ritmo deve accelerare: sosta sulla lista accorciata, serranda e ribaltamento anticipati |
 
 ---
 

@@ -113,18 +113,18 @@ def costruisci():
             (0, 'opacity:0; transform: translateY(14px)'),
             (max(t0 - 0.001, 0), 'opacity:0; transform: translateY(14px)', EASE),
             (t0 + 0.13, 'opacity:1; transform: translateY(0)'),
-            (7.399, 'opacity:1; transform: translateY(0)'),
-            (7.4, 'opacity:0; transform: translateY(0)'),
+            (7.199, 'opacity:1; transform: translateY(0)'),
+            (7.2, 'opacity:0; transform: translateY(0)'),
             (D, 'opacity:0; transform: translateY(0)'),
         ])
     passi_barra = [(0, 'transform: scaleX(0)'), (1.899, 'transform: scaleX(0)', EASE)]
     for i, (_, _, _, t) in enumerate(VOCI):
         passi_barra.append((t + 0.22, 'transform: scaleX(%.2f)' % ((i + 1) / 5.0), EASE))
-    passi_barra += [(7.399, 'transform: scaleX(1)'), (7.4, 'transform: scaleX(0)'),
+    passi_barra += [(7.199, 'transform: scaleX(1)'), (7.2, 'transform: scaleX(0)'),
                     (D, 'transform: scaleX(0)')]
     kf('barra', passi_barra)
     kf('barra_op', [(0, 'opacity:0'), (1.899, 'opacity:0'), (1.9, 'opacity:1'),
-                    (7.399, 'opacity:1'), (7.4, 'opacity:0'), (D, 'opacity:0')])
+                    (7.199, 'opacity:1'), (7.2, 'opacity:0'), (D, 'opacity:0')])
 
     # ---------- 3 · la lista che si ACCUMULA (non si sostituisce) ----------
     for i, (_, _, _, t0) in enumerate(VOCI):
@@ -141,10 +141,10 @@ def costruisci():
             fine = 'opacity:.45; transform: translateX(0) scale(.86)'
         else:
             fine = 'opacity:1; transform: translateX(0) scale(1)'
-        passi += [(7.4, fine, EASE),
-                  (7.8, 'opacity:.35; transform: translateX(-190px) scale(.55)'),
-                  (8.599, 'opacity:.35; transform: translateX(-190px) scale(.55)'),
-                  (8.6, 'opacity:0; transform: translateX(-190px) scale(.55)'),
+        passi += [(7.2, fine, EASE),
+                  (7.55, 'opacity:.35; transform: translateX(-190px) scale(.55)'),
+                  (8.299, 'opacity:.35; transform: translateX(-190px) scale(.55)'),
+                  (8.3, 'opacity:0; transform: translateX(-190px) scale(.55)'),
                   (D, 'opacity:0; transform: translateX(-190px) scale(.55)')]
         kf('voce%d' % i, passi)
         kf('spunta%d' % i, [
@@ -157,46 +157,46 @@ def costruisci():
     # ---------- 4 · la frase di riscatto ----------
     kf('riscatto', [
         (0, 'opacity:0; clip-path: inset(0 100% 0 0)'),
-        (7.799, 'opacity:0; clip-path: inset(0 100% 0 0)', EASE),
-        (8.1, 'opacity:1; clip-path: inset(0 0 0 0)'),
-        (8.599, 'opacity:1; clip-path: inset(0 0 0 0)'),
-        (8.6, 'opacity:0; clip-path: inset(0 0 0 0)'),
+        (7.549, 'opacity:0; clip-path: inset(0 100% 0 0)', EASE),
+        (7.85, 'opacity:1; clip-path: inset(0 0 0 0)'),
+        (8.299, 'opacity:1; clip-path: inset(0 0 0 0)'),
+        (8.3, 'opacity:0; clip-path: inset(0 0 0 0)'),
         (D, 'opacity:0; clip-path: inset(0 0 0 0)'),
     ])
 
     # ---------- 5 · la serranda che scende e il quadrante che non si ferma ----------
     kf('serranda', [
         (0, 'opacity:0; transform: scaleY(0)'),
-        (8.599, 'opacity:0; transform: scaleY(0)', EASE),
-        (9.02, 'opacity:1; transform: scaleY(1)'),
-        (9.999, 'opacity:1; transform: scaleY(1)'),
-        (10.0, 'opacity:0; transform: scaleY(1)'),
+        (8.299, 'opacity:0; transform: scaleY(0)', EASE),
+        (8.72, 'opacity:1; transform: scaleY(1)'),
+        (9.699, 'opacity:1; transform: scaleY(1)'),
+        (9.7, 'opacity:0; transform: scaleY(1)'),
         (D, 'opacity:0; transform: scaleY(1)'),
     ])
     # il quadrante gira per tutta la durata: e' il punto del contenuto,
     # il contatore non si ferma perche' la casa e' chiusa
     kf('quadrante', [(0, 'transform: rotate(0deg)'), (D, 'transform: rotate(900deg)')])
-    kf('quadrante_op', [(0, 'opacity:0'), (8.699, 'opacity:0'), (8.9, 'opacity:1'),
-                        (9.999, 'opacity:1'), (10.0, 'opacity:0'), (D, 'opacity:0')])
-    kf('serr_testo', app(8.75, 10.0, 'transform: translateY(16px)', 'transform: translateY(0)'))
+    kf('quadrante_op', [(0, 'opacity:0'), (8.399, 'opacity:0'), (8.6, 'opacity:1'),
+                        (9.699, 'opacity:1'), (9.7, 'opacity:0'), (D, 'opacity:0')])
+    kf('serr_testo', app(8.45, 10.0, 'transform: translateY(16px)', 'transform: translateY(0)'))
 
     # ---------- 6 · il ribaltamento ----------
-    kf('rib1', app(10.0, 11.4, 'transform: translateY(14px)', 'transform: translateY(0)'))
-    kf('rib2', app(10.3, 11.4, 'transform: translateY(14px)', 'transform: translateY(0)'))
+    kf('rib1', app(9.7, 11.4, 'transform: translateY(14px)', 'transform: translateY(0)'))
+    kf('rib2', app(10.0, 11.4, 'transform: translateY(14px)', 'transform: translateY(0)'))
     kf('split_su', [
         (0, 'opacity:0; height: 310px'),
-        (11.399, 'opacity:0; height: 310px', EASE),
-        (11.5, 'opacity:1; height: 310px', EASE),
-        (12.0, 'opacity:1; height: 0px'),
+        (11.199, 'opacity:0; height: 310px', EASE),
+        (11.3, 'opacity:1; height: 310px', EASE),
+        (11.8, 'opacity:1; height: 0px'),
         (12.999, 'opacity:1; height: 0px'),
         (13.0, 'opacity:0; height: 0px'),
         (D, 'opacity:0; height: 0px'),
     ])
     kf('split_giu', [
         (0, 'opacity:0; height: 310px'),
-        (11.399, 'opacity:0; height: 310px', EASE),
-        (11.5, 'opacity:1; height: 310px', EASE),
-        (12.0, 'opacity:1; height: 620px'),
+        (11.199, 'opacity:0; height: 310px', EASE),
+        (11.3, 'opacity:1; height: 310px', EASE),
+        (11.8, 'opacity:1; height: 620px'),
         (12.999, 'opacity:1; height: 620px'),
         (13.0, 'opacity:0; height: 620px'),
         (D, 'opacity:0; height: 620px'),

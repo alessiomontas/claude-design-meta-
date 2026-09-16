@@ -12,7 +12,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 VOCI = [
     ('01', 'IMU',                    'Acconto 16 giugno, saldo 16 dicembre'),
     ('02', 'Tassa rifiuti',          'Anche se non risiede nessuno'),
-    ('03', 'Quote condominiali ordinarie',     'Sui millesimi, non sulle presenze'),
+    ('03', 'Quote condominiali',     'Ordinarie, sui millesimi'),
     ('04', 'Assicurazione',          "Copre l'anno, chiusa o aperta"),
     ('05', 'Quota fissa contatori',  "C'e' anche a consumo zero"),
 ]
@@ -155,7 +155,7 @@ def carosello():
     # ---- C1 · gancio (foto in blocco, testo accanto) ----
     c  = frame(1080, 1350)
     c += marchio(100)
-    c += foto('salotto-banda.jpg', 250, 400, x=64, w=952, raggio=24)
+    c += foto('vuota-c1.jpg', 250, 400, x=64, w=952, raggio=24)
     # Tre righe volute: a due, "al mese." andava a capo da solo e il filo oro
     # finiva sopra la parola come una cancellatura.
     c += blocco(['La tua casa chiusa', 'non costa %s' % oroink('zero euro'), 'al mese.'],
@@ -176,7 +176,8 @@ def carosello():
     c += blocco(['9.581.772 abitazioni su 35.271.829.'], 840, 38, 500, INK_2,
                 font=MA, lh=1.3, tracking=0)
     c += blocco(['Non è un problema di pochi.', 'È come è fatto il Paese.'], 950, 45, 800)
-    c += fonte(FONTE_ISTAT, 1250)
+    c += fonte(FONTE_ISTAT, 1180)
+    c += kicker('→ scorri', 1265)
     nomi.append(('C2.dc.html', c))
 
     # ---- C3 · IL MODULO — la slide da salvare ----
@@ -184,10 +185,10 @@ def carosello():
     c += marchio(100)
     c += kicker('Il conto del vuoto', 235)
     c += blocco(['Le cinque voci che paghi', 'anche a casa chiusa'], 290, 60, 900)
-    c += modulo_euro(450, altezza=104)
-    c += blocco(['Non ci sono cifre nostre: questo conto è solo tuo.'], 1105, 30, 500,
-                INK_2, font=MA, lh=1.3, tracking=0)
-    c += kicker('Salva questa slide', 1265)
+    c += blocco(['Non ci sono cifre nostre: questo conto è solo tuo.'], 432, 31, 600,
+                INK, font=MA, lh=1.3, tracking=0)
+    c += modulo_euro(492, altezza=112)
+    c += kicker('Salva questa slide', 1245)
     nomi.append(('C3.dc.html', c))
 
     # ---- C4 · il ribaltamento ----
@@ -218,7 +219,9 @@ def carosello():
                 font=MA, lh=1.34, tracking=0)
     c += blocco(['Guadagniamo solo se guadagni tu.'], 1030, 31, 600, INK_CORPO,
                 font=MA, lh=1.3, tracking=0)
-    c += pill(1150, 110, 'Scrivi CALCOLO in DM')
+    c += pill(1120, 110, 'Scrivi CALCOLO in DM')
+    c += blocco(['Ti rispondiamo con le domande sulla casa,', 'e da lì partiamo.'],
+                1255, 28, 500, INK_2, font=MA, lh=1.32, tracking=0, allinea='center')
     nomi.append(('C5.dc.html', c))
     return nomi
 
@@ -241,7 +244,6 @@ def facebook():
     c += blocco(['Guadagniamo solo se guadagni tu.'], 1450, 31, 600, INK_CORPO,
                 font=MA, lh=1.3, tracking=0)
     c += pill(1530, 110, 'Scrivi CALCOLO in DM')
-    c += kicker('Salva questo post', 1690)
     nomi.append(('F1.dc.html', c))
 
     # ---- F2 · 1:1 — l'elenco ----
@@ -282,18 +284,21 @@ def storie():
     # ---- S1 · "la casa dei tuoi" ----
     c  = frame(1080, 1920)
     c += marchio(112)
-    c += foto('camera-banda.jpg', 270, 300, x=64, w=952, raggio=24)
+    c += foto('vuota-s1.jpg', 265, 330, x=64, w=952, raggio=24)
     c += blocco(['«Tanto chiusa', 'non costa niente.»'], 640, 68, 900)
     c += filo(810, larghezza=220)
-    c += modulo_euro(870, altezza=92, size_voce=38, size_det=25, campo=170, totale=False)
-    c += blocco(["Nessuno te l'ha mai messo", 'su una riga sola.'], 1360, 44, 800)
+    c += elenco_voci_brevi(860, [('IMU', 'Acconto 16 giugno, saldo 16 dicembre'),
+                                 ('Tassa rifiuti', 'Anche se non risiede nessuno'),
+                                 ('Quote, assicurazione, contatori', 'Corrono tutto l\'anno')])
+    c += blocco(["Nessuno te l'ha mai messo", 'su una riga sola.'], 1210, 46, 800)
     c += blocco(['Quelle voci non spariscono se la casa lavora:',
                  'cambia solo %s.' % oroink('da dove escono i soldi')],
-                1480, 34, 500, INK_2, font=MA, lh=1.34, tracking=0)
-    c += blocco(['15% sul fatturato generato.'], 1580, 32, 600, INK)
-    c += blocco(['Guadagniamo solo se guadagni tu.'], 1632, 29, 600, INK_2,
+                1330, 34, 500, INK_2, font=MA, lh=1.34, tracking=0)
+    c += blocco(['15% sul fatturato generato.'], 1432, 32, 600, INK)
+    c += blocco(['Guadagniamo solo se guadagni tu.'], 1484, 29, 600, INK_2,
                 font=MA, lh=1.3, tracking=0)
-    c += pill(1700, 108, 'Scrivi CALCOLO in DM')
+    # Safe area: la banda deve chiudere entro y 1600, sotto c'e' la UI di Instagram.
+    c += pill(1540, 104, 'Scrivi CALCOLO in DM')
     nomi.append(('S1.dc.html', c))
 
     # ---- S2 · "i mesi vuoti" ----
@@ -316,11 +321,11 @@ def storie():
                  'gestione ospiti, pulizie in standard alberghiero.'],
                 1250, 33, 500, INK_2, font=MA, lh=1.36, tracking=0)
     c += blocco(["15% sul fatturato generato: l'unica voce",
-                 'che compare solo se la casa ha incassato.'], 1410, 31, 600, INK,
+                 'che compare solo se la casa ha incassato.'], 1390, 31, 600, INK,
                 font=MA, lh=1.32, tracking=0)
-    c += blocco(['Guadagniamo solo se guadagni tu.'], 1512, 29, 600, INK_2,
+    c += blocco(['Guadagniamo solo se guadagni tu.'], 1486, 29, 600, INK_2,
                 font=MA, lh=1.3, tracking=0)
-    c += pill(1660, 108, 'Scrivi CALCOLO in DM')
+    c += pill(1540, 104, 'Scrivi CALCOLO in DM')
     nomi.append(('S2.dc.html', c))
     return nomi
 

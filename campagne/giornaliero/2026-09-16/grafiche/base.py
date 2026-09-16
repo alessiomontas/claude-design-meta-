@@ -23,6 +23,7 @@ HEAD = """<!doctype html>
 <html lang="it">
 <head>
   <meta charset="utf-8">
+  <script src="./support.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Manrope:wght@400;500;600;700&display=swap">
@@ -96,9 +97,10 @@ def pill(y, h, testo, size=45, left=64, right=64):
 def badge(y, testo, left=64, size=32, h=64):
     return ('  <div style="position: absolute; left: %dpx; top: %dpx; height: %dpx; '
             'display: inline-flex; align-items: center; padding: 0 30px; border-radius: %dpx; '
-            'border: 2px solid %s; background: rgba(200,162,75,0.18); font-family: %s; '
+            # Oro PIENO con inchiostro fume': a contorno si leggeva beige su beige.
+            'background: %s; font-family: %s; '
             'font-weight: 800; font-size: %dpx; color: %s;">%s</div>\n'
-            % (left, y, h, h // 2, ORO, AR, size, ORO_INK, testo))
+            % (left, y, h, h // 2, ORO, AR, size, INK, testo))
 
 
 def modulo(y, voci, altezza=124, gap=14, left=64, right=64, size=38, casella=250):
@@ -122,6 +124,21 @@ def modulo(y, voci, altezza=124, gap=14, left=64, right=64, size=38, casella=250
                 'background: %s;"></div>'
                 '</div>\n' % (left, right, top, altezza, CARD, AR, size, INK, voce, nota_html,
                               casella, int(altezza * 0.52), ORO, FONDO))
+    return out
+
+
+def elenco_voci_brevi(y, voci, altezza=104, gap=12, left=64, right=64):
+    """Versione corta del modulo, senza campo euro: la storia non e' il posto
+    dove si compila, e ripetere il modulo per la terza volta lo svuotava."""
+    out = ''
+    for i, (voce, det) in enumerate(voci):
+        out += ('  <div style="position: absolute; left: %dpx; right: %dpx; top: %dpx; '
+                'height: %dpx; background: %s; border-radius: 18px; padding: 0 28px; '
+                'display: flex; flex-direction: column; justify-content: center; gap: 5px;">'
+                '<span style="font-family: %s; font-weight: 800; font-size: 40px; color: %s;">%s</span>'
+                '<span style="font-family: %s; font-weight: 500; font-size: 27px; color: %s;">%s</span>'
+                '</div>\n' % (left, right, y + i * (altezza + gap), altezza, CARD,
+                              AR, INK, voce, MA, INK_2, det))
     return out
 
 
