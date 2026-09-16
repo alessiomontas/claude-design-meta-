@@ -1,0 +1,1065 @@
+<title>Banco di montaggio Hadrianus</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=Manrope:wght@400;500;600;700&display=swap">
+<style>
+:root{
+  --chrome:#22201C; --pannello:#2C2A25; --alzata:#35322B; --linea:rgba(240,234,222,.13);
+  --testo:#EFEAE0; --tenue:#A79E8D; --fioco:#6F6859;
+  --oro:#C8A24B; --oro-scuro:#8A6C2C; --rosso:#C9705F;
+  --r:10px; --ar:'Archivo','Helvetica Neue',Arial,sans-serif;
+  --ma:'Manrope','Helvetica Neue',Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;background:var(--chrome);color:var(--testo);font-family:var(--ma);font-size:14px}
+button,input,select,textarea{font:inherit;color:inherit}
+.app{display:flex;flex-direction:column;height:100%;min-height:0}
+
+/* ---- barra superiore ---- */
+.barra{display:flex;align-items:center;gap:10px;flex-wrap:wrap;
+  padding:12px 16px;background:var(--pannello);border-bottom:1px solid var(--linea)}
+.marca{font-family:var(--ar);font-weight:800;letter-spacing:.14em;font-size:12px;color:var(--oro);
+  text-transform:uppercase}
+.marca b{color:var(--testo);display:block;letter-spacing:.06em;font-size:15px;margin-top:2px}
+.sp{flex:1}
+.btn{display:inline-flex;align-items:center;gap:7px;padding:9px 14px;border:1px solid var(--linea);
+  background:var(--alzata);border-radius:var(--r);cursor:pointer;font-family:var(--ar);font-weight:700;
+  font-size:13px;white-space:nowrap}
+.btn:hover{border-color:var(--fioco)}
+.btn:focus-visible{outline:2px solid var(--oro);outline-offset:2px}
+.btn.primario{background:var(--oro);color:#241F16;border-color:var(--oro)}
+.btn.pericolo:hover{border-color:var(--rosso);color:var(--rosso)}
+.btn[disabled]{opacity:.45;cursor:not-allowed}
+
+/* ---- corpo a tre colonne ---- */
+.corpo{flex:1;display:grid;grid-template-columns:262px minmax(0,1fr) 300px;min-height:0}
+.col{min-height:0;overflow:auto;background:var(--pannello)}
+.col.sx{border-right:1px solid var(--linea)}
+.col.dx{border-left:1px solid var(--linea)}
+.tit{font-family:var(--ar);font-weight:800;font-size:11px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--tenue);padding:14px 14px 8px}
+
+/* ---- elenco elementi ---- */
+.voce{display:flex;align-items:center;gap:9px;padding:9px 14px;cursor:pointer;border-left:3px solid transparent}
+.voce:hover{background:var(--alzata)}
+.voce.sel{background:var(--alzata);border-left-color:var(--oro)}
+.voce .n{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:13px}
+.voce .t{font-size:11px;color:var(--fioco);font-variant-numeric:tabular-nums}
+.pallino{width:8px;height:8px;border-radius:50%;flex:0 0 8px}
+
+/* ---- tela ---- */
+.tela-zona{display:flex;align-items:center;justify-content:center;padding:18px;background:var(--chrome);
+  min-height:0;overflow:auto}
+.tela-guscio{position:relative;flex:0 0 auto;box-shadow:0 18px 60px rgba(0,0,0,.5)}
+.tela{position:absolute;top:0;left:0;width:1080px;height:1920px;transform-origin:top left;
+  overflow:hidden}
+.el{position:absolute;cursor:grab}
+.el.sel{outline:2px solid var(--oro);outline-offset:2px}
+.el.trascino{cursor:grabbing}
+
+/* ---- pannello proprieta' ---- */
+.campo{padding:0 14px 12px}
+.campo label{display:block;font-family:var(--ar);font-weight:700;font-size:10px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--tenue);margin-bottom:5px}
+.campo input,.campo select,.campo textarea{width:100%;padding:8px 10px;background:var(--chrome);
+  border:1px solid var(--linea);border-radius:8px}
+.campo input:focus,.campo select:focus,.campo textarea:focus{outline:2px solid var(--oro);outline-offset:0;border-color:transparent}
+.campo textarea{min-height:82px;resize:vertical;font-family:var(--ma);line-height:1.45}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+.tris{display:grid;grid-template-columns:1fr 1fr 1fr;gap:9px}
+input[type=color]{padding:3px;height:38px;cursor:pointer}
+.vuoto{padding:22px 16px;color:var(--fioco);line-height:1.6}
+
+/* ---- linea del tempo ---- */
+.tempo{background:var(--pannello);border-top:1px solid var(--linea);padding:10px 14px 14px;
+  max-height:38vh;display:flex;flex-direction:column;min-height:0}
+.tempo-testa{display:flex;align-items:center;gap:12px;margin-bottom:9px}
+.orologio{font-family:var(--ar);font-weight:800;font-variant-numeric:tabular-nums;color:var(--oro);
+  font-size:16px;min-width:74px}
+.scrub{flex:1;accent-color:var(--oro)}
+.piste{overflow:auto;min-height:0;position:relative}
+.pista{display:flex;align-items:center;gap:8px;height:26px}
+.pista .et{flex:0 0 118px;font-size:11px;color:var(--tenue);overflow:hidden;text-overflow:ellipsis;
+  white-space:nowrap}
+.rail{position:relative;flex:1;height:16px;background:var(--chrome);border-radius:5px}
+.barretta{position:absolute;top:0;height:16px;border-radius:5px;background:var(--oro-scuro);
+  cursor:grab;display:flex;align-items:center;justify-content:space-between}
+.barretta.sel{background:var(--oro)}
+.maniglia{width:7px;height:100%;cursor:ew-resize;border-radius:5px;background:rgba(0,0,0,.28)}
+.testina{position:absolute;top:0;bottom:0;width:2px;background:var(--rosso);pointer-events:none;z-index:5}
+
+.nota{padding:10px 14px;color:var(--fioco);font-size:12px;line-height:1.55;border-top:1px solid var(--linea)}
+.chip{display:inline-block;padding:2px 7px;border-radius:999px;background:var(--alzata);
+  border:1px solid var(--linea);font-size:11px;color:var(--tenue);margin-left:6px}
+
+@media (max-width:900px){
+  .corpo{grid-template-columns:1fr;grid-template-rows:auto minmax(220px,1fr) auto}
+  .col.sx,.col.dx{max-height:210px;border:0;border-bottom:1px solid var(--linea)}
+  .tempo{max-height:44vh}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="app" id="app">
+  <div class="barra">
+    <div class="marca">Banco di montaggio<b id="tit-reel">—</b></div>
+    <span class="chip" id="chip-durata">—</span>
+    <div class="sp"></div>
+    <button class="btn" id="b-testo">+ Scritta</button>
+    <button class="btn" id="b-fascia">+ Forma</button>
+    <button class="btn" id="b-img">+ Immagine</button>
+    <button class="btn" id="b-sfondo">Sfondo</button>
+    <button class="btn" id="b-dup">Duplica</button>
+    <button class="btn pericolo" id="b-del">Elimina</button>
+    <button class="btn" id="b-json">Esporta file</button>
+    <button class="btn primario" id="b-salva">Salva</button>
+  </div>
+
+  <div class="corpo">
+    <div class="col sx">
+      <div class="tit">Elementi <span id="conta"></span></div>
+      <div id="elenco"></div>
+      <div class="nota">Clicca un elemento per selezionarlo, trascinalo sulla tela per spostarlo.
+        Nella linea del tempo trascina la barretta per spostare quando compare, i bordi per quanto dura.</div>
+    </div>
+
+    <div class="tela-zona" id="tela-zona">
+      <div class="tela-guscio" id="tela-guscio"><div class="tela" id="tela"></div></div>
+    </div>
+
+    <div class="col dx" id="pannello">
+      <div class="vuoto">Nessun elemento selezionato.</div>
+    </div>
+  </div>
+
+  <div class="tempo">
+    <div class="tempo-testa">
+      <button class="btn" id="b-play">▶ Riproduci</button>
+      <span class="orologio" id="orologio">0,00 s</span>
+      <input class="scrub" id="scrub" type="range" min="0" max="1000" value="0" aria-label="Posizione nel tempo">
+    </div>
+    <div class="piste" id="piste"></div>
+  </div>
+</div>
+
+<script id="scena" type="application/json">{
+ "versione": 1,
+ "titolo": "Il costo del vuoto",
+ "data": "2026-09-16",
+ "durata": 25.0,
+ "fondo": "#FAF7F1",
+ "sfondo_immagine": null,
+ "elementi": [
+  {
+   "id": "marchio",
+   "nome": "Marchio Hadrianus",
+   "tipo": "testo",
+   "testo": "HADRIANUS",
+   "x": 64,
+   "y": 112,
+   "w": 952,
+   "font": "Archivo",
+   "peso": 800,
+   "size": 33,
+   "colore": "#2E2A25",
+   "allinea": "center",
+   "tracking": 9,
+   "t_in": 0.0,
+   "t_out": 25.0,
+   "anim_in": "nessuna",
+   "anim_out": "nessuna"
+  },
+  {
+   "id": "sottomarchio",
+   "nome": "Sottotitolo marchio",
+   "tipo": "testo",
+   "testo": "MULTISERVICE",
+   "x": 64,
+   "y": 160,
+   "w": 952,
+   "font": "Manrope",
+   "peso": 600,
+   "size": 17,
+   "colore": "#5A5349",
+   "allinea": "center",
+   "tracking": 7,
+   "t_in": 0.0,
+   "t_out": 25.0,
+   "anim_in": "nessuna",
+   "anim_out": "nessuna"
+  },
+  {
+   "id": "fascia_gancio",
+   "nome": "Fascia dietro il gancio",
+   "tipo": "fascia",
+   "x": 0,
+   "y": 790,
+   "w": 1080,
+   "h": 230,
+   "fondo": "#F5F0E6",
+   "raggio": 0,
+   "t_in": 0.0,
+   "t_out": 1.45,
+   "anim_in": "entra-sinistra",
+   "anim_out": "taglio",
+   "dur_in": 0.3
+  },
+  {
+   "id": "gancio",
+   "nome": "Gancio · la frase negata",
+   "tipo": "testo",
+   "testo": "Una casa vuota non costa niente.",
+   "x": 64,
+   "y": 820,
+   "w": 952,
+   "font": "Archivo",
+   "peso": 900,
+   "size": 70,
+   "colore": "#2E2A25",
+   "t_in": 0.0,
+   "t_out": 1.45,
+   "anim_in": "maschera-basso",
+   "anim_out": "esce-alto",
+   "dur_in": 0.18
+  },
+  {
+   "id": "cancellatura",
+   "nome": "Riga oro che cancella",
+   "tipo": "fascia",
+   "x": 64,
+   "y": 900,
+   "w": 952,
+   "h": 6,
+   "fondo": "#C8A24B",
+   "raggio": 3,
+   "t_in": 0.55,
+   "t_out": 1.45,
+   "anim_in": "maschera-sinistra",
+   "anim_out": "taglio",
+   "dur_in": 0.25
+  },
+  {
+   "id": "falso",
+   "nome": "«Falso.»",
+   "tipo": "testo",
+   "testo": "Falso.",
+   "x": 64,
+   "y": 830,
+   "w": 952,
+   "font": "Archivo",
+   "peso": 900,
+   "size": 130,
+   "colore": "#86692A",
+   "t_in": 1.25,
+   "t_out": 2.6,
+   "anim_in": "entra-basso",
+   "anim_out": "taglio",
+   "dur_in": 0.2
+  },
+  {
+   "id": "titolo_lista",
+   "nome": "Titolo della lista",
+   "tipo": "testo",
+   "testo": "Cinque voci che corrono\na serranda chiusa",
+   "x": 64,
+   "y": 360,
+   "w": 952,
+   "font": "Archivo",
+   "peso": 900,
+   "size": 62,
+   "colore": "#2E2A25",
+   "t_in": 2.6,
+   "t_out": 10.4,
+   "anim_in": "entra-basso",
+   "anim_out": "taglio",
+   "dur_in": 0.3
+  },
+  {
+   "id": "voce1",
+   "nome": "Voce 01 · IMU",
+   "tipo": "testo",
+   "testo": "<span style=\"color:#86692A; font-weight:900\">01<\/span>&nbsp;&nbsp;&nbsp;IMU<br><span style=\"font-family:Manrope, sans-serif; font-weight:500; font-size:33px; color:#5A5349\">Acconto 16 giugno, saldo 16 dicembre.<\/span>",
+   "x": 64,
+   "y": 570,
+   "w": 952,
+   "h": 150,
+   "fondo": "#F5F0E6",
+   "raggio": 20,
+   "padding": "0 28px",
+   "font": "Archivo",
+   "peso": 800,
+   "size": 50,
+   "colore": "#2E2A25",
+   "lh": 1.24,
+   "t_in": 3.4,
+   "t_out": 10.4,
+   "anim_in": "entra-sinistra",
+   "anim_out": "taglio",
+   "dur_in": 0.3
+  },
+  {
+   "id": "voce2",
+   "nome": "Voce 02 · Tassa rifiuti",
+   "tipo": "testo",
+   "testo": "<span style=\"color:#86692A; font-weight:900\">02<\/span>&nbsp;&nbsp;&nbsp;Tassa rifiuti<br><span style=\"font-family:Manrope, sans-serif; font-weight:500; font-size:33px; color:#5A5349\">Anche se non risiede nessuno.<\/span>",
+   "x": 64,
+   "y": 736,
+   "w": 952,
+   "h": 150,
+   "fondo": "#F5F0E6",
+   "raggio": 20,
+   "padding": "0 28px",
+   "font": "Archivo",
+   "peso": 800,
+   "size": 50,
+   "colore": "#2E2A25",
+   "lh": 1.24,
+   "t_in": 4.6,
+   "t_out": 10.4,
+   "anim_in": "entra-sinistra",
+   "anim_out": "taglio",
+   "dur_in": 0.3
+  },
+  {
+   "id": "voce3",
+   "nome": "Voce 03 · Quote condominiali",
+   "tipo": "testo",
+   "testo": "<span style=\"color:#86692A; font-weight:900\">03<\/span>&nbsp;&nbsp;&nbsp;Quote condominiali<br><span style=\"font-family:Manrope, sans-serif; font-weight:500; font-size:33px; color:#5A5349\">Ordinarie, sui millesimi.<\/span>",
+   "x": 64,
+   "y": 902,
+   "w": 952,
+   "h": 150,
+   "fondo": "#F5F0E6",
+   "raggio": 20,
+   "padding": "0 28px",
+   "font": "Archivo",
+   "peso": 800,
+   "size": 50,
+   "colore": "#2E2A25",
+   "lh": 1.24,
+   "t_in": 5.8,
+   "t_out": 10.4,
+   "anim_in": "entra-sinistra",
+   "anim_out": "taglio",
+   "dur_in": 0.3
+  },
+  {
+   "id": "voce4",
+   "nome": "Voce 04 · Assicurazione",
+   "tipo": "testo",
+   "testo": "<span style=\"color:#86692A; font-weight:900\">04<\/span>&nbsp;&nbsp;&nbsp;Assicurazione<br><span style=\"font-family:Manrope, sans-serif; font-weight:500; font-size:33px; color:#5A5349\">Copre l'anno, chiusa o aperta.<\/span>",
+   "x": 64,
+   "y": 1068,
+   "w": 952,
+   "h": 150,
+   "fondo": "#F5F0E6",
+   "raggio": 20,
+   "padding": "0 28px",
+   "font": "Archivo",
+   "peso": 800,
+   "size": 50,
+   "colore": "#2E2A25",
+   "lh": 1.24,
+   "t_in": 7.0,
+   "t_out": 10.4,
+   "anim_in": "entra-sinistra",
+   "anim_out": "taglio",
+   "dur_in": 0.3
+  },
+  {
+   "id": "voce5",
+   "nome": "Voce 05 · Quota fissa dei contatori",
+   "tipo": "testo",
+   "testo": "<span style=\"color:#86692A; font-weight:900\">05<\/span>&nbsp;&nbsp;&nbsp;Quota fissa dei contatori<br><span style=\"font-family:Manrope, sans-serif; font-weight:500; font-size:33px; color:#5A5349\">C'è anche a consumo zero.<\/span>",
+   "x": 64,
+   "y": 1234,
+   "w": 952,
+   "h": 150,
+   "fondo": "#F5F0E6",
+   "raggio": 20,
+   "padding": "0 28px",
+   "font": "Archivo",
+   "peso": 800,
+   "size": 50,
+   "colore": "#2E2A25",
+   "lh": 1.24,
+   "t_in": 8.2,
+   "t_out": 10.4,
+   "anim_in": "entra-sinistra",
+   "anim_out": "taglio",
+   "dur_in": 0.3
+  },
+  {
+   "id": "riscatto",
+   "nome": "Frase di riscatto",
+   "tipo": "testo",
+   "testo": "Nessuno te l'ha mai\nmesso su una riga sola.",
+   "x": 64,
+   "y": 1080,
+   "w": 952,
+   "font": "Archivo",
+   "peso": 900,
+   "size": 62,
+   "colore": "#2E2A25",
+   "t_in": 10.4,
+   "t_out": 12.6,
+   "anim_in": "maschera-sinistra",
+   "anim_out": "taglio",
+   "dur_in": 0.34
+  },
+  {
+   "id": "serranda",
+   "nome": "Serranda che scende",
+   "tipo": "fascia",
+   "x": 64,
+   "y": 420,
+   "w": 952,
+   "h": 520,
+   "fondo": "#C9BFA9",
+   "raggio": 20,
+   "t_in": 12.6,
+   "t_out": 15.2,
+   "anim_in": "maschera-alto",
+   "anim_out": "taglio",
+   "dur_in": 0.5
+  },
+  {
+   "id": "contatore",
+   "nome": "Testo · il contatore gira",
+   "tipo": "testo",
+   "testo": "Il contatore gira anche\na serranda chiusa.",
+   "x": 64,
+   "y": 1290,
+   "w": 952,
+   "font": "Archivo",
+   "peso": 900,
+   "size": 66,
+   "colore": "#2E2A25",
+   "t_in": 13.15,
+   "t_out": 15.2,
+   "anim_in": "entra-basso",
+   "anim_out": "taglio",
+   "dur_in": 0.26
+  },
+  {
+   "id": "rib1",
+   "nome": "Ribaltamento · riga 1",
+   "tipo": "testo",
+   "testo": "Quelle voci non spariscono.",
+   "x": 64,
+   "y": 820,
+   "w": 952,
+   "font": "Archivo",
+   "peso": 900,
+   "size": 62,
+   "colore": "#2E2A25",
+   "t_in": 15.2,
+   "t_out": 17.2,
+   "anim_in": "entra-basso",
+   "anim_out": "taglio",
+   "dur_in": 0.24
+  },
+  {
+   "id": "rib2",
+   "nome": "Ribaltamento · riga 2",
+   "tipo": "testo",
+   "testo": "Cambia da dove escono i soldi.",
+   "x": 64,
+   "y": 960,
+   "w": 952,
+   "font": "Manrope",
+   "peso": 500,
+   "size": 46,
+   "colore": "#5A5349",
+   "t_in": 15.55,
+   "t_out": 17.2,
+   "anim_in": "entra-basso",
+   "anim_out": "taglio",
+   "dur_in": 0.24
+  },
+  {
+   "id": "fascia_stipendio",
+   "nome": "Fascia · dal tuo stipendio",
+   "tipo": "testo",
+   "testo": "Dal tuo stipendio",
+   "x": 64,
+   "y": 620,
+   "w": 952,
+   "h": 310,
+   "fondo": "#F5F0E6",
+   "raggio": 24,
+   "padding": "0 40px",
+   "font": "Archivo",
+   "peso": 800,
+   "size": 58,
+   "colore": "#5A5349",
+   "t_in": 17.2,
+   "t_out": 19.1,
+   "anim_in": "sfuma",
+   "anim_out": "sfuma",
+   "dur_in": 0.15
+  },
+  {
+   "id": "fascia_casa",
+   "nome": "Fascia · dalla casa",
+   "tipo": "testo",
+   "testo": "Dalla casa",
+   "x": 64,
+   "y": 940,
+   "w": 952,
+   "h": 620,
+   "fondo": "#C8A24B",
+   "raggio": 24,
+   "padding": "0 40px",
+   "font": "Archivo",
+   "peso": 800,
+   "size": 58,
+   "colore": "#2E2A25",
+   "t_in": 17.2,
+   "t_out": 20.1,
+   "anim_in": "sfuma",
+   "anim_out": "taglio",
+   "dur_in": 0.15
+  },
+  {
+   "id": "chiave",
+   "nome": "Riga chiave",
+   "tipo": "testo",
+   "testo": "L'unica voce che compare solo\nse la casa ha incassato.",
+   "x": 64,
+   "y": 1240,
+   "w": 952,
+   "font": "Archivo",
+   "peso": 800,
+   "size": 60,
+   "colore": "#2E2A25",
+   "lh": 1.22,
+   "t_in": 20.1,
+   "t_out": 24.4,
+   "anim_in": "maschera-alto",
+   "anim_out": "taglio",
+   "dur_in": 0.3
+  },
+  {
+   "id": "badge15",
+   "nome": "Badge 15%",
+   "tipo": "testo",
+   "testo": "15%",
+   "x": 64,
+   "y": 1470,
+   "w": 220,
+   "h": 92,
+   "fondo": "#C8A24B",
+   "raggio": 46,
+   "padding": "0 40px",
+   "font": "Archivo",
+   "peso": 900,
+   "size": 56,
+   "colore": "#2E2A25",
+   "allinea": "center",
+   "t_in": 21.1,
+   "t_out": 24.4,
+   "anim_in": "scatto",
+   "anim_out": "taglio",
+   "dur_in": 0.2
+  },
+  {
+   "id": "firma",
+   "nome": "Firma di brand",
+   "tipo": "testo",
+   "testo": "Guadagniamo solo se guadagni tu.",
+   "x": 64,
+   "y": 1610,
+   "w": 952,
+   "font": "Manrope",
+   "peso": 600,
+   "size": 33,
+   "colore": "#5A5349",
+   "t_in": 22.15,
+   "t_out": 24.5,
+   "anim_in": "entra-basso",
+   "anim_out": "taglio",
+   "dur_in": 0.24
+  },
+  {
+   "id": "cta",
+   "nome": "Banda CTA",
+   "tipo": "testo",
+   "testo": "SCRIVI CALCOLO IN DM",
+   "x": 64,
+   "y": 1680,
+   "w": 952,
+   "h": 120,
+   "fondo": "#C8A24B",
+   "raggio": 60,
+   "padding": "0 30px",
+   "font": "Archivo",
+   "peso": 800,
+   "size": 50,
+   "colore": "#2E2A25",
+   "allinea": "center",
+   "tracking": 1,
+   "t_in": 22.0,
+   "t_out": 24.4,
+   "anim_in": "entra-basso",
+   "anim_out": "esce-basso",
+   "dur_in": 0.28,
+   "dur_out": 0.35
+  }
+ ]
+}</script>
+<script id="app-code">
+(function(){
+"use strict";
+
+// ---------------------------------------------------------------- stato
+var scena = JSON.parse(document.getElementById('scena').textContent);
+var selId = null, t = 0, riproduce = false, ultimoFrame = 0;
+
+var ANIM_IN = ['nessuna','sfuma','maschera-basso','maschera-alto','maschera-sinistra',
+               'entra-basso','entra-alto','entra-sinistra','entra-destra','scatto'];
+var ANIM_OUT = ['taglio','sfuma','esce-alto','esce-basso','maschera-chiude'];
+var ETICHETTE = {
+  'nessuna':'Nessuna — giaà presente','sfuma':'Sfuma','maschera-basso':'Si scopre dal basso',
+  'maschera-alto':'Si scopre dall’alto','maschera-sinistra':'Si scopre da sinistra',
+  'entra-basso':'Entra dal basso','entra-alto':'Entra dall’alto',
+  'entra-sinistra':'Entra da sinistra','entra-destra':'Entra da destra','scatto':'Scatta in avanti',
+  'taglio':'Taglio secco','esce-alto':'Esce in alto','esce-basso':'Esce in basso',
+  'maschera-chiude':'Si richiude'
+};
+
+function stato(anim, dentro){
+  if(dentro) return {o:1, tx:0, ty:0, s:1, clip:'inset(0 0 0 0)'};
+  switch(anim){
+    case 'nessuna':           return {o:1,tx:0,ty:0,s:1,clip:'inset(0 0 0 0)'};
+    case 'maschera-basso':    return {o:1,tx:0,ty:0,s:1,clip:'inset(100% 0 0 0)'};
+    case 'maschera-alto':     return {o:1,tx:0,ty:0,s:1,clip:'inset(0 0 100% 0)'};
+    case 'maschera-sinistra': return {o:1,tx:0,ty:0,s:1,clip:'inset(0 100% 0 0)'};
+    case 'maschera-chiude':   return {o:1,tx:0,ty:0,s:1,clip:'inset(0 0 100% 0)'};
+    case 'entra-basso':       return {o:0,tx:0,ty:120,s:1,clip:'inset(0 0 0 0)'};
+    case 'entra-alto':        return {o:0,tx:0,ty:-120,s:1,clip:'inset(0 0 0 0)'};
+    case 'entra-sinistra':    return {o:0,tx:-80,ty:0,s:1,clip:'inset(0 0 0 0)'};
+    case 'entra-destra':      return {o:0,tx:80,ty:0,s:1,clip:'inset(0 0 0 0)'};
+    case 'esce-alto':         return {o:0,tx:0,ty:-150,s:1,clip:'inset(0 0 0 0)'};
+    case 'esce-basso':        return {o:0,tx:0,ty:150,s:1,clip:'inset(0 0 0 0)'};
+    case 'scatto':            return {o:0,tx:0,ty:0,s:1.14,clip:'inset(0 0 0 0)'};
+    case 'taglio':            return {o:0,tx:0,ty:0,s:1,clip:'inset(0 0 0 0)'};
+    default:                  return {o:0,tx:0,ty:0,s:1,clip:'inset(0 0 0 0)'};
+  }
+}
+// stessa curva del montatore: cubic-bezier(.16,1,.3,1), decelera forte
+function ease(x){ return x>=1?1: 1-Math.pow(1-x,3.2); }
+function fra(a,b,k){ return a+(b-a)*k; }
+
+function statoAl(el, tempo){
+  var tin = +el.t_in||0, tout = (el.t_out==null? scena.durata : +el.t_out);
+  var din = +el.dur_in||0.26, dout = +el.dur_out||0.2;
+  var dentro = {o:1,tx:0,ty:0,s:1,clip:'inset(0 0 0 0)'};
+  if(tempo < tin) { var a = stato(el.anim_in||'sfuma', false); a.fuori = tin>0.001; return a; }
+  if(tempo < tin + din && tin > 0.001){
+    var f = stato(el.anim_in||'sfuma', false), k = ease((tempo-tin)/din);
+    return {o:fra(f.o,1,k), tx:fra(f.tx,0,k), ty:fra(f.ty,0,k), s:fra(f.s,1,k),
+            clip: k>=1?'inset(0 0 0 0)':mixClip(f.clip,k)};
+  }
+  if(tempo >= tout){
+    var ao = el.anim_out||'taglio';
+    if(ao==='taglio') return {o:0,tx:0,ty:0,s:1,clip:'inset(0 0 0 0)'};
+    var g = stato(ao,false), k2 = ease(Math.min((tempo-tout)/dout,1));
+    return {o:fra(1,g.o,k2), tx:fra(0,g.tx,k2), ty:fra(0,g.ty,k2), s:fra(1,g.s,k2),
+            clip: mixClip(g.clip, 1-k2)};
+  }
+  return dentro;
+}
+function mixClip(clip,k){
+  // interpola solo la percentuale della maschera
+  var m = clip.match(/inset\(([-\d.]+)%? ([-\d.]+)%? ([-\d.]+)%? ([-\d.]+)%?\)/);
+  if(!m) return 'inset(0 0 0 0)';
+  var v = [1,2,3,4].map(function(i){ return parseFloat(m[i])*(1-k); });
+  return 'inset('+v[0]+'% '+v[1]+'% '+v[2]+'% '+v[3]+'%)';
+}
+
+// ---------------------------------------------------------------- tela
+var tela = document.getElementById('tela');
+var zona = document.getElementById('tela-zona');
+
+function scalaTela(){
+  // Il guscio prende la misura RIDOTTA e la tela ci sta dentro scalata
+  // dall'angolo: scalare la tela e basta lasciava il suo ingombro a 1080x1920
+  // e la zona la tagliava.
+  var w = zona.clientWidth - 36, h = zona.clientHeight - 36;
+  var k = Math.min(w/1080, h/1920);
+  if(!isFinite(k) || k<=0) k = 0.28;
+  k = Math.max(k, 0.08);
+  tela.style.transform = 'scale('+k+')';
+  tela.dataset.k = k;
+  var g = document.getElementById('tela-guscio');
+  g.style.width = (1080*k)+'px';
+  g.style.height = (1920*k)+'px';
+}
+
+function htmlElemento(el){
+  var font = el.font==='Manrope' ? "'Manrope',sans-serif" : "'Archivo',sans-serif";
+  var s = '';   // la geometria sta sul contenitore, non qui
+  if(el.tipo==='immagine'){
+    return '<div style="'+s+'height:'+(el.h||600)+'px;overflow:hidden;border-radius:'+(el.raggio||0)+'px">'
+      +'<img src="'+(el.src||'')+'" style="width:100%;height:100%;object-fit:cover;display:block" alt=""></div>';
+  }
+  if(el.tipo==='fascia'){
+    return '<div style="'+s+'height:'+(el.h||200)+'px;background:'+(el.fondo||'#F5F0E6')
+      +';border-radius:'+(el.raggio||0)+'px"></div>';
+  }
+  var box='';
+  var testo = String(el.testo||'').replace(/\n/g,'<br>');
+  if(el.fondo){
+    box = 'background:'+el.fondo+';border-radius:'+(el.raggio||0)+'px;padding:'+(el.padding||'22px 30px')+';';
+    if(el.h){
+      box += 'height:'+el.h+'px;display:flex;align-items:center;justify-content:'
+           + (el.allinea==='center'?'center':el.allinea==='right'?'flex-end':'flex-start')+';';
+      testo = '<div style="width:100%">'+testo+'</div>';
+    }
+  }
+  return '<div style="'+s+box+'font-family:'+font+';font-weight:'+(el.peso||800)+';font-size:'
+    +(el.size||45)+'px;line-height:'+(el.lh||1.16)+';letter-spacing:'+(el.tracking==null?-0.4:el.tracking)
+    +'px;color:'+(el.colore||'#2E2A25')+';text-align:'+(el.allinea||'left')+'">'+testo+'</div>';
+}
+
+function disegnaTela(){
+  tela.style.background = scena.fondo || '#FAF7F1';
+  var html = '';
+  if(scena.sfondo_immagine){
+    html += '<img src="'+scena.sfondo_immagine+'" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" alt="">';
+  }
+  scena.elementi.forEach(function(el){
+    var st = statoAl(el, t);
+    var sel = el.id===selId ? ' sel' : '';
+    // Il contenitore porta la geometria dell'elemento: se resta a dimensione
+    // zero il clip-path ritaglia via tutto il contenuto.
+    html += '<div class="el'+sel+'" data-id="'+el.id+'" style="left:'+(el.x|0)+'px;top:'+(el.y|0)
+      +'px;width:'+(el.w||952)+'px;opacity:'+st.o
+      +';transform:translate('+st.tx+'px,'+st.ty+'px) scale('+st.s+');clip-path:'+st.clip+'">'
+      + htmlElemento(el) + '</div>';
+  });
+  tela.innerHTML = html;
+}
+
+// ---------------------------------------------------------------- elenco
+function disegnaElenco(){
+  var e = document.getElementById('elenco'), h='';
+  scena.elementi.forEach(function(el){
+    var vivo = t >= (+el.t_in||0) && t < (el.t_out==null?scena.durata:+el.t_out);
+    h += '<div class="voce'+(el.id===selId?' sel':'')+'" data-id="'+el.id+'">'
+      + '<span class="pallino" style="background:'+(vivo?'var(--oro)':'var(--fioco)')+'"></span>'
+      + '<span class="n">'+escapa(el.nome||el.id)+'</span>'
+      + '<span class="t">'+fmt(el.t_in)+'–'+fmt(el.t_out)+'</span></div>';
+  });
+  e.innerHTML = h;
+  document.getElementById('conta').textContent = '(' + scena.elementi.length + ')';
+}
+function escapa(s){ return String(s).replace(/[&<>"]/g,function(c){
+  return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
+function fmt(x){ return (Math.round((+x||0)*10)/10).toString().replace('.',',')+'s'; }
+
+// ---------------------------------------------------------------- pannello
+function campo(et, corpo){ return '<div class="campo"><label>'+et+'</label>'+corpo+'</div>'; }
+function num(k,v,step){ return '<input type="number" step="'+(step||1)+'" data-k="'+k+'" value="'+(v==null?'':v)+'">'; }
+function sel(k,v,opzioni){
+  var h='<select data-k="'+k+'">';
+  opzioni.forEach(function(o){
+    var val = typeof o==='string'? o : o[0], lab = typeof o==='string'? (ETICHETTE[o]||o) : o[1];
+    h += '<option value="'+val+'"'+(val===v?' selected':'')+'>'+escapa(lab)+'</option>';
+  });
+  return h+'</select>';
+}
+
+function disegnaPannello(){
+  var p = document.getElementById('pannello');
+  var el = trova(selId);
+  if(!el){ p.innerHTML = '<div class="vuoto">Nessun elemento selezionato.<br><br>Clicca una scritta sulla tela, oppure una riga nell’elenco a sinistra.</div>'; return; }
+  var h = '<div class="tit">'+escapa(el.nome||el.id)+'</div>';
+  h += campo('Nome', '<input type="text" data-k="nome" value="'+escapa(el.nome||'')+'">');
+  if(el.tipo!=='fascia' && el.tipo!=='immagine'){
+    h += campo('Testo', '<textarea data-k="testo">'+escapa(el.testo||'')+'</textarea>');
+  }
+  if(el.tipo==='immagine'){
+    h += campo('Immagine', '<button class="btn" id="b-sost-img" style="width:100%">Sostituisci immagine</button>');
+  }
+  h += campo('Posizione', '<div class="duo">'+num('x',el.x)+num('y',el.y)+'</div>');
+  h += campo('Larghezza e altezza', '<div class="duo">'+num('w',el.w)+num('h',el.h)+'</div>');
+  if(el.tipo!=='fascia' && el.tipo!=='immagine'){
+    h += campo('Carattere', '<div class="duo">'+sel('font',el.font||'Archivo',['Archivo','Manrope'])
+      + sel('peso',String(el.peso||800),[['400','400 sottile'],['500','500'],['600','600'],['700','700'],['800','800'],['900','900 nero']])+'</div>');
+    h += campo('Corpo, interlinea, spaziatura', '<div class="tris">'+num('size',el.size)
+      +num('lh',el.lh==null?1.16:el.lh,0.02)+num('tracking',el.tracking==null?-0.4:el.tracking,0.1)+'</div>');
+    h += campo('Colore del testo', '<input type="color" data-k="colore" value="'+(el.colore||'#2E2A25')+'">');
+    h += campo('Allineamento', sel('allinea',el.allinea||'left',[['left','A sinistra'],['center','Al centro'],['right','A destra']]));
+  }
+  h += campo('Colore di fondo', '<div class="duo"><input type="color" data-k="fondo" value="'+(el.fondo||'#F5F0E6')+'">'
+    + '<button class="btn" id="b-nofondo">'+(el.fondo?'Togli fondo':'Senza fondo')+'</button></div>');
+  h += campo('Angoli arrotondati', num('raggio',el.raggio||0));
+  h += '<div class="tit">Tempi e animazione</div>';
+  h += campo('Compare a / sparisce a (secondi)', '<div class="duo">'+num('t_in',el.t_in,0.05)+num('t_out',el.t_out,0.05)+'</div>');
+  h += campo('Come entra', sel('anim_in', el.anim_in||'sfuma', ANIM_IN));
+  h += campo('Come esce', sel('anim_out', el.anim_out||'taglio', ANIM_OUT));
+  h += campo('Durata entrata / uscita (secondi)', '<div class="duo">'+num('dur_in',el.dur_in==null?0.26:el.dur_in,0.02)
+    +num('dur_out',el.dur_out==null?0.2:el.dur_out,0.02)+'</div>');
+  p.innerHTML = h;
+}
+
+function trova(id){ for(var i=0;i<scena.elementi.length;i++) if(scena.elementi[i].id===id) return scena.elementi[i]; return null; }
+
+// ---------------------------------------------------------------- linea del tempo
+function disegnaPiste(){
+  var c = document.getElementById('piste'), h='';
+  scena.elementi.forEach(function(el){
+    var a = (+el.t_in||0)/scena.durata*100;
+    var b = ((el.t_out==null?scena.durata:+el.t_out) - (+el.t_in||0))/scena.durata*100;
+    h += '<div class="pista"><span class="et">'+escapa(el.nome||el.id)+'</span>'
+      + '<span class="rail" data-rail="'+el.id+'">'
+      + '<span class="barretta'+(el.id===selId?' sel':'')+'" data-bar="'+el.id+'" '
+      + 'style="left:'+a+'%;width:'+Math.max(b,0.6)+'%">'
+      + '<i class="maniglia" data-lato="in"></i><i class="maniglia" data-lato="out"></i>'
+      + '</span></span></div>';
+  });
+  h += '<div class="testina" id="testina"></div>';
+  c.innerHTML = h;
+  posizionaTestina();
+}
+function posizionaTestina(){
+  var te = document.getElementById('testina'); if(!te) return;
+  var r = document.querySelector('.rail');
+  if(!r){ te.style.display='none'; return; }
+  var c = document.getElementById('piste');
+  var x = r.offsetLeft + r.offsetWidth * (t/scena.durata);
+  te.style.display='block'; te.style.left = x+'px';
+  te.style.height = c.scrollHeight+'px';
+}
+
+// ---------------------------------------------------------------- ridisegno
+function tutto(){ disegnaTela(); disegnaElenco(); disegnaPannello(); disegnaPiste(); orologio(); }
+function leggero(){ disegnaTela(); disegnaElenco(); orologio(); posizionaTestina(); }
+function orologio(){
+  document.getElementById('orologio').textContent = t.toFixed(2).replace('.',',')+' s';
+  document.getElementById('scrub').value = Math.round(t/scena.durata*1000);
+  document.getElementById('chip-durata').textContent = scena.durata.toFixed(1).replace('.',',')+' s · '
+    + scena.elementi.length + ' elementi';
+  document.getElementById('tit-reel').textContent = scena.titolo || 'Senza titolo';
+}
+
+// ---------------------------------------------------------------- interazioni
+document.getElementById('elenco').addEventListener('click', function(e){
+  var v = e.target.closest('.voce'); if(!v) return;
+  selId = v.dataset.id; tutto();
+});
+
+tela.addEventListener('pointerdown', function(e){
+  var d = e.target.closest('.el'); if(!d) return;
+  selId = d.dataset.id;
+  var el = trova(selId); if(!el) return;
+  var k = parseFloat(tela.dataset.k)||0.3;
+  var x0 = e.clientX, y0 = e.clientY, ex = +el.x||0, ey = +el.y||0, mosso = false;
+  d.classList.add('trascino');
+  tutto();
+  function muovi(ev){
+    var dx = (ev.clientX-x0)/k, dy = (ev.clientY-y0)/k;
+    if(!mosso && Math.abs(dx)+Math.abs(dy) < 3) return;
+    mosso = true;
+    el.x = Math.round(ex+dx); el.y = Math.round(ey+dy);
+    disegnaTela();
+  }
+  function su(){
+    window.removeEventListener('pointermove',muovi);
+    window.removeEventListener('pointerup',su);
+    if(mosso) tutto();
+  }
+  window.addEventListener('pointermove',muovi);
+  window.addEventListener('pointerup',su);
+  e.preventDefault();
+});
+
+document.getElementById('pannello').addEventListener('input', function(e){
+  var k = e.target.dataset.k; if(!k) return;
+  var el = trova(selId); if(!el) return;
+  var v = e.target.value;
+  if(['x','y','w','h','size','peso','raggio'].indexOf(k)>=0) v = v===''? null : parseInt(v,10);
+  else if(['t_in','t_out','lh','tracking','dur_in','dur_out'].indexOf(k)>=0) v = v===''? null : parseFloat(v);
+  if(v===null && ['h','w'].indexOf(k)>=0) delete el[k]; else el[k]=v;
+  if(k==='t_in'||k==='t_out'||k==='nome'){ disegnaElenco(); disegnaPiste(); }
+  disegnaTela();
+});
+document.getElementById('pannello').addEventListener('click', function(e){
+  var el = trova(selId); if(!el) return;
+  if(e.target.id==='b-nofondo'){ if(el.fondo) delete el.fondo; else el.fondo='#F5F0E6'; tutto(); }
+  if(e.target.id==='b-sost-img'){ scegliImmagine(function(url){ el.src=url; tutto(); }); }
+});
+
+// barrette della linea del tempo
+document.getElementById('piste').addEventListener('pointerdown', function(e){
+  var bar = e.target.closest('.barretta'); if(!bar) return;
+  var el = trova(bar.dataset.bar); if(!el) return;
+  selId = el.id;
+  var rail = bar.parentElement, larg = rail.offsetWidth;
+  var lato = e.target.dataset.lato || null;
+  var x0 = e.clientX, tin0 = +el.t_in||0, tout0 = (el.t_out==null?scena.durata:+el.t_out);
+  function muovi(ev){
+    var d = (ev.clientX-x0)/larg*scena.durata;
+    if(lato==='in') el.t_in = Math.max(0, Math.min(tout0-0.2, +(tin0+d).toFixed(2)));
+    else if(lato==='out') el.t_out = Math.min(scena.durata, Math.max(tin0+0.2, +(tout0+d).toFixed(2)));
+    else {
+      var dur = tout0-tin0;
+      var n = Math.max(0, Math.min(scena.durata-dur, tin0+d));
+      el.t_in = +n.toFixed(2); el.t_out = +(n+dur).toFixed(2);
+    }
+    disegnaPiste(); disegnaElenco(); disegnaTela();
+  }
+  function su(){ window.removeEventListener('pointermove',muovi); window.removeEventListener('pointerup',su); tutto(); }
+  window.addEventListener('pointermove',muovi); window.addEventListener('pointerup',su);
+  e.preventDefault(); e.stopPropagation();
+});
+
+// scrub e riproduzione
+document.getElementById('scrub').addEventListener('input', function(e){
+  riproduce = false; aggiornaPlay();
+  t = e.target.value/1000*scena.durata; leggero();
+});
+function aggiornaPlay(){ document.getElementById('b-play').textContent = riproduce ? '⏸ Pausa' : '▶ Riproduci'; }
+document.getElementById('b-play').addEventListener('click', function(){
+  riproduce = !riproduce; ultimoFrame = performance.now(); aggiornaPlay();
+  if(riproduce) requestAnimationFrame(passo);
+});
+function passo(ora){
+  if(!riproduce) return;
+  var dt = (ora-ultimoFrame)/1000; ultimoFrame = ora;
+  t += dt; if(t >= scena.durata) t = 0;   // il reel gira in cerchio
+  leggero();
+  requestAnimationFrame(passo);
+}
+
+// ---------------------------------------------------------------- aggiungere e togliere
+function nuovoId(p){ var i=1; while(trova(p+i)) i++; return p+i; }
+function aggiungi(el){ scena.elementi.push(el); selId = el.id; tutto(); }
+
+document.getElementById('b-testo').addEventListener('click', function(){
+  aggiungi({id:nuovoId('testo'), nome:'Nuova scritta', tipo:'testo', testo:'Scrivi qui',
+    x:64, y:800, w:952, font:'Archivo', peso:900, size:62, colore:'#2E2A25', allinea:'left',
+    lh:1.16, tracking:-0.4, t_in:+t.toFixed(2), t_out:Math.min(scena.durata,+(t+2.5).toFixed(2)),
+    anim_in:'entra-basso', anim_out:'taglio', dur_in:0.26, dur_out:0.2});
+});
+document.getElementById('b-fascia').addEventListener('click', function(){
+  aggiungi({id:nuovoId('forma'), nome:'Nuova forma', tipo:'fascia', x:64, y:700, w:952, h:240,
+    fondo:'#C8A24B', raggio:24, t_in:+t.toFixed(2), t_out:Math.min(scena.durata,+(t+2.5).toFixed(2)),
+    anim_in:'sfuma', anim_out:'taglio', dur_in:0.26, dur_out:0.2});
+});
+document.getElementById('b-img').addEventListener('click', function(){
+  scegliImmagine(function(url){
+    aggiungi({id:nuovoId('immagine'), nome:'Nuova immagine', tipo:'immagine', src:url,
+      x:64, y:300, w:952, h:620, raggio:24, t_in:+t.toFixed(2),
+      t_out:Math.min(scena.durata,+(t+3).toFixed(2)), anim_in:'sfuma', anim_out:'taglio',
+      dur_in:0.3, dur_out:0.2});
+  });
+});
+document.getElementById('b-sfondo').addEventListener('click', function(){
+  if(scena.sfondo_immagine && !confirm('C’è già uno sfondo. Vuoi sostituirlo?')) return;
+  scegliImmagine(function(url){ scena.sfondo_immagine = url; tutto(); });
+});
+document.getElementById('b-dup').addEventListener('click', function(){
+  var el = trova(selId); if(!el) return alert('Seleziona prima un elemento.');
+  var copia = JSON.parse(JSON.stringify(el));
+  copia.id = nuovoId(el.tipo||'elemento'); copia.nome = (el.nome||'Elemento')+' (copia)';
+  copia.y = (+el.y||0) + 40;
+  aggiungi(copia);
+});
+document.getElementById('b-del').addEventListener('click', function(){
+  var el = trova(selId); if(!el) return alert('Seleziona prima un elemento.');
+  if(!confirm('Elimino «'+(el.nome||el.id)+'»?')) return;
+  scena.elementi = scena.elementi.filter(function(x){ return x.id!==el.id; });
+  selId = null; tutto();
+});
+
+// scelta immagine: carica il file dentro l'artifact se si puo', altrimenti lo incorpora
+function scegliImmagine(poi){
+  var inp = document.createElement('input');
+  inp.type='file'; inp.accept='image/png,image/jpeg,image/webp,image/gif';
+  inp.onchange = function(){
+    var f = inp.files && inp.files[0]; if(!f) return;
+    if(window.claude && window.claude.assets){
+      window.claude.assets.upload(f).then(function(r){ poi(r.url); })
+        .catch(function(){ leggiComeDati(f, poi); });
+    } else leggiComeDati(f, poi);
+  };
+  inp.click();
+}
+function leggiComeDati(f, poi){
+  if(f.size > 1400000){
+    alert('Immagine troppo pesante da incorporare (oltre 1,4 MB). Usane una più leggera.');
+    return;
+  }
+  var r = new FileReader();
+  r.onload = function(){ poi(r.result); };
+  r.readAsDataURL(f);
+}
+
+// ---------------------------------------------------------------- salvataggio
+function paginaCompleta(){
+  var stile = document.querySelector('style').outerHTML;
+  var titolo = document.querySelector('title').outerHTML;
+  var font = document.querySelector('link[rel=stylesheet]').outerHTML;
+  var app = document.getElementById('app').cloneNode(true);
+  // la tela e i pannelli si ridisegnano da soli al caricamento: li svuoto
+  app.querySelector('#tela').innerHTML = '';
+  app.querySelector('#elenco').innerHTML = '';
+  app.querySelector('#piste').innerHTML = '';
+  app.querySelector('#pannello').innerHTML = '<div class="vuoto">Nessun elemento selezionato.</div>';
+  var dati = '<script id="scena" type="application/json">'
+    + JSON.stringify(scena).replace(/<\//g,'<\\/') + '<\/script>';
+  var codice = document.getElementById('app-code').outerHTML;
+  return '<!doctype html>\n<html lang="it">\n<head>\n<meta charset="utf-8">\n'
+    + '<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">\n'
+    + titolo + '\n' + font + '\n' + stile + '\n</head>\n<body>\n'
+    + app.outerHTML + '\n' + dati + '\n' + codice + '\n</body>\n</html>';
+}
+
+document.getElementById('b-salva').addEventListener('click', function(){
+  var b = this;
+  if(!(window.claude && window.claude.self)){
+    alert('Il salvataggio non è disponibile in questa vista. Usa «Esporta file».');
+    return;
+  }
+  b.disabled = true; b.textContent = 'Salvo…';
+  window.claude.self.publish(paginaCompleta()).then(function(){
+    b.textContent = 'Salvato';
+  }).catch(function(err){
+    b.disabled = false; b.textContent = 'Salva';
+    var c = err && err.code;
+    if(c==='conflict') return;   // la vista si ricarica da sola sulla versione buona
+    if(c==='not_writer' || c==='not_granted' || c==='consent_required'){
+      alert('Questa vista è in sola lettura: puoi modificare e usare «Esporta file», ma non salvare qui.');
+    } else {
+      alert('Non sono riuscito a salvare. Riprova fra poco, oppure usa «Esporta file».');
+    }
+  });
+});
+
+document.getElementById('b-json').addEventListener('click', function(){
+  var testo = JSON.stringify(scena, null, 2);
+  var nome = 'scene-' + (scena.data || 'reel') + '.json';
+  if(window.claude && window.claude.downloads){
+    window.claude.downloads.save({filename:nome, data:testo}).catch(function(){
+      mostraTesto(testo);
+    });
+  } else mostraTesto(testo);
+});
+function mostraTesto(testo){
+  var w = window.open('', '_blank');
+  if(w){ w.document.write('<pre style="white-space:pre-wrap;font:13px monospace">'
+    + testo.replace(/[&<]/g,function(c){return c==='&'?'&amp;':'&lt;';}) + '</pre>'); w.document.close(); }
+  else alert('Copia il file dalla console del browser.');
+}
+
+// ---------------------------------------------------------------- avvio
+window.addEventListener('resize', function(){ scalaTela(); posizionaTestina(); });
+document.addEventListener('keydown', function(e){
+  if(e.target.matches('input,textarea,select')) return;
+  if(e.key===' '){ e.preventDefault(); document.getElementById('b-play').click(); }
+});
+scalaTela(); tutto(); aggiornaPlay();
+})();
+</script>
