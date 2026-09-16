@@ -12,7 +12,7 @@ Regole ereditate dal reel del 15/09, che sono costate errori veri:
 """
 import os
 
-D = 17.0
+D = 25.0
 EASE = 'cubic-bezier(.16,1,.3,1)'
 HERE = os.path.dirname(os.path.abspath(__file__))
 
@@ -23,13 +23,22 @@ MA = "'Manrope', 'Helvetica Neue', Arial, sans-serif"
 
 GANCIO = 'Una casa vuota non costa niente.'
 TITOLO = ['Cinque voci che corrono', 'a serranda chiusa']
+# 1,2 s a voce: a 0,9 s le righe si leggevano a fatica.
 VOCI = [
-    ('01', 'IMU',                          'Acconto 16 giugno, saldo 16 dicembre.', 2.5),
-    ('02', 'Tassa rifiuti',                'Anche se non risiede nessuno.',         3.6),
-    ('03', 'Quote condominiali ordinarie', 'Sui millesimi, non sulle presenze.',    4.6),
-    ('04', 'Assicurazione',                "Copre l'anno, chiusa o aperta.",        5.5),
-    ('05', 'Quota fissa dei contatori',    "C'è anche a consumo zero.",             6.3),
+    ('01', 'IMU',                       'Acconto 16 giugno, saldo 16 dicembre.', 3.4),
+    ('02', 'Tassa rifiuti',             'Anche se non risiede nessuno.',         4.6),
+    ('03', 'Quote condominiali',        'Ordinarie, sui millesimi.',             5.8),
+    ('04', 'Assicurazione',             "Copre l'anno, chiusa o aperta.",        7.0),
+    ('05', 'Quota fissa dei contatori', "C'è anche a consumo zero.",             8.2),
 ]
+T_LISTA_FINE = 10.4      # la lista resta intera e ferma fino a qui
+T_RISCATTO   = 10.4
+T_SERRANDA   = 12.6
+T_RIBALTA    = 15.2
+T_SPLIT      = 17.2
+T_CHIAVE     = 20.1
+T_CTA        = 22.0
+T_RITIRO     = 24.4
 
 _kf = []
 
@@ -65,180 +74,180 @@ def costruisci():
     # ---------- 1 · il gancio negato, gia' in corsa al frame 0 ----------
     kf('gancio_in', [
         (0, 'clip-path: inset(46% 0 0 0)'),
-        (0.16, 'clip-path: inset(0 0 0 0)', EASE),
-        (0.9, 'clip-path: inset(0 0 0 0)'),
-        (1.1, 'clip-path: inset(0 0 100% 0)'),
-        (16.7, 'clip-path: inset(100% 0 0 0)', EASE),
-        (16.9, 'clip-path: inset(46% 0 0 0)'),     # loop: si richiude sul frame 0
+        (0.18, 'clip-path: inset(0 0 0 0)', EASE),
+        (1.25, 'clip-path: inset(0 0 0 0)'),
+        (1.45, 'clip-path: inset(0 0 100% 0)'),
+        (24.75, 'clip-path: inset(100% 0 0 0)', EASE),
         (D, 'clip-path: inset(46% 0 0 0)'),
     ])
     kf('gancio_su', [
         (0, 'transform: translateY(0)'),
-        (0.9, 'transform: translateY(0)', EASE),
-        (1.1, 'transform: translateY(-150px)'),
-        (16.69, 'transform: translateY(-150px)'),
-        (16.7, 'transform: translateY(0)'),
+        (1.25, 'transform: translateY(0)', EASE),
+        (1.45, 'transform: translateY(-160px)'),
+        (24.74, 'transform: translateY(-160px)'),
+        (24.75, 'transform: translateY(0)'),
         (D, 'transform: translateY(0)'),
     ])
-    kf('gancio_op', [(0, 'opacity:1'), (1.1, 'opacity:1'), (1.101, 'opacity:0'),
-                     (16.69, 'opacity:0'), (16.7, 'opacity:1'), (D, 'opacity:1')])
+    kf('gancio_op', [(0, 'opacity:1'), (1.45, 'opacity:1'), (1.451, 'opacity:0'),
+                     (24.74, 'opacity:0'), (24.75, 'opacity:1'), (D, 'opacity:1')])
     kf('fascia_dietro', [
         (0, 'transform: translateX(-18px)'),
-        (0.24, 'transform: translateX(0)', EASE),
+        (0.3, 'transform: translateX(0)', EASE),
         (D, 'transform: translateX(0)'),
     ])
-    # la cancellatura oro: secondo evento, a 0,4 s
     kf('cancella', [
         (0, 'width: 0%'),
-        (0.4, 'width: 0%', EASE),
-        (0.6, 'width: 100%'),
-        (1.1, 'width: 100%'),
-        (1.101, 'width: 0%'),
+        (0.55, 'width: 0%', EASE),
+        (0.8, 'width: 100%'),
+        (1.45, 'width: 100%'),
+        (1.451, 'width: 0%'),
         (D, 'width: 0%'),
     ])
     kf('falso', [
-        (0, 'opacity:0; transform: translateY(150px)'),
-        (0.899, 'opacity:0; transform: translateY(150px)', EASE),
-        (1.1, 'opacity:1; transform: translateY(0)'),
-        (1.899, 'opacity:1; transform: translateY(0)'),
-        (1.9, 'opacity:0; transform: translateY(0)'),
+        (0, 'opacity:0; transform: translateY(160px)'),
+        (1.249, 'opacity:0; transform: translateY(160px)', EASE),
+        (1.45, 'opacity:1; transform: translateY(0)'),
+        (2.599, 'opacity:1; transform: translateY(0)'),   # 1,15 s fermo: si legge
+        (2.6, 'opacity:0; transform: translateY(0)'),
         (D, 'opacity:0; transform: translateY(0)'),
     ])
 
     # ---------- 2 · titolo parola per parola + barra di avanzamento ----------
     parole = (TITOLO[0] + ' | ' + TITOLO[1]).split(' ')
     for i, _ in enumerate(parole):
-        t0 = 1.9 + i * 0.11
+        t0 = 2.6 + i * 0.12
         kf('par%d' % i, [
             (0, 'opacity:0; transform: translateY(14px)'),
             (max(t0 - 0.001, 0), 'opacity:0; transform: translateY(14px)', EASE),
-            (t0 + 0.13, 'opacity:1; transform: translateY(0)'),
-            (7.199, 'opacity:1; transform: translateY(0)'),
-            (7.2, 'opacity:0; transform: translateY(0)'),
+            (t0 + 0.16, 'opacity:1; transform: translateY(0)'),
+            (T_LISTA_FINE - 0.001, 'opacity:1; transform: translateY(0)'),
+            (T_LISTA_FINE, 'opacity:0; transform: translateY(0)'),
             (D, 'opacity:0; transform: translateY(0)'),
         ])
-    passi_barra = [(0, 'transform: scaleX(0)'), (1.899, 'transform: scaleX(0)', EASE)]
+    passi_barra = [(0, 'transform: scaleX(0)'), (2.599, 'transform: scaleX(0)', EASE)]
     for i, (_, _, _, t) in enumerate(VOCI):
-        passi_barra.append((t + 0.22, 'transform: scaleX(%.2f)' % ((i + 1) / 5.0), EASE))
-    passi_barra += [(7.199, 'transform: scaleX(1)'), (7.2, 'transform: scaleX(0)'),
-                    (D, 'transform: scaleX(0)')]
+        passi_barra.append((t + 0.3, 'transform: scaleX(%.2f)' % ((i + 1) / 5.0), EASE))
+    passi_barra += [(T_LISTA_FINE - 0.001, 'transform: scaleX(1)'),
+                    (T_LISTA_FINE, 'transform: scaleX(0)'), (D, 'transform: scaleX(0)')]
     kf('barra', passi_barra)
-    kf('barra_op', [(0, 'opacity:0'), (1.899, 'opacity:0'), (1.9, 'opacity:1'),
-                    (7.199, 'opacity:1'), (7.2, 'opacity:0'), (D, 'opacity:0')])
+    kf('barra_op', [(0, 'opacity:0'), (2.599, 'opacity:0'), (2.6, 'opacity:1'),
+                    (T_LISTA_FINE - 0.001, 'opacity:1'), (T_LISTA_FINE, 'opacity:0'),
+                    (D, 'opacity:0')])
 
-    # ---------- 3 · la lista che si ACCUMULA (non si sostituisce) ----------
+    # ---------- 3 · la lista: OGNI RIGA IDENTICA ALLE ALTRE ----------
+    # Prima le righe gia' entrate sbiadivano a .45 e si rimpicciolivano a .86,
+    # cosi' a schermo una riga era scura e le altre pallide: a velocita' reale
+    # si legge come un difetto, non come un effetto. Ora una riga entra e
+    # RESTA identica, colore pieno e scala 1, fino allo stacco.
     for i, (_, _, _, t0) in enumerate(VOCI):
-        # una sola animazione per il transform: entrata da sinistra con
-        # overshoot, poi il rimpicciolimento quando arriva la riga dopo
-        t_dopo = VOCI[i + 1][3] if i + 1 < len(VOCI) else None
-        passi = [(0, 'opacity:0; transform: translateX(-60px) scale(1)'),
-                 (max(t0 - 0.001, 0), 'opacity:0; transform: translateX(-60px) scale(1)', EASE),
-                 (t0 + 0.18, 'opacity:1; transform: translateX(8px) scale(1)', EASE),
-                 (t0 + 0.26, 'opacity:1; transform: translateX(0) scale(1)')]
-        if t_dopo:
-            passi += [(t_dopo, 'opacity:1; transform: translateX(0) scale(1)', EASE),
-                      (t_dopo + 0.2, 'opacity:.45; transform: translateX(0) scale(.86)')]
-            fine = 'opacity:.45; transform: translateX(0) scale(.86)'
-        else:
-            fine = 'opacity:1; transform: translateX(0) scale(1)'
-        passi += [(7.2, fine, EASE),
-                  (7.55, 'opacity:.35; transform: translateX(-190px) scale(.55)'),
-                  (8.299, 'opacity:.35; transform: translateX(-190px) scale(.55)'),
-                  (8.3, 'opacity:0; transform: translateX(-190px) scale(.55)'),
-                  (D, 'opacity:0; transform: translateX(-190px) scale(.55)')]
-        kf('voce%d' % i, passi)
+        kf('voce%d' % i, [
+            (0, 'opacity:0; transform: translateX(-60px)'),
+            (max(t0 - 0.001, 0), 'opacity:0; transform: translateX(-60px)', EASE),
+            (t0 + 0.2, 'opacity:1; transform: translateX(7px)', EASE),
+            (t0 + 0.3, 'opacity:1; transform: translateX(0)'),
+            (T_LISTA_FINE - 0.001, 'opacity:1; transform: translateX(0)'),
+            (T_LISTA_FINE, 'opacity:0; transform: translateX(0)'),
+            (D, 'opacity:0; transform: translateX(0)'),
+        ])
+        # la spunta si disegna una volta e resta piena, uguale su tutte
         kf('spunta%d' % i, [
             (0, 'stroke-dashoffset: 40'),
-            (max(t0 + 0.18, 0), 'stroke-dashoffset: 40', EASE),
-            (t0 + 0.4, 'stroke-dashoffset: 0'),
+            (max(t0 + 0.2, 0), 'stroke-dashoffset: 40', EASE),
+            (t0 + 0.46, 'stroke-dashoffset: 0'),
             (D, 'stroke-dashoffset: 0'),
         ])
 
-    # ---------- 4 · la frase di riscatto ----------
+    # ---------- 4 · la frase di riscatto, da sola ----------
     kf('riscatto', [
         (0, 'opacity:0; clip-path: inset(0 100% 0 0)'),
-        (7.549, 'opacity:0; clip-path: inset(0 100% 0 0)', EASE),
-        (7.85, 'opacity:1; clip-path: inset(0 0 0 0)'),
-        (8.299, 'opacity:1; clip-path: inset(0 0 0 0)'),
-        (8.3, 'opacity:0; clip-path: inset(0 0 0 0)'),
+        (T_RISCATTO - 0.001, 'opacity:0; clip-path: inset(0 100% 0 0)', EASE),
+        (T_RISCATTO + 0.34, 'opacity:1; clip-path: inset(0 0 0 0)'),
+        (T_SERRANDA - 0.001, 'opacity:1; clip-path: inset(0 0 0 0)'),   # 2,2 s
+        (T_SERRANDA, 'opacity:0; clip-path: inset(0 0 0 0)'),
         (D, 'opacity:0; clip-path: inset(0 0 0 0)'),
     ])
 
-    # ---------- 5 · la serranda che scende e il quadrante che non si ferma ----------
+    # ---------- 5 · la serranda e il quadrante che non si ferma ----------
     kf('serranda', [
         (0, 'opacity:0; transform: scaleY(0)'),
-        (8.299, 'opacity:0; transform: scaleY(0)', EASE),
-        (8.72, 'opacity:1; transform: scaleY(1)'),
-        (9.699, 'opacity:1; transform: scaleY(1)'),
-        (9.7, 'opacity:0; transform: scaleY(1)'),
+        (T_SERRANDA - 0.001, 'opacity:0; transform: scaleY(0)', EASE),
+        (T_SERRANDA + 0.5, 'opacity:1; transform: scaleY(1)'),
+        (T_RIBALTA - 0.001, 'opacity:1; transform: scaleY(1)'),
+        (T_RIBALTA, 'opacity:0; transform: scaleY(1)'),
         (D, 'opacity:0; transform: scaleY(1)'),
     ])
-    # il quadrante gira per tutta la durata: e' il punto del contenuto,
-    # il contatore non si ferma perche' la casa e' chiusa
-    kf('quadrante', [(0, 'transform: rotate(0deg)'), (D, 'transform: rotate(900deg)')])
-    kf('quadrante_op', [(0, 'opacity:0'), (8.399, 'opacity:0'), (8.6, 'opacity:1'),
-                        (9.699, 'opacity:1'), (9.7, 'opacity:0'), (D, 'opacity:0')])
-    kf('serr_testo', app(8.45, 10.0, 'transform: translateY(16px)', 'transform: translateY(0)'))
+    kf('quadrante', [(0, 'transform: rotate(0deg)'), (D, 'transform: rotate(1080deg)')])
+    kf('quadrante_op', [(0, 'opacity:0'), (T_SERRANDA + 0.34, 'opacity:0'),
+                        (T_SERRANDA + 0.6, 'opacity:1'),
+                        (T_RIBALTA - 0.001, 'opacity:1'), (T_RIBALTA, 'opacity:0'),
+                        (D, 'opacity:0')])
+    kf('serr_testo', app(T_SERRANDA + 0.55, T_RIBALTA,
+                         'transform: translateY(16px)', 'transform: translateY(0)', 0.26))
 
     # ---------- 6 · il ribaltamento ----------
-    kf('rib1', app(9.7, 11.4, 'transform: translateY(14px)', 'transform: translateY(0)'))
-    kf('rib2', app(10.0, 11.4, 'transform: translateY(14px)', 'transform: translateY(0)'))
+    kf('rib1', app(T_RIBALTA, T_SPLIT, 'transform: translateY(14px)',
+                   'transform: translateY(0)', 0.24))
+    kf('rib2', app(T_RIBALTA + 0.35, T_SPLIT, 'transform: translateY(14px)',
+                   'transform: translateY(0)', 0.24))
     kf('split_su', [
         (0, 'opacity:0; height: 310px'),
-        (11.199, 'opacity:0; height: 310px', EASE),
-        (11.3, 'opacity:1; height: 310px', EASE),
-        (11.8, 'opacity:1; height: 0px'),
-        (12.999, 'opacity:1; height: 0px'),
-        (13.0, 'opacity:0; height: 0px'),
+        (T_SPLIT - 0.001, 'opacity:0; height: 310px', EASE),
+        (T_SPLIT + 0.1, 'opacity:1; height: 310px', EASE),
+        (T_SPLIT + 1.3, 'opacity:1; height: 310px', EASE),
+        (T_SPLIT + 1.9, 'opacity:1; height: 0px'),
+        (T_CHIAVE - 0.001, 'opacity:1; height: 0px'),
+        (T_CHIAVE, 'opacity:0; height: 0px'),
         (D, 'opacity:0; height: 0px'),
     ])
     kf('split_giu', [
         (0, 'opacity:0; height: 310px'),
-        (11.199, 'opacity:0; height: 310px', EASE),
-        (11.3, 'opacity:1; height: 310px', EASE),
-        (11.8, 'opacity:1; height: 620px'),
-        (12.999, 'opacity:1; height: 620px'),
-        (13.0, 'opacity:0; height: 620px'),
+        (T_SPLIT - 0.001, 'opacity:0; height: 310px', EASE),
+        (T_SPLIT + 0.1, 'opacity:1; height: 310px', EASE),
+        (T_SPLIT + 1.3, 'opacity:1; height: 310px', EASE),
+        (T_SPLIT + 1.9, 'opacity:1; height: 620px'),
+        (T_CHIAVE - 0.001, 'opacity:1; height: 620px'),
+        (T_CHIAVE, 'opacity:0; height: 620px'),
         (D, 'opacity:0; height: 620px'),
     ])
 
     # ---------- 7 · la riga chiave, l'evidenziatore e il badge ----------
     kf('chiave', [
         (0, 'opacity:0; clip-path: inset(0 0 100% 0)'),
-        (12.999, 'opacity:0; clip-path: inset(0 0 100% 0)', EASE),
-        (13.25, 'opacity:1; clip-path: inset(0 0 0 0)'),
-        (16.399, 'opacity:1; clip-path: inset(0 0 0 0)'),
-        (16.4, 'opacity:0; clip-path: inset(0 0 0 0)'),
+        (T_CHIAVE - 0.001, 'opacity:0; clip-path: inset(0 0 100% 0)', EASE),
+        (T_CHIAVE + 0.3, 'opacity:1; clip-path: inset(0 0 0 0)'),
+        (T_RITIRO - 0.001, 'opacity:1; clip-path: inset(0 0 0 0)'),
+        (T_RITIRO, 'opacity:0; clip-path: inset(0 0 0 0)'),
         (D, 'opacity:0; clip-path: inset(0 0 0 0)'),
     ])
     kf('evidenzia', [
         (0, 'background-size: 0% 100%'),
-        (13.4, 'background-size: 0% 100%', EASE),
-        (13.66, 'background-size: 100% 100%'),
-        (16.399, 'background-size: 100% 100%'),
-        (16.4, 'background-size: 0% 100%'),
+        (T_CHIAVE + 0.5, 'background-size: 0% 100%', EASE),
+        (T_CHIAVE + 0.82, 'background-size: 100% 100%'),
+        (T_RITIRO - 0.001, 'background-size: 100% 100%'),
+        (T_RITIRO, 'background-size: 0% 100%'),
         (D, 'background-size: 0% 100%'),
     ])
     kf('badge', [
         (0, 'opacity:0; transform: scale(1.12)'),
-        (14.399, 'opacity:0; transform: scale(1.12)', EASE),
-        (14.58, 'opacity:1; transform: scale(1)'),
-        (16.399, 'opacity:1; transform: scale(1)'),
-        (16.4, 'opacity:0; transform: scale(1)'),
+        (T_CHIAVE + 0.799, 'opacity:0; transform: scale(1.12)', EASE),
+        (T_CHIAVE + 1.0, 'opacity:1; transform: scale(1)'),
+        (T_RITIRO - 0.001, 'opacity:1; transform: scale(1)'),
+        (T_RITIRO, 'opacity:0; transform: scale(1)'),
         (D, 'opacity:0; transform: scale(1)'),
     ])
 
-    # ---------- 8 · CTA che entra secca e si ritira per il loop ----------
+    # ---------- 8 · CTA: 1,6 s a schermo, poi si ritira per il loop ----------
     kf('cta', [
-        (0, 'opacity:0; transform: translateY(160px)'),
-        (15.199, 'opacity:0; transform: translateY(160px)', EASE),
-        (15.46, 'opacity:1; transform: translateY(0)'),
-        (16.399, 'opacity:1; transform: translateY(0)', EASE),
-        (16.7, 'opacity:1; transform: translateY(160px)'),
-        (16.701, 'opacity:0; transform: translateY(160px)'),
-        (D, 'opacity:0; transform: translateY(160px)'),
+        (0, 'opacity:0; transform: translateY(170px)'),
+        (T_CTA - 0.001, 'opacity:0; transform: translateY(170px)', EASE),
+        (T_CTA + 0.28, 'opacity:1; transform: translateY(0)'),
+        (T_RITIRO, 'opacity:1; transform: translateY(0)', EASE),
+        (24.75, 'opacity:1; transform: translateY(170px)'),
+        (24.751, 'opacity:0; transform: translateY(170px)'),
+        (D, 'opacity:0; transform: translateY(170px)'),
     ])
-    kf('firma', app(15.35, 16.45, 'transform: translateY(12px)', 'transform: translateY(0)'))
+    kf('firma', app(T_CTA + 0.15, T_RITIRO + 0.1,
+                    'transform: translateY(12px)', 'transform: translateY(0)', 0.24))
 
 
 def html():
@@ -287,7 +296,7 @@ body{width:1080px;height:1920px;overflow:hidden}
 .vtit{display:block;font-family:%(ar)s;font-weight:800;font-size:50px;color:%(ink)s}
 .vdet{display:block;font-family:%(ma)s;font-weight:500;font-size:33px;color:%(ink2)s;margin-top:6px}
 .vspunta{flex:0 0 56px}
-.riscatto{position:absolute;left:430px;right:64px;top:1180px;font-family:%(ar)s;font-weight:800;font-size:58px;line-height:1.18;color:%(ink)s}
+.riscatto{position:absolute;left:64px;right:64px;top:1080px;font-family:%(ar)s;font-weight:900;font-size:62px;line-height:1.18;color:%(ink)s}
 .serranda{position:absolute;left:64px;right:64px;top:420px;height:520px;background:#C9BFA9;border-radius:20px;transform-origin:top center;overflow:hidden;display:flex;flex-direction:column;gap:6px;padding:14px}
 .doga{flex:1;background:#D9CFBC;border-radius:4px;box-shadow:inset 0 -3px 0 rgba(46,42,37,.10)}
 .quadrante{position:absolute;left:430px;top:1010px;width:220px;height:220px;border-radius:50%%;border:10px solid %(bordo)s;display:flex;align-items:center;justify-content:center}
@@ -315,7 +324,7 @@ body{width:1080px;height:1920px;overflow:hidden}
   <div class="barra_sfondo" style="%(barraop)s"><div class="barra" style="%(barra)s"></div></div>
   <div class="titolo">%(titolo)s</div>
   %(voci)s
-  <div class="riscatto" style="%(riscatto)s">Nessuno te l'ha mai messo<br>su una riga sola.</div>
+  <div class="riscatto" style="%(riscatto)s">Nessuno te l'ha mai<br>messo su una riga sola.</div>
 
   <div class="serranda" style="%(serranda)s">%(doghe)s</div>
   <div class="quadrante" style="%(quadop)s"><div class="lancetta" style="%(quad)s"></div></div>

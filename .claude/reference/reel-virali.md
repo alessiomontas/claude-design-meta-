@@ -469,3 +469,49 @@ Difetti da amatoriale: [OUI Creatives — 7 reel editing mistakes](https://www.o
 [Media à la Carte](https://www.mediaalacarte.com/post/mistakes-that-make-your-reels-look-amateur-and-how-to-fix-them) ·
 [Storyblocks — 8 editing mistakes](https://www.storyblocks.com/resources/blog/editing-mistakes-beginners-make-with-video) ·
 [Editors Keys](https://www.editorskeys.com/blogs/news/5-editing-mistakes-that-make-your-videos-look-amateur-and-how-to-avoid-them)
+
+---
+
+## Errori di animazione trovati sul campo (aggiornato 16/09/2026)
+
+Tre difetti che il titolare ha visto guardando il reel a velocità reale, e che i frame
+estratti uno per uno **non** avevano fatto emergere. Vanno controllati su ogni reel.
+
+### 1. L'accumulo che sbiadisce si legge come un bug
+
+Nel formato "checklist che si accumula" è tentante far sbiadire le righe già entrate
+(opacità 0,45, scala 0,86) per tenere l'attenzione sull'ultima. **Non farlo.** A schermo,
+a velocità reale, il risultato è che una riga è scura e le altre pallide: chi guarda non
+vede una gerarchia, vede *elementi disegnati in modi diversi*. Stessa cosa per le spunte,
+che sbiadiscono insieme alla riga e sembrano comparire su alcune voci e non su altre.
+
+**Regola.** In una lista che si accumula, una riga che entra **resta identica alle altre**:
+stesso fondo, stesso colore, stessa scala, stessa spunta piena. L'attenzione si porta col
+**movimento di entrata**, non togliendo colore a quello che è già a schermo.
+
+Il principio vale oltre le liste: **elementi della stessa famiglia si comportano tutti allo
+stesso modo.** Se una forma compare su un elemento, compare su tutti; se ne resta uno senza,
+sembra un errore di montaggio.
+
+### 2. Ogni testo ha un tempo minimo di lettura
+
+Una battuta di 0,9 s su una riga di due righe non si legge: si intravede. Tempi minimi
+misurati su questo progetto:
+
+| Elemento | Tempo fermo minimo |
+|---|---|
+| Riga di lista (titolo + dettaglio) | **1,2 s** |
+| Frase di due righe | **1,8 s** |
+| Parola singola di svolta (`Falso.`) | **1,1 s** |
+| Confronto a due fasce, prima che una collassi | **1,2 s** |
+| CTA finale | **2,0 s** |
+
+Meglio un reel di 25 s che si legge di uno di 17 s che si intravede. Se il conto non torna,
+**si tagliano le scene, non i tempi di lettura.**
+
+### 3. Le posizioni ereditate restano quando l'elemento accanto sparisce
+
+Una frase ancorata a `left: 430px` perché a sinistra c'era la lista compressa resta a 430
+anche dopo che quella lista è stata tolta dal montaggio: va a capo in una colonna stretta
+per nessun motivo. **A ogni modifica della sequenza, ricontrolla le posizioni delle scene
+vicine**, non solo quella che hai cambiato.

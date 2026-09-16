@@ -40,7 +40,7 @@ Nessuna cifra accanto a nessuna voce, in nessun formato. **Il totale lo fa il le
 
 ---
 
-# 1 · REEL — 17,0 s · formato 1.3 "documento che si compila da sola" + negazione iniziale
+# 1 · REEL — 25,0 s · formato 1.3 "documento che si compila da sola" + negazione iniziale
 
 ### R1 · Instagram Reel · 1080×1920 · 30 fps · gancio freddo → salvataggi e contatto
 
@@ -631,6 +631,27 @@ Dove serviva una quantificazione, si è scelta la riformulazione senza numero:
 | 8 | S1 | il modulo compariva identico su C3, F2 e S1. Nella storia diventa un elenco di tre voci senza campo, e libera lo spazio per la CTA |
 | 9 | C5 | aggiunta la riga che dice **cosa succede dopo il DM**: nessun artboard lo diceva |
 | 10 | reel | tre pause ravvicinate fra 7,0 e 9,6 s, proprio dove il ritmo deve accelerare: sosta sulla lista accorciata, serranda e ribaltamento anticipati |
+
+---
+
+## Rifacimento del reel dopo il riscontro del titolare (16/09)
+
+Tre difetti visti guardando il video a velocità reale, che i frame estratti uno per uno non
+avevano fatto emergere:
+
+1. **Le righe della lista non erano omogenee.** Le voci già entrate sbiadivano a opacità 0,45 e
+   si rimpicciolivano a 0,86, così a schermo una riga era scura e le altre pallide — e le spunte
+   sbiadivano con loro, sembrando presenti su alcune voci e assenti su altre. Era una scelta
+   sbagliata: a velocità reale non si legge come gerarchia, si legge come un errore. Ora una riga
+   entra e **resta identica alle altre**, colore pieno e scala 1, fino allo stacco.
+2. **Il reel era troppo veloce.** Da 17,0 a **25,0 s**, con tempi minimi di lettura rispettati:
+   1,2 s per riga di lista, 1,8 s per una frase di due righe, 1,2 s sul confronto a due fasce
+   prima che una collassi, 2,0 s sulla CTA. Prima "Dal tuo stipendio" restava a schermo 0,6 s.
+3. **Una frase era ancorata a una posizione ereditata** (`left: 430px`, dove prima c'era la lista
+   compressa che è stata tolta): andava a capo in una colonna stretta per nessun motivo.
+
+Le tre regole sono state scritte in `.claude/reference/reel-virali.md` perché valgano su ogni
+reel futuro.
 
 ---
 
