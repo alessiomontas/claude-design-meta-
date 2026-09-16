@@ -97,3 +97,24 @@ allineamento, interlinea. Il reel del 16/09 è stato ricostruito lì in otto pag
 Il reel **resta sul banco di montaggio**: lì tipografia e tempi sono già a posto e sono
 esattamente le due cose che a Canva non arrivano. Canva serve quando il titolare vuole
 ritoccare dal telefono o pubblicare da lì.
+
+## Immagini dentro Canva — cosa serve al titolare (16/09/2026)
+
+Il connettore Canva **non sa elencare i Caricamenti**: `get-assets` vuole già gli `asset_id`, e non esiste
+uno strumento «mostrami le mie immagini». `upload-asset-from-url` accetta solo URL già pubblici, quindi le
+foto private o generate qui non si possono caricare per quella strada.
+
+Resta una via sola, e va usata così:
+
+1. Il titolare trascina **una volta** ogni foto da Caricamenti su una pagina qualsiasi del progetto Canva
+   (anche una pagina di servizio in fondo, da cancellare poi).
+2. `read-design` con `open_transaction: true` restituisce gli elementi immagine con il loro `asset_id`.
+3. Da lì l'`asset_id` si riusa dove serve: `insert_fill` per metterla su un'altra pagina,
+   `update_fill` per sostituire il contenuto di un riquadro esistente, `crop_media` per l'inquadratura.
+
+Quindi: **sì, le foto dei caroselli si possono mettere in Canva** — ma le foto devono comparire su una
+pagina, non solo nei Caricamenti. In alternativa il carosello resta dov'è oggi, sulle artboard `.dc.html`,
+dove le foto si gestiscono senza passaggi manuali.
+
+Da verificare alla prossima sessione con il connettore attivo: che `asset_id` letto da una pagina sia
+davvero riutilizzabile via `insert_fill` su un'altra pagina dello stesso progetto.

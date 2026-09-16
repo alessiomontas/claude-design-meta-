@@ -19,6 +19,11 @@ Produce il pacchetto completo di un giorno, pronto da pubblicare, in `campagne/g
 
 Tutte le grafiche editabili (`.dc.html` su canvas Claude Design, o Canva se collegato). PNG solo come export in più.
 
+**Il reel si costruisce in Canva** (regola fissa n.10 di `CLAUDE.md`). Il titolare fornisce ogni volta il link `/edit`
+di un progetto Canva nuovo; il reel ci va dentro come pagine 1080×1920, una per scena, con testi e forme native.
+Gli altri quattro contenuti restano artboard `.dc.html`. Procedura e limiti provati sul campo:
+`.claude/skills/giornata/BANCO-MONTAGGIO.md`, sezione «Canva — cosa passa e cosa no».
+
 ## Input
 
 - **Data**: se non passata, usa la data di oggi.
@@ -51,7 +56,16 @@ Invoca `Agent` con `subagent_type: art-director`, indicando brief e copy. Produc
 - `direzione-artistica.md`
 - `grafiche/` con le artboard editabili `.dc.html` (11 artboard: 1 copertina reel + scene reel + 5 slide carosello + 3 immagini Facebook + 2 storie)
 - `png/` con gli export
-- `reel/` con scene, montaggio e video
+- `reel/` con `scene.json` (fonte unica), montaggio e video
+
+**Reel → Canva.** Chiedi al titolare il link `/edit` del progetto Canva del giorno se non l'ha già dato.
+Poi: `python3 .claude/skills/giornata/scene_to_canva.py <cartella>/reel/scene.json` per ricavare le scene
+rappresentative, e costruiscile in Canva con `read-design` (`open_transaction: true`) + `edit-design`
+(`add_page` 1080×1920 → `add_text` / `insert_shape` → `format_text`) → `finalize: "commit"`.
+Le pagine devono essere create con `add_page`: quelle copiate da un altro progetto arrivano di tipo
+`unsupported` e non si possono formattare. Il connettore **non imposta la famiglia di font**: colore, corpo,
+peso e allineamento sì, Archivo/Manrope li applica il titolare (o si importa l'HTML). L'MP4 resta comunque
+prodotto in locale come riferimento di tempi.
 
 **Vincolo di varietà**: il layout dev'essere diverso da quello dei giorni precedenti. Prima di partire, controlla i pattern già usati in `.claude/reference/design-system.md` e negli ultimi giorni in `campagne/giornaliero/`.
 

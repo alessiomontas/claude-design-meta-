@@ -57,6 +57,7 @@ Il pilastro del giorno e il registro di ciò che è già uscito stanno in **`cam
 7. **Ogni contenuto esce nel Master Template.** Copy + layout a tabella + prompt grafico in inglese + negative + parametri + tabella claim. Formato fisso in `.claude/reference/master-template.md`. Niente template, niente consegna.
 8. **Output lean.** In chat: liste e tabelle, zero preamboli, zero spiegazioni di processo. Il ragionamento sta nei documenti di campagna. Una modifica tocca solo l'elemento richiesto, mai l'intera campagna.
 9. **Controllo qualità prima della consegna, non dopo.** I sei controlli di `master-template.md` si fanno sul PNG renderizzato, guardato a dimensione telefono, prima di mostrare qualcosa.
+10. **Il reel si costruisce dentro Canva, sempre.** Da ogni campagna in poi il reel — e solo il reel — nasce direttamente in un progetto Canva che il titolare indica con un link `/edit`: pagine 1080×1920, una pagina per scena, testi e forme native Canva (nessuna immagine necessaria). Le animazioni le mette il titolare dentro Canva. Tutto il resto del pacchetto — carosello, post Facebook, storie — resta sul flusso esistente (artboard `.dc.html` su canvas Claude Design). Il `scene.json` resta la fonte unica: `.claude/skills/giornata/scene_to_canva.py` lo traduce in pagine, e il banco di montaggio resta valido per chi vuole rivedere tempi e animazioni prima di portarle in Canva.
 
 ## Lessico di brand (SEMPRE)
 
