@@ -116,5 +116,16 @@ Quindi: **sì, le foto dei caroselli si possono mettere in Canva** — ma le fot
 pagina, non solo nei Caricamenti. In alternativa il carosello resta dov'è oggi, sulle artboard `.dc.html`,
 dove le foto si gestiscono senza passaggi manuali.
 
-Da verificare alla prossima sessione con il connettore attivo: che `asset_id` letto da una pagina sia
-davvero riutilizzabile via `insert_fill` su un'altra pagina dello stesso progetto.
+**Verificato il 16/09/2026.** Un `asset_id` letto in un progetto funziona anche in un progetto **diverso**:
+`MAHUsauQ_cs`, letto dalla pagina 1 di «MULTISERVICE», si inserisce senza errori nel progetto del reel.
+Quindi basta che una foto stia su una pagina qualsiasi di un qualsiasi progetto del titolare: da lì in poi
+è riusabile ovunque. L'`asset_id` dell'immagine compare in `fill.media.mediaId`; i video in `fill.media.videoId`.
+
+### Le pagine ritoccate a mano possono diventare illeggibili
+
+Le otto pagine del reel erano tutte `fixed`. Dopo che il titolare ha lavorato nel progetto, la **pagina 2 è
+diventata `unsupported`**: il collegamento non ne espone più gli elementi e lì non si può più correggere
+niente. Le altre sette sono rimaste `fixed` e modificabili.
+
+Conseguenza operativa: **prima si costruisce tutto, poi il titolare ritocca.** Se serve rimettere mano a una
+pagina diventata `unsupported`, l'unica strada è rifarla con `add_page` e cancellare la vecchia.
