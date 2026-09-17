@@ -14,3 +14,6 @@ campagne/facebook-campagna-virale/grafiche/kit-campagna-virale.html
 campagne/presentazione-servizio-completo-proprietari/*.html
 # HTML temporanei del rendering PNG/PDF
 campagne/**/slide/_render/
+
+# Seed del canvas del preventivo (rigenerabile da preventivo/*.dc.html + canvas.json)
+campagne/**/preventivo/_render/

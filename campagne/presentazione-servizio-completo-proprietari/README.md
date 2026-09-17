@@ -13,15 +13,20 @@ Presentazione commerciale **1-a-1** (non contenuto social): 16 slide 16:9 per un
 | `slide/` | Le 16 artboard editabili `.dc.html` + `canvas.json` + immagini |
 | `png/` | Export PNG 2560×1440 (2×) di ogni slide |
 | `Hadrianus-Presentazione-Bilocale-Lido-Centro.pdf` | PDF pronto da inviare — 16 pagine, misura PowerPoint 16:9 |
-| `build-slides.mjs` · `emit.mjs` · `render.mjs` · `make-pdf.mjs` | Generatori: componenti, testi, PNG, PDF |
+| `build-slides.mjs` · `emit.mjs` · `render.mjs` · `make-pdf.mjs` | Generatori del deck: componenti, testi, PNG, PDF |
+| `preventivo/` | **Preventivo A4 per la sola messa in regola documentale** (500 € non soggetti a IVA): 2 artboard editabili, PNG 2×, PDF, checklist di compliance, generatore `build-preventivo.mjs` + `render-preventivo.mjs` |
 
 ## Rigenerare
 
 ```bash
-node emit.mjs        # testi -> 16 .dc.html
-node render.mjs      # .dc.html -> png/ (2×)
-node make-pdf.mjs    # .dc.html -> PDF 16 pagine
+node emit.mjs                          # testi -> 16 .dc.html
+node render.mjs                        # .dc.html -> png/ (2×)
+node make-pdf.mjs                      # .dc.html -> PDF 16 pagine
+node preventivo/build-preventivo.mjs   # preventivo -> 2 artboard A4
+node preventivo/render-preventivo.mjs  # preventivo -> PNG 2× + PDF A4
 ```
+
+Il preventivo ha **tre campi da compilare prima dell'invio**: numero, data e nome della proprietaria (`[numero]`, `[gg/mm/aaaa]`, `[Nome e cognome della proprietaria]`). Mancano ancora i dati fiscali e i contatti del prestatore in calce alla seconda pagina.
 
 I font Archivo/Manrope non sono raggiungibili da questo ambiente: `render.mjs` e `make-pdf.mjs` iniettano le copie locali scaricate nello scratchpad di sessione. Se mancano, l'export esce con i font di fallback — vanno riscaricati da Google Fonts prima di rigenerare.
 

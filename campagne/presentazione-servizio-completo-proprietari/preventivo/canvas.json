@@ -1,0 +1,34 @@
+{
+  "artboards": [
+    {
+      "file": "Main.dc.html",
+      "title": "Preventivo · pagina 1",
+      "x": 0,
+      "y": 0,
+      "w": 794,
+      "h": 1123,
+      "print": "fixed"
+    },
+    {
+      "file": "Pagina2.dc.html",
+      "title": "Preventivo · pagina 2",
+      "x": 914,
+      "y": 0,
+      "w": 794,
+      "h": 1123,
+      "print": "fixed"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "nota-preventivo",
+      "x": 0,
+      "y": -190,
+      "w": 900,
+      "text": "Preventivo Hadrianus — sola messa in regola documentale del bilocale di Ostia Lido Centro.\nDue pagine A4 (794×1123 px = 210×297 mm a 96 px/pollice).\nDa compilare prima dell’invio: numero del preventivo, data, nome della proprietaria.\nExport PDF dalla barra in alto = due pagine A4."
+    }
+  ],
+  "launch": {
+    "view": "canvas"
+  }
+}
