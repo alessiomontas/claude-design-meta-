@@ -36,8 +36,8 @@ Caption     | —
 | 4 | 4,7-6,5 | 1,8 | `Agosto non è un esame.` / `È un regalo del calendario.` | Accumulo di parole, 120 ms l'una. Micro-pausa 300 ms a fine frase. |
 | 5 | 6,5-7,0 | 0,5 | kicker `COSA CAMBIA DAVVERO` | Compressione: la frase 4 si riduce a 0,25 e va a incastrarsi in alto come etichetta. Parte la barra di avanzamento oro. |
 | 6 | 7,0-8,6 | 1,6 | fascia alta `AGOSTO — il prezzo si alza e basta` / fascia bassa `NOVEMBRE — il prezzo si muove ogni settimana` | Le due fasce entrano una contro l'altra (400 ms), sfasate di 250 ms. Filo oro orizzontale fra le due. Barra 1/5. |
-| 7 | 8,6-10,2 | 1,6 | `AGOSTO — soggiorni brevi, tanti check-in` / `NOVEMBRE — soggiorni più lunghi e più rari` | **Identico comportamento della coppia precedente**: stessa entrata, stessa scala, stesso filo, stesso sfasamento. Nessuna coppia sbiadisce. Barra 2/5. |
-| 8 | 10,2-11,8 | 1,6 | `AGOSTO — la domanda ti trova` / `NOVEMBRE — la domanda la devi cercare` | Come sopra. Barra 3/5. |
+| 7 | 8,6-10,2 | 1,6 | `AGOSTO — soggiorni brevi, tanti check-in` / `NOVEMBRE — soggiorni più lunghi, non più rari` | **Identico comportamento della coppia precedente**: stessa entrata, stessa scala, stesso filo, stesso sfasamento. Nessuna coppia sbiadisce. Barra 2/5. |
+| 8 | 10,2-11,8 | 1,6 | `AGOSTO — la domanda ti trova` / `NOVEMBRE — la domanda va cercata` | Come sopra. Barra 3/5. |
 | 9 | 11,8-13,4 | 1,6 | `AGOSTO — rispondere conta` / `NOVEMBRE — rispondere in un'ora è fatturato` | Come sopra. Barra 4/5. |
 | 10 | 13,4-15,0 | 1,6 | `AGOSTO — la manutenzione si rimanda` / `NOVEMBRE — è la finestra per farla` | Come sopra. Barra 5/5 con scatto di scala 1,08→1. |
 | 11 | 15,0-15,4 | 0,4 | — | **Immobilità totale** dopo il picco. Le cinque coppie restano tutte con lo stesso identico trattamento. |
@@ -173,7 +173,7 @@ Caption     | —
 
 **Testo delle tre coppie (tutte trattate allo stesso modo, nessuna evidenziata più delle altre)**
 - **Prezzo** — Agosto: si alza e basta. · Novembre: si muove ogni settimana, a volte ogni giorno.
-- **Durata** — Agosto: soggiorni brevi, tanti check-in. · Novembre: soggiorni più lunghi e più rari.
+- **Durata** — Agosto: soggiorni brevi, tanti check-in. · Novembre: soggiorni più lunghi, non più rari — il calendario si tiene pieno lavorandoci.
 - **Ospite** — Agosto: chi viene per il mare o per Roma. · Novembre: congressi, fiere, aeroporto, ospedali, università.
 
 **LAYOUT**
@@ -214,7 +214,7 @@ Caption     | —
 
 **Testo delle tre coppie (stesso identico trattamento delle coppie di C3)**
 - **Canali** — Agosto: la domanda ti trova. · Novembre: la domanda va cercata, e l'annuncio va riscritto per un altro cliente.
-- **Risposte** — Agosto: rispondere conta. · Novembre: con meno richieste, ogni richiesta persa è una fetta del mese.
+- **Risposte** — Agosto: rispondere conta. · Novembre: chi risponde per primo prende la prenotazione.
 - **Manutenzione** — Agosto: si rimanda, la casa è occupata. · Novembre: è la finestra. Se non si fa adesso, tocca farla a luglio, con la casa piena.
 
 **Riga territorio (in fondo alla slide)**
@@ -283,7 +283,7 @@ Ad agosto la tua casa si riempie. Anche senza di noi, anche senza nessuno.
 
 Non è una critica: è il motivo per cui agosto non ti dice niente su chi ti gestisce la casa. Il mese facile lo vince il calendario. E se la casa la gestisci da solo, la domanda vale lo stesso: non è un esame, è un punto di partenza.
 
-Da ottobre a marzo cambia il mestiere. Il prezzo si muove ogni settimana. I soggiorni si allungano e si diradano. L'ospite non viene più per il mare: viene per un congresso, una fiera, un volo, un ospedale, un corso. L'annuncio va riscritto per lui. E a novembre rispondere in un'ora non è cortesia: è fatturato.
+Da ottobre a marzo cambia il mestiere. Il prezzo si muove ogni settimana. I soggiorni si allungano, non si diradano: il calendario fuori stagione si tiene pieno lavorandoci. L'ospite non viene più per il mare: viene per un congresso, una fiera, un volo, un ospedale, un corso. L'annuncio va riscritto per lui. E a novembre rispondere in un'ora non è cortesia: è fatturato.
 
 Roma in uno dei suoi trimestri più bassi, gennaio-marzo 2026, ha registrato il 61,5% di occupazione alberghiera (Federalberghi Roma su dati STR). Non è un mercato fermo. È un mercato che va lavorato.
 
@@ -330,7 +330,7 @@ E va bene così: ad agosto si riempie anche da soli. Il mese facile lo vince il 
 Si guarda da ottobre a marzo. Stessa casa, mestiere diverso:
 
 • Il prezzo non si abbassa, si muove. Ogni settimana, a volte ogni giorno, e si rialza sui ponti.
-• I soggiorni diventano più lunghi e più rari. Meno turnover, ma un buco pesa molto di più.
+• I soggiorni diventano più lunghi, non più rari: il calendario fuori stagione si tiene pieno lavorandoci, e un buco pesa molto di più.
 • Cambia chi arriva: congressi, fiere, scalo di Fiumicino, ospedali, università.
 • L'annuncio va riscritto per lui. Le foto d'estate, a novembre, vendono una cosa che non c'è.
 • Rispondere in un'ora smette di essere cortesia e diventa fatturato.

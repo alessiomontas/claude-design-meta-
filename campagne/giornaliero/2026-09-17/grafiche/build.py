@@ -38,7 +38,8 @@ VELO_F3 = ('radial-gradient(ellipse 98% 50% at 50% 54%, rgba(26,23,19,0.64), tra
            'linear-gradient(180deg, rgba(63,58,51,0.92) 0%, rgba(63,58,51,0.66) 44%, '
            'rgba(46,42,37,0.92) 100%)')
 VELO_REEL = ('radial-gradient(ellipse 90% 28% at 50% 46%, rgba(26,23,19,0.62), transparent 64%)',
-             'linear-gradient(180deg, rgba(63,58,51,0.86) 0%, rgba(63,58,51,0.10) 34%, '
+             'linear-gradient(180deg, rgba(63,58,51,0.86) 0%, rgba(63,58,51,0.10) 30%, '
+             'rgba(63,58,51,0.66) 40%, rgba(63,58,51,0.66) 57%, '
              'rgba(63,58,51,0.88) 100%)')
 
 RAD_C3 = 'radial-gradient(ellipse 80% 40% at 50% 30%, rgba(200,162,75,0.10), transparent 70%)'
@@ -53,7 +54,7 @@ COPPIE_C3 = [
     ('Prezzo',  'si alza e basta.',
      ['si muove ogni settimana,', 'a volte ogni giorno.']),
     ('Durata',  'soggiorni brevi, tanti check-in.',
-     ['soggiorni pi&ugrave; lunghi', 'e pi&ugrave; rari.']),
+     ['soggiorni pi&ugrave; lunghi,', 'non pi&ugrave; rari.']),
     ('Ospite',  'chi viene per il mare o per Roma.',
      ['congressi, fiere, aeroporto,', 'ospedali, universit&agrave;.']),
 ]
@@ -61,7 +62,7 @@ COPPIE_C4 = [
     ('Canali', 'la domanda ti trova.',
      ['la domanda va cercata, e l&rsquo;annuncio', 'va riscritto per un altro cliente.']),
     ('Risposte', 'rispondere conta.',
-     ['con meno richieste, ogni richiesta', 'persa &egrave; una fetta del mese.']),
+     ['chi risponde per primo', 'prende la prenotazione.']),
     ('Manutenzione', 'si rimanda, la casa &egrave; occupata.',
      ['&egrave; la finestra. Se non si fa adesso,', 'tocca farla a luglio, con la casa piena.']),
 ]
@@ -170,8 +171,8 @@ def f2():
     o = frame(1080, 1080, FUME)
     o += strato(RAD_F2)
     o += marchio(y=64)
-    o += kicker('Cosa cambia da ottobre', 142, size=31)
-    o += blocco(['Stessa casa, due mestieri.'], 200, 62, 900, BIANCO, lh=1.16)
+    o += blocco(['Stessa casa, due mestieri.'], 170, 62, 900, BIANCO, lh=1.16)
+    o += kicker('Cosa cambia da ottobre', 262, size=31)
     righe = [
         ['Il prezzo si muove', 'ogni settimana'],
         ['L&rsquo;annuncio si riscrive per chi', 'viaggia fuori stagione'],
@@ -271,9 +272,9 @@ SCENE = [
     (6,  7.0,  8.6,  'coppia',  ('il prezzo si alza e basta',
                                  ['il prezzo si muove', 'ogni settimana'])),
     (7,  8.6,  10.2, 'coppia',  ('soggiorni brevi, tanti check-in',
-                                 ['soggiorni pi&ugrave; lunghi', 'e pi&ugrave; rari'])),
+                                 ['soggiorni pi&ugrave; lunghi,', 'non pi&ugrave; rari'])),
     (8,  10.2, 11.8, 'coppia',  ('la domanda ti trova',
-                                 ['la domanda', 'la devi cercare'])),
+                                 ['la domanda', 'va cercata'])),
     (9,  11.8, 13.4, 'coppia',  ('rispondere conta',
                                  ['rispondere in un&rsquo;ora', '&egrave; fatturato'])),
     (10, 13.4, 15.0, 'coppia',  ('la manutenzione si rimanda',
