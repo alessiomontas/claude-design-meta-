@@ -89,3 +89,13 @@ Nota di doppiaggio: il segmento 8 è il più denso. Se non entra nei 2,8 s a voc
 ## Claim da verificare
 - `[DATO DA VERIFICARE: la cifra 800 €/mese come prezzo tipico degli annunci invernali su Ostia/Fiumicino/Torvaianica — serve almeno uno screenshot di portale a supporto, altrimenti si passa alla variante hook B]`
 - `[DATO DA VERIFICARE: la CTA "Scrivi INVERNO in DM" — confermare la parola chiave con il titolare]`
+
+---
+
+## Confermato dal titolare (17/09/2026)
+
+- **«A giugno valuti tu» è difendibile.** Parole del titolare: *«se entrano non gli facciamo penali»*.
+  Il proprietario che affida la casa per l'inverno può quindi non proseguire a giugno senza penali.
+  Il claim resta scritto in questa forma — nessuna penale, decisione del proprietario — e **non va
+  esteso** a promesse di preavviso, recesso anticipato o rimborsi, che restano non confermati.
+- Progetto Canva del reel: `DAHVd6UZ-RM` — https://canva.link/gy2wkrtz29zpjsv
