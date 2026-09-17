@@ -22,7 +22,9 @@ Il pilastro dice **il tipo di discorso** del giorno, non il gancio: il gancio sp
 | Sabato | **Il valore d'uso** | Contenuto utile anche a chi non diventerà cliente: errori, checklist, cose da controllare | Non nascondere la CTA, ma non farne il centro |
 | Domenica | **L'allineamento** | 15%, "guadagniamo solo se guadagni tu", nessun costo fisso, interessi allineati | È una chiusura, non un'apertura: prima il lavoro, poi il prezzo |
 
-**Regola d'oro**: il pilastro si ripete ogni 7 giorni, l'angolo **mai**. Se un pilastro sembra esaurito, si scende di livello (più specifico, più concreto), non si torna su un gancio già usato.
+**Regola d'oro**: il pilastro si ripete ogni 7 giorni. Un **tema** già usato si può riprendere, ma non prima di **3-4 giorni** e mai con la stessa testa: gancio nuovo, angolazione nuova, esempi nuovi. Riproporre lo stesso gancio a un giorno di distanza non si fa mai.
+
+Quando un pilastro sembra esaurito si scende di livello (più specifico, più concreto) oppure si **rovescia un tema vecchio**: l'utile è la testa nuova, non l'argomento inedito a tutti i costi. Nel registro qui sotto si annota sempre da quale tema passato deriva un angolo ripreso.
 
 ## Da non ripetere
 
