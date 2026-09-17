@@ -15,6 +15,8 @@ rimettono a mano dentro Canva.
 """
 import json
 import os
+import html
+import re
 import sys
 
 FONT_STACK = {
@@ -22,19 +24,45 @@ FONT_STACK = {
     'Manrope': "'Manrope', 'Helvetica Neue', Arial, sans-serif",
 }
 
-# Una pagina per scena: (titolo, istante rappresentativo in secondi).
-# L'istante serve solo a scegliere QUALI elementi sono a schermo in quel
-# momento; ognuno viene poi disegnato nel suo stato finale, senza animazione.
-SCENE = [
-    ('Scena 1 · il gancio negato', 0.95),
-    ('Scena 2 · Falso.',           2.10),
-    ('Scena 3 · le cinque voci',   9.60),
-    ('Scena 4 · su una riga sola', 11.60),
-    ('Scena 5 · il contatore',     14.00),
-    ('Scena 6 · il ribaltamento',  16.30),
-    ('Scena 7 · dalla casa',       18.60),
-    ('Scena 8 · la chiusura',      22.60),
-]
+# Una pagina per scena. Le scene si ricavano dal file, mai scritte a mano:
+# gli id degli elementi portano il prefisso della scena (s01_, s02_, ...), e
+# ogni gruppo da' il suo intervallo. L'istante rappresentativo e' il punto in
+# cui la scena e' completa — dopo l'ultima entrata, prima dell'uscita.
+SCENA_ID = re.compile(r'^s(\d+)_')
+
+
+def scene_dal_file(dati):
+    """[(titolo, istante)] — una voce per scena, in ordine di tempo."""
+    gruppi = {}
+    for el in dati['elementi']:
+        m = SCENA_ID.match(el.get('id', ''))
+        if not m:
+            continue                      # marchio, barra, foto: non sono scene
+        g = gruppi.setdefault(m.group(1), {'in': [], 'out': [], 'testi': []})
+        g['in'].append(float(el.get('t_in', 0)))
+        g['out'].append(float(el.get('t_out') or dati['durata']))
+        if el.get('tipo') == 'testo' and el.get('testo'):
+            g['testi'].append((float(el.get('size') or 0), el['testo']))
+
+    scene = []
+    for numero in sorted(gruppi):
+        g = gruppi[numero]
+        ultima_entrata, prima_uscita = max(g['in']), min(g['out'])
+        # A meta' fra l'ultima entrata e la prima uscita: tutto e' a schermo.
+        istante = ultima_entrata + (prima_uscita - ultima_entrata) / 2
+        # Il titolo lo da' il testo piu' grande della scena, ridotto a una riga.
+        testo = max(g['testi'])[1] if g['testi'] else ''
+        # Il testo arriva gia' marcato: <br> e entita' vanno via, altrimenti
+        # l'etichetta della pagina in Canva mostra il codice invece della frase.
+        testo = re.sub(r'<[^>]+>', ' ', testo)
+        testo = html.unescape(testo)
+        testo = ' '.join(testo.replace('\n', ' ').split())
+        if len(testo) > 42:
+            testo = testo[:41].rstrip() + '...'
+        scene.append(('Scena %d%s' % (int(numero), ' - ' + testo if testo else ''),
+                      round(istante, 2)))
+    return scene
+
 
 
 def visibile(el, t, durata):
@@ -79,7 +107,7 @@ def costruisci(scena):
     durata = float(scena.get('durata', 25.0))
     fondo = scena.get('fondo', '#FAF7F1')
     pagine = ''
-    for titolo, t in SCENE:
+    for titolo, t in scene_dal_file(scena):
         dentro = [e for e in scena['elementi'] if visibile(e, t, durata)]
         if not dentro:
             continue
