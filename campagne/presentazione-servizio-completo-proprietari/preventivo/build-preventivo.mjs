@@ -89,7 +89,7 @@ const p1 = page(`${header(`    <img src="hadrianus-tempio-220.webp" alt="Hadrian
   <div style="position: absolute; left: 56px; right: 56px; top: 276px; display: flex; gap: 34px; padding: 16px 0; border-top: 1px solid ${C.hair}; border-bottom: 1px solid ${C.hair};">
     <div style="flex: 1; display: flex; flex-direction: column; gap: 5px;">
       ${label('Intestato a')}
-      <span style="font-size: 13.5px; font-weight: 700; line-height: 1.35; color: ${C.ink};">[Nome e cognome della proprietaria]</span>
+      <span style="font-size: 13.5px; font-weight: 700; line-height: 1.35; color: ${C.ink};">Patrizia [cognome]</span>
     </div>
     <div style="flex: 1; display: flex; flex-direction: column; gap: 5px;">
       ${label('Immobile')}
@@ -113,7 +113,7 @@ ${listaVoci}
     </div>
     <span style="font-family: ${F.d}; font-weight: 900; font-size: 42px; line-height: 1; letter-spacing: -1.4px;">500,00 €</span>
   </div>
-${foot(1, 'Preventivo — messa in regola documentale · Bilocale, Ostia Lido Centro')}`);
+${foot(1, 'Hadrianus Multiservice · P. IVA 18302601002 · 351 730 5472 · info@hadrianusmultiservice.it')}`);
 
 // ————————————————————————————————————————————————— pagina 2
 const esclusi = [
@@ -172,6 +172,16 @@ ${serve.map(riga).join('\n')}
     </div>
   </div>
 
+  <div style="position: absolute; left: 56px; right: 56px; top: 856px; display: flex; gap: 30px; padding-top: 12px; border-top: 1px solid ${C.hair};">
+    <div style="flex: 1; display: flex; flex-direction: column; gap: 3px;">
+      <span style="font-size: 12px; font-weight: 700; line-height: 1.35; color: ${C.ink};">Hadrianus Multiservice</span>
+      <span style="font-size: 11.5px; line-height: 1.4; color: ${C.note};">Via Francesco Donati 274, Roma · P. IVA 18302601002</span>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 3px; text-align: right;">
+      <span style="font-size: 12px; font-weight: 700; line-height: 1.35; color: ${C.ink};">351 730 5472</span>
+      <span style="font-size: 11.5px; line-height: 1.4; color: ${C.note};">info@hadrianusmultiservice.it</span>
+    </div>
+  </div>
   <div style="position: absolute; left: 56px; right: 56px; bottom: 96px; border: 1px solid ${C.hairStrong}; padding: 22px 26px; display: flex; flex-direction: column; gap: 20px; background: ${C.paper};">
     <span style="font-family: ${F.d}; font-weight: 800; font-size: 13px; line-height: 1.35; color: ${C.ink};">Per accettazione del preventivo</span>
     <div style="display: flex; gap: 40px;">
@@ -185,7 +195,7 @@ ${serve.map(riga).join('\n')}
       </div>
     </div>
   </div>
-${foot(2, 'Hadrianus Multiservice · hadrianusmultiservice.it')}`);
+${foot(2, 'Preventivo — messa in regola documentale · Bilocale, Ostia Lido Centro')}`);
 
 fs.writeFileSync(path.join(__dirname, 'Main.dc.html'), p1);
 fs.writeFileSync(path.join(__dirname, 'Pagina2.dc.html'), p2);

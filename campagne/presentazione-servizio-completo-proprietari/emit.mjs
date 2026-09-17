@@ -220,7 +220,7 @@ w('Passo', K.stepsSlide({
 w('Chiusura', K.closingSlide({
   line: 'Da appartamento<br>a struttura.',
   subline: 'Il suo bilocale a Lido Centro, e il lavoro che serve per farlo rendere.',
-  contact: 'Multiservice · Roma · Ostia',
+  contact: '351 730 5472 · info@hadrianusmultiservice.it',
 }));
 
 console.log('16 slide scritte in slide/');
