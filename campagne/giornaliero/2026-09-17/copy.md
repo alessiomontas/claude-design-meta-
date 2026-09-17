@@ -244,7 +244,9 @@ Velo: fondo fumè pieno
 | # | Affermazione | Stato |
 |---|---|---|
 | 1 | 61,5% occupazione alberghiera Roma gen-mar 2026 | CONFERMATO — Federalberghi Roma su dati STR. Dato di mercato |
-| 2 | «l'annuncio va riscritto per un altro cliente» | descrizione di lavoro, nessun risultato promesso |
+| 2 | «uno dei trimestri più bassi dell'anno» | forma attenuata: le fonti citate coprono solo Q1 2026 e Q4 2025 |
+| 3 | «l'annuncio va riscritto per un altro cliente» | descrizione di lavoro, nessun risultato promesso |
+| 4 | «se non si fa adesso, tocca farla a luglio» | forma impersonale: descrive il mestiere, non colpevolizza il proprietario |
 
 ---
 
@@ -527,7 +529,7 @@ Scrivi "NOVEMBRE" in DM.
 | gancio | 500-660 | 2 righe | Archivo 900 | 62 | #FFF |
 | filo oro | 700-703 | linea 3 px, 200 px | — | — | #C8A24B |
 | corpo 1 | 760-900 | 3 righe | Manrope 600 | 33 | rgba(255,255,255,.88) |
-| corpo 2 | 960-1180 | 4 righe | Manrope 600 | 33 | #FFF su `rgba(255,255,255,.06)` con filo oro a sinistra |
+| corpo 2 | 960-1140 | **3 righe** | Manrope 600 | 33 | #FFF su `rgba(255,255,255,.06)` con filo oro a sinistra |
 | chiusura | 1250-1360 | 2 righe | Archivo 800 | 45 | #C8A24B |
 | CTA | 1420-1500 | pillola oro | Manrope 600 maiusc. | 31 | #2E2A25 su #C8A24B |
 Griglia: margine 64 · colonna utile 952 · safe area 180/320
@@ -551,64 +553,81 @@ shot on Canon EOS R5, 16-35mm at 24mm, f/8, ISO 400, editorial documentary photo
 | 1 | «ad agosto si riempie anche da soli» | opinione di posizionamento, da brief |
 | 2 | «Guadagniamo solo se guadagni tu» | lessico di brand |
 | 3 | nessun dato di performance Hadrianus | assente per scelta |
+| 4 | «quanto ci mette a rispondere» | criterio di giudizio, non un impegno orario di Hadrianus |
 
 ---
 
 ### S2 · Instagram Story · 1080×1920 · problema + soluzione + CTA (territorio)
 
 **COPY**
-Gancio      | «D'inverno non viene nessuno.»
-Corpo       | Roma nel trimestre più basso
-            | dell'anno: 61,5% di occupazione.
-CTA         | Scrivi "NOVEMBRE"
+Gancio      | Agosto non fa testo. Gennaio sì.
+Corpo       | 61,5% di occupazione alberghiera
+            | a Roma, gennaio-marzo 2026.
+CTA         | Scrivi "NOVEMBRE" in DM
 Caption     | —
+
+Gancio alternativo, se «non fa testo» suona troppo colloquiale: **«Il mese che dice la verità non è agosto.»**
 
 **Testo integrale a schermo**
 ```
-«D'inverno non viene nessuno.»
+Agosto non fa testo.
+Gennaio sì.
 
-Gennaio-marzo 2026, il trimestre più basso
-dell'anno a Roma: 61,5% di occupazione
-alberghiera.
+61,5%
+occupazione alberghiera a Roma,
+gennaio-marzo 2026 — uno dei trimestri
+più bassi dell'anno.
 Federalberghi Roma su dati STR.
 
-Non viene meno gente. Viene gente diversa:
-congressi, fiere, scalo di Fiumicino,
-ospedali, università.
-E la casa va venduta a lei, non al turista
-di agosto.
+Non è che non viene nessuno: viene gente
+diversa. Congressi, fiere, scalo di
+Fiumicino, ospedali, università.
+E l'annuncio va scritto per loro, non per
+il turista di agosto.
 
 Gestione completa in standard alberghiero,
 15% sul fatturato generato.
-Guadagniamo solo se guadagni tu.
+Ad agosto ci guadagnano tutti.
+Da ottobre guadagniamo solo se guadagni tu.
 
 Scrivi "NOVEMBRE" in DM.
 ```
 
-**LAYOUT**
+La storia resta **autoconclusiva** e resta sull'angolo di oggi: apre sul metro di giudizio (agosto non fa testo), non sull'inverno. Non nega l'inverno — lo qualifica: *non è che non viene nessuno, viene gente diversa*. E parla di **annuncio**, non di «casa da vendere».
+
+**LAYOUT** (zone ricalcolate sul testo definitivo)
 | Zona | y (px) | Elemento | Font | Corpo | Colore |
 |---|---|---|---|---|---|
 | marchio | 200-280 | HADRIANUS / MULTISERVICE | Archivo 800 / Manrope 600 | 33 / 17 | #FFF |
-| gancio | 460-560 | virgolettato | Archivo 900 | 50 | rgba(255,255,255,.70) |
-| numero | 620-820 | 61,5% | Archivo 900 | 70 (display 160 in scala titolo) | #C8A24B |
-| riga dato | 840-940 | 2 righe + fonte | Manrope 600 / Manrope 600 | 33 / 17 | #FFF / rgba(255,255,255,.60) |
-| corpo | 1000-1230 | 4 righe | Manrope 600 | 33 | #FFF su `rgba(255,255,255,.06)` |
-| offerta | 1280-1380 | 3 righe | Archivo 800 / Manrope 600 | 45 / 33 | #FFF |
-| CTA | 1440-1520 | pillola oro | Manrope 600 maiusc. | 31 | #2E2A25 su #C8A24B |
-Griglia: margine 64 · colonna utile 952 · safe area 180/320
-Velo: fondo fumè pieno + radiale oro dietro al numero `radial-gradient(circle 420px at 50% 36%, rgba(200,162,75,.16), transparent 70%)`
+| gancio | 380-520 | 2 righe | Archivo 900 | 62 | #FFF |
+| blocco dato | 580-880 | card unica: numero + 3 righe + fonte | — | — | fondo `rgba(200,162,75,.10)`, filo oro 3 px a sinistra |
+| └ numero | 600-680 | 61,5% | Archivo 900 | 70 | #C8A24B |
+| └ riga dato | 700-830 | 3 righe | Manrope 600 | 33 | #FFF |
+| └ fonte | 840-870 | Federalberghi Roma su dati STR | Manrope 600 | 17 | rgba(255,255,255,.60) |
+| corpo | 920-1180 | 5 righe | Manrope 600 | 33 | #FFF su `rgba(255,255,255,.06)` |
+| offerta | 1220-1300 | 2 righe | Manrope 600 | 33 | rgba(255,255,255,.88) |
+| chiusura | 1330-1450 | 2 righe | Archivo 800 | 40 | #C8A24B |
+| CTA | 1490-1570 | pillola oro | Manrope 600 maiusc. | 31 | #2E2A25 su #C8A24B |
+Griglia: margine 64 · colonna utile 952 · safe area 180/320 (ultimo elemento a 1570, dentro il limite)
+Scala rispettata: 70·62·50·45·40·33·31·17. Nessun passo «display» fuori scala.
+**Numero, parola «alberghiera» e fonte stanno nella stessa card**: il 61,5% non deve mai poter essere letto come occupazione di Hadrianus.
+Velo: fondo fumè pieno + radiale oro dietro alla card `radial-gradient(circle 420px at 50% 38%, rgba(200,162,75,.16), transparent 70%)`
 
 **PROMPT GRAFICO (EN)** — slide tipografica su fondo pieno, nessuna immagine generata
-**NEGATIVE** — nessun grafico di andamento stagionale, nessuna griglia calendario, nessun monumento
+
+**NEGATIVE** — nessun grafico di andamento stagionale, nessuna griglia calendario, nessun monumento, nessun badge di offerta aggiunto in grafica
+
 **PARAMETRI** --ar 9:16 · fondo pieno #3F3A33
 
 **CLAIM**
 | # | Affermazione | Stato |
 |---|---|---|
-| 1 | 61,5% occupazione alberghiera Roma gen-mar 2026 | CONFERMATO — Federalberghi Roma su dati STR, gen. 2026. Fonte citata a schermo |
-| 2 | motori di domanda (congressi, fiere, aeroporto, sanità, università) | CONFERMATO come descrizione qualitativa, non quantificata |
-| 3 | 15% sul fatturato generato | CONFERMATO |
-| 4 | «Guadagniamo solo se guadagni tu» | lessico di brand |
+| 1 | 61,5% occupazione alberghiera Roma gen-mar 2026 | CONFERMATO — Federalberghi Roma su dati STR, gen. 2026. Fonte nella stessa card del numero |
+| 2 | «uno dei trimestri più bassi dell'anno» | forma attenuata: le fonti citate coprono Q1 2026 e Q4 2025, non provano il superlativo assoluto |
+| 3 | motori di domanda (congressi, fiere, aeroporto, sanità, università) | CONFERMATO come descrizione qualitativa, non quantificata |
+| 4 | «non è che non viene nessuno: viene gente diversa» | coerente col brief (obiezione 2: non negare l'inverno, cambiargli il soggetto). Nessuna negazione del calo invernale |
+| 5 | 15% sul fatturato generato | CONFERMATO |
+| 6 | «Guadagniamo solo se guadagni tu» | lessico di brand |
 
 ---
 
@@ -624,9 +643,31 @@ Restano aperti col titolare, **e per questo volutamente esclusi da tutto il pacc
 5. Giubileo → **non citato** come driver 2026-27.
 6. Medie di 1.000-1.100 €/mese → **non usate** (sposterebbero il contenuto sul numero).
 7. Date degli eventi autunnali → non citate in nessun contenuto, l'angolo non ne ha bisogno.
+8. Impegni operativi non documentati («risposte in un'ora» come promessa, «ospiti seguiti H24») → **non impaginati**. Il brief documenta il **check-in** smart H24, non l'assistenza ospiti 24 ore.
+9. Q2/Q3 di occupazione alberghiera Roma → mancanti: finché non ci sono, si scrive «uno dei trimestri più bassi», mai «il più basso».
+
+I tre `[DATO DA VERIFICARE]` che compaiono in questo file stanno **solo** nelle tabelle CLAIM e in questo elenco, come documentazione di ciò che è stato escluso. Non sono testo da schermo: non devono migrare nelle artboard, in `scene.json` né in `PUBBLICAZIONE.md`.
+
+## Revisione compliance — correzioni applicate (17/09/2026)
+
+Passaggio di `compliance-checker`: 6 bloccanti, tutti chiusi in questo file.
+
+| # | Bloccante | Correzione |
+|---|---|---|
+| B1 | S2 apriva con un gancio vietato («D'inverno non viene nessuno»), affermava «non viene meno gente» (smentito dai nostri stessi dati) e diceva «la casa va venduta a lei» | S2 riscritta integralmente: nuovo gancio «Agosto non fa testo. Gennaio sì.», l'inverno si qualifica invece di negarlo, si parla di **annuncio** e non di casa da vendere, aggiunta la chiusura obbligata. Layout ricalcolato sul testo nuovo |
+| B2 | «il trimestre più basso dell'anno»: superlativo non provato (abbiamo solo Q1 2026 e Q4 2025) | «uno dei trimestri più bassi» in tutti i punti (C4, caption carosello, post FB, S2) |
+| B3 | «un buco pesa dieci volte di più»: numero senza fonte | «un buco pesa molto di più» |
+| B4 | Impegni operativi non coperti dal brief | F2: righe impersonali + kicker `COSA CAMBIA DA OTTOBRE`. C5: «check-in H24, ospiti seguiti». S1: il metro di giudizio al posto dell'elenco di servizio. «Rispondere in un'ora» resta **solo** dove descrive il mercato: reel sc. 9, C4, post FB |
+| B5 | Il collage Facebook mostrava l'accusa e nascondeva il sollievo sotto «Vedi altro» | F1 porta il sollievo in prima immagine: «E non è un tuo errore: ad agosto si riempie anche da soli» |
+| B6 | C4, indice slide `#2E2A25` su fondo fumè | indice `#C8A24B` come le altre slide |
+
+Migliorativi applicati nello stesso passaggio: variante hook C resa non accusatoria · manutenzione impersonale in C4 e nel post FB · mezza riga per il fai-da-te in caption e post · kicker F3 allineato a «chi ti gestisce la casa» · `«Cosa fai a novembre?»` uniforme nei tre punti · blocco F completato nel Master Template con il claim Fiumicino spostato da F3 a F · C3 NEGATIVE e PARAMETRI separati · S2 riportata dentro la scala tipografica (niente passo «display» fuori scala) · righe dei blocchi C3/C4 a corpo 33 per garantire l'altezza identica · foto di C5 e F3 fissata su `cucina-soggiorno-open-space.png`.
+
+Decisione del titolare sulla CTA: resta `Scrivi "NOVEMBRE" in DM`, con virgolette dritte, identica in tutti e cinque i contenuti — grafiche e testo del post compresi (tolto «o in un commento» dal post, che era l'unico punto discordante).
 
 ## Note per i passaggi successivi
 
-- Prossimo step obbligato: **`compliance-checker`**, poi `art-director` per le artboard editabili, poi `revisore-marketing-design`. Nulla di questo va al cliente così com'è.
+- `compliance-checker` è stato fatto e le sue correzioni sono applicate. Prossimo step: `art-director` per le artboard editabili, poi `revisore-marketing-design`. Nulla di questo va al cliente così com'è.
 - Vincoli grafici rispettati dal copy: nessuna tabella a due colonne, nessuna griglia calendario a 12 caselle, nessun grafico stagionale, nessuna lista delle cinque tipologie di ospite, nessun riferimento al costo del vuoto (16/09), nessun calendario eventi come argomento.
+- Per l'art-director: l'offerta non va «completata» in grafica con badge tipo *0 costi fissi* o *nessun deposito*; `smart-tv-streaming-mockup.jpg` e `salotto-divano-azzurro.jpg` restano esclusi; «pulizie e controlli» non va trasformato in impegno numerico («controlli settimanali»).
 - Il reel **si costruisce in Canva** (preferenza fissa 10): la sceneggiatura sopra è la fonte per `scene.json`.
