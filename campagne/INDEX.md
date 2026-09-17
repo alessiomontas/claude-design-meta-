@@ -49,6 +49,7 @@ Consultalo **prima di iniziare una nuova campagna**, per scegliere un angolo e u
 - ~~L'esposizione amministrativa (CIN, adempimenti, sanzioni)~~ — **angolo bocciato dal titolare il 14/09**: la burocrazia allontana invece di attrarre, e il gancio chiudeva sul peso che resta al proprietario. Materiale conservato in `giornaliero/2026-09-14/copy.md`, non ripescare l'angolo
 - La qualità della prima foto dell'annuncio: "ti hanno scattato le foto col telefono", prima/dopo sulla stessa stanza e i quattro criteri (luce, ordine, inquadratura, sequenza), con il servizio fotografico garantito dentro la gestione — giornaliero 14/09 v2 (reel + carosello + Facebook)
 - Il minimo di notti troppo alto, e il check-in a orari rigidi: due errori che costano prenotazioni, dati come consiglio — giornaliero 14/09 v2 (storie S3 e S4)
+- L'affitto "settembre-maggio" a un inquilino come scelta a metà: l'entrata fissa non è gratis — nove mesi di usura, il mese che vale finché arriva, giugno da rifare da capo, e l'estate gestita da soli. Offerta: la gestione del solo inverno come prova, decisione a giugno del proprietario — campagna `reel-inverno-inquilino` (reel 23 s, Canva). **Distinto** dal confronto affitto lungo vs breve già usato su Facebook: lì era un confronto di cifre, qui non compare nessuna cifra
 
 Angoli non ancora esplorati, potenziali per una prossima campagna: calendario eventi di Roma come leva di prenotazione, retention/referral per proprietari già clienti.
 
