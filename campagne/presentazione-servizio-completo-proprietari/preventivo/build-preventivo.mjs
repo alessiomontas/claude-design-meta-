@@ -57,8 +57,8 @@ const label = (t) => `<span style="font-family: ${F.d}; font-weight: 700; font-s
 // ————————————————————————————————————————————————— pagina 1
 const voci = [
   ['Verifica preliminare dell’immobile', 'Controllo di visura catastale, planimetria e dati dell’unità, per accertare che l’immobile possa essere destinato a locazione turistica.'],
-  ['CIR — Codice Identificativo Regionale', 'Richiesta e ottenimento del codice della Regione Lazio, intestato alla proprietà.'],
-  ['CIN — Codice Identificativo Nazionale', 'Richiesta e ottenimento del codice della Banca Dati Strutture Ricettive: senza, l’immobile non può essere pubblicato su nessun portale.'],
+  ['CIR — Codice Identificativo Regionale', 'Richiesta alla Regione Lazio e pratica seguita fino all’esito, con il codice intestato alla proprietà.'],
+  ['CIN — Codice Identificativo Nazionale', 'Richiesta del codice assegnato dal Ministero del Turismo e pratica seguita fino all’esito: senza CIN l’immobile non è pubblicabile su nessun portale.'],
   ['Pratica comunale di avvio attività', 'Predisposizione e presentazione al SUAR di Roma Capitale, nella forma prevista per la tipologia scelta (SCIA o CIA).'],
   ['Alloggiati Web — Polizia di Stato', 'Apertura della posizione e attivazione delle credenziali per la comunicazione degli ospiti.'],
   ['ROSS 1000 — Regione Lazio', 'Apertura della posizione per la rilevazione dei flussi turistici.'],
@@ -66,7 +66,7 @@ const voci = [
   ['Consegna del fascicolo', 'Codici, credenziali, ricevute e copia di ogni pratica, raccolti in un unico fascicolo intestato a lei.'],
 ];
 
-const listaVoci = voci.map(([h, s], i) => `      <div style="display: flex; gap: 16px; align-items: flex-start; padding: 9.5px 0; ${i === voci.length - 1 ? '' : `border-bottom: 1px solid ${C.hair};`}">
+const listaVoci = voci.map(([h, s], i) => `      <div style="display: flex; gap: 16px; align-items: flex-start; padding: 8px 0; ${i === voci.length - 1 ? '' : `border-bottom: 1px solid ${C.hair};`}">
         <span style="font-family: ${F.d}; font-weight: 900; font-size: 14px; line-height: 1.35; color: ${C.goldText}; width: 26px; flex-shrink: 0;">${String(i + 1).padStart(2, '0')}</span>
         <div style="display: flex; flex-direction: column; gap: 3px;">
           <span style="font-size: 14px; font-weight: 700; line-height: 1.3; color: ${C.ink};">${h}</span>
@@ -81,15 +81,15 @@ const p1 = page(`${header(`    <img src="hadrianus-tempio-220.webp" alt="Hadrian
     <h1 style="font-family: ${F.d}; font-weight: 900; font-size: 33px; line-height: 1.06; letter-spacing: -0.8px; margin: 0; color: ${C.ink};">Messa in regola<br>documentale.</h1>
   </div>
   <div style="position: absolute; right: 56px; top: 160px; width: 230px; display: flex; flex-direction: column; gap: 9px; text-align: right;">
-    <span style="font-size: 12px; line-height: 1.5; color: ${C.body};">Preventivo n. <b>[numero]</b></span>
-    <span style="font-size: 12px; line-height: 1.5; color: ${C.body};">Data <b>[gg/mm/aaaa]</b></span>
+    <span style="font-size: 12px; line-height: 1.5; color: ${C.body};">Preventivo n. <b>____</b></span>
+    <span style="font-size: 12px; line-height: 1.5; color: ${C.body};">Data <b>17/09/2026</b></span>
     <span style="font-size: 12px; line-height: 1.5; color: ${C.body};">Valido 30 giorni dall’emissione</span>
   </div>
 
   <div style="position: absolute; left: 56px; right: 56px; top: 276px; display: flex; gap: 34px; padding: 16px 0; border-top: 1px solid ${C.hair}; border-bottom: 1px solid ${C.hair};">
     <div style="flex: 1; display: flex; flex-direction: column; gap: 5px;">
       ${label('Intestato a')}
-      <span style="font-size: 13.5px; font-weight: 700; line-height: 1.35; color: ${C.ink};">Patrizia [cognome]</span>
+      <span style="font-size: 13.5px; font-weight: 700; line-height: 1.35; color: ${C.ink};">Patrizia</span>
     </div>
     <div style="flex: 1; display: flex; flex-direction: column; gap: 5px;">
       ${label('Immobile')}
@@ -97,7 +97,7 @@ const p1 = page(`${header(`    <img src="hadrianus-tempio-220.webp" alt="Hadrian
     </div>
   </div>
 
-  <p style="position: absolute; left: 56px; top: 352px; width: 682px; margin: 0; font-size: 13.5px; line-height: 1.55; color: ${C.body};">Oggetto del preventivo è <b>la sola messa in regola documentale</b> dell’immobile: al termine, l’appartamento è in regola per essere affittato e pubblicato.</p>
+  <p style="position: absolute; left: 56px; top: 352px; width: 682px; margin: 0; font-size: 13.5px; line-height: 1.55; color: ${C.body};">Oggetto del preventivo è <b>la sola messa in regola documentale</b> dell’immobile: codici identificativi e posizioni presso gli enti, aperti e intestati a lei. Se in seguito ci affida anche la gestione, questa stessa parte rientra nella commissione del 15%.</p>
 
   <div style="position: absolute; left: 56px; top: 432px; width: 682px; display: flex; flex-direction: column; gap: 2px;">
     ${label('Cosa comprende')}
@@ -119,7 +119,7 @@ ${foot(1, 'Hadrianus Multiservice · P. IVA 18302601002 · 351 730 5472 · info@
 const esclusi = [
   'Servizio fotografico, testi dell’annuncio, pubblicazione sui portali e landing page.',
   'Gestione dell’immobile e adempimenti ricorrenti: comunicazioni a ogni arrivo, flussi statistici, contributo di soggiorno.',
-  'Dotazioni di sicurezza richieste per i codici (rilevatori ed estintore): le indichiamo, la fornitura resta alla proprietà.',
+  'Dotazioni di sicurezza richieste per i codici (rilevatori ed estintore): le indichiamo noi, la fornitura resta alla proprietà. Devono esserci perché le pratiche possano essere presentate.',
   'Interventi tecnici o di conformità sull’immobile, se dalla verifica preliminare dovessero emergere.',
   'Adempimenti fiscali e dichiarativi, che restano al suo commercialista.',
 ];
@@ -137,14 +137,14 @@ const riga = (t) => `      <div style="display: flex; gap: 12px; align-items: fl
       </div>`;
 
 const condizioni = [
-  ['Costi delle pratiche', 'Diritti di segreteria, imposte di bollo ed eventuali oneri comunali sono a carico della proprietà. Vengono quantificati e comunicati <b>prima</b> di procedere: nessuna spesa viene sostenuta senza il suo consenso.'],
+  ['Costi delle pratiche', 'Diritti di segreteria, imposte di bollo, eventuali oneri comunali e il compenso di un tecnico abilitato, se necessario, sono a carico della proprietà. Vengono quantificati e comunicati <b>prima</b> di procedere: nessuna spesa viene sostenuta senza il suo consenso.'],
   ['Pagamento', 'Alla conferma del preventivo si sostengono i soli costi delle pratiche. I <b>500,00 €</b> si pagano a lavoro concluso, alla consegna del fascicolo.'],
-  ['Tempi', 'L’avvio è immediato alla ricezione dei documenti. I tempi di rilascio dipendono dagli enti competenti e non sono nella nostra disponibilità: la teniamo aggiornata a ogni passaggio.'],
-  ['Esito delle pratiche', 'L’esito dipende dai requisiti dell’immobile. Se dalla verifica preliminare emerge un impedimento, glielo diciamo prima di procedere e il preventivo si ferma, senza alcun costo di onorario.'],
+  ['Tempi ed esito', 'L’avvio è immediato alla ricezione dei documenti. I codici li rilasciano gli enti competenti: noi predisponiamo, presentiamo e seguiamo le pratiche fino all’esito. <b>Se i codici non vengono rilasciati, l’onorario non è dovuto</b>: restano a suo carico i soli costi già sostenuti.'],
+  ['Dati personali', 'I documenti che ci affida — identità, codice fiscale, visura, planimetria — sono usati solo per le pratiche oggetto di questo preventivo e comunicati ai soli enti competenti.'],
 ];
 
 const p2 = page(`${header(`    <div style="text-align: right; display: flex; flex-direction: column; gap: 6px;">
-      <span style="font-size: 11px; letter-spacing: 1.6px; text-transform: uppercase; color: ${C.note};">Preventivo n. [numero]</span>
+      <span style="font-size: 11px; letter-spacing: 1.6px; text-transform: uppercase; color: ${C.note};">Preventivo n. ____</span>
       <span style="font-size: 11px; letter-spacing: 1.6px; text-transform: uppercase; color: ${C.note};">Pagina 2 di 2</span>
     </div>`)}
 
@@ -158,7 +158,7 @@ ${esclusi.map(riga).join('\n')}
   <div style="position: absolute; left: 56px; top: 358px; width: 682px; display: flex; flex-direction: column; gap: 12px;">
     ${label('Condizioni')}
     <div style="display: flex; flex-direction: column;">
-${condizioni.map(([h, t], i) => `      <div style="display: flex; gap: 22px; align-items: flex-start; padding: 13px 0; ${i === condizioni.length - 1 ? '' : `border-bottom: 1px solid ${C.hair};`}">
+${condizioni.map(([h, t], i) => `      <div style="display: flex; gap: 22px; align-items: flex-start; padding: 11px 0; ${i === condizioni.length - 1 ? '' : `border-bottom: 1px solid ${C.hair};`}">
         <span style="width: 152px; flex-shrink: 0; font-family: ${F.d}; font-weight: 800; font-size: 12.5px; line-height: 1.35; color: ${C.ink};">${h}</span>
         <span style="font-size: 12.5px; line-height: 1.45; color: ${C.body};">${t}</span>
       </div>`).join('\n')}
