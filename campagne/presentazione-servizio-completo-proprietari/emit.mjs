@@ -74,7 +74,7 @@ w('Regola', K.sectionSlide({
 
 // 06 · snodo —————————————————————————————————————————————————————
 w('Responsabilita', K.statementSlide({
-  n: 6, kickerText: 'Un punto da dire chiaramente',
+  n: 6, kickerText: 'La titolarità',
   statementHtml: 'Il nome sulle carte<br>resta il suo.',
   lines: [
     'I codici e la pratica sono intestati a lei, che è la proprietaria dell’immobile.',
@@ -96,7 +96,7 @@ w('Casa', K.sectionSlide({
     { head: 'Pulizie in standard alberghiero a ogni cambio.' },
     { head: 'Manutenzioni seguite senza passare da lei.' },
   ],
-  photo: { src: 'salotto.webp', caption: 'Un immobile che gestiamo oggi. Non è il suo: il suo lo prepariamo così.' },
+  photo: { src: 'cucina.webp', pos: '58% 50%', caption: 'Un immobile che gestiamo oggi. Non è il suo: il suo lo prepariamo così.' },
 }));
 
 // 08 · 03 accessi ————————————————————————————————————————————————
@@ -110,6 +110,7 @@ w('Accessi', K.sectionSlide({
     { head: 'Apertura automatica del portone dal citofono.' },
     { head: 'Assistenza agli ospiti, H24, per tutto il soggiorno.' },
   ],
+  noteStyle: 'band', noteLabel: 'Perché conta',
   note: 'Questi strumenti intervengono dopo il riconoscimento, non lo sostituiscono. Il check-in resta presidiato.',
 }));
 
@@ -124,7 +125,7 @@ w('Identita', K.sectionSlide({
     { head: 'Descrizione di ogni ambiente e di ogni servizio.' },
     { head: 'Regole della casa e informazioni pratiche scritte.' },
   ],
-  photo: { src: 'cucina.webp', caption: 'Un altro immobile che gestiamo, non il suo. Stessa luce, stessa preparazione.' },
+  photo: { src: 'salotto.webp', pos: '50% 46%', caption: 'Un altro immobile che gestiamo, non il suo. Stessa luce, stessa preparazione.' },
 }));
 
 // 10 · 05 dove si vende ——————————————————————————————————————————
@@ -138,6 +139,7 @@ w('Canali', K.sectionSlide({
     { head: 'Landing page dedicata all’appartamento.' },
     { head: 'Calendario e tariffe aggiornati su ogni canale.' },
   ],
+  noteStyle: 'band', noteLabel: 'Prenotazioni dirette',
   note: 'Il sito Hadrianus raccoglie prenotazioni dirette: soggiorni che non passano da nessun portale.',
 }));
 

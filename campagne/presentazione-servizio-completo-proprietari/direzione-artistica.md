@@ -37,7 +37,8 @@ Nessun blu navy, nessun gradiente decorativo, nessuna emoji, nessun angolo arrot
 | Piede | y 44 dal basso — trattino oro a sinistra, numerazione `05 / 16` a destra |
 | Colonna sinistra (slide di sezione) | x 88, larghezza 400 px |
 | Filo verticale di separazione | x 552, da y 148 a y 588 |
-| Colonna destra (elenchi) | x 600, larghezza 592 px |
+| Colonna destra (elenchi) | x 600, larghezza 592 px, blocco centrato verticalmente |
+| Slide 04 (calendario) | fascia a tutta larghezza: etichetta di frequenza 196 px + due colonne di voci da 17 px |
 
 ## Scala tipografica (Archivo + Manrope, come da design system)
 
@@ -51,22 +52,23 @@ Pattern **nuovo**, non presente in `design-system.md` (nessuna campagna preceden
 2. **Numero di sezione gigante in filigrana** (`01`…`07`) in basso a sinistra, colore crema più scuro: dà profondità senza aggiungere inchiostro.
 3. **Trattino oro da 14 × 2 px** al posto del punto elenco: è il dettaglio che si ripete su tutte e sedici le slide.
 4. **Tre slide scure come punteggiatura** (il calendario, le condizioni, la chiusura): il deck respira e le due slide che devono restare in testa staccano dal resto.
-5. **Niente card, niente ombre, niente icone**: solo fili, filetti e tipografia. Le uniche immagini sono il logo in marmo e due foto reali di un immobile in gestione.
+5. **Niente card, niente ombre, niente icone**: solo fili, filetti e tipografia. Le uniche immagini sono il logo in marmo, due foto reali di un immobile in gestione e il tramonto del Litorale in chiusura.
+6. **Banda oro** (fondo `rgba(200,162,75,0.17)` + filo oro a sinistra) per le due righe che devono essere lette e non scorse: "perché conta" sugli accessi, "prenotazioni dirette" sui canali, lo stacco della slide 02 e la CTA finale a tutta larghezza. Dove la riga è una precisazione e non un argomento di vendita resta il filetto grigio con l'etichetta NOTA.
 
 ## Uso delle immagini
 
 | Slide | Immagine | Nota |
 |---|---|---|
-| 01 Copertina | logo marmo trasparente, 556 px di altezza, a destra | sfumatura crema sul lato sinistro per non disturbare il titolo |
-| 02 L'immobile | foto reale a piena altezza sulla destra (392 px) | didascalia obbligatoria: è un immobile **in gestione**, non quello della proprietaria |
-| 07 La casa pronta · 09 Identità | foto reale 400 × 208 px nella colonna sinistra | stessa regola di didascalia |
-| 16 Chiusura | logo marmo trasparente su fondo fumè | — |
+| 01 Copertina | logo marmo trasparente **senza plinto** (`hadrianus-tempio-900.webp`), 516 px, dentro la cornice oro | il plinto inciso "HADRIANUS" duplicava il marchio tipografico in basso a sinistra e sconfinava sulla cornice |
+| 02 L'immobile | **nessuna foto** | mostrare un altro immobile proprio sulla slide dedicata al suo creerebbe confusione |
+| 07 La casa pronta · 09 Identità | foto reale **400 × 300 px** nella colonna sinistra, didascalia in sovrimpressione su velo scuro | è l'unica prova visiva dello standard: a 400 × 208 pesava troppo poco. La didascalia deve dire che **non è l'immobile della proprietaria** |
+| 16 Chiusura | tramonto del Litorale a pieno formato con velo fumè | chiude sul territorio, non su un interno |
 
 Regola di compliance applicata: le foto illustrano lo **standard**, mai la struttura (nessun indirizzo, nessun nome, nessun case study). Esclusa `smart-tv-streaming-mockup.jpg` (marchi di terzi).
 
 ## Ritaglio del logo (novità di questa campagna)
 
-Le quattro varianti in `brand-assets/logo/` avevano tutte lo sfondo. La versione trasparente è stata prodotta **in locale** (Chromium headless: riempimento dai bordi con tolleranza locale + tenuta della sola componente connessa più grande + rifinitura del bordo), non con il connettore Adobe. Risultato in `brand-assets/logo/trasparenti/logo-marmo-frontale-trasparente.png` (699 × 708) e derivati `.webp` a 900/560/260 px nella cartella `slide/`.
+Le quattro varianti in `brand-assets/logo/` avevano tutte lo sfondo. La versione trasparente è stata prodotta **in locale** (Chromium headless: riempimento dai bordi con tolleranza locale + tenuta della sola componente connessa più grande + rifinitura del bordo), non con il connettore Adobe. Risultato in `brand-assets/logo/trasparenti/logo-marmo-frontale-trasparente.png` (641 × 708). Nel deck si usa la variante **senza plinto** e sfumata in basso (`slide/hadrianus-tempio-900.webp`).
 
 ## Come si rigenera
 

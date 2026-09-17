@@ -94,26 +94,33 @@ export function rule(x, y, w, h, { dark = false } = {}) {
 
 // ---- layout A: sezione numerata (colonna sinistra + elenco a destra) -------
 
-export function sectionSlide({ n, kickerText, num, titleHtml, promiseText, items, photo, note, dark = false }) {
+export function sectionSlide({ n, kickerText, num, titleHtml, promiseText, items, photo, note, noteLabel, noteStyle, dark = false }) {
   const left = [];
   left.push(`    <div style="position: absolute; left: 88px; top: 150px; width: 400px; display: flex; flex-direction: column; gap: 20px;">
       ${title(titleHtml, { color: dark ? '#FFFFFF' : C.ink, width: 400 })}
       ${promise(promiseText, { dark, width: 370 })}
     </div>`);
   if (photo) {
-    left.push(`    <div style="position: absolute; left: 88px; top: ${photo.top || 392}px; width: 400px; display: flex; flex-direction: column; gap: 11px;">
-      <img src="${photo.src}" alt="" style="width: 400px; height: ${photo.h || 208}px; object-fit: cover; display: block;">
-      <span style="font-size: 12.5px; line-height: 1.4; color: ${dark ? 'rgba(232,225,210,0.55)' : 'rgba(38,36,31,0.45)'};">${photo.caption}</span>
+    left.push(`    <div style="position: absolute; left: 88px; top: ${photo.top || 344}px; width: 400px; height: ${photo.h || 300}px; overflow: hidden;">
+      <img src="${photo.src}" alt="" style="width: 400px; height: ${photo.h || 300}px; object-fit: cover; object-position: ${photo.pos || '50% 50%'}; display: block;">
+      <div style="position: absolute; left: 0; right: 0; bottom: 0; padding: 40px 18px 14px 18px; background: linear-gradient(180deg, rgba(26,23,19,0) 0%, rgba(26,23,19,0.78) 62%, rgba(26,23,19,0.90) 100%);">
+        <span style="font-size: 12.5px; line-height: 1.38; color: rgba(255,255,255,0.90);">${photo.caption}</span>
+      </div>
     </div>`);
   } else {
     left.push(watermark(num, { dark }));
   }
   const list = items.map((it) => item(it, { dark })).join('\n');
   const noteBlock = note
-    ? `\n  <div style="position: absolute; left: 600px; right: 88px; bottom: 96px; display: flex; gap: 14px; align-items: flex-start; border-top: 1px solid ${dark ? C.hairDark : C.hair}; padding-top: 16px;">
-    <span style="font-family: ${F.d}; font-weight: 700; font-size: 11.5px; letter-spacing: 2.2px; text-transform: uppercase; color: ${C.goldText}; flex-shrink: 0; margin-top: 2px;">Nota</span>
-    <span style="font-size: 14.5px; line-height: 1.45; color: ${dark ? C.noteDark : C.body};">${note}</span>
+    ? (noteStyle === 'band'
+      ? `\n  <div style="position: absolute; left: 600px; right: 88px; bottom: 94px; background: rgba(200,162,75,0.17); border-left: 3px solid ${C.gold}; padding: 18px 22px; display: flex; flex-direction: column; gap: 7px;">
+    <span style="font-family: ${F.d}; font-weight: 700; font-size: 11px; letter-spacing: 2.2px; text-transform: uppercase; color: ${C.goldText};">${noteLabel || 'Perché conta'}</span>
+    <span style="font-size: 15.5px; line-height: 1.42; font-weight: 600; color: ${C.ink};">${note}</span>
   </div>`
+      : `\n  <div style="position: absolute; left: 600px; right: 88px; bottom: 96px; display: flex; gap: 14px; align-items: flex-start; border-top: 1px solid ${dark ? C.hairDark : C.hair}; padding-top: 16px;">
+    <span style="font-family: ${F.d}; font-weight: 700; font-size: 11.5px; letter-spacing: 2.2px; text-transform: uppercase; color: ${C.goldText}; flex-shrink: 0; margin-top: 2px;">${noteLabel || 'Nota'}</span>
+    <span style="font-size: 14.5px; line-height: 1.45; color: ${dark ? C.noteDark : C.body};">${note}</span>
+  </div>`)
     : '';
   return page(`${kicker(kickerText, { dark })}
 ${mark({ dark })}
@@ -153,14 +160,13 @@ ${foot(n)}`);
 // ---- layout C: il calendario (slide-perno, fondo scuro) --------------------
 
 export function calendarSlide({ n, kickerText, titleHtml, occhiello, bands, closing }) {
-  const rows = bands.map((b, i) => `    <div style="display: flex; gap: 34px; align-items: flex-start; padding: ${i === 0 ? '0' : '11px'} 0 11px 0; ${i === bands.length - 1 ? '' : `border-bottom: 1px solid ${C.hairDark};`}">
-      <div style="width: 210px; flex-shrink: 0; display: flex; align-items: baseline; gap: 12px;">
+  const rows = bands.map((b, i) => `    <div style="display: flex; gap: 40px; align-items: flex-start; padding: ${i === 0 ? '2px' : '16px'} 0 16px 0; ${i === bands.length - 1 ? '' : `border-bottom: 1px solid ${C.hairDark};`}">
+      <div style="width: 196px; flex-shrink: 0; display: flex; align-items: baseline; gap: 12px;">
         <div style="width: 12px; height: 2px; background: ${C.gold}; transform: translateY(-5px);"></div>
         <span style="font-family: ${F.d}; font-weight: 800; font-size: 14px; letter-spacing: 1.5px; text-transform: uppercase; color: ${C.gold}; line-height: 1.3;">${b.freq}</span>
       </div>
-      <div style="display: flex; flex-direction: column; gap: 4px;">
-        ${b.items.map((t) => `<span style="font-size: 15px; line-height: 1.4; color: ${C.onDark};">${t}</span>`).join('\n        ')}
-      </div>
+      ${b.items.map((t) => `<div style="flex: 1; font-size: 17px; line-height: 1.38; color: ${C.onDark};">${t}</div>`).join('\n      ')}
+      ${b.items.length < 2 ? '<div style="flex: 1;"></div>' : ''}
     </div>`).join('\n');
   return page(`${kicker(kickerText, { dark: true })}
 ${mark({ dark: true })}
@@ -208,7 +214,7 @@ ${foot(n)}`);
 // ---- layout E: copertina ---------------------------------------------------
 
 export function coverSlide({ kickerText, titleHtml, subtitle }) {
-  return page(`  <img src="hadrianus-logo-900.webp" alt="Hadrianus" style="position: absolute; right: 40px; bottom: 44px; height: 556px; width: auto;">
+  return page(`  <img src="hadrianus-tempio-900.webp" alt="Hadrianus" style="position: absolute; right: 62px; bottom: 76px; height: 516px; width: auto;">
   <div style="position: absolute; right: 0; top: 0; width: 560px; height: 720px; background: linear-gradient(90deg, ${C.cream} 0%, rgba(250,246,236,0.72) 26%, rgba(250,246,236,0) 55%);"></div>
   <div style="position: absolute; left: 44px; top: 44px; right: 44px; bottom: 44px; border: 1px solid rgba(200,162,75,0.40);"></div>
   <div style="position: absolute; left: 92px; top: 168px; width: 650px; display: flex; flex-direction: column; gap: 24px;">
@@ -322,8 +328,9 @@ ${cells}
   <div style="position: absolute; left: 88px; right: 88px; top: 486px; border-top: 1px solid ${C.hair}; padding-top: 18px;">
     <span style="font-size: 16px; line-height: 1.5; color: ${C.body};">${numberLine}</span>
   </div>
-  <div style="position: absolute; left: 88px; bottom: 92px; display: flex; align-items: center; gap: 0;">
-    <div style="background: ${C.gold}; color: ${C.darkDeep}; padding: 18px 34px; font-family: ${F.d}; font-weight: 800; font-size: 20px; letter-spacing: 0.2px;">${cta}</div>
+  <div style="position: absolute; left: 88px; right: 88px; bottom: 88px; background: ${C.gold}; color: ${C.darkDeep}; padding: 22px 30px; display: flex; align-items: center; justify-content: space-between; gap: 20px;">
+    <span style="font-family: ${F.d}; font-weight: 900; font-size: 24px; letter-spacing: -0.2px;">${cta}</span>
+    <span style="font-size: 26px; line-height: 1;">→</span>
   </div>
 ${foot(n)}`);
 }
