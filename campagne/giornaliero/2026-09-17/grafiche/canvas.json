@@ -1,0 +1,247 @@
+{
+  "artboards": [
+    {
+      "file": "C1.dc.html",
+      "x": 0,
+      "y": 0,
+      "w": 1080,
+      "h": 1350,
+      "title": "Carosello 1/5 &middot; il gancio",
+      "print": "fixed"
+    },
+    {
+      "file": "C2.dc.html",
+      "x": 1240,
+      "y": 0,
+      "w": 1080,
+      "h": 1350,
+      "title": "Carosello 2/5 &middot; il sollievo",
+      "print": "fixed"
+    },
+    {
+      "file": "C3.dc.html",
+      "x": 2480,
+      "y": 0,
+      "w": 1080,
+      "h": 1350,
+      "title": "Carosello 3/5 &middot; tre scalini",
+      "print": "fixed"
+    },
+    {
+      "file": "C4.dc.html",
+      "x": 3720,
+      "y": 0,
+      "w": 1080,
+      "h": 1350,
+      "title": "Carosello 4/5 &middot; il lavoro che non si vede",
+      "print": "fixed"
+    },
+    {
+      "file": "C5.dc.html",
+      "x": 4960,
+      "y": 0,
+      "w": 1080,
+      "h": 1350,
+      "title": "Carosello 5/5 &middot; offerta e CTA",
+      "print": "fixed"
+    },
+    {
+      "file": "F1.dc.html",
+      "x": 0,
+      "y": 2120,
+      "w": 1080,
+      "h": 1920,
+      "title": "Facebook 1/3 &middot; verticale 9:16",
+      "print": "fixed"
+    },
+    {
+      "file": "F2.dc.html",
+      "x": 1240,
+      "y": 2120,
+      "w": 1080,
+      "h": 1080,
+      "title": "Facebook 2/3 &middot; cosa cambia da ottobre",
+      "print": "fixed"
+    },
+    {
+      "file": "F3.dc.html",
+      "x": 2480,
+      "y": 2120,
+      "w": 1080,
+      "h": 1080,
+      "title": "Facebook 3/3 &middot; offerta",
+      "print": "fixed"
+    },
+    {
+      "file": "S1.dc.html",
+      "x": 3720,
+      "y": 2120,
+      "w": 1080,
+      "h": 1920,
+      "title": "Storia 1 &middot; il metro",
+      "print": "fixed"
+    },
+    {
+      "file": "S2.dc.html",
+      "x": 4960,
+      "y": 2120,
+      "w": 1080,
+      "h": 1920,
+      "title": "Storia 2 &middot; agosto non fa testo",
+      "print": "fixed"
+    },
+    {
+      "file": "R01.dc.html",
+      "x": 0,
+      "y": 4300,
+      "w": 1080,
+      "h": 1920,
+      "title": "Reel scena 1 &middot; 0.0-1.8 s",
+      "print": "fixed"
+    },
+    {
+      "file": "R02.dc.html",
+      "x": 1240,
+      "y": 4300,
+      "w": 1080,
+      "h": 1920,
+      "title": "Reel scena 2 &middot; 1.8-3.6 s",
+      "print": "fixed"
+    },
+    {
+      "file": "R03.dc.html",
+      "x": 2480,
+      "y": 4300,
+      "w": 1080,
+      "h": 1920,
+      "title": "Reel scena 3 &middot; 3.6-4.7 s",
+      "print": "fixed"
+    },
+    {
+      "file": "R04.dc.html",
+      "x": 3720,
+      "y": 4300,
+      "w": 1080,
+      "h": 1920,
+      "title": "Reel scena 4 &middot; 4.7-6.5 s",
+      "print": "fixed"
+    },
+    {
+      "file": "R05.dc.html",
+      "x": 4960,
+      "y": 4300,
+      "w": 1080,
+      "h": 1920,
+      "title": "Reel scena 5 &middot; 6.5-7.0 s",
+      "print": "fixed"
+    },
+    {
+      "file": "R06.dc.html",
+      "x": 6200,
+      "y": 4300,
+      "w": 1080,
+      "h": 1920,
+      "title": "Reel scena 6 &middot; 7.0-8.6 s",
+      "print": "fixed"
+    },
+    {
+      "file": "R07.dc.html",
+      "x": 0,
+      "y": 6420,
+      "w": 1080,
+      "h": 1920,
+      "title": "Reel scena 7 &middot; 8.6-10.2 s",
+      "print": "fixed"
+    },
+    {
+      "file": "R08.dc.html",
+      "x": 1240,
+      "y": 6420,
+      "w": 1080,
+      "h": 1920,
+      "title": "Reel scena 8 &middot; 10.2-11.8 s",
+      "print": "fixed"
+    },
+    {
+      "file": "R09.dc.html",
+      "x": 2480,
+      "y": 6420,
+      "w": 1080,
+      "h": 1920,
+      "title": "Reel scena 9 &middot; 11.8-13.4 s",
+      "print": "fixed"
+    },
+    {
+      "file": "R10.dc.html",
+      "x": 3720,
+      "y": 6420,
+      "w": 1080,
+      "h": 1920,
+      "title": "Reel scena 10 &middot; 13.4-15.0 s",
+      "print": "fixed"
+    },
+    {
+      "file": "R11.dc.html",
+      "x": 4960,
+      "y": 6420,
+      "w": 1080,
+      "h": 1920,
+      "title": "Reel scena 11 &middot; 15.0-15.4 s",
+      "print": "fixed"
+    },
+    {
+      "file": "R12.dc.html",
+      "x": 6200,
+      "y": 6420,
+      "w": 1080,
+      "h": 1920,
+      "title": "Reel scena 12 &middot; 15.4-17.2 s",
+      "print": "fixed"
+    },
+    {
+      "file": "R13.dc.html",
+      "x": 0,
+      "y": 8540,
+      "w": 1080,
+      "h": 1920,
+      "title": "Reel scena 13 &middot; 17.2-19.0 s",
+      "print": "fixed"
+    },
+    {
+      "file": "R14.dc.html",
+      "x": 1240,
+      "y": 8540,
+      "w": 1080,
+      "h": 1920,
+      "title": "Reel scena 14 &middot; 19.0-20.8 s",
+      "print": "fixed"
+    },
+    {
+      "file": "R15.dc.html",
+      "x": 2480,
+      "y": 8540,
+      "w": 1080,
+      "h": 1920,
+      "title": "Reel scena 15 &middot; 20.8-22.6 s",
+      "print": "fixed"
+    },
+    {
+      "file": "R16.dc.html",
+      "x": 3720,
+      "y": 8540,
+      "w": 1080,
+      "h": 1920,
+      "title": "Reel scena 16 &middot; 22.6-24.6 s",
+      "print": "fixed"
+    },
+    {
+      "file": "R17.dc.html",
+      "x": 4960,
+      "y": 8540,
+      "w": 1080,
+      "h": 1920,
+      "title": "Reel scena 17 &middot; 24.6-24.6 s",
+      "print": "fixed"
+    }
+  ]
+}
