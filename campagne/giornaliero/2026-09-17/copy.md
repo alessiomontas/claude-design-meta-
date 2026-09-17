@@ -11,7 +11,7 @@ Pacchetto completo: 1 reel 9:16 · 1 carosello 5 slide 4:5 · 1 post Facebook (t
 ## Varianti hook/apertura (scelta per chi rivede)
 1. **A — la negazione secca (usata come default):** «Ad agosto sei pieno come tutti. Non è lì che si vede il gestore.»
 2. **B — il sollievo dichiarato:** «Il tuo agosto pieno non dimostra niente. E non è colpa tua: nessuno ti ha mai detto dove guardare.»
-3. **C — il metro (per il carosello):** «Hai un mese che ti rassicura e dieci che non sai leggere.»
+3. **C — il metro (per il carosello):** «Un mese ti rassicura. Gli altri dieci non te li ha spiegati nessuno.»
 
 ---
 
@@ -181,15 +181,19 @@ Caption     | —
 |---|---|---|---|---|---|
 | marchio | 80-150 | HADRIANUS / MULTISERVICE | Archivo 800 / Manrope 600 | 33 / 17 | #FFF |
 | titolo | 250-330 | Stessa casa, due mestieri. | Archivo 900 | 50 | #FFF |
-| blocco 1 | 420-680 | PREZZO + 2 righe | Manrope 600 / Archivo 800 | 17 / 40 | #C8A24B / #FFF |
+| blocco 1 | 420-680 | PREZZO + 2 righe | Manrope 600 / Archivo 800 | 17 / 33 | #C8A24B / #FFF |
 | blocco 2 | 700-960 | DURATA + 2 righe | idem | idem | idem |
 | blocco 3 | 980-1240 | OSPITE + 2 righe | idem | idem | idem |
 | indice | 1270-1300 | 3/5 | Manrope 600 | 17 | #C8A24B |
 Griglia: margine 64 · colonna utile 952 · i tre blocchi hanno **identico** fondo `rgba(255,255,255,.06)`, identico filo oro a sinistra da 3 px, identica altezza
+Corpo delle righe a **33**, non 40: a 40 px in colonna 952 entrano ~43 caratteri e le voci «Novembre» andrebbero a capo in modo diseguale, rompendo l'altezza identica dei tre blocchi. Ogni voce «Novembre» sta su **due righe**, tutte e tre.
 Velo: fondo fumè pieno con radiale caldo `radial-gradient(ellipse 80% 40% at 50% 30%, rgba(200,162,75,.10), transparent 70%)`
 
 **PROMPT GRAFICO (EN)** — slide tipografica, nessuna immagine
-**NEGATIVE** — · **PARAMETRI** --ar 4:5 · fondo pieno
+
+**NEGATIVE** — nessuna tabella a due colonne, nessuna griglia calendario, nessun grafico stagionale
+
+**PARAMETRI** --ar 4:5 · fondo pieno
 
 **CLAIM**
 | # | Affermazione | Stato |
@@ -211,25 +215,30 @@ Caption     | —
 **Testo delle tre coppie (stesso identico trattamento delle coppie di C3)**
 - **Canali** — Agosto: la domanda ti trova. · Novembre: la domanda va cercata, e l'annuncio va riscritto per un altro cliente.
 - **Risposte** — Agosto: rispondere conta. · Novembre: con meno richieste, ogni richiesta persa è una fetta del mese.
-- **Manutenzione** — Agosto: si rimanda, la casa è occupata. · Novembre: è la finestra. Chi non la usa se la ritrova a luglio, con la casa piena.
+- **Manutenzione** — Agosto: si rimanda, la casa è occupata. · Novembre: è la finestra. Se non si fa adesso, tocca farla a luglio, con la casa piena.
 
 **Riga territorio (in fondo alla slide)**
 `Roma, gennaio-marzo 2026: 61,5% di occupazione alberghiera.`
-`Il trimestre più basso dell'anno. Federalberghi Roma su dati STR.`
+`Uno dei trimestri più bassi dell'anno. Federalberghi Roma su dati STR.`
 
 **LAYOUT**
 | Zona | y (px) | Elemento | Font | Corpo | Colore |
 |---|---|---|---|---|---|
 | marchio | 80-150 | HADRIANUS / MULTISERVICE | Archivo 800 / Manrope 600 | 33 / 17 | #FFF |
 | titolo | 240-320 | E poi c'è il lavoro che non si vede. | Archivo 900 | 45 | #FFF |
-| blocco 1-3 | 400-1080 | CANALI / RISPOSTE / MANUTENZIONE | Manrope 600 / Archivo 800 | 17 / 40 | #C8A24B / #FFF |
+| blocco 1-3 | 400-1080 | CANALI / RISPOSTE / MANUTENZIONE | Manrope 600 / Archivo 800 | 17 / 33 | #C8A24B / #FFF |
 | banda dato | 1120-1250 | 61,5% + riga + fonte | Archivo 900 / Manrope 600 | 62 / 17 | #2E2A25 su #C8A24B |
-| indice | 1280-1310 | 4/5 | Manrope 600 | 17 | #2E2A25 |
+| indice | 1280-1310 | 4/5 | Manrope 600 | 17 | #C8A24B |
 Griglia: margine 64 · colonna utile 952 · blocchi identici a C3 per fondo, filo e altezza
+Corpo delle righe a **33** come in C3, stessa ragione: altezza identica dei tre blocchi, ogni voce «Novembre» su due righe.
+L'indice è oro `#C8A24B`: sta **sotto** la banda dato (che finisce a y 1250), quindi su fondo fumè — in `#2E2A25` sarebbe invisibile.
 Velo: fondo fumè pieno
 
 **PROMPT GRAFICO (EN)** — slide tipografica, nessuna immagine
-**NEGATIVE** — nessun grafico di andamento stagionale, nessuna griglia calendario · **PARAMETRI** --ar 4:5 · fondo pieno
+
+**NEGATIVE** — nessun grafico di andamento stagionale, nessuna griglia calendario, nessuna tabella a due colonne
+
+**PARAMETRI** --ar 4:5 · fondo pieno
 
 **CLAIM**
 | # | Affermazione | Stato |
@@ -244,12 +253,12 @@ Velo: fondo fumè pieno
 **COPY**
 Gancio      | La domanda da fare a chi ti gestisce la casa.
 Corpo       | Non «com'è andata ad agosto».
-            | «Cosa fai a novembre.»
+            | «Cosa fai a novembre?»
 CTA         | Scrivi "NOVEMBRE" in DM
 Caption     | vedi sotto
 
 **Blocco offerta**
-`Gestione completa a Roma e Ostia, in standard alberghiero: prezzo mosso ogni settimana, annuncio riscritto per chi viaggia fuori stagione, ospiti seguiti H24, pulizie e controlli.`
+`Gestione completa a Roma e Ostia, in standard alberghiero: prezzo mosso ogni settimana, annuncio riscritto per chi viaggia fuori stagione, check-in H24, ospiti seguiti, pulizie e controlli.`
 `15% sul fatturato generato. Pagamento il 10 di ogni mese. Le utenze restano tue.`
 `Ad agosto ci guadagnano tutti. Da ottobre guadagniamo solo se guadagni tu.`
 
@@ -258,23 +267,23 @@ Caption     | vedi sotto
 |---|---|---|---|---|---|
 | marchio | 80-150 | HADRIANUS / MULTISERVICE | Archivo 800 / Manrope 600 | 33 / 17 | #FFF |
 | titolo | 240-380 | 2 righe | Archivo 900 | 50 | #FFF |
-| domanda oro | 420-520 | «Cosa fai a novembre.» | Archivo 900 | 62 | #C8A24B |
+| domanda oro | 420-520 | «Cosa fai a novembre?» | Archivo 900 | 62 | #C8A24B |
 | offerta | 580-900 | 3 righe | Manrope 600 | 33 | rgba(255,255,255,.88) |
 | riga 15% | 940-1040 | 15% sul fatturato generato | Archivo 800 | 50 | #FFF |
 | CTA | 1120-1200 | banda oro piena larghezza | Manrope 600 maiusc. | 31 | #2E2A25 su #C8A24B |
 | indice | 1270-1300 | 5/5 | Manrope 600 | 17 | #C8A24B |
 Griglia: margine 64 · colonna utile 952
-Velo: `linear-gradient(180deg, rgba(63,58,51,.92) 0%, rgba(63,58,51,.55) 100%)` su foto immobile reale (`brand-assets/immobili/`, interno)
+Velo: `linear-gradient(180deg, rgba(63,58,51,.92) 0%, rgba(63,58,51,.55) 100%)` su **`brand-assets/immobili/cucina-soggiorno-open-space.png`** (deciso dal titolare: non il salotto, il divano azzurro confligge con il «no blue tones» di tutti i prompt del pacchetto)
 
 **CAPTION DEL CAROSELLO**
 ```
 Ad agosto la tua casa si riempie. Anche senza di noi, anche senza nessuno.
 
-Non è una critica: è il motivo per cui agosto non ti dice niente su chi ti gestisce la casa. Il mese facile lo vince il calendario.
+Non è una critica: è il motivo per cui agosto non ti dice niente su chi ti gestisce la casa. Il mese facile lo vince il calendario. E se la casa la gestisci da solo, la domanda vale lo stesso: non è un esame, è un punto di partenza.
 
 Da ottobre a marzo cambia il mestiere. Il prezzo si muove ogni settimana. I soggiorni si allungano e si diradano. L'ospite non viene più per il mare: viene per un congresso, una fiera, un volo, un ospedale, un corso. L'annuncio va riscritto per lui. E a novembre rispondere in un'ora non è cortesia: è fatturato.
 
-Roma nel trimestre più basso dell'anno, gennaio-marzo 2026, ha registrato il 61,5% di occupazione alberghiera (Federalberghi Roma su dati STR). Non è un mercato fermo. È un mercato che va lavorato.
+Roma in uno dei suoi trimestri più bassi, gennaio-marzo 2026, ha registrato il 61,5% di occupazione alberghiera (Federalberghi Roma su dati STR). Non è un mercato fermo. È un mercato che va lavorato.
 
 Gestione completa a Roma e Ostia in standard alberghiero. 15% sul fatturato generato, pagamento il 10 di ogni mese, le utenze restano tue.
 Ad agosto ci guadagnano tutti. Da ottobre guadagniamo solo se guadagni tu.
@@ -282,9 +291,9 @@ Ad agosto ci guadagnano tutti. Da ottobre guadagniamo solo se guadagni tu.
 Scrivi "NOVEMBRE" in DM.
 ```
 
-**PROMPT GRAFICO (EN)** — foto reale da `brand-assets/immobili/`, nessuna generazione.
+**PROMPT GRAFICO (EN)** — foto reale `brand-assets/immobili/cucina-soggiorno-open-space.png`, nessuna generazione.
 
-**NEGATIVE** — nessun marchio di terzi, nessun indirizzo o insegna riconoscibile, mai `smart-tv-streaming-mockup.jpg`
+**NEGATIVE** — nessun marchio di terzi, nessun indirizzo o insegna riconoscibile, mai `smart-tv-streaming-mockup.jpg`, mai `salotto-divano-azzurro.jpg`. Nessun badge aggiunto in fase grafica («0 costi fissi», «nessun deposito»): restano `[DATO DA VERIFICARE]`.
 
 **PARAMETRI** --ar 4:5 · foto reale + velo
 
@@ -302,31 +311,64 @@ Scrivi "NOVEMBRE" in DM.
 
 # 3 · POST FACEBOOK
 
-### F · Facebook · testo del post
+### F · Facebook · testo del post · 1 gancio + 3 immagini · ruolo: acquisizione fredda
+
+**COPY**
+Gancio      | Ad agosto sei pieno come tutti.
+Corpo       | E non è un tuo errore:
+            | ad agosto si riempie anche da soli.
+CTA         | Scrivi "NOVEMBRE" in DM
+Caption     | testo integrale qui sotto
 
 ```
 Ad agosto sei pieno come tutti.
 
-E va bene così: ad agosto si riempie anche da soli. Il mese facile lo vince il calendario, non il gestore. Per questo il tuo agosto pieno non dimostra niente — e non è un tuo errore: è che nessuno ti ha mai detto dove guardare.
+E va bene così: ad agosto si riempie anche da soli. Il mese facile lo vince il calendario, non il gestore. Per questo il tuo agosto pieno non dimostra niente — e non è un tuo errore: è che nessuno ti ha mai detto dove guardare. E se la casa la gestisci da solo, la domanda vale lo stesso: non è un esame, è un punto di partenza.
 
 Si guarda da ottobre a marzo. Stessa casa, mestiere diverso:
 
 • Il prezzo non si abbassa, si muove. Ogni settimana, a volte ogni giorno, e si rialza sui ponti.
-• I soggiorni diventano più lunghi e più rari. Meno turnover, ma un buco pesa dieci volte di più.
+• I soggiorni diventano più lunghi e più rari. Meno turnover, ma un buco pesa molto di più.
 • Cambia chi arriva: congressi, fiere, scalo di Fiumicino, ospedali, università.
 • L'annuncio va riscritto per lui. Le foto d'estate, a novembre, vendono una cosa che non c'è.
 • Rispondere in un'ora smette di essere cortesia e diventa fatturato.
-• E i mesi bassi sono la finestra per la manutenzione: chi non la fa adesso se la ritrova a luglio, con la casa piena.
+• E i mesi bassi sono la finestra per la manutenzione: se non si fa adesso, tocca farla a luglio, con la casa piena.
 
-Roma nel suo trimestre più basso, gennaio-marzo 2026, ha registrato il 61,5% di occupazione alberghiera (Federalberghi Roma su dati STR). Fiumicino a novembre e dicembre 2025 ha fatto +20% di traffico sul 2024 (Aeroporti di Roma/ENAC). Il mercato d'inverno non è fermo: è solo un altro mestiere.
+Roma in uno dei suoi trimestri più bassi, gennaio-marzo 2026, ha registrato il 61,5% di occupazione alberghiera (Federalberghi Roma su dati STR). Fiumicino a novembre e dicembre 2025 ha fatto +20% di traffico sul 2024 (Aeroporti di Roma/ENAC). Il mercato d'inverno non è fermo: è solo un altro mestiere.
 
-Quindi la domanda da fare a chi ti gestisce la casa non è «com'è andata ad agosto». È: «cosa fai a novembre».
+Quindi la domanda da fare a chi ti gestisce la casa non è «com'è andata ad agosto». È: «Cosa fai a novembre?».
 
 Gestione completa a Roma e Ostia, in standard alberghiero. 15% sul fatturato generato, pagamento il 10 di ogni mese, le utenze restano tue.
 Ad agosto ci guadagnano tutti. Da ottobre guadagniamo solo se guadagni tu.
 
-Scrivi "NOVEMBRE" in DM o in un commento.
+Scrivi "NOVEMBRE" in DM.
 ```
+
+**LAYOUT**
+| Zona | y (px) | Elemento | Font | Corpo | Colore |
+|---|---|---|---|---|---|
+| — | — | testo del post, nessuna impaginazione: il collage è F1+F2+F3 | — | — | — |
+Griglia: — · Velo: —
+
+**PROMPT GRAFICO (EN)**
+— (nessuna immagine per il blocco testo; le tre immagini sono F1, F2, F3)
+
+**NEGATIVE**
+—
+
+**PARAMETRI**
+— (ordine di caricamento nel collage: F1 verticale 9:16 per prima, poi F2 e F3 quadrate 1080×1080)
+
+**CLAIM**
+| # | Affermazione | Stato |
+|---|---|---|
+| 1 | 61,5% occupazione alberghiera Roma gen-mar 2026 | CONFERMATO — Federalberghi Roma su dati STR. Dato di mercato, con fonte in chiaro |
+| 2 | «uno dei suoi trimestri più bassi» | forma attenuata: le fonti citate coprono solo Q1 2026 e Q4 2025, non provano il superlativo assoluto |
+| 3 | Fiumicino +20% di traffico a nov-dic 2025 sul 2024 | CONFERMATO — Aeroporti di Roma/ENAC. Compare **solo** in questo testo |
+| 4 | «un buco pesa molto di più» | descrizione qualitativa: la quantificazione «dieci volte» era figura retorica del brief, non un dato |
+| 5 | 15% sul fatturato generato · pagamento il 10 · utenze al proprietario | CONFERMATO |
+| 6 | «Guadagniamo solo se guadagni tu» | lessico di brand, forma corretta |
+| 7 | nessun dato di performance Hadrianus | assente per scelta |
 
 ---
 
@@ -334,10 +376,12 @@ Scrivi "NOVEMBRE" in DM o in un commento.
 
 **COPY**
 Gancio      | Ad agosto sei pieno come tutti.
-Corpo       | E non è lì che si vede
-            | chi ti gestisce la casa.
+Corpo       | E non è un tuo errore:
+            | ad agosto si riempie anche da soli.
 CTA         | —
 Caption     | —
+
+Il sollievo deve stare **qui**, nella prima immagine: su Facebook il collage si vede sempre, il testo del post solo dopo «Vedi altro». Senza questa riga, F1 da solo è un rimprovero. Il concetto «non è lì che si vede chi ti gestisce la casa» lo porta F2.
 
 **LAYOUT**
 | Zona | y (px) | Elemento | Font | Corpo | Colore |
@@ -345,7 +389,7 @@ Caption     | —
 | marchio | 112-205 | HADRIANUS / MULTISERVICE | Archivo 800 / Manrope 600 | 33 / 17 | #FFF |
 | gancio | 820-980 | 2 righe | Archivo 900 | 70 | #FFF |
 | filo oro | 1020-1023 | linea 3 px, 200 px | — | — | #C8A24B |
-| corpo | 1070-1220 | 2 righe | Archivo 800 | 50 | rgba(255,255,255,.86) |
+| corpo | 1070-1240 | 2 righe | Archivo 800 | 50 (scendere a 45 se la riga 2 non entra — mai accorciare togliendo «anche da soli») | rgba(255,255,255,.86) |
 | kicker | 1300-1340 | ROMA · OSTIA · LITORALE | Manrope 600 maiusc. lettersp .18em | 31 | #C8A24B |
 Griglia: margine 64 · colonna utile 952 · safe area 180/320
 Velo: `radial-gradient(ellipse 88% 26% at 50% 54%, rgba(26,23,19,.60), transparent 62%), linear-gradient(180deg, rgba(63,58,51,.82) 0%, rgba(63,58,51,.10) 32%, rgba(63,58,51,.86) 100%)`
@@ -366,6 +410,7 @@ shot on Canon EOS R5, 16-35mm at 24mm, f/8, ISO 200, editorial documentary photo
 | # | Affermazione | Stato |
 |---|---|---|
 | 1 | «ad agosto sei pieno come tutti» | opinione di posizionamento, da brief |
+| 2 | «non è un tuo errore: ad agosto si riempie anche da soli» | presupposto dell'angolo, dato per vero dal brief (obiezione 1) |
 
 ---
 
@@ -379,12 +424,15 @@ CTA         | —
 Caption     | —
 
 **Contenuto della slide (tre righe, trattamento identico fra loro)**
-`Prezzo mosso ogni settimana` · `Annuncio riscritto per chi viaggia fuori stagione` · `Risposte in un'ora, manutenzione nei mesi bassi`
+`Il prezzo si muove ogni settimana` · `L'annuncio si riscrive per chi viaggia fuori stagione` · `Richieste seguite subito, manutenzione nei mesi bassi`
+
+Le tre righe descrivono **il mestiere**, non un listino di garanzie: per questo sono impersonali e sotto il kicker `COSA CAMBIA DA OTTOBRE`. Nessun impegno orario sotto il marchio («risposte in un'ora» resta solo dove parla del mercato: reel sc. 9, C4, testo del post).
 
 **LAYOUT**
 | Zona | y (px) | Elemento | Font | Corpo | Colore |
 |---|---|---|---|---|---|
 | marchio | 64-130 | HADRIANUS / MULTISERVICE | Archivo 800 / Manrope 600 | 33 / 17 | #FFF |
+| kicker | 150-190 | COSA CAMBIA DA OTTOBRE | Manrope 600 maiusc. lettersp .18em | 17 | #C8A24B |
 | titolo | 210-280 | Stessa casa, due mestieri. | Archivo 900 | 62 | #FFF |
 | riga 1-3 | 360-780 | tre righe con filo oro 3 px a sinistra, stesso fondo `rgba(255,255,255,.06)`, stessa altezza | Manrope 600 | 33 | #FFF |
 | chiusura | 840-960 | 2 righe | Archivo 800 | 45 | #C8A24B |
@@ -399,13 +447,14 @@ Velo: fondo fumè pieno `#3F3A33` + radiale oro `radial-gradient(ellipse 80% 45%
 | # | Affermazione | Stato |
 |---|---|---|
 | 1 | descrizione del lavoro nei mesi bassi | nessun risultato promesso |
+| 2 | «Richieste seguite subito» | volutamente senza tempo dichiarato: nessun documento conferma un impegno orario |
 
 ---
 
 ### F3 · Facebook · 1080×1080 (1:1) · offerta + CTA
 
 **COPY**
-Gancio      | «Cosa fai a novembre.»
+Gancio      | «Cosa fai a novembre?»
 Corpo       | 15% sul fatturato generato.
             | Le utenze restano tue.
 CTA         | Scrivi "NOVEMBRE" in DM
@@ -418,13 +467,13 @@ Caption     | —
 | Zona | y (px) | Elemento | Font | Corpo | Colore |
 |---|---|---|---|---|---|
 | marchio | 64-130 | HADRIANUS / MULTISERVICE | Archivo 800 / Manrope 600 | 33 / 17 | #FFF |
-| kicker | 200-240 | LA DOMANDA DA FARE AL TUO GESTORE | Manrope 600 maiusc. | 17 | #C8A24B |
-| gancio | 280-380 | «Cosa fai a novembre.» | Archivo 900 | 62 | #FFF |
+| kicker | 200-240 | LA DOMANDA DA FARE A CHI TI GESTISCE LA CASA | Manrope 600 maiusc. | 17 | #C8A24B |
+| gancio | 280-380 | «Cosa fai a novembre?» | Archivo 900 | 62 | #FFF |
 | offerta | 440-620 | 3 righe (15% · pagamento il 10 · utenze) | Manrope 600 | 33 | rgba(255,255,255,.88) |
 | chiusura | 680-790 | 2 righe | Archivo 800 | 45 | #C8A24B |
 | CTA | 850-930 | banda oro piena larghezza | Manrope 600 maiusc. | 31 | #2E2A25 su #C8A24B |
 Griglia: margine 64 · centro ottico y 540
-Velo: `linear-gradient(180deg, rgba(63,58,51,.90) 0%, rgba(63,58,51,.60) 100%)` su foto reale `brand-assets/immobili/` (interno)
+Velo: `linear-gradient(180deg, rgba(63,58,51,.90) 0%, rgba(63,58,51,.60) 100%)` su **`brand-assets/immobili/cucina-soggiorno-open-space.png`** (stessa scelta di C5: escluso il salotto col divano azzurro, in conflitto col «no blue tones»)
 
 **PROMPT GRAFICO (EN)** — foto reale, nessuna generazione
 **NEGATIVE** — nessun marchio di terzi, nessuna insegna o indirizzo riconoscibile, mai `smart-tv-streaming-mockup.jpg`
@@ -437,7 +486,7 @@ Velo: `linear-gradient(180deg, rgba(63,58,51,.90) 0%, rgba(63,58,51,.60) 100%)` 
 | 2 | pagamento il 10 di ogni mese | CONFERMATO |
 | 3 | le utenze restano al proprietario | CONFERMATO |
 | 4 | «Guadagniamo solo se guadagni tu» | lessico di brand |
-| 5 | Fiumicino +20% nov-dic 2025 (solo nel testo del post) | CONFERMATO — Aeroporti di Roma/ENAC |
+| 5 | nessun costo fisso / deposito / assicurazione | **assenti**: nessun badge va aggiunto in fase grafica |
 
 ---
 
@@ -449,7 +498,7 @@ Velo: `linear-gradient(180deg, rgba(63,58,51,.90) 0%, rgba(63,58,51,.60) 100%)` 
 Gancio      | Il tuo agosto pieno non dimostra niente.
 Corpo       | E non è colpa tua: ad agosto
             | si riempie anche da soli.
-CTA         | Scrivi "NOVEMBRE"
+CTA         | Scrivi "NOVEMBRE" in DM
 Caption     | —
 
 **Testo integrale a schermo**
@@ -462,9 +511,8 @@ anche da soli. Il mese facile lo vince
 il calendario.
 
 Il gestore si vede da ottobre a marzo:
-prezzo mosso ogni settimana, annuncio
-riscritto per chi viaggia fuori stagione,
-risposte in un'ora.
+come muove il prezzo, per chi riscrive
+l'annuncio, quanto ci mette a rispondere.
 
 Ad agosto ci guadagnano tutti.
 Da ottobre guadagniamo solo se guadagni tu.
