@@ -52,8 +52,8 @@ body{width:1080px;height:1920px;overflow:hidden}
   100.0% { opacity:0; transform:translate(0px,0px) scale(1); clip-path:inset(0 0 0 0) }
 }
 @keyframes a_s03_anello1 {
-  0.0% { opacity:1; transform:translate(0px,0px) scale(1); clip-path:inset(0 0 0 0) }
-  15.7361% { opacity:1; transform:translate(0px,0px) scale(1); clip-path:inset(0 0 0 0); animation-timing-function: cubic-bezier(.16,1,.3,1) }
+  0.0% { opacity:0; transform:translate(0px,0px) scale(1.14); clip-path:inset(0 0 0 0) }
+  15.7361% { opacity:0; transform:translate(0px,0px) scale(1.14); clip-path:inset(0 0 0 0); animation-timing-function: cubic-bezier(.16,1,.3,1) }
   16.7593% { opacity:1; transform:translate(0px, 0px) scale(1); clip-path:inset(0 0 0 0) }
   24.0694% { opacity:1; transform:translate(0px, 0px) scale(1); clip-path:inset(0 0 0 0) }
   24.0741% { opacity:0; transform:translate(0px,0px) scale(1); clip-path:inset(0 0 0 0) }
@@ -131,9 +131,17 @@ body{width:1080px;height:1920px;overflow:hidden}
   33.3333% { opacity:0; transform:translate(0px,0px) scale(1); clip-path:inset(0 0 0 0) }
   100.0% { opacity:0; transform:translate(0px,0px) scale(1); clip-path:inset(0 0 0 0) }
 }
+@keyframes a_s04_filo_oro {
+  0.0% { opacity:1; transform:translate(0px,0px) scale(1); clip-path:inset(0 100% 0 0) }
+  24.0694% { opacity:1; transform:translate(0px,0px) scale(1); clip-path:inset(0 100% 0 0); animation-timing-function: cubic-bezier(.16,1,.3,1) }
+  25.2778% { opacity:1; transform:translate(0px, 0px) scale(1); clip-path:inset(0 0 0 0) }
+  33.3287% { opacity:1; transform:translate(0px, 0px) scale(1); clip-path:inset(0 0 0 0) }
+  33.3333% { opacity:0; transform:translate(0px,0px) scale(1); clip-path:inset(0 0 0 0) }
+  100.0% { opacity:0; transform:translate(0px,0px) scale(1); clip-path:inset(0 0 0 0) }
+}
 @keyframes a_s04_anello1 {
-  0.0% { opacity:0; transform:translate(0px,0px) scale(1.14); clip-path:inset(0 0 0 0) }
-  24.0694% { opacity:0; transform:translate(0px,0px) scale(1.14); clip-path:inset(0 0 0 0); animation-timing-function: cubic-bezier(.16,1,.3,1) }
+  0.0% { opacity:1; transform:translate(0px,0px) scale(1); clip-path:inset(0 0 0 0) }
+  24.0694% { opacity:1; transform:translate(0px,0px) scale(1); clip-path:inset(0 0 0 0); animation-timing-function: cubic-bezier(.16,1,.3,1) }
   25.0926% { opacity:1; transform:translate(0px, 0px) scale(1); clip-path:inset(0 0 0 0) }
   33.3287% { opacity:1; transform:translate(0px, 0px) scale(1); clip-path:inset(0 0 0 0) }
   33.3333% { opacity:0; transform:translate(0px,0px) scale(1); clip-path:inset(0 0 0 0) }
@@ -148,8 +156,8 @@ body{width:1080px;height:1920px;overflow:hidden}
   100.0% { opacity:0; transform:translate(0px,0px) scale(1); clip-path:inset(0 0 0 0) }
 }
 @keyframes a_s04_anello2 {
-  0.0% { opacity:1; transform:translate(0px,0px) scale(1); clip-path:inset(0 0 0 0) }
-  24.0694% { opacity:1; transform:translate(0px,0px) scale(1); clip-path:inset(0 0 0 0); animation-timing-function: cubic-bezier(.16,1,.3,1) }
+  0.0% { opacity:0; transform:translate(0px,0px) scale(1.14); clip-path:inset(0 0 0 0) }
+  24.0694% { opacity:0; transform:translate(0px,0px) scale(1.14); clip-path:inset(0 0 0 0); animation-timing-function: cubic-bezier(.16,1,.3,1) }
   25.0926% { opacity:1; transform:translate(0px, 0px) scale(1); clip-path:inset(0 0 0 0) }
   33.3287% { opacity:1; transform:translate(0px, 0px) scale(1); clip-path:inset(0 0 0 0) }
   33.3333% { opacity:0; transform:translate(0px,0px) scale(1); clip-path:inset(0 0 0 0) }
@@ -683,24 +691,25 @@ body{width:1080px;height:1920px;overflow:hidden}
   <div style="position:absolute; left:64px; top:880px; width:952px; animation:a_s02_riga1 21.6s linear both;  font-family:'Archivo', 'Helvetica Neue', Arial, sans-serif; font-weight:900; font-size:70px; line-height:1.16; letter-spacing:-0.4px; color:#FFFFFF; text-align:center;">Sono un prezzo.</div>
   <div style="position:absolute; left:450px; top:1010px; width:180px; animation:a_s02_filo_sotto 21.6s linear both; height:3px; background:#C8A24B; border-radius:2px;"></div>
   <div style="position:absolute; left:96px; top:460px; width:888px; animation:a_s03_filo 21.6s linear both; height:4px; background:rgba(255,255,255,0.18); border-radius:2px;"></div>
-  <div style="position:absolute; left:64px; top:430px; width:64px; animation:a_s03_anello1 21.6s linear both; height:64px; background:rgba(46,42,37,1); border-radius:999px;"></div>
-  <div style="position:absolute; left:64px; top:512px; width:260px; animation:a_s03_etichetta1 21.6s linear both;  font-family:'Manrope', 'Helvetica Neue', Arial, sans-serif; font-weight:600; font-size:17px; line-height:1.16; letter-spacing:2.7px; color:rgba(255,255,255,0.55); text-align:left;">RECENSIONE</div>
+  <div style="position:absolute; left:64px; top:430px; width:64px; animation:a_s03_anello1 21.6s linear both; height:64px; background:#C8A24B; border-radius:999px;"></div>
+  <div style="position:absolute; left:64px; top:512px; width:260px; animation:a_s03_etichetta1 21.6s linear both;  font-family:'Manrope', 'Helvetica Neue', Arial, sans-serif; font-weight:600; font-size:17px; line-height:1.16; letter-spacing:2.7px; color:#C8A24B; text-align:left;">RECENSIONE</div>
   <div style="position:absolute; left:360px; top:430px; width:64px; animation:a_s03_anello2 21.6s linear both; height:64px; background:rgba(46,42,37,1); border-radius:999px;"></div>
   <div style="position:absolute; left:262px; top:512px; width:260px; animation:a_s03_etichetta2 21.6s linear both;  font-family:'Manrope', 'Helvetica Neue', Arial, sans-serif; font-weight:600; font-size:17px; line-height:1.16; letter-spacing:2.7px; color:rgba(255,255,255,0.55); text-align:center;">VISIBILITÀ</div>
   <div style="position:absolute; left:656px; top:430px; width:64px; animation:a_s03_anello3 21.6s linear both; height:64px; background:rgba(46,42,37,1); border-radius:999px;"></div>
-  <div style="position:absolute; left:558px; top:512px; width:260px; animation:a_s03_etichetta3 21.6s linear both;  font-family:'Manrope', 'Helvetica Neue', Arial, sans-serif; font-weight:600; font-size:17px; line-height:1.16; letter-spacing:2.7px; color:rgba(255,255,255,0.55); text-align:center;">PREZZO</div>
+  <div style="position:absolute; left:558px; top:512px; width:260px; animation:a_s03_etichetta3 21.6s linear both;  font-family:'Manrope', 'Helvetica Neue', Arial, sans-serif; font-weight:600; font-size:17px; line-height:1.16; letter-spacing:2.7px; color:rgba(255,255,255,0.55); text-align:center;">FIDUCIA</div>
   <div style="position:absolute; left:952px; top:430px; width:64px; animation:a_s03_anello4 21.6s linear both; height:64px; background:rgba(46,42,37,1); border-radius:999px;"></div>
-  <div style="position:absolute; left:756px; top:512px; width:260px; animation:a_s03_etichetta4 21.6s linear both;  font-family:'Manrope', 'Helvetica Neue', Arial, sans-serif; font-weight:600; font-size:17px; line-height:1.16; letter-spacing:2.7px; color:rgba(255,255,255,0.55); text-align:right;">CHI PRENOTA</div>
+  <div style="position:absolute; left:756px; top:512px; width:260px; animation:a_s03_etichetta4 21.6s linear both;  font-family:'Manrope', 'Helvetica Neue', Arial, sans-serif; font-weight:600; font-size:17px; line-height:1.16; letter-spacing:2.7px; color:rgba(255,255,255,0.55); text-align:right;">PREZZO</div>
   <div style="position:absolute; left:0px; top:300px; width:1080px; animation:a_s03_kicker 21.6s linear both;  font-family:'Manrope', 'Helvetica Neue', Arial, sans-serif; font-weight:600; font-size:31px; line-height:1.16; letter-spacing:5.6px; color:#C8A24B; text-align:center;">FUNZIONA COSÌ</div>
   <div style="position:absolute; left:96px; top:460px; width:888px; animation:a_s04_filo 21.6s linear both; height:4px; background:rgba(255,255,255,0.18); border-radius:2px;"></div>
+  <div style="position:absolute; left:96px; top:460px; width:296px; animation:a_s04_filo_oro 21.6s linear both; height:4px; background:#C8A24B; border-radius:2px;"></div>
   <div style="position:absolute; left:64px; top:430px; width:64px; animation:a_s04_anello1 21.6s linear both; height:64px; background:#C8A24B; border-radius:999px;"></div>
   <div style="position:absolute; left:64px; top:512px; width:260px; animation:a_s04_etichetta1 21.6s linear both;  font-family:'Manrope', 'Helvetica Neue', Arial, sans-serif; font-weight:600; font-size:17px; line-height:1.16; letter-spacing:2.7px; color:#C8A24B; text-align:left;">RECENSIONE</div>
-  <div style="position:absolute; left:360px; top:430px; width:64px; animation:a_s04_anello2 21.6s linear both; height:64px; background:rgba(46,42,37,1); border-radius:999px;"></div>
-  <div style="position:absolute; left:262px; top:512px; width:260px; animation:a_s04_etichetta2 21.6s linear both;  font-family:'Manrope', 'Helvetica Neue', Arial, sans-serif; font-weight:600; font-size:17px; line-height:1.16; letter-spacing:2.7px; color:rgba(255,255,255,0.55); text-align:center;">VISIBILITÀ</div>
+  <div style="position:absolute; left:360px; top:430px; width:64px; animation:a_s04_anello2 21.6s linear both; height:64px; background:#C8A24B; border-radius:999px;"></div>
+  <div style="position:absolute; left:262px; top:512px; width:260px; animation:a_s04_etichetta2 21.6s linear both;  font-family:'Manrope', 'Helvetica Neue', Arial, sans-serif; font-weight:600; font-size:17px; line-height:1.16; letter-spacing:2.7px; color:#C8A24B; text-align:center;">VISIBILITÀ</div>
   <div style="position:absolute; left:656px; top:430px; width:64px; animation:a_s04_anello3 21.6s linear both; height:64px; background:rgba(46,42,37,1); border-radius:999px;"></div>
-  <div style="position:absolute; left:558px; top:512px; width:260px; animation:a_s04_etichetta3 21.6s linear both;  font-family:'Manrope', 'Helvetica Neue', Arial, sans-serif; font-weight:600; font-size:17px; line-height:1.16; letter-spacing:2.7px; color:rgba(255,255,255,0.55); text-align:center;">PREZZO</div>
+  <div style="position:absolute; left:558px; top:512px; width:260px; animation:a_s04_etichetta3 21.6s linear both;  font-family:'Manrope', 'Helvetica Neue', Arial, sans-serif; font-weight:600; font-size:17px; line-height:1.16; letter-spacing:2.7px; color:rgba(255,255,255,0.55); text-align:center;">FIDUCIA</div>
   <div style="position:absolute; left:952px; top:430px; width:64px; animation:a_s04_anello4 21.6s linear both; height:64px; background:rgba(46,42,37,1); border-radius:999px;"></div>
-  <div style="position:absolute; left:756px; top:512px; width:260px; animation:a_s04_etichetta4 21.6s linear both;  font-family:'Manrope', 'Helvetica Neue', Arial, sans-serif; font-weight:600; font-size:17px; line-height:1.16; letter-spacing:2.7px; color:rgba(255,255,255,0.55); text-align:right;">CHI PRENOTA</div>
+  <div style="position:absolute; left:756px; top:512px; width:260px; animation:a_s04_etichetta4 21.6s linear both;  font-family:'Manrope', 'Helvetica Neue', Arial, sans-serif; font-weight:600; font-size:17px; line-height:1.16; letter-spacing:2.7px; color:rgba(255,255,255,0.55); text-align:right;">PREZZO</div>
   <div style="position:absolute; left:0px; top:300px; width:1080px; animation:a_s04_kicker 21.6s linear both;  font-family:'Manrope', 'Helvetica Neue', Arial, sans-serif; font-weight:600; font-size:31px; line-height:1.16; letter-spacing:5.6px; color:#C8A24B; text-align:center;">FUNZIONA COSÌ</div>
   <div style="position:absolute; left:64px; top:820px; width:952px; animation:a_s04_riga1 21.6s linear both;  font-family:'Archivo', 'Helvetica Neue', Arial, sans-serif; font-weight:900; font-size:70px; line-height:1.16; letter-spacing:-0.4px; color:#FFFFFF; text-align:center;">Il punteggio conta</div>
   <div style="position:absolute; left:64px; top:930px; width:952px; animation:a_s04_riga2 21.6s linear both;  font-family:'Archivo', 'Helvetica Neue', Arial, sans-serif; font-weight:800; font-size:62px; line-height:1.16; letter-spacing:-0.4px; color:rgba(255,255,255,0.88); text-align:center;">in come esci nelle ricerche.</div>
@@ -711,9 +720,9 @@ body{width:1080px;height:1920px;overflow:hidden}
   <div style="position:absolute; left:360px; top:430px; width:64px; animation:a_s05_anello2 21.6s linear both; height:64px; background:#C8A24B; border-radius:999px;"></div>
   <div style="position:absolute; left:262px; top:512px; width:260px; animation:a_s05_etichetta2 21.6s linear both;  font-family:'Manrope', 'Helvetica Neue', Arial, sans-serif; font-weight:600; font-size:17px; line-height:1.16; letter-spacing:2.7px; color:#C8A24B; text-align:center;">VISIBILITÀ</div>
   <div style="position:absolute; left:656px; top:430px; width:64px; animation:a_s05_anello3 21.6s linear both; height:64px; background:rgba(46,42,37,1); border-radius:999px;"></div>
-  <div style="position:absolute; left:558px; top:512px; width:260px; animation:a_s05_etichetta3 21.6s linear both;  font-family:'Manrope', 'Helvetica Neue', Arial, sans-serif; font-weight:600; font-size:17px; line-height:1.16; letter-spacing:2.7px; color:rgba(255,255,255,0.55); text-align:center;">PREZZO</div>
+  <div style="position:absolute; left:558px; top:512px; width:260px; animation:a_s05_etichetta3 21.6s linear both;  font-family:'Manrope', 'Helvetica Neue', Arial, sans-serif; font-weight:600; font-size:17px; line-height:1.16; letter-spacing:2.7px; color:rgba(255,255,255,0.55); text-align:center;">FIDUCIA</div>
   <div style="position:absolute; left:952px; top:430px; width:64px; animation:a_s05_anello4 21.6s linear both; height:64px; background:rgba(46,42,37,1); border-radius:999px;"></div>
-  <div style="position:absolute; left:756px; top:512px; width:260px; animation:a_s05_etichetta4 21.6s linear both;  font-family:'Manrope', 'Helvetica Neue', Arial, sans-serif; font-weight:600; font-size:17px; line-height:1.16; letter-spacing:2.7px; color:rgba(255,255,255,0.55); text-align:right;">CHI PRENOTA</div>
+  <div style="position:absolute; left:756px; top:512px; width:260px; animation:a_s05_etichetta4 21.6s linear both;  font-family:'Manrope', 'Helvetica Neue', Arial, sans-serif; font-weight:600; font-size:17px; line-height:1.16; letter-spacing:2.7px; color:rgba(255,255,255,0.55); text-align:right;">PREZZO</div>
   <div style="position:absolute; left:0px; top:300px; width:1080px; animation:a_s05_kicker 21.6s linear both;  font-family:'Manrope', 'Helvetica Neue', Arial, sans-serif; font-weight:600; font-size:31px; line-height:1.16; letter-spacing:5.6px; color:#C8A24B; text-align:center;">FUNZIONA COSÌ</div>
   <div style="position:absolute; left:64px; top:820px; width:952px; animation:a_s05_riga1 21.6s linear both;  font-family:'Archivo', 'Helvetica Neue', Arial, sans-serif; font-weight:900; font-size:70px; line-height:1.16; letter-spacing:-0.4px; color:#FFFFFF; text-align:center;">E la tua casa</div>
   <div style="position:absolute; left:64px; top:930px; width:952px; animation:a_s05_riga2 21.6s linear both;  font-family:'Archivo', 'Helvetica Neue', Arial, sans-serif; font-weight:800; font-size:62px; line-height:1.16; letter-spacing:-0.4px; color:rgba(255,255,255,0.88); text-align:center;">la trova chi scorre un portale.</div>
@@ -724,9 +733,9 @@ body{width:1080px;height:1920px;overflow:hidden}
   <div style="position:absolute; left:360px; top:430px; width:64px; animation:a_s06_anello2 21.6s linear both; height:64px; background:#C8A24B; border-radius:999px;"></div>
   <div style="position:absolute; left:262px; top:512px; width:260px; animation:a_s06_etichetta2 21.6s linear both;  font-family:'Manrope', 'Helvetica Neue', Arial, sans-serif; font-weight:600; font-size:17px; line-height:1.16; letter-spacing:2.7px; color:#C8A24B; text-align:center;">VISIBILITÀ</div>
   <div style="position:absolute; left:656px; top:430px; width:64px; animation:a_s06_anello3 21.6s linear both; height:64px; background:#C8A24B; border-radius:999px;"></div>
-  <div style="position:absolute; left:558px; top:512px; width:260px; animation:a_s06_etichetta3 21.6s linear both;  font-family:'Manrope', 'Helvetica Neue', Arial, sans-serif; font-weight:600; font-size:17px; line-height:1.16; letter-spacing:2.7px; color:#C8A24B; text-align:center;">PREZZO</div>
+  <div style="position:absolute; left:558px; top:512px; width:260px; animation:a_s06_etichetta3 21.6s linear both;  font-family:'Manrope', 'Helvetica Neue', Arial, sans-serif; font-weight:600; font-size:17px; line-height:1.16; letter-spacing:2.7px; color:#C8A24B; text-align:center;">FIDUCIA</div>
   <div style="position:absolute; left:952px; top:430px; width:64px; animation:a_s06_anello4 21.6s linear both; height:64px; background:rgba(46,42,37,1); border-radius:999px;"></div>
-  <div style="position:absolute; left:756px; top:512px; width:260px; animation:a_s06_etichetta4 21.6s linear both;  font-family:'Manrope', 'Helvetica Neue', Arial, sans-serif; font-weight:600; font-size:17px; line-height:1.16; letter-spacing:2.7px; color:rgba(255,255,255,0.55); text-align:right;">CHI PRENOTA</div>
+  <div style="position:absolute; left:756px; top:512px; width:260px; animation:a_s06_etichetta4 21.6s linear both;  font-family:'Manrope', 'Helvetica Neue', Arial, sans-serif; font-weight:600; font-size:17px; line-height:1.16; letter-spacing:2.7px; color:rgba(255,255,255,0.55); text-align:right;">PREZZO</div>
   <div style="position:absolute; left:0px; top:300px; width:1080px; animation:a_s06_kicker 21.6s linear both;  font-family:'Manrope', 'Helvetica Neue', Arial, sans-serif; font-weight:600; font-size:31px; line-height:1.16; letter-spacing:5.6px; color:#C8A24B; text-align:center;">FUNZIONA COSÌ</div>
   <div style="position:absolute; left:64px; top:820px; width:952px; animation:a_s06_riga1 21.6s linear both;  font-family:'Archivo', 'Helvetica Neue', Arial, sans-serif; font-weight:900; font-size:70px; line-height:1.16; letter-spacing:-0.4px; color:#FFFFFF; text-align:center;">Chi ti trova</div>
   <div style="position:absolute; left:64px; top:930px; width:952px; animation:a_s06_riga2 21.6s linear both;  font-family:'Archivo', 'Helvetica Neue', Arial, sans-serif; font-weight:800; font-size:62px; line-height:1.16; letter-spacing:-0.4px; color:rgba(255,255,255,0.88); text-align:center;">ha già un motivo per fidarsi.</div>
@@ -737,9 +746,9 @@ body{width:1080px;height:1920px;overflow:hidden}
   <div style="position:absolute; left:360px; top:430px; width:64px; animation:a_s07_anello2 21.6s linear both; height:64px; background:#C8A24B; border-radius:999px;"></div>
   <div style="position:absolute; left:262px; top:512px; width:260px; animation:a_s07_etichetta2 21.6s linear both;  font-family:'Manrope', 'Helvetica Neue', Arial, sans-serif; font-weight:600; font-size:17px; line-height:1.16; letter-spacing:2.7px; color:#C8A24B; text-align:center;">VISIBILITÀ</div>
   <div style="position:absolute; left:656px; top:430px; width:64px; animation:a_s07_anello3 21.6s linear both; height:64px; background:#C8A24B; border-radius:999px;"></div>
-  <div style="position:absolute; left:558px; top:512px; width:260px; animation:a_s07_etichetta3 21.6s linear both;  font-family:'Manrope', 'Helvetica Neue', Arial, sans-serif; font-weight:600; font-size:17px; line-height:1.16; letter-spacing:2.7px; color:#C8A24B; text-align:center;">PREZZO</div>
+  <div style="position:absolute; left:558px; top:512px; width:260px; animation:a_s07_etichetta3 21.6s linear both;  font-family:'Manrope', 'Helvetica Neue', Arial, sans-serif; font-weight:600; font-size:17px; line-height:1.16; letter-spacing:2.7px; color:#C8A24B; text-align:center;">FIDUCIA</div>
   <div style="position:absolute; left:952px; top:430px; width:64px; animation:a_s07_anello4 21.6s linear both; height:64px; background:#C8A24B; border-radius:999px;"></div>
-  <div style="position:absolute; left:756px; top:512px; width:260px; animation:a_s07_etichetta4 21.6s linear both;  font-family:'Manrope', 'Helvetica Neue', Arial, sans-serif; font-weight:600; font-size:17px; line-height:1.16; letter-spacing:2.7px; color:#C8A24B; text-align:right;">CHI PRENOTA</div>
+  <div style="position:absolute; left:756px; top:512px; width:260px; animation:a_s07_etichetta4 21.6s linear both;  font-family:'Manrope', 'Helvetica Neue', Arial, sans-serif; font-weight:600; font-size:17px; line-height:1.16; letter-spacing:2.7px; color:#C8A24B; text-align:right;">PREZZO</div>
   <div style="position:absolute; left:0px; top:300px; width:1080px; animation:a_s07_kicker 21.6s linear both;  font-family:'Manrope', 'Helvetica Neue', Arial, sans-serif; font-weight:600; font-size:31px; line-height:1.16; letter-spacing:5.6px; color:#C8A24B; text-align:center;">FUNZIONA COSÌ</div>
   <div style="position:absolute; left:64px; top:820px; width:952px; animation:a_s07_riga1 21.6s linear both;  font-family:'Archivo', 'Helvetica Neue', Arial, sans-serif; font-weight:900; font-size:70px; line-height:1.16; letter-spacing:-0.4px; color:#FFFFFF; text-align:center;">Quindi il prezzo</div>
   <div style="position:absolute; left:64px; top:930px; width:952px; animation:a_s07_riga2 21.6s linear both; background:#C8A24B; border-radius:0px; padding:22px 30px; font-family:'Archivo', 'Helvetica Neue', Arial, sans-serif; font-weight:900; font-size:62px; line-height:1.16; letter-spacing:-0.4px; color:#2E2A25; text-align:center;">non lo devi abbassare.</div>
@@ -750,9 +759,9 @@ body{width:1080px;height:1920px;overflow:hidden}
   <div style="position:absolute; left:360px; top:430px; width:64px; animation:a_s08_anello2 21.6s linear both; height:64px; background:#C8A24B; border-radius:999px;"></div>
   <div style="position:absolute; left:262px; top:512px; width:260px; animation:a_s08_etichetta2 21.6s linear both;  font-family:'Manrope', 'Helvetica Neue', Arial, sans-serif; font-weight:600; font-size:17px; line-height:1.16; letter-spacing:2.7px; color:#C8A24B; text-align:center;">VISIBILITÀ</div>
   <div style="position:absolute; left:656px; top:430px; width:64px; animation:a_s08_anello3 21.6s linear both; height:64px; background:#C8A24B; border-radius:999px;"></div>
-  <div style="position:absolute; left:558px; top:512px; width:260px; animation:a_s08_etichetta3 21.6s linear both;  font-family:'Manrope', 'Helvetica Neue', Arial, sans-serif; font-weight:600; font-size:17px; line-height:1.16; letter-spacing:2.7px; color:#C8A24B; text-align:center;">PREZZO</div>
+  <div style="position:absolute; left:558px; top:512px; width:260px; animation:a_s08_etichetta3 21.6s linear both;  font-family:'Manrope', 'Helvetica Neue', Arial, sans-serif; font-weight:600; font-size:17px; line-height:1.16; letter-spacing:2.7px; color:#C8A24B; text-align:center;">FIDUCIA</div>
   <div style="position:absolute; left:952px; top:430px; width:64px; animation:a_s08_anello4 21.6s linear both; height:64px; background:#C8A24B; border-radius:999px;"></div>
-  <div style="position:absolute; left:756px; top:512px; width:260px; animation:a_s08_etichetta4 21.6s linear both;  font-family:'Manrope', 'Helvetica Neue', Arial, sans-serif; font-weight:600; font-size:17px; line-height:1.16; letter-spacing:2.7px; color:#C8A24B; text-align:right;">CHI PRENOTA</div>
+  <div style="position:absolute; left:756px; top:512px; width:260px; animation:a_s08_etichetta4 21.6s linear both;  font-family:'Manrope', 'Helvetica Neue', Arial, sans-serif; font-weight:600; font-size:17px; line-height:1.16; letter-spacing:2.7px; color:#C8A24B; text-align:right;">PREZZO</div>
   <div style="position:absolute; left:0px; top:300px; width:1080px; animation:a_s08_kicker 21.6s linear both;  font-family:'Manrope', 'Helvetica Neue', Arial, sans-serif; font-weight:600; font-size:31px; line-height:1.16; letter-spacing:5.6px; color:#C8A24B; text-align:center;">FUNZIONA COSÌ</div>
   <div style="position:absolute; left:64px; top:820px; width:952px; animation:a_s09_riga1 21.6s linear both;  font-family:'Archivo', 'Helvetica Neue', Arial, sans-serif; font-weight:900; font-size:70px; line-height:1.16; letter-spacing:-0.4px; color:#FFFFFF; text-align:center;">Un punteggio alto</div>
   <div style="position:absolute; left:64px; top:930px; width:952px; animation:a_s09_riga2 21.6s linear both;  font-family:'Archivo', 'Helvetica Neue', Arial, sans-serif; font-weight:800; font-size:62px; line-height:1.16; letter-spacing:-0.4px; color:rgba(255,255,255,0.88); text-align:center;">non è fortuna.</div>

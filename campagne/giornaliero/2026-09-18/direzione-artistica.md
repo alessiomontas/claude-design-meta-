@@ -37,7 +37,7 @@ della recensione deve essere l'unico punto chiaro del fotogramma, e una foto le 
 | Facebook F1 | 1080×1920 (9:16) — obbligatorio, un 4:5 verrebbe tagliato nel collage | Catena grande Ø 64, **solo il primo anello acceso**: la recensione c'è già, la catena si ferma lì. È esattamente il dolore del gancio |
 | Facebook F2 | 1080×1080 (1:1) | **Catena ruotata in verticale**: filo oro a sinistra, quattro anelli, numeri `01→04` in oro |
 | Facebook F3 | 1080×1080 (1:1) | Catena piccola Ø 22 completa, senza etichette: è la firma di chiusura |
-| Storie S1-S2 | 2 × 1080×1920 | **Un solo anello, grande (Ø 104), centrato, col numero dentro.** Una storia non è un percorso: è un punto della catena |
+| Storie S1-S2 | 2 × 1080×1920 | **Filo oro centrato sotto il lockup + etichetta** (`PREZZO`, `LE SEI VOCI`). Il medaglione numerato è stato tolto dopo compliance: il pacchetto contava la stessa catena in tre modi diversi, e il numero nelle storie era quello che non significava niente |
 | Reel | cover + 12 scene 1080×1920 | Gli anelli **si accendono uno per scena** (scene 3-8). Fuori dalla catena (1-2, 9-12) la catena non c'è: entra e esce |
 
 Griglia unica: margine 64 px · colonna utile 952 px · safe area 180 alto / 320 basso sui 9:16 ·
@@ -88,19 +88,22 @@ tracking 7, `rgba(255,255,255,.72)`) a y 156, **centrati, fissi su tutte le pagi
 Catena (scene 3-8): anelli **Ø 64** a y 430, centri x **96 · 405 · 675 · 984**, filo spesso 4 px a y 460.
 Anello acceso `#C8A24B` pieno; spento `#2E2A25` con bordo 3 px `rgba(255,255,255,.30)`.
 Filo percorso `#C8A24B`, filo residuo `rgba(255,255,255,.18)`.
-Etichette Manrope 600 corpo 17 tracking .16em maiuscolo a y 512 — `RECENSIONE` (ancorata a x 64),
-`VISIBILITÀ` e `PREZZO` (centrate sul loro anello), `CHI PRENOTA` (ancorata a destra, x 1016).
+Etichette Manrope 600 corpo 17 tracking .16em maiuscolo a y 512. **Il reel ha etichette proprie**
+— `RECENSIONE · VISIBILITÀ · FIDUCIA · PREZZO` — perché racconta in ordine 1→3→2 mentre il carosello
+segue l'ordine della catena economica: con le etichette del carosello l'anello acceso non corrispondeva
+alla frase a schermo. `RECENSIONE` è ancorata a x 64, `VISIBILITÀ` e `FIDUCIA` centrate sul loro anello,
+`PREZZO` ancorata a destra, x 1016.
 Accese `#C8A24B`, spente `rgba(255,255,255,.55)`.
 
 | # | t (s) | Testo esatto a schermo | Posizione e stile | Anelli accesi | Animazione da mettere in Canva |
 |---|---|---|---|---|---|
 | 1 | 0,0-2,0 | `Le recensioni` / `non sono un complimento.` | y 820 Archivo 900 70 `#FFF` centrato · y 930 Archivo 800 62 `rgba(255,255,255,.88)` centrato | — | riga 1 maschera dal basso 200 ms; riga 2 a +280 ms |
 | 2 | 2,0-3,4 | `Sono un prezzo.` | y 880 Archivo 900 70 `#FFF` centrato · filo oro 180×3 px a y 1010, x 450 | — | scatto di scala 1,10→1 in 180 ms; il filo si disegna da sinistra in 260 ms |
-| 3 | 3,4-5,2 | `FUNZIONA COSÌ` | y 300 Manrope 600 31 tracking .18em `#C8A24B` centrato | 0 di 4 (tutti spenti, catena visibile) | kicker in dissolvenza 200 ms; la catena entra con gli anelli vuoti |
-| 4 | 5,2-7,2 | `Il punteggio conta` / `in come esci nelle ricerche.` | y 820 / y 930, come scena 1 | **1** — `RECENSIONE` | anello 1 con scatto 220 ms; testo a accumulo 110 ms per parola |
-| 5 | 7,2-9,2 | `E la tua casa` / `la trova chi scorre un portale.` | idem | **2** — + `VISIBILITÀ` | filo oro si allunga da sinistra 260 ms, poi si accende l'anello 2 |
-| 6 | 9,2-11,4 | `Chi ti trova` / `ha già un motivo per fidarsi.` | idem | **3** — + `PREZZO` | due tempi: riga 2 a +400 ms dalla riga 1 |
-| 7 | 11,4-13,6 | `Quindi il prezzo` / `non lo devi abbassare.` | y 820 Archivo 900 70 `#FFF` centrato · y 930 Archivo 900 62 **su banda `#C8A24B`, testo `#2E2A25`**, centrato | **4** — + `CHI PRENOTA` | anello 4 scatto 1,08→1; **evidenziatore oro che corre da sinistra 260 ms**. Unico del reel |
+| 3 | 3,4-5,2 | `FUNZIONA COSÌ` | y 300 Manrope 600 31 tracking .18em `#C8A24B` centrato | **1** — `RECENSIONE` (la premessa) | kicker in dissolvenza 200 ms; la catena entra e si accende il primo anello |
+| 4 | 5,2-7,2 | `Il punteggio conta` / `in come esci nelle ricerche.` | y 820 / y 930, come scena 1 | **2** — `VISIBILITÀ` | anello 1 con scatto 220 ms; testo a accumulo 110 ms per parola |
+| 5 | 7,2-9,2 | `E la tua casa` / `la trova chi scorre un portale.` | idem | **2** — `VISIBILITÀ` (resta) | filo oro si allunga da sinistra 260 ms, poi si accende l'anello 2 |
+| 6 | 9,2-11,4 | `Chi ti trova` / `ha già un motivo per fidarsi.` | idem | **3** — + `FIDUCIA` | due tempi: riga 2 a +400 ms dalla riga 1 |
+| 7 | 11,4-13,6 | `Quindi il prezzo` / `non lo devi abbassare.` | y 820 Archivo 900 70 `#FFF` centrato · y 930 Archivo 900 62 **su banda `#C8A24B`, testo `#2E2A25`**, centrato | **4** — + `PREZZO` | anello 4 scatto 1,08→1; **evidenziatore oro che corre da sinistra 260 ms**. Unico del reel |
 | 8 | 13,6-14,2 | — | solo catena + kicker | **4** | immobilità totale 0,6 s. È il fotogramma da fermo-immagine |
 | 9 | 14,2-16,2 | `Un punteggio alto` / `non è fortuna.` | y 820 / y 930 | catena assente | i quattro anelli escono verso l'alto in maschera 300 ms; il testo entra dal basso |
 | 10 | 16,2-18,4 | `È pulizia, risposte,` / `check-in. Tutti i giorni.` | y 820 / y 930 | — | il testo sostituisce se stesso a rullo, 200 ms |
@@ -127,6 +130,23 @@ Le animazioni della colonna di destra sono **indicazioni per il titolare**, non 
 | F1 | Catena grande con **il primo anello acceso** invece che tutti spenti | Con quattro anelli spenti la catena spariva nel fondo e il terzo superiore era morto. Un anello acceso dice meglio il gancio: la recensione c'è, il resto non è ancora successo |
 | F3 | Gancio spezzato su 2 righe | `Quel punteggio lo fa qualcuno.` a corpo 62 su una riga sola sfora la colonna e si sovrapponeva al corpo |
 
+## Correzioni applicate dopo `checklist-compliance.md` (18/09)
+
+| # | Bloccante | Cosa è cambiato |
+|---|---|---|
+| 1 | Riuso delle cinque recensioni | **Sospeso** — in attesa della decisione del titolare. Non toccato |
+| 2 | Katarzyna tagliata senza `…` | F2 e testo Facebook riaprono con `«… L'appartamento è dotato di…`. Card sempre su 3 righe |
+| 3 | Caveat Cornell illeggibili | C3: corpo **17 → 26**, opacità **.62 → .80**, blocco risalito a y 866. Slide non ricomposta |
+| 4 | Due conteggi delle sei voci | Post Facebook allineato al **cinque** (quello a schermo e quello disegnato in S2) |
+| 5 | Parafrasi Booking | Il dettaglio sulla recency è fuori; resta la formulazione congiunta Booking+Airbnb. Il resto del paragrafo intatto |
+| 6 | Off-by-one del reel | Etichette proprie del reel: `RECENSIONE · VISIBILITÀ · FIDUCIA · PREZZO`. R04 accende `VISIBILITÀ`, R06 `FIDUCIA`, R07 `PREZZO` — e l'evidenziatore oro cade sull'ultimo anello. Aggiornati anche `reel/scene.json` e `reel/canva.html` |
+| 7 | Tre numerazioni in contraddizione | Numero tolto dai kicker: C2 `VISIBILITÀ`, C3 `PREZZO`, C4 `CHI PRENOTA`. Storie senza medaglione: S1 `PREZZO`, S2 `LE SEI VOCI`. **F2 invariato** |
+
+Non bloccanti chiusi nello stesso giro: `copy.md` riallineato ai PNG (citazioni di Paweł e Attila,
+gancio di S2, tabella slot, tabelle di layout) · `Attila · 3 settimane fa` → **`agosto 2026`**, data
+assoluta come le altre card *(mese da confermare sullo screenshot)* · vuoto di ~160 px a metà C2 chiuso
+alzando la fascia sabbia a y 700 e la pillola «Scorri» a y 970.
+
 ## Controllo qualità — eseguito sui PNG, a dimensione telefono
 
 | # | Controllo | Esito |
@@ -139,7 +159,13 @@ Le animazioni della colonna di destra sono **indicazioni per il titolare**, non 
 | 6 | Marchi di terzi | OK — nessuna fotografia, nessun logo, nessuna interfaccia. Airbnb è citato solo come **parola** nella riga «traduzione di Airbnb» |
 
 Strumento di controllo misurato: `grafiche/verifica.py` (fuori frame, sovrapposizioni, safe area, vuoti).
-Esito corrente: **10 artboard statiche su 10 pulite**.
+Esito corrente: **10 artboard statiche su 10 pulite** (rieseguito dopo le correzioni di compliance).
+
+**Verifica specifica sul caveat Cornell (bloccante 3):** il PNG di C3 è stato ridotto a **390 px di
+larghezza reale** — la larghezza di un telefono — e guardato lì. A 26 px le due righe
+«Cornell Center for Hospitality Research — Anderson, 2012. / Studio sul settore alberghiero, non su
+case vacanza.» **si leggono**, con lo stesso sforzo della riga di spiegazione sopra. Il `+11%` non
+resta più solo sullo schermo. Verificato guardando, non solo impostando.
 
 ## Grafiche editabili
 

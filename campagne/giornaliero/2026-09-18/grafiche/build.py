@@ -109,14 +109,14 @@ def carosello():
     c = frame(W, H)
     c += marchio(80)
     c += catena(210, 2, d=26, etichette=True)
-    c += kicker('Anello 01 &mdash; Visibilità', 340)
+    c += kicker('Visibilità', 340)
     c += blocco(['Primo: dove ti trovano.'], 400, 62, 900)
     c += blocco(['Il punteggio pesa in come esci',
                  'quando qualcuno cerca una casa.'], 500, 45, 800, T1)
-    c += fascia_sabbia(760, ['La tua casa non la trova chi passa per strada.',
+    c += fascia_sabbia(700, ['La tua casa non la trova chi passa per strada.',
                              'La trova chi scorre un portale.'],
                        size=40, peso=600, pad_v=40, lh=1.34)
-    c += scorri(1010)
+    c += scorri(970)
     c += indice('2 / 5')
     scrivi(os.path.join(HERE, 'C2.dc.html'), c)
 
@@ -124,15 +124,18 @@ def carosello():
     c = frame(W, H)
     c += marchio(80)
     c += catena(210, 3, d=26, etichette=True)
-    c += kicker('Anello 02 &mdash; Prezzo', 340)
+    c += kicker('Prezzo', 340)
     c += blocco(['Secondo: quanto puoi chiedere.'], 400, 50, 900)
     c += ('  <div style="position: absolute; left: 64px; top: 500px; font-family: %s; '
           'font-weight: 900; font-size: 200px; line-height: 1; letter-spacing: -8px; '
           'color: %s;">+11%%</div>\n' % (AR, ORO))
     c += blocco(['+1 punto di valutazione su 5 = circa +11% di prezzo,',
                  'a occupazione invariata.'], 760, 33, 600, BIANCO, font=MA, lh=1.36)
+    # Bloccante 3: a corpo 17 su 1080 px il caveat diventa ~6 px reali sul
+    # telefono e il +11% resta senza condizione. 26 px, opacita' .80.
     c += fonte(['Cornell Center for Hospitality Research &mdash; Anderson, 2012.',
-                'Studio sul settore alberghiero, non su case vacanza.'], 870)
+                'Studio sul settore alberghiero, non su case vacanza.'], 866,
+               size=26, colore='rgba(255,255,255,0.80)')
     c += filo_oro(960, 180)
     c += blocco(['Nell&rsquo;hotellerie questo legame &egrave; misurato da anni.'],
                 1000, 33, 600, T2, font=MA, lh=1.3)
@@ -145,7 +148,7 @@ def carosello():
     c = frame(W, H)
     c += marchio(80)
     c += catena(210, 4, d=26, etichette=True)
-    c += kicker('Anello 03 &mdash; Chi prenota', 340)
+    c += kicker('Chi prenota', 340)
     c += blocco(['Terzo: chi prenota.'], 400, 50, 900)
     c += blocco(['Chi ha poco tempo non compra',
                  'il risparmio. Compra la certezza.'], 470, 45, 800, T1)
@@ -155,7 +158,7 @@ def carosello():
         ['&laquo; &hellip; L&rsquo;appartamento era in ordine sotto',
          'ogni aspetto, splendidamente pulito,',
          'ordinato e confortevole&hellip; &raquo;'],
-        'Attila &middot; 3 settimane fa')
+        'Attila &middot; agosto 2026')
     c += blocco(['Guarda di cosa parlano: pulizia, arrivo preparato,',
                  'risposte. Non parlano del mare.'], 1030, 33, 600, BIANCO, font=MA, lh=1.32)
     c += blocco(['Non &egrave; il prezzo a educare l&rsquo;ospite: &egrave; il',
@@ -218,7 +221,7 @@ def facebook():
     c += stelle(590, size=31)
     c += card_recensione(
         632,
-        ['&laquo;L&rsquo;appartamento &egrave; dotato di accessori da cucina,',
+        ['&laquo; &hellip; L&rsquo;appartamento &egrave; dotato di accessori da cucina,',
          'lavatrice e letti confortevoli. Ottima comunicazione',
          'con l&rsquo;host. Consigliato&raquo;'],
         'Katarzyna', size=34, size_meta=31, pad_v=30, lh=1.32)
@@ -247,17 +250,17 @@ def storie():
     # ---- S1 · anello 02 (prezzo) + CARD RECENSIONE
     c = frame(1080, 1920)
     c += marchio(112)
-    c += anello_grande(232, '02', 'Anello 02 &mdash; Prezzo', d=104)
-    c += blocco(['Non abbassare il prezzo.', 'Ancora.'], 440, 62, 900)
+    c += firma_storia(250, 'Prezzo')
+    c += blocco(['Non abbassare il prezzo.', 'Ancora.'], 400, 62, 900)
     c += blocco(['Le prenotazioni calano e la prima cosa',
-                 'che si tocca &egrave; la tariffa.'], 620, 40, 600, T2, font=MA, lh=1.36)
-    c += filo_oro(760, 180)
+                 'che si tocca &egrave; la tariffa.'], 590, 40, 600, T2, font=MA, lh=1.36)
+    c += filo_oro(730, 180)
     c += blocco(['Il punteggio &egrave; la ragione per cui puoi',
                  'non farlo: chi ti trova ha gi&agrave;',
-                 'un motivo per fidarsi.'], 800, 50, 800, BIANCO, lh=1.2)
-    c += stelle(1010, size=31)
+                 'un motivo per fidarsi.'], 770, 50, 800, BIANCO, lh=1.2)
+    c += stelle(990, size=31)
     c += card_recensione(
-        1052,
+        1032,
         ['&laquo;&hellip; L&rsquo;appartamento era pulito, confortevole e',
          'preparato per il nostro arrivo&hellip; Consiglio',
          'vivamente questo posto!&raquo;'],
@@ -270,12 +273,12 @@ def storie():
     # ---- S2 · anello 01 (la recensione: da dove viene) + sei voci
     c = frame(1080, 1920)
     c += marchio(112)
-    c += anello_grande(232, '01', 'Anello 01 &mdash; Recensione', d=104)
+    c += firma_storia(250, 'Le sei voci')
     c += blocco(['&ldquo;Tanto il punteggio', 'dipende dall&rsquo;ospite.&rdquo;'],
-                440, 62, 900, T4)
+                400, 62, 900, T4)
     c += blocco(['L&rsquo;ospite valuta sei voci.', 'Una sola non dipende da te.'],
-                610, 50, 800, BIANCO, lh=1.2)
-    c += filo_oro(770, 180)
+                580, 50, 800, BIANCO, lh=1.2)
+    c += filo_oro(740, 180)
     voci = [('Pulizia', 'lavoro', True),
             ('Accuratezza', 'lavoro', True),
             ('Check-in', 'lavoro', True),
@@ -283,7 +286,7 @@ def storie():
             ('Rapporto qualit&agrave;-prezzo', 'lavoro', True),
             ('Posizione', 'non dipende da nessuno', False)]
     for i, (testo, coda, acceso) in enumerate(voci):
-        c += voce_anello(820 + i * 84, testo, coda, acceso, size=40)
+        c += voce_anello(800 + i * 92, testo, coda, acceso, size=40)
     c += blocco(['Cinque su sei sono esecuzione. E l&rsquo;esecuzione si affida.'],
                 1380, 33, 600, T3, font=MA)
     c += cta_pillola(1460, 'Scrivi &laquo;PUNTEGGIO&raquo; in DM', h=90, size=40)
@@ -300,8 +303,8 @@ SCENE = [
     # (id, accesi, kicker, righe, nota)
     ('R01', None, None, ['Le recensioni', 'non sono un complimento.']),
     ('R02', None, None, ['Sono un prezzo.']),
-    ('R03', 0, 'Funziona così', []),
-    ('R04', 1, 'Funziona così', ['Il punteggio conta', 'in come esci nelle ricerche.']),
+    ('R03', 1, 'Funziona così', []),
+    ('R04', 2, 'Funziona così', ['Il punteggio conta', 'in come esci nelle ricerche.']),
     ('R05', 2, 'Funziona così', ['E la tua casa', 'la trova chi scorre un portale.']),
     ('R06', 3, 'Funziona così', ['Chi ti trova', 'ha gi&agrave; un motivo per fidarsi.']),
     ('R07', 4, 'Funziona così', ['Quindi il prezzo', '@non lo devi abbassare.']),
@@ -317,7 +320,7 @@ def reel():
     # ---- copertina
     c = frame(1080, 1920)
     c += marchio(112)
-    c += catena(430, 4, d=64, etichette=True, spessore=4)
+    c += catena(430, 4, d=64, etichette=True, spessore=4, testi=ETICHETTE_REEL)
     c += blocco(['Le recensioni', 'non sono', 'un complimento.'], 780, 70, 900,
                 allinea='center', lh=1.14)
     c += ('  <div style="position: absolute; left: 0; right: 0; top: 1090px; '
@@ -332,7 +335,8 @@ def reel():
         c = frame(1080, 1920)
         c += marchio(112)
         if accesi is not None:
-            c += catena(430, accesi, d=64, etichette=True, spessore=4)
+            c += catena(430, accesi, d=64, etichette=True, spessore=4,
+                        testi=ETICHETTE_REEL)
         if kick:
             c += kicker(kick, 300, colore=ORO, size=31, allinea='center')
         if righe:
@@ -406,7 +410,10 @@ TESTI = {
     10: ['È pulizia, risposte,', 'check-in. Tutti i giorni.'],
     11: ['Guadagniamo solo', 'se guadagni tu.'],
 }
-ACCESI = {3: 0, 4: 1, 5: 2, 6: 3, 7: 4, 8: 4}
+# L'anello acceso segue la FRASE a schermo, non il numero della scena:
+# R03 accende RECENSIONE (la premessa), R04-R05 VISIBILITA', R06 FIDUCIA,
+# R07 PREZZO - cosi' l'evidenziatore oro cade sull'ultimo anello.
+ACCESI = {3: 1, 4: 2, 5: 2, 6: 3, 7: 4, 8: 4}
 
 
 def scene_json():
@@ -458,7 +465,7 @@ def scene_json():
                     anim_out='taglio', dur_in=0.22)
                 add(id=p + 'etichetta%d' % (i + 1),
                     nome='Scena %d &middot; etichetta %d' % (n, i + 1), tipo='testo',
-                    testo=['RECENSIONE', 'VISIBILITÀ', 'PREZZO', 'CHI PRENOTA'][i],
+                    testo=ETICHETTE_REEL[i],
                     x=int(cx[i] - 130) if 0 < i < 3 else (64 if i == 0 else 1080 - 64 - 260),
                     y=512, w=260,
                     allinea='center' if 0 < i < 3 else ('left' if i == 0 else 'right'),

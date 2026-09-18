@@ -103,16 +103,21 @@ def marchio(y=112, colore=BIANCO, w=1080):
 
 
 ETICHETTE = ('RECENSIONE', 'VISIBILITÀ', 'PREZZO', 'CHI PRENOTA')
+# Il REEL racconta in ordine 1->3->2 (visibilita' -> fiducia -> prezzo, brief
+# riga 117): con le etichette del carosello l'anello acceso non corrispondeva
+# alla frase a schermo. Il reel ha quindi le sue.
+ETICHETTE_REEL = ('RECENSIONE', 'VISIBILITÀ', 'FIDUCIA', 'PREZZO')
 
 
 def catena(y, accesi, d=26, left=64, right=64, w=1080, etichette=False,
-           n=4, spessore=3):
+           n=4, spessore=3, testi=None):
     """LA CATENA — l'indice di lettura, costante su tutto il pacchetto.
 
     `accesi` = quanti anelli sono pieni (0-4). Il filo e' oro fino al centro
     dell'ultimo anello acceso e spento oltre: e' l'avanzamento, e sostituisce
     ogni barra a tacche.
     """
+    testi = testi or ETICHETTE
     util = w - left - right
     passo = util - d
     cx = [left + d / 2.0 + passo * i / float(n - 1) for i in range(n)]
@@ -150,8 +155,25 @@ def catena(y, accesi, d=26, left=64, right=64, w=1080, etichette=False,
             out.append('  <div style="position: absolute; %s top: %dpx; white-space: nowrap; '
                        'font-family: %s; font-weight: 600; font-size: 17px; '
                        'letter-spacing: 0.16em; text-transform: uppercase; color: %s;">%s</div>\n'
-                       % (pos, y + d + 18, MA, ORO if pieno else T5, ETICHETTE[i]))
+                       % (pos, y + d + 18, MA, ORO if pieno else T5, testi[i]))
     return ''.join(out)
+
+
+def firma_storia(y, etichetta, larghezza=180):
+    """Firma delle STORIE dopo il verbale di compliance.
+
+    Il medaglione numerato e' stato tolto: il pacchetto portava tre numerazioni
+    diverse della stessa catena (carosello, F2, storie) e il numero nelle
+    storie era quello che non significava niente. Resta il filo oro centrato
+    sotto il lockup e l'etichetta: dice dove siamo senza contare due volte.
+    """
+    return ('  <div style="position: absolute; left: 0; right: 0; top: %dpx; '
+            'text-align: center;"><span style="display: inline-block; width: %dpx; '
+            'height: 3px; background: %s; border-radius: 2px;"></span></div>\n'
+            '  <div style="position: absolute; left: 0; right: 0; top: %dpx; text-align: center; '
+            'font-family: %s; font-weight: 600; font-size: 31px; letter-spacing: 0.18em; '
+            'text-transform: uppercase; color: %s;">%s</div>\n'
+            % (y, larghezza, ORO, y + 40, MA, ORO, etichetta))
 
 
 def anello_grande(y, numero, etichetta, d=104, acceso=True, w=1080):

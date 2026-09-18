@@ -6,6 +6,12 @@
 **Chiusura obbligata (tutti i contenuti):** il punteggio è il risultato di un lavoro fatto tutti i giorni — **guadagniamo solo se guadagni tu**.
 **Seed grafico di giornata:** `180926`. Base fumè `#3F3A33`, oro `#C8A24B`, testo `#FFF`, scuro `#2E2A25`.
 
+> **Aggiornato il 18/09/2026 dopo `checklist-compliance.md`.** Applicati i bloccanti 2-7 (citazione
+> Katarzyna riaperta con `…`, caveat Cornell a corpo 26, conteggio sulle sei voci allineato al cinque,
+> parafrasi Booking ammorbidita, etichette proprie del reel, numeri tolti dai kicker). Il bloccante 1
+> (riuso delle cinque recensioni già pubblicate in `facebook-recensioni-superhost`) resta **aperto**:
+> serve una decisione del titolare, e finché non c'è il pacchetto non si pubblica.
+
 ## Canale
 Pacchetto completo: 1 reel 9:16 (in Canva) · 1 carosello 5 slide 4:5 · 1 post Facebook (testo + 3 immagini: 9:16 + 2× 1:1) · 2 storie autoconclusive 9:16.
 
@@ -32,9 +38,9 @@ Fonte: screenshot di annuncio Airbnb reale gestito da Hadrianus, fornito dal tit
 
 | Slot | Dove | Testo a schermo (verbatim, così com'è) | Battute | Meta a schermo |
 |---|---|---|---|---|
-| R1 | Storia 1, card centrale | «Ci siamo trovati molto bene qui. L'appartamento era pulito, confortevole e preparato per il nostro arrivo, e l'host si è rivelato estremamente cordiale e disponibile. Consiglio vivamente questo posto!» | 198 — capienza 200 (4 righe × 50, Manrope 500 corpo 38) | ★★★★★ · Paweł · giugno 2026 · `traduzione di Airbnb` |
-| R2 | Carosello C4, card alta | «… Il padrone di casa era molto gentile, attento e disponibile. L'appartamento era in ordine sotto ogni aspetto, splendidamente pulito, ordinato e confortevole…» | 158 — capienza 190 (4 righe × 48, Manrope 500 corpo 38) | ★★★★★ · Attila · 3 settimane fa · `traduzione di Airbnb` |
-| R3 | Facebook F2, riquadro basso | «L'appartamento è dotato di accessori da cucina, lavatrice e letti confortevoli. Ottima comunicazione con l'host. Consigliato» | 124 — capienza 130 (3 righe × 44, Manrope 500 corpo 34) | ★★★★★ · Katarzyna · `traduzione di Airbnb` (mese nel testo del post) |
+| R1 | Storia 1, card centrale | «… L'appartamento era pulito, confortevole e preparato per il nostro arrivo… Consiglio vivamente questo posto!» — **testo effettivamente a schermo**; l'originale integrale (198 battute) non entrava nella card senza ridurre il corpo | 105 — 3 righe, Manrope 500 corpo 38 | ★★★★★ · Paweł · giugno 2026 · `traduzione di Airbnb` |
+| R2 | Carosello C4, card alta | «… L'appartamento era in ordine sotto ogni aspetto, splendidamente pulito, ordinato e confortevole…» — **testo effettivamente a schermo**, stessa forma già usata nel testo Facebook | 101 — 3 righe, Manrope 500 corpo 38 | ★★★★★ · Attila · agosto 2026 · `traduzione di Airbnb` |
+| R3 | Facebook F2, riquadro basso | «… L'appartamento è dotato di accessori da cucina, lavatrice e letti confortevoli. Ottima comunicazione con l'host. Consigliato» | 124 — capienza 130 (3 righe × 44, Manrope 500 corpo 34) | ★★★★★ · Katarzyna · `traduzione di Airbnb` (mese nel testo del post) |
 | R4 | Testo Facebook (solo testo, non a schermo) | «Appartamento ben curato e pulito, ottima posizione.» — Aline, giugno 2026 | 51 | — |
 | R5 | Testo Facebook (solo testo, non a schermo) | «Appartamento bello e pulito, vicino alla spiaggia e alla metropolitana…» — Martin, giugno 2026, traduzione di Airbnb | 71 | — |
 
@@ -171,7 +177,7 @@ Caption     | —
 |---|---|---|---|---|---|
 | marchio | 80-150 | HADRIANUS / MULTISERVICE | Archivo 800 / Manrope 600 | 33 / 17 | #FFF |
 | catena (indice) | 210-250 | 4 cerchi, 1° e 2° pieni | — | — | #C8A24B |
-| kicker | 330-370 | ANELLO 01 — VISIBILITÀ | Manrope 600 maiusc. lettersp .18em | 31 | #C8A24B |
+| kicker | 340-380 | VISIBILITÀ | Manrope 600 maiusc. lettersp .18em | 31 | #C8A24B |
 | gancio | 430-520 | 1 riga | Archivo 900 | 62 | #FFF |
 | corpo | 560-700 | 2 righe | Archivo 800 | 45 | rgba(255,255,255,.88) |
 | blocco basso | 900-1120 | fascia sabbia piena, 2 righe | Manrope 600 | 40 | #26241F su #F5F0E6 |
@@ -221,11 +227,11 @@ Riga di traduzione onesta sotto la fonte (Archivo 800, 40):
 |---|---|---|---|---|---|
 | marchio | 80-150 | HADRIANUS / MULTISERVICE | Archivo 800 / Manrope 600 | 33 / 17 | #FFF |
 | catena (indice) | 210-250 | 4 cerchi, 1-3 pieni | — | — | #C8A24B |
-| kicker | 330-370 | ANELLO 02 — PREZZO | Manrope 600 maiusc. lettersp .18em | 31 | #C8A24B |
+| kicker | 340-380 | PREZZO | Manrope 600 maiusc. lettersp .18em | 31 | #C8A24B |
 | gancio | 420-490 | 1 riga | Archivo 900 | 50 | #FFF |
 | numero | 540-760 | +11% | Archivo 900 | 200 | #C8A24B |
 | spiegazione | 790-900 | 2 righe | Manrope 600 | 33 | #FFF |
-| fonte | 920-980 | 2 righe caveat | Manrope 500 | 17 | rgba(255,255,255,.62) |
+| fonte (caveat Cornell) | 866-944 | 2 righe caveat | Manrope 500 | **26** | rgba(255,255,255,.80) |
 | filo oro | 1010-1013 | linea 3 px | — | — | #C8A24B |
 | traduzione | 1040-1160 | 1 riga | Archivo 800 | 40 | #FFF |
 | indice | 1240-1280 | 3/5 | Manrope 600 | 17 | #C8A24B |
@@ -261,8 +267,8 @@ Caption     | —
 **Recensione verbatim — card alta (R2, Attila)**
 Stelle sopra la card: `★★★★★`
 Testo (verbatim, tagliato con `…`, 158 battute su 190 di capienza):
-`« … Il padrone di casa era molto gentile, attento e disponibile. L'appartamento era in ordine sotto ogni aspetto, splendidamente pulito, ordinato e confortevole… »`
-Meta sotto la card (Manrope 600 corpo 31): `Attila · 3 settimane fa`
+`« … L'appartamento era in ordine sotto ogni aspetto, splendidamente pulito, ordinato e confortevole… »`
+Meta sotto la card (Manrope 600 corpo 31): `Attila · agosto 2026`
 Riga fonte (Manrope 500 corpo 17): `traduzione di Airbnb`
 A schermo **nessun nome di casa, nessun indirizzo, nessuna foto, nessun logo Airbnb, nessun punteggio aggregato**.
 
@@ -277,7 +283,7 @@ A schermo **nessun nome di casa, nessun indirizzo, nessuna foto, nessun logo Air
 |---|---|---|---|---|---|
 | marchio | 80-150 | HADRIANUS / MULTISERVICE | Archivo 800 / Manrope 600 | 33 / 17 | #FFF |
 | catena (indice) | 210-250 | 4 cerchi tutti pieni | — | — | #C8A24B |
-| kicker | 330-370 | ANELLO 03 — CHI PRENOTA | Manrope 600 maiusc. lettersp .18em | 31 | #C8A24B |
+| kicker | 340-380 | CHI PRENOTA | Manrope 600 maiusc. lettersp .18em | 31 | #C8A24B |
 | gancio | 420-490 | 1 riga | Archivo 900 | 50 | #FFF |
 | corpo | 520-650 | 2 righe | Archivo 800 | 45 | rgba(255,255,255,.88) |
 | stelle | 660-690 | ★★★★★ | — | 31 | #C8A24B |
@@ -301,7 +307,7 @@ Fondo pieno fumè, nessuna fotografia — la card della recensione è il soggett
 | # | Affermazione | Stato |
 |---|---|---|
 | 1 | «Chi ha poco tempo compra la certezza» | **(c)** difendibile senza numeri. Dato Expedia «3 su 4» **(a) parziale, fonte primaria non verificata** — **non usato a schermo** |
-| 2 | Recensione Attila, 5 stelle, 3 settimane fa | CONFERMATO — verbatim da screenshot Airbnb fornito dal titolare 18/09/2026. Tagliata con `…`, **nessuna parola riscritta**. Riga «traduzione di Airbnb» obbligatoria |
+| 2 | Recensione Attila, 5 stelle, agosto 2026 | CONFERMATO — verbatim da screenshot Airbnb fornito dal titolare 18/09/2026. Tagliata con `…`, **nessuna parola riscritta**. Riga «traduzione di Airbnb» obbligatoria |
 | 3 | «Pulizia, arrivo preparato, risposte» | **(c)** lettura dei testi stessi delle recensioni, verificabile a schermo |
 | 4 | «È il posizionamento a filtrare chi prenota» | **(c)** riformulazione compliance-safe dell'anello 5. Vietata la versione causale «chi paga di più tratta meglio la casa» |
 | 5 | Nessun punteggio aggregato, nessun badge in questa slide | assente per scelta |
@@ -383,7 +389,7 @@ Hai il punteggio alto. E in banca non è cambiato niente.
 
 Le recensioni non sono un complimento. Sono un prezzo. Funziona in quattro passaggi.
 
-**1. Il punteggio entra nel posizionamento.** Non lo diciamo noi: lo dicono le piattaforme. Booking indica il punteggio recensioni tra i fattori su cui il partner può agire per migliorare la propria visibilità, e precisa che le recensioni recenti pesano più di quelle vecchie. Airbnb considera la valutazione complessiva e i punteggi per categoria, e il badge Guest Favorite compare direttamente nei risultati di ricerca. Il funzionamento esatto resta riservato: nessuno può prometterti una posizione. Ma che il punteggio conti è dichiarato.
+**1. Il punteggio entra nel posizionamento.** Non lo diciamo noi: lo dicono le piattaforme. Booking e Airbnb dicono entrambe, nelle guide che pubblicano per chi ospita, che il punteggio delle recensioni è fra gli elementi che incidono sulla visibilità di un annuncio. Airbnb considera la valutazione complessiva e i punteggi per categoria, e il badge Guest Favorite compare direttamente nei risultati di ricerca. Il funzionamento esatto resta riservato: nessuno può prometterti una posizione. Ma che il punteggio conti è dichiarato.
 
 **2. E la visibilità è tutto.** La tua casa non la trova chi passa per strada. La trova chi scorre un portale. La posizione dentro quel portale è il tuo affaccio sulla strada.
 
@@ -391,15 +397,15 @@ Le recensioni non sono un complimento. Sono un prezzo. Funziona in quattro passa
 
 **4. E cambia chi prenota.** Chi ha un budget e poco tempo non compra il risparmio: compra l'assenza di sorprese. Fra una casa più economica con recensioni tiepide e una più cara con recensioni ottime, sceglie la seconda — perché sta comprando tranquillità. Non è il prezzo a educare l'ospite: è il posizionamento a filtrare chi prenota.
 
-Ecco perché un punteggio alto non è fortuna. Pulizia, accuratezza, check-in, comunicazione: quattro delle sei voci che l'ospite valuta sono esecuzione. Sono lavoro, fatto tutti i giorni, da qualcuno.
+Ecco perché un punteggio alto non è fortuna. Pulizia, accuratezza, check-in, comunicazione: cinque delle sei voci che l'ospite valuta dipendono da come la casa è gestita. Sono lavoro, fatto tutti i giorni, da qualcuno.
 
 E si vede da cosa scrivono gli ospiti. Prendi cinque recensioni a cinque stelle di una casa che gestiamo sul Litorale — niente nome, non serve:
 
 ★★★★★ «Ci siamo trovati molto bene qui. L'appartamento era pulito, confortevole e preparato per il nostro arrivo, e l'host si è rivelato estremamente cordiale e disponibile. Consiglio vivamente questo posto!» — Paweł, giugno 2026 (traduzione di Airbnb)
-★★★★★ «… L'appartamento era in ordine sotto ogni aspetto, splendidamente pulito, ordinato e confortevole…» — Attila, 3 settimane fa (traduzione di Airbnb)
+★★★★★ «… L'appartamento era in ordine sotto ogni aspetto, splendidamente pulito, ordinato e confortevole…» — Attila, agosto 2026 (traduzione di Airbnb)
 ★★★★★ «Appartamento ben curato e pulito, ottima posizione.» — Aline, giugno 2026
 ★★★★★ «Appartamento bello e pulito, vicino alla spiaggia e alla metropolitana…» — Martin, giugno 2026 (traduzione di Airbnb)
-★★★★★ «L'appartamento è dotato di accessori da cucina, lavatrice e letti confortevoli. Ottima comunicazione con l'host. Consigliato» — Katarzyna, giugno 2026 (traduzione di Airbnb)
+★★★★★ «… L'appartamento è dotato di accessori da cucina, lavatrice e letti confortevoli. Ottima comunicazione con l'host. Consigliato» — Katarzyna, giugno 2026 (traduzione di Airbnb)
 
 Cinque su cinque parlano di pulizia, di arrivo preparato, di comunicazione. Nessuno scrive «bella casa». Nessuno ringrazia il mare. Parlano di lavoro — cioè dell'unica parte che si può comprare.
 
@@ -412,7 +418,7 @@ Hadrianus gestisce case a Roma e sul Litorale in standard alberghiero: pricing d
 **CLAIM — testo del post**
 | # | Affermazione | Stato |
 |---|---|---|
-| 1 | Booking: punteggio fra i fattori su cui il partner può agire; recensioni recenti pesano più delle vecchie | **(b)** — pagina ufficiale Booking for Partners non apribile dall'ambiente di ricerca. **Parafrasato, non virgolettato: verificare la parafrasi prima di pubblicare** |
+| 1 | «Booking e Airbnb dicono entrambe… che il punteggio è fra gli elementi che incidono sulla visibilità» | **(b)** — riformulato il 18/09 su richiesta di compliance. Il dettaglio «le recensioni recenti pesano più di quelle vecchie», attribuito a Booking in prima persona su fonte non aperta, è **tolto**: si rimette solo se il titolare apre la pagina e lo virgoletta |
 | 2 | Airbnb: valutazione complessiva e punteggi per categoria nel ranking; Guest Favorite compare nei risultati di ricerca | **(b)** documentato (help article 3496) |
 | 3 | «Il funzionamento esatto resta riservato: nessuno può prometterti una posizione» | **(b)** dichiarato da Booking — riga che protegge dal claim di risultato, non va tagliata |
 | 4 | «+1 punto su 5 ≈ +11% di prezzo a occupazione invariata» | **(a)** CONFERMATO — Cornell CHR, Anderson, nov. 2012 (+11,2%). Attribuzione completa e **entrambi i caveat** (hotel, 2012) presenti nel testo: non rimuovibili |
@@ -482,7 +488,7 @@ Caption     | (nel testo del post)
 **Recensione verbatim — riquadro basso (R3, Katarzyna)**
 Stelle: `★★★★★`
 Testo (verbatim, 124 battute su 130 di capienza):
-`«L'appartamento è dotato di accessori da cucina, lavatrice e letti confortevoli. Ottima comunicazione con l'host. Consigliato»`
+`«… L'appartamento è dotato di accessori da cucina, lavatrice e letti confortevoli. Ottima comunicazione con l'host. Consigliato»`
 Meta: `Katarzyna` + riga fonte `traduzione di Airbnb`. Il mese sta nel testo del post.
 Niente nome casa, indirizzo, foto dell'immobile, logo Airbnb, punteggio aggregato.
 
@@ -579,7 +585,7 @@ Caption     | —
 2. Problema: `Le prenotazioni calano e la prima cosa che si tocca è la tariffa.`
 3. Soluzione: `Il punteggio è la ragione per cui puoi non farlo: chi ti trova ha già un motivo per fidarsi.`
 4. Recensione (R1, Paweł) — stelle `★★★★★`, poi verbatim, 198 battute su 200 di capienza:
-   `«Ci siamo trovati molto bene qui. L'appartamento era pulito, confortevole e preparato per il nostro arrivo, e l'host si è rivelato estremamente cordiale e disponibile. Consiglio vivamente questo posto!»`
+   `«… L'appartamento era pulito, confortevole e preparato per il nostro arrivo… Consiglio vivamente questo posto!»`
    Meta: `Paweł · giugno 2026` + riga fonte `traduzione di Airbnb`.
    Niente nome casa, indirizzo, foto dell'immobile, logo Airbnb, punteggio aggregato.
 5. Chiusura: `Non è fortuna. È lavoro fatto tutti i giorni.`
@@ -626,7 +632,7 @@ Fondo pieno fumè, nessuna fotografia — la card della recensione deve essere l
 ### S2 · Instagram Storia · 1080×1920 · obiezione → smontaggio → CTA
 
 **COPY**
-Gancio      | "Il punteggio dipende dall'ospite."
+Gancio      | "Tanto il punteggio dipende dall'ospite."
 Corpo       | Su sei voci valutate,
             | una sola non dipende da te.
 CTA         | Scrivi "PUNTEGGIO" in DM
