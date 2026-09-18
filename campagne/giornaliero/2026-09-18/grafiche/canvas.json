@@ -1,0 +1,211 @@
+{
+  "artboards": [
+    {
+      "file": "C1.dc.html",
+      "x": 0,
+      "y": 0,
+      "w": 1080,
+      "h": 1350,
+      "title": "Carosello 1/5 &middot; il gancio",
+      "print": "fixed"
+    },
+    {
+      "file": "C2.dc.html",
+      "x": 1240,
+      "y": 0,
+      "w": 1080,
+      "h": 1350,
+      "title": "Carosello 2/5 &middot; anello 01 visibilità",
+      "print": "fixed"
+    },
+    {
+      "file": "C3.dc.html",
+      "x": 2480,
+      "y": 0,
+      "w": 1080,
+      "h": 1350,
+      "title": "Carosello 3/5 &middot; anello 02 prezzo (+11%)",
+      "print": "fixed"
+    },
+    {
+      "file": "C4.dc.html",
+      "x": 3720,
+      "y": 0,
+      "w": 1080,
+      "h": 1350,
+      "title": "Carosello 4/5 &middot; anello 03 chi prenota",
+      "print": "fixed"
+    },
+    {
+      "file": "C5.dc.html",
+      "x": 4960,
+      "y": 0,
+      "w": 1080,
+      "h": 1350,
+      "title": "Carosello 5/5 &middot; il lavoro + CTA",
+      "print": "fixed"
+    },
+    {
+      "file": "F1.dc.html",
+      "x": 6200,
+      "y": 0,
+      "w": 1080,
+      "h": 1920,
+      "title": "Facebook 1 &middot; gancio 9:16",
+      "print": "fixed"
+    },
+    {
+      "file": "F2.dc.html",
+      "x": 0,
+      "y": 2080,
+      "w": 1080,
+      "h": 1080,
+      "title": "Facebook 2 &middot; la catena + recensione",
+      "print": "fixed"
+    },
+    {
+      "file": "F3.dc.html",
+      "x": 1240,
+      "y": 2080,
+      "w": 1080,
+      "h": 1080,
+      "title": "Facebook 3 &middot; offerta + CTA",
+      "print": "fixed"
+    },
+    {
+      "file": "S1.dc.html",
+      "x": 2480,
+      "y": 2080,
+      "w": 1080,
+      "h": 1920,
+      "title": "Storia 1 &middot; anello 02 + recensione",
+      "print": "fixed"
+    },
+    {
+      "file": "S2.dc.html",
+      "x": 3720,
+      "y": 2080,
+      "w": 1080,
+      "h": 1920,
+      "title": "Storia 2 &middot; anello 01 + sei voci",
+      "print": "fixed"
+    },
+    {
+      "file": "R00.dc.html",
+      "x": 4960,
+      "y": 2080,
+      "w": 1080,
+      "h": 1920,
+      "title": "Reel &middot; copertina",
+      "print": "fixed"
+    },
+    {
+      "file": "R01.dc.html",
+      "x": 6200,
+      "y": 2080,
+      "w": 1080,
+      "h": 1920,
+      "title": "Reel &middot; scena 01",
+      "print": "fixed"
+    },
+    {
+      "file": "R02.dc.html",
+      "x": 0,
+      "y": 4160,
+      "w": 1080,
+      "h": 1920,
+      "title": "Reel &middot; scena 02",
+      "print": "fixed"
+    },
+    {
+      "file": "R03.dc.html",
+      "x": 1240,
+      "y": 4160,
+      "w": 1080,
+      "h": 1920,
+      "title": "Reel &middot; scena 03",
+      "print": "fixed"
+    },
+    {
+      "file": "R04.dc.html",
+      "x": 2480,
+      "y": 4160,
+      "w": 1080,
+      "h": 1920,
+      "title": "Reel &middot; scena 04",
+      "print": "fixed"
+    },
+    {
+      "file": "R05.dc.html",
+      "x": 3720,
+      "y": 4160,
+      "w": 1080,
+      "h": 1920,
+      "title": "Reel &middot; scena 05",
+      "print": "fixed"
+    },
+    {
+      "file": "R06.dc.html",
+      "x": 4960,
+      "y": 4160,
+      "w": 1080,
+      "h": 1920,
+      "title": "Reel &middot; scena 06",
+      "print": "fixed"
+    },
+    {
+      "file": "R07.dc.html",
+      "x": 6200,
+      "y": 4160,
+      "w": 1080,
+      "h": 1920,
+      "title": "Reel &middot; scena 07",
+      "print": "fixed"
+    },
+    {
+      "file": "R08.dc.html",
+      "x": 0,
+      "y": 6240,
+      "w": 1080,
+      "h": 1920,
+      "title": "Reel &middot; scena 08",
+      "print": "fixed"
+    },
+    {
+      "file": "R09.dc.html",
+      "x": 1240,
+      "y": 6240,
+      "w": 1080,
+      "h": 1920,
+      "title": "Reel &middot; scena 09",
+      "print": "fixed"
+    },
+    {
+      "file": "R10.dc.html",
+      "x": 2480,
+      "y": 6240,
+      "w": 1080,
+      "h": 1920,
+      "title": "Reel &middot; scena 10",
+      "print": "fixed"
+    },
+    {
+      "file": "R11.dc.html",
+      "x": 3720,
+      "y": 6240,
+      "w": 1080,
+      "h": 1920,
+      "title": "Reel &middot; scena 11",
+      "print": "fixed"
+    },
+    {
+      "file": "R12.dc.html",
+      "x": 4960,
+      "y": 6240,
+      "w": 1080,
+      "h": 1920,
+      "title": "Reel &middot; scena 12",
+      "print": "fixed"
+    }
+  ]
+}
