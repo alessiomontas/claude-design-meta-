@@ -20,7 +20,9 @@ Pacchetto completo: 1 reel 9:16 (in Canva) · 1 carosello 5 slide 4:5 · 1 post 
 - **Portali:** «il punteggio conta nel posizionamento» / «il badge compare nei risultati di ricerca». Mai «sappiamo come funziona l'algoritmo», mai «ti portiamo in prima pagina».
 - **Nessuna struttura nominata, nessun risultato Hadrianus, nessun badge come protagonista.**
 - **Recensioni verbatim:** solo stelle (★★★★★), testo, mese e al massimo il nome di battesimo. **Niente nome della casa, niente indirizzo, niente foto dell'immobile, niente logo Airbnb ricostruito, nessun falso screenshot.** Card pulite in stile Hadrianus.
-- **Nessun punteggio aggregato.** Non sono disponibili punteggio complessivo, numero di recensioni, punteggi per categoria, badge. **Vietato scrivere «4,9», «Superhost», «Preferito dagli ospiti»** o qualunque media. Dove il layout lo prevedeva: `[DATO DA VERIFICARE: punteggio complessivo e n. recensioni]`.
+- **Nessun punteggio aggregato, decisione chiusa dal titolare (18/09).** Vietati a schermo e nel testo: punteggio complessivo, numero di recensioni, punteggi per categoria. Niente «4,9», niente «47 recensioni». Non è un dato mancante da marcare: è un dato che **abbiamo deciso di non usare**. Nessun marcatore aperto nei file.
+- **Le prove a schermo sono due, e bastano:** le cinque recensioni verbatim **a cinque stelle** (le stelle per singola recensione sono nello screenshot, quelle sì) e il **livello Superhost attivo**.
+- **Superhost — regola d'uso stretta.** Confermato attivo, raggiunto **in due mesi partendo da un profilo nuovo**. Vale come **una riga di appoggio, una sola, in un formato largo** (post Facebook; al massimo l'ultima slide del carosello). Serve solo a chiudere l'obiezione muta «voi ce le avete perché siete lì da anni». **Non è il gancio** (già usato in `reel-superhost-acquisizione`), non è il protagonista, niente confronti con la media, nessuna percentuale. **Fuori dal reel e fuori dalle storie.**
 - **Traduzioni:** Attila, Martin, Paweł e Katarzyna sono ospiti stranieri e i testi sono tradotti da Airbnb. Dove si citano, a schermo va la riga `traduzione di Airbnb`.
 - **Tagli:** consentito accorciare con `…`, vietato riscrivere anche una sola parola. Sono prova, non copy.
 
@@ -256,10 +258,16 @@ Corpo       | Chi ha poco tempo non compra
 CTA         | →
 Caption     | —
 
-**Slot verbatim — card alta**
-`[RECENSIONE 2 — testo, mese]` · **max 190 battute** (4 righe × 48, Manrope 500 corpo 38)
-Meta sotto la card (Manrope 600 corpo 31): `[PUNTEGGIO X,X] · [mese]`
-A schermo **nessun nome di casa, nessun indirizzo, nessuna foto, nessun nome utente**.
+**Recensione verbatim — card alta (R2, Attila)**
+Stelle sopra la card: `★★★★★`
+Testo (verbatim, tagliato con `…`, 158 battute su 190 di capienza):
+`« … Il padrone di casa era molto gentile, attento e disponibile. L'appartamento era in ordine sotto ogni aspetto, splendidamente pulito, ordinato e confortevole… »`
+Meta sotto la card (Manrope 600 corpo 31): `Attila · 3 settimane fa`
+Riga fonte (Manrope 500 corpo 17): `traduzione di Airbnb`
+A schermo **nessun nome di casa, nessun indirizzo, nessuna foto, nessun logo Airbnb, nessun punteggio aggregato**.
+
+**Il filo (riga di lettura sotto la card, Manrope 600 corpo 33)**
+`Guarda di cosa parlano: pulizia, arrivo preparato, risposte. Non parlano del mare.`
 
 **Coda anello 5 — riformulata, mezza frase, non in chiusura (Manrope 600, 33)**
 `Non è il prezzo a educare l'ospite: è il posizionamento a filtrare chi prenota.`
@@ -272,8 +280,10 @@ A schermo **nessun nome di casa, nessun indirizzo, nessuna foto, nessun nome ute
 | kicker | 330-370 | ANELLO 03 — CHI PRENOTA | Manrope 600 maiusc. lettersp .18em | 31 | #C8A24B |
 | gancio | 420-490 | 1 riga | Archivo 900 | 50 | #FFF |
 | corpo | 520-650 | 2 righe | Archivo 800 | 45 | rgba(255,255,255,.88) |
-| card recensione | 690-1020 | card sabbia, bordo sx oro 6 px, 4 righe + meta | Manrope 500 / Manrope 600 | 38 / 31 | #26241F / #86692A su #F5F0E6 |
-| coda filtro | 1060-1160 | 2 righe | Manrope 600 | 33 | rgba(255,255,255,.72) |
+| stelle | 660-690 | ★★★★★ | — | 31 | #C8A24B |
+| card recensione | 700-1000 | card sabbia, bordo sx oro 6 px, 4 righe + meta + riga fonte | Manrope 500 / Manrope 600 / Manrope 500 | 38 / 31 / 17 | #26241F / #86692A / #6f695c su #F5F0E6 |
+| filo (riga di lettura) | 1030-1100 | 2 righe | Manrope 600 | 33 | #FFF |
+| coda filtro | 1120-1180 | 2 righe | Manrope 600 | 33 | rgba(255,255,255,.72) |
 | indice | 1240-1280 | 4/5 | Manrope 600 | 17 | #C8A24B |
 Griglia: margine 64 px · colonna utile 952 px · centro ottico y 675
 Velo: — (fondo fumè pieno)
@@ -291,8 +301,10 @@ Fondo pieno fumè, nessuna fotografia — la card della recensione è il soggett
 | # | Affermazione | Stato |
 |---|---|---|
 | 1 | «Chi ha poco tempo compra la certezza» | **(c)** difendibile senza numeri. Dato Expedia «3 su 4» **(a) parziale, fonte primaria non verificata** — **non usato a schermo** |
-| 2 | Testo della recensione | **DA VERIFICARE** — verbatim da annuncio reale, in attesa dal titolare. Non pubblicare la slide con lo slot vuoto |
-| 3 | «È il posizionamento a filtrare chi prenota» | **(c)** riformulazione compliance-safe dell'anello 5. Vietata la versione causale «chi paga di più tratta meglio la casa» |
+| 2 | Recensione Attila, 5 stelle, 3 settimane fa | CONFERMATO — verbatim da screenshot Airbnb fornito dal titolare 18/09/2026. Tagliata con `…`, **nessuna parola riscritta**. Riga «traduzione di Airbnb» obbligatoria |
+| 3 | «Pulizia, arrivo preparato, risposte» | **(c)** lettura dei testi stessi delle recensioni, verificabile a schermo |
+| 4 | «È il posizionamento a filtrare chi prenota» | **(c)** riformulazione compliance-safe dell'anello 5. Vietata la versione causale «chi paga di più tratta meglio la casa» |
+| 5 | Nessun punteggio aggregato, nessun badge in questa slide | assente per scelta |
 
 ---
 
@@ -303,6 +315,9 @@ Gancio      | Quel punteggio è lavoro.
 Corpo       | Pulizia, accuratezza, check-in,
             | comunicazione: li fa qualcuno.
 CTA         | Scrivi "PUNTEGGIO" in DM
+
+**Riga di appoggio Superhost — UNA SOLA, non è il gancio (Manrope 600 corpo 33)**
+`E non è un'eredità: il livello Superhost l'abbiamo raggiunto in due mesi, da un profilo nuovo.`
 
 **Blocco offerta (fascia sabbia, 3 righe)**
 `Gestione completa in standard alberghiero.`
@@ -317,7 +332,8 @@ CTA         | Scrivi "PUNTEGGIO" in DM
 Le recensioni non sono un complimento. Sono un prezzo.
 Il punteggio pesa in come esci quando qualcuno cerca una casa — lo dicono le piattaforme stesse. Più visibilità dove i clienti cercano davvero. Chi ti trova ha già un motivo per fidarsi. E allora il prezzo non lo devi abbassare.
 Nell'hotellerie questo legame è misurato da anni: uno studio Cornell del 2012 (Anderson, Center for Hospitality Research) stima che **+1 punto di valutazione su scala 5 permetta circa +11% di prezzo a occupazione invariata**. È un dato sul settore alberghiero, non sulle case vacanza, e non è una promessa sulla tua casa: è la direzione.
-Quel punteggio non è fortuna. Pulizia, accuratezza, check-in, comunicazione: sono quattro voci di lavoro, fatte tutti i giorni.
+Quel punteggio non è fortuna. Guarda di cosa parlano davvero le recensioni: pulizia, arrivo preparato, risposte. Non parlano del mare.
+E non è nemmeno un'eredità: il livello Superhost l'abbiamo raggiunto in due mesi, partendo da un profilo nuovo.
 Gestione completa in standard alberghiero, commissione 15% sul fatturato generato. Guadagniamo solo se guadagni tu.
 👉 Scrivi "PUNTEGGIO" in DM.
 
@@ -327,9 +343,10 @@ Gestione completa in standard alberghiero, commissione 15% sul fatturato generat
 | marchio | 80-150 | HADRIANUS / MULTISERVICE | Archivo 800 / Manrope 600 | 33 / 17 | #FFF |
 | gancio | 380-470 | 1 riga | Archivo 900 | 62 | #FFF |
 | corpo | 500-630 | 2 righe | Archivo 800 | 45 | rgba(255,255,255,.88) |
-| fascia offerta | 670-900 | fascia sabbia piena, 3 righe | Manrope 600 / Archivo 800 | 33 / 40 | #26241F, «15%» in #86692A |
-| coda stagionale | 930-1030 | 2 righe | Manrope 600 | 31 | rgba(255,255,255,.66) |
-| CTA | 1080-1180 | pillola oro piena | Archivo 800 maiusc. | 40 | #2E2A25 su #C8A24B |
+| riga Superhost | 650-720 | 2 righe | Manrope 600 | 33 | rgba(255,255,255,.80) |
+| fascia offerta | 750-950 | fascia sabbia piena, 3 righe | Manrope 600 / Archivo 800 | 33 / 40 | #26241F, «15%» in #86692A |
+| coda stagionale | 980-1050 | 2 righe | Manrope 600 | 31 | rgba(255,255,255,.66) |
+| CTA | 1090-1180 | pillola oro piena | Archivo 800 maiusc. | 40 | #2E2A25 su #C8A24B |
 | indice | 1240-1280 | 5/5 | Manrope 600 | 17 | #C8A24B |
 Griglia: margine 64 px · colonna utile 952 px · centro ottico y 675
 Velo: — (fondo fumè pieno)
@@ -347,10 +364,12 @@ Fondo pieno fumè, nessuna fotografia — slide di chiusura tipografica.
 | # | Affermazione | Stato |
 |---|---|---|
 | 1 | «Pulizia, accuratezza, check-in, comunicazione» | **(b)** categorie di valutazione Airbnb |
-| 2 | «Commissione 15% sul fatturato generato» | CONFERMATO — offerta da brief |
-| 3 | «Guadagniamo solo se guadagni tu» | lessico di brand, forma corretta |
-| 4 | «Standard alberghiero» | lessico di brand — mai «hotel-style» |
-| 5 | Coda stagionale | **(c)** ragionamento dichiarato come tale, nessun dato di occupazione a schermo. Dati stagionali italiani **(d)** non usati |
+| 2 | «Livello Superhost raggiunto in due mesi da un profilo nuovo» | CONFERMATO dal titolare 18/09/2026. **Una sola occorrenza in tutto il carosello**, riga di appoggio, mai gancio. Niente confronti con la media, nessuna percentuale |
+| 3 | «Commissione 15% sul fatturato generato» | CONFERMATO — offerta da brief |
+| 4 | «Guadagniamo solo se guadagni tu» | lessico di brand, forma corretta |
+| 5 | «Standard alberghiero» | lessico di brand — mai «hotel-style» |
+| 6 | Coda stagionale | **(c)** ragionamento dichiarato come tale, nessun dato di occupazione a schermo. Dati stagionali italiani **(d)** non usati |
+| 7 | Nessun punteggio aggregato e nessun numero di recensioni | assente per scelta (decisione titolare 18/09) |
 
 ---
 
@@ -373,6 +392,16 @@ Le recensioni non sono un complimento. Sono un prezzo. Funziona in quattro passa
 **4. E cambia chi prenota.** Chi ha un budget e poco tempo non compra il risparmio: compra l'assenza di sorprese. Fra una casa più economica con recensioni tiepide e una più cara con recensioni ottime, sceglie la seconda — perché sta comprando tranquillità. Non è il prezzo a educare l'ospite: è il posizionamento a filtrare chi prenota.
 
 Ecco perché un punteggio alto non è fortuna. Pulizia, accuratezza, check-in, comunicazione: quattro delle sei voci che l'ospite valuta sono esecuzione. Sono lavoro, fatto tutti i giorni, da qualcuno.
+
+E si vede da cosa scrivono gli ospiti. Prendi cinque recensioni a cinque stelle di una casa che gestiamo sul Litorale — niente nome, non serve:
+
+★★★★★ «Ci siamo trovati molto bene qui. L'appartamento era pulito, confortevole e preparato per il nostro arrivo, e l'host si è rivelato estremamente cordiale e disponibile. Consiglio vivamente questo posto!» — Paweł, giugno 2026 (traduzione di Airbnb)
+★★★★★ «… L'appartamento era in ordine sotto ogni aspetto, splendidamente pulito, ordinato e confortevole…» — Attila, 3 settimane fa (traduzione di Airbnb)
+★★★★★ «Appartamento ben curato e pulito, ottima posizione.» — Aline, giugno 2026
+★★★★★ «Appartamento bello e pulito, vicino alla spiaggia e alla metropolitana…» — Martin, giugno 2026 (traduzione di Airbnb)
+★★★★★ «L'appartamento è dotato di accessori da cucina, lavatrice e letti confortevoli. Ottima comunicazione con l'host. Consigliato» — Katarzyna, giugno 2026 (traduzione di Airbnb)
+
+Cinque su cinque parlano di pulizia, di arrivo preparato, di comunicazione. Nessuno scrive «bella casa». Nessuno ringrazia il mare. Parlano di lavoro — cioè dell'unica parte che si può comprare.
 
 Una coda di stagione: siamo a metà settembre e il litorale rallenta. Se in bassa stagione ci sono meno prenotazioni da distribuire, la scelta si stringe sui primi risultati. È lì che il punteggio si fa sentire di più, non di meno. È un ragionamento, non un dato — ma tienilo presente prima di svendere ottobre.
 
@@ -436,10 +465,12 @@ Caption     | (nel testo del post)
 `03 · Il prezzo non lo devi abbassare`
 `04 · Prenota chi cerca tranquillità`
 
-**Slot verbatim — riquadro basso**
-`[RECENSIONE 3 — testo, mese]` · **max 120 battute** (3 righe × 40, Manrope 500 corpo 34)
-Meta a schermo: solo `[PUNTEGGIO X,X]`. Il mese va nel testo del post.
-Niente nome casa, indirizzo, foto, nome utente.
+**Recensione verbatim — riquadro basso (R3, Katarzyna)**
+Stelle: `★★★★★`
+Testo (verbatim, 124 battute su 130 di capienza):
+`«L'appartamento è dotato di accessori da cucina, lavatrice e letti confortevoli. Ottima comunicazione con l'host. Consigliato»`
+Meta: `Katarzyna` + riga fonte `traduzione di Airbnb`. Il mese sta nel testo del post.
+Niente nome casa, indirizzo, foto dell'immobile, logo Airbnb, punteggio aggregato.
 
 **LAYOUT**
 | Zona | y (px) | Elemento | Font | Corpo | Colore |
@@ -447,7 +478,8 @@ Niente nome casa, indirizzo, foto, nome utente.
 | marchio | 64-120 | HADRIANUS / MULTISERVICE | Archivo 800 / Manrope 600 | 33 / 17 | #FFF |
 | gancio | 170-230 | 1 riga | Archivo 900 | 50 | #FFF |
 | catena | 280-560 | 4 righe numerate, filo oro verticale a sinistra | Archivo 800 | 40 | #FFF, numeri #C8A24B |
-| card recensione | 610-880 | card sabbia, bordo sx oro 6 px, 3 righe + punteggio | Manrope 500 / Manrope 600 | 34 / 31 | #26241F / #86692A su #F5F0E6 |
+| stelle | 600-630 | ★★★★★ | — | 31 | #C8A24B |
+| card recensione | 640-890 | card sabbia, bordo sx oro 6 px, 3 righe + nome + riga fonte | Manrope 500 / Manrope 600 / Manrope 500 | 34 / 31 / 17 | #26241F / #86692A / #6f695c su #F5F0E6 |
 | coda | 930-980 | NON È FORTUNA. È LAVORO. | Manrope 600 maiusc. lettersp .16em | 31 | #C8A24B |
 Griglia: margine 64 px · colonna utile 952 px · centro ottico y 540 · scala max 62
 Velo: — (fondo fumè pieno)
