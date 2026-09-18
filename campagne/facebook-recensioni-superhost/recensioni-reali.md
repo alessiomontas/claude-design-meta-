@@ -2,6 +2,10 @@
 
 Recensioni ricevute su un immobile in gestione Hadrianus (litorale romano). Tutte **5 stelle**. Secondo il titolare sono le recensioni che in **due mesi** hanno portato al riconoscimento **Superhost**.
 
+> **Registro degli utilizzi.** Sotto ogni recensione già uscita c'è una riga che dice **dove e quando**
+> è stata pubblicata. Va aggiornata a ogni nuovo utilizzo: serve a non riproporre due volte la stessa
+> prova allo stesso pubblico. Le recensioni **senza** quella riga non sono mai state pubblicate.
+
 > **Regola d'uso.** Si citano le recensioni e il nome di battesimo dell'ospite come compaiono su Airbnb, **senza mai nominare la struttura, l'indirizzo o il numero civico**: la regola di brand vieta il case study su una singola struttura nominata, non la prova sociale in sé. Non modificare il testo delle recensioni: si può tagliare (con […]), mai riscrivere.
 
 ## Le recensioni (verbatim)
@@ -13,6 +17,7 @@ Recensioni ricevute su un immobile in gestione Hadrianus (litorale romano). Tutt
 > Ci siamo trovati molto bene e consiglio vivamente questo alloggio a chiunque voglia esplorare Roma, ma allo stesso tempo godersi la vicinanza della spiaggia e l'ambiente tranquillo.
 > Grazie mille per l'ospitalità!
 *(tradotta da Airbnb)*
+*(**Già pubblicata.** 18/09/2026 — pacchetto giornaliero `2026-09-18`: **a schermo** nella slide C4 del carosello, e citata nel testo del post Facebook. Riuso approvato dal titolare. A schermo la data è riportata come **agosto 2026**, forma assoluta al posto del «fa» relativo di Airbnb — da confermare sullo screenshot.)*
 
 **Aline** — 6 anni su Airbnb — ★★★★★ — giugno 2026
 > Appartamento ben curato e pulito, ottima posizione.
@@ -35,6 +40,7 @@ Recensioni ricevute su un immobile in gestione Hadrianus (litorale romano). Tutt
 > Ci è piaciuto molto soggiornare in questo appartamento! Era moderno, pulito e arredato con cura. Letto e divano molto comodi. Tutto ciò di cui avevamo bisogno era proprio lì. Mentre il mio partner lavorava usando la scrivania, io mi sono seduta sul divano e ho letto un libro. Era così accogliente e mi è piaciuto molto!
 > Il treno per Roma è a soli 5 minuti a piedi, il che è fantastico. Abbiamo anche visitato un sacco di graziosi ristoranti locali: scegli i piatti di pesce, sono fantastici!
 *(tradotta da Airbnb)*
+*(**Già pubblicata.** 18/09/2026 — pacchetto giornaliero `2026-09-18`: citata nel **testo del post Facebook**, tagliata con `…`. Mai andata a schermo.)*
 
 **Maïwenn** — 6 anni su Airbnb — ★★★★★ — maggio 2026
 > Alloggio molto grazioso, vicino alla spiaggia e a circa 30 minuti dal centro in treno. Abbiamo trascorso un ottimo soggiorno in questo alloggio, grazie!
@@ -42,9 +48,11 @@ Recensioni ricevute su un immobile in gestione Hadrianus (litorale romano). Tutt
 
 **Stefania** — 4 mesi su Airbnb — ★★★★★ — aprile 2026
 > zona gradevole e ben servita, vicinissima al mare. casa pulitissima, efficiente, ben arredata, luminosa. host paziente, vigile e sempre attento
+*(**Già pubblicata.** 18/09/2026 — pacchetto giornaliero `2026-09-18`: **a schermo** nella Storia 1, integrale. Nessuna riga «traduzione di Airbnb»: è italiana. Il minuscolo iniziale resta com'è su Airbnb.)*
 
 **Fanny** — 4 mesi su Airbnb — ★★★★★ — aprile 2026
 > Ci ha permesso di trascorrere un soggiorno fantastico e ha risposto rapidamente.
+*(**Già pubblicata.** 18/09/2026 — pacchetto giornaliero `2026-09-18`: **a schermo** nella 2ª immagine del post Facebook (1080×1080), integrale, nessun taglio. Non marcata come tradotta, quindi nessuna riga di traduzione.)*
 
 ## Cosa dicono queste recensioni, lette insieme
 

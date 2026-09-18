@@ -159,8 +159,13 @@ def carosello():
          'ogni aspetto, splendidamente pulito,',
          'ordinato e confortevole&hellip; &raquo;'],
         'Attila &middot; agosto 2026')
-    c += blocco(['Guarda di cosa parlano: pulizia, arrivo preparato,',
-                 'risposte. Non parlano del mare.'], 1030, 33, 600, BIANCO, font=MA, lh=1.32)
+    # «Non parlano del mare» non e' piu' vero sul gruppo citato (Stefania scrive
+    # «vicinissima al mare», Attila la spiaggia, Anne Loes il treno). Riscritta
+    # nella forma difendibile: la posizione e' gia' li' e non si migliora,
+    # il resto e' lavoro. Nessun conteggio: nessun tema copre tutte e quattro.
+    c += blocco(['La posizione &egrave; gi&agrave; l&igrave;: non la puoi migliorare.',
+                 'Quello che raccontano &egrave; la pulizia e le risposte.'],
+                1020, 33, 600, BIANCO, font=MA, lh=1.32)
     c += blocco(['Non &egrave; il prezzo a educare l&rsquo;ospite: &egrave; il',
                  'posizionamento a filtrare chi prenota.'], 1130, 33, 600, T3, font=MA, lh=1.32)
     c += indice('4 / 5')
@@ -218,13 +223,17 @@ def facebook():
         ('03', 'Il prezzo non lo devi abbassare'),
         ('04', 'Prenota chi cerca tranquillità'),
     ], passo=72, size=36)
-    c += stelle(590, size=31)
+    # Fanny sta intera: nessun taglio, quindi niente puntini. Non e' marcata
+    # come tradotta nell'archivio, quindi niente riga di traduzione.
+    # Citazione corta: il corpo sale a 40 invece di scendere, cosi' la card
+    # resta la zona luminosa dominante invece di diventare un francobollo.
+    c += stelle(604, size=31)
     c += card_recensione(
-        632,
-        ['&laquo; &hellip; L&rsquo;appartamento &egrave; dotato di accessori da cucina,',
-         'lavatrice e letti confortevoli. Ottima comunicazione',
-         'con l&rsquo;host. Consigliato&raquo;'],
-        'Katarzyna', size=34, size_meta=31, pad_v=30, lh=1.32)
+        648,
+        ['&laquo;Ci ha permesso di trascorrere un soggiorno',
+         'fantastico e ha risposto rapidamente.&raquo;'],
+        'Fanny &middot; aprile 2026', traduzione=False,
+        size=40, size_meta=31, pad_v=34, lh=1.32)
     c += kicker('Non &egrave; fortuna. &Egrave; lavoro.', 990, colore=ORO, size=31)
     scrivi(os.path.join(HERE, 'F2.dc.html'), c)
 
@@ -259,12 +268,14 @@ def storie():
                  'non farlo: chi ti trova ha gi&agrave;',
                  'un motivo per fidarsi.'], 770, 50, 800, BIANCO, lh=1.2)
     c += stelle(990, size=31)
+    # Stefania scrive in italiano: la riga «traduzione di Airbnb» NON va.
+    # Il testo e' minuscolo all'inizio come su Airbnb: e' verbatim, non si corregge.
     c += card_recensione(
         1032,
-        ['&laquo;&hellip; L&rsquo;appartamento era pulito, confortevole e',
-         'preparato per il nostro arrivo&hellip; Consiglio',
-         'vivamente questo posto!&raquo;'],
-        'Paweł &middot; giugno 2026')
+        ['&laquo;zona gradevole e ben servita, vicinissima al',
+         'mare. casa pulitissima, efficiente, ben arredata,',
+         'luminosa. host paziente, vigile e sempre attento&raquo;'],
+        'Stefania &middot; aprile 2026', traduzione=False)
     c += blocco(['Non &egrave; fortuna. &Egrave; lavoro fatto tutti i giorni.'],
                 1380, 33, 600, T3, font=MA)
     c += cta_pillola(1460, 'Scrivi &laquo;PUNTEGGIO&raquo; in DM', h=90, size=40)

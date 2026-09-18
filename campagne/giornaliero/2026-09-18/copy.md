@@ -7,10 +7,13 @@
 **Seed grafico di giornata:** `180926`. Base fumè `#3F3A33`, oro `#C8A24B`, testo `#FFF`, scuro `#2E2A25`.
 
 > **Aggiornato il 18/09/2026 dopo `checklist-compliance.md`.** Applicati i bloccanti 2-7 (citazione
-> Katarzyna riaperta con `…`, caveat Cornell a corpo 26, conteggio sulle sei voci allineato al cinque,
-> parafrasi Booking ammorbidita, etichette proprie del reel, numeri tolti dai kicker). Il bloccante 1
-> (riuso delle cinque recensioni già pubblicate in `facebook-recensioni-superhost`) resta **aperto**:
-> serve una decisione del titolare, e finché non c'è il pacchetto non si pubblica.
+> caveat Cornell a corpo 26, conteggio sulle sei voci allineato al cinque,
+> parafrasi Booking ammorbidita, etichette proprie del reel, numeri tolti dai kicker). Il bloccante 2
+> (Katarzyna tagliata senza `…`) è **superato**: Katarzyna non fa più parte del pacchetto. Il bloccante 1
+> (riuso delle recensioni) è **chiuso**: il titolare ha rimesso la scelta a noi, e i tre slot a schermo
+> usano ora **Stefania** (S1) e **Fanny** (F2), mai pubblicate, con **Attila** invariato in C4 perché è
+> la citazione più forte dell'archivio. Nel testo lungo di Facebook le citate sono Stefania, Fanny,
+> **Anne Loes** e Attila. Registrato in `facebook-recensioni-superhost/recensioni-reali.md`.
 
 ## Canale
 Pacchetto completo: 1 reel 9:16 (in Canva) · 1 carosello 5 slide 4:5 · 1 post Facebook (testo + 3 immagini: 9:16 + 2× 1:1) · 2 storie autoconclusive 9:16.
@@ -27,9 +30,9 @@ Pacchetto completo: 1 reel 9:16 (in Canva) · 1 carosello 5 slide 4:5 · 1 post 
 - **Nessuna struttura nominata, nessun risultato Hadrianus, nessun badge come protagonista.**
 - **Recensioni verbatim:** solo stelle (★★★★★), testo, mese e al massimo il nome di battesimo. **Niente nome della casa, niente indirizzo, niente foto dell'immobile, niente logo Airbnb ricostruito, nessun falso screenshot.** Card pulite in stile Hadrianus.
 - **Nessun punteggio aggregato, decisione chiusa dal titolare (18/09).** Vietati a schermo e nel testo: punteggio complessivo, numero di recensioni, punteggi per categoria. Niente «4,9», niente «47 recensioni». Non è un dato mancante da marcare: è un dato che **abbiamo deciso di non usare**. Nessun marcatore aperto nei file.
-- **Le prove a schermo sono due, e bastano:** le cinque recensioni verbatim **a cinque stelle** (le stelle per singola recensione sono nello screenshot, quelle sì) e il **livello Superhost attivo**.
+- **Le prove a schermo sono due, e bastano:** le recensioni verbatim **a cinque stelle** (tre a schermo, quattro citate nel testo Facebook) (le stelle per singola recensione sono nello screenshot, quelle sì) e il **livello Superhost attivo**.
 - **Superhost — regola d'uso stretta.** Confermato attivo, raggiunto **in due mesi partendo da un profilo nuovo**. Vale come **una riga di appoggio, una sola, in un formato largo** (post Facebook; al massimo l'ultima slide del carosello). Serve solo a chiudere l'obiezione muta «voi ce le avete perché siete lì da anni». **Non è il gancio** (già usato in `reel-superhost-acquisizione`), non è il protagonista, niente confronti con la media, nessuna percentuale. **Fuori dal reel e fuori dalle storie.**
-- **Traduzioni:** Attila, Martin, Paweł e Katarzyna sono ospiti stranieri e i testi sono tradotti da Airbnb. Dove si citano, a schermo va la riga `traduzione di Airbnb`.
+- **Traduzioni:** **Attila** e **Anne Loes** sono ospiti stranieri e i testi sono tradotti da Airbnb: dove si citano va la riga `traduzione di Airbnb`. **Stefania** (italiana) e **Fanny** (non marcata come tradotta nell'archivio) **non** portano quella riga.
 - **Tagli:** consentito accorciare con `…`, vietato riscrivere anche una sola parola. Sono prova, non copy.
 
 ## Recensioni verbatim — testi usati e capienza degli slot
@@ -38,13 +41,13 @@ Fonte: screenshot di annuncio Airbnb reale gestito da Hadrianus, fornito dal tit
 
 | Slot | Dove | Testo a schermo (verbatim, così com'è) | Battute | Meta a schermo |
 |---|---|---|---|---|
-| R1 | Storia 1, card centrale | «… L'appartamento era pulito, confortevole e preparato per il nostro arrivo… Consiglio vivamente questo posto!» — **testo effettivamente a schermo**; l'originale integrale (198 battute) non entrava nella card senza ridurre il corpo | 105 — 3 righe, Manrope 500 corpo 38 | ★★★★★ · Paweł · giugno 2026 · `traduzione di Airbnb` |
+| R1 | Storia 1, card centrale | «zona gradevole e ben servita, vicinissima al mare. casa pulitissima, efficiente, ben arredata, luminosa. host paziente, vigile e sempre attento» — **integrale, nessun taglio**. Il minuscolo iniziale è di Airbnb: verbatim, non si corregge | 148 — 3 righe, Manrope 500 corpo 38 | ★★★★★ · Stefania · aprile 2026 · **nessuna riga di traduzione: è italiana** |
 | R2 | Carosello C4, card alta | «… L'appartamento era in ordine sotto ogni aspetto, splendidamente pulito, ordinato e confortevole…» — **testo effettivamente a schermo**, stessa forma già usata nel testo Facebook | 101 — 3 righe, Manrope 500 corpo 38 | ★★★★★ · Attila · agosto 2026 · `traduzione di Airbnb` |
-| R3 | Facebook F2, riquadro basso | «… L'appartamento è dotato di accessori da cucina, lavatrice e letti confortevoli. Ottima comunicazione con l'host. Consigliato» | 124 — capienza 130 (3 righe × 44, Manrope 500 corpo 34) | ★★★★★ · Katarzyna · `traduzione di Airbnb` (mese nel testo del post) |
-| R4 | Testo Facebook (solo testo, non a schermo) | «Appartamento ben curato e pulito, ottima posizione.» — Aline, giugno 2026 | 51 | — |
-| R5 | Testo Facebook (solo testo, non a schermo) | «Appartamento bello e pulito, vicino alla spiaggia e alla metropolitana…» — Martin, giugno 2026, traduzione di Airbnb | 71 | — |
+| R3 | Facebook F2, riquadro basso | «Ci ha permesso di trascorrere un soggiorno fantastico e ha risposto rapidamente.» — **integrale, nessun taglio, nessun puntino** | 79 — 2 righe, Manrope 500 corpo **40** (citazione corta: il corpo sale, così la card resta la zona luminosa dominante) | ★★★★★ · Fanny · aprile 2026 · **nessuna riga di traduzione: non è marcata come tradotta** |
+| R4 | Testo Facebook (solo testo, non a schermo) | «Ci è piaciuto molto soggiornare in questo appartamento! Era moderno, pulito e arredato con cura. Letto e divano molto comodi…» — Anne Loes, maggio 2026, traduzione di Airbnb | 127 | — |
+| R5 | — | *(slot chiuso: le citate nel testo Facebook sono quattro — Stefania, Fanny, Anne Loes, Attila)* | — | — |
 
-**Il filo che le tiene insieme (da portare a galla nel carosello e su Facebook):** cinque recensioni su cinque parlano di **pulizia, preparazione dell'arrivo e comunicazione con l'host**. Nessuno scrive «bella casa». Parlano di lavoro, non di fortuna e non del mare.
+**Il filo che le tiene insieme (da portare a galla nel carosello e su Facebook):** la **posizione** viene nominata, ed è l'unica voce che il proprietario non può migliorare — è già lì. Quello che le quattro recensioni *raccontano* è **pulizia, casa pronta e risposte dell'host**: lavoro, non fortuna. **Nessun conteggio per tema**: sul gruppo scelto nessun singolo tema copre tutte e quattro, quindi «quattro su quattro parlano di X» non si scrive.
 
 ---
 
@@ -273,7 +276,7 @@ Riga fonte (Manrope 500 corpo 17): `traduzione di Airbnb`
 A schermo **nessun nome di casa, nessun indirizzo, nessuna foto, nessun logo Airbnb, nessun punteggio aggregato**.
 
 **Il filo (riga di lettura sotto la card, Manrope 600 corpo 33)**
-`Guarda di cosa parlano: pulizia, arrivo preparato, risposte. Non parlano del mare.`
+`La posizione è già lì: non la puoi migliorare.` / `Quello che raccontano è la pulizia e le risposte.`
 
 **Coda anello 5 — riformulata, mezza frase, non in chiusura (Manrope 600, 33)**
 `Non è il prezzo a educare l'ospite: è il posizionamento a filtrare chi prenota.`
@@ -308,7 +311,7 @@ Fondo pieno fumè, nessuna fotografia — la card della recensione è il soggett
 |---|---|---|
 | 1 | «Chi ha poco tempo compra la certezza» | **(c)** difendibile senza numeri. Dato Expedia «3 su 4» **(a) parziale, fonte primaria non verificata** — **non usato a schermo** |
 | 2 | Recensione Attila, 5 stelle, agosto 2026 | CONFERMATO — verbatim da screenshot Airbnb fornito dal titolare 18/09/2026. Tagliata con `…`, **nessuna parola riscritta**. Riga «traduzione di Airbnb» obbligatoria |
-| 3 | «Pulizia, arrivo preparato, risposte» | **(c)** lettura dei testi stessi delle recensioni, verificabile a schermo |
+| 3 | «La posizione è già lì… quello che raccontano è la pulizia e le risposte» | **(c)** lettura del testo a schermo. **Riscritta il 18/09**: la forma precedente («non parlano del mare») non regge sul gruppo di recensioni scelto, in cui la posizione viene nominata |
 | 4 | «È il posizionamento a filtrare chi prenota» | **(c)** riformulazione compliance-safe dell'anello 5. Vietata la versione causale «chi paga di più tratta meglio la casa» |
 | 5 | Nessun punteggio aggregato, nessun badge in questa slide | assente per scelta |
 
@@ -338,7 +341,7 @@ CTA         | Scrivi "PUNTEGGIO" in DM
 Le recensioni non sono un complimento. Sono un prezzo.
 Il punteggio pesa in come esci quando qualcuno cerca una casa — lo dicono le piattaforme stesse. Più visibilità dove i clienti cercano davvero. Chi ti trova ha già un motivo per fidarsi. E allora il prezzo non lo devi abbassare.
 Nell'hotellerie questo legame è misurato da anni: uno studio Cornell del 2012 (Anderson, Center for Hospitality Research) stima che **+1 punto di valutazione su scala 5 permetta circa +11% di prezzo a occupazione invariata**. È un dato sul settore alberghiero, non sulle case vacanza, e non è una promessa sulla tua casa: è la direzione.
-Quel punteggio non è fortuna. Guarda di cosa parlano davvero le recensioni: pulizia, arrivo preparato, risposte. Non parlano del mare.
+Quel punteggio non è fortuna. La posizione, quando la nominano, è già lì: non la puoi migliorare. Quello che raccontano — pulizia, casa pronta, risposte — è lavoro.
 E non è nemmeno un'eredità: il livello Superhost l'abbiamo raggiunto in due mesi, partendo da un profilo nuovo.
 Gestione completa in standard alberghiero, commissione 15% sul fatturato generato. Guadagniamo solo se guadagni tu.
 👉 Scrivi "PUNTEGGIO" in DM.
@@ -399,15 +402,14 @@ Le recensioni non sono un complimento. Sono un prezzo. Funziona in quattro passa
 
 Ecco perché un punteggio alto non è fortuna. Pulizia, accuratezza, check-in, comunicazione: cinque delle sei voci che l'ospite valuta dipendono da come la casa è gestita. Sono lavoro, fatto tutti i giorni, da qualcuno.
 
-E si vede da cosa scrivono gli ospiti. Prendi cinque recensioni a cinque stelle di una casa che gestiamo sul Litorale — niente nome, non serve:
+E si vede da cosa scrivono gli ospiti. Prendi quattro recensioni a cinque stelle di una casa che gestiamo sul Litorale — niente nome, non serve:
 
-★★★★★ «Ci siamo trovati molto bene qui. L'appartamento era pulito, confortevole e preparato per il nostro arrivo, e l'host si è rivelato estremamente cordiale e disponibile. Consiglio vivamente questo posto!» — Paweł, giugno 2026 (traduzione di Airbnb)
+★★★★★ «zona gradevole e ben servita, vicinissima al mare. casa pulitissima, efficiente, ben arredata, luminosa. host paziente, vigile e sempre attento» — Stefania, aprile 2026
+★★★★★ «Ci ha permesso di trascorrere un soggiorno fantastico e ha risposto rapidamente.» — Fanny, aprile 2026
+★★★★★ «Ci è piaciuto molto soggiornare in questo appartamento! Era moderno, pulito e arredato con cura. Letto e divano molto comodi…» — Anne Loes, maggio 2026 (traduzione di Airbnb)
 ★★★★★ «… L'appartamento era in ordine sotto ogni aspetto, splendidamente pulito, ordinato e confortevole…» — Attila, agosto 2026 (traduzione di Airbnb)
-★★★★★ «Appartamento ben curato e pulito, ottima posizione.» — Aline, giugno 2026
-★★★★★ «Appartamento bello e pulito, vicino alla spiaggia e alla metropolitana…» — Martin, giugno 2026 (traduzione di Airbnb)
-★★★★★ «… L'appartamento è dotato di accessori da cucina, lavatrice e letti confortevoli. Ottima comunicazione con l'host. Consigliato» — Katarzyna, giugno 2026 (traduzione di Airbnb)
 
-Cinque su cinque parlano di pulizia, di arrivo preparato, di comunicazione. Nessuno scrive «bella casa». Nessuno ringrazia il mare. Parlano di lavoro — cioè dell'unica parte che si può comprare.
+Quattro recensioni, quattro modi di dire la stessa cosa. La posizione, quando la nominano, è già lì: non la puoi migliorare, è l'unica voce che non dipende da come la casa è gestita. Quello che raccontano — pulizia, casa pronta, risposte veloci — è lavoro, cioè l'unica parte che si può comprare.
 
 Una coda di stagione: siamo a metà settembre e il litorale rallenta. Se in bassa stagione ci sono meno prenotazioni da distribuire, la scelta si stringe sui primi risultati. È lì che il punteggio si fa sentire di più, non di meno. È un ragionamento, non un dato — ma tienilo presente prima di svendere ottobre.
 
@@ -422,8 +424,8 @@ Hadrianus gestisce case a Roma e sul Litorale in standard alberghiero: pricing d
 | 2 | Airbnb: valutazione complessiva e punteggi per categoria nel ranking; Guest Favorite compare nei risultati di ricerca | **(b)** documentato (help article 3496) |
 | 3 | «Il funzionamento esatto resta riservato: nessuno può prometterti una posizione» | **(b)** dichiarato da Booking — riga che protegge dal claim di risultato, non va tagliata |
 | 4 | «+1 punto su 5 ≈ +11% di prezzo a occupazione invariata» | **(a)** CONFERMATO — Cornell CHR, Anderson, nov. 2012 (+11,2%). Attribuzione completa e **entrambi i caveat** (hotel, 2012) presenti nel testo: non rimuovibili |
-| 5 | Cinque recensioni verbatim, 5 stelle | CONFERMATO — screenshot Airbnb fornito dal titolare 18/09/2026. Tagli con `…`, nessuna parola riscritta. Traduzioni attribuite ad Airbnb. **Nessun nome di casa, nessun indirizzo** |
-| 6 | «Cinque su cinque parlano di pulizia, arrivo preparato, comunicazione» | **(c)** lettura verificabile dei testi citati sopra |
+| 5 | Quattro recensioni verbatim, 5 stelle (Stefania, Fanny, Anne Loes, Attila) | CONFERMATO — verbatim da `facebook-recensioni-superhost/recensioni-reali.md`. Tagli con `…`, nessuna parola riscritta. Traduzioni attribuite ad Airbnb. **Nessun nome di casa, nessun indirizzo** |
+| 6 | «Quattro recensioni, quattro modi di dire la stessa cosa… quello che raccontano è lavoro» | **(c)** lettura verificabile dei quattro testi citati sopra. **Nessun conteggio per tema**: sul gruppo citato nessun singolo tema copre tutte e quattro (Fanny non nomina la pulizia, Anne Loes non nomina l'host), quindi «quattro su quattro parlano di X» sarebbe falso |
 | 7 | «Livello Superhost raggiunto in due mesi, partendo da un profilo nuovo» | CONFERMATO dal titolare 18/09/2026. **Una sola riga, in coda, mai gancio** — «Superhost in due mesi» come gancio è già uscito in `reel-superhost-acquisizione` |
 | 8 | Coda stagionale | **(c)** dichiarata come ragionamento, non come dato |
 | 9 | «Commissione 15% sul fatturato generato» / «Guadagniamo solo se guadagni tu» / «standard alberghiero» | CONFERMATO + lessico di brand |
@@ -485,11 +487,11 @@ Caption     | (nel testo del post)
 `03 · Il prezzo non lo devi abbassare`
 `04 · Prenota chi cerca tranquillità`
 
-**Recensione verbatim — riquadro basso (R3, Katarzyna)**
+**Recensione verbatim — riquadro basso (R3, Fanny)**
 Stelle: `★★★★★`
-Testo (verbatim, 124 battute su 130 di capienza):
-`«… L'appartamento è dotato di accessori da cucina, lavatrice e letti confortevoli. Ottima comunicazione con l'host. Consigliato»`
-Meta: `Katarzyna` + riga fonte `traduzione di Airbnb`. Il mese sta nel testo del post.
+Testo (verbatim **integrale**, 79 battute — nessun taglio, quindi nessun puntino):
+`«Ci ha permesso di trascorrere un soggiorno fantastico e ha risposto rapidamente.»`
+Meta: `Fanny · aprile 2026`. **Nessuna riga di traduzione**: nell'archivio non è marcata come tradotta.
 Niente nome casa, indirizzo, foto dell'immobile, logo Airbnb, punteggio aggregato.
 
 **LAYOUT**
@@ -519,7 +521,7 @@ Fondo pieno fumè, nessuna fotografia — la catena numerata e la card sono il s
 | 1 | «Il punteggio pesa nel posizionamento» | **(b)** dichiarato dalle piattaforme |
 | 2 | «Ti trova chi scorre un portale» | **(c)** — quote canali **(d)** non usate |
 | 3 | «Prenota chi cerca tranquillità» | **(c)** — formulazione anti-classista imposta dal brief |
-| 4 | Recensione Katarzyna, 5 stelle | CONFERMATO — verbatim da screenshot Airbnb (titolare, 18/09/2026), nessuna parola riscritta. Riga «traduzione di Airbnb» obbligatoria |
+| 4 | Recensione Fanny, 5 stelle, aprile 2026 | CONFERMATO — verbatim **integrale** da `recensioni-reali.md`, mai pubblicata prima. Nessun taglio, nessun puntino, **nessuna riga di traduzione** (non marcata come tradotta) |
 | 5 | Nessun punteggio aggregato, nessun badge in questa immagine | assente per scelta |
 
 ---
@@ -584,9 +586,9 @@ Caption     | —
 1. Gancio: `Non abbassare il prezzo. Ancora.`
 2. Problema: `Le prenotazioni calano e la prima cosa che si tocca è la tariffa.`
 3. Soluzione: `Il punteggio è la ragione per cui puoi non farlo: chi ti trova ha già un motivo per fidarsi.`
-4. Recensione (R1, Paweł) — stelle `★★★★★`, poi verbatim, 198 battute su 200 di capienza:
-   `«… L'appartamento era pulito, confortevole e preparato per il nostro arrivo… Consiglio vivamente questo posto!»`
-   Meta: `Paweł · giugno 2026` + riga fonte `traduzione di Airbnb`.
+4. Recensione (R1, Stefania) — stelle `★★★★★`, poi verbatim integrale, 148 battute:
+   `«zona gradevole e ben servita, vicinissima al mare. casa pulitissima, efficiente, ben arredata, luminosa. host paziente, vigile e sempre attento»`
+   Meta: `Stefania · aprile 2026`. **Nessuna riga `traduzione di Airbnb`: Stefania è italiana.** Il minuscolo iniziale è verbatim.
    Niente nome casa, indirizzo, foto dell'immobile, logo Airbnb, punteggio aggregato.
 5. Chiusura: `Non è fortuna. È lavoro fatto tutti i giorni.`
 6. CTA: `Scrivi "PUNTEGGIO" in DM`
@@ -621,7 +623,7 @@ Fondo pieno fumè, nessuna fotografia — la card della recensione deve essere l
 | # | Affermazione | Stato |
 |---|---|---|
 | 1 | «Il punteggio è la ragione per cui puoi non abbassare il prezzo» | **(c)** traduzione non quantificata dell'anello 2 (Cornell). Numero **assente per scelta**: senza spazio per i caveat non si cita |
-| 2 | Recensione Paweł, 5 stelle, giugno 2026 | CONFERMATO — verbatim integrale da screenshot Airbnb (titolare, 18/09/2026). Riga «traduzione di Airbnb» obbligatoria |
+| 2 | Recensione Stefania, 5 stelle, aprile 2026 | CONFERMATO — verbatim integrale da `facebook-recensioni-superhost/recensioni-reali.md`, mai pubblicata prima. **Nessuna riga di traduzione** (italiana). Minuscolo iniziale verbatim |
 | 3 | «Non è fortuna. È lavoro fatto tutti i giorni» | **(c)** posizionamento, nessun dato |
 | 4 | Nessun Superhost, nessun punteggio aggregato | assente per scelta — nelle storie non c'è spazio per contestualizzare il badge |
 
@@ -690,7 +692,7 @@ Fondo pieno fumè, nessuna fotografia — elenco tipografico, l'unico accento è
 | # | Cosa | Stato |
 |---|---|---|
 | 1 | Testo esatto della pagina Booking sul ranking (non apribile dall'ambiente di ricerca) | **UNICO APERTO.** Nel post Facebook è parafrasato, mai virgolettato: verificare la parafrasi prima della pubblicazione. Reel, carosello e storie usano solo «il punteggio pesa nel posizionamento», affermazione già coperta da Airbnb |
-| 2 | Le cinque recensioni devono essere **diverse** dalle 9 già usate in `facebook-recensioni-superhost` | da controllare in revisione (incrocio con `facebook-recensioni-superhost/recensioni-reali.md`) |
+| 2 | Le recensioni devono essere **diverse** da quelle già pubblicate | **CHIUSO 18/09** — decisione del titolare rimessa a noi. A schermo: **Stefania** (S1) e **Fanny** (F2), mai pubblicate; **Attila** (C4) confermato per riuso perché è la citazione più forte dell'archivio. Nel testo Facebook si aggiunge **Anne Loes**, mai pubblicata. Pubblicazioni annotate in `recensioni-reali.md` |
 | 3 | Recensioni verbatim | CHIUSO — ricevute dal titolare 18/09/2026 |
 | 4 | Badge Superhost attivo | CHIUSO — confermato attivo dal titolare 18/09/2026 |
 | 5 | Punteggio complessivo, n. recensioni, punteggi per categoria | CHIUSO come **non utilizzo**: il titolare non li fornisce e si è deciso di non usarli. Nessun marcatore aperto nei contenuti |

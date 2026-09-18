@@ -45,7 +45,7 @@ passo 20 px · scala 70·62·50·45·40·33·31·17. Nessun corpo fuori scala.
 
 ## Elementi chiave — gerarchia di lettura
 
-1. **La card recensione in sabbia con bordo sinistro oro da 6 px** (C4, F2, S1). È l'unica superficie
+1. **La card recensione in sabbia con bordo sinistro oro da 6 px** (C4 Attila, F2 Fanny, S1 Stefania). È l'unica superficie
    luminosa su un fondo interamente fumè e ha un'ombra portata `0 18px 48px rgba(20,17,13,.34)`: su un
    feed scuro deve leggersi come **un foglio di carta appoggiato**. È lì che l'occhio cade per primo.
    Dove c'è la card **non c'è nessun'altra superficie chiara**: card e fascia offerta non convivono mai.
@@ -58,8 +58,10 @@ passo 20 px · scala 70·62·50·45·40·33·31·17. Nessun corpo fuori scala.
 
 ### Le regole sulle recensioni, applicate
 
-A schermo compaiono **solo**: `★★★★★` in oro, il testo verbatim, il nome di battesimo, il mese (dove
-previsto) e la riga `traduzione di Airbnb` in `#6f695c` corpo 17. **Assenti per costruzione**: nome della
+A schermo compaiono **solo**: `★★★★★` in oro, il testo verbatim, il nome di battesimo, il mese e — **solo
+dove il testo è davvero tradotto** — la riga `traduzione di Airbnb` in `#6f695c` corpo 17. La porta Attila
+(C4); **non** la portano Stefania (italiana) e Fanny (non marcata come tradotta nell'archivio): metterla
+dove non serve sarebbe un'attribuzione falsa. **Assenti per costruzione**: nome della
 casa, indirizzo, foto dell'immobile, avatar, logo o interfaccia Airbnb, finti screenshot, **e qualsiasi
 punteggio aggregato** (né media, né numero di recensioni, né voci per categoria). Le stelle stanno
 **fuori** dalla card, sopra, in oro su fumè: dentro sarebbero una riproduzione di schermata.
@@ -134,13 +136,22 @@ Le animazioni della colonna di destra sono **indicazioni per il titolare**, non 
 
 | # | Bloccante | Cosa è cambiato |
 |---|---|---|
-| 1 | Riuso delle cinque recensioni | **Sospeso** — in attesa della decisione del titolare. Non toccato |
-| 2 | Katarzyna tagliata senza `…` | F2 e testo Facebook riaprono con `«… L'appartamento è dotato di…`. Card sempre su 3 righe |
+| 1 | Riuso delle recensioni | **CHIUSO 18/09** — scelta rimessa a noi dal titolare. **S1: Paweł → Stefania** (mai pubblicata, italiana, senza riga di traduzione, minuscolo iniziale verbatim) · **F2: Katarzyna → Fanny** (mai pubblicata, integrale, senza taglio e senza traduzione) · **C4: Attila invariato**, è la citazione più forte dell'archivio · testo Facebook: Aline e Martin → **Anne Loes**. Pubblicazioni annotate in `facebook-recensioni-superhost/recensioni-reali.md` |
+| 2 | Katarzyna tagliata senza `…` | **Superato dal punto 1**: Katarzyna esce dal pacchetto. Al suo posto Fanny, citata **integrale** — nessun taglio, quindi nessun puntino da segnalare |
 | 3 | Caveat Cornell illeggibili | C3: corpo **17 → 26**, opacità **.62 → .80**, blocco risalito a y 866. Slide non ricomposta |
 | 4 | Due conteggi delle sei voci | Post Facebook allineato al **cinque** (quello a schermo e quello disegnato in S2) |
 | 5 | Parafrasi Booking | Il dettaglio sulla recency è fuori; resta la formulazione congiunta Booking+Airbnb. Il resto del paragrafo intatto |
 | 6 | Off-by-one del reel | Etichette proprie del reel: `RECENSIONE · VISIBILITÀ · FIDUCIA · PREZZO`. R04 accende `VISIBILITÀ`, R06 `FIDUCIA`, R07 `PREZZO` — e l'evidenziatore oro cade sull'ultimo anello. Aggiornati anche `reel/scene.json` e `reel/canva.html` |
 | 7 | Tre numerazioni in contraddizione | Numero tolto dai kicker: C2 `VISIBILITÀ`, C3 `PREZZO`, C4 `CHI PRENOTA`. Storie senza medaglione: S1 `PREZZO`, S2 `LE SEI VOCI`. **F2 invariato** |
+
+**Conseguenza obbligata del cambio di recensioni.** La riga «Guarda di cosa parlano: pulizia, arrivo
+preparato, risposte. **Non parlano del mare.**» non è più vera su questo gruppo — Stefania scrive
+«vicinissima al mare», Attila la spiaggia e il parcheggio, Anne Loes il treno e i ristoranti. Riscritta
+in C4 e nel paragrafo corrispondente del post nella forma difendibile: **la posizione è già lì e non la
+puoi migliorare; quello che raccontano è la pulizia e le risposte.** E **nessun conteggio per tema**:
+sul gruppo citato nessun singolo tema copre tutte e quattro le recensioni (Fanny non nomina la pulizia,
+Anne Loes non nomina l'host), quindi «quattro su quattro parlano di X» sarebbe falso e non si scrive.
+Il conteggio sopravvive solo dove è vero: «quattro recensioni, quattro modi di dire la stessa cosa».
 
 Non bloccanti chiusi nello stesso giro: `copy.md` riallineato ai PNG (citazioni di Paweł e Attila,
 gancio di S2, tabella slot, tabelle di layout) · `Attila · 3 settimane fa` → **`agosto 2026`**, data
