@@ -407,7 +407,21 @@ Una coda di stagione: siamo a metà settembre e il litorale rallenta. Se in bass
 
 Hadrianus gestisce case a Roma e sul Litorale in standard alberghiero: pricing dinamico, check-in smart H24, gestione ospiti, pulizie, ottimizzazione dell'annuncio. Commissione 15% sul fatturato generato. Guadagniamo solo se guadagni tu.
 
-👉 Scrivi "PUNTEGGIO" nei commenti o in privato: guardiamo insieme il tuo annuncio e i tuoi punteggi per categoria, senza impegno.
+👉 Scrivi "PUNTEGGIO" nei commenti o in privato: guardiamo insieme il tuo annuncio e le tue recensioni, senza impegno.
+
+**CLAIM — testo del post**
+| # | Affermazione | Stato |
+|---|---|---|
+| 1 | Booking: punteggio fra i fattori su cui il partner può agire; recensioni recenti pesano più delle vecchie | **(b)** — pagina ufficiale Booking for Partners non apribile dall'ambiente di ricerca. **Parafrasato, non virgolettato: verificare la parafrasi prima di pubblicare** |
+| 2 | Airbnb: valutazione complessiva e punteggi per categoria nel ranking; Guest Favorite compare nei risultati di ricerca | **(b)** documentato (help article 3496) |
+| 3 | «Il funzionamento esatto resta riservato: nessuno può prometterti una posizione» | **(b)** dichiarato da Booking — riga che protegge dal claim di risultato, non va tagliata |
+| 4 | «+1 punto su 5 ≈ +11% di prezzo a occupazione invariata» | **(a)** CONFERMATO — Cornell CHR, Anderson, nov. 2012 (+11,2%). Attribuzione completa e **entrambi i caveat** (hotel, 2012) presenti nel testo: non rimuovibili |
+| 5 | Cinque recensioni verbatim, 5 stelle | CONFERMATO — screenshot Airbnb fornito dal titolare 18/09/2026. Tagli con `…`, nessuna parola riscritta. Traduzioni attribuite ad Airbnb. **Nessun nome di casa, nessun indirizzo** |
+| 6 | «Cinque su cinque parlano di pulizia, arrivo preparato, comunicazione» | **(c)** lettura verificabile dei testi citati sopra |
+| 7 | «Livello Superhost raggiunto in due mesi, partendo da un profilo nuovo» | CONFERMATO dal titolare 18/09/2026. **Una sola riga, in coda, mai gancio** — «Superhost in due mesi» come gancio è già uscito in `reel-superhost-acquisizione` |
+| 8 | Coda stagionale | **(c)** dichiarata come ragionamento, non come dato |
+| 9 | «Commissione 15% sul fatturato generato» / «Guadagniamo solo se guadagni tu» / «standard alberghiero» | CONFERMATO + lessico di brand |
+| 10 | Nessun punteggio aggregato, nessun numero di recensioni, nessuna voce per categoria | assente per scelta (decisione titolare 18/09) |
 
 ---
 
@@ -499,7 +513,8 @@ Fondo pieno fumè, nessuna fotografia — la catena numerata e la card sono il s
 | 1 | «Il punteggio pesa nel posizionamento» | **(b)** dichiarato dalle piattaforme |
 | 2 | «Ti trova chi scorre un portale» | **(c)** — quote canali **(d)** non usate |
 | 3 | «Prenota chi cerca tranquillità» | **(c)** — formulazione anti-classista imposta dal brief |
-| 4 | Testo della recensione | **DA VERIFICARE** — verbatim in attesa dal titolare |
+| 4 | Recensione Katarzyna, 5 stelle | CONFERMATO — verbatim da screenshot Airbnb (titolare, 18/09/2026), nessuna parola riscritta. Riga «traduzione di Airbnb» obbligatoria |
+| 5 | Nessun punteggio aggregato, nessun badge in questa immagine | assente per scelta |
 
 ---
 
@@ -563,11 +578,14 @@ Caption     | —
 1. Gancio: `Non abbassare il prezzo. Ancora.`
 2. Problema: `Le prenotazioni calano e la prima cosa che si tocca è la tariffa.`
 3. Soluzione: `Il punteggio è la ragione per cui puoi non farlo: chi ti trova ha già un motivo per fidarsi.`
-4. Slot: `[RECENSIONE 1 — testo, mese]` · **max 150 battute** (3 righe × 50, Manrope 500 corpo 40), meta `[PUNTEGGIO X,X] · [mese]`. Niente nome casa, indirizzo, foto, nome utente.
+4. Recensione (R1, Paweł) — stelle `★★★★★`, poi verbatim, 198 battute su 200 di capienza:
+   `«Ci siamo trovati molto bene qui. L'appartamento era pulito, confortevole e preparato per il nostro arrivo, e l'host si è rivelato estremamente cordiale e disponibile. Consiglio vivamente questo posto!»`
+   Meta: `Paweł · giugno 2026` + riga fonte `traduzione di Airbnb`.
+   Niente nome casa, indirizzo, foto dell'immobile, logo Airbnb, punteggio aggregato.
 5. Chiusura: `Non è fortuna. È lavoro fatto tutti i giorni.`
 6. CTA: `Scrivi "PUNTEGGIO" in DM`
 
-Nessun numero (vincolo 1). Nessun anello 5 (vincolo 2).
+Nessun numero (vincolo 1). Nessun anello 5 (vincolo 2). **Nessun Superhost** (fuori dalle storie). Nessun punteggio aggregato.
 
 **LAYOUT**
 | Zona | y (px) | Elemento | Font | Corpo | Colore |
@@ -577,7 +595,8 @@ Nessun numero (vincolo 1). Nessun anello 5 (vincolo 2).
 | problema | 560-700 | 2 righe | Manrope 600 | 40 | rgba(255,255,255,.80) |
 | filo oro | 740-743 | linea 3 px, largh. 180 | — | — | #C8A24B |
 | soluzione | 780-960 | 3 righe | Archivo 800 | 50 | #FFF |
-| card recensione | 1010-1320 | card sabbia, bordo sx oro 6 px, 3 righe + meta | Manrope 500 / Manrope 600 | 40 / 31 | #26241F / #86692A su #F5F0E6 |
+| stelle | 990-1020 | ★★★★★ | — | 31 | #C8A24B |
+| card recensione | 1030-1330 | card sabbia, bordo sx oro 6 px, 4 righe + nome/mese + riga fonte | Manrope 500 / Manrope 600 / Manrope 500 | 38 / 31 / 17 | #26241F / #86692A / #6f695c su #F5F0E6 |
 | chiusura | 1360-1420 | 1 riga | Manrope 600 | 33 | rgba(255,255,255,.72) |
 | CTA | 1470-1560 | pillola oro piena | Archivo 800 maiusc. | 40 | #2E2A25 su #C8A24B |
 Griglia: margine 64 px · colonna utile 952 px · safe area 180/320 · passo 20 px
@@ -596,8 +615,9 @@ Fondo pieno fumè, nessuna fotografia — la card della recensione deve essere l
 | # | Affermazione | Stato |
 |---|---|---|
 | 1 | «Il punteggio è la ragione per cui puoi non abbassare il prezzo» | **(c)** traduzione non quantificata dell'anello 2 (Cornell). Numero **assente per scelta**: senza spazio per i caveat non si cita |
-| 2 | Testo della recensione | **DA VERIFICARE** — verbatim in attesa dal titolare. Non pubblicare con lo slot vuoto |
+| 2 | Recensione Paweł, 5 stelle, giugno 2026 | CONFERMATO — verbatim integrale da screenshot Airbnb (titolare, 18/09/2026). Riga «traduzione di Airbnb» obbligatoria |
 | 3 | «Non è fortuna. È lavoro fatto tutti i giorni» | **(c)** posizionamento, nessun dato |
+| 4 | Nessun Superhost, nessun punteggio aggregato | assente per scelta — nelle storie non c'è spazio per contestualizzare il badge |
 
 ---
 
@@ -615,7 +635,7 @@ Caption     | —
 **Testo completo a schermo (nell'ordine)**
 1. Gancio (tra virgolette, è l'obiezione): `"Tanto il punteggio dipende dall'ospite."`
 2. Risposta: `L'ospite valuta sei voci. Una sola non dipende da te.`
-3. Elenco a colonna, con `[PUNTEGGI PER CATEGORIA]` accanto se disponibili:
+3. Elenco a colonna (**nessun valore numerico accanto: i punteggi per categoria non si usano**):
    `Pulizia — lavoro`
    `Accuratezza — lavoro`
    `Check-in — lavoro`
@@ -625,7 +645,7 @@ Caption     | —
 4. Chiusura: `Cinque su sei sono esecuzione. E l'esecuzione si affida.`
 5. CTA: `Scrivi "PUNTEGGIO" in DM`
 
-Nessun numero Cornell (vincolo 1). Nessun anello 5 (vincolo 2). Nessun badge protagonista.
+Nessun numero Cornell (vincolo 1). Nessun anello 5 (vincolo 2). **Nessun badge Superhost** (fuori dalle storie). Nessun punteggio, né aggregato né per categoria.
 
 **LAYOUT**
 | Zona | y (px) | Elemento | Font | Corpo | Colore |
@@ -634,7 +654,7 @@ Nessun numero Cornell (vincolo 1). Nessun anello 5 (vincolo 2). Nessun badge pro
 | gancio (virgolette) | 400-540 | 2 righe fra virgolette | Archivo 900 | 62 | rgba(255,255,255,.62) |
 | risposta | 590-720 | 2 righe | Archivo 800 | 50 | #FFF |
 | filo oro | 760-763 | linea 3 px, largh. 180 | — | — | #C8A24B |
-| elenco 6 voci | 800-1320 | 6 righe, ultima in colore ridotto; colonna destra riservata ai punteggi | Manrope 600 / Manrope 500 | 40 / 33 | #FFF; ultima riga rgba(255,255,255,.55); valori #C8A24B |
+| elenco 6 voci | 800-1320 | 6 righe a piena colonna, leader tratteggiato fino alla parola «lavoro» in oro; ultima riga in colore ridotto. **Nessuna colonna di valori** | Manrope 600 / Manrope 500 | 40 / 33 | #FFF; «lavoro» #C8A24B; ultima riga rgba(255,255,255,.55) |
 | chiusura | 1360-1420 | 1 riga | Manrope 600 | 33 | rgba(255,255,255,.72) |
 | CTA | 1470-1560 | pillola oro piena | Archivo 800 maiusc. | 40 | #2E2A25 su #C8A24B |
 Griglia: margine 64 px · colonna utile 952 px · safe area 180/320 · passo 20 px
@@ -654,20 +674,20 @@ Fondo pieno fumè, nessuna fotografia — elenco tipografico, l'unico accento è
 |---|---|---|
 | 1 | «L'ospite valuta sei voci: pulizia, accuratezza, check-in, comunicazione, posizione, rapporto qualità-prezzo» | **(b)** categorie di valutazione Airbnb documentate |
 | 2 | «Cinque su sei sono esecuzione» | **(c)** lettura difendibile delle sei categorie, nessun dato |
-| 3 | `[PUNTEGGI PER CATEGORIA]` | **DA VERIFICARE** — in attesa dal titolare. Se non arrivano, la storia funziona anche senza la colonna destra |
+| 3 | Punteggi per categoria a schermo | **assenti per scelta** — decisione del titolare 18/09. Nessun marcatore aperto |
+| 4 | Nessun badge Superhost in questa storia | assente per scelta |
 
 ---
 
 ## Claim da verificare (riepilogo per `compliance-checker`)
 
-| # | Cosa manca | Dove blocca |
+| # | Cosa | Stato |
 |---|---|---|
-| 1 | `[RECENSIONE 1 — testo, mese]` — max 150 battute + punteggio + mese | Storia 1 |
-| 2 | `[RECENSIONE 2 — testo, mese]` — max 190 battute + punteggio + mese | Carosello C4 |
-| 3 | `[RECENSIONE 3 — testo, mese]` — max 120 battute + punteggio | Facebook F2 |
-| 4 | `[PUNTEGGI PER CATEGORIA]` — 6 valori | Storia 2 (facoltativo, non blocca) |
-| 5 | Testo esatto della pagina Booking sul ranking (non apribile dall'ambiente di ricerca) | Nel post Facebook è parafrasato, non virgolettato: **verificare la parafrasi prima della pubblicazione** |
-| 6 | Le recensioni scelte devono essere **diverse** dalle 9 già usate in `facebook-recensioni-superhost` | Tutti gli slot |
+| 1 | Testo esatto della pagina Booking sul ranking (non apribile dall'ambiente di ricerca) | **UNICO APERTO.** Nel post Facebook è parafrasato, mai virgolettato: verificare la parafrasi prima della pubblicazione. Reel, carosello e storie usano solo «il punteggio pesa nel posizionamento», affermazione già coperta da Airbnb |
+| 2 | Le cinque recensioni devono essere **diverse** dalle 9 già usate in `facebook-recensioni-superhost` | da controllare in revisione (incrocio con `facebook-recensioni-superhost/recensioni-reali.md`) |
+| 3 | Recensioni verbatim | CHIUSO — ricevute dal titolare 18/09/2026 |
+| 4 | Badge Superhost attivo | CHIUSO — confermato attivo dal titolare 18/09/2026 |
+| 5 | Punteggio complessivo, n. recensioni, punteggi per categoria | CHIUSO come **non utilizzo**: il titolare non li fornisce e si è deciso di non usarli. Nessun marcatore aperto nei contenuti |
 
 ## Non usato per scelta (documentato, non dimenticato)
 - Cornell `+0,89% ADR / +0,54% occupazione / +1,42% RevPAR` — gergo da revenue manager, vietato a schermo.
@@ -675,4 +695,7 @@ Fondo pieno fumè, nessuna fotografia — elenco tipografico, l'unico accento è
 - Quote canali Italia 58/22/20 — `[DATO DA VERIFICARE]`, sostituito dalla formula «ti trova chi scorre un portale».
 - Occupazione stagionale italiana — `[DATO DA VERIFICARE]`, la stagionalità resta ragionamento in coda.
 - Anello 5 come nesso causale — controevidenza assicurativa, sostituito dal filtro di posizionamento.
-- Badge Superhost / Guest Favorite come protagonista — citato solo come meccanismo di visibilità nel testo Facebook.
+- Badge Superhost come **gancio** o protagonista — già usato in `reel-superhost-acquisizione`. Qui compare in **due punti soli**, come riga di appoggio: ultima slide del carosello e coda del post Facebook. Fuori dal reel e dalle storie.
+- Guest Favorite — citato solo come meccanismo di visibilità nel testo Facebook, mai come nostro badge.
+- Punteggio complessivo, numero di recensioni, punteggi per categoria — **decisione del titolare: non si usano.**
+- Nome commerciale dell'annuncio, indirizzo, foto dell'immobile, logo Airbnb ricostruito, finti screenshot — vietati ovunque.
