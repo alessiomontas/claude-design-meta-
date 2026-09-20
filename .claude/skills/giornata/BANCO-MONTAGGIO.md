@@ -129,3 +129,49 @@ niente. Le altre sette sono rimaste `fixed` e modificabili.
 
 Conseguenza operativa: **prima si costruisce tutto, poi il titolare ritocca.** Se serve rimettere mano a una
 pagina diventata `unsupported`, l'unica strada è rifarla con `add_page` e cancellare la vecchia.
+
+## Canva — modelli: cosa posso seguire e cosa no
+
+**Provato il 20/09/2026.** Il titolare ha condiviso un template video animato (`DAHVxjBJbDU`).
+Risultato: la pagina torna come **`type: "unsupported"`**. Non se ne leggono gli elementi, non se ne
+ottiene nemmeno la miniatura, non si sostituisce un testo. Il connettore non sa rappresentare
+quella pagina, quindi per me è cieca.
+
+**La regola che ne esce, e vale sempre:**
+
+> Un template Canva **con animazioni dentro non è modificabile dal connettore.** Né leggibile.
+> Più un modello è "bello e animato", meno è raggiungibile da qui.
+
+### Cosa riesco a fare, in ordine di quanto funziona
+
+| Cosa mi dai | Posso leggerlo | Posso modificarlo | Note |
+|---|---|---|---|
+| **Progetto vuoto 1080×1920** | — | ✅ tutto | È il caso che uso: costruisco le pagine da zero |
+| **Pagine che ho creato io con `add_page`** | ✅ | ✅ tutto | Restano modificabili finché nessuno le ritocca a mano |
+| **Template statico semplice** (testo + forme) | ✅ di solito | ✅ sostituisco i testi | Va provato caso per caso |
+| **Template video animato** | ❌ | ❌ | `unsupported`. **È il caso più comune dei bei template** |
+| **Pagina ritoccata a mano dal titolare** | spesso ❌ | spesso ❌ | Può diventare `unsupported` dopo l'editing manuale |
+| **Screenshot di un modello** | ✅ lo vedo | — | **Il modo più affidabile per farmi giudicare un modello** |
+
+### Cosa non posso fare in nessun caso, anche su pagine mie
+
+- **Animazioni e transizioni**: il connettore non le espone. Si mettono a mano in Canva.
+- **Durata della pagina**: non la imposto. Nel video la decide il titolare.
+- **Famiglia di font**: imposto corpo, peso, colore e allineamento, **non il carattere**.
+  Archivo e Manrope li applica il titolare.
+- **Audio**, **taglio dei video**, **spaziatura fra le lettere**.
+- **Sfogliare la libreria pubblica di Canva**: vedo solo i progetti dell'account e i *brand
+  template*, che su questo account sono zero.
+
+### Come darmi un modello, in pratica
+
+1. **Mandami uno screenshot** della pagina o delle pagine. È l'unico modo che ho per vederlo
+   davvero e dirti se regge il copione.
+2. Se lo vuoi usare **con le sue animazioni**: lo duplichi tu in Canva, io ti consegno il testo
+   pagina per pagina e i codici colore, e il copia-incolla lo fai tu. Animazioni e font restano
+   intatti. È la strada per il risultato più professionale.
+3. Se vuoi che **lo riempia io**: deve essere un modello **statico**, e va provato prima — se
+   torna `unsupported` non c'è modo di aggirarlo.
+
+**Non promettere mai al titolare di riempire un template animato.** È stato promesso una volta,
+il 20/09, ed era sbagliato.
