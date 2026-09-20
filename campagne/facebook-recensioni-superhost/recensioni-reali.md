@@ -66,6 +66,6 @@ La posizione viene citata spesso, ma è l'unica cosa che il proprietario non pu�
 
 ## Claim da verificare
 
-- **Superhost in due mesi**: confermato dal titolare. [DA VERIFICARE: la data esatta del riconoscimento e se è tuttora attivo, così la frase regge anche fra qualche mese.]
+- **Superhost in due mesi**: confermato dal titolare, e il **18/09/2026 il titolare ha confermato che il livello Superhost è tuttora attivo**. Resta da verificare la data esatta del riconoscimento, se un giorno servisse scriverla.
 - **"Tutte 5 stelle"**: vero su queste nove. [DA VERIFICARE: è il totale delle recensioni ricevute o una selezione? Se ci sono recensioni sotto le 5 stelle, il post non può dire "tutte".]
 - Il numero esatto di recensioni ricevute nei due mesi: non usare "nove" se non è il totale.

@@ -23,15 +23,33 @@ def indice(testo, y=1250):
             % (y, MA, ORO, testo))
 
 
-def scorri(y=1010):
-    """Affordance del carosello. Sostituisce la freccia isolata in basso a
-    destra: riempie il vuoto di coda e non lascia un glifo orfano."""
-    return ('  <div style="position: absolute; left: 64px; top: %dpx; display: flex; '
+def scorri(y=1010, testo='Scorri', destra=False):
+    """Affordance del carosello — e, dove serve, il rilancio alla slide dopo.
+
+    Sta solo dove il lettore ha una ragione per fermarsi (C3 e C4, le slide
+    dense): su C1 e C2 scorre comunque e la pillola era rumore.
+    """
+    pos = ('right: 64px;' if destra else 'left: 64px;')
+    return ('  <div style="position: absolute; %s top: %dpx; display: inline-flex; '
             'align-items: center; gap: 16px; background: rgba(200,162,75,0.16); '
             'border: 2px solid %s; border-radius: 999px; padding: 18px 34px;">'
-            '<span style="font-family: %s; font-weight: 700; font-size: 34px; color: %s;">Scorri</span>'
+            '<span style="font-family: %s; font-weight: 700; font-size: 34px; color: %s; '
+            'white-space: nowrap;">%s</span>'
             '<span style="font-size: 36px; color: %s; line-height: 1;">&#8594;</span></div>\n'
-            % (y, ORO, AR, BIANCO, ORO))
+            % (pos, y, ORO, AR, BIANCO, testo, ORO))
+
+
+def promessa(y, testo='Senza impegno: guardiamo insieme il tuo annuncio.',
+             allinea='center', size=31):
+    """Cosa succede DOPO il DM.
+
+    Senza questa riga la CTA chiede un gesto e non dice cosa ne segue: la
+    promessa esisteva solo nel testo Facebook, cioè proprio dove la CTA non c'è.
+    """
+    return ('  <div style="position: absolute; left: 64px; right: 64px; top: %dpx; '
+            'text-align: %s; font-family: %s; font-weight: 600; font-size: %dpx; '
+            'line-height: 1.3; color: %s;">%s</div>\n'
+            % (y, allinea, MA, size, T4, testo))
 
 
 def voce_anello(y, testo, coda, acceso=True, left=64, right=64, d=22, size=40):
@@ -101,7 +119,6 @@ def carosello():
     c += blocco(['Le recensioni non sono', 'un complimento.'], 510, 70, 900)
     c += filo_oro(712, 180)
     c += blocco(['Sono un prezzo.', 'Ti spiego dove si incassa.'], 752, 50, 800, T1)
-    c += scorri(1000)
     c += indice('1 / 5')
     scrivi(os.path.join(HERE, 'C1.dc.html'), c)
 
@@ -109,14 +126,14 @@ def carosello():
     c = frame(W, H)
     c += marchio(80)
     c += catena(210, 2, d=26, etichette=True)
-    c += kicker('Visibilità', 340)
-    c += blocco(['Primo: dove ti trovano.'], 400, 62, 900)
+    # Niente kicker: ripeteva la parola dell'etichetta della catena 90 px sopra.
+    # Lo slot piu' visibile della slide diceva due volte la stessa cosa.
+    c += blocco(['Primo: dove ti trovano.'], 340, 62, 900)
     c += blocco(['Il punteggio pesa in come esci',
-                 'quando qualcuno cerca una casa.'], 500, 45, 800, T1)
-    c += fascia_sabbia(700, ['La tua casa non la trova chi passa per strada.',
+                 'quando qualcuno cerca una casa.'], 440, 45, 800, T1)
+    c += fascia_sabbia(660, ['La tua casa non la trova chi passa per strada.',
                              'La trova chi scorre un portale.'],
-                       size=40, peso=600, pad_v=40, lh=1.34)
-    c += scorri(970)
+                       size=45, peso=600, pad_v=56, lh=1.34)
     c += indice('2 / 5')
     scrivi(os.path.join(HERE, 'C2.dc.html'), c)
 
@@ -124,23 +141,26 @@ def carosello():
     c = frame(W, H)
     c += marchio(80)
     c += catena(210, 3, d=26, etichette=True)
-    c += kicker('Prezzo', 340)
-    c += blocco(['Secondo: quanto puoi chiedere.'], 400, 50, 900)
-    c += ('  <div style="position: absolute; left: 64px; top: 500px; font-family: %s; '
+    # Niente kicker (ripeteva l'etichetta della catena). Ordine invertito: il
+    # disclaimer non chiude piu' la slide — chiudere su una negazione spegne
+    # la spinta a scorrere. L'ultimo elemento e' il rilancio alla slide dopo.
+    c += blocco(['Secondo: quanto puoi chiedere.'], 340, 50, 900)
+    c += ('  <div style="position: absolute; left: 64px; top: 420px; font-family: %s; '
           'font-weight: 900; font-size: 200px; line-height: 1; letter-spacing: -8px; '
           'color: %s;">+11%%</div>\n' % (AR, ORO))
     c += blocco(['+1 punto di valutazione su 5 = circa +11% di prezzo,',
-                 'a occupazione invariata.'], 760, 33, 600, BIANCO, font=MA, lh=1.36)
-    # Bloccante 3: a corpo 17 su 1080 px il caveat diventa ~6 px reali sul
-    # telefono e il +11% resta senza condizione. 26 px, opacita' .80.
+                 'a occupazione invariata.'], 660, 33, 600, BIANCO, font=MA, lh=1.36)
+    # Il caveat sta a corpo 26: a 17 diventava ~6 px reali sul telefono e il
+    # +11% restava a schermo senza la condizione che lo rende citabile.
     c += fonte(['Cornell Center for Hospitality Research &mdash; Anderson, 2012.',
-                'Studio sul settore alberghiero, non su case vacanza.'], 866,
+                'Studio sul settore alberghiero, non su case vacanza.'], 766,
                size=26, colore='rgba(255,255,255,0.80)')
-    c += filo_oro(960, 180)
-    c += blocco(['Nell&rsquo;hotellerie questo legame &egrave; misurato da anni.'],
-                1000, 33, 600, T2, font=MA, lh=1.3)
+    c += filo_oro(866, 180)
     c += blocco(['Sulla tua casa non &egrave; una promessa.', '&Egrave; la direzione.'],
-                1060, 40, 800, BIANCO, lh=1.2)
+                900, 40, 800, BIANCO, lh=1.2)
+    c += blocco(['Nell&rsquo;hotellerie questo legame &egrave; misurato da anni.'],
+                1010, 33, 600, T2, font=MA, lh=1.3)
+    c += scorri(1090, 'E poi cambia anche chi prenota')
     c += indice('3 / 5', 1250)
     scrivi(os.path.join(HERE, 'C3.dc.html'), c)
 
@@ -148,13 +168,13 @@ def carosello():
     c = frame(W, H)
     c += marchio(80)
     c += catena(210, 4, d=26, etichette=True)
-    c += kicker('Chi prenota', 340)
-    c += blocco(['Terzo: chi prenota.'], 400, 50, 900)
+    # Niente kicker: stessa ripetizione di C2 e C3.
+    c += blocco(['Terzo: chi prenota.'], 340, 50, 900)
     c += blocco(['Chi ha poco tempo non compra',
-                 'il risparmio. Compra la certezza.'], 470, 45, 800, T1)
-    c += stelle(648, size=31)
+                 'il risparmio. Compra la certezza.'], 410, 45, 800, T1)
+    c += stelle(590, size=31)
     c += card_recensione(
-        690,
+        632,
         ['&laquo; &hellip; L&rsquo;appartamento era in ordine sotto',
          'ogni aspetto, splendidamente pulito,',
          'ordinato e confortevole&hellip; &raquo;'],
@@ -165,10 +185,11 @@ def carosello():
     # il resto e' lavoro. Nessun conteggio: nessun tema copre tutte e quattro.
     c += blocco(['La posizione &egrave; gi&agrave; l&igrave;: non la puoi migliorare.',
                  'Quello che raccontano &egrave; la pulizia e le risposte.'],
-                1020, 33, 600, BIANCO, font=MA, lh=1.32)
+                960, 33, 600, BIANCO, font=MA, lh=1.32)
     c += blocco(['Non &egrave; il prezzo a educare l&rsquo;ospite: &egrave; il',
-                 'posizionamento a filtrare chi prenota.'], 1130, 33, 600, T3, font=MA, lh=1.32)
-    c += indice('4 / 5')
+                 'posizionamento a filtrare chi prenota.'], 1070, 33, 600, T3, font=MA, lh=1.32)
+    c += scorri(1212, destra=True)
+    c += indice('4 / 5', 1252)
     scrivi(os.path.join(HERE, 'C4.dc.html'), c)
 
     # ---- C5 · chi fa il lavoro + CTA · catena completa, senza etichette
@@ -190,8 +211,9 @@ def carosello():
     c += blocco(['A settembre il litorale rallenta. Con meno prenotazioni',
                  'da distribuire, il punteggio pesa di pi&ugrave;, non di meno.'],
                 950, 31, 600, T4, font=MA, lh=1.34)
-    c += cta_pillola(1080, 'Scrivi &laquo;PUNTEGGIO&raquo; in DM', h=90, size=40)
-    c += indice('5 / 5')
+    c += cta_pillola(1056, 'Scrivi &laquo;PUNTEGGIO&raquo; in DM', h=90, size=40)
+    c += promessa(1168)
+    c += indice('5 / 5', 1252)
     scrivi(os.path.join(HERE, 'C5.dc.html'), c)
 
 
@@ -202,14 +224,14 @@ def facebook():
     # ---- F1 · 1080x1920 · gancio + problema · catena ancora spenta
     c = frame(1080, 1920)
     c += marchio(112)
-    c += catena(420, 1, d=64, etichette=True, spessore=4)
-    c += blocco(['Hai il punteggio alto.'], 780, 70, 900, allinea='center')
-    c += ('  <div style="position: absolute; left: 0; right: 0; top: 920px; '
+    c += catena(300, 1, d=64, etichette=True, spessore=4)
+    c += blocco(['Hai il punteggio alto.'], 580, 70, 900, allinea='center')
+    c += ('  <div style="position: absolute; left: 0; right: 0; top: 720px; '
           'text-align: center;"><span style="display: inline-block; width: 180px; '
           'height: 3px; background: %s; border-radius: 2px;"></span></div>\n' % ORO)
-    c += blocco(['E in banca', 'non &egrave; cambiato niente.'], 970, 62, 800, T1,
+    c += blocco(['E in banca', 'non &egrave; cambiato niente.'], 770, 62, 800, T1,
                 allinea='center')
-    c += kicker('Le recensioni non sono un complimento', 1330, colore=ORO, size=31,
+    c += kicker('Le recensioni non sono un complimento', 1130, colore=ORO, size=31,
                 allinea='center')
     scrivi(os.path.join(HERE, 'F1.dc.html'), c)
 
@@ -223,17 +245,16 @@ def facebook():
         ('03', 'Il prezzo non lo devi abbassare'),
         ('04', 'Prenota chi cerca tranquillità'),
     ], passo=72, size=36)
-    # Fanny sta intera: nessun taglio, quindi niente puntini. Non e' marcata
-    # come tradotta nell'archivio, quindi niente riga di traduzione.
-    # Citazione corta: il corpo sale a 40 invece di scendere, cosi' la card
-    # resta la zona luminosa dominante invece di diventare un francobollo.
-    c += stelle(604, size=31)
+    # Fanny e' passata al reel (scena 8). Qui entra Anne Loes: tradotta da
+    # Airbnb, quindi la riga di provenienza torna. Tagliata con «…» perche'
+    # l'originale prosegue: corpo invariato a 34.
+    c += stelle(596, size=31)
     c += card_recensione(
-        648,
-        ['&laquo;Ci ha permesso di trascorrere un soggiorno',
-         'fantastico e ha risposto rapidamente.&raquo;'],
-        'Fanny &middot; aprile 2026', traduzione=False,
-        size=40, size_meta=31, pad_v=34, lh=1.32)
+        638,
+        ['&laquo;Ci &egrave; piaciuto molto soggiornare in questo appartamento!',
+         'Era moderno, pulito e arredato con cura. Letto e divano',
+         'molto comodi&hellip;&raquo;'],
+        'Anne Loes &middot; maggio 2026', size=34, size_meta=31, pad_v=30, lh=1.32)
     c += kicker('Non &egrave; fortuna. &Egrave; lavoro.', 990, colore=ORO, size=31)
     scrivi(os.path.join(HERE, 'F2.dc.html'), c)
 
@@ -247,7 +268,7 @@ def facebook():
                              'Commissione <b style="color:%s">15%%</b> sul fatturato generato.' % ORO_TESTO,
                              'Guadagniamo solo se guadagni tu.'],
                        size=33, peso=600, pad_v=34, lh=1.52)
-    c += cta_pillola(808, 'Scrivi &laquo;PUNTEGGIO&raquo;', h=96, size=44)
+    c += cta_pillola(808, 'Scrivi &laquo;PUNTEGGIO&raquo; qui sotto', h=96, size=40)
     c += kicker('Roma &middot; Ostia &middot; Litorale', 954, colore=T4, size=17)
     scrivi(os.path.join(HERE, 'F3.dc.html'), c)
 
@@ -277,8 +298,9 @@ def storie():
          'luminosa. host paziente, vigile e sempre attento&raquo;'],
         'Stefania &middot; aprile 2026', traduzione=False)
     c += blocco(['Non &egrave; fortuna. &Egrave; lavoro fatto tutti i giorni.'],
-                1380, 33, 600, T3, font=MA)
-    c += cta_pillola(1460, 'Scrivi &laquo;PUNTEGGIO&raquo; in DM', h=90, size=40)
+                1360, 33, 600, T3, font=MA)
+    c += cta_pillola(1440, 'Scrivi &laquo;PUNTEGGIO&raquo; in DM', h=90, size=40)
+    c += promessa(1552)
     scrivi(os.path.join(HERE, 'S1.dc.html'), c)
 
     # ---- S2 · anello 01 (la recensione: da dove viene) + sei voci
@@ -299,8 +321,9 @@ def storie():
     for i, (testo, coda, acceso) in enumerate(voci):
         c += voce_anello(800 + i * 92, testo, coda, acceso, size=40)
     c += blocco(['Cinque su sei sono esecuzione. E l&rsquo;esecuzione si affida.'],
-                1380, 33, 600, T3, font=MA)
-    c += cta_pillola(1460, 'Scrivi &laquo;PUNTEGGIO&raquo; in DM', h=90, size=40)
+                1360, 33, 600, T3, font=MA)
+    c += cta_pillola(1440, 'Scrivi &laquo;PUNTEGGIO&raquo; in DM', h=90, size=40)
+    c += promessa(1552)
     scrivi(os.path.join(HERE, 'S2.dc.html'), c)
 
 
