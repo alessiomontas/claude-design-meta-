@@ -43,6 +43,17 @@ Una riga per giorno prodotto. La aggiunge `/giornata` al passaggio 8.
 | 2026-09-15 (mar) | Il metodo | **Il calendario di Roma** — il prezzo di una notte lo decide il calendario della città, non un software: quattro passaggi in ordine, e la notte singola che resta vuota fra due prenotazioni | ✅ passata dopo 7 correzioni | ✅ PRONTA CON RITOCCHI, tutti applicati | [`2026-09-15/`](2026-09-15/PUBBLICAZIONE.md) |
 | 2026-09-16 (mer) | Il numero | **Il costo del vuoto** — una casa chiusa non è a zero: cinque voci corrono uguale, e il totale non lo diamo noi (campi vuoti da compilare). Primo pacchetto su **fondo chiaro** | ✅ passata dopo 7 correzioni | ✅ PRONTA CON RITOCCHI, tutti applicati | [`2026-09-16/`](2026-09-16/PUBBLICAZIONE.md) |
 | 2026-09-17 (gio) | Il territorio | **Agosto non è un esame** — il mese facile non dimostra niente, il gestore si vede da ottobre a marzo. Confronto agosto/novembre su cinque voci di mestiere. *Riprende il tema stagionalità della campagna `facebook-stagionalita-reel-proprietari`, rovesciato*: non più «d'inverno viene gente», ma «l'estate non è una prova». Primo pacchetto con **reel, storie e carosello costruiti dentro Canva** | ✅ passata dopo 6 bloccanti | ✅ PRONTA CON RITOCCHI | [`2026-09-17/`](2026-09-17/PUBBLICAZIONE.md) |
+| 2026-09-18 (ven) | La prova | **Le recensioni non sono un complimento. Sono un prezzo.** — non il vanto delle recensioni ma la loro resa economica: visibilità nei portali → prenotazioni → prezzo per notte → chi prenota. Cinque recensioni verbatim a schermo, nessun punteggio aggregato. Impianto nuovo: **la catena ad anelli** | ✅ passata dopo 7 bloccanti | ✅ PRONTA CON RITOCCHI, tutti applicati | [`2026-09-18/`](2026-09-18/PUBBLICAZIONE.md) |
+
+## Parole chiave delle CTA
+
+In quattro giorni sono uscite tre keyword diverse (`CALCOLO`, `NOVEMBRE`, `PUNTEGGIO`): così non si
+costruisce riconoscibilità e non si capisce quale converte. Regola da qui in avanti:
+
+- **`CALCOLO` è l'evergreen**, il default di ogni giorno.
+- Una keyword tematica si usa **solo quando il contenuto è quella parola** (il reel del 18/09 parla
+  di punteggio dalla prima all'ultima riga: lì `PUNTEGGIO` ha senso).
+- **Massimo una keyword tematica a settimana.**
 
 ## Pubblicazione
 
