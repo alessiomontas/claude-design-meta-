@@ -225,13 +225,17 @@ def facebook():
     c = frame(1080, 1920)
     c += marchio(112)
     c += catena(300, 1, d=64, etichette=True, spessore=4)
-    c += blocco(['Hai il punteggio alto.'], 580, 70, 900, allinea='center')
-    c += ('  <div style="position: absolute; left: 0; right: 0; top: 720px; '
+    # Il blocco stava fra 580 e 1170 e lasciava ~700 px morti in fondo: un terzo
+    # dell'immagine. Nel collage di Facebook il 9:16 si vede intero, quindi il
+    # vuoto si nota. Contenuto ridistribuito sull'altezza piena, con il kicker
+    # che ancora il fondo invece di galleggiare a meta'.
+    c += blocco(['Hai il punteggio alto.'], 700, 70, 900, allinea='center')
+    c += ('  <div style="position: absolute; left: 0; right: 0; top: 840px; '
           'text-align: center;"><span style="display: inline-block; width: 180px; '
           'height: 3px; background: %s; border-radius: 2px;"></span></div>\n' % ORO)
-    c += blocco(['E in banca', 'non &egrave; cambiato niente.'], 770, 62, 800, T1,
+    c += blocco(['E in banca', 'non &egrave; cambiato niente.'], 890, 62, 800, T1,
                 allinea='center')
-    c += kicker('Le recensioni non sono un complimento', 1130, colore=ORO, size=31,
+    c += kicker('Le recensioni non sono un complimento', 1560, colore=ORO, size=31,
                 allinea='center')
     scrivi(os.path.join(HERE, 'F1.dc.html'), c)
 
