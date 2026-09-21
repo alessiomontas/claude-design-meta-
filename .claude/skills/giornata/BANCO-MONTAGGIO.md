@@ -137,10 +137,19 @@ Risultato: la pagina torna come **`type: "unsupported"`**. Non se ne leggono gli
 ottiene nemmeno la miniatura, non si sostituisce un testo. Il connettore non sa rappresentare
 quella pagina, quindi per me è cieca.
 
-**La regola che ne esce, e vale sempre:**
+**Corretto il 21/09.** La prima stesura diceva «vale sempre»: era una generalizzazione da **un
+solo campione**, e non regge. Quello che sappiamo davvero:
 
-> Un template Canva **con animazioni dentro non è modificabile dal connettore.** Né leggibile.
-> Più un modello è "bello e animato", meno è raggiungibile da qui.
+> **Dipende dal modello, e si scopre solo provando.** Un modello costruito su una **clip video a
+> tutto schermo** (come `DAHVxjBJbDU`) torna `unsupported`. Un modello fatto di **testo e forme con
+> animazioni applicate** ha buone probabilità di essere leggibile e modificabile — da verificare.
+
+**La prova costa una chiamata:** `read-design` sul link, e si vede subito se la pagina è
+`unsupported`. Farla sempre **prima** di promettere qualsiasi cosa al titolare.
+
+**Le anteprime invece funzionano.** Il 20/09 la miniatura risultava assente; il 21/09 la stessa
+pagina l'ha restituita. Canva la genera con ritardo: se manca, **non significa che non arriverà** —
+si riprova più tardi. Quindi **un modello lo posso vedere**, anche quando non lo posso modificare.
 
 ### Cosa riesco a fare, in ordine di quanto funziona
 
@@ -149,9 +158,10 @@ quella pagina, quindi per me è cieca.
 | **Progetto vuoto 1080×1920** | — | ✅ tutto | È il caso che uso: costruisco le pagine da zero |
 | **Pagine che ho creato io con `add_page`** | ✅ | ✅ tutto | Restano modificabili finché nessuno le ritocca a mano |
 | **Template statico semplice** (testo + forme) | ✅ di solito | ✅ sostituisco i testi | Va provato caso per caso |
-| **Template video animato** | ❌ | ❌ | `unsupported`. **È il caso più comune dei bei template** |
+| **Template su clip video a tutto schermo** | ❌ | ❌ | `unsupported`. Provato su `DAHVxjBJbDU` |
+| **Template di testo animato** (testo + forme) | da provare | da provare | Il caso con più probabilità di funzionare: consigliarlo al titolare |
 | **Pagina ritoccata a mano dal titolare** | spesso ❌ | spesso ❌ | Può diventare `unsupported` dopo l'editing manuale |
-| **Screenshot di un modello** | ✅ lo vedo | — | **Il modo più affidabile per farmi giudicare un modello** |
+| **Miniatura di un modello** | ✅ la vedo | — | Anche di pagine `unsupported`. Può richiedere tempo perché Canva la generi |
 
 ### Cosa non posso fare in nessun caso, anche su pagine mie
 
@@ -173,5 +183,16 @@ quella pagina, quindi per me è cieca.
 3. Se vuoi che **lo riempia io**: deve essere un modello **statico**, e va provato prima — se
    torna `unsupported` non c'è modo di aggirarlo.
 
-**Non promettere mai al titolare di riempire un template animato.** È stato promesso una volta,
-il 20/09, ed era sbagliato.
+**Non promettere mai di riempire un template prima di averlo aperto.** È successo il 20/09 ed era
+sbagliato. La promessa giusta è: «mandami il link, lo provo e ti dico sì o no».
+
+### Come il titolare consegna un modello
+
+Una via sola, ed è la più semplice: **applica il template a un progetto e manda il link `/edit` di
+quel progetto.** Tre accortezze che cambiano l'esito:
+
+1. **Applica tutte le pagine che servono** (10-12), non una sola. Il primo tentativo ne aveva una.
+2. **Non ritoccarlo a mano prima di mandarmelo**: l'editing manuale può rendere `unsupported` una
+   pagina che prima non lo era.
+3. **Preferisci i template di testo animato** a quelli costruiti su clip video: hanno molte più
+   probabilità di essere modificabili da qui.
