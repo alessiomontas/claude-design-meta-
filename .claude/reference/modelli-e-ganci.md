@@ -194,3 +194,90 @@ Costruiti incrociando le famiglie di gancio con i pain point in `brand-identity.
 - **Lista che si sostituisce invece di accumularsi** (M3): sembra una presentazione.
 - **Qualunque modello con un numero non verificato a schermo**: non è un modello, è un blocco
   di compliance che arriva dopo.
+
+---
+
+## 6. Quattro strutture complete, secondo per secondo
+
+Costruite sui dati del 21/09 (vedi `reel-virali.md` §0-bis). Si affiancano alle tre già in
+`reel-virali.md` §7 (A «I 7 controlli», B «Prima/dopo ×3», C «Il metodo»), che **restano valide
+e non sono state toccate**: le ho rilette e non ho trovato niente che i dati nuovi smentiscano.
+Le uniche modifiche fatte altrove sono in §0-bis, sui numeri e sugli hashtag.
+
+### Struttura D — «Il risultato prima» · 22 s · obiettivo REACH
+
+**È la struttura nuova più importante.** Applica il gancio a resa più alta `[web]`: il risultato
+nei primi 2 secondi. Tutti i nostri reel finora aprono sul problema; questa apre sull'esito e poi
+spiega come ci si è arrivati. Modello portante M4 + M9.
+
+| Tempo | A schermo | Meccanica |
+|---|---|---|
+| 0,0-2,0 | **Calendario pieno**, caselle oro già in movimento | Il calendario entra **già in fase di riempimento**, non da vuoto. Nessun titolo: l'immagine è il gancio. Nessun importo. |
+| 2,0-3,2 | «Novembre.» in bianco, grande | Stacco netto. È la parola che rende il calendario un'anomalia: novembre pieno non è normale. |
+| 3,2-4,4 | «Non è fortuna.» | Ponte kinetic (M8 dentro D, consentito). |
+| 4,4-13,0 | **Quattro righe che si accumulano**, 2,1 s l'una | M3: prezzo che si muove ogni settimana · risposta entro l'ora · casa pronta prima di ogni arrivo · annuncio riscritto. Ogni riga resta a schermo scalata a 0,86 / opacità 0,45. |
+| 13,0-16,0 | Le quattro righe si comprimono in alto, torna il calendario sotto | Chiude il cerchio: la causa sopra, l'effetto sotto, insieme in un fotogramma. |
+| 16,0-19,0 | «Guadagniamo solo se guadagni tu.» oro | Firma. |
+| 19,0-22,0 | CTA: «In DM: scrivi CALCOLO» | |
+| loop | L'ultimo fotogramma torna sul calendario | Chi riguarda riparte dal gancio. |
+
+**Perché regge**: chi apre a metà vede comunque una lista di lavoro concreto; chi apre all'inizio
+vede un risultato e resta per sapere come. Nessun numero a schermo tranne quelli verificabili.
+
+### Struttura E — «Credibilità, curiosità, promessa» · 18 s · obiettivo SALVATAGGI
+
+Applica la struttura narrativa più frequente nel campione virale `[web]`: **credibilità al primo
+secondo, curiosità al secondo, promessa del payoff al terzo**. Modello portante M12.
+
+| Tempo | A schermo | Meccanica |
+|---|---|---|
+| 0,0-1,0 | «Gestiamo case a Ostia e Roma.» piccolo, in alto | **Credibilità.** Una riga sobria, non un vanto. Niente numeri. |
+| 1,0-2,0 | «Questo annuncio perde prenotazioni.» + mock di annuncio che entra | **Curiosità.** Il mock è disegnato in HTML, mai un annuncio reale, mai un nome. |
+| 2,0-3,0 | «Tre righe. Te le cerchio.» | **Promessa del payoff**, esplicita e finita. |
+| 3,0-13,0 | **Tre annotazioni oro** si disegnano sul mock, 3,3 s l'una | `stroke-dashoffset` per il tratto, 220 ms. Ogni cerchiatura resta. Testo laterale breve: cosa c'è che non va, in cinque parole. |
+| 13,0-15,5 | Il mock si sfoca, entra la versione corretta | Mezzo prima/dopo: dà il payoff promesso. |
+| 15,5-18,0 | CTA | |
+
+**Perché regge**: è il formato che dimostra competenza senza affermarla. Alto salvataggio: resta
+utile anche staccato dal momento.
+
+### Struttura F — «Il conto alla rovescia» · 20 s · obiettivo SALVATAGGI
+
+Modello M10. Inverte la listicle: dal meno al più grave, così la #1 è la ragione per restare.
+
+| Tempo | A schermo | Meccanica |
+|---|---|---|
+| 0,0-2,0 | **«3»** gigante oro + «cose che ti stanno costando prenotazioni» | Il numero entra già in scala 1,15 e rientra a 1,00. |
+| 2,0-7,0 | «3 — Il minimo di due notti.» + una riga di perché | Il numero grande resta in alto a sinistra per tutta la scena. |
+| 7,0-12,0 | «2 — Il check-in alle 16.» | Stacco netto, il numero **scende** con una rotazione di 8°. |
+| 12,0-17,0 | «1 — La prima foto.» | Scena più lunga di mezzo secondo: è la più pesante. |
+| 17,0-18,5 | Il numero sparisce, resta lo spazio vuoto | Il vuoto dove stava il numero è il segnale che finisce l'elenco e comincia la risposta. |
+| 18,5-20,0 | «Le sistemiamo noi.» + CTA | |
+
+**Regola**: mai più di tre voci. A quattro il conto alla rovescia perde tensione e diventa una lista.
+
+### Struttura G — «La domanda aperta» · 14 s · obiettivo CONTATTI IN DM
+
+Modello M11. **Massimo uno ogni due settimane**: se abusato si legge come clickbait e brucia fiducia.
+
+| Tempo | A schermo | Meccanica |
+|---|---|---|
+| 0,0-2,5 | «Quanto rende la tua casa a novembre?» a schermo pieno | Domanda diretta, nessun elemento decorativo. |
+| 2,5-4,0 | «La risposta dipende da tre cose.» | Promessa numerata. |
+| 4,0-6,5 | «Una: dove esci nella ricerca.» | Entra e resta. |
+| 6,5-9,0 | «Due: chi ti trova a novembre.» | Entra e resta. |
+| 9,0-11,0 | «Tre: —» con lo spazio **vuoto** accanto | Il punto tre non viene dato. È il loop aperto. |
+| 11,0-14,0 | «Scrivi CALCOLO. Il terzo te lo dico io.» | La DM è l'unico modo di chiudere il loop. |
+
+**Onestà**: il terzo punto deve esistere davvero e va dato a chi scrive. Un loop che non si chiude
+in DM è una promessa rotta, e su un pubblico locale si paga.
+
+---
+
+## 7. Regola caption (nuova, 21/09)
+
+- **8-12 hashtag**, mischiando nicchia e generici `[web]`. Prima non avevamo una regola scritta.
+- Orari: **quelli di `PIANO.md`**, non quelli delle fonti anglosassoni (7:00/16:00 ET è un altro
+  fuso e un altro pubblico).
+- Registro: **serio e professionale, che fa pensare** — è l'impronta tonale più frequente nel
+  campione virale `[web]` ed è già la nostra. Non inseguire il registro ammiccante.

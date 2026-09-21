@@ -34,6 +34,11 @@ Questa foto mostra sulla TV un **mockup con i loghi Netflix, Prime Video e Disne
 - se si vuole comunque usarla, farlo solo come foto illustrativa dell'immobile (es. sito/scheda struttura), non come claim commerciale enfatizzato.
 Il `compliance-checker` deve controllare questo punto ogni volta che questa foto (o il suo contenuto) viene usata in un contenuto di acquisizione clienti.
 
+## Canva Brand Kit
+
+Guida operativa per compilare il Brand Kit su Canva campo per campo (logo, tre palette, font,
+voce del brand, cosa tenere fuori): **`canva-brand-kit.md`** in questa cartella.
+
 ## Come vengono usati (regola in `CLAUDE.md` §"Asset di brand reali")
 
 - **Logo**: in copertine/aperture dove serve un momento "brand" pulito (intro carosello, cover reel), o come badge in un angolo (quando disponibile la versione trasparente).

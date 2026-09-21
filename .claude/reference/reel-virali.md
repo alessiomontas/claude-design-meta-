@@ -38,6 +38,47 @@ export: **la tipografia è il parlato**. Ogni decisione di montaggio va giudicat
 
 ---
 
+## 0-bis. Aggiornamento dati 21/09/2026 — cosa cambia e cosa no
+
+Fonte: le analisi OpusClip 2026 (campione dichiarato: **34.635 clip** per i tipi di gancio,
+**13,5 M clip** per l'anatomia complessiva, **10.598** per il registro; metrica = visualizzazioni
+TikTok a 7 giorni, clip promosse a pagamento escluse). **Non ho potuto leggere le pagine intere**:
+l'egress di rete blocca `opus.pro` (`CONNECT tunnel failed, 403`), quindi quanto segue viene dai
+riassunti dei motori di ricerca. Trattali come `[web]`, non come misure verificate da noi.
+
+**1. Il gancio più forte è il risultato, non il problema.** Il tipo di gancio con la resa più alta
+è il **product/outcome showcase** — mostrare il risultato finito, la trasformazione o l'esito nei
+**primi 2 secondi**: media **6.037 visualizzazioni** per clip, circa **2×** il tipo peggiore `[web]`.
+**Questo contraddice il nostro impianto.** Quasi tutti i reel Hadrianus aprono su un *problema* o
+su una *negazione*. Non va buttato — la negazione è il nostro telaio riconoscibile — ma va affiancato:
+vedi la struttura D in `modelli-e-ganci.md` §6, che apre sul risultato e poi torna indietro.
+
+**2. Il registro che va di più è già il nostro.** L'impronta tonale più comune nel campione virale
+è **«serious and professional + thought-provoking»**, presente nel **25,7%** `[web]`. È esattamente
+il registro Hadrianus. **Nessuna modifica**: è una conferma, e va usata per resistere alla tentazione
+di fare reel "simpatici" con musica trend e testi ammiccanti.
+
+**3. Le didascalie impresse e animate sono fra i segnali più forti** `[web]`. Noi non abbiamo voce,
+quindi il testo *è* già il contenuto: la conferma è che la tipografia cinetica **dentro** un formato
+è un moltiplicatore, e che la regola 1.8 (mai kinetic type da solo) resta giusta. Nessuna modifica.
+
+**4. Sulla durata c'è una tensione aperta, non la risolvo d'ufficio.** Quelle analisi danno
+**30-45 s** come fascia ottimale e **41 s** come mediana della fascia virale `[web]`. Il §0 qui
+sopra e la nostra serie da 8-15 s dicono il contrario. Tre ragioni per non allungare tutto domani:
+è **TikTok**, non Reels; la metrica è **visualizzazioni a 7 giorni**, non il completion che noi
+ottimizziamo; e il nostro pubblico è B2B locale, non intrattenimento. **Decisione: un test, non una
+riforma.** Un contenuto al mese sopra i 35 s, confrontato sulla stessa metrica con i corti.
+Finché il test non dice altro, la fascia resta 8-30 s.
+
+**5. Hashtag: 8-12, mischiando di nicchia e generici** `[web]`. Oggi non abbiamo una regola scritta;
+questa diventa la regola per le caption.
+
+**6. Orari: non applicabili.** Le analisi indicano 7:00 e 16:00 ET nei giorni feriali: è un dato
+statunitense su un altro fuso e un altro pubblico. Per Ostia e Roma valgono gli orari in
+`campagne/giornaliero/PIANO.md`, non questi.
+
+---
+
 ## 1. I formati che funzionano senza volto e senza voce
 
 Ordinati per efficacia *per un property manager che vende gestione a proprietari di casa*, non per popolarità
