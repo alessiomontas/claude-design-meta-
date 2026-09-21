@@ -26,6 +26,7 @@ _handover/                      → snapshot per revisore esterno (stato, decisi
 ├── lessico-brand.md            →   glossario esteso corretto/vietato, con esempi
 ├── modello-reel-8-secondi.md   →   telaio dei reel brevi (negazione + desideri), tempi e tipografia
 ├── reel-virali.md              →   manuale di montaggio reel: formati senza volto/voce, ritmo, loop, 3 strutture al secondo
+├── modelli-e-ganci.md          →   catalogo: 12 modelli di contenuto, 9 famiglie di gancio, matrice obiettivi, 20 angoli liberi
 ├── prompt-immagini.md          →   framework prompt Midjourney/DALL·E/Leonardo: 5 blocchi, negative, lock di brand
 └── master-template.md          →   formato fisso di ogni contenuto + griglia + controllo qualità
 ```
