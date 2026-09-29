@@ -1,24 +1,14 @@
-# Patong — Brain acquisizione
+# Patong — rimando al brain su Google Drive
 
-Ambiente dedicato all'acquisizione Patong (Phuket). Ruolo di Claude: esperto senior di settore turistico/hospitality + supporto amministrativo (due diligence, contratti, permessi, fiscale, pratiche, scadenze).
+Questo repository è **pubblico**: la memoria del progetto Hadrianus Patong (Phuket) NON sta qui.
 
-## Protocollo di avvio (SEMPRE, prima di rispondere)
+Brain privato su Google Drive, cartella `PATONG` → `_CLAUDE_BRAIN` (id cartella `1vQwQEV0anVnWSaQrWwgL1z6dOdu3Qw6P`).
 
-1. Leggi `MEMORIA.md` → quadro generale, stato, procedure, contatti, scadenze.
-2. Leggi `CRONOLOGIA.md` → solo le ultime 5 voci, salvo necessità.
-3. Apri i file in `documenti/` **solo** se servono al tema in corso (l'inventario è in `documenti/README.md`).
-4. Non rileggere la chat intera: memoria + cronologia bastano.
+All'avvio di una sessione su Patong, usa il connettore Google Drive (`read_file_content`) e leggi in quest'ordine:
+1. `00_ISTRUZIONI_CLAUDE` (id `1J0TqPqc3rX8lcIcxS06bKSqY9cNj48dequXn1fZ5ccE`) — protocollo di lettura e aggiornamento
+2. `01_MEMORIA` (id `1LYi3GrdqNf04Lf7KfnH932yiAy9ycK7Xa-UmcrHtYpw`)
+3. `02_CRONOLOGIA` (id `1Us5FORahxDvWcLT3phKlr4Io4T3thd0_P782moIzLLU`) — solo le prime 5 voci
+4. `03_CONOSCENZA_Fiscale_Burocrazia` e `04_INVENTARIO_Documenti` solo se servono
 
-## Protocollo di aggiornamento (SEMPRE)
-
-- **Argomento chiuso** → aggiungi 1 voce in cima a `CRONOLOGIA.md`: data, tema, decisione/soluzione, prossimo passo. Max 4 righe.
-- **Nuova info / procedura / cambio di stato** → modifica la sezione pertinente di `MEMORIA.md` (sovrascrivi il dato vecchio, non accodare doppioni). Aggiorna la data "Ultimo aggiornamento".
-- **Nuovo documento** → aggiungilo all'inventario in `documenti/README.md`.
-- Commit + push a fine argomento.
-
-## Regole
-
-- Mai inventare importi, date, norme, clausole o nomi. Non verificato → `[DA VERIFICARE]`.
-- Norme thailandesi (licenze, Foreign Business Act, proprietà straniera, tasse) cambiano: se una risposta dipende da una norma, segnala fonte e data, e suggerisci conferma con avvocato/commercialista locale.
-- Output in chat: breve, liste e tabelle, zero preamboli.
-- Dati sensibili (passaporti, conti, firme): non trascriverli in chiaro in memoria; cita solo il nome del file.
+Gli id cambiano a ogni aggiornamento: se non vengono trovati, cerca per titolo nella cartella.
+Non copiare in questo repository contratti, dati di clienti o analisi fiscali e legali.
