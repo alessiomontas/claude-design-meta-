@@ -152,6 +152,12 @@ strong{font-weight:700;}
 .esempio .riga-e.tot{border-bottom:none;border-top:1px solid rgba(27,23,18,.25);margin-top:2mm;padding-top:4mm;}
 .esempio .riga-e.tot .somma{font-family:'Hadrianus Serif',Palatino,serif;font-size:19pt;color:var(--fume);}
 .esempio .nota{font-size:8.2pt;color:var(--testo-3);margin-top:4mm;line-height:1.45;}
+.tre-col{display:flex;gap:8mm;margin-top:6.5mm;}
+.tre-col > div{flex:1;}
+.tre-col h4{font-family:'Hadrianus Serif',Palatino,serif;font-size:12pt;font-weight:400;
+  margin:0 0 2.5mm;color:var(--fume);}
+.tre-col p{font-size:9.1pt;line-height:1.5;color:var(--testo-2);}
+.tre-col > div + div{border-left:1px solid rgba(27,23,18,.12);padding-left:8mm;}
 
 .passo{display:flex;align-items:center;gap:7mm;margin-top:10mm;background:var(--fume);padding:8mm 8mm;}
 .passo .tag{flex:none;font-size:6.8pt;letter-spacing:.22em;text-transform:uppercase;color:var(--fume);
@@ -368,15 +374,27 @@ strong{font-weight:700;}
     </div>
 
     <div class="esempio">
-      <span class="label">Un esempio · una settimana con un check-out per unità</span>
-      <div style="margin-top:4.5mm">
-        <div class="riga-e"><span><b>Double Deluxe</b> · pulizia, refill, kit</span><span class="serif">95 €</span></div>
-        <div class="riga-e"><span><b>Superior Double Room</b> · pulizia, refill, kit</span><span class="serif">85 €</span></div>
-        <div class="riga-e"><span><b>Small Double Room</b> · pulizia, refill, kit</span><span class="serif">65 €</span></div>
-        <div class="riga-e tot"><span><b>Totale dell’esempio</b></span><span class="somma">245 €</span></div>
+      <span class="label">Come lavoriamo, a ogni check-out</span>
+      <div class="tre-col">
+        <div>
+          <h4>Una persona dedicata</h4>
+          <p>Interviene sui check-out che ci vengono assegnati, con tutto quello che serve già
+            caricato.</p>
+        </div>
+        <div>
+          <h4>Nessun appuntamento</h4>
+          <p>Lavora in autonomia: non c’è un orario da fissare e la sua presenza non è richiesta.</p>
+        </div>
+        <div>
+          <h4>Nessuna scorta in casa</h4>
+          <p>Prodotti e biancheria arrivano con noi e tornano con noi: l’appartamento resta libero.</p>
+        </div>
       </div>
-      <p class="nota">Nessuna voce aggiuntiva, salvo i kit biancheria in più effettivamente preparati
-        (15 € a kit). Gli interventi si contano sui check-out che ci vengono assegnati.</p>
+    </div>
+
+    <div class="banda" style="margin-top:9mm">
+      <p>Lei continua a gestire gli annunci e gli ospiti come fa oggi.
+        <b>Dell’appartamento ci occupiamo noi.</b></p>
     </div>
 
     <div class="passo">

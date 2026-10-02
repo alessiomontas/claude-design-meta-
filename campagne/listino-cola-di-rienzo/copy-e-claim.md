@@ -72,10 +72,16 @@ I suoi sopralluoghi di controllo
 intervento · Kit biancheria matrimoniale pulito · Letti preparati per l'ospite · Controllo finale
 prima di chiudere
 
-**Esempio — una settimana con un check-out per unità** · Double Deluxe 95 € + Superior Double Room
-85 € + Small Double Room 65 € = **Totale dell'esempio: 245 €**. Nessuna voce aggiuntiva, salvo i kit biancheria in più
-effettivamente preparati (15 € a kit). Gli interventi si contano sui check-out che ci vengono
-assegnati.
+**Come lavoriamo, a ogni check-out** (tre colonne) ·
+*Una persona dedicata* — Interviene sui check-out che ci vengono assegnati, con tutto quello che
+serve già caricato. ·
+*Nessun appuntamento* — Lavora in autonomia: non c'è un orario da fissare e la sua presenza non è
+richiesta. ·
+*Nessuna scorta in casa* — Prodotti e biancheria arrivano con noi e tornano con noi: l'appartamento
+resta libero.
+
+**Banda** · Lei continua a gestire gli annunci e gli ospiti come fa oggi. Dell'appartamento ci
+occupiamo noi.
 
 **Prossimo passo** · Ci confermi le tre unità e partiamo dal primo check-out assegnato.
 
@@ -98,7 +104,7 @@ fiscali o statistiche e non nomina altre aziende.
 | 6 | Metrature e tipologie (70/45/16 m², bilocale/camera con bagno privato) | CONFERMATO — riprese dalle slide già inviate al cliente |
 | 7 | Magazzino, acquisto prodotti, refill, pulizie, gestione kit, letti fatti | CONFERMATO — elenco dei servizi dettato dal titolare |
 | 8 | "Checklist fissa", "controllo prima di chiudere", "standard uniforme sulle tre unità" | CONFERMATO — già scritto nelle slide inviate al cliente (pag. 03) |
-| 9 | Esempio 95+85+65 = 245 € a settimana | CONFERMATO — aritmetica, dichiarato come esempio e non come volume atteso |
+| 9 | "Una persona dedicata", "lavora in autonomia", "nessuna sua presenza richiesta", "lei continua a gestire annunci e ospiti" | CONFERMATO — testo già presente nelle slide inviate al cliente (pag. 02 e 03) |
 | 10 | Nessuna promessa di rendita, guadagno o risultato | VERIFICATO — assente dal documento, dichiarato in nota legale |
 | 11 | Nessun nome di altre strutture o aziende come prova | VERIFICATO — regola di brand rispettata |
 | 12 | Nessun "hotel-style" | VERIFICATO — termine assente (e non sostituito da "standard alberghiero", qui non necessario) |
@@ -114,7 +120,7 @@ fiscali o statistiche e non nomina altre aziende.
 | 5 | p.02 voce 04 | "puliti pronti a ogni cambio" | "puliti, pronti a ogni cambio" | sembrava un refuso |
 | 6 | p.02 card | "se un'unità non lavora" | "se un'unità resta ferma" | un appartamento non "lavora" |
 | 7 | p.03 lista | "I sopralluoghi per verificare il lavoro" | "I suoi sopralluoghi di controllo" | chiarisce che sono i sopralluoghi del proprietario |
-| 8 | p.03 esempio | "Totale della settimana" | "Totale dell'esempio" | 245 € non è un costo settimanale fisso |
+| 8 | p.03 esempio | "Totale della settimana" | *blocco rimosso* | prima rinominato "Totale dell'esempio", poi il blocco intero è stato tolto su richiesta del titolare (vedi sotto) |
 | 9 | p.03 CTA | "Ci conferma le tre unità" | "Ci confermi le tre unità" | esortazione di cortesia: congiuntivo |
 | 10 | p.03 grafica | box scuro senza bordo | bordo 1 px dello stesso colore | le due colonne del confronto erano sfasate di 1 px |
 
@@ -125,6 +131,15 @@ fiscali o statistiche e non nomina altre aziende.
 | "Tutto quello che si consuma lo portiamo noi, a ogni intervento" → "I consumabili del refill…" | **Non applicato** | È la frase testuale della slide 02 già consegnata al cliente. Cambiarla qui creerebbe due versioni della stessa promessa in due documenti che il cliente legge insieme. |
 | "Prodotti professionali, portati da noi" → "Prodotti di pulizia, portati da noi" | **Non applicato** | Idem: la slide 02 dice "Prodotti di pulizia professionali, portati da noi". |
 | Nota legale → sostituirla con perimetro interventi straordinari + data di validità | **Non applicato così** | "Gli straordinari si concordano di volta in volta" e la scadenza del listino sono **condizioni commerciali nuove**, mai dette dal titolare: non si scrivono senza la sua conferma, e un placeholder "[DA CONFERMARE]" non può comparire in un PDF che va al cliente. La nota legale attuale ricalca quella delle slide già inviate. Vedi "Decisioni ancora aperte". |
+
+## Richiesta del titolare dopo la prima consegna
+
+**Il blocco "Un esempio — una settimana con un check-out per unità" (95 + 85 + 65 = 245 €) è stato
+rimosso da pag. 03**: il titolare non vuole mostrare al cliente un totale calcolato. Al suo posto, la
+card "Come lavoriamo, a ogni check-out" a tre colonne (persona dedicata · nessun appuntamento ·
+nessuna scorta in casa) e la banda di chiusura "Lei continua a gestire gli annunci e gli ospiti come
+fa oggi. Dell'appartamento ci occupiamo noi" — entrambe riprese dalle slide già consegnate.
+Nel documento non compare più nessuna somma: i prezzi restano solo quelli per unità.
 
 ## Decisioni ancora aperte (da confermare prima dell'invio, se servono)
 

@@ -36,7 +36,7 @@ design system social, perché deve stare accanto alle slide già in mano al clie
 |---|---|---|
 | 01 | Hero scuro + **tabella listino** (3 unità × pulizia/refill/kit → totale a check-out) + nota kit + banda "un solo numero per unità" | Il prezzo si vede subito, già scomposto: nessuna voce resta implicita |
 | 02 | "Cosa comprende la tariffa": 5 voci numerate (magazzino, refill, pulizia, biancheria, letti) + card "kit aggiuntivi 15 €" e "come si fattura" | Giustifica il prezzo con il lavoro, non con aggettivi |
-| 03 | "Che cosa cambia per lei": confronto *non entra più in conto* / *è già dentro la tariffa*, esempio su una settimana (245 €), prossimo passo | Chiude sul risparmio di gestione, non sullo sconto |
+| 03 | "Che cosa cambia per lei": confronto *non è più a suo carico* / *è già dentro la tariffa*, card "come lavoriamo" a tre colonne, chiusura "dell'appartamento ci occupiamo noi", prossimo passo | Chiude sul risparmio di gestione, non sullo sconto. **Nessun totale calcolato**: per scelta del titolare il documento non somma mai i prezzi delle tre unità |
 
 ## Le tariffe (come dettate dal titolare)
 

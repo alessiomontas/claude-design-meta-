@@ -159,3 +159,9 @@ completa prima/dopo è in `copy-e-claim.md` §"Correzioni applicate dopo il `com
 Il merito del rilievo resta: le cinque questioni di perimetro sono state girate al titolare come
 **decisioni aperte** (composizione del kit, biancheria danneggiata, interventi straordinari,
 aliquota/regime IVA, termini di pagamento e validità) ed elencate in `copy-e-claim.md`.
+
+**Modifica successiva al controllo** — su richiesta del titolare è stato **rimosso il blocco esempio
+di pag. 03** (95 + 85 + 65 = 245 €): nel documento non compare più alcuna somma, quindi la verifica
+aritmetica su quel totale non è più pertinente. I tre totali per unità (95 / 85 / 65 €) restano e
+restano verificati. Al posto del blocco: card "Come lavoriamo, a ogni check-out" a tre colonne e
+banda di chiusura, entrambe riprese testualmente dalle slide già consegnate al cliente.
