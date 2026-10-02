@@ -10,7 +10,7 @@ Cola di Rienzo, da inviare come **secondo documento** dopo la proposta di serviz
 | **Sorgente editabile** | `listino-hadrianus-cola-di-rienzo.html` (autoconsistente: font e logo in base64) |
 | **Consegna** | `listino-hadrianus-cola-di-rienzo.pdf` |
 | **Anteprime** | `anteprime/pagina-0X.png` |
-| **Stato** | 🟢 Pronto — compliance passata |
+| **Stato** | 🟢 Pronto — `compliance-checker` passato, 10 correzioni applicate (dettaglio e rilievi respinti in `copy-e-claim.md`) |
 
 ## Continuità con le slide già inviate
 
