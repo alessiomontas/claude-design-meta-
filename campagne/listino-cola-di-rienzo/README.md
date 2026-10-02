@@ -35,7 +35,7 @@ design system social, perché deve stare accanto alle slide già in mano al clie
 | Pagina | Contenuto | Perché |
 |---|---|---|
 | 01 | Hero scuro + **tabella listino** (3 unità × pulizia/refill/kit → totale a check-out) + nota kit + banda "un solo numero per unità" | Il prezzo si vede subito, già scomposto: nessuna voce resta implicita |
-| 02 | "Cosa comprende la tariffa": 5 voci numerate (magazzino, refill, pulizia, biancheria, letti) + card "kit aggiuntivi 15 €" e "come si fattura" | Giustifica il prezzo con il lavoro, non con aggettivi |
+| 02 | "Cosa comprende la tariffa": 5 voci numerate (prodotti e scorte negli armadi del corridoio, refill, pulizia, biancheria, letti) + card "kit aggiuntivi 15 €" e "come si fattura" | Giustifica il prezzo con il lavoro, non con aggettivi |
 | 03 | "Che cosa cambia per lei": confronto *non è più a suo carico* / *è già dentro la tariffa*, card "come lavoriamo" a tre colonne, chiusura "dell'appartamento ci occupiamo noi", prossimo passo | Chiude sul risparmio di gestione, non sullo sconto. **Nessun totale calcolato**: per scelta del titolare il documento non somma mai i prezzi delle tre unità |
 
 ## Le tariffe (come dettate dal titolare)
@@ -58,7 +58,7 @@ Kit biancheria aggiuntivo (secondo letto, letto singolo, ospite in più): **15 �
 
 ## Riformulazione chiesta dal titolare
 
-Le cinque cose dette a voce ("magazzino e stoccaggio con la compra dei prodotti, ricarica dei
+Le cinque cose dette a voce ("compra dei prodotti e scorta negli armadi del corridoio, ricarica dei
 refill, pulizie complete e professionali, gestione e ordini dei kit biancheria, preparazione dei
 letti") non sono state trascritte come elenco operativo: sono diventate **le cinque voci numerate
 di pagina 02**, ognuna detta dal punto di vista del cliente (cosa smette di fare lui), e il prezzo

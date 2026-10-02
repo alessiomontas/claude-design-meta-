@@ -32,11 +32,11 @@ preparato.
 ## Pagina 02 — Cosa comprende la tariffa
 
 **Occhiello** · Il prezzo a check-out non copre solo la pulizia: copre l'intera catena che tiene
-l'appartamento pronto, dal magazzino al letto fatto. È la ragione per cui resta un numero solo,
+l'appartamento pronto, dalla scorta dei prodotti al letto fatto. È la ragione per cui resta un numero solo,
 per ogni check-out.
 
-**01 · Magazzino e scorte a carico nostro** — I prodotti li compriamo noi e li teniamo nel nostro
-magazzino. In appartamento non resta nulla da stoccare e nulla da ricomprare.
+**01 · Prodotti e scorte a carico nostro** — I prodotti li compriamo noi e li teniamo negli armadi
+del corridoio, sempre riforniti: lei non deve comprarli, ritirarli né tenerne il conto.
 
 **02 · Refill ricaricati a ogni intervento** — Shampoo, bagnoschiuma, detersivo piatti, carta
 igienica, carta da cucina: li portiamo noi e li ricarichiamo a ogni passaggio.
@@ -64,7 +64,7 @@ produce costo.
 
 ## Pagina 03 — Che cosa cambia per lei
 
-**Non è più a suo carico** (✕) · La spesa dei prodotti di pulizia · Il magazzino e le scorte da
+**Non è più a suo carico** (✕) · La spesa dei prodotti di pulizia · Le scorte da ricomprare e
 ricontrollare · La gestione della lavanderia e dei kit · Il tempo per ordinare, ritirare, rifornire ·
 I suoi sopralluoghi di controllo
 
@@ -77,8 +77,8 @@ prima di chiudere
 serve già caricato. ·
 *Nessun appuntamento* — Lavora in autonomia: non c'è un orario da fissare e la sua presenza non è
 richiesta. ·
-*Nessuna scorta in casa* — Prodotti e biancheria arrivano con noi e tornano con noi: l'appartamento
-resta libero.
+*Scorte sempre a posto* — I prodotti stanno negli armadi del corridoio: li riforniamo noi, prima
+che finiscano.
 
 **Banda** · Lei continua a gestire gli annunci e gli ospiti come fa oggi. Dell'appartamento ci
 occupiamo noi.
@@ -102,7 +102,7 @@ fiscali o statistiche e non nomina altre aziende.
 | 4 | Importi IVA inclusa | CONFERMATO — scelta del titolare in fase di brief |
 | 5 | Fatturazione mensile a consuntivo, nessun canone fisso, nessun minimo | CONFERMATO — scelta del titolare in fase di brief |
 | 6 | Metrature e tipologie (70/45/16 m², bilocale/camera con bagno privato) | CONFERMATO — riprese dalle slide già inviate al cliente |
-| 7 | Magazzino, acquisto prodotti, refill, pulizie, gestione kit, letti fatti | CONFERMATO — elenco dei servizi dettato dal titolare |
+| 7 | Acquisto prodotti, scorta negli armadi del corridoio, refill, pulizie, gestione kit, letti fatti | CONFERMATO — elenco dettato dal titolare; posizione della scorta (armadi del corridoio, non magazzino Hadrianus) corretta su sua indicazione |
 | 8 | "Checklist fissa", "controllo prima di chiudere", "standard uniforme sulle tre unità" | CONFERMATO — già scritto nelle slide inviate al cliente (pag. 03) |
 | 9 | "Una persona dedicata", "lavora in autonomia", "nessuna sua presenza richiesta", "lei continua a gestire annunci e ospiti" | CONFERMATO — testo già presente nelle slide inviate al cliente (pag. 02 e 03) |
 | 10 | Nessuna promessa di rendita, guadagno o risultato | VERIFICATO — assente dal documento, dichiarato in nota legale |
@@ -140,6 +140,13 @@ card "Come lavoriamo, a ogni check-out" a tre colonne (persona dedicata · nessu
 nessuna scorta in casa) e la banda di chiusura "Lei continua a gestire gli annunci e gli ospiti come
 fa oggi. Dell'appartamento ci occupiamo noi" — entrambe riprese dalle slide già consegnate.
 Nel documento non compare più nessuna somma: i prezzi restano solo quelli per unità.
+
+## Correzione di merito del titolare
+
+**I prodotti li compra Hadrianus ma restano in appartamento, negli armadi del corridoio** — non in un
+magazzino Hadrianus. Corretti i quattro punti che dicevano il contrario (occhiello e voce 01 di
+pag. 02, lista e terza colonna di pag. 03). Il vantaggio raccontato resta lo stesso — il proprietario
+non compra, non ritira, non controlla — senza attribuire a Hadrianus uno stoccaggio esterno.
 
 ## Decisioni ancora aperte (da confermare prima dell'invio, se servono)
 
