@@ -24,6 +24,8 @@ brand-assets/
 
 ✅ **File reali presenti e organizzati** (9 file, spostati da `.claude/` e dalla root dove erano stati caricati, e rinominati con nomi descrittivi).
 
+✅ **Prima variante trasparente disponibile** — `logo/trasparenti/logo-crema-trasparente.png` (450×520, PNG RGBA): il marchio in crema `#F7F3EB` su fondo trasparente, estratto dal PDF delle slide "Preventivo pulizie Via Cola di Rienzo" (immagine + maschera alpha ricomposte). È quello usato nell'intestazione e in filigrana del listino in `campagne/listino-cola-di-rienzo/`. Si ricolora a piacere mantenendo il canale alpha (crema su fondo scuro, fumè o oro su fondo chiaro).
+
 ✅ **Varianti "senza sfondo" del logo ora producibili.** Da quando il connettore **Adobe for creativity** è collegato, `image_remove_background` può generare la versione trasparente (PNG con alpha channel) di ciascuna delle 4 angolazioni in `logo/`. Non ancora generate di default — vanno prodotte su richiesta esplicita dell'utente (per non consumare chiamate/tempo senza bisogno) e salvate in `logo/trasparenti/`. Vedi `.claude/reference/design-system.md` §"I 3 strumenti grafici" per il ruolo assegnato ad Adobe.
 
 ## ⚠️ Nota compliance — `smart-tv-streaming-mockup.jpg`
